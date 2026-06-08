@@ -1,0 +1,291 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc
+ISSUE-0001,Fix login bug #1,0,1,Final Answer: Yes,f69f60d0f89b03b8,mistral:7b,0,2026-06-08T19:17:30.490777+00:00
+ISSUE-0002,Update UI #2,1,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a title and description, but it does not specify which part of the UI needs updating, what changes are required, or any other relevant details.
+2. The language used in the issue is vague as it does not provide clear instructions on what exactly needs to be updated in the UI.
+3. Without more context, this issue can indeed be interpreted in multiple ways, such as updating the layout, design, functionality, or even the version of the UI.",35a795c04b15238f,mistral:7b,0,2026-06-08T19:17:31.864223+00:00
+ISSUE-0003,Add export feature #3,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a specific requirement to add an export feature for data from the reports page.
+2. The language used is clear and concise, stating that the data should be exported in CSV format.
+3. There is no ambiguity as the requirement is straightforward - to export data from the reports page in CSV format.",a55aa61f7ee7a890,mistral:7b,0,2026-06-08T19:17:32.794308+00:00
+ISSUE-0004,Performance issue #4,0,1,Final Answer: Yes,c277f36f14c00ff9,mistral:7b,0,2026-06-08T19:17:33.060365+00:00
+ISSUE-0005,Null pointer exception #5,1,0,"Final Answer: No
+
+Explanation:
+1. The issue provides specific details about a NullPointerException, the affected class (UserService.java), and the line number (142) where the error occurs. It also mentions that the exception is thrown when userId is null.
+2. The language used in this issue is clear and concise.
+3. Since all necessary details are provided, there's no room for multiple interpretations of the issue.",8187627fc78aaa27,mistral:7b,0,2026-06-08T19:17:34.369554+00:00
+ISSUE-0006,Search not working #6,0,1,Final Answer: Yes,bc390185cb5ecceb,mistral:7b,0,2026-06-08T19:17:34.646337+00:00
+ISSUE-0007,Add dark mode #7,0,0,"Final Answer: No
+
+Explanation:
+1. The issue title and description provide a clear request for implementing a dark mode toggle in settings with persistent preference via localStorage.
+2. The language used is clear and specific, with no vague terms or phrases.
+3. There is only one reasonable interpretation of the issue based on the provided information.",7a8b8a5c6d34faa6,mistral:7b,0,2026-06-08T19:17:35.692908+00:00
+ISSUE-0008,Crash on startup #8,0,1,Final Answer: Yes,ed3bea2de992384e,mistral:7b,0,2026-06-08T19:17:35.949261+00:00
+ISSUE-0009,Email validation #9,1,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a specific task - to validate email format on registration form and show inline error messages.
+2. The language used is clear and concise, with no vague terms or phrases.
+3. There is only one interpretation for this issue, which is to implement an email validation feature on the registration form that displays error messages in line with the input field.",8e5b99701d596a4e,mistral:7b,0,2026-06-08T19:17:37.158764+00:00
+ISSUE-0010,Database timeout #10,1,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides information about a database timeout that occurs under heavy load with more than 500 concurrent users.
+2. While the language is not overtly vague, it lacks specific details such as the exact nature of the DB queries, the type of database being used, and the specific error messages encountered.
+3. The issue can be interpreted in multiple ways due to the absence of these crucial details, making it difficult to pinpoint the root cause or implement a definitive solution.",acb3820607f3fb84,mistral:7b,0,2026-06-08T19:17:38.361067+00:00
+ISSUE-0011,Missing error handling #11,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue title and description provide a general statement about error handling, but they do not specify what errors are being referred to, under what conditions these errors occur, or how the errors should be handled.
+2. The language used in this issue is vague as it does not provide clear details about the errors that need to be handled.
+3. This issue can indeed be interpreted in multiple ways since it does not provide a specific context or scope for the error handling requirements.",e050458eb26c25cb,mistral:7b,0,2026-06-08T19:17:39.545142+00:00
+ISSUE-0012,API rate limiting #12,1,0,Final Answer: No,a8939807d9b991dc,mistral:7b,0,2026-06-08T19:17:39.792563+00:00
+ISSUE-0013,Button color #13,1,1,Final Answer: Yes,140b6fdbdbca8314,mistral:7b,0,2026-06-08T19:17:40.495404+00:00
+ISSUE-0014,Memory leak #14,0,1,Final Answer: Yes,675c644957d4ba44,mistral:7b,0,2026-06-08T19:17:40.772548+00:00
+ISSUE-0015,Update docs #15,0,1,"Final Answer: Yes (Ambiguous)
+
+Explanation:
+1. The issue provides a statement that the documentation is outdated, but it does not specify which documents are affected or what parts of them need to be updated.
+2. While the language used in this issue is simple and clear, it lacks specificity, making it ambiguous.
+3. Without knowing the scope of the documentation or the extent of the outdated information, the issue can indeed be interpreted in multiple ways. For example, it could refer to user manuals, technical documents, or even comments within the codebase.",8e4b6cb50bf8773d,mistral:7b,0,2026-06-08T19:17:42.359201+00:00
+ISSUE-0016,File upload fails #16,1,0,Final Answer: No,9221145288173c8c,mistral:7b,0,2026-06-08T19:17:42.616857+00:00
+ISSUE-0017,Wrong total #17,1,1,Final Answer: Yes,e44b4e089721f0b4,mistral:7b,0,2026-06-08T19:17:43.096214+00:00
+ISSUE-0018,Session expiry #18,1,0,Final Answer: No,b8dafda85c7a3e73,mistral:7b,0,2026-06-08T19:17:43.599321+00:00
+ISSUE-0019,Fix typo #19,1,1,Final Answer: Yes,568034a2f5dd8e32,mistral:7b,0,2026-06-08T19:17:44.106330+00:00
+ISSUE-0020,Pagination broken #20,1,1,Final Answer: Yes,6ab1668b77e51a2c,mistral:7b,0,2026-06-08T19:17:44.610686+00:00
+ISSUE-0021,Add logging #21,1,1,"Final Answer: Yes
+
+Explanation:
+1. The issue title and description only state to ""Add proper logging"", but there is no information about what specific logs should be added, where they should be stored, or under what conditions they should be logged.
+2. The language used in the issue description is vague as it does not provide clear instructions on what constitutes ""proper"" logging.
+3. Without additional context, this issue can be interpreted in multiple ways, such as adding logs for error handling, user actions, system events, or performance monitoring.",8ba45e6e7769c8ff,mistral:7b,0,2026-06-08T19:17:46.089799+00:00
+ISSUE-0022,Two-factor auth #22,0,0,"Final Answer: No
+
+Explanation:
+1. The issue title and description provide a clear request for adding TOTP-based two-factor authentication (2FA) support specifically for admin accounts, with the inclusion of backup codes.
+2. The language used in this issue is clear and specific.
+3. There is no ambiguity as the request is straightforward and does not have multiple interpretations.",56940c4f227939c4,mistral:7b,0,2026-06-08T19:17:47.060126+00:00
+ISSUE-0023,Improve something #23,0,1,Final Answer: Yes,91b78b82e8c90799,mistral:7b,0,2026-06-08T19:17:47.331974+00:00
+ISSUE-0024,CSV import fails #24,1,1,Final Answer: Yes,2347533a59751542,mistral:7b,0,2026-06-08T19:17:47.812491+00:00
+ISSUE-0025,Profile page slow #25,0,0,Final Answer: No,c0a8d60550e6c6f6,mistral:7b,0,2026-06-08T19:17:48.533198+00:00
+ISSUE-0026,Notifications broken #26,1,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a title and description, but it lacks specific details such as the type of application, the exact behavior expected, the timeframe when the issue was first noticed, or any error messages encountered.
+2. While the language is clear in terms of stating that push notifications are not delivered to Android 13+ devices, it is vague about other aspects like the application's functionality and the nature of the problem.
+3. The issue can be interpreted in multiple ways since it does not specify whether the problem occurs for all notifications or only specific types, if there are any workarounds, or if the issue affects all Android 13+ devices or just certain models/manufacturers.",b151af14842a793c,mistral:7b,0,2026-06-08T19:17:50.157624+00:00
+ISSUE-0027,Timezone bug #27,1,1,Final Answer: Yes,704c98d9405bdfe8,mistral:7b,0,2026-06-08T19:17:50.406694+00:00
+ISSUE-0028,Dropdown empty #28,0,0,Final Answer: No,e2a74a1d49d67b8a,mistral:7b,0,2026-06-08T19:17:50.913327+00:00
+ISSUE-0029,Report generation #29,1,1,Final Answer: Yes,32b7af2093fe098e,mistral:7b,0,2026-06-08T19:17:51.396712+00:00
+ISSUE-0030,Missing feature #30,1,1,"Final Answer: Yes
+
+Explanation:
+1. The issue title and description only mention a missing feature (#30) and a general statement to ""Add the thing we discussed in the meeting."" However, there is no specific detail about what exactly this 'thing' refers to or which meeting it pertains to.
+2. The language used in the issue description is vague as it does not provide clear details about the feature or the discussion that took place during the meeting.
+3. Due to the lack of context and specificity, the issue can indeed be interpreted in multiple ways, making it ambiguous.",2ebd83e9acfdfe4d,mistral:7b,0,2026-06-08T19:17:52.975719+00:00
+ISSUE-0031,Concurrent edit conflict #31,0,1,Final Answer: Yes,00e4468e8fa59091,mistral:7b,0,2026-06-08T19:17:53.248983+00:00
+ISSUE-0032,Wrong redirect #32,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a specific problem related to user redirection after logout, but it does not specify what is meant by ""wrong redirect #32"". This lacks clear context and could potentially refer to multiple issues or errors.
+2. While the language used in the issue title is concise, it is vague as it does not provide enough information about the cause of the problem or the expected behavior.
+3. The issue can be interpreted in multiple ways since ""wrong redirect"" could mean various things such as a technical error, misconfiguration, or even a design flaw. Without additional context, it's unclear what the exact problem is and how to address it.",98b963afbf89df9f,mistral:7b,0,2026-06-08T19:17:55.010016+00:00
+ISSUE-0033,Image resize #33,1,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a clear problem statement about image resizing and compression on upload, which affects page load speed.
+2. The language used is not vague; it is straightforward and specific.
+3. There is no ambiguity in the issue description as it only refers to the resizing and compression of profile images causing slow page loads.",3a89a1df5c651e6c,mistral:7b,0,2026-06-08T19:17:55.936988+00:00
+ISSUE-0034,Filter not saving #34,0,0,Final Answer: No,2cff21cea2c8891c,mistral:7b,0,2026-06-08T19:17:56.199360+00:00
+ISSUE-0035,Audit log missing #35,0,1,Final Answer: Yes,461abb24961f9531,mistral:7b,0,2026-06-08T19:17:56.719831+00:00
+ISSUE-0036,Language switch broken #36,0,0,Final Answer: No,d33212c66e4bdcfa,mistral:7b,0,2026-06-08T19:17:57.167183+00:00
+ISSUE-0037,Role permission #37,1,1,Final Answer: Yes,073e1492a4561dc8,mistral:7b,0,2026-06-08T19:17:57.664535+00:00
+ISSUE-0038,Broken link #38,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a specific problem - a broken link on a page.
+2. The language used is clear and concise, there's no vagueness.
+3. The issue can be interpreted in only one way, as it pertains to a broken link on a webpage.",998e81971f23fd2b,mistral:7b,0,2026-06-08T19:17:58.761365+00:00
+ISSUE-0039,Chart rendering #39,1,0,Final Answer: No,3594a800f4b7a45d,mistral:7b,0,2026-06-08T19:17:59.009863+00:00
+ISSUE-0040,Delete confirmation #40,1,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a clear title and description about adding a confirmation dialog before deleting records permanently.
+2. The language used is clear and specific, with no vague terms or phrases.
+3. There's only one possible interpretation for this issue - to add a confirmation dialog before deleting records.",6a202c1d2b9c5cfb,mistral:7b,0,2026-06-08T19:18:00.258043+00:00
+ISSUE-0041,Fix login bug #41,1,1,Final Answer: Yes,52e0ad3da1768e00,mistral:7b,0,2026-06-08T19:18:00.519751+00:00
+ISSUE-0042,Update UI #42,1,1,Final Answer: Yes,416addf5ac7ac366,mistral:7b,0,2026-06-08T19:18:00.984761+00:00
+ISSUE-0043,Add export feature #43,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a specific request for an export feature, with the desired format being CSV and the location being the reports page.
+2. The language used is clear and concise.
+3. There is no ambiguity as the request is straightforward and does not have multiple interpretations.",8c6a2e2c81c0a7c9,mistral:7b,0,2026-06-08T19:18:02.083314+00:00
+ISSUE-0044,Performance issue #44,1,1,Final Answer: Yes,4b242541c1eda2c6,mistral:7b,0,2026-06-08T19:18:02.341308+00:00
+ISSUE-0045,Null pointer exception #45,1,0,"Final Answer: No
+
+Explanation:
+1. The issue provides specific details about a NullPointerException, the affected class (UserService.java), and the line number (142) where the error occurs. It also mentions that the exception is thrown when userId is null.
+2. The language used in this issue is clear and concise.
+3. Since all necessary details are provided, there's no room for multiple interpretations of the issue.",beb955adee7f49f8,mistral:7b,0,2026-06-08T19:18:03.643385+00:00
+ISSUE-0046,Search not working #46,0,1,Final Answer: Yes,7bb0dc5512f3aff0,mistral:7b,0,2026-06-08T19:18:03.898564+00:00
+ISSUE-0047,Add dark mode #47,0,0,"Final Answer: No
+
+Explanation:
+1. The issue title and description provide a clear request for implementing a dark mode toggle in settings with persistent preference via localStorage.
+2. The language used is clear and specific, with no vague terms or phrases.
+3. There is only one reasonable interpretation of the issue, which is to implement a dark mode feature with a toggle switch in the settings that saves the user's preference using localStorage. Therefore, this issue does not appear to be ambiguous.",d5416f5b60b3e7fe,mistral:7b,0,2026-06-08T19:18:05.273124+00:00
+ISSUE-0048,Crash on startup #48,0,1,Final Answer: Yes,ad25972ffa153b07,mistral:7b,0,2026-06-08T19:18:05.537223+00:00
+ISSUE-0049,Email validation #49,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a specific task - to validate email format on registration form and show inline error messages.
+2. The language used is clear and concise, with no vague terms or phrases.
+3. There is only one interpretation for this issue, which is to implement an email validation feature on the registration form that displays error messages inline (i.e., next to the input field).",bca59862c29c1031,mistral:7b,0,2026-06-08T19:18:06.775563+00:00
+ISSUE-0050,Database timeout #50,0,1,Final Answer: Yes,f78fb93887b55af9,mistral:7b,0,2026-06-08T19:18:07.038834+00:00
+ISSUE-0051,Missing error handling #51,1,1,"Final Answer: Yes
+
+Explanation:
+1. The issue title and description provide a general statement about error handling, but it does not specify which errors are being referred to, what the expected behavior should be when an error occurs, or where this error handling needs to be implemented.
+2. The language used in the issue is vague as it does not provide clear details about the context or scope of the error handling.
+3. Due to the lack of specificity, the issue can indeed be interpreted in multiple ways, making it ambiguous.",de4b842b94e286bc,mistral:7b,0,2026-06-08T19:18:08.463018+00:00
+ISSUE-0052,API rate limiting #52,1,0,Final Answer: No,0b52c025fefd3a8a,mistral:7b,0,2026-06-08T19:18:08.730577+00:00
+ISSUE-0053,Button color #53,0,1,Final Answer: Yes,91ec21a17ce38412,mistral:7b,0,2026-06-08T19:18:09.257085+00:00
+ISSUE-0054,Memory leak #54,1,1,Final Answer: Yes,b27921ec034d30a9,mistral:7b,0,2026-06-08T19:18:09.684186+00:00
+ISSUE-0055,Update docs #55,1,1,"Final Answer: Yes (Ambiguous)
+
+Explanation:
+1. The issue provides a title and description, but it does not specify which documents are outdated, what parts of the documents need to be updated, or how extensive the updates should be.
+2. While the language is clear that the documentation is outdated, it lacks specificity about the scope and extent of the required changes.
+3. Without more context, this issue can be interpreted in multiple ways, such as updating a single document, multiple documents, or even parts of a document. Therefore, it is ambiguous.",76ba07064bfac679,mistral:7b,0,2026-06-08T19:18:11.269913+00:00
+ISSUE-0056,File upload fails #56,0,0,Final Answer: No,d6f958779cc98985,mistral:7b,0,2026-06-08T19:18:11.553168+00:00
+ISSUE-0057,Wrong total #57,0,1,Final Answer: Yes,5d5cb478ef061a02,mistral:7b,0,2026-06-08T19:18:12.017732+00:00
+ISSUE-0058,Session expiry #58,0,0,Final Answer: No,c0d3891a591aae92,mistral:7b,0,2026-06-08T19:18:12.520245+00:00
+ISSUE-0059,Fix typo #59,1,1,"Final Answer: Yes
+
+Explanation:
+1. The issue only mentions a typo without specifying where it is located, making it unclear which part of the software needs to be checked.
+2. While the language ""typo"" is not vague per se, its location is not specified, leading to ambiguity.
+3. Without knowing the exact location of the typo, this issue can indeed be interpreted in multiple ways as there could potentially be several typos throughout the software.",895e98e7aa656c77,mistral:7b,0,2026-06-08T19:18:13.886899+00:00
+ISSUE-0060,Pagination broken #60,0,1,Final Answer: Yes,a07b4cdf3c992110,mistral:7b,0,2026-06-08T19:18:14.163791+00:00
+ISSUE-0061,Add logging #61,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue only mentions ""Add proper logging"" without specifying what exactly needs to be logged, where it should be logged, and under which conditions.
+2. The language used is vague as it does not provide clear instructions or requirements for the implementation of the logging feature.
+3. Without additional context or clarification, this issue can indeed be interpreted in multiple ways, making it ambiguous.",ffddbf3937b16bc9,mistral:7b,0,2026-06-08T19:18:15.400251+00:00
+ISSUE-0062,Two-factor auth #62,1,0,"Final Answer: No
+
+Explanation:
+1. The issue title and description provide a clear request for adding TOTP-based two-factor authentication (2FA) support for admin accounts, with the inclusion of backup codes.
+2. The language used in this issue is not vague; it is specific and straightforward.
+3. There is no ambiguity as the request is for one specific feature (TOTP-based 2FA) to be added to a specific user group (admin accounts), with an additional requirement for backup codes.",b3cdcb996a922998,mistral:7b,0,2026-06-08T19:18:16.619571+00:00
+ISSUE-0063,Improve something #63,0,1,Final Answer: Yes,f4262b7b082ca862,mistral:7b,0,2026-06-08T19:18:16.861674+00:00
+ISSUE-0064,CSV import fails #64,1,1,Final Answer: Yes,20eab8bb5fb88a06,mistral:7b,0,2026-06-08T19:18:17.356717+00:00
+ISSUE-0065,Profile page slow #65,0,0,Final Answer: No,dc284b838b769272,mistral:7b,0,2026-06-08T19:18:17.840520+00:00
+ISSUE-0066,Notifications broken #66,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a title and description, but it lacks specific details such as the type of application, the exact behavior expected, the timeframe when the issue was first noticed, or any error messages encountered.
+2. While the language is clear in terms of stating that push notifications are not delivered to Android 13+ devices, it is vague about other aspects like the application's functionality and the nature of the broken notifications.
+3. The issue can be interpreted in multiple ways since it does not specify whether the problem occurs for all users or only some, if there are any workarounds, or if the issue exists on specific Android 13+ devices or versions.",7a76554ced2c7f8d,mistral:7b,0,2026-06-08T19:18:19.649838+00:00
+ISSUE-0067,Timezone bug #67,0,1,Final Answer: Yes,38414acbcda38d23,mistral:7b,0,2026-06-08T19:18:19.908798+00:00
+ISSUE-0068,Dropdown empty #68,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a specific problem with a dropdown on a registration form for new users, which is related to the country selection.
+2. The language used in the issue description is clear and concise.
+3. There seems to be no ambiguity as the problem is directly stated - the country dropdown is empty.",eb02b462dd6b1e5d,mistral:7b,0,2026-06-08T19:18:21.034667+00:00
+ISSUE-0069,Report generation #69,0,1,Final Answer: Yes,872bdce7979d3b6a,mistral:7b,0,2026-06-08T19:18:21.347711+00:00
+ISSUE-0070,Missing feature #70,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue title and description only mention a missing feature (#70) and a general statement to ""add the thing we discussed in the meeting."" No specific details about what this 'thing' is or what feature #70 refers to are provided.
+2. The language used in the issue description is vague, as it does not provide clear instructions on what needs to be added or what was discussed in the meeting.
+3. Due to the lack of specifics, the issue can indeed be interpreted in multiple ways, making it ambiguous.",a60225592febacd9,mistral:7b,0,2026-06-08T19:18:22.825959+00:00
+ISSUE-0071,Concurrent edit conflict #71,1,1,Final Answer: Yes,a8b77147a21b43db,mistral:7b,0,2026-06-08T19:18:23.075934+00:00
+ISSUE-0072,Wrong redirect #72,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a specific problem related to user redirection after logout, but it lacks details about the context and scope of the issue. For example, it's unclear which system or application this issue pertains to, and whether there are any exceptions or conditions that should be considered.
+2. While the language is not overly vague, it could be more specific in terms of defining what is meant by ""wrong redirect"" and ""dashboard.""
+3. The issue can indeed be interpreted in multiple ways since it doesn't specify the expected behavior after logout or provide any context about the system architecture that might influence the redirection process.",ca5cf87e4b0cc360,mistral:7b,0,2026-06-08T19:18:24.796592+00:00
+ISSUE-0073,Image resize #73,1,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a clear problem statement about image resizing and compression on upload, which affects page load speed.
+2. The language used is clear and specific.
+3. There is no ambiguity in the issue description as it only mentions profile images and does not leave room for multiple interpretations.",71efea4c69b57ef1,mistral:7b,0,2026-06-08T19:18:25.693895+00:00
+ISSUE-0074,Filter not saving #74,1,1,Final Answer: Yes,a553a0523eacd5f5,mistral:7b,0,2026-06-08T19:18:25.945461+00:00
+ISSUE-0075,Audit log missing #75,0,1,Final Answer: Yes,6a277abfe51b7e95,mistral:7b,0,2026-06-08T19:18:26.426233+00:00
+ISSUE-0076,Language switch broken #76,0,0,Final Answer: No,d9a24cf931a599cc,mistral:7b,0,2026-06-08T19:18:27.171162+00:00
+ISSUE-0077,Role permission #77,1,1,Final Answer: Yes,91dc0ec7fd9cc52e,mistral:7b,0,2026-06-08T19:18:27.432118+00:00
+ISSUE-0078,Broken link #78,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a specific problem - a broken link on a page.
+2. The language used is clear and concise, there's no vagueness.
+3. It cannot be interpreted in multiple ways as it refers to a single broken link on a specific page.",31d76d29216e52cc,mistral:7b,0,2026-06-08T19:18:28.511638+00:00
+ISSUE-0079,Chart rendering #79,0,0,Final Answer: No,4183060846c8c1ef,mistral:7b,0,2026-06-08T19:18:28.755426+00:00
+ISSUE-0080,Delete confirmation #80,0,0,"Final Answer: No
+
+Explanation:
+1. The issue title and description are both clear and concise, providing a specific action to be taken (adding a confirmation dialog) and the context of when it should be used (before deleting records permanently).
+2. The language used in this issue is not vague; it is straightforward and easy to understand.
+3. There is no ambiguity in this issue as the action to be performed (adding a confirmation dialog) and the conditions under which it should occur (before deleting records permanently) are clearly defined.",e6ade389ac44bf9a,mistral:7b,0,2026-06-08T19:18:30.426391+00:00
+ISSUE-0081,Fix login bug #81,0,1,Final Answer: Yes,ad2a8fa43276ecc5,mistral:7b,0,2026-06-08T19:18:30.682475+00:00
+ISSUE-0082,Update UI #82,1,1,Final Answer: Yes,246395ccbe848879,mistral:7b,0,2026-06-08T19:18:31.145341+00:00
+ISSUE-0083,Add export feature #83,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a specific request for an export feature, with the desired format being CSV and the location being the reports page.
+2. The language used is clear and concise.
+3. There is no ambiguity in this issue as it specifies the required action (export), the format (CSV), and the location (reports page).",74ffcc89bf15f4a3,mistral:7b,0,2026-06-08T19:18:32.363266+00:00
+ISSUE-0084,Performance issue #84,1,1,Final Answer: Yes,4a44744af84dfc04,mistral:7b,0,2026-06-08T19:18:32.652756+00:00
+ISSUE-0085,Null pointer exception #85,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides specific details about a NullPointerException, the affected class (UserService.java), and the line number (142) where the error occurs. It also mentions that the exception is thrown when userId is null.
+2. The language used in this issue is clear and concise.
+3. Since all necessary details are provided, there's no room for multiple interpretations of the issue.",c576575a50503a4e,mistral:7b,0,2026-06-08T19:18:33.956007+00:00
+ISSUE-0086,Search not working #86,0,1,Final Answer: Yes,8345ef44fc413520,mistral:7b,0,2026-06-08T19:18:34.259707+00:00
+ISSUE-0087,Add dark mode #87,1,0,"Final Answer: No
+
+Explanation:
+1. The issue title and description provide a clear request for implementing a dark mode toggle in settings with persistent preference via localStorage.
+2. The language used is clear and specific, with no vague terms or phrases.
+3. There is only one reasonable interpretation of the issue based on the provided information.",04ab838bcc512c82,mistral:7b,0,2026-06-08T19:18:35.297932+00:00
+ISSUE-0088,Crash on startup #88,0,1,Final Answer: Yes,84925f4c915b4a55,mistral:7b,0,2026-06-08T19:18:35.559815+00:00
+ISSUE-0089,Email validation #89,1,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a specific task - to validate email format on registration form and show inline error messages.
+2. The language used is clear and concise, with no vague terms or phrases.
+3. There is only one interpretation for this issue, which is to implement an email validation feature on the registration form that displays error messages inline (i.e., next to the input field).",b546dfe5fc80a926,mistral:7b,0,2026-06-08T19:18:36.805682+00:00
+ISSUE-0090,Database timeout #90,1,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides information about a database timeout that occurs under heavy load with more than 500 concurrent users.
+2. While the language is not overtly vague, it lacks specific details such as the exact nature of the DB queries, the type of database being used, and the specific error messages encountered.
+3. The issue can be interpreted in multiple ways due to the absence of these crucial details, making it difficult to pinpoint the root cause or implement a definitive solution.",a95d21941b691a3e,mistral:7b,0,2026-06-08T19:18:38.027089+00:00
+ISSUE-0091,Missing error handling #91,1,1,Final Answer: Yes,d4be1bc2d1a184e8,mistral:7b,0,2026-06-08T19:18:38.292867+00:00
+ISSUE-0092,API rate limiting #92,0,0,Final Answer: No,5c9c43984d5a4ae2,mistral:7b,0,2026-06-08T19:18:38.746634+00:00
+ISSUE-0093,Button color #93,1,1,Final Answer: Yes,5546e53547fb085a,mistral:7b,0,2026-06-08T19:18:39.261497+00:00
+ISSUE-0094,Memory leak #94,0,1,Final Answer: Yes,095e6f75ae54716b,mistral:7b,0,2026-06-08T19:18:39.774304+00:00
+ISSUE-0095,Update docs #95,0,1,"Final Answer: Yes (Ambiguous)
+
+Explanation:
+1. The issue provides a title and description, but it does not specify which documents are outdated, what parts of the documents need to be updated, or how extensive the updates should be.
+2. While the language is clear that the documentation is outdated, it lacks specificity about the scope and extent of the required changes.
+3. The issue can be interpreted in multiple ways since it does not provide enough context or details about which documents are affected and what exactly needs to be updated.",bc9a149be385c876,mistral:7b,0,2026-06-08T19:18:41.249087+00:00
+ISSUE-0096,File upload fails #96,1,0,Final Answer: No,3f2966c5b6ea1dee,mistral:7b,0,2026-06-08T19:18:41.493911+00:00
+ISSUE-0097,Wrong total #97,1,1,Final Answer: Yes,aac74fed266319c3,mistral:7b,0,2026-06-08T19:18:41.971923+00:00
+ISSUE-0098,Session expiry #98,1,0,Final Answer: No,12f1ccdf534c58c7,mistral:7b,0,2026-06-08T19:18:42.469223+00:00
+ISSUE-0099,Fix typo #99,0,1,Final Answer: Yes,4f300fe1f9ee75da,mistral:7b,0,2026-06-08T19:18:42.971662+00:00
+ISSUE-0100,Pagination broken #100,1,1,Final Answer: Yes,c896b1c4f1443431,mistral:7b,0,2026-06-08T19:18:43.465959+00:00

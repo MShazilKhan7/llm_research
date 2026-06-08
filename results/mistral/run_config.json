@@ -1,10 +1,10 @@
 {
-  "run_timestamp": "2026-05-29T20:25:11.714740+00:00",
+  "run_timestamp": "2026-06-08T19:15:35.939249+00:00",
   "dataset": {
-    "path": "/home/claude/llm_defect_detection/dataset/ground_truth.csv",
-    "checksum": "51655f491b13e252bcd76797b3a821a6",
+    "path": "/workspace/llm_research/dataset/ground_truth.csv",
+    "checksum": "b4c6a6188837379e322a71d6c3082bd2",
     "algorithm": "md5",
-    "n_issues": 200
+    "n_issues": 100
   },
   "models": [
     "mistral"
@@ -20,20 +20,20 @@
     "few_shot_cot"
   ],
   "model_versions": {
-    "mistral": "mistral:7b-instruct-v0.3"
+    "mistral": "mistral:7b"
   },
   "llm_temperature": 0,
   "environment": {
-    "python_version": "3.12.3 (main, Mar  3 2026, 12:15:18) [GCC 13.3.0]",
-    "platform": "Linux-6.18.5-x86_64-with-glibc2.39",
+    "python_version": "3.10.12 (main, Nov 20 2023, 15:14:05) [GCC 11.4.0]",
+    "platform": "Linux-6.8.0-117-generic-x86_64-with-glibc2.35",
     "executable": "/usr/bin/python",
-    "pkg_openai": "not installed",
+    "pkg_openai": "2.41.0",
     "pkg_google": "not installed",
-    "pkg_groq": "not installed",
-    "pkg_pandas": "3.0.2",
-    "pkg_numpy": "2.4.4",
-    "pkg_matplotlib": "3.10.8"
+    "pkg_groq": "1.4.0",
+    "pkg_pandas": "2.3.3",
+    "pkg_numpy": "1.26.3",
+    "pkg_matplotlib": "3.10.9"
   },
-  "mock_mode": true,
+  "mock_mode": false,
   "resume": false
 }

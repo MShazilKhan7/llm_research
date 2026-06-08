@@ -1,0 +1,788 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc
+ISSUE-0001,Fix login bug #1,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague — 'sometimes' does not specify the frequency or conditions under which the login bug occurs.
+2. It does not specify what component or part of the system is causing the problem.
+3. No baseline or target metric for performance improvement is provided.
+4. The description lacks clear context about the nature of the login bug and potential causes.
+5. Without more information, it's unclear how to effectively address the issue.",e85c4f1056021658,mistral:7b,0,2026-06-08T19:18:44.743245+00:00
+ISSUE-0002,Update UI #2,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which parts of the UI need to be updated or what changes are expected.
+2. There is no clear context provided about why the update is necessary or under what conditions it should occur.
+3. The scope of the update is unclear, as it could potentially involve multiple components within the UI.
+4. Without more information, the issue can be interpreted in multiple ways, making it ambiguous.",8d44c41bd7607d86,mistral:7b,0,2026-06-08T19:18:45.817749+00:00
+ISSUE-0003,Add export feature #3,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description are specific - it mentions adding an export feature for CSV format from the reports page.
+2. The context is clear as it refers to a specific action on the reports page.
+3. The scope of the work can be determined by understanding the existing system's structure and implementing the necessary changes for data export in CSV format.
+4. There is no ambiguity about what needs to be done or how it should be done, making it less likely to be interpreted in multiple ways.
+5. Although not explicitly stated, it can be assumed that the target platform (web, mobile, etc.) and any specific requirements for the export feature (like handling large datasets, user authentication, etc.) might need further clarification during the analysis phase. However, the initial issue statement itself is clear enough to understand the basic requirement.",1be6320c98a74f2e,mistral:7b,0,2026-06-08T19:18:47.648750+00:00
+ISSUE-0004,Performance issue #4,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify what part of the application is slow or under which conditions the slowness occurs.
+2. No baseline or target metric for performance improvement is provided.
+3. The issue lacks clear context, making it difficult to determine the scope and focus of the required improvements.
+4. The problem can be interpreted in multiple ways, as there could be various reasons for an application to run slowly (e.g., network issues, server-side problems, or code optimization needs).",ed7355da60680986,mistral:7b,0,2026-06-08T19:18:48.829056+00:00
+ISSUE-0005,Null pointer exception #5,1,0,"Final Answer: No
+
+Reasoning: The issue provides a clear description of the problem - it names the exact file, line, condition, and context. It does not use vague language or lack clear context, nor does it have an unclear scope or multiple interpretations.",2b9e011482bae8f3,mistral:7b,0,2026-06-08T19:18:49.492113+00:00
+ISSUE-0006,Search not working #6,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the context of the search (search bar, database query, API call, etc.), the expected results, or under what conditions the problem occurs.
+2. There's no mention of the system, application, or component where this search function resides.
+3. No baseline or target metric for performance is provided to determine if the current search functionality meets the requirements or not.
+4. The issue does not provide any information about the search algorithm, indexing, or data structure used, which could affect the resolution process.
+5. Without more context and details, it's difficult to pinpoint the exact cause of the problem and propose a solution.",026688ac86d3cab5,mistral:7b,0,2026-06-08T19:18:51.068669+00:00
+ISSUE-0007,Add dark mode #7,0,0,"Final Answer: No
+
+Reasoning:
+1. The title clearly states the requirement for a ""dark mode"" feature.
+2. The description specifies that this dark mode should be implemented as a toggle in settings and with persistent preference via localStorage.
+3. Although it doesn't specify which parts of the application need to support the dark mode, the context is clear since the term ""settings"" implies that it will be an application-level feature.
+4. The requirement for implementing dark mode does not seem to have multiple interpretations as it follows a standard pattern in software development.
+5. There is no ambiguity regarding the scope or language used in this issue description.",561fab761a4ed113,mistral:7b,0,2026-06-08T19:18:52.512725+00:00
+ISSUE-0008,Crash on startup #8,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the cause of the crash or under what conditions the problem occurs.
+2. It lacks clear context since there's no information about the operating system, device, or any other relevant details that could help identify the root cause.
+3. The scope of the issue is unclear, as it doesn't specify which part of the app is causing the crash.
+4. The issue can be interpreted in multiple ways, such as a problem with the user interface, database connection, or any other component within the app.
+5. Without additional information, it would require further investigation to determine the exact cause and solution for this issue.",4d5663e500ea44c4,mistral:7b,0,2026-06-08T19:18:54.030661+00:00
+ISSUE-0009,Email validation #9,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the requirement - ""Email validation"". This is specific and unambiguous.
+2. The description also provides a clear context - ""Validate email format on registration form and show inline error messages"". It specifies that the validation should occur during registration, the format to be validated, and the method of displaying errors (inline).
+3. There is no ambiguity about what component or system this requirement applies to as it pertains to a registration form.
+4. The scope of the requirement is also clear - it only involves email validation on the registration form and inline error messages.
+5. There are no vague terms or unclear conditions that could lead to multiple interpretations.",0f21ef7d63386b9d,mistral:7b,0,2026-06-08T19:18:55.582969+00:00
+ISSUE-0010,Database timeout #10,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly specifies the problem - database timeouts occur under specific conditions (heavy load and more than 500 concurrent users).
+2. It mentions the context - the problem happens with DB queries.
+3. Although not explicitly stated, it can be inferred that the scope is related to improving the performance or stability of the database under heavy loads.
+4. The issue does not use vague language; instead, it provides a clear description of the problem and its conditions.
+5. There is no ambiguity about how the issue should be addressed, as it involves investigating and potentially optimizing the database's behavior under heavy load with many concurrent users to reduce timeouts.",8635ed106c793162,mistral:7b,0,2026-06-08T19:18:57.177183+00:00
+ISSUE-0011,Missing error handling #11,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague - it does not specify what errors need to be handled or where they occur in the system.
+2. There is no clear context provided about which part of the software needs error handling improvements.
+3. No baseline for improvement or target metric is mentioned, making it unclear how success can be measured.
+4. The issue could potentially apply to multiple components within the software, increasing ambiguity.
+5. Without more specific details, it's difficult to determine exactly what needs to be done to resolve this issue.",44dc3f9fdd918539,mistral:7b,0,2026-06-08T19:18:58.458745+00:00
+ISSUE-0012,API rate limiting #12,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the requirement for implementing rate limiting, specifying the number of requests per minute per API key and the response to be used when the limit is exceeded.
+2. It provides a specific context by mentioning an API key.
+3. The scope of the issue is also clear as it pertains to the API.
+4. There is no ambiguity in the language or interpretation required for this issue.
+5. The requirement can be implemented directly from the provided information without needing further clarification.",ffd8cfad0186ea0d,mistral:7b,0,2026-06-08T19:18:59.702849+00:00
+ISSUE-0013,Button color #13,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague — it does not specify which button(s) to change, what the new color should be, or under what conditions the change should occur.
+2. There is no context provided about where the button appears in the application or its current color.
+3. No baseline for improvement or target metric is mentioned.
+4. The issue does not provide clear scope or guidelines for the change.
+5. Multiple interpretations are possible, such as changing the color of a single button, all buttons, or only certain types of buttons within the application.",80f5a16f09bc1961,mistral:7b,0,2026-06-08T19:19:01.014741+00:00
+ISSUE-0014,Memory leak #14,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue mentions a memory leak but does not specify the exact component or part of the code causing it.
+2. It also does not provide any details about the symptoms or conditions under which the memory leak occurs.
+3. There is no clear baseline or target for what constitutes ""unbounded"" memory usage over 24 hours.
+4. The issue lacks context, as it does not specify whether this memory leak affects the entire system or just a particular feature.
+5. Without more information, the issue can be interpreted in multiple ways, making it ambiguous.",eb2aeaed559782cc,mistral:7b,0,2026-06-08T19:19:02.333057+00:00
+ISSUE-0015,Update docs #15,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which documents are outdated or what parts of them need to be updated.
+2. There is no clear context provided about the scope of the documentation in question, such as whether it's for a specific feature, version, or component.
+3. Without more information, it can be interpreted in multiple ways, such as updating user guides, API references, or internal development notes.
+4. The issue does not provide any criteria for determining when the documentation is considered up-to-date.
+5. There is no indication of what format the documents are in (e.g., markdown files, PDFs) or where they are located, making it difficult to identify which ones need updating.",fbe68665ce352afe,mistral:7b,0,2026-06-08T19:19:03.937878+00:00
+ISSUE-0016,File upload fails #16,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly states the problem - file uploads larger than 10MB fail. This specifies the condition under which the problem occurs and provides a clear context.
+2. It mentions the error received (413) which is a standard HTTP status code, providing additional clarity about the nature of the problem.
+3. The issue also identifies the endpoint where the failure occurs - /upload. This specifies the component or location where the problem lies.
+4. Although it doesn't provide a detailed stack trace, the error message and endpoint information are sufficient to start investigating the issue.
+5. There is no ambiguity in the language used or unclear scope as the issue provides enough context for developers to understand what needs to be fixed.",1638dd3886a44c54,mistral:7b,0,2026-06-08T19:19:05.605562+00:00
+ISSUE-0017,Wrong total #17,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title and description are vague - it does not specify what is considered 'wrong' about the total, under what conditions this occurs, or which part of the cart is affected.
+2. There is no context provided regarding the expected behavior or the system components involved in calculating the total.
+3. Without additional information, it is unclear whether the issue affects all carts, specific types of carts, or individual items within a cart.
+4. The issue does not provide any details about the potential cause(s) of the problem, making it difficult to prioritize and address effectively.
+5. To clarify this issue, more information is needed such as the expected total, the actual total, the conditions under which the error occurs, and the system components involved in calculating the cart total.",a7580bba165d1cc1,mistral:7b,0,2026-06-08T19:19:07.357872+00:00
+ISSUE-0018,Session expiry #18,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description are specific about the requirement - ""Implement automatic session expiry after 30 minutes of inactivity"" and ""with a warning dialog"".
+2. It clearly states the condition for session expiry (inactivity) and the action to be taken (warning dialog).
+3. The scope is defined as the session, which is a common term in software development.
+4. There is no ambiguity about what needs to be done or how it should be implemented.
+5. The issue provides enough context for a developer to start working on it without needing further clarification.",fe466971bf65f362,mistral:7b,0,2026-06-08T19:19:08.721114+00:00
+ISSUE-0019,Fix typo #19,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague - it does not specify where the typo is located or what the correct spelling should be.
+2. There's no clear context provided about which file, function, or user interface element contains the typo.
+3. No information is given about how the typo affects the software functionality or user experience.
+4. The issue does not provide a specific component or location where the fix is required.
+5. Without more details, it's unclear what exactly needs to be fixed, making the issue ambiguous.",3dde31f9535e5f50,mistral:7b,0,2026-06-08T19:19:09.982269+00:00
+ISSUE-0020,Pagination broken #20,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue mentions that pagination is broken but does not specify what exactly is not working correctly (e.g., incorrect page numbers displayed, data not loading properly, etc.).
+2. It also lacks clarity on the context of the problem, as it only refers to the user management table without specifying which part of the application or system this table belongs to.
+3. The issue does not provide any details about the expected behavior or the conditions under which the problem occurs.
+4. Although the filter is mentioned, there's no information about what kind of filter it is and how it affects pagination.
+5. Without more context or specifics, it can be difficult to determine the root cause and potential solutions for this issue.",ec2ae67d18b50061,mistral:7b,0,2026-06-08T19:19:11.611797+00:00
+ISSUE-0021,Add logging #21,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the scope of what needs to be logged, the level of detail required in logs, or where these logs should be stored.
+2. There's no mention of which component(s) need logging or under what conditions logging should occur.
+3. No baseline or target metric for improved logging performance is provided.
+4. The issue lacks clear context and can be interpreted in multiple ways.
+5. Therefore, the issue is ambiguous.",c1e007f79a12e38c,mistral:7b,0,2026-06-08T19:19:12.778864+00:00
+ISSUE-0022,Two-factor auth #22,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description are specific about the requirement - adding Two-factor authentication (2FA) using Time-based One-time Password (TOTP) for admin accounts with backup codes.
+2. It clearly specifies the method of 2FA, the user group (admin accounts), and the inclusion of backup codes.
+3. The context is clear as it pertains to security enhancements for a specific user group within the application.
+4. There are no ambiguities in the language or scope of the issue.
+5. The requirement can be implemented without any room for multiple interpretations.",8c8e949d368726e1,mistral:7b,0,2026-06-08T19:19:14.191828+00:00
+ISSUE-0023,Improve something #23,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title ""Improve something #23"" is vague as it does not specify what component or feature needs improvement.
+2. There is no clear context provided about the current state of the component or the expected improvements.
+3. Without a specific target metric or baseline, it's unclear how to measure the success of the improvement.
+4. The issue can be interpreted in multiple ways depending on the component or feature being referred to within the system.
+5. Therefore, the issue is ambiguous.",39e8c8643155d5d9,mistral:7b,0,2026-06-08T19:19:15.421098+00:00
+ISSUE-0024,CSV import fails #24,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact location or component where the failure occurs.
+2. It lacks clear context about what constitutes a ""special character"" and under what conditions the problem occurs.
+3. There is no mention of any expected behavior, error messages, or stack traces to help diagnose the issue.
+4. The scope of the issue is unclear as it does not specify which parts of the CSV import process are affected.
+5. The issue can be interpreted in multiple ways, such as a problem with the CSV reader, data validation, or file handling, without more context.",1245cb4b6b0d1830,mistral:7b,0,2026-06-08T19:19:16.923476+00:00
+ISSUE-0025,Profile page slow #25,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue is specific - it mentions the problem lies with the profile page and the cause is identified as unoptimized image loading.
+2. The issue provides a clear context - the profile page takes more than 8 seconds to load due to image optimization issues.
+3. The scope of the issue is defined - the problem is related to image loading on the profile page.
+4. There is no ambiguity in interpretation as the issue directly relates to the performance of the profile page and the need for image optimization.
+5. No further information seems to be missing that could make the issue vague or unclear.",f710ba55a545278a,mistral:7b,0,2026-06-08T19:19:18.312172+00:00
+ISSUE-0026,Notifications broken #26,1,1,"Reasoning:
+1. The issue specifies a problem with push notifications, but it does not clarify the type of notifications (e.g., app updates, messages, etc.).
+2. It mentions that the issue occurs on Android devices running Android 13+, which provides some context, but it does not specify if the same issue exists for other OS versions or device types.
+3. The issue does not provide any information about the expected behavior of notifications under normal circumstances or when they should be delivered.
+4. It is unclear whether the problem lies within the app's code, the notification service, or the Android OS itself.
+5. The issue does not specify any symptoms or error messages that might help in diagnosing the root cause.
+
+Final Answer: Yes",48d2e208b92eed8b,mistral:7b,0,2026-06-08T19:19:19.962395+00:00
+ISSUE-0027,Timezone bug #27,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the problem - a timezone bug affecting timestamps in the event log.
+2. It specifies the component affected (event log) and the nature of the problem (timestamps display in UTC instead of user's local timezone).
+3. Although not explicitly mentioned, it can be inferred that the issue occurs during or after an event is logged.
+4. The problem has a clear context as it pertains to timestamps within the event log.
+5. There is no ambiguity about what needs to be fixed or how to interpret the issue.",22f4b7fd3eae759c,mistral:7b,0,2026-06-08T19:19:21.379052+00:00
+ISSUE-0028,Dropdown empty #28,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a problem with a specific component (Country dropdown), but it does not specify what causes the dropdown to be empty or under which conditions this occurs.
+2. There is no mention of any baseline, target metric, or expected behavior for the dropdown.
+3. The scope of the issue is unclear as it only addresses the registration form for new users, but it doesn't specify if the same problem exists in other forms or contexts.
+4. The issue can be interpreted in multiple ways, such as a programming error, a design flaw, or a data issue.
+5. Without more context or details, it is difficult to determine the root cause and potential solutions for this issue.",07ce15b8f0ceaf5a,mistral:7b,0,2026-06-08T19:19:22.988189+00:00
+ISSUE-0029,Report generation #29,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly states the problem - monthly report generation times out for datasets with more than 10,000 rows. This provides a specific context and condition under which the problem occurs.
+2. It mentions the component involved (monthly report generation), which helps in identifying the area that needs to be addressed.
+3. The issue does not use vague language; it is clear about the expected behavior (report generation) and the undesired behavior (timeouts).
+4. Although no specific solution is proposed, the problem statement itself provides enough information for a developer to start investigating and finding potential solutions.
+5. There is no ambiguity in the scope of the issue as it pertains to monthly report generation specifically for datasets with more than 10,000 rows.",c04ef75ff23c6e51,mistral:7b,0,2026-06-08T19:19:24.747099+00:00
+ISSUE-0030,Missing feature #30,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify what ""the thing"" refers to that was discussed in the meeting.
+2. There is no clear context or scope provided for this missing feature.
+3. Without more information, it's unclear which component or part of the software this feature pertains to.
+4. The issue lacks specificity and can be interpreted in multiple ways based on the discussion that took place during the meeting.
+5. To clarify the issue, additional details such as the topic discussed in the meeting, the intended functionality of the missing feature, and any relevant requirements or constraints should be provided.",07b67c1551107e44,mistral:7b,0,2026-06-08T19:19:26.190342+00:00
+ISSUE-0031,Concurrent edit conflict #31,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a behavior ('data loss') but does not specify what kind of data or under what conditions this loss occurs.
+2. It mentions a problem with concurrent editing, but it is unclear which system components are involved and how the conflict arises.
+3. There is no clear context provided about the environment in which this issue occurs (e.g., web application, mobile app, database).
+4. The description does not specify any expected behavior or desired outcome when two users edit the same record simultaneously.
+5. Without more information, it's difficult to determine the scope of the problem and potential solutions.",838bd024cc692c9b,mistral:7b,0,2026-06-08T19:19:27.633052+00:00
+ISSUE-0032,Wrong redirect #32,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is specific about a problem with redirection after logout, but it does not specify under what conditions this issue occurs or if there are any expected behaviors that are being violated.
+2. It does not provide information on the component(s) involved in the redirection process.
+3. There is no mention of any baseline performance metrics or target improvements for the redirection functionality.
+4. The issue lacks clarity about whether this behavior is intended or unintended, and if it affects all users or only certain user groups.
+5. Without more context, it's difficult to determine the exact cause of the problem and potential solutions.",fbdb73227fabf624,mistral:7b,0,2026-06-08T19:19:29.109087+00:00
+ISSUE-0033,Image resize #33,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly states the problem - ""Profile images are not resized/compressed on upload"". This specifies what the issue is about (profile images) and what the expected behavior should be (resizing or compression upon upload).
+2. The issue also mentions the consequence of the problem - ""causing slow page loads"". This provides a clear context for the issue.
+3. Although not explicitly stated, it can be inferred that the scope of the issue is related to image handling during upload and possibly the user profile section of the application.
+4. The issue does not seem to have multiple interpretations as it directly relates to resizing/compression of images upon upload.
+5. No additional ambiguity is found in the given information, making the issue clear and specific.",65831edb4b1d8ee6,mistral:7b,0,2026-06-08T19:19:30.858649+00:00
+ISSUE-0034,Filter not saving #34,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue is clear and specific - it mentions that applied filters are being reset when navigating back to a certain view.
+2. It does not use vague language or lack context.
+3. The scope of the issue is also clear, as it pertains to the filter functionality within the list view.
+4. There is no ambiguity in interpretation since the problem and its impact are well-defined.
+5. No additional information seems to be missing that could make the issue ambiguous.",9409a5ff6e676f75,mistral:7b,0,2026-06-08T19:19:32.052901+00:00
+ISSUE-0035,Audit log missing #35,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which admin actions are missing from the audit log table or under what conditions this occurs.
+2. There is no clear context provided about the system, database schema, or any relevant details that would help to understand the scope of the problem.
+3. It's unclear whether all admin actions should be recorded or only specific ones, and if there are any exceptions to the rule.
+4. The issue does not provide a baseline for what constitutes ""missing"" in the audit log table, making it difficult to determine the extent of the problem.
+5. Without more information about the system and the expected behavior of the audit log, it can be interpreted in multiple ways, making it an ambiguous issue.",c6a5adc3aa060f4f,mistral:7b,0,2026-06-08T19:19:33.698776+00:00
+ISSUE-0036,Language switch broken #36,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific component that handles language switching and where the problem occurs (e.g., frontend, backend, or both).
+2. It does not specify under what conditions the problem happens or provide any details on how to reproduce the issue.
+3. There is no clear context given regarding the technology stack used for implementing the language switch functionality.
+4. The issue description does not mention a target metric or baseline for performance, making it unclear what ""improve"" means in this context.
+5. Although the problem is related to switching languages mid-session and reverting to English after page refresh, more specific details are needed to understand the scope of the issue and how to address it effectively.",382c8d9fab848f26,mistral:7b,0,2026-06-08T19:19:35.305053+00:00
+ISSUE-0037,Role permission #37,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact behavior that should be restricted for users with 'viewer' role.
+2. It lacks clear context about which admin endpoints are affected and under what conditions they can be accessed.
+3. There is no mention of any expected permissions or authorization mechanisms, making the scope unclear.
+4. The issue can potentially be interpreted in multiple ways depending on the application's design and security policies.
+5. Without more information about the system and its intended functionality, it remains ambiguous as to what constitutes an 'admin endpoint' and why they should be restricted for certain user roles.",9e0425a149273859,mistral:7b,0,2026-06-08T19:19:36.777690+00:00
+ISSUE-0038,Broken link #38,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague — it does not specify which page contains the broken link or what the expected behavior of the link should be.
+2. There is no information about the context in which the problem occurs, such as under what conditions the link becomes broken.
+3. No details are provided about the nature of the broken link (e.g., internal or external, type of content it points to).
+4. The issue does not specify a target page for the user to navigate to, making it unclear if the entire link is broken or just part of it.
+5. Without more context, it's difficult to determine the scope and severity of the problem.",37f0d80626ad0e4f,mistral:7b,0,2026-06-08T19:19:38.284214+00:00
+ISSUE-0039,Chart rendering #39,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the problem - ""Bar chart renders incorrectly when data contains negative values"". This provides a clear context of what is expected (correct rendering) and what is not working as intended (incorrect rendering).
+2. The issue also specifies the type of chart involved, which helps in understanding the scope of the problem.
+3. Although it doesn't mention any specific component or file, the fact that it's about a chart implies it's related to a visualization library or a part of the application responsible for rendering charts.
+4. The issue does not leave room for multiple interpretations as it directly points out the problem with negative values.
+5. Therefore, the issue is not ambiguous.",99649d962d5e2e76,mistral:7b,0,2026-06-08T19:19:39.927632+00:00
+ISSUE-0040,Delete confirmation #40,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description are clear and concise, specifying the action to be taken (adding a confirmation dialog) and the context (deleting records).
+2. The scope of the issue is also defined as deleting records permanently.
+3. There is no ambiguity in the language used or lack of context provided.
+4. The issue can only be interpreted in one way, which is to add a confirmation dialog before permanent record deletion.
+5. Therefore, the issue is not ambiguous.",d105d5bd59d062f6,mistral:7b,0,2026-06-08T19:19:41.139560+00:00
+ISSUE-0041,Fix login bug #41,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague — 'sometimes' does not specify the frequency or conditions under which the login bug occurs.
+2. It does not specify what component or part of the system is causing the problem.
+3. No baseline or target metric for performance improvement is provided.
+4. The description lacks clear context, making it difficult to determine the exact cause and solution for the issue.",411fab4952d48e86,mistral:7b,0,2026-06-08T19:19:42.118836+00:00
+ISSUE-0042,Update UI #42,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which parts of the UI need to be updated or what changes are expected.
+2. There is no clear context provided about why the update is necessary or under what conditions it should occur.
+3. The scope of the update is unclear, as it could potentially involve multiple components within the UI.
+4. Without more information, the issue can be interpreted in multiple ways, making it ambiguous.",2a331773168d4b26,mistral:7b,0,2026-06-08T19:19:43.206688+00:00
+ISSUE-0043,Add export feature #43,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description are specific - it mentions adding an export feature for CSV format from the reports page.
+2. The context is clear as it refers to a specific action on the reports page.
+3. The scope of the issue can be determined, which is to implement an export function for CSV files.
+4. There is no ambiguity in interpretation since the requirement is straightforward - export data from the reports page to CSV format.",6d59e6623197d575,mistral:7b,0,2026-06-08T19:19:44.328293+00:00
+ISSUE-0044,Performance issue #44,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify what part of the application is slow or under which conditions the slowness occurs.
+2. No baseline or target metric for performance improvement is provided.
+3. The issue lacks clear context, making it difficult to determine the scope and focus of the required improvements.
+4. The problem can be interpreted in multiple ways, as there could be various reasons for the app's slow performance across different components or functionalities.
+5. Without more information, it is challenging to pinpoint the exact cause and solution for this issue.",c69ea9f31ef1817a,mistral:7b,0,2026-06-08T19:19:45.604652+00:00
+ISSUE-0045,Null pointer exception #45,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the problem as a NullPointerException in UserService.java at line 142.
+2. The description also mentions that the exception occurs when userId is null, providing more context about the condition causing the error.
+3. The issue provides enough information to identify the specific file, line number, and the condition under which the problem occurs.
+4. There is no ambiguity in the language or scope of the issue.
+5. The stack trace (not provided in this example) would further clarify the context if needed.",f23090f855ecc848,mistral:7b,0,2026-06-08T19:19:46.918776+00:00
+ISSUE-0046,Search not working #46,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the context of the search (search bar, database query, API call, etc.), what should be searched for, or under what conditions the problem occurs.
+2. There is no mention of the expected behavior or any baseline to compare against.
+3. No specific component is named that could help in identifying the root cause of the issue.
+4. The description does not provide enough information to reproduce or diagnose the problem effectively.",ac32f134edf331ca,mistral:7b,0,2026-06-08T19:19:48.058346+00:00
+ISSUE-0047,Add dark mode #47,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states ""Add dark mode"", which specifies the feature to be implemented.
+2. The description provides a clear context by mentioning the implementation details such as a toggle in settings and persistence via localStorage.
+3. Although it doesn't specify the exact components that need to be modified, the focus on implementing dark mode within the app gives a general scope of the work required.
+4. The issue can be interpreted in one way only, which is to implement a dark mode feature with the specified requirements.",6b776d90c3c70673,mistral:7b,0,2026-06-08T19:19:49.293334+00:00
+ISSUE-0048,Crash on startup #48,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the cause of the crash or under what conditions the problem occurs.
+2. It lacks clear context since there's no information about the operating system, device, or any other relevant details that could help identify the root cause.
+3. The scope of the issue is unclear, as it doesn't specify which part of the app is causing the crash.
+4. The issue can be interpreted in multiple ways, such as a problem with the user interface, database connection, or any other component within the app.
+5. Without additional information, it would require further investigation to determine the exact cause and solution for this issue.",87d234eaa0692ef0,mistral:7b,0,2026-06-08T19:19:50.802288+00:00
+ISSUE-0049,Email validation #49,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title ""Email validation #49"" clearly states the purpose of the issue - to validate emails.
+2. The description specifies that the email format should be validated on a registration form, which provides context for where and when the validation is needed.
+3. The requirement to show inline error messages also adds clarity about the expected behavior when an invalid email format is entered.
+4. Although it doesn't specify the exact implementation details or any technical constraints, the issue is still clear enough for a developer to start working on it without ambiguity.",4758e53622f68a4d,mistral:7b,0,2026-06-08T19:19:52.120151+00:00
+ISSUE-0050,Database timeout #50,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly specifies the problem - database timeouts occur under specific conditions (heavy load and more than 500 concurrent users).
+2. It mentions the affected component - the database.
+3. The issue also provides a context for the timeout - during heavy load with a specified number of concurrent users.
+4. Although no exact error message or stack trace is provided, the description still gives enough information to understand the problem and its cause (high user load).
+5. The issue does not use vague language; instead, it provides clear context and scope for the problem at hand.",d9b1d95d6fce6e28,mistral:7b,0,2026-06-08T19:19:53.505209+00:00
+ISSUE-0051,Missing error handling #51,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which errors need to be handled or in what context they occur.
+2. There is no clear scope defined for the error handling, such as which parts of the software are affected.
+3. The description lacks specificity about the types of errors that should be addressed and how they should be handled.
+4. Without more context, it's unclear whether this issue pertains to front-end, back-end, or both components of the system.
+5. The issue can potentially be interpreted in multiple ways, making it ambiguous.",b1372721b9cab1cd,mistral:7b,0,2026-06-08T19:19:54.919460+00:00
+ISSUE-0052,API rate limiting #52,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the requirement for implementing rate limiting of a specific number of requests per minute per API key, along with the response to be used when the limit is exceeded.
+2. It specifies the API key, which provides a clear context for the scope of the requirement.
+3. The requirement is not vague as it defines the exact number of requests and the response to be used when the limit is exceeded.
+4. There is no ambiguity in interpretation since the requirement is straightforward and well-defined.
+5. The issue provides enough information for a developer to understand what needs to be done, making it clear and unambiguous.",bde41e5c3262b053,mistral:7b,0,2026-06-08T19:19:56.419239+00:00
+ISSUE-0053,Button color #53,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which button needs to be changed or what the new color should be.
+2. There is no context provided about where this button appears in the application or under what conditions it should change color.
+3. Without more information, it's unclear if this is a single button or multiple buttons across different parts of the application.
+4. The issue lacks clarity on whether there are any design guidelines or branding requirements that need to be considered when changing the button color.
+5. There is no mention of how the change should be implemented, such as through code changes, CSS updates, or other methods.",9e5ae63d596d21be,mistral:7b,0,2026-06-08T19:19:57.877956+00:00
+ISSUE-0054,Memory leak #54,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title ""Memory leak #54"" clearly identifies the problem as a memory-related issue.
+2. The description specifies that memory usage grows unbounded in the background sync service over 24 hours, providing a clear context and scope of the problem.
+3. It mentions the component affected (background sync service), which helps to narrow down the area where the investigation should focus.
+4. Although it doesn't provide an exact line number or stack trace, the description still provides enough information for developers to understand the issue and start investigating.
+5. The problem can be interpreted as a specific memory leak in the background sync service over a certain period (24 hours), making it less ambiguous compared to examples like ""Improve performance #3"".",0249275ae9778ace,mistral:7b,0,2026-06-08T19:19:59.580767+00:00
+ISSUE-0055,Update docs #55,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title and description are vague - it does not specify which documents need to be updated or what parts of the documentation are outdated.
+2. There is no clear context provided about the scope of the update, such as which sections, versions, or target audience for the documentation.
+3. Without more information, it's unclear how extensive the updates will be and what resources might be required to complete them.
+4. The issue does not provide any criteria for determining when the documentation is considered up-to-date, making it difficult to measure progress or completion.
+5. There is no indication of which documents are affected by the outdated information, making it challenging to prioritize and address the updates effectively.",be16ad9c001336ff,mistral:7b,0,2026-06-08T19:20:01.172753+00:00
+ISSUE-0056,File upload fails #56,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly states the problem - file uploads larger than 10MB fail. This specifies the condition under which the problem occurs and provides a clear context.
+2. It mentions the error received (413) and the endpoint where the failure happens (/upload). This helps to identify the specific area of concern.
+3. The issue does not use vague language, as it is specific about the file size limit causing the problem.
+4. Although no further details are provided about the cause or potential solutions, the issue is still clearer than ambiguous due to its specificity regarding the error and endpoint involved.
+5. The scope of the issue (uploading files larger than 10MB) is also well-defined.",a64867e5e363e57f,mistral:7b,0,2026-06-08T19:20:03.103607+00:00
+ISSUE-0057,Wrong total #57,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify what is meant by ""the total"" - it could refer to various totals within the cart such as subtotal, tax, or grand total.
+2. It also lacks context about what might be causing the incorrect total and under which conditions this error occurs.
+3. Without more information on the system's architecture, it is unclear which component(s) are involved in calculating the total.
+4. The issue does not provide a baseline or target value for the correct total.
+5. As a result, the issue can be interpreted in multiple ways and requires further clarification to be actionable.",2707ad701f31c158,mistral:7b,0,2026-06-08T19:20:04.558284+00:00
+ISSUE-0058,Session expiry #58,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the requirement for implementing automatic session expiry, which specifies the desired behavior.
+2. The description further clarifies that the session should expire after 30 minutes of inactivity and includes a requirement for a warning dialog before expiration.
+3. The context is also provided as it pertains to sessions within an application.
+4. There is no ambiguity about what needs to be done or how it should be implemented.
+5. The scope can be determined based on the given details, making it clear and unambiguous.",35484971c336d182,mistral:7b,0,2026-06-08T19:20:05.869520+00:00
+ISSUE-0059,Fix typo #59,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague - it does not specify where the typo is located or what the correct spelling should be.
+2. There's no clear context provided about which file, function, or user interface element contains the typo.
+3. No information is given about how the typo affects the software functionality or user experience.
+4. The issue does not provide a baseline for improvement or any specific component that needs to be checked.
+5. Without more details, it's difficult to determine the exact nature and impact of the typo, making it ambiguous.",3368007322ac2b27,mistral:7b,0,2026-06-08T19:20:07.203457+00:00
+ISSUE-0060,Pagination broken #60,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue mentions that pagination is broken but does not specify what exactly is not working correctly (e.g., incorrect page numbers displayed, data not loading properly, etc.).
+2. It also lacks clarity on the context of the problem, as it only refers to the user management table without specifying which part of the application or system this table belongs to.
+3. The issue does not provide any details about the expected behavior or the conditions under which the problem occurs.
+4. Although the filter is mentioned, there's no information on what kind of filter it is and how it affects pagination.
+5. Without more context or specifics, it can be difficult to determine the root cause and potential solutions for this issue.",54576fe166b35285,mistral:7b,0,2026-06-08T19:20:08.837756+00:00
+ISSUE-0061,Add logging #61,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the scope of what needs to be logged, the level of detail required in logs, or where these logs should be stored.
+2. There's no mention of which component(s) need logging or under what conditions logging should occur.
+3. Without a clear context and specific requirements, it can be interpreted in multiple ways.
+4. The issue does not provide any baseline or target metric for performance improvement.
+5. Therefore, the issue is ambiguous.",2c78eebe6e1af34f,mistral:7b,0,2026-06-08T19:20:10.019645+00:00
+ISSUE-0062,Two-factor auth #62,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the requirement - ""Add TOTP-based 2FA support for admin accounts with backup codes."" This specifies the feature to be added (Two-factor auth), the method used (TOTP), and the scope of application (admin accounts).
+2. The description further clarifies that backup codes are required, which provides additional context about the recovery mechanism in case of lost access devices.
+3. Although no specific performance metrics or baseline is mentioned, the requirement itself is clear enough to guide developers towards implementing the feature.
+4. There's no ambiguity regarding the language used or the components involved.
+5. The issue seems well-defined and actionable for a software development team.",54090691e995d5c6,mistral:7b,0,2026-06-08T19:20:11.610446+00:00
+ISSUE-0063,Improve something #63,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title ""Improve something #63"" is vague as it does not specify what component or feature needs improvement.
+2. There is no context provided about the current performance issues or user complaints that necessitate this improvement.
+3. Without a clear target metric or baseline, it's unclear how to measure success and determine when the issue has been resolved.
+4. The description ""Something needs to be improved"" does not provide enough information for developers to start working on a solution.
+5. Overall, the issue lacks clarity and specificity, making it ambiguous.",7a2b1c4c87a4c676,mistral:7b,0,2026-06-08T19:20:12.963662+00:00
+ISSUE-0064,CSV import fails #64,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact location or component where the failure occurs.
+2. It lacks clear context about what constitutes a ""special character"" and under what conditions the failure happens.
+3. There's no mention of any expected behavior, error messages, or stack traces to help diagnose the problem.
+4. The scope of the issue is unclear as it does not specify which parts of the CSV import process are affected.
+5. The issue can be interpreted in multiple ways since ""CSV files with special characters"" could refer to various scenarios.",8da4a708c8daf6a2,mistral:7b,0,2026-06-08T19:20:14.347014+00:00
+ISSUE-0065,Profile page slow #65,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue is specific - it mentions the problem lies with the profile page and the cause is identified as unoptimized image loading.
+2. The issue provides a clear context - the profile page takes more than 8 seconds to load due to image optimization issues.
+3. The scope of the issue is defined - the problem is related to image loading on the profile page.
+4. There is no ambiguity in interpretation as the issue directly relates to the performance of the profile page and the need for image optimization.
+5. No further information seems to be missing that could make the issue vague or unclear.",8ec7792c20989af6,mistral:7b,0,2026-06-08T19:20:15.746630+00:00
+ISSUE-0066,Notifications broken #66,0,1,"Reasoning:
+1. The issue specifies a problem with push notifications, but it does not clarify what exactly is broken or under which conditions the problem occurs.
+2. It mentions that the problem only affects Android devices running Android 13+, providing some context, but without further details, it remains unclear if this is a device-specific issue, an OS version-related issue, or something else.
+3. The scope of the issue is limited to Android devices, but there's no information about other platforms (iOS, web, etc.) that might be affected.
+4. The issue does not provide any specific error messages or stack traces for further investigation.
+5. The issue does not specify a target resolution or desired outcome.
+
+Final Answer: Yes",b3303537eb4940de,mistral:7b,0,2026-06-08T19:20:17.385492+00:00
+ISSUE-0067,Timezone bug #67,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state that there is a problem with timestamps displaying in UTC instead of the user's local timezone in the event log.
+2. It specifies the component affected (event log) and the problem (incorrect timestamp display).
+3. Although it does not provide details about the cause or potential solutions, the issue is still clearer than Example 3 as it identifies the incorrect behavior and the context where it occurs.
+4. The issue could potentially have multiple causes, but the problem itself is not ambiguous.
+5. The issue provides enough information for a developer to start investigating and understanding the problem without needing additional clarification.",27da64e9da912cac,mistral:7b,0,2026-06-08T19:20:18.924291+00:00
+ISSUE-0068,Dropdown empty #68,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a problem with a specific component (Country dropdown), but it does not specify what causes the dropdown to be empty or under which conditions this happens.
+2. There is no mention of any baseline, target metric, or expected behavior for the dropdown.
+3. The scope of the issue is limited to the registration form for new users, but it does not clarify if this problem occurs in other forms or contexts.
+4. The issue can be interpreted in multiple ways, such as a programming error, a design flaw, or a data issue.
+5. Without more context or details, it remains ambiguous what needs to be done to resolve the issue.",9e47a0ca37a96733,mistral:7b,0,2026-06-08T19:20:20.439319+00:00
+ISSUE-0069,Report generation #69,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly states the problem - monthly report generation times out for datasets with more than 10,000 rows. This provides a specific context and condition under which the problem occurs.
+2. It mentions the component involved (monthly report generation), which helps in identifying the area that needs to be addressed.
+3. The issue does not use vague language; it is clear about the expected behavior (report generation) and the undesired behavior (timeouts).
+4. Although no specific solution is proposed, the problem statement itself provides enough information for a developer to start investigating and finding potential solutions.
+5. There is no ambiguity in the scope of the issue as it pertains to monthly report generation specifically for datasets with more than 10,000 rows.",a3fcdd08bf37c443,mistral:7b,0,2026-06-08T19:20:22.150944+00:00
+ISSUE-0070,Missing feature #70,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify what ""the thing"" refers to that was discussed in the meeting.
+2. There is no clear context or scope provided for this missing feature.
+3. Without more information, it's unclear which component or part of the software this feature pertains to.
+4. The issue lacks a specific requirement or expected behavior for the new feature.
+5. It can be interpreted in multiple ways depending on what was discussed during the meeting without further clarification.",4f2450905df1ece5,mistral:7b,0,2026-06-08T19:20:23.348356+00:00
+ISSUE-0071,Concurrent edit conflict #71,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a behavior but does not specify the exact component or system where this concurrent edit conflict occurs.
+2. It mentions data loss, but without providing details on what kind of data is lost and under what conditions, the problem remains unclear.
+3. There's no clear context given about how the conflict is detected or resolved currently.
+4. The scope of the issue is not defined; it could affect multiple records or just specific ones.
+5. Without more information, it can be interpreted in multiple ways, making it an ambiguous issue.",ea9594b7a9ed19b5,mistral:7b,0,2026-06-08T19:20:24.649016+00:00
+ISSUE-0072,Wrong redirect #72,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify under what conditions or scenarios the wrong redirection occurs.
+2. It lacks clear context about why users should be redirected to the login page instead of the dashboard after logout.
+3. There is no mention of which part of the system (component, service, etc.) is causing the issue.
+4. The scope of the problem is not clearly defined, for example, whether this issue affects all users or only specific user roles.
+5. Without more information, it can be interpreted in multiple ways, such as a coding error, misconfiguration, or incorrect business logic.",daf6ca4adc2b7677,mistral:7b,0,2026-06-08T19:20:26.072593+00:00
+ISSUE-0073,Image resize #73,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the problem - ""Profile images are not resized/compressed on upload"". This specifies what the issue is about (profile images) and what the expected behavior should be (resizing/compression).
+2. The cause of slow page loads due to uncompressed images is also mentioned, providing some context for the problem.
+3. Although not explicitly stated, it can be inferred that the scope of the issue involves image handling during upload and possibly image display on the profile page.
+4. There is no ambiguity about how the issue should be resolved - by implementing resizing/compression functionality for profile images upon upload.
+5. The problem can be interpreted in one way only, which makes it clear and unambiguous.",96c1403a0362dcfc,mistral:7b,0,2026-06-08T19:20:27.764985+00:00
+ISSUE-0074,Filter not saving #74,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly states the problem - applied filters are being reset.
+2. It specifies the context - when navigating back to the list view.
+3. There is no ambiguity about what component is involved, as it pertains to a filter in a list view.
+4. No specific cause or solution is provided, but the problem itself is clear and concise.
+5. The issue can be understood without additional context, making it less ambiguous compared to some other examples.",bdf3bafdfbd40575,mistral:7b,0,2026-06-08T19:20:28.931889+00:00
+ISSUE-0075,Audit log missing #75,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which admin actions are missing from the audit log table or under what conditions this occurs.
+2. There is no clear context provided about the system, database schema, or expected behavior of the audit log feature.
+3. The scope of the issue is unclear since it doesn't mention if only certain types of admin actions are affected or all of them.
+4. The issue can be interpreted in multiple ways, such as missing records due to a technical error, configuration issue, or intentional omission.
+5. Without more information about the system and expected behavior, it is difficult to determine the root cause and potential solutions for this issue.",2cf796e2758ad459,mistral:7b,0,2026-06-08T19:20:30.452920+00:00
+ISSUE-0076,Language switch broken #76,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the problem - ""Language switch broken"" and ""Switching language mid-session reverts to English after page refresh"".
+2. It specifies the context of the problem - language switching during a session.
+3. Although it doesn't provide specific details about the underlying cause, the issue is still clear enough for developers to understand what needs to be fixed.
+4. The problem can be tested easily by reproducing the steps mentioned in the description.
+5. There is no ambiguity regarding the scope of the issue as it pertains to language switching during a session.",34b5a27f27bb2fb4,mistral:7b,0,2026-06-08T19:20:31.826716+00:00
+ISSUE-0077,Role permission #77,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact behavior that should be restricted for users with 'viewer' role.
+2. It lacks clear context about which admin endpoints are affected and under what conditions they can be accessed.
+3. There is no mention of any expected or desired permissions for the 'viewer' role, making it unclear what constitutes a fix for this issue.
+4. The scope of the problem is not defined, as it does not specify whether this issue affects all users with the 'viewer' role or only certain ones.
+5. The issue can be interpreted in multiple ways, such as requiring authentication, implementing access controls, or modifying URL structures to prevent direct access to admin endpoints.",9517a21c53babdc5,mistral:7b,0,2026-06-08T19:20:33.454588+00:00
+ISSUE-0078,Broken link #78,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague — it does not specify which page has the broken link, what the expected behavior of the link is, or under what conditions the problem occurs.
+2. There is no clear context provided about the nature of the broken link (e.g., internal or external, type of link, etc.)
+3. The scope of the issue is unclear as it does not specify which parts of the page should be checked for broken links.
+4. The issue can be interpreted in multiple ways, such as a missing link, a link leading to an error page, or a link with incorrect functionality.
+5. Without more information, it's difficult to determine the exact cause and solution for the problem.",6aaa533a5aad52bd,mistral:7b,0,2026-06-08T19:20:35.021274+00:00
+ISSUE-0079,Chart rendering #79,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the problem - ""Bar chart renders incorrectly when data contains negative values"". This provides a clear context of what is expected (correct rendering) and what is not working as intended (incorrect rendering).
+2. The issue also specifies the type of chart involved, which helps in understanding the scope of the problem.
+3. Although it doesn't mention any specific component or file, the fact that it's about a chart implies it's related to a visualization library or a part of the application responsible for rendering charts.
+4. The issue is not vague as it provides a clear condition under which the problem occurs (when data contains negative values).
+5. There is no ambiguity in interpretation since the problem and its cause are explicitly stated.",d15c6675a75fecab,mistral:7b,0,2026-06-08T19:20:36.740787+00:00
+ISSUE-0080,Delete confirmation #80,0,0,"Final Answer: No
+
+Reasoning:
+1. The title and description are clear and concise, specifying the action to be taken (""Add a confirmation dialog"") and the context where it should be applied (""before deleting records permanently"").
+2. The issue does not use vague language or lack clear context.
+3. The scope of the issue is defined as ""deleting records,"" which provides a specific focus for development efforts.
+4. There is no ambiguity in the interpretation of the issue, as it only requires adding a confirmation dialog before permanent deletion of records.
+5. The issue does not have multiple possible interpretations, making it unambiguous.",3270c3ad7f11e548,mistral:7b,0,2026-06-08T19:20:38.150838+00:00
+ISSUE-0081,Fix login bug #81,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague — 'sometimes' does not specify the frequency or conditions under which the login bug occurs.
+2. It does not specify what component or part of the login process is causing the problem.
+3. No baseline or target metric for performance improvement is mentioned.
+4. The description lacks clear context about the nature of the login bug and potential causes.
+5. Without more information, it's unclear how to effectively address the issue.",4024a4eb446f0af8,mistral:7b,0,2026-06-08T19:20:39.275667+00:00
+ISSUE-0082,Update UI #82,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which parts of the UI need to be updated or what changes are expected.
+2. There is no clear context provided about why the update is necessary or under what conditions it should occur.
+3. The scope of the update is unclear, as it could potentially involve multiple components or screens within the UI.
+4. Without more information, the issue can be interpreted in multiple ways, making it ambiguous.
+5. No baseline for measuring success or target metrics are mentioned to evaluate the effectiveness of the update.",87a9fada0cb87dbf,mistral:7b,0,2026-06-08T19:20:40.567727+00:00
+ISSUE-0083,Add export feature #83,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description are specific - ""Add export feature #83"" and ""We need to export data to CSV format from the reports page"".
+2. It specifies the desired output format (CSV) and the location where the feature should be implemented (reports page).
+3. Although it doesn't provide details about the exact implementation, the context is clear enough for a developer to start working on the task.
+4. The scope of the issue can be determined based on the given information.
+5. There is no ambiguity in the language used or the context provided.",c22840399e76b99d,mistral:7b,0,2026-06-08T19:20:41.937984+00:00
+ISSUE-0084,Performance issue #84,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify what part of the application is slow or under which conditions the slowness occurs.
+2. No baseline or target metric for performance improvement is provided.
+3. The issue lacks clear context, making it difficult to determine the scope and focus of the required improvements.
+4. The problem can be interpreted in multiple ways, as there could be various reasons for the app's slow performance across different components or functionalities.
+5. Without more information, it is challenging to pinpoint the exact cause and solution for the issue.",44234890f586b1e0,mistral:7b,0,2026-06-08T19:20:43.207824+00:00
+ISSUE-0085,Null pointer exception #85,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the problem as a NullPointerException.
+2. The description specifies the exact file (UserService.java), line number (142), and condition (when userId is null).
+3. It provides enough context for developers to understand where and under what conditions the error occurs.
+4. There are no vague or unclear aspects in the issue description.
+5. The issue is specific and actionable, making it clear what needs to be done to resolve it.",818a9288fc9b97d7,mistral:7b,0,2026-06-08T19:20:44.390105+00:00
+ISSUE-0086,Search not working #86,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the context of the search (search bar, database query, API call, etc.), what should be searched for, or under what conditions the problem occurs.
+2. There's no mention of the expected behavior or the baseline performance of the search function before the issue occurred.
+3. The scope of the issue is unclear as it does not specify which part of the system is affected by the problem.
+4. The issue can be interpreted in multiple ways, such as a problem with the front-end search interface, back-end database query, or even an issue with the indexing service if applicable.
+5. Without more context or details, it's difficult to determine the root cause and potential solutions for this issue.",d0f2899c20c043b4,mistral:7b,0,2026-06-08T19:20:46.070409+00:00
+ISSUE-0087,Add dark mode #87,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states ""Add dark mode"", which is a specific feature to be implemented.
+2. The description provides details about the implementation, including adding a toggle in settings and storing preferences using localStorage.
+3. Although no baseline performance or specific components are mentioned, the context of implementing a dark mode feature in settings is clear enough for developers to understand the scope of work.
+4. There's no ambiguity regarding what needs to be done as it involves adding a new feature with specified implementation details.
+5. The issue does not use vague language or lack clear context, making it less likely to be interpreted in multiple ways.",754ff4947811dd44,mistral:7b,0,2026-06-08T19:20:47.519632+00:00
+ISSUE-0088,Crash on startup #88,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the cause of the crash or under what conditions the problem occurs.
+2. It lacks clear context since there's no information about the operating system, device, or any other relevant details that could help identify the root cause.
+3. The scope of the issue is unclear, as it doesn't specify which part of the app is causing the crash.
+4. The issue can be interpreted in multiple ways, such as a problem with the user interface, database connection, or any other component within the app.
+5. Without additional information, it would require further investigation to determine the exact cause and solution for this issue.",04ca09dfcba3ea23,mistral:7b,0,2026-06-08T19:20:49.020349+00:00
+ISSUE-0089,Email validation #89,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title ""Email validation #89"" clearly states the purpose of the issue - to validate emails.
+2. The description mentions the specific context where the validation is needed - on the registration form.
+3. It also specifies the desired outcome - showing inline error messages when the email format is invalid.
+4. There is no ambiguity about what component or system needs to be modified, as it pertains to the registration form.
+5. The issue provides a clear scope and expected behavior, making it less likely to be interpreted in multiple ways.",dfa54c13c6d599d5,mistral:7b,0,2026-06-08T19:20:50.310269+00:00
+ISSUE-0090,Database timeout #90,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly specifies the problem - database timeouts occur under specific conditions (heavy load and more than 500 concurrent users).
+2. It mentions the affected component - the database.
+3. The issue also provides a clear context - the timeout happens during DB queries.
+4. Although no exact duration or error message is given, the description still provides enough information to understand the problem and its cause (heavy load with many concurrent users).
+5. There might be ambiguity regarding the solution, but the problem itself is not vague or unclear.",3cfca4cf1489c5f0,mistral:7b,0,2026-06-08T19:20:51.645106+00:00
+ISSUE-0091,Missing error handling #91,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which errors need to be handled or in what context they occur.
+2. There is no clear scope defined for the error handling, such as which modules or functions are affected.
+3. The description lacks specificity about the expected behavior after error handling is implemented.
+4. Without more context, it's unclear whether this issue refers to front-end, back-end, or both error handling.
+5. There is no mention of any baseline or target metrics for performance improvement, making it difficult to determine if the error handling will meet the desired standards.",abafd5201a9cec35,mistral:7b,0,2026-06-08T19:20:53.037330+00:00
+ISSUE-0092,API rate limiting #92,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the requirement for implementing rate limiting of a specific number of requests per minute per API key, along with the response to be used when the limit is exceeded.
+2. The context is provided as it pertains to an API key.
+3. The scope is defined by the number of requests allowed per minute and per API key.
+4. There is no ambiguity in interpretation since the requirement is specific and well-defined.
+5. The issue can be understood and addressed without needing additional context or clarification.",a17de65c616bfd74,mistral:7b,0,2026-06-08T19:20:54.313355+00:00
+ISSUE-0093,Button color #93,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which button(s) need to be changed or what the new color should be.
+2. There is no context provided about where this change needs to occur in the software, or under what conditions the change should take place.
+3. Without more information, it's unclear if this change affects a single button, multiple buttons, or an entire interface.
+4. The issue does not provide any details about the current color of the button(s) or why the change is necessary.
+5. It lacks clarity on how to determine when the change has been successfully implemented, making it difficult to verify that the issue has been resolved.",b2475f1f1db0c7df,mistral:7b,0,2026-06-08T19:20:55.836457+00:00
+ISSUE-0094,Memory leak #94,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states ""Memory leak #94"", which indicates that there is a problem related to memory management in the background sync service.
+2. The description specifies the context of the issue, stating that memory usage grows unbounded over 24 hours in the background sync service.
+3. Although it doesn't specify the exact component causing the leak or provide a baseline for performance, the issue provides enough information to identify and investigate the problem.
+4. The issue is not vague as it clearly points out the nature of the problem (memory leak) and the context where it occurs (background sync service).
+5. The description also implies that further investigation may be needed to pinpoint the exact cause and potential solutions, but the initial problem statement itself is clear enough for a software requirements analyst to understand and start working on.",fc28bf7c9fce278e,mistral:7b,0,2026-06-08T19:20:57.633763+00:00
+ISSUE-0095,Update docs #95,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title and description are vague - it does not specify which documents need to be updated or what parts of the documentation are outdated.
+2. There is no clear context provided about the scope of the update, such as which sections, versions, or target audience of the documentation.
+3. Without more information, it's unclear how extensive the updates will be and what resources might be required to complete them.
+4. The issue does not provide any specific criteria for determining when the documentation is considered up-to-date, making it difficult to measure progress or completion.
+5. There is no indication of which documents are affected by the outdated information, making it challenging to prioritize and address the updates effectively.",8b3b858ef6e999a8,mistral:7b,0,2026-06-08T19:20:59.234988+00:00
+ISSUE-0096,File upload fails #96,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly states the problem - file uploads larger than 10MB fail.
+2. It specifies the error encountered - a 413 error on the /upload endpoint.
+3. The issue provides context about the endpoint and the size limit of the files causing the problem.
+4. The issue does not use vague language or lack clear context.
+5. The scope of the issue is also clear, as it pertains to file uploads larger than 10MB on the /upload endpoint.",ce9d0cf717e75483,mistral:7b,0,2026-06-08T19:21:00.457220+00:00
+ISSUE-0097,Wrong total #97,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title and description are vague as they do not specify what is considered ""wrong"" about the total, under which conditions it occurs, or in which part of the cart's functionality this error manifests.
+2. There is no clear context provided regarding the expected behavior or the scope of the problem.
+3. The issue can be interpreted in multiple ways, such as a calculation error, incorrect data loading, or an issue with the user interface displaying the total.
+4. No baseline or target metric for the total is mentioned to determine if it's actually wrong or not.
+5. Without more information, it's difficult to pinpoint the exact cause and potential solutions for this issue.",bf2a1a7148ce4be4,mistral:7b,0,2026-06-08T19:21:02.040891+00:00
+ISSUE-0098,Session expiry #98,1,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the requirement for implementing automatic session expiry, which specifies the desired behavior.
+2. The description further clarifies that the session should expire after 30 minutes of inactivity and includes a requirement for a warning dialog before expiration.
+3. The context is also provided as it pertains to user sessions within an application.
+4. There are no ambiguities regarding what component or system this applies to, making it clear that the issue concerns session management.
+5. Overall, the issue is specific and unambiguous in its requirements.",90046802aae7b290,mistral:7b,0,2026-06-08T19:21:03.387390+00:00
+ISSUE-0099,Fix typo #99,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague - it does not specify where the typo is located or what the correct spelling should be.
+2. There's no clear context provided about which file, function, or user interface element contains the typo.
+3. The scope of the issue is unclear as it doesn't mention if there are multiple typos or just one.
+4. The issue can be interpreted in multiple ways depending on where the typo might occur within the software system.
+5. Without more information, it's difficult to determine exactly what needs to be fixed, making the issue ambiguous.",fbf7e5232ec92bfc,mistral:7b,0,2026-06-08T19:21:04.779892+00:00
+ISSUE-0100,Pagination broken #100,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue mentions that pagination is broken but does not specify what exactly is not working (e.g., incorrect page numbers, no data displayed, etc.).
+2. It also lacks clarity on the context of the problem, such as which part of the application uses this pagination feature and under what conditions it breaks.
+3. The issue does not provide any details about the expected behavior or the desired outcome when a filter is applied.
+4. There is no mention of the specific component that needs to be improved or the scope of the problem.
+5. Without more context, it's unclear how to prioritize this issue or determine its impact on the overall system.",51a6dafd85aa9f1b,mistral:7b,0,2026-06-08T19:21:06.300419+00:00
