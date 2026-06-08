@@ -1,0 +1,17 @@
+model,strategy,model_desc,accuracy,precision,recall,f1,tp,fp,tn,fn,n_total,n_valid,n_invalid
+llama3.1,zero_shot,Llama 3.1 8B Instruct,0.515,0.5143,0.54,0.5268,54,51,49,46,200,200,0
+llama3.1,few_shot,Llama 3.1 8B Instruct,0.515,0.5143,0.54,0.5268,54,51,49,46,200,200,0
+llama3.1,cot,Llama 3.1 8B Instruct,0.515,0.5143,0.54,0.5268,54,51,49,46,200,200,0
+llama3.1,few_shot_cot,Llama 3.1 8B Instruct,0.515,0.5143,0.54,0.5268,54,51,49,46,200,200,0
+mistral,zero_shot,Mistral 7B Instruct v0.3,0.58,0.5702,0.65,0.6075,65,49,51,35,200,200,0
+mistral,few_shot,Mistral 7B Instruct v0.3,0.58,0.5702,0.65,0.6075,65,49,51,35,200,200,0
+mistral,cot,Mistral 7B Instruct v0.3,0.58,0.5702,0.65,0.6075,65,49,51,35,200,200,0
+mistral,few_shot_cot,Mistral 7B Instruct v0.3,0.58,0.5702,0.65,0.6075,65,49,51,35,200,200,0
+qwen2.5,zero_shot,Qwen 2.5 14B Instruct,0.455,0.4563,0.47,0.4631,47,56,44,53,200,200,0
+qwen2.5,few_shot,Qwen 2.5 14B Instruct,0.455,0.4563,0.47,0.4631,47,56,44,53,200,200,0
+qwen2.5,cot,Qwen 2.5 14B Instruct,0.455,0.4563,0.47,0.4631,47,56,44,53,200,200,0
+qwen2.5,few_shot_cot,Qwen 2.5 14B Instruct,0.455,0.4563,0.47,0.4631,47,56,44,53,200,200,0
+ensemble,zero_shot,ensemble,0.55,0.5455,0.6,0.5714,60,50,50,40,200,200,0
+ensemble,few_shot,ensemble,0.55,0.5455,0.6,0.5714,60,50,50,40,200,200,0
+ensemble,cot,ensemble,0.55,0.5455,0.6,0.5714,60,50,50,40,200,200,0
+ensemble,few_shot_cot,ensemble,0.55,0.5455,0.6,0.5714,60,50,50,40,200,200,0

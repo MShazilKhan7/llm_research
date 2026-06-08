@@ -1,0 +1,36 @@
+{
+  "run_timestamp": "2026-06-04T19:05:18.735264+00:00",
+  "dataset": {
+    "path": "E:\\Apps\\Mitacs project\\llm-research\\dataset\\ground_truth.csv",
+    "checksum": "b9af8b24d17bc7be390144beb5b4b1af",
+    "algorithm": "md5",
+    "n_issues": 100
+  },
+  "models": [
+    "llama3.1"
+  ],
+  "tasks": [
+    "ambiguity",
+    "incompleteness"
+  ],
+  "strategies": [
+    "cot"
+  ],
+  "model_versions": {
+    "llama3.1": "llama3.1:8b-instruct-q4_K_M"
+  },
+  "llm_temperature": 0,
+  "environment": {
+    "python_version": "3.13.3 (tags/v3.13.3:6280bb5, Apr  8 2025, 14:47:33) [MSC v.1943 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "executable": "E:\\Apps\\Mitacs project\\llm-research\\llmresearch\\Scripts\\python.exe",
+    "pkg_openai": "2.41.0",
+    "pkg_google": "not installed",
+    "pkg_groq": "1.4.0",
+    "pkg_pandas": "3.0.3",
+    "pkg_numpy": "2.4.6",
+    "pkg_matplotlib": "3.10.9"
+  },
+  "mock_mode": false,
+  "resume": false
+}
