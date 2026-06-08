@@ -47,19 +47,19 @@ OLLAMA_BASE_URL = os.environ.get("OLLAMA_BASE_URL", "http://localhost:11434")
 MODEL_REGISTRY: dict[str, dict] = {
     # ── Ollama / local ──────────────────────────────────────────
     "llama3.1": {
-        "model_string": "llama3.1:8b-instruct-q4_K_M",
+        "model_string": "llama3.1:8b",
         "backend":      "ollama",
         "rpm":          120,   # local — limited only by hardware
-        "description":  "Llama 3.1 8B Instruct",
+        "description":  "Llama 3.1 8B",
     },
     "qwen2.5": {
-        "model_string": "qwen2.5:14b-instruct-q4_K_M",
+        "model_string": "qwen2.5:14b",
         "backend":      "ollama",
         "rpm":          60,
         "description":  "Qwen 2.5 14B Instruct",
     },
     "mistral": {
-        "model_string": "mistral:7b-instruct-v0.3",
+        "model_string": "mistral:7b",
         "backend":      "ollama",
         "rpm":          120,
         "description":  "Mistral 7B Instruct v0.3",
