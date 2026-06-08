@@ -1,311 +1,307 @@
 issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc
 ISSUE-0001,Fix login bug #1,0,1,"Here's my analysis:
 
-* 1. The issue title mentions a specific bug (#1), which implies that there might be other login bugs, but it doesn't provide any context about the current state of the system or what has been tried so far.
-* 2. The language used is quite vague: ""sometimes"" is a subjective term and doesn't give any indication of how often the issue occurs, making it difficult to reproduce and diagnose the problem.
-* 3. This issue can be interpreted in multiple ways:
-	+ What exactly does ""cannot log in"" mean? Is it an authentication error, a UI issue, or something else?
-	+ What is meant by ""sometimes""? Does it happen on every login attempt, or only occasionally?
+* 1. The issue title mentions a specific bug (#1), and the description states that users cannot log in sometimes, which implies that there is some information about the problem.
+* 2. However, upon closer inspection, I notice that the language used is quite vague. ""Sometimes"" is a very general term, and it doesn't provide any clear context or details about when exactly the login issue occurs.
+* 3. Given the vagueness of the description, this issue can indeed be interpreted in multiple ways. For example, does ""sometimes"" mean that the issue only happens during peak usage hours? Or is it a consistent problem that occurs every time a user tries to log in?
+* 4. Additionally, there's no clear scope or definition of what constitutes a successful login. Is it just about the user being able to enter their credentials, or does it involve additional steps like password reset or two-factor authentication?
+* 5. Considering these factors, I believe that this issue is indeed ambiguous due to its vague language and unclear context.
 
-Considering these points, I conclude that the issue is AMBIGUOUS.
-
-Final Answer: Yes",f69f60d0f89b03b8,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:07:54.164300+00:00
+Final Answer: Yes",f69f60d0f89b03b8,llama3.1:8b,0,2026-06-08T17:57:48.337639+00:00
 ISSUE-0002,Update UI #2,1,1,"Here's my analysis:
 
 * 1. What information is present in this issue? 
-The issue mentions that ""the interface needs updating"", which implies a specific area of focus, but lacks any details about what exactly needs to be updated or how it should be updated.
+The issue mentions that ""the interface needs updating"", but it doesn't specify what aspects of the interface need to be updated, or what changes are required.
 
 * 2. Is the language vague or clear?
-The language used is somewhat vague because it doesn't specify what aspects of the interface need updating (e.g., layout, functionality, design).
+The language used is quite general and does not provide any specific details about the update. It lacks clarity on what exactly needs to be changed.
 
 * 3. Can this issue be interpreted in multiple ways?
-Yes, without further clarification, one could interpret ""update"" to mean different things, such as a minor tweak or a complete overhaul.
+Yes, it can be interpreted in multiple ways because there's no clear definition of what ""updating"" means in this context. Does it mean a minor tweak or a complete overhaul?
 
-* 4. Does the issue lack clear context?
-The issue doesn't provide any context about why the update is necessary or what problems it's intended to solve.
+Based on these points, I conclude that the issue is ambiguous due to its lack of clarity and specificity.
 
-* 5. Is the scope of this issue unclear?
-Yes, because we don't know what specific parts of the interface need updating and how extensive the changes should be.
+Final Answer: Yes",35a795c04b15238f,llama3.1:8b,0,2026-06-08T17:57:50.538154+00:00
+ISSUE-0003,Add export feature #3,0,0,"Here are my step-by-step analysis:
 
-Final Answer: Yes",35a795c04b15238f,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:09:20.930549+00:00
-ISSUE-0003,Add export feature #3,0,0,"Here's my analysis:
+* 1. The issue title ""Add export feature #3"" suggests that there may have been previous issues related to exporting data, but the current issue is specific and focused on adding a new feature.
+* 2. The language used in the issue description is clear and concise: it states exactly what needs to be done (exporting data to CSV format from the reports page). There are no vague terms or ambiguous phrases.
+* 3. Upon reviewing the issue, I don't see any indication that this issue can be interpreted in multiple ways. The scope of the issue appears to be well-defined: exporting data to CSV format from a specific page (the reports page).
 
-* 1. The issue provides a specific title (""Add export feature #3"") and a brief description of what needs to be done (""export data to CSV format from the reports page""). This suggests that there is some context, but it may not be sufficient for a complete understanding.
-* 2. The language used in the description is clear and concise. There are no vague terms or ambiguous phrases that would suggest multiple interpretations.
-* 3. However, the fact that this is ""export feature #3"" implies that there may have been previous export features added to the system, but their details are not provided here. This could lead to some uncertainty about what exactly needs to be done for this new feature.
-
-But considering these points, I would say that while there might be some minor ambiguity due to the lack of context about previous export features, the language and description itself is clear enough to provide a good starting point for analysis.
-
-Final Answer: No",a55aa61f7ee7a890,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:10:51.220891+00:00
-ISSUE-0004,Performance issue #4,0,1,"Here's my analysis:
+Final Answer: No",a55aa61f7ee7a890,llama3.1:8b,0,2026-06-08T17:57:52.567119+00:00
+ISSUE-0004,Performance issue #4,0,1,"Here are my step-by-step analysis:
 
 * 1. What information is present in this issue? 
-The issue mentions that the app is slow, but it doesn't specify what aspect of the app is slow (e.g., loading time, response time, etc.) or under what conditions the slowness occurs.
+The issue mentions that the app is slow, but it doesn't provide any specific details about what ""slow"" means or under what conditions the slowness occurs.
 
 * 2. Is the language vague or clear?
-The language used (""The app is slow"") is quite general and doesn't provide any specific details about the nature of the performance issue.
+The language used is quite general and doesn't give a clear indication of what's causing the performance issue. The term ""slow"" can be subjective and may vary from user to user.
 
 * 3. Can this issue be interpreted in multiple ways?
-Yes, because it's unclear what aspect of the app's performance is being referred to (e.g., UI responsiveness, data processing speed, etc.), making it difficult to determine the root cause of the problem.
+Yes, because there are many possible reasons why an app might be slow (e.g., network issues, hardware limitations, software bugs, etc.). Without more context or specific details, it's difficult to pinpoint the root cause of the problem.
 
-Final Answer: Yes",c277f36f14c00ff9,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:11:55.279683+00:00
+Based on these points, I conclude that the issue is ambiguous due to its lack of clear language and multiple possible interpretations.
+
+Final Answer: Yes",c277f36f14c00ff9,llama3.1:8b,0,2026-06-08T17:57:55.071980+00:00
 ISSUE-0005,Null pointer exception #5,1,0,"Here are the step-by-step analysis:
 
 * **Step 1: Information present in the issue**
 	+ The issue mentions a specific exception type (NullPointerException)
-	+ A file name and line number where the error occurs (UserService.java at line 142)
-	+ A variable name that is null (userId)
-	+ This information suggests that the issue has clear context.
+	+ It specifies the file where the error occurs (UserService.java)
+	+ It provides a line number (142) and a variable name (userId) that is causing the problem
 * **Step 2: Language vagueness**
-	+ The language used in the issue description is straightforward and unambiguous. It clearly states what happened (NullPointerException) and where it occurred (UserService.java at line 142).
-	+ There are no vague terms or phrases that could lead to multiple interpretations.
-* **Step 3: Unclear scope**
-	+ The issue description specifically mentions a file name, line number, and variable name, which suggests that the scope of the problem is well-defined.
-	+ There's no indication that the issue might be related to other parts of the code or system.
+	+ The language used is clear and concise, without any vague terms or ambiguous expressions
+* **Step 3: Clear context**
+	+ The issue provides sufficient context about where the error occurs (file and line number), making it easy to understand what's happening
+* **Step 4: Unclear scope**
+	+ The issue seems to be focused on a specific problem in a particular file, so the scope is clear
+* **Step 5: Multiple interpretations**
+	+ Given the specificity of the information provided (file, line number, variable name), it's unlikely that this issue can be interpreted in multiple ways
 
-Based on these steps, I conclude:
-
-Final Answer: No",8187627fc78aaa27,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:13:22.404178+00:00
-ISSUE-0006,Search not working #6,0,1,"Here's my analysis:
+Final Answer: No",8187627fc78aaa27,llama3.1:8b,0,2026-06-08T17:57:57.794961+00:00
+ISSUE-0006,Search not working #6,0,0,"Here's my analysis:
 
 * 1. The issue title ""Search not working #6"" suggests that there may have been previous issues with the same problem, but it doesn't provide much context about what specifically is not working.
 * 2. The language used in the description ""Search returns no results"" is clear and concise, indicating exactly what the problem is.
-* 3. However, without more information about what was being searched for or how the search function is supposed to work, it's possible that this issue could be caused by a variety of factors (e.g. incorrect search query, database issues, etc.).
+* 3. However, without more information about the search functionality (e.g., what type of data is being searched, how are results typically returned), it's possible to interpret this issue in multiple ways.
 
-Final Answer: Yes",bc390185cb5ecceb,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:14:15.926022+00:00
+Final Answer: No",bc390185cb5ecceb,llama3.1:8b,0,2026-06-08T17:57:59.592770+00:00
 ISSUE-0007,Add dark mode #7,0,0,"Here's my analysis:
 
 * 1. The issue provides a specific title (""Add dark mode #7"") and a detailed description of what needs to be implemented, including the use of localStorage for persistent preference.
 * 2. The language used is clear and concise, with no vague terms or ambiguous phrases that could lead to misinterpretation.
 * 3. While there's a ""#7"" in the title, which might suggest that this is not the first iteration of implementing dark mode, it doesn't seem to affect the clarity of the request itself.
 
-Final Answer: No",7a8b8a5c6d34faa6,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:15:08.113084+00:00
+Final Answer: No",7a8b8a5c6d34faa6,llama3.1:8b,0,2026-06-08T17:58:01.394710+00:00
 ISSUE-0008,Crash on startup #8,0,1,"Here's my analysis:
 
-* 1. The issue title ""Crash on startup #8"" suggests that it might be a specific problem, but the description is quite brief and doesn't provide much context.
-* 2. The language used in the description (""App crashes when opened"") is clear and concise, indicating what exactly happens when the app starts up.
-* 3. However, the fact that there's a ""#8"" in the title implies that this might be a repeat issue or one of multiple similar issues, which could lead to some ambiguity about whether this is a new problem or just another instance of an existing one.
+* 1. The issue title ""Crash on startup #8"" suggests that it may be a specific instance of a problem, but there is no additional context provided.
+* 2. The language used in the description ""App crashes when opened"" is clear and concise, indicating exactly what happens.
+* 3. However, the fact that it's labeled as ""#8"" implies that this might not be an isolated incident, and there may be previous instances of similar problems (e.g., #1, #2, etc.). This could lead to multiple interpretations about which specific issue is being referred to.
 
-Given these points, I would say that the issue has some potential for ambiguity due to the unclear context and possible interpretation as a repeat issue. However, the language used in the description itself is clear.
-
-Final Answer: Yes",ed3bea2de992384e,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:16:14.221832+00:00
-ISSUE-0009,Email validation #9,1,0,"Here are my step-by-step analysis:
+Final Answer: Yes",ed3bea2de992384e,llama3.1:8b,0,2026-06-08T17:58:03.309945+00:00
+ISSUE-0009,Email validation #9,1,1,"Here's my analysis:
 
 * 1. The issue provides a specific task (""Validate email format on registration form"") and mentions a related requirement (""show inline error messages""). This suggests that the context is clear.
-* 2. The language used in the description is straightforward and easy to understand, without any ambiguous terms or phrases. For example, ""validate"" and ""email format"" are specific concepts that don't require further clarification.
-* 3. Upon reviewing the issue, I couldn't find any indication that it can be interpreted in multiple ways. The task is well-defined, and there's no room for different interpretations.
+* 2. The language used in the description is straightforward and easy to understand, without any ambiguous terms or phrases.
+* 3. Upon closer inspection, I notice that the issue doesn't specify which email format validation rules should be applied (e.g., does it need to check for a valid domain, top-level domain, etc.?).
+* 4. The mention of ""inline error messages"" could imply different things depending on how the developer interprets this requirement (e.g., is it just about displaying an error message next to the input field, or should it also provide feedback on what's wrong with the email address?).
+* 5. Considering these points, I think there might be some room for interpretation in this issue.
 
-Based on this analysis, I conclude that the issue does not exhibit any characteristics of ambiguity.
-
-Final Answer: No",8e5b99701d596a4e,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:17:14.467736+00:00
+Final Answer: Yes",8e5b99701d596a4e,llama3.1:8b,0,2026-06-08T17:58:05.805489+00:00
 ISSUE-0010,Database timeout #10,1,0,"Here's my analysis:
 
 * Step 1: The issue provides specific details about the problem, including the timeout duration (30 seconds), the load condition (heavy load with more than 500 concurrent users), and the affected component (DB queries).
-* Step 2: The language used in the issue is clear and concise. It specifies a concrete value for the timeout duration and a measurable condition for the load.
-* Step 3: Upon reviewing the issue, I don't see any ambiguity in the description. The problem statement is well-defined, and there's no room for multiple interpretations.
+* Step 2: The language used is clear and concise. There are no vague terms or ambiguous expressions that could lead to misinterpretation.
+* Step 3: While there may be some assumptions about the system's behavior under heavy load, the issue clearly states what is happening (queries timeout) and provides specific metrics for the load condition.
 
-Final Answer: No",acb3820607f3fb84,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:18:07.210776+00:00
-ISSUE-0011,Missing error handling #11,0,1,"Here are my step-by-step analysis:
+Based on this analysis, I conclude:
 
-* 1. The issue title mentions a specific error handling number (#11), which suggests that there is some context about what kind of error needs to be handled.
-* 2. The language used in the description (""Handle errors properly"") is quite vague and does not provide any clear guidance on how to handle errors or what constitutes ""proper"" error handling.
-* 3. While the issue title mentions a specific number (#11), the description itself can be interpreted in multiple ways, as it does not provide enough context about what kind of errors are being referred to or how they should be handled.
+Final Answer: No",acb3820607f3fb84,llama3.1:8b,0,2026-06-08T17:58:07.701939+00:00
+ISSUE-0011,Missing error handling #11,0,1,"Here's my analysis:
 
-Based on these observations:
+* 1. The issue title mentions a specific error handling number (#11), which suggests that there might be some context about what kind of error is being referred to.
+* 2. The language used in the description (""Handle errors properly"") is quite vague and doesn't provide any clear guidance on what ""properly"" means in this context.
+* 3. Without more information, it's unclear what specific errors are being referred to or how they should be handled, which could lead to multiple interpretations of the issue.
 
-Final Answer: Yes",e050458eb26c25cb,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:19:02.944975+00:00
+Based on these points, I would conclude that the issue is ambiguous due to its vague language and lack of clear context.
+
+Final Answer: Yes",e050458eb26c25cb,llama3.1:8b,0,2026-06-08T17:58:09.672266+00:00
 ISSUE-0012,API rate limiting #12,1,0,"Here's my analysis:
 
-* Step 1: The issue provides specific details about the rate limiting, including the number of requests per minute and the response code to be used.
-* Step 2: The language is clear and concise. It specifies a concrete limit (100 requests per minute) and a specific response code (429).
-* Step 3: Upon reviewing the issue again, I notice that it doesn't provide any context about which API key this rate limiting applies to. Is it for all API keys, or just certain ones? This lack of clarity could lead to multiple interpretations.
+* Step 1: The issue provides specific details about the rate limiting, including the number of requests per minute (100) and the response code for exceeding the limit (429). It also mentions that this is related to an API key.
+* Step 2: The language used in the issue description is clear and concise. There are no vague terms or ambiguous phrases that could lead to misinterpretation.
+* Step 3: While there may be some assumptions about how rate limiting should be implemented (e.g., what constitutes a ""request""), the specific requirements provided (100 requests per minute, 429 response) do not seem open to multiple interpretations. The scope of the issue is also relatively narrow and focused on a specific aspect of API behavior.
+* Step 4: There are no unclear context or assumptions that would lead to multiple possible solutions or interpretations.
+* Step 5: Overall, while there may be some minor details that could be debated (e.g., how to handle concurrent requests), the issue description provides sufficient clarity and specificity to guide development.
 
-However, considering the specificity of the request limit and response code, I think the ambiguity lies in the scope rather than the language itself.
+Final Answer: No",a8939807d9b991dc,llama3.1:8b,0,2026-06-08T17:58:12.511409+00:00
+ISSUE-0013,Button color #13,1,1,"Here are my step-by-step analysis:
 
-Final Answer: No",a8939807d9b991dc,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:20:07.802220+00:00
-ISSUE-0013,Button color #13,1,1,"Here's my analysis:
+* 1. The issue title mentions ""Button color #13"", which implies that there might be a specific button and color combination being referred to, but the description is very brief.
+* 2. The language used in the description (""Change the button color"") is clear and concise, but it lacks context about what exactly needs to be changed (e.g., which button, what type of change).
+* 3. Without more information or context, it's unclear whether ""button color #13"" refers to a specific hex code, a color name, or something else entirely.
+* 4. The issue description doesn't provide any clear scope for the change, such as which part of the system this button is in or what other components might be affected by the change.
+* 5. Given the lack of context and specificity, it's possible that different people could interpret ""Change the button color"" in different ways, depending on their understanding of the issue title.
 
-* 1. The issue mentions a specific button color (#13), which suggests that there might be some context about what this color is supposed to represent or match.
-* 2. However, the language used is quite concise and doesn't provide any additional information about why the button color needs to be changed or what the desired outcome is.
-* 3. The issue can indeed be interpreted in multiple ways: for example, does #13 refer to a specific hex code, an RGB value, or something else entirely? Is the change intended for all buttons on the page, or just one specific button?
-
-Final Answer: Yes",140b6fdbdbca8314,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:21:05.660147+00:00
+Final Answer: Yes",140b6fdbdbca8314,llama3.1:8b,0,2026-06-08T17:58:15.180520+00:00
 ISSUE-0014,Memory leak #14,0,0,"Here's my analysis:
 
 * Step 1: The issue provides a specific title (""Memory leak #14"") and a descriptive text that mentions a particular service (""background sync service"") and a measurable timeframe (""over 24 hours""). This suggests that the issue is well-defined.
-* Step 2: The language used in the description is clear and concise. It states a specific problem (memory usage grows unbounded) without using vague terms or jargon.
-* Step 3: While it's possible to debate the exact cause of the memory leak, the description provides enough context to understand what's happening. There's no ambiguity about what's being reported.
+* Step 2: The language used in the description is clear and concise, without any vague terms or ambiguous expressions. The phrase ""memory usage grows unbounded"" clearly conveys the problem of increasing memory consumption.
+* Step 3: While it's possible to debate the exact cause of the memory leak (e.g., whether it's a coding error, a configuration issue, or something else), the description provides enough context to understand what's happening. The scope of the issue is also clear: it affects the background sync service over a specific period.
+* Step 4: Upon reviewing the description again, I don't see any obvious ways in which this issue could be interpreted in multiple ways. The language and context are straightforward.
 
-Based on these observations:
+Final Answer: No",675c644957d4ba44,llama3.1:8b,0,2026-06-08T17:58:17.884888+00:00
+ISSUE-0015,Update docs #15,0,0,"Here are my step-by-step analysis:
 
-Final Answer: No",675c644957d4ba44,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:22:07.896088+00:00
-ISSUE-0015,Update docs #15,0,0,"Here's my analysis:
+* 1. The issue title ""Update docs #15"" suggests that there is a specific task or request to update documentation, but it doesn't provide much context.
+* 2. The language used in the description ""Documentation is outdated"" is clear and concise, indicating exactly what needs to be done (update the outdated documentation).
+* 3. There's no indication that this issue can be interpreted in multiple ways; it seems like a straightforward request to update outdated documentation.
 
-* 1. The issue title ""Update docs #15"" suggests that there is a specific document or set of documents that need to be updated, and the ""#15"" implies that it's not the first time this has been reported.
-* 2. The language used in the description ""Documentation is outdated"" is clear and concise. It states exactly what the problem is: the documentation is no longer up-to-date.
-* 3. There doesn't seem to be any ambiguity in how this issue can be interpreted. The description clearly states that the documentation needs to be updated, without leaving room for multiple possible meanings.
-
-Final Answer: No",8e4b6cb50bf8773d,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:23:02.550253+00:00
+Final Answer: No",8e4b6cb50bf8773d,llama3.1:8b,0,2026-06-08T17:58:19.572302+00:00
 ISSUE-0016,File upload fails #16,1,0,"Here's my analysis:
 
-* **Step 1: Information present**: The issue provides specific details about the problem, including:
-	+ The type of error encountered (413)
-	+ The endpoint affected (/upload)
-	+ A clear condition for when the failure occurs (files larger than 10MB)
-* **Step 2: Language clarity**: The language used is straightforward and unambiguous. There's no room for interpretation about what's happening or what needs to be fixed.
-* **Step 3: Context**: While there might not be a detailed explanation of why this specific condition causes the error, the context (uploading large files) is clear enough to understand the problem.
-* **Step 4: Scope**: The scope of the issue seems well-defined, focusing on a specific endpoint and error condition. There's no indication that the issue could be related to other parts of the system or have broader implications.
-* **Step 5: Multiple interpretations**: Given the clear details provided, it's unlikely that this issue can be interpreted in multiple ways.
+* Step 1: The issue provides a specific error code (413), endpoint (/upload), and file size threshold (10MB). This suggests that there is enough information to investigate the problem.
+* Step 2: The language used in the description is clear and concise, specifying a specific condition (file larger than 10MB) and expected behavior (a 413 error).
+* Step 3: There are no unclear context or scope. The issue is focused on a specific endpoint and file size threshold.
 
-Final Answer: No",9221145288173c8c,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:24:45.143278+00:00
+However, I would like to add one more step:
+
+* Step 4: While the language is clear, there might be some ambiguity in interpreting what ""fails"" means exactly. Does it mean that the upload attempt results in a 413 error immediately, or does it mean that the file is partially uploaded before failing? However, this interpretation is still relatively straightforward and not overly ambiguous.
+
+Final Answer: No",9221145288173c8c,llama3.1:8b,0,2026-06-08T17:58:22.028124+00:00
 ISSUE-0017,Wrong total #17,1,1,"Here's my analysis:
 
-* 1. What information is present in this issue? The issue mentions that there is a problem with the total number (#17) in the cart, but it doesn't provide any context about what specifically is wrong with the total.
-* 2. Is the language vague or clear? The language used is somewhat vague because it doesn't specify what exactly is incorrect about the total (e.g., is it too high, too low, or something else?). However, the issue does clearly state that there is a problem with the total in the cart.
-* 3. Can this issue be interpreted in multiple ways? Yes, because of the vagueness mentioned above. Without more context or information about what specifically is wrong with the total, it's possible to interpret the issue in different ways (e.g., is the issue with the calculation, the display, or something else entirely?).
-* 4. Does the issue lack clear context? Yes, because there is no additional information provided about the specific circumstances surrounding the problem.
-* 5. Is the scope of the issue unclear? Not necessarily, but it's possible that the scope could be broader than intended (e.g., does the issue apply to all carts or just a specific one?",e44b4e089721f0b4,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:26:37.226935+00:00
+* 1. What information is present in this issue? 
+The issue mentions that there is a problem with the total number (#17) in the cart, but it doesn't specify what kind of total (e.g., subtotal, tax, discount), how the calculation went wrong, or any other relevant details.
+* 2. Is the language vague or clear?
+The language used is somewhat vague because it doesn't provide specific information about the nature of the problem. The term ""wrong"" could imply a variety of issues, such as incorrect arithmetic, an error in data input, or something else entirely.
+* 3. Can this issue be interpreted in multiple ways?
+Yes, due to the lack of specificity and clarity in the description, it's possible for different people to interpret what is meant by ""the total is wrong"" in different ways.
+
+Final Answer: Yes",e44b4e089721f0b4,llama3.1:8b,0,2026-06-08T17:58:24.443967+00:00
 ISSUE-0018,Session expiry #18,1,0,"Here's my analysis:
 
 * Step 1: The issue provides specific details about what needs to be implemented, including a time frame for session expiry and a warning dialog.
-* Step 2: The language used is clear and concise. There are no vague terms or ambiguous phrases that could lead to misinterpretation.
-* Step 3: While the issue doesn't provide context about why this feature is being requested (e.g., security concerns, user experience), it's specific enough in its requirements that there's little room for interpretation.
+* Step 2: The language used is clear and concise. There are no vague terms or ambiguous expressions that could lead to misinterpretation.
+* Step 3: While the issue doesn't provide context about why this feature is being implemented (e.g., security concerns, user experience), it's specific enough in its requirements that there's little room for interpretation.
 
-Final Answer: No",b8dafda85c7a3e73,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:27:32.807850+00:00
+Final Answer: No",b8dafda85c7a3e73,llama3.1:8b,0,2026-06-08T17:58:26.144638+00:00
 ISSUE-0019,Fix typo #19,1,1,"Here are my step-by-step analysis:
 
 * 1. The issue title mentions a specific ""typo #19"", which implies that there is some kind of identifier or reference to the typo, but it's not clear what this means.
-* 2. The language used in the description (""There's a typo somewhere"") is vague and lacks specificity. It doesn't provide any context about where exactly the typo is located or how to identify it.
-* 3. Given the lack of clarity around the identifier ""#19"" and the vague description, this issue can indeed be interpreted in multiple ways.
+* 2. The language used in the description (""There's a typo somewhere"") is vague and lacks specificity. It doesn't provide any context about where exactly the typo is located, what type of document or system it's in, etc.
+* 3. Given the lack of clarity around the location and context of the typo, it's likely that this issue can be interpreted in multiple ways by different people.
 
-Final Answer: Yes",568034a2f5dd8e32,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:28:32.709115+00:00
+Final Answer: Yes",568034a2f5dd8e32,llama3.1:8b,0,2026-06-08T17:58:28.254048+00:00
 ISSUE-0020,Pagination broken #20,1,0,"Here's my analysis:
 
 * 1. The issue title and description provide a specific problem: pagination not working when a filter is applied on the user management table.
 * 2. The language used is clear and concise, with no vague terms or ambiguous expressions.
-* 3. While there might be some assumptions about what ""pagination"" and ""filter"" mean in this context, they are common enough terms that most developers would understand them similarly.
+* 3. There are no multiple possible interpretations of what ""pagination broken"" means in this context.
 
-Final Answer: No",6ab1668b77e51a2c,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:29:23.412330+00:00
-ISSUE-0021,Add logging #21,1,1,"Here's my analysis:
+Final Answer: No",6ab1668b77e51a2c,llama3.1:8b,0,2026-06-08T17:58:29.630560+00:00
+ISSUE-0021,Add logging #21,1,0,"Here are my step-by-step analysis:
 
-* 1. The issue title ""Add logging #21"" suggests that it's a specific task related to adding logging functionality, but there is no additional context provided.
-* 2. The language used in the description ""Add proper logging"" is clear and concise, indicating what needs to be done without ambiguity.
-* 3. However, the issue title ""#21"" implies that this might be part of a larger set of tasks or issues, which could lead to multiple interpretations about what exactly needs to be logged or how it should be implemented.
+* 1. The issue title ""Add logging #21"" suggests that it's a specific task related to adding logging functionality, and the description ""Add proper logging"" provides some context.
+* 2. The language used in the description is clear and concise, with no vague terms or ambiguous phrases.
+* 3. However, upon closer inspection, I notice that the issue title includes ""#21"", which implies that this might be a duplicate or follow-up request related to an earlier issue. This could potentially lead to multiple interpretations of what needs to be done.
 
-Considering these points, I would say that while the language is clear in the description, the context and scope are not entirely clear due to the lack of additional information and the implication of being part of a larger set. This could lead to multiple interpretations of what ""proper logging"" entails.
-
-Final Answer: Yes",8ba45e6e7769c8ff,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:30:42.297239+00:00
+Final Answer: No",8ba45e6e7769c8ff,llama3.1:8b,0,2026-06-08T17:58:31.484973+00:00
 ISSUE-0022,Two-factor auth #22,0,0,"Here's my analysis:
 
-* 1. The issue provides a specific title (#22) and a clear description of what needs to be added: TOTP-based 2FA support for admin accounts with backup codes.
-* 2. The language used is clear and concise, without any vague terms or ambiguous expressions.
-* 3. There's no indication that the issue can be interpreted in multiple ways; the requirements are specific and well-defined.
+* Step 1: The issue provides a specific title (""Two-factor auth #22"") and a brief description that mentions two key requirements: TOTP-based 2FA support for admin accounts and backup codes.
+* Step 2: Upon reviewing the language, I notice that it is clear and concise. The terms ""TOTP"" (Time-Based One-Time Password) and ""backup codes"" are specific and well-defined in the context of two-factor authentication.
+* Step 3: Considering the scope, the issue clearly states which type of accounts will be affected (admin accounts), making it easy to understand what needs to be implemented.
+* Step 4: I don't see any ambiguity in the language or requirements. The description is straightforward and doesn't leave room for multiple interpretations.
+* Step 5: Given that the language is clear, the context is well-defined, and there's no scope for multiple interpretations, I conclude that this issue is not ambiguous.
 
-Final Answer: No",56940c4f227939c4,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:31:30.662389+00:00
+Final Answer: No",56940c4f227939c4,llama3.1:8b,0,2026-06-08T17:58:34.128360+00:00
 ISSUE-0023,Improve something #23,0,1,"Here's my analysis:
 
-* 1. The issue title ""Improve something #23"" and description ""Something needs to be improved."" provide very little information about what specifically needs improvement.
-* 2. The language used is vague, as it doesn't specify what aspect of the system or process needs to be improved.
-* 3. This issue can be interpreted in multiple ways, such as improving a specific feature, fixing a bug, optimizing performance, etc.
+* 1. The issue title ""Improve something #23"" suggests that there may be a specific requirement or feature associated with it, but the description is very brief and doesn't provide any context.
+* 2. The language used in the description (""Something needs to be improved"") is vague and doesn't specify what exactly needs to be improved. It lacks clear context and scope.
+* 3. Given the vagueness of the language, it's likely that this issue can be interpreted in multiple ways by different people. For example, one person might think it refers to a specific feature or process, while another person might interpret it as referring to something entirely different.
 
-Final Answer: Yes",91b78b82e8c90799,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:32:19.289771+00:00
+Final Answer: Yes",91b78b82e8c90799,llama3.1:8b,0,2026-06-08T17:58:36.152250+00:00
 ISSUE-0024,CSV import fails #24,1,0,"Here's my analysis:
 
-* 1. The issue title and description provide a specific problem: CSV import fails when there are special characters (commas) in fields.
-* 2. The language used is clear, specifically mentioning ""special characters"" and ""commas in fields"", which indicates a precise problem.
-* 3. There's no ambiguity in the description; it clearly states what happens during the import process.
+* 1. The issue title and description provide a specific problem: importing CSV files with special characters fails silently.
+* 2. The language used is clear, specifically mentioning ""special characters"" and ""commas in fields"", which are well-defined concepts.
+* 3. There is no ambiguity in the description; it's clear what is happening (the import fails) and why (due to special characters).
 
-Final Answer: No",2347533a59751542,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:33:10.580931+00:00
+Final Answer: No",2347533a59751542,llama3.1:8b,0,2026-06-08T17:58:37.650319+00:00
 ISSUE-0025,Profile page slow #25,0,0,"Here's my analysis:
 
-* 1. The issue provides specific information about the problem: it mentions a particular page (""Profile page""), a specific performance metric (""slow""), and a specific time frame (""8+ seconds""). It also identifies the root cause of the problem (""unoptimized image loading"").
-* 2. The language used is clear and concise, without any vague terms or ambiguous expressions.
-* 3. There's no indication that this issue can be interpreted in multiple ways. The description provides a specific, objective measurement (8+ seconds) to quantify the performance problem.
+* 1. The issue provides a specific metric (""8+ seconds"") to measure the performance, which indicates that there is some data available to work with.
+* 2. The language used is clear and concise: ""unoptimized image loading"" clearly points to a specific cause of the slow load time.
+* 3. There are no multiple possible interpretations of what's causing the issue; it's explicitly stated as unoptimized image loading.
 
-Final Answer: No",c0a8d60550e6c6f6,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:34:10.539814+00:00
+Final Answer: No",c0a8d60550e6c6f6,llama3.1:8b,0,2026-06-08T17:58:39.210182+00:00
 ISSUE-0026,Notifications broken #26,1,0,"Here's my analysis:
 
-* 1. The issue provides a specific title (#26), which suggests that it's related to a particular problem, and also mentions the operating system version (Android 13+). This gives some context.
-* 2. The language used is clear: ""Push notifications are not delivered"" implies a specific behavior that is not occurring as expected. There's no ambiguity in what's being described.
-* 3. While there might be multiple possible causes for the issue, the description itself doesn't seem to be open to multiple interpretations. It's stating a fact about the behavior of push notifications on Android 13+ devices.
+* Step 1: The issue provides a specific problem statement, mentioning that push notifications are not delivered to Android devices running Android 13+. This suggests that the issue has some clear context.
+* Step 2: The language used in the issue description is relatively clear and concise. It specifies a particular operating system version (Android 13+) and describes a specific behavior (notifications not being delivered).
+* Step 3: Upon reviewing the issue, I don't see any ambiguity in the language or scope of the problem. The issue seems to be focused on a specific technical issue with push notifications on Android devices running a particular OS version.
+* Step 4: There's no indication that this issue can be interpreted in multiple ways. The description is straightforward and doesn't leave room for different interpretations.
+* Step 5: Overall, the issue appears to have clear context, concise language, and a well-defined scope.
 
-Final Answer: No",b151af14842a793c,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:35:11.705949+00:00
+Final Answer: No",b151af14842a793c,llama3.1:8b,0,2026-06-08T17:58:41.694518+00:00
 ISSUE-0027,Timezone bug #27,1,0,"Here are my step-by-step analysis:
 
 * 1. The issue provides a specific title (#27) and description, which indicates that it is related to a known problem with timestamps displaying in UTC instead of the user's local timezone.
-* 2. The language used in the issue description is clear and concise, indicating what the problem is (timestamps not displaying in local timezone).
-* 3. There are no ambiguous words or phrases in the issue description that could be interpreted in multiple ways.
+* 2. The language used in the description is clear and concise, indicating what the problem is (timestamps not displaying in local timezone) and where it occurs (in the event log).
+* 3. There are no ambiguous words or phrases that could be interpreted in multiple ways. The issue clearly states a specific behavior (timestamps display in UTC) and a desired behavior (timestamps should display in user's local timezone).
 
-Final Answer: No",704c98d9405bdfe8,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:36:00.710340+00:00
+Final Answer: No",704c98d9405bdfe8,llama3.1:8b,0,2026-06-08T17:58:43.645637+00:00
 ISSUE-0028,Dropdown empty #28,0,0,"Here's my analysis:
 
-* 1. The issue provides a specific title (""Dropdown empty #28"") and a description that mentions a particular form (""registration form for new users"") and a specific dropdown field (""Country dropdown""). This suggests that the issue is related to a specific feature or component of the software.
-* 2. The language used in the issue description is clear and concise, with no vague terms or ambiguous phrases. It simply states a fact about the behavior of the software.
-* 3. Upon reviewing the issue description again, I don't see any indication that it can be interpreted in multiple ways. The description clearly describes a specific problem (an empty dropdown) on a specific form for new users.
+* 1. The issue provides a specific context: it mentions a ""Country dropdown"" on a ""registration form for new users"". This gives us some information about what the issue is related to.
+* 2. The language used in the description is clear and concise, without any vague terms or jargon that could lead to misinterpretation.
+* 3. There's no indication that this issue can be interpreted in multiple ways. The description clearly states a specific problem (the dropdown being empty) on a specific form for new users.
 
-Based on this analysis, I conclude that the issue is not ambiguous.
-
-Final Answer: No",e2a74a1d49d67b8a,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:37:06.840946+00:00
+Final Answer: No",e2a74a1d49d67b8a,llama3.1:8b,0,2026-06-08T17:58:45.413643+00:00
 ISSUE-0029,Report generation #29,1,0,"Here's my analysis:
 
-* **Step 1: Information present**: The issue mentions a specific report generation process, a timeout error, and a dataset size threshold of 10,000 rows.
-* **Step 2: Language clarity**: The language used is clear and concise. It specifies a concrete problem (timeout) related to a specific condition (datasets with more than 10,000 rows).
-* **Step 3: Context**: While the issue doesn't provide extensive context, it's likely that the report generation process is well-known within the organization, and the dataset size threshold is a reasonable assumption.
-* **Step 4: Scope**: The scope of the issue appears to be focused on the specific report generation process and its interaction with large datasets. There are no indications of broader implications or unrelated components.
-* **Step 5: Multiple interpretations**: Upon reviewing the issue, I don't see any obvious ways it can be interpreted in multiple ways. The problem statement is straightforward, and the solution likely involves optimizing the report generation process for larger datasets.
+* Step 1: The issue provides a specific context, which is report generation, and mentions a specific problem with datasets having more than 10,000 rows.
+* Step 2: The language used is clear and concise. It states a specific condition (datasets with more than 10,000 rows) that leads to a specific outcome (timeout).
+* Step 3: There are no ambiguous words or phrases in the issue description. The terms ""monthly report generation"" and ""timeout"" have well-defined meanings.
+* Step 4: The scope of the issue is also clear. It's focused on a specific aspect of the software, namely report generation, and doesn't seem to be related to other parts of the system.
+* Step 5: Based on the above points, it seems unlikely that this issue can be interpreted in multiple ways.
 
-Final Answer: No",32b7af2093fe098e,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:38:33.789542+00:00
+Final Answer: No",32b7af2093fe098e,llama3.1:8b,0,2026-06-08T17:58:47.837451+00:00
 ISSUE-0030,Missing feature #30,1,1,"Here's my analysis:
 
 * 1. The issue mentions a specific feature number (#30), which suggests that there is some context about what needs to be added.
-* 2. However, the language used is vague (""the thing we discussed in the meeting""). It doesn't specify what was discussed or what exactly needs to be added.
-* 3. Without more information about what was discussed in the meeting, it's likely that multiple people could interpret this issue differently.
+* 2. However, the language used is vague (""the thing we discussed in the meeting""). This phrase does not provide enough information for someone else to understand what exactly needs to be done.
+* 3. The issue can indeed be interpreted in multiple ways. What was ""discussed in the meeting"" might mean different things to different people, and it's unclear whether feature #30 is related to that discussion or if there's something entirely new that needs to be added.
 
-Final Answer: Yes",2ebd83e9acfdfe4d,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:39:19.834949+00:00
+Final Answer: Yes",2ebd83e9acfdfe4d,llama3.1:8b,0,2026-06-08T17:58:49.729335+00:00
 ISSUE-0031,Concurrent edit conflict #31,0,0,"Here's my analysis:
 
-* 1. The issue title ""Concurrent edit conflict #31"" suggests that it's a specific problem related to concurrent editing, and the ""#31"" implies that it might be a known issue or bug number.
-* 2. The language used in the description is clear and concise: two users are editing the same record at the same time, causing data loss silently. There's no ambiguity in what's being described.
-* 3. While there might be some technical complexity involved in resolving this issue (e.g., implementing locking mechanisms or conflict resolution algorithms), the problem itself is well-defined and doesn't seem to have multiple possible interpretations.
+* 1. The issue title and description provide a specific problem: concurrent edit conflict #31, which implies that there is a known issue (#31) related to data loss when two users edit the same record simultaneously.
+* 2. The language used in the description is clear and concise, describing a specific scenario (two users editing the same record at the same time) and its consequence (data loss silently).
+* 3. There is no ambiguity in the issue description; it clearly states what happens when two users edit the same record simultaneously.
 
-Final Answer: No",00e4468e8fa59091,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:40:25.688924+00:00
+Final Answer: No",00e4468e8fa59091,llama3.1:8b,0,2026-06-08T17:58:51.540708+00:00
 ISSUE-0032,Wrong redirect #32,0,0,"Here's my analysis:
 
 * 1. The issue provides a specific error code (#32) and describes a problem with redirecting users after logout, which suggests that there is some context provided.
-* 2. The language used is clear: the issue states that users are being redirected to the dashboard instead of the login page, which implies a specific expected behavior.
-* 3. There doesn't seem to be any ambiguity in the description; it's stating a specific problem with a specific outcome.
+* 2. The language used is clear: the issue states that users are being redirected to the dashboard instead of the login page, which implies a specific expected behavior (redirecting to the login page).
+* 3. Upon reviewing the description again, I don't see any ambiguity in how this issue can be interpreted. It's a straightforward problem statement with a clear expectation for what should happen.
 
-Final Answer: No",98b963afbf89df9f,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:41:14.593796+00:00
+Final Answer: No",98b963afbf89df9f,llama3.1:8b,0,2026-06-08T17:58:53.390363+00:00
 ISSUE-0033,Image resize #33,1,0,"Here's my analysis:
 
 * 1. The issue provides a specific title (#33) and describes a problem with profile images not being resized/compressed on upload, which causes slow page loads. This suggests that the issue is related to a specific feature or functionality.
-* 2. The language used in the description is clear and concise. It states a specific problem (images not being resized/compressed) and its consequence (slow page loads). There's no ambiguity in what's being described.
-* 3. Upon reviewing the description, I don't see any indication that this issue can be interpreted in multiple ways. The problem is clearly stated, and there are no vague or open-ended statements.
+* 2. The language used in the description is clear and concise. It states a specific problem (images are not resized/compressed) and its consequence (slow page loads). There's no ambiguity in what's being described.
+* 3. Upon reviewing the description, I don't see any indication that this issue can be interpreted in multiple ways. The problem is clearly stated, and there's no room for misinterpretation.
 
-Final Answer: No",3a89a1df5c651e6c,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:42:15.163635+00:00
+Based on these observations, I conclude that the issue does not exhibit any characteristics of an ambiguous requirement.
+
+Final Answer: No",3a89a1df5c651e6c,llama3.1:8b,0,2026-06-08T17:58:55.645222+00:00
 ISSUE-0034,Filter not saving #34,0,0,"Here's my analysis:
 
 * 1. The issue provides a specific error code (#34) and describes a problem with filter settings being reset when navigating back to the list view.
 * 2. The language used is clear and concise, describing a specific behavior that is not as expected.
 * 3. There are no multiple possible interpretations of this issue; it seems to be a straightforward bug report.
 
-Final Answer: No",2cff21cea2c8891c,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:42:55.015169+00:00
+Final Answer: No",2cff21cea2c8891c,llama3.1:8b,0,2026-06-08T17:58:57.130178+00:00
 ISSUE-0035,Audit log missing #35,0,0,"Here's my analysis:
 
-* 1. The issue provides a specific title (""Audit log missing #35"") and a description that mentions a particular problem (""Admin actions are not being recorded in the audit log table""). This suggests that there is some context provided.
-* 2. The language used is clear and concise, with no vague terms or ambiguous phrases. The issue specifically states what is happening (or not happening) and where it's supposed to happen (the audit log table).
-* 3. While the issue mentions a specific number (#35), it doesn't provide any additional context about what this number represents or why it's relevant. However, this might be considered a minor point, as the main problem is clearly stated.
+* 1. The issue provides a specific error code (#35) and mentions that admin actions are not being recorded, which suggests some context.
+* 2. The language is clear: it states what is happening (admin actions are missing from the audit log table) and references a specific error code.
+* 3. There's no indication that this issue can be interpreted in multiple ways; the description points to a specific problem with a specific error code.
 
-Considering these points, I would say that the issue is not ambiguous because:
-
-Final Answer: No",461abb24961f9531,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:44:03.128182+00:00
+Final Answer: No",461abb24961f9531,llama3.1:8b,0,2026-06-08T17:58:58.767183+00:00
 ISSUE-0036,Language switch broken #36,0,0,"Here's my analysis:
 
-* 1. The issue title and description provide a specific problem: switching languages mid-session causes the page to revert to English after a refresh.
-* 2. The language used is clear, with no vague terms or jargon that could lead to misinterpretation.
-* 3. There are no multiple possible interpretations of this issue; it describes a specific behavior and its consequences.
+* 1. The issue title and description provide a clear problem statement, including the specific behavior that is occurring (""reverts to English after page refresh"").
+* 2. The language used in the issue description is clear and concise, with no vague terms or jargon.
+* 3. While there may be some assumptions about what constitutes a ""mid-session"" switch, the issue description provides enough context to understand the problem.
 
-Final Answer: No",d33212c66e4bdcfa,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:44:44.889681+00:00
+Final Answer: No",d33212c66e4bdcfa,llama3.1:8b,0,2026-06-08T17:59:00.291638+00:00
 ISSUE-0037,Role permission #37,1,1,"Here's my analysis:
 
 * 1. The issue provides specific details about the role permission (#37) and the behavior of users with a 'viewer' role, which suggests that there is enough context to understand the problem.
@@ -314,67 +310,52 @@ ISSUE-0037,Role permission #37,1,1,"Here's my analysis:
 
 Given this analysis, I would conclude that:
 
-Final Answer: Yes",073e1492a4561dc8,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:45:43.367357+00:00
-ISSUE-0038,Broken link #38,0,1,"Here's my analysis:
+Final Answer: Yes",073e1492a4561dc8,llama3.1:8b,0,2026-06-08T17:59:02.234663+00:00
+ISSUE-0038,Broken link #38,0,0,"Here's my analysis:
 
 * 1. The issue title and description provide a specific reference to a broken link (#38) on a page, which suggests that there is some context available.
-* 2. The language used is clear and concise: ""broken link"" is a straightforward term that conveys the problem.
-* 3. However, upon closer inspection, I notice that the issue description lacks any information about what kind of page this is (e.g., login page, dashboard, etc.), where exactly on the page the broken link is located, or what the expected behavior should be when clicking on it.
+* 2. The language used is clear and concise: ""broken link"" implies a technical problem with a hyperlink, and the use of ""#38"" suggests a specific identifier for the link in question.
+* 3. Given the specificity of the issue description, it's unlikely to be interpreted in multiple ways. The issue seems to point to a well-defined problem that can be investigated and resolved.
 
-Given these observations, I would conclude that:
+Final Answer: No",998e81971f23fd2b,llama3.1:8b,0,2026-06-08T17:59:04.066535+00:00
+ISSUE-0039,Chart rendering #39,1,0,"Here's my analysis:
 
-Final Answer: Yes",998e81971f23fd2b,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:46:43.063928+00:00
-ISSUE-0039,Chart rendering #39,1,0,"Here are my step-by-step analysis:
+* 1. The issue provides a specific context: chart rendering, and mentions a specific problem (#39), which suggests that it is related to a particular feature or bug report.
+* 2. The language used is clear and concise. The issue states exactly what the problem is (bar chart renders incorrectly) and under what conditions it occurs (when data contains negative values).
+* 3. There are no ambiguous words or phrases, and the scope of the issue seems to be well-defined.
 
-* 1. The issue provides a specific context: chart rendering, and mentions a specific problem (#39). It also specifies what is happening (incorrect rendering) and under what conditions (when data contains negative values).
-* 2. The language used in the description is clear and concise. There are no vague terms or ambiguous phrases that could lead to multiple interpretations.
-* 3. While it's possible that different developers might have slightly different approaches to handling negative values, the issue clearly states a specific problem (incorrect rendering) which implies a specific expected behavior. This reduces the likelihood of multiple interpretations.
-
-Final Answer: No",3594a800f4b7a45d,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:47:38.426399+00:00
+Final Answer: No",3594a800f4b7a45d,llama3.1:8b,0,2026-06-08T17:59:05.762640+00:00
 ISSUE-0040,Delete confirmation #40,1,0,"Here's my analysis:
 
 * 1. The issue title and description provide a clear goal: to add a confirmation dialog before deleting records permanently.
 * 2. The language used is clear and concise, with no vague terms or ambiguous phrases.
 * 3. There are no multiple possible interpretations of the requirement; it simply states what needs to be done.
 
-Final Answer: No",6a202c1d2b9c5cfb,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:48:17.697878+00:00
+Final Answer: No",6a202c1d2b9c5cfb,llama3.1:8b,0,2026-06-08T17:59:07.123698+00:00
 ISSUE-0041,Fix login bug #41,1,1,"Here's my analysis:
 
-* 1. The issue title mentions a specific bug number (#41), which suggests that there is some context about the problem, but it's not explicitly stated.
-* 2. The language used is quite vague: ""Users cannot log in sometimes"" implies that the login failure is intermittent or unpredictable, rather than providing a clear description of the symptoms.
-* 3. This issue can be interpreted in multiple ways:
-	+ Is the bug causing users to fail to log in at all times, or only occasionally?
-	+ Are there any specific error messages or behaviors that are occurring during login attempts?
-	+ Has the issue been observed on a specific platform, browser, or device?
+* 1. The issue title mentions a specific bug number (#41), which suggests that there might be some context or information available about the issue, but it is not provided here.
+* 2. The language used in the description (""sometimes"", ""please fix"") is vague and does not provide clear context for what is happening during login attempts.
+* 3. The issue can be interpreted in multiple ways: is the problem intermittent (happening randomly), or is it a consistent failure? Is the user unable to log in at all, or are they able to log in but then encounter an error?
 
-Based on these points, I conclude:
-
-Final Answer: Yes",52e0ad3da1768e00,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:49:23.909732+00:00
+Final Answer: Yes",52e0ad3da1768e00,llama3.1:8b,0,2026-06-08T17:59:08.984892+00:00
 ISSUE-0042,Update UI #42,1,1,"Here's my analysis:
 
 * 1. What information is present in this issue? 
-The issue title mentions ""Update UI #42"", which suggests that it's related to a specific user interface update, but the description only provides a vague statement about updating the interface.
-
+The issue title mentions ""Update UI #42"", which suggests that it's related to a specific user interface update, but the description only says ""The interface needs updating."" There's no clear context or scope provided.
 * 2. Is the language vague or clear?
-The language used is quite vague, as it doesn't specify what exactly needs to be updated, how it should be updated, or what are the expected outcomes of this update.
-
+The language used is quite general and doesn't provide any specific details about what exactly needs to be updated or how the UI should change.
 * 3. Can this issue be interpreted in multiple ways?
-Yes, without further context or clarification, it's possible that different people might have different interpretations of what ""updating"" means and what specific changes are required.
+Yes, without more information, it's difficult to determine what ""update"" means in this context. Does it mean updating a single feature, redesigning the entire interface, or something else entirely?
 
-* 4. Does the issue lack clear context?
-The issue lacks any information about the current state of the UI, the goals of the update, or any relevant constraints or dependencies.
-
-* 5. Is there a clear scope for this issue?
-No, there's no indication of what exactly needs to be updated, which parts of the interface are involved, and whether it's a minor tweak or a major overhaul.
-
-Final Answer: Yes",416addf5ac7ac366,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:50:53.776913+00:00
+Final Answer: Yes",416addf5ac7ac366,llama3.1:8b,0,2026-06-08T17:59:11.131348+00:00
 ISSUE-0043,Add export feature #43,0,0,"Here are my step-by-step analysis:
 
 * 1. The issue title and description provide a clear goal: to export data from the reports page to CSV format.
 * 2. The language used is clear and concise, with no vague terms or ambiguous phrases.
-* 3. There is no indication that this issue can be interpreted in multiple ways; it appears to be a straightforward request for a specific feature.
+* 3. There's no indication that this issue can be interpreted in multiple ways; it seems like a straightforward request for a specific feature.
 
-Final Answer: No",8c6a2e2c81c0a7c9,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:51:36.290706+00:00
+Final Answer: No",8c6a2e2c81c0a7c9,llama3.1:8b,0,2026-06-08T17:59:12.561257+00:00
 ISSUE-0044,Performance issue #44,1,1,"Here are my step-by-step analysis:
 
 * 1. What information is present in this issue? 
@@ -384,60 +365,51 @@ The issue description mentions a specific performance issue (#44) and states tha
 The language used is somewhat vague because it doesn't specify what constitutes ""slow"". For example, is it a few seconds delay, several minutes, or something else?
 
 * 3. Can this issue be interpreted in multiple ways?
-Yes, without further context or clarification, it's possible to interpret the issue in different ways. For instance, one person might think the app takes too long to load, while another person might believe it's a problem with navigation.
+Yes, without further context or clarification, it's possible to interpret the issue in different ways. For instance, one person might think the app takes too long to load, while another person might assume it's a problem with a specific feature.
 
 * 4. Does the issue lack clear context?
-The issue description lacks specific details about what ""slow"" means and which part of the app is affected, making it difficult to understand the scope of the problem.
+The issue description lacks context about what ""slow"" means and which part of the app is affected.
 
 * 5. Is the scope unclear?
-Yes, without more information, it's hard to determine the scope of the performance issue, such as whether it affects a single feature or the entire application.
+Yes, without more information, it's difficult to determine the scope of the performance issue (#44).
 
-Final Answer: Yes",4b242541c1eda2c6,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:53:10.342751+00:00
+Final Answer: Yes",4b242541c1eda2c6,llama3.1:8b,0,2026-06-08T17:59:15.399739+00:00
 ISSUE-0045,Null pointer exception #45,1,0,"Here are the step-by-step analysis:
 
-* **Step 1: Information present in the issue**
-	+ The issue mentions a specific exception type (NullPointerException)
-	+ A file name and line number where the error occurs (UserService.java at line 142)
-	+ A variable name that is null (userId)
-	+ This information suggests that the issue has clear context.
-* **Step 2: Language vagueness**
-	+ The language used in the issue description is straightforward and unambiguous. It clearly states what happened (NullPointerException) and where it occurred (UserService.java at line 142).
-	+ There are no vague terms or phrases that could lead to multiple interpretations.
-* **Step 3: Multiple interpretations**
-	+ Given the specific details provided, it's unlikely that someone would interpret this issue in a different way. The information is precise enough to pinpoint the exact location of the error.
+* 1. The issue provides specific details about the error, including the file name, line number, and a brief description of the problem.
+* 2. The language used is clear and concise, with no vague terms or ambiguous phrases.
+* 3. There is no indication that this issue can be interpreted in multiple ways; the information provided points to a specific cause (NullPointerException) at a specific location (UserService.java line 142).
 
-Based on these steps, I conclude:
-
-Final Answer: No",beb955adee7f49f8,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:54:50.988532+00:00
+Final Answer: No",beb955adee7f49f8,llama3.1:8b,0,2026-06-08T17:59:17.037526+00:00
 ISSUE-0046,Search not working #46,0,1,"Here's my analysis:
 
-* 1. The issue title and description provide a clear problem statement: ""Search returns no results."" This indicates that there is some information present, but it's quite minimal.
-* 2. The language used is clear and concise. There are no vague terms or ambiguous phrases that would suggest multiple interpretations.
-* 3. However, the issue can be interpreted in multiple ways. For example:
-	+ Is this a problem with the search functionality itself (e.g., incorrect indexing, faulty query logic)?
-	+ Or is it a data-related issue (e.g., no relevant results exist in the database)?
-	+ Are there any specific search parameters or filters that are not being applied correctly?
-* 4. The lack of context and scope makes it difficult to determine the root cause of the problem.
-* 5. Without more information, such as error messages, logs, or user behavior, it's challenging to provide a clear solution.
+* 1. The issue title ""Search not working #46"" provides some context, indicating that it's related to a specific search functionality and has been reported before (#46). However, the description is quite brief.
+* 2. The language used in the description (""Search returns no results"") is clear and concise, but it doesn't provide any additional information about what might be causing the issue or how to reproduce it.
+* 3. Upon closer inspection, I realize that this issue can indeed be interpreted in multiple ways. For example:
+	+ Is the search functionality not working at all, or does it return incorrect results?
+	+ Are there any specific keywords or filters that are being used during the search?
+	+ Has the user's account settings or permissions been modified recently?
 
-Final Answer: Yes",7bb0dc5512f3aff0,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:56:08.555754+00:00
+Considering these points, I conclude that this issue is ambiguous because it lacks clear context and can be interpreted in multiple ways.
+
+Final Answer: Yes",7bb0dc5512f3aff0,llama3.1:8b,0,2026-06-08T17:59:19.545174+00:00
 ISSUE-0047,Add dark mode #47,0,0,"Here's my analysis:
 
-* 1. The issue provides a specific title (""Add dark mode #47"") and a detailed description of what needs to be implemented, including the use of localStorage for persistent preference.
-* 2. The language used in the description is clear and concise, with no vague terms or ambiguous phrases that could lead to misinterpretation.
-* 3. While there may be some minor variations in how dark mode toggle can be implemented (e.g., different UI designs), the overall scope of the issue is well-defined and specific.
+* 1. The issue title and description provide a clear goal: to implement dark mode toggle with persistent preference.
+* 2. The language used is clear and concise, without any vague terms or ambiguous expressions.
+* 3. There are no multiple possible interpretations of the requirement; it seems to be a straightforward implementation task.
 
-Based on this analysis, I conclude:
+Final Answer: No",d5416f5b60b3e7fe,llama3.1:8b,0,2026-06-08T17:59:20.893786+00:00
+ISSUE-0048,Crash on startup #48,0,0,"Here's my analysis:
 
-Final Answer: No",d5416f5b60b3e7fe,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:57:02.239679+00:00
-ISSUE-0048,Crash on startup #48,0,1,"Here's my analysis:
+* 1. The issue title ""Crash on startup #48"" suggests that it might be a duplicate of an existing issue, but the description provides some context: ""App crashes when opened.""
+* 2. The language used is clear and concise. There are no vague terms or ambiguous expressions.
+* 3. However, there's one potential issue - the phrase ""when opened"". Does this mean when the app is launched for the first time, or every time it's launched? This could be interpreted in multiple ways.
 
-* 1. The issue title and description provide a minimal amount of context, but it's not enough to understand the root cause of the problem.
-* 2. The language used is clear: ""App crashes when opened"" implies that the application fails to launch successfully.
-* 3. However, this issue can be interpreted in multiple ways because there are many possible reasons why an app might crash on startup, such as a bug in the code, a compatibility issue with the user's device or operating system, or even a problem with the user's account.
+But, considering that the language is clear and concise overall, I wouldn't mark this as ambiguous solely based on a single potentially ambiguous phrase. 
 
-Final Answer: Yes",ad25972ffa153b07,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:57:52.871733+00:00
-ISSUE-0049,Email validation #49,0,0,"Here are my step-by-step analysis:
+Final Answer: No",ad25972ffa153b07,llama3.1:8b,0,2026-06-08T17:59:22.933038+00:00
+ISSUE-0049,Email validation #49,0,0,"Here's my analysis:
 
 * 1. The issue provides a specific task (""Validate email format on registration form"") and mentions a related requirement (""show inline error messages""). This suggests that the context is clear.
 * 2. The language used in the description is straightforward and easy to understand, without any ambiguous terms or phrases. For example, ""validate"" and ""email format"" are specific concepts that don't require further clarification.
@@ -445,307 +417,453 @@ ISSUE-0049,Email validation #49,0,0,"Here are my step-by-step analysis:
 
 Based on this analysis, I conclude:
 
-Final Answer: No",bca59862c29c1031,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T19:58:51.092369+00:00
+Final Answer: No",bca59862c29c1031,llama3.1:8b,0,2026-06-08T17:59:24.856661+00:00
 ISSUE-0050,Database timeout #50,0,0,"Here's my analysis:
 
-* **Step 1: Information present**: The issue provides specific details about the problem, including:
-	+ The type of error (database timeout)
-	+ A specific instance number (#50)
-	+ Conditions under which the error occurs (heavy load with more than 500 concurrent users)
-	+ Timeframe for the error to occur (after 30 seconds)
-* **Step 2: Language clarity**: The language used is clear and concise, without any vague terms or ambiguous phrases.
-* **Step 3: Context**: While there's no explicit context provided, the information given suggests that this issue is related to performance under heavy load, which is a common scenario for database systems. This context can be inferred from the description.
-* **Step 4: Scope**: The scope of the issue appears to be focused on resolving the specific problem described (database timeout after 30 seconds with more than 500 concurrent users).
-* **Step 5: Multiple interpretations**: Upon reviewing the issue, I don't see any obvious ways in which this issue can be interpreted in multiple ways. The description is straightforward and points to a specific problem.
+* Step 1: The issue provides specific details about the problem, including the timeout duration (#50), the condition under which it occurs (heavy load with more than 500 concurrent users), and the affected component (DB queries).
+* Step 2: The language used is clear and concise. The terms ""timeout"", ""heavy load"", and ""concurrent users"" are well-defined in the context of database performance.
+* Step 3: There is no ambiguity in the issue description regarding what is happening, when it's happening, or where it's happening.
 
-Final Answer: No",f78fb93887b55af9,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:00:25.787648+00:00
-ISSUE-0051,Missing error handling #51,1,1,"Here's my analysis:
+Final Answer: No",f78fb93887b55af9,llama3.1:8b,0,2026-06-08T17:59:26.634616+00:00
+ISSUE-0051,Missing error handling #51,1,1,"Here are my step-by-step analysis:
 
-* 1. The issue title mentions a specific error handling number (#51), which suggests that there might be some context about what kind of error is being referred to.
-* 2. The language used in the description (""Handle errors properly"") is quite vague and doesn't provide any clear guidance on what ""properly"" means in this context.
-* 3. Without more information, it's unclear what specific errors are being referred to or how they should be handled, which could lead to multiple interpretations of the issue.
+* 1. The issue title mentions a specific error handling number (#51), which suggests that there is some context about what kind of error needs to be handled.
+* 2. The language used in the description (""Handle errors properly"") is quite vague and does not provide any clear guidance on how to handle errors or what constitutes ""proper"" error handling.
+* 3. While the issue title mentions a specific error number, the description itself can be interpreted in multiple ways (e.g., what exactly needs to be handled? How should it be handled?). This lack of clarity makes it difficult to determine the scope and requirements of the issue.
 
-Based on these points, I would conclude that the issue is ambiguous due to its vague language and lack of clear context.
-
-Final Answer: Yes",de4b842b94e286bc,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:01:24.460843+00:00
+Final Answer: Yes",de4b842b94e286bc,llama3.1:8b,0,2026-06-08T17:59:28.634536+00:00
 ISSUE-0052,API rate limiting #52,1,0,"Here's my analysis:
 
-* Step 1: The issue provides specific details about the rate limiting, including the number of requests per minute and the response code to be used (429). This suggests that there is sufficient information present.
-* Step 2: The language used in the issue description is clear and concise. It specifies a precise limit on API requests and a specific response code to be returned when this limit is exceeded.
-* Step 3: Upon reviewing the issue, I don't see any ambiguity or multiple possible interpretations of what needs to be implemented.
+* Step 1: The issue provides specific details about the rate limiting, including the number of requests per minute and the response code to be used.
+* Step 2: The language is clear and concise, with no vague terms or ambiguous phrases. The requirements are well-defined and easy to understand.
+* Step 3: There is no indication that this issue can be interpreted in multiple ways. The requirements are specific and unambiguous.
 
-Final Answer: No",0b52c025fefd3a8a,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:02:14.303280+00:00
+Final Answer: No",0b52c025fefd3a8a,llama3.1:8b,0,2026-06-08T17:59:30.172772+00:00
 ISSUE-0053,Button color #53,0,1,"Here are my step-by-step analysis:
 
-* 1. The issue title mentions a specific button color (#53), which suggests that there is some context about what needs to be changed.
-* 2. However, the language used in the description (""Change the button color"") is quite vague and does not provide any clear context or scope for the change. It doesn't specify which button, why it needs to be changed, or what the desired outcome is.
-* 3. Given the lack of clarity around which button needs to be changed (e.g., a specific button on a form, a navigation button, etc.), this issue can indeed be interpreted in multiple ways.
+* 1. The issue title mentions ""Button color #53"", which implies that there might be a specific button and color in mind, but it's not explicitly stated.
+* 2. The language used is clear: the issue simply states to change the button color. There's no ambiguity in what needs to be done.
+* 3. However, without more context or information about which button and color are being referred to, this issue can indeed be interpreted in multiple ways.
 
-Final Answer: Yes",91ec21a17ce38412,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:03:10.277437+00:00
+Final Answer: Yes",91ec21a17ce38412,llama3.1:8b,0,2026-06-08T17:59:31.854861+00:00
 ISSUE-0054,Memory leak #54,1,0,"Here's my analysis:
 
-* Step 1: The issue provides a specific title (#54) and describes a problem with memory usage growing unbounded over a period of time in a specific service (background sync).
-* Step 2: The language used is clear and concise, describing a measurable phenomenon (memory growth) within a specific timeframe.
-* Step 3: While the term ""unbounded"" might be somewhat technical, it's a well-defined concept in computer science, and the context of the issue makes it clear what's being referred to. There's no ambiguity in the description.
+* 1. The issue provides a specific title (#54) and describes a problem with memory usage growing unbounded over a specified period of time (24 hours). This suggests that the reporter has some knowledge about the system and is trying to convey a specific concern.
+* 2. The language used in the description (""Memory leak"", ""grows unbounded"") is technical and clear, indicating that the reporter is familiar with software development concepts. There's no vague or ambiguous terminology that would suggest uncertainty or confusion.
+* 3. While it's possible that different developers might have slightly different interpretations of what constitutes a ""memory leak"" or how to measure ""unbounded growth"", the description provides enough context (background sync service, 24 hours) to make it clear what is being reported.
 
-Final Answer: No",b27921ec034d30a9,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:04:03.240066+00:00
+Based on this analysis, I conclude that the issue is not ambiguous. The language and context are clear, and there's no indication that the reporter is unsure about what they're describing or how it should be interpreted.
+
+Final Answer: No",b27921ec034d30a9,llama3.1:8b,0,2026-06-08T17:59:34.547574+00:00
 ISSUE-0055,Update docs #55,1,0,"Here's my analysis:
 
-* 1. The issue title ""Update docs #55"" suggests that there is a specific document or set of documents that need to be updated, and the ""#55"" implies that it's related to a particular task or ticket.
-* 2. The language used in the description ""Documentation is outdated"" is clear and concise. It states exactly what the problem is: the documentation is no longer up-to-date.
-* 3. There doesn't seem to be any ambiguity in this issue. The scope of the problem (the documentation) is clearly stated, and there's no room for multiple interpretations.
+* 1. The issue title ""Update docs #55"" suggests that there is a specific document or set of documents that need to be updated, but the description does not provide any further context about which documents are outdated.
+* 2. The language used in the issue description (""Documentation is outdated"") is clear and concise, indicating exactly what problem needs to be addressed.
+* 3. While it's possible that there might be some ambiguity around which specific documentation needs to be updated (e.g., user manuals, API docs, etc.), the issue description does not provide any multiple interpretations of the problem.
 
-Final Answer: No",76ba07064bfac679,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:05:00.852869+00:00
+Considering these points, I would say that the issue is clear and well-defined, with no obvious ambiguities. However, it's worth noting that there might be some underlying ambiguity around which specific documentation needs to be updated, but this is not immediately apparent from the issue description alone.
+
+Final Answer: No",76ba07064bfac679,llama3.1:8b,0,2026-06-08T17:59:36.995314+00:00
 ISSUE-0056,File upload fails #56,0,0,"Here's my analysis:
 
 * Step 1: The issue provides a specific error code (413), endpoint (/upload), and file size limit (10MB). This suggests that there is enough information to investigate the problem.
 * Step 2: The language used in the description is clear and concise, stating exactly what happens when uploading large files. There are no vague terms or ambiguous phrases.
 * Step 3: Upon reviewing the issue, I don't see any indication of multiple possible interpretations. The description clearly states a specific condition (file size > 10MB) that leads to a specific error (413).
 * Step 4: Considering the context, it's likely that this issue is related to a configuration or implementation detail in the /upload endpoint.
-* Step 5: Given the specificity of the information and the clear language used, I don't see any ambiguity in this issue.
+* Step 5: Based on these observations, I don't see any red flags indicating ambiguity.
 
-Final Answer: No",d6f958779cc98985,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:06:17.435544+00:00
+Final Answer: No",d6f958779cc98985,llama3.1:8b,0,2026-06-08T17:59:39.369569+00:00
 ISSUE-0057,Wrong total #57,0,1,"Here's my analysis:
 
-* 1. What information is present in this issue? The issue mentions a specific problem (""The total is wrong"") and a context (""in the cart""), which suggests that it's related to an e-commerce application.
-* 2. Is the language vague or clear? The language used is relatively simple and straightforward, but it lacks specificity about what exactly is wrong with the total (e.g., is it too high, too low, or incorrect in some other way?). This lack of clarity could lead to multiple interpretations.
-* 3. Can this issue be interpreted in multiple ways? Yes, because the description doesn't specify how the total is wrong, which means that different people might have different ideas about what's causing the problem.
+* 1. What information is present in this issue? 
+The issue mentions a specific problem (""Wrong total #57"") and provides some context by stating that the issue is related to a cart, but it lacks details about what specifically is wrong with the total.
 
-Based on these points, I conclude that the issue is ambiguous due to its lack of specificity and clarity.
+* 2. Is the language vague or clear?
+The language used is somewhat vague because it doesn't specify how the total is incorrect (e.g., is it too high, too low, or missing items?). However, the issue does provide a specific reference number (#57), which suggests that there might be some context or information available elsewhere.
 
-Final Answer: Yes",5d5cb478ef061a02,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:07:29.258256+00:00
+* 3. Can this issue be interpreted in multiple ways?
+Yes, because of the lack of specificity about what's wrong with the total and how it should be corrected. Without more details, it's possible to interpret the issue as referring to a variety of problems (e.g., incorrect calculation, missing items, or formatting issues).
+
+* 4. Does this issue lack clear context?
+Yes, because while we know that the issue is related to a cart, there's no additional information about what kind of cart (e.g., online shopping cart, spreadsheet, etc.) or how it's being used.
+
+* 5. Is the scope",5d5cb478ef061a02,llama3.1:8b,0,2026-06-08T17:59:42.532846+00:00
 ISSUE-0058,Session expiry #58,0,0,"Here's my analysis:
 
-* Step 1: The issue provides specific details about what needs to be implemented, including a time frame for session expiry and a warning dialog.
+* Step 1: The issue provides a specific title (#58) and a clear description of what needs to be implemented, which is automatic session expiry after 30 minutes of inactivity with a warning dialog.
 * Step 2: The language used is clear and concise. There are no vague terms or ambiguous phrases that could lead to misinterpretation.
-* Step 3: While the issue doesn't provide context about why this feature is being implemented (e.g., security concerns, user experience), it's specific enough in its requirements that there's little room for interpretation.
+* Step 3: Upon reviewing the issue, I don't see any potential for multiple interpretations. The requirement is specific and well-defined.
 
-Final Answer: No",c0d3891a591aae92,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:08:18.770991+00:00
-ISSUE-0059,Fix typo #59,1,1,"Here are my step-by-step analysis:
+Final Answer: No",c0d3891a591aae92,llama3.1:8b,0,2026-06-08T17:59:44.199216+00:00
+ISSUE-0059,Fix typo #59,1,0,"Here are my step-by-step analysis:
 
-* 1. The issue title mentions a specific ID (#59), which implies that there is some context about where the typo is located.
-* 2. The language used is clear and concise, stating that there is a typo somewhere.
-* 3. However, upon closer inspection, I realize that the phrase ""somewhere"" is quite vague, as it doesn't specify exactly where the typo is located.
+* 1. The issue title mentions a specific ID (#59), which suggests that there is some context about where the typo is located.
+* 2. The language used is clear and concise, stating exactly what needs to be fixed (""Fix typo"").
+* 3. Given the specificity of the issue title and description, it's unlikely that this issue can be interpreted in multiple ways.
 
-Given these points, I would say that the issue can be interpreted in multiple ways due to the vagueness of the location.
-
-Final Answer: Yes",895e98e7aa656c77,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:09:11.959775+00:00
+Final Answer: No",895e98e7aa656c77,llama3.1:8b,0,2026-06-08T17:59:45.659716+00:00
 ISSUE-0060,Pagination broken #60,0,1,"Here's my analysis:
 
-* 1. The issue title and description provide a clear problem statement, indicating that there is an issue with pagination on the user management table when a filter is applied.
+* 1. The issue title and description provide a clear problem statement, indicating that there is an issue with pagination on a specific table when a filter is applied.
 * 2. The language used is clear and concise, without any vague terms or ambiguous expressions.
-* 3. However, upon closer inspection, I notice that the term ""filter"" could be interpreted in multiple ways depending on how it's implemented in the system (e.g., is it a simple search filter or a more complex filtering mechanism?). Additionally, the phrase ""user management table"" might not be specific enough to uniquely identify the affected component.
-* 4. The issue description lacks context about what exactly happens when pagination doesn't work with the filter applied (e.g., does it throw an error, display incorrect data, etc.?).
-* 5. Considering these points, I conclude that this issue can indeed be interpreted in multiple ways due to the lack of clear context and potential ambiguity in the language used.
+* 3. However, the scope of the issue is not explicitly defined. For example, does this issue only apply to a specific user management table, or are there other tables that also have pagination issues when filters are applied? Additionally, what exactly is meant by ""pagination"" and ""filter""? Are these terms well-defined in the context of the software?
+* 4. The issue description implies that the problem occurs under specific conditions (when a filter is applied), but it does not provide enough information to determine whether this is an isolated issue or a more general problem.
+* 5. Given the lack of clear scope and some implicit assumptions about the terms used, I would argue that this issue can be interpreted in multiple ways.
 
-Final Answer: Yes",a07b4cdf3c992110,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:10:35.951063+00:00
-ISSUE-0061,Add logging #61,0,1,"Here's my analysis:
+Final Answer: Yes",a07b4cdf3c992110,llama3.1:8b,0,2026-06-08T17:59:48.379990+00:00
+ISSUE-0061,Add logging #61,0,1,"Here are my step-by-step analysis:
 
-* 1. The issue title ""Add logging #61"" provides some context, but it's not very descriptive. The issue description is even more concise: ""Add proper logging."" There's no clear indication of what kind of logging is needed or where the logging should be implemented.
+* 1. The issue title ""Add logging #61"" provides some context, but it's not very descriptive. The issue description is even more concise: ""Add proper logging."" There isn't much information about what kind of logging is needed or where the logs should be stored.
 * 2. The language used in this issue is quite vague. What does ""proper logging"" mean? Does it refer to a specific logging framework, a certain level of verbosity, or something else entirely?
-* 3. Given the vagueness of the language and lack of context, I believe this issue can be interpreted in multiple ways. For example, one person might think that adding proper logging means implementing a new logging library, while another person might assume it's just about configuring an existing logger to output more information.
+* 3. Given the vagueness of the language, I believe this issue can indeed be interpreted in multiple ways. For example, one person might think that adding proper logging means implementing a new logging library, while another person might assume it's just about configuring an existing logger to output more information.
+* 4. The lack of clear context and scope also contributes to the ambiguity of this issue. Where exactly should logging be added? Is it for a specific feature or the entire application?
+* 5. Considering all these factors, I believe the issue is ambiguous.
 
-Final Answer: Yes",ffddbf3937b16bc9,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:11:43.076333+00:00
+Final Answer: Yes",ffddbf3937b16bc9,llama3.1:8b,0,2026-06-08T17:59:51.286997+00:00
 ISSUE-0062,Two-factor auth #62,1,0,"Here's my analysis:
 
-* Step 1: The issue provides a specific title (#62) and a clear description of what needs to be added, which is TOTP-based 2FA support for admin accounts with backup codes. This suggests that the issue has some context.
-* Step 2: Upon reviewing the language used in the issue description, I don't see any vague terms or phrases that would indicate ambiguity. The words and concepts used are specific and well-defined (e.g., ""TOTP-based"", ""admin accounts"", ""backup codes"").
-* Step 3: Considering the scope of the issue, it appears to be focused on a specific feature addition for admin accounts, which is a clear and well-defined scope.
-* Step 4: I don't see any language or context that would suggest multiple interpretations of what needs to be done. The description seems to point to a single, well-defined requirement.
+* Step 1: The issue provides a specific title (""Two-factor auth #62"") and a brief description that mentions two key requirements: TOTP-based 2FA support for admin accounts and backup codes.
+* Step 2: Upon reviewing the language, I notice that it is clear and concise. The terms ""TOTP"" (Time-Based One-Time Password) and ""2FA"" (Two-Factor Authentication) are specific and widely understood in the industry. Additionally, the phrase ""admin accounts with backup codes"" provides a clear context for the requirement.
+* Step 3: I examine the scope of the issue to see if it can be interpreted in multiple ways. The description explicitly states that the requirement is for admin accounts only, which suggests a specific scope. There are no ambiguous terms or phrases that could lead to multiple interpretations.
+* Step 4: Considering the clarity of language and context, I conclude that this issue does not appear to be ambiguous at first glance.
+* Step 5: However, upon closer inspection, I notice that the issue description mentions ""backup codes"" without specifying how they should be integrated with TOTP-based 2FA. This could potentially lead to multiple interpretations about the exact implementation details.
 
-Based on this analysis, I conclude:
-
-Final Answer: No",b3cdcb996a922998,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:12:58.490473+00:00
+Final Answer: No",b3cdcb996a922998,llama3.1:8b,0,2026-06-08T17:59:54.475447+00:00
 ISSUE-0063,Improve something #63,0,1,"Here's my analysis:
 
-* 1. The issue title ""Improve something #63"" suggests that there may be a specific requirement or feature associated with it, but without more context, it's unclear what exactly needs to be improved.
-* 2. The language used is vague: the word ""something"" is too general and doesn't provide enough information about what specifically needs improvement.
-* 3. This issue can be interpreted in multiple ways: depending on the context, ""something"" could refer to a feature, a process, a user interface element, or even a business process.
+* 1. The issue title ""Improve something #63"" and description ""Something needs to be improved."" provide very little information about what specifically needs improvement.
+* 2. The language used is vague, as it doesn't specify what aspect of the system or process needs improvement.
+* 3. This issue can be interpreted in multiple ways, such as improving a specific feature, fixing a bug, optimizing performance, etc.
 
-Final Answer: Yes",f4262b7b082ca862,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:13:51.251666+00:00
+Final Answer: Yes",f4262b7b082ca862,llama3.1:8b,0,2026-06-08T17:59:56.087151+00:00
 ISSUE-0064,CSV import fails #64,1,0,"Here's my analysis:
 
-* 1. The issue title and description provide a specific problem: importing CSV files with special characters fails silently.
-* 2. The language used is clear, specifically mentioning ""special characters"" and ""commas in fields"", which are well-defined concepts.
-* 3. There doesn't seem to be any ambiguity in the issue description; it's a straightforward report of a specific problem.
+* 1. The issue title and description provide a clear problem statement: CSV import fails when there are special characters in fields.
+* 2. The language used is clear, with specific details about the failure condition (importing CSV files with commas in fields).
+* 3. There doesn't seem to be any ambiguity in how this issue can be interpreted; it's a straightforward description of a problem.
 
-Final Answer: No",20eab8bb5fb88a06,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:14:33.373284+00:00
+Final Answer: No",20eab8bb5fb88a06,llama3.1:8b,0,2026-06-08T17:59:57.623726+00:00
 ISSUE-0065,Profile page slow #65,0,0,"Here's my analysis:
 
 * 1. The issue provides a specific title (#65), which suggests that it might be related to a particular bug or feature, but we don't know what that is yet.
 * 2. The language used in the description is clear and concise: ""The profile page takes 8+ seconds to load due to unoptimized image loading."" There's no ambiguity about what's being described.
-* 3. The issue seems to be pointing to a specific problem (slow loading of images) on a specific page (profile page), which suggests that it's not open to multiple interpretations.
+* 3. The issue seems to be pointing to a specific problem (slow loading of images) on a specific page (profile page). It doesn't seem like there are multiple ways to interpret this.
 
-Final Answer: No",dc284b838b769272,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:15:28.979768+00:00
+Final Answer: No",dc284b838b769272,llama3.1:8b,0,2026-06-08T17:59:59.520538+00:00
 ISSUE-0066,Notifications broken #66,0,0,"Here's my analysis:
 
-* Step 1: The issue title and description provide specific information about the problem, including:
-	+ The type of device affected (Android devices)
-	+ The operating system version affected (Android 13+)
-	+ The specific functionality that is not working as expected (push notifications)
-* Step 2: The language used in the issue description is clear and concise. There are no vague terms or ambiguous phrases.
-* Step 3: Based on the information provided, it appears that there is a specific problem with push notifications being delivered to Android devices running Android 13+. This does not seem to be open to multiple interpretations.
+* Step 1: The issue title and description provide specific information about the problem, including the operating system version affected.
+* Step 2: The language used is clear and concise, stating a specific condition (Android devices running Android 13+) that leads to a specific outcome (push notifications not being delivered).
+* Step 3: There are no ambiguous terms or phrases in the description, such as ""sometimes"" or ""may be"".
+* Step 4: The issue does not lack clear context; it provides enough information for someone familiar with the system to understand what's happening.
+* Step 5: Based on the specific details provided, there is only one reasonable interpretation of this issue.
 
-Final Answer: No",7a76554ced2c7f8d,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:16:25.774188+00:00
+Final Answer: No",7a76554ced2c7f8d,llama3.1:8b,0,2026-06-08T18:00:01.648024+00:00
 ISSUE-0067,Timezone bug #67,0,0,"Here are my step-by-step analysis:
 
 * 1. The issue provides a specific title (#67) and description, which indicates that it is related to a known problem with timestamps displaying in UTC instead of the user's local timezone.
 * 2. The language used in the description is clear and concise, indicating what the problem is (timestamps not displaying in local timezone) and where it occurs (in the event log).
 * 3. There are no ambiguous words or phrases that could be interpreted in multiple ways. The issue clearly states a specific behavior (timestamps display in UTC) and a desired behavior (timestamps should display in user's local timezone).
 
-Final Answer: No",38414acbcda38d23,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:17:22.496590+00:00
-ISSUE-0068,Dropdown empty #68,0,0,"Here are my step-by-step analysis:
+Final Answer: No",38414acbcda38d23,llama3.1:8b,0,2026-06-08T18:00:03.677758+00:00
+ISSUE-0068,Dropdown empty #68,0,0,"Here's my analysis:
 
-* 1. The issue provides a specific context: ""Country dropdown"" and ""registration form for new users"". This gives us some information about what is being reported.
-* 2. The language used in the description is clear and concise, without any vague terms or jargon that could lead to misinterpretation.
-* 3. Upon reviewing the issue, I don't see multiple possible interpretations of what ""Country dropdown empty"" means. It seems like a straightforward report of an error condition.
+* 1. The issue provides a specific context: it mentions a ""Country dropdown"" on a ""registration form for new users"". This gives us some information about the scope of the problem.
+* 2. The language used is clear and concise. There are no vague terms or ambiguous expressions that could lead to multiple interpretations.
+* 3. Upon reviewing the issue, I don't see any possible ways to interpret it in multiple ways. It's a straightforward description of an observed behavior (an empty dropdown) on a specific form.
 
-Final Answer: No",eb02b462dd6b1e5d,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:18:11.991322+00:00
+Final Answer: No",eb02b462dd6b1e5d,llama3.1:8b,0,2026-06-08T18:00:05.509897+00:00
 ISSUE-0069,Report generation #69,0,0,"Here's my analysis:
 
-* **Step 1: Information present**: The issue mentions a specific problem with report generation, including the number of rows that causes the timeout.
-* **Step 2: Language clarity**: The language used is clear and concise. It specifies a concrete condition (datasets with more than 10,000 rows) that leads to the problem.
-* **Step 3: Context**: While there's no explicit context provided, it can be inferred that this issue relates to a specific report generation process within the software.
-* **Step 4: Scope**: The scope of the issue appears to be focused on report generation for datasets with more than 10,000 rows. There are no indications of broader implications or unclear boundaries.
-* **Step 5: Multiple interpretations**: Upon reviewing the description, I don't see any obvious ways this issue could be interpreted in multiple ways.
+* Step 1: The issue provides a specific problem (""The monthly report generation times out"") and a condition that triggers it (""for datasets with more than 10,000 rows""). This suggests that the issue is well-defined.
+* Step 2: The language used in the issue description is clear and concise. It specifies a specific behavior (timeout) and a specific condition (datasets with more than 10,000 rows). There's no ambiguity in the wording.
+* Step 3: Upon reviewing the issue, I don't see any unclear context or scope. The issue seems to be focused on a specific aspect of the software (report generation) and doesn't appear to be related to other parts of the system.
+* Step 4: While there may be multiple possible solutions to this problem (e.g., optimizing report generation algorithms, increasing server resources), the issue itself is not ambiguous. It clearly describes a specific problem that needs to be addressed.
+* Step 5: I don't see any way to interpret this issue in multiple ways. The description provides enough information for someone familiar with the software to understand what's happening and how to address it.
 
-Final Answer: No",872bdce7979d3b6a,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:19:25.554853+00:00
+Final Answer: No",872bdce7979d3b6a,llama3.1:8b,0,2026-06-08T18:00:08.553005+00:00
 ISSUE-0070,Missing feature #70,0,1,"Here's my analysis:
 
-* 1. The issue mentions a specific feature number (#70), which suggests that there might be some context or reference to a previous discussion or documentation.
-* 2. However, the language used is quite vague: ""the thing we discussed in the meeting"" is not clear and could refer to anything. There's no specific description of what was discussed or agreed upon.
-* 3. Given the vagueness of the language, it's likely that this issue can be interpreted in multiple ways by different people. What one person thinks ""the thing"" refers to might be completely different from another person's understanding.
+* 1. The issue mentions a specific feature number (#70), which suggests that there is some context about what needs to be added.
+* 2. However, the language used is vague (""the thing we discussed in the meeting""). This phrase does not provide enough information for someone else to understand what exactly needs to be done.
+* 3. The issue can indeed be interpreted in multiple ways. What was ""discussed in the meeting"" might mean different things to different people, and it's unclear whether there is a clear understanding of what feature #70 refers to.
 
-Final Answer: Yes",a60225592febacd9,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:20:22.099380+00:00
+Final Answer: Yes",a60225592febacd9,llama3.1:8b,0,2026-06-08T18:00:11.004379+00:00
 ISSUE-0071,Concurrent edit conflict #71,1,0,"Here's my analysis:
 
-* 1. The issue title and description provide a specific problem: concurrent edit conflict #71, which implies that there is a known instance of this issue (#71). This suggests that the context is somewhat clear.
-* 2. The language used in the description is technical and specific (""Concurrent edit conflict"", ""same record simultaneously"", ""data loss silently""). There are no vague terms or ambiguous phrases that would suggest uncertainty about what is being described.
-* 3. While it's possible to imagine different scenarios where concurrent editing might cause data loss, the description specifically mentions two users editing the same record simultaneously, which suggests a clear and specific scenario.
+* 1. The issue title and description provide a specific scenario: two users editing the same record simultaneously, resulting in data loss.
+* 2. The language used is clear and concise, with no vague terms or ambiguous expressions.
+* 3. While there may be multiple ways to implement a solution to prevent concurrent edit conflicts (e.g., locking mechanisms, versioning), the issue itself describes a specific problem that can be understood in one way: data loss due to simultaneous editing.
 
-Based on this analysis, I conclude that:
-
-Final Answer: No",a8b77147a21b43db,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:21:24.272075+00:00
+Final Answer: No",a8b77147a21b43db,llama3.1:8b,0,2026-06-08T18:00:12.695098+00:00
 ISSUE-0072,Wrong redirect #72,0,0,"Here's my analysis:
 
 * 1. The issue provides a specific error number (#72) and describes a problem with redirecting users after logout, which suggests that there is some context about the issue.
 * 2. The language used is clear: ""Wrong redirect"" indicates an incorrect behavior, and ""After logout, users are redirected to dashboard instead of the login page"" provides a specific description of what's happening.
 * 3. There doesn't seem to be any ambiguity in this issue - it clearly states that the user is being redirected to the wrong page after logging out.
 
-Final Answer: No",ca5cf87e4b0cc360,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:22:16.082885+00:00
+Final Answer: No",ca5cf87e4b0cc360,llama3.1:8b,0,2026-06-08T18:00:14.497428+00:00
 ISSUE-0073,Image resize #73,1,0,"Here's my analysis:
 
 * 1. The issue provides a specific title (#73) and describes a problem with profile images not being resized/compressed on upload, which causes slow page loads. This suggests that the issue is related to a specific feature or functionality.
-* 2. The language used in the description is clear and concise. It states a specific problem (images are not resized/compressed) and its consequence (slow page loads). There's no ambiguity in what's being described.
+* 2. The language used in the description is clear and concise. It states a specific problem (images are not resized/compressed) and its consequence (slow page loads). There's no vague language or ambiguity in the description.
 * 3. Upon reviewing the description, I don't see any indication that this issue can be interpreted in multiple ways. The problem is clearly stated, and there's no room for misinterpretation.
 
-Based on these observations, I conclude that the issue does not exhibit any characteristics of an ambiguous requirement.
+Based on these observations, I conclude that the issue does not exhibit any characteristics of being ambiguous.
 
-Final Answer: No",71efea4c69b57ef1,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:23:19.643066+00:00
+Final Answer: No",71efea4c69b57ef1,llama3.1:8b,0,2026-06-08T18:00:16.708818+00:00
 ISSUE-0074,Filter not saving #74,1,0,"Here's my analysis:
 
-* 1. The issue provides a specific title (#74) and a brief description of the problem, which includes:
-	+ A clear statement of what is happening: ""Applied filters are reset""
-	+ A clear context: ""when navigating back to the list view""
-* 2. The language used in the description is clear and concise, without any vague terms or ambiguous expressions.
-* 3. Based on the provided information, it seems that there's a specific behavior (filter reset) occurring under a specific condition (navigating back to the list view), which suggests a single interpretation of the issue.
+* 1. The issue provides a specific title (#74) and a brief description of the problem, which includes the context that filters are being reset when navigating back to the list view.
+* 2. The language used is clear and concise, with no vague terms or ambiguous phrases.
+* 3. There's no indication that this issue can be interpreted in multiple ways; it appears to describe a specific behavior (filter reset) triggered by a specific action (navigating back to the list view).
 
-Final Answer: No",a553a0523eacd5f5,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:24:18.666228+00:00
+Final Answer: No",a553a0523eacd5f5,llama3.1:8b,0,2026-06-08T18:00:18.433003+00:00
 ISSUE-0075,Audit log missing #75,0,0,"Here's my analysis:
 
-* 1. The issue provides a specific error code (#75) and mentions that admin actions are not being recorded, which suggests some context is present.
-* 2. The language used is clear: ""Audit log missing #75"" implies that the audit log is expected to have an entry with ID #75, but it's missing. There's no vague language or ambiguity in this description.
-* 3. Upon closer inspection, I notice that the issue doesn't specify what constitutes an ""admin action"". This could be interpreted as any action performed by an admin user, or perhaps only specific actions (e.g., deleting a record). However, this is not necessarily ambiguous; it's more of a requirement clarification need.
+* 1. The issue provides a specific error code (#75) and mentions that admin actions are not being recorded, which suggests some context.
+* 2. The language is clear: the issue states what is happening (admin actions are missing from the audit log table), without using vague terms or jargon.
+* 3. While it's possible to ask for more information about what ""admin actions"" entails, the scope of the issue seems relatively narrow and focused on a specific problem.
 
-Considering these points, I conclude that the issue is not inherently ambiguous. It provides some context and uses clear language to describe the problem.
-
-Final Answer: No",6a277abfe51b7e95,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:25:36.371020+00:00
+Final Answer: No",6a277abfe51b7e95,llama3.1:8b,0,2026-06-08T18:00:20.096330+00:00
 ISSUE-0076,Language switch broken #76,0,0,"Here's my analysis:
 
-* 1. The issue title and description provide a clear problem statement, including the specific behavior that is occurring (""reverts to English after page refresh"").
-* 2. The language used in the issue description is clear and concise, with no vague terms or jargon.
-* 3. While there may be some assumptions about the expected behavior of the software (e.g., that it should remember the user's chosen language), the issue itself can be interpreted as a specific problem to be solved, rather than being open-ended.
+* 1. The issue title and description provide a clear problem statement, indicating that there is an issue with switching languages mid-session.
+* 2. The language used in the issue description is clear and concise, without any vague terms or jargon.
+* 3. Upon reviewing the issue description again, I notice that it mentions ""page refresh"" as part of the problem. This could potentially be interpreted in multiple ways, depending on how one defines a ""page refresh"". For example, does it refer to a full page reload, or just an update of a specific section?
+* 4. However, upon further consideration, I realize that this ambiguity is not significant enough to render the issue as a whole ambiguous.
+* 5. Overall, while there may be some minor room for interpretation regarding the specifics of the problem, the core issue and its context are clear.
 
-Final Answer: No",d9a24cf931a599cc,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:26:28.728369+00:00
-ISSUE-0077,Role permission #77,1,0,"Here's my analysis:
+Final Answer: No",d9a24cf931a599cc,llama3.1:8b,0,2026-06-08T18:00:22.585306+00:00
+ISSUE-0077,Role permission #77,1,1,"Here are my step-by-step analysis:
 
-* 1. The issue provides a specific role ('viewer') and a specific permission (#77), which suggests that there is some context to the issue.
-* 2. The language used is clear: it states exactly what users with the 'viewer' role can access, which is admin endpoints via direct URL. There's no ambiguity in the description of the problem.
-* 3. Upon closer inspection, I realize that the issue doesn't specify how the admin endpoints are being accessed (e.g., through a specific URL pattern or by exploiting some vulnerability). This lack of clarity could lead to multiple interpretations of what ""admin endpoints"" means and how they're being accessed.
+* 1. The issue provides specific details about the role permission (#77) and the behavior of users with a 'viewer' role, which suggests that there is enough context to understand the problem.
+* 2. The language used in the description is clear and concise, without any vague terms or ambiguous expressions. It specifically states what the issue is: users with a certain role can access admin endpoints via direct URL.
+* 3. Upon reviewing the issue again, I realize that there are multiple possible interpretations of this issue:
+	+ Is it a security concern that needs to be addressed?
+	+ Is it a feature request to restrict access to admin endpoints for 'viewer' users?
+	+ Are there any specific admin endpoints that need to be restricted or allowed?
 
-However, considering the overall context and the specificity of the role and permission mentioned, I think this issue is more about a potential security vulnerability rather than an ambiguous requirement. The language used is clear, but there's a need for additional information to fully understand the scope of the issue.
+Given these multiple possible interpretations, I conclude that the issue is ambiguous.
 
-Final Answer: No",91dc0ec7fd9cc52e,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:27:52.104821+00:00
+Final Answer: Yes",91dc0ec7fd9cc52e,llama3.1:8b,0,2026-06-08T18:00:24.999097+00:00
 ISSUE-0078,Broken link #78,0,1,"Here's my analysis:
 
-* 1. The issue provides a specific reference to ""link #78"", which suggests that it is related to a particular link on a page.
-* 2. The language used is clear and concise, stating exactly what the problem is (""broken link"").
-* 3. However, there are several factors that could lead to ambiguity:
-	+ What does ""the page"" refer to? Is it a specific webpage, or a generic term for any page?
-	+ How do we determine which link is #78?
+* 1. The issue title mentions a specific link (#78), which suggests that there might be some context or information about what page or system this link is associated with.
+* 2. The language used in the description (""There is a broken link on the page"") is clear and concise, but it lacks any additional details about what ""broken"" means (e.g., does it mean the link doesn't work at all, or just doesn't display properly?).
+* 3. Without more context, it's possible to interpret this issue in multiple ways: for example, is the broken link on a specific page, or is it a general problem that affects multiple pages?
+* 4. The scope of the issue is also unclear: does it affect only one user, or is it a widespread problem that needs to be addressed immediately?
+* 5. Given these ambiguities, I would say that this issue can indeed be interpreted in multiple ways.
 
-Given these potential ambiguities, I would conclude:
+Final Answer: Yes",31d76d29216e52cc,llama3.1:8b,0,2026-06-08T18:00:27.692968+00:00
+ISSUE-0079,Chart rendering #79,0,0,"Here's my analysis:
 
-Final Answer: Yes",31d76d29216e52cc,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:28:46.669702+00:00
-ISSUE-0079,Chart rendering #79,0,1,"Here are my step-by-step analysis:
+* 1. The issue provides a specific context: chart rendering, and mentions a specific problem (#79). This suggests that there is some relevant information present.
+* 2. The language used is clear and concise. The issue states exactly what the problem is (bar chart renders incorrectly) and under which conditions it occurs (when data contains negative values).
+* 3. Upon reviewing the issue, I don't see any ambiguity in its interpretation. The issue clearly describes a specific scenario where the bar chart rendering fails.
 
-* 1. The issue title and description provide a specific problem to be addressed, which is related to chart rendering when data contains negative values.
-* 2. The language used is clear and concise, with no vague terms or ambiguous expressions that could lead to misinterpretation.
-* 3. However, upon closer inspection, I notice that the issue doesn't specify what exactly ""renders incorrectly"" means (e.g., incorrect positioning, incorrect scaling, etc.). This lack of specificity could lead to multiple interpretations of how the chart is supposed to be rendered correctly.
-
-Based on these observations:
-
-Final Answer: Yes",4183060846c8c1ef,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:29:41.787465+00:00
+Final Answer: No",4183060846c8c1ef,llama3.1:8b,0,2026-06-08T18:00:29.443724+00:00
 ISSUE-0080,Delete confirmation #80,0,0,"Here's my analysis:
 
 * 1. The issue title and description provide a clear goal: to add a confirmation dialog before deleting records permanently.
 * 2. The language used is clear and concise, with no vague terms or ambiguous phrases.
 * 3. There are no multiple possible interpretations of the requirement; it simply states what needs to be done.
 
-Final Answer: No",e6ade389ac44bf9a,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:30:20.113834+00:00
-ISSUE-0081,Fix login bug #81,0,1,"Here's my analysis:
+Final Answer: No",e6ade389ac44bf9a,llama3.1:8b,0,2026-06-08T18:00:30.813282+00:00
+ISSUE-0081,Fix login bug #81,0,1,"Here are my step-by-step analysis:
 
-* 1. The issue title mentions a specific bug number (#81), which suggests that there is some context about the problem, but it's not explicitly stated.
-* 2. The language used is quite vague: ""Users cannot log in sometimes"" implies that the login failure is intermittent or unpredictable, rather than providing a clear description of the symptoms.
-* 3. This issue can be interpreted in multiple ways:
-	+ Is the bug occurring on all devices/platforms, or just specific ones?
-	+ Are there any error messages being displayed to the user?
-	+ What exactly do we mean by ""sometimes"" - is it every other login attempt, or only under certain conditions?
+* 1. The issue title mentions a specific bug number (#81), which suggests that there is some context about the issue, but it's not explicitly stated.
+* 2. The language used in the description (""sometimes"", ""please fix"") is vague and lacks specificity. It doesn't provide enough information to understand the root cause of the problem or what exactly needs to be fixed.
+* 3. This issue can indeed be interpreted in multiple ways, such as:
+	+ What does ""sometimes"" mean? Is it a frequent occurrence or a rare event?
+	+ What is the expected behavior when users try to log in?
+	+ Are there any specific error messages or symptoms that are associated with this issue?
 
-Based on these points, I conclude that this issue is AMBIGUOUS.
+Based on these observations, I conclude:
 
-Final Answer: Yes",ad2a8fa43276ecc5,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:31:26.110249+00:00
+Final Answer: Yes",ad2a8fa43276ecc5,llama3.1:8b,0,2026-06-08T18:00:33.042167+00:00
 ISSUE-0082,Update UI #82,1,1,"Here's my analysis:
 
 * 1. What information is present in this issue? 
-The issue title mentions a specific update number (#82), but the description only provides a general statement about updating the interface.
+The issue title mentions ""Update UI #82"", which suggests that it's related to a specific user interface update, but the description only provides a vague statement about updating the interface.
 
 * 2. Is the language vague or clear?
-The language used is quite generic and doesn't provide any specific details about what needs to be updated, how it should be updated, or why it's necessary.
+The language used is quite vague, as it doesn't specify what exactly needs to be updated, how it should be updated, or what are the expected outcomes of this update.
 
 * 3. Can this issue be interpreted in multiple ways?
-Yes, without more context, it's unclear whether ""update"" means a minor tweak, a major overhaul, or something else entirely. It also doesn't specify which parts of the interface need updating (e.g., layout, functionality, design).
+Yes, without further context or clarification, it's possible that different people might have different interpretations of what ""updating"" means and what specific changes are required.
 
-Based on these points, I conclude that this issue is ambiguous.
+* 4. Is there a lack of clear context?
+The issue description lacks any context about the current state of the UI, the goals of the update, or any relevant constraints or dependencies.
 
-Final Answer: Yes",246395ccbe848879,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:32:52.337835+00:00
-ISSUE-0083,Add export feature #83,0,0,"Here's my analysis:
+* 5. Does this issue have unclear scope?
+Yes, it's not clear what aspects of the UI need to be updated, how extensive the changes should be, and whether there are any specific requirements or deadlines that need to be met.
 
-* 1. The issue provides a specific title (#83) and a brief description of what needs to be done, which is to export data from the reports page to CSV format.
-* 2. The language used in the description is clear and concise, with no vague terms or ambiguous phrases that could lead to misinterpretation.
-* 3. There are no multiple ways to interpret this issue; it's a straightforward request for a specific feature.
+Final Answer: Yes",246395ccbe848879,llama3.1:8b,0,2026-06-08T18:00:36.046565+00:00
+ISSUE-0083,Add export feature #83,0,0,"Here are my step-by-step analysis:
 
-Final Answer: No",74ffcc89bf15f4a3,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:34:47.842266+00:00
-ISSUE-0084,Performance issue #84,1,-1,"Here's my analysis:
+* 1. The issue title and description provide a clear goal: to export data from the reports page to CSV format.
+* 2. The language used is clear and concise, with no vague terms or ambiguous phrases.
+* 3. There's no indication that this issue can be interpreted in multiple ways; it seems to be a straightforward request for a specific feature.
+
+Final Answer: No",74ffcc89bf15f4a3,llama3.1:8b,0,2026-06-08T18:00:37.511781+00:00
+ISSUE-0084,Performance issue #84,1,1,"Here are my step-by-step analysis:
 
 * 1. What information is present in this issue? 
-The issue mentions a specific identifier (""Performance issue #84"") and describes the problem as ""the app is slow"". This suggests that some context is provided, but it may not be sufficient to fully understand the scope of the issue.
+The issue description mentions a specific performance issue (#84) and states that the app is slow, but it does not provide any context about what ""slow"" means or which part of the app is affected.
 
 * 2. Is the language vague or clear?
-The language used in this issue is quite general and doesn't provide any specific details about what might be causing the slowness. It lacks clarity on what aspects of the app's performance are being affected (e.g., startup time, response time to user input, etc.).
+The language used is somewhat vague because it doesn't specify what constitutes ""slow"". For example, is it a few seconds delay, several minutes, or something else?
 
 * 3. Can this issue be interpreted in multiple ways?
-Given the lack of specificity in the language used, it's likely that different people could interpret this issue differently. For example, one person might think the slowness is due to a specific feature or functionality, while another person might suspect a hardware-related problem.
+Yes, without further context or clarification, it's possible to interpret the issue in different ways. For instance, one person might consider an app slow if it takes more than 5 seconds to load, while another person might have a higher threshold.
 
-* 4. Is there clear context provided?
-While some context is present (the identifier and the description of the problem), it's not enough to fully understand the scope of the issue. There are likely many possible causes for an app being slow, and without more information, it's difficult to determine what",4a44744af84dfc04,llama3.1:8b-instruct-q4_K_M,0,2026-06-04T20:38:36.903458+00:00
+* 4. Does the issue lack clear context?
+The issue description lacks specific details about what ""slow"" means or which part of the app is affected, making it difficult to understand the scope of the problem.
+
+* 5. Is the scope unclear?
+Yes, without more information, it's hard to determine the scope of the performance issue and whether it affects a small subset of users or the entire user base.
+
+Final Answer: Yes",4a44744af84dfc04,llama3.1:8b,0,2026-06-08T18:00:40.614026+00:00
+ISSUE-0085,Null pointer exception #85,0,0,"Here are the step-by-step analysis:
+
+* **Step 1: Information present in the issue**
+	+ The issue mentions a specific exception type (NullPointerException)
+	+ It specifies the file and line number where the error occurs (UserService.java at line 142)
+	+ It provides context about what is null (userId)
+* **Step 2: Language vagueness**
+	+ The language used is clear and concise, without any ambiguous terms or phrases
+* **Step 3: Multiple interpretations**
+	+ There is no indication that the issue can be interpreted in multiple ways; the description points to a specific cause of the error (userId being null)
+
+Based on this analysis, I conclude:
+
+Final Answer: No",c576575a50503a4e,llama3.1:8b,0,2026-06-08T18:00:42.694566+00:00
+ISSUE-0086,Search not working #86,0,1,"Here's my analysis:
+
+* 1. The issue title and description provide a clear problem statement: ""Search returns no results."" This indicates that there is some information present, but it's quite limited.
+* 2. The language used is clear and concise. There are no vague terms or ambiguous phrases that could lead to multiple interpretations.
+* 3. However, the issue can be interpreted in multiple ways. For example:
+	+ Is this a problem with the search functionality itself (e.g., incorrect indexing, faulty query logic)?
+	+ Or is it a data-related issue (e.g., no relevant results exist in the database)?
+	+ Are there any specific search parameters or filters that are not being applied correctly?
+* 4. The lack of context and scope makes it difficult to determine the root cause of the problem.
+* 5. Without more information, such as error logs, user behavior, or system configuration details, it's challenging to provide a clear solution.
+
+Final Answer: Yes",8345ef44fc413520,llama3.1:8b,0,2026-06-08T18:00:45.306844+00:00
+ISSUE-0087,Add dark mode #87,1,0,"Here's my analysis:
+
+* 1. The issue title and description provide a clear goal: to implement dark mode toggle with persistent preference.
+* 2. The language used is clear and concise, without any vague terms or ambiguous expressions.
+* 3. There are no multiple possible interpretations of the requirement; it seems to be a straightforward implementation task.
+
+Final Answer: No",04ab838bcc512c82,llama3.1:8b,0,2026-06-08T18:00:46.659825+00:00
+ISSUE-0088,Crash on startup #88,0,0,"Here's my analysis:
+
+* 1. The issue title ""Crash on startup #88"" provides some context, indicating that it's a specific problem related to the app crashing during startup, and also includes an identifier (#88) which suggests that this is not the first time this issue has been reported.
+* 2. The language used in the description (""App crashes when opened"") is clear and concise, without any vague or ambiguous terms.
+* 3. While it's possible to ask for more information (e.g., what version of the app was being used, what operating system, etc.), the issue as stated does not seem to be open to multiple interpretations.
+
+Final Answer: No",84925f4c915b4a55,llama3.1:8b,0,2026-06-08T18:00:48.682019+00:00
+ISSUE-0089,Email validation #89,1,0,"Here are my step-by-step analysis:
+
+* 1. The issue provides a specific title (""Email validation #89"") and a brief description of what needs to be done, which is to validate email format on the registration form and show inline error messages.
+* 2. The language used in the description is clear and concise, with no vague terms or ambiguous phrases that could lead to misinterpretation.
+* 3. Upon reviewing the issue, I don't see any potential for multiple interpretations of what needs to be done. The task is straightforward: validate email format and display error messages inline.
+
+Final Answer: No",b546dfe5fc80a926,llama3.1:8b,0,2026-06-08T18:00:50.532587+00:00
+ISSUE-0090,Database timeout #90,1,0,"Here's my analysis:
+
+* Step 1: The issue provides specific details about the problem, including the timeout duration (#90), the condition under which it occurs (heavy load with more than 500 concurrent users), and the system component affected (DB queries).
+* Step 2: The language used is clear and concise. The terms ""timeout"", ""heavy load"", and ""concurrent users"" are well-defined in the context of database performance.
+* Step 3: While there might be some debate about what constitutes a ""heavy load"", the specific threshold of more than 500 concurrent users provides a clear boundary condition. Additionally, the issue is focused on a specific symptom (timeout) rather than being open-ended.
+
+Final Answer: No",a95d21941b691a3e,llama3.1:8b,0,2026-06-08T18:00:52.590415+00:00
+ISSUE-0091,Missing error handling #91,1,0,"Here are my step-by-step analysis:
+
+* 1. The issue title mentions a specific ticket number (#91), which suggests that it is related to a particular piece of code or feature. Additionally, the issue description mentions ""errors"", implying that there is some context about what kind of errors need to be handled.
+* 2. The language used in the issue description (""Handle errors properly"") is clear and concise. It does not use vague terms or jargon that could lead to misinterpretation.
+* 3. While it's possible that different developers might have slightly different ideas about what ""proper error handling"" means, the scope of the issue seems relatively narrow (i.e., related to a specific ticket). The language used is also straightforward and doesn't suggest multiple interpretations.
+
+Final Answer: No",d4be1bc2d1a184e8,llama3.1:8b,0,2026-06-08T18:00:54.822311+00:00
+ISSUE-0092,API rate limiting #92,0,0,"Here's my analysis:
+
+* 1. The issue provides specific details about the rate limiting, including the number of requests per minute and the response code for exceeding the limit.
+* 2. The language used is clear and concise, with no vague terms or ambiguous phrases.
+* 3. While there may be some minor variations in how this requirement could be implemented (e.g., using a sliding window vs. a fixed window), the overall intent of the issue is clear and unambiguous.
+
+Final Answer: No",5c9c43984d5a4ae2,llama3.1:8b,0,2026-06-08T18:00:56.455244+00:00
+ISSUE-0093,Button color #93,1,1,"Here are my step-by-step analysis:
+
+* 1. The issue title mentions a specific hex code ""#93"", which suggests that there is some context about what color is being referred to.
+* 2. However, the language used in the description ""Change the button color"" is quite vague and does not provide any clear context or scope for the change. It doesn't specify whether this refers to a specific button on the screen, or all buttons, or even if it's referring to a different element altogether.
+* 3. Given the vagueness of the language, it's likely that this issue can be interpreted in multiple ways by different people.
+
+Final Answer: Yes",5546e53547fb085a,llama3.1:8b,0,2026-06-08T18:00:58.425724+00:00
+ISSUE-0094,Memory leak #94,0,0,"Here are my step-by-step analysis:
+
+* **What information is present in this issue?**: The issue provides a specific title (""Memory leak #94""), and a description that mentions the background sync service, memory usage growth, and a time frame of 24 hours. This suggests that there is some context provided.
+* **Is the language vague or clear?**: The language used appears to be clear and concise. The terms ""memory leak"" and ""unbounded growth"" are specific and well-defined in software development contexts.
+* **Can this issue be interpreted in multiple ways?**: Upon initial review, it seems that the issue is fairly straightforward: there's a problem with memory usage in the background sync service over an extended period. However, I'd like to consider one more aspect...
+* ...**Is the scope of the issue clear?**: The description mentions ""the background sync service"", which suggests that the issue is specific to this particular component or module. This provides some clarity on the scope.
+* **Can this issue be interpreted in multiple ways?**: After considering the above points, I don't see any obvious ambiguities or multiple possible interpretations of the issue.
+
+Final Answer: No",095e6f75ae54716b,llama3.1:8b,0,2026-06-08T18:01:01.381267+00:00
+ISSUE-0095,Update docs #95,0,1,"Here are my step-by-step analysis:
+
+* 1. The issue title ""Update docs #95"" and description ""Documentation is outdated."" provide a brief context, but it's not very detailed.
+* 2. The language used is clear: the issue states that the documentation is outdated, which implies that it needs to be updated.
+* 3. However, there are several potential questions that come to mind when reading this issue:
+	+ Which specific documents need to be updated?
+	+ What does ""outdated"" mean in this context (e.g., outdated information, outdated format, etc.)?
+	+ Who is responsible for updating the documentation?
+
+Considering these points, I would say that the issue can be interpreted in multiple ways.
+
+Final Answer: Yes",bc9a149be385c876,llama3.1:8b,0,2026-06-08T18:01:03.550062+00:00
+ISSUE-0096,File upload fails #96,1,0,"Here's my analysis:
+
+* Step 1: The issue provides a specific error code (413), endpoint (/upload), and file size threshold (10MB). This suggests that there is some relevant information present.
+* Step 2: The language used in the description is clear and concise, specifying a specific condition (file larger than 10MB) and expected behavior (a 413 error).
+* Step 3: Upon reviewing the issue again, I notice that it doesn't provide any context about what ""fails"" means. Does it mean that the file upload attempt results in a 413 error immediately, or does it mean that the file is partially uploaded before failing? This ambiguity arises from the lack of clear context.
+* Step 4: The scope of this issue appears to be limited to the /upload endpoint and files larger than 10MB. There's no indication that other endpoints or file sizes are affected.
+* Step 5: While there might be some minor interpretation required (e.g., what constitutes a ""fail"" in this context), I don't see any significant ambiguity in the language used.
+
+Final Answer: No",3f2966c5b6ea1dee,llama3.1:8b,0,2026-06-08T18:01:06.427421+00:00
+ISSUE-0097,Wrong total #97,1,1,"Here's my analysis:
+
+* 1. What information is present in this issue? 
+The issue mentions a specific error code (#97) and states that the total in the cart is wrong, but it doesn't provide any context about what might be causing the error or how to reproduce it.
+
+* 2. Is the language vague or clear?
+The language used is fairly straightforward: ""The total is wrong in the cart."" It clearly describes a problem, but lacks specific details that would help identify its cause.
+
+* 3. Can this issue be interpreted in multiple ways?
+Yes, without more context, it's possible to interpret this issue in different ways. For example, is the total wrong because of an incorrect calculation, or is it due to some other reason? Is the error code #97 relevant to the problem?
+
+Based on these points, I conclude that the issue can be interpreted in multiple ways and lacks clear context.
+
+Final Answer: Yes",aac74fed266319c3,llama3.1:8b,0,2026-06-08T18:01:08.949897+00:00
+ISSUE-0098,Session expiry #98,1,0,"Here's my analysis:
+
+* Step 1: The issue provides specific details about what needs to be implemented, including a time frame for session expiry and a warning dialog.
+* Step 2: The language used is clear and concise. There are no vague terms or ambiguous phrases that could lead to misinterpretation.
+* Step 3: While the issue doesn't provide context about why this feature is being implemented (e.g., security concerns, user experience), it's specific enough in its requirements that there's little room for interpretation.
+
+Final Answer: No",12f1ccdf534c58c7,llama3.1:8b,0,2026-06-08T18:01:10.695013+00:00
+ISSUE-0099,Fix typo #99,0,1,"Here are my step-by-step analysis:
+
+* 1. The issue title mentions a specific ID (#99), which suggests that there is some context about where the typo might be located.
+* 2. The language used is clear and concise, stating exactly what the problem is (a typo).
+* 3. However, upon closer inspection, I realize that the issue description lacks any further information about where the typo is located or how to identify it. This lack of context makes it difficult to determine which specific part of the code or system needs to be fixed.
+
+Based on these observations:
+
+Final Answer: Yes",4f300fe1f9ee75da,llama3.1:8b,0,2026-06-08T18:01:12.491820+00:00
+ISSUE-0100,Pagination broken #100,1,0,"Here are my step-by-step analysis:
+
+* 1. The issue title and description provide a specific problem statement, mentioning a particular table (""user management table"") and a specific condition (""when filter is applied"").
+* 2. The language used in the issue description is clear and concise, without any vague terms or ambiguous expressions.
+* 3. Upon reviewing the issue, I don't see multiple possible interpretations of what ""pagination broken"" means in this context. It seems to be a straightforward problem statement.
+
+Final Answer: No",c896b1c4f1443431,llama3.1:8b,0,2026-06-08T18:01:14.145126+00:00

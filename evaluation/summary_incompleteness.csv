@@ -1,0 +1,5 @@
+model,strategy,model_desc,accuracy,precision,recall,f1,tp,fp,tn,fn,n_total,n_valid,n_invalid
+llama3.1,zero_shot,Llama 3.1 8B,0.48,0.2692,0.175,0.2121,7,19,41,33,100,100,0
+llama3.1,few_shot,Llama 3.1 8B,0.4,0.4,1.0,0.5714,40,60,0,0,100,100,0
+llama3.1,cot,Llama 3.1 8B,0.4167,0.4086,0.9744,0.5758,38,55,2,1,100,96,4
+llama3.1,few_shot_cot,Llama 3.1 8B,0.4778,0.3962,0.5833,0.4719,21,32,22,15,100,90,10
