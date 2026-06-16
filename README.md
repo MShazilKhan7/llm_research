@@ -31,24 +31,42 @@ All models run **locally via Ollama** — no API keys, no rate limits, full repr
 llm_defect_detection/
 │
 ├── dataset/
-│   ├── ground_truth.csv          ← 200 annotated issues (replace with real TAWOS data)
-│   └── dataset_meta.json         ← seed, n, label counts — auto-generated
+│   ├── project_01.csv            ← Ground truth for project 1 (TAWOS issues)
+│   ├── project_02.csv            ← … through project_05.csv
+│   ├── project_03.csv
+│   ├── project_04.csv
+│   ├── project_05.csv
+│   └── dataset_meta.json         ← seed, n, label counts — auto-generated (synthetic only)
 │
-├── evaluation/
+├── evaluation/                   ← Auto-generated — per project + input mode
 │   ├── __init__.py
 │   ├── metrics.py                ← Accuracy, Precision, Recall, F1, Confusion Matrix
 │   ├── evaluate_all.py           ← Aggregate all results + leaderboard
-│   ├── summary_ambiguity.csv     ← Auto-generated after evaluation
-│   ├── summary_incompleteness.csv
-│   └── full_metrics.json
+│   ├── project_01/
+│   │   ├── title_only/
+│   │   │   ├── summary_ambiguity.csv
+│   │   │   ├── summary_incompleteness.csv
+│   │   │   └── full_metrics.json
+│   │   └── title_desc/
+│   │       └── …
+│   ├── project_02/ … project_05/
+│   └── combined/                 ← Aggregate across all projects
+│       ├── summary_ambiguity.csv
+│       ├── summary_incompleteness.csv
+│       └── full_metrics.json
 │
-├── figures/                      ← Auto-generated publication figures
-│   ├── f1_heatmap_ambiguity.png
-│   ├── f1_heatmap_incompleteness.png
-│   ├── metrics_bar_ambiguity.png
-│   ├── metrics_bar_incompleteness.png
-│   ├── confusion_matrices.png
-│   └── ensemble_vs_individual.png
+├── figures/                      ← Auto-generated — mirrors evaluation layout
+│   ├── project_01/
+│   │   ├── title_only/
+│   │   │   ├── f1_heatmap_ambiguity.png
+│   │   │   ├── metrics_bar_ambiguity.png
+│   │   │   ├── confusion_matrices.png
+│   │   │   └── ensemble_vs_individual.png
+│   │   └── title_desc/
+│   │       └── …
+│   └── combined/
+│       ├── … (same figure set)
+│       └── input_mode_comparison_ambiguity.png
 │
 ├── notebooks/
 │   ├── 01_dataset_exploration.ipynb
@@ -62,20 +80,27 @@ llm_defect_detection/
 │
 ├── prompts/
 │   ├── __init__.py
-│   └── prompt_templates.py       ← All 8 prompt functions (4 strategies × 2 tasks)
+│   └── prompt_templates.py       ← All prompt functions (4 strategies × 2 tasks × 2 input modes)
 │
 ├── results/                      ← Auto-generated — one subfolder per model
 │   ├── llama3.1/
 │   │   ├── run_config.json
 │   │   ├── requirements_snapshot.txt
-│   │   ├── llama3.1_ambiguity_zero_shot.csv
-│   │   ├── llama3.1_ambiguity_few_shot.csv
-│   │   └── ...  (8 CSVs total per model)
-│   ├── qwen2.5/
-│   ├── mistral/
+│   │   └── project_01/
+│   │       ├── title_only/
+│   │       │   ├── llama3.1_ambiguity_zero_shot.csv
+│   │       │   └── …  (8 CSVs: 2 tasks × 4 strategies)
+│   │       └── title_desc/
+│   │           └── …  (8 CSVs)
+│   │   └── project_02/ … project_05/
+│   ├── qwen2.5/   (same structure)
+│   ├── mistral/   (same structure)
 │   └── ensemble/
-│       ├── ensemble_ambiguity_zero_shot.csv
-│       └── ...  (8 ensemble CSVs)
+│       └── project_01/
+│           ├── title_only/
+│           │   └── ensemble_ambiguity_zero_shot.csv
+│           └── title_desc/
+│               └── …
 │
 ├── scripts/
 │   ├── generate_dataset.py       ← Create synthetic ground truth CSV
@@ -149,10 +174,12 @@ python scripts/run_pipeline.py --model llama3.1
 
 The pipeline is **per-model by design**. Run one model at a time, in any order, on any schedule. Evaluation and figures automatically include all models that have results at that point.
 
+Each model is evaluated across **5 projects**, **2 input modes** (`title_only` and `title_desc`), **2 tasks** (ambiguity, incompleteness), and **4 prompting strategies** — 80 inference combinations per model (5 × 2 × 2 × 4).
+
 ### Typical workflow
 
 ```bash
-# Day 1 — run llama3.1
+# Day 1 — run llama3.1 (all projects, both input modes)
 python scripts/run_pipeline.py --model llama3.1
 
 # Day 2 — run qwen2.5
@@ -167,21 +194,30 @@ After each run, evaluation and figures are regenerated to include all completed 
 ### Resume an interrupted run
 
 ```bash
-# Skips any (task, strategy) combinations already completed
+# Skips any (project, input_mode, task, strategy) combos already completed
 python scripts/run_pipeline.py --model qwen2.5 --resume
 ```
 
-### Run a specific task or strategy only
+### Run a specific project, input mode, task, or strategy
 
 ```bash
+# Only project_02
+python scripts/run_pipeline.py --model llama3.1 --project project_02
+
+# Only title_only input mode (issue title passed to LLM, no description)
+python scripts/run_pipeline.py --model llama3.1 --input_mode title_only
+
+# Only title + description input mode
+python scripts/run_pipeline.py --model llama3.1 --input_mode title_desc
+
 # Only ambiguity task
 python scripts/run_pipeline.py --model llama3.1 --task ambiguity
 
 # Only zero_shot strategy
 python scripts/run_pipeline.py --model mistral --strategy zero_shot
 
-# Both filters combined
-python scripts/run_pipeline.py --model qwen2.5 --task ambiguity --strategy cot
+# Combine filters — e.g. project_01, title_only, ambiguity, cot
+python scripts/run_pipeline.py --model qwen2.5 --project project_01 --input_mode title_only --task ambiguity --strategy cot
 ```
 
 ### Skip steps you don't need
@@ -203,7 +239,7 @@ python scripts/run_pipeline.py --model mistral --skip_inference --skip_ensemble 
 
 Each script can also be run independently.
 
-### Generate dataset
+### Generate dataset (synthetic — for testing only)
 
 ```bash
 python scripts/generate_dataset.py              # default: n=200, seed=42
@@ -213,9 +249,15 @@ python scripts/generate_dataset.py --n 200 --seed 42 --output dataset/ground_tru
 ### Run inference (one model)
 
 ```bash
+# All projects, both input modes
 python scripts/run_inference.py --model llama3.1
-python scripts/run_inference.py --model llama3.1 --task ambiguity --strategy zero_shot
+
+# One project, title_only
+python scripts/run_inference.py --model llama3.1 --project project_01 --input_mode title_only
+
+# Resume after interruption
 python scripts/run_inference.py --model llama3.1 --resume
+
 python scripts/run_inference.py --list_models
 ```
 
@@ -225,27 +267,36 @@ python scripts/run_inference.py --list_models
 # Auto-discovers all models with results
 python scripts/ensemble.py
 
-# Specify models explicitly
+# Specify models, project, or input mode
 python scripts/ensemble.py --models llama3.1 qwen2.5 mistral
+python scripts/ensemble.py --project project_01 --input_mode title_only
 ```
 
 ### Evaluate results
 
 ```bash
-# All available models
+# All available models, all projects, both input modes
 python evaluation/evaluate_all.py
 
 # Single model
 python evaluation/evaluate_all.py --model llama3.1
 
+# One project + input mode
+python evaluation/evaluate_all.py --project project_02 --input_mode title_desc
+
 # Specific set of models
-python evaluation/evaluate_all.py --models llama3.1 qwen2.5
+python evaluation/evaluate_all.py --models llama3.1 qwen2.5 --project project_01
 ```
 
 ### Generate figures
 
 ```bash
+# All projects and input modes
 python scripts/generate_figures.py
+
+# One slice
+python scripts/generate_figures.py --project project_01 --input_mode title_only
+
 python scripts/generate_figures.py --models llama3.1 qwen2.5 mistral
 ```
 
@@ -289,7 +340,14 @@ All prompts are defined in `prompts/prompt_templates.py`.
 | `cot` | Chain-of-thought step-by-step reasoning |
 | `few_shot_cot` | 3 CoT examples with reasoning + classify |
 
-Each strategy is applied independently to both tasks (**ambiguity** and **incompleteness**), giving 8 prompt variants per model. With 3 models × 8 combos = **24 result files** total, plus 8 ensemble files.
+### Input modes
+
+| Mode | What is sent to the LLM | Ground-truth column used |
+|------|-------------------------|--------------------------|
+| `title_only` | Issue title only | `Final_amb_T` / `Final_inc_T` |
+| `title_desc` | Title + description | `Final_amb_TD` / `Final_inc_TD` |
+
+Each strategy is applied independently to both tasks (**ambiguity** and **incompleteness**) and both input modes, giving **16 prompt variants per model per project**. With 5 projects × 3 models × 16 combos = **240 result files** total, plus ensemble files per (project, input_mode, task, strategy).
 
 ---
 
@@ -331,26 +389,32 @@ Computed for every (model, task, strategy) combination and for the ensemble:
 
 ## Results Structure
 
-After running all three models, your `results/` folder looks like:
+After running all three models across all five projects, your `results/` folder looks like:
 
 ```
 results/
 ├── llama3.1/
 │   ├── run_config.json                         ← reproducibility record
 │   ├── requirements_snapshot.txt               ← pip freeze at run time
-│   ├── llama3.1_ambiguity_zero_shot.csv
-│   ├── llama3.1_ambiguity_few_shot.csv
-│   ├── llama3.1_ambiguity_cot.csv
-│   ├── llama3.1_ambiguity_few_shot_cot.csv
-│   ├── llama3.1_incompleteness_zero_shot.csv
-│   ├── llama3.1_incompleteness_few_shot.csv
-│   ├── llama3.1_incompleteness_cot.csv
-│   └── llama3.1_incompleteness_few_shot_cot.csv
+│   └── project_01/
+│       ├── title_only/
+│       │   ├── llama3.1_ambiguity_zero_shot.csv
+│       │   ├── llama3.1_ambiguity_few_shot.csv
+│       │   ├── llama3.1_ambiguity_cot.csv
+│       │   ├── llama3.1_ambiguity_few_shot_cot.csv
+│       │   ├── llama3.1_incompleteness_zero_shot.csv
+│       │   └── …  (8 CSVs per input mode)
+│       └── title_desc/
+│           └── …  (8 CSVs)
+│   └── project_02/ … project_05/
 ├── qwen2.5/   (same structure)
 ├── mistral/   (same structure)
 └── ensemble/
-    ├── ensemble_ambiguity_zero_shot.csv
-    └── ...
+    └── project_01/
+        ├── title_only/
+        │   └── ensemble_ambiguity_zero_shot.csv
+        └── title_desc/
+            └── …
 ```
 
 Each result CSV has these columns:
@@ -359,13 +423,17 @@ Each result CSV has these columns:
 |--------|-------------|
 | `issue_id` | Issue identifier |
 | `title` | Issue title |
-| `ground_truth` | Manually annotated label (0 or 1) |
+| `ground_truth` | Manually annotated label (0 or 1) — column chosen by task + input_mode |
 | `prediction` | Model prediction (0, 1, or -1 for parse failure) |
 | `raw_response` | Full untruncated LLM response |
 | `prompt_hash` | SHA-256 prefix of the prompt sent |
 | `model_version` | Exact model string used |
 | `temperature` | Always 0 |
 | `timestamp_utc` | When this prediction was made |
+| `project` | Project stem, e.g. `project_01` |
+| `input_mode` | `title_only` or `title_desc` |
+| `task` | `ambiguity` or `incompleteness` |
+| `strategy` | Prompting strategy used |
 
 ---
 
@@ -386,18 +454,25 @@ Run notebooks from the `notebooks/` folder. Each is self-contained.
 
 ## Using Your Real TAWOS Dataset
 
-Replace `dataset/ground_truth.csv` with your annotated data. Required columns:
+Place one CSV per project in `dataset/`, named `project_01.csv` through `project_05.csv`. Required columns:
 
 ```
-issue_id, title, description, ambiguous, incomplete
+Issue_ID, Title, Description, Final_amb_T, Final_amb_TD, Final_inc_T, Final_inc_TD
 ```
 
-- `issue_id` — any unique string per issue
-- `ambiguous` — 1 (ambiguous) or 0 (not ambiguous)
-- `incomplete` — 1 (incomplete) or 0 (not incomplete)
-- Labels are **independent** — an issue can be both, either, or neither
+| Column | Description |
+|--------|-------------|
+| `Issue_ID` | Unique issue identifier |
+| `Title` | Issue title |
+| `Description` | Issue description |
+| `Final_amb_T` | Ambiguity label when evaluating title only (0 or 1) |
+| `Final_amb_TD` | Ambiguity label when evaluating title + description (0 or 1) |
+| `Final_inc_T` | Incompleteness label when evaluating title only (0 or 1) |
+| `Final_inc_TD` | Incompleteness label when evaluating title + description (0 or 1) |
 
-Everything downstream reads from this file automatically. No other changes needed.
+The pipeline automatically discovers all `*.csv` files in `dataset/`. Use `--project project_02` to run a single project. Labels are **independent** — an issue can be both ambiguous and incomplete, or neither.
+
+Everything downstream reads from these files automatically. No other changes needed.
 
 ---
 
@@ -441,6 +516,11 @@ python scripts/run_pipeline.py --model llama3.1 --mock
 python scripts/run_pipeline.py --model llama3.1 --resume
 ```
 
-**Dataset integrity error** — the ground truth file changed since inference was run. Either restore the original file or re-run inference from scratch (remove the model's results folder first).
+**Resume a specific slice only** (e.g. project_03, title_only)
+```bash
+python scripts/run_pipeline.py --model llama3.1 --project project_03 --input_mode title_only --resume
+```
+
+**Dataset integrity error** — a ground-truth file changed since inference was run. Either restore the original file or re-run inference from scratch (remove the affected result CSVs or the model's results folder first).
 
 **`-1` predictions in result CSV** — the model response could not be parsed as Yes/No. Check the `raw_response` column in that row. This usually means the model gave a long explanation without a clear Yes/No — the `cot` or `few_shot_cot` prompts instruct it to end with `Final Answer: Yes/No` to prevent this.

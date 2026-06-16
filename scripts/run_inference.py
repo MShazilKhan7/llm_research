@@ -1,51 +1,53 @@
 """
 scripts/run_inference.py
-Run inference for ONE model across all (or selected) tasks and strategies.
-Designed to be run independently per model — no need to run all at once.
+Run inference for ONE model across all (or selected) projects, tasks,
+input modes, and strategies.
 
-Key design
-----------
-- --model is REQUIRED. One run = one model. Run separately for each model.
-- Results are saved to results/<model_alias>/  so each model has its own folder.
-- Supports --resume: skips combinations already completed in a previous run.
-- Saves run_config.json + requirements_snapshot.txt per model run.
+New dimensions vs. original
+----------------------------
+  --project    : restrict to one project (default: all *.csv in dataset/)
+  --input_mode : "title_only" | "title_desc" | both (default: both)
+
+Result folder layout
+--------------------
+  results/<model>/<project>/<input_mode>/<model>_<task>_<strategy>.csv
 
 Usage
 -----
-  # Run all tasks + strategies for llama3.1
+  # Full run for llama3.1 across all projects and input modes
   python scripts/run_inference.py --model llama3.1
 
-  # Run only ambiguity task, zero_shot strategy
-  python scripts/run_inference.py --model qwen2.5 --task ambiguity --strategy zero_shot
+  # Only one project, title_only mode
+  python scripts/run_inference.py --model llama3.1 --project project_01 --input_mode title_only
 
-  # Resume an interrupted run (skips already-done combos)
-  python scripts/run_inference.py --model mistral --resume
+  # Resume an interrupted run
+  python scripts/run_inference.py --model llama3.1 --resume
 
   # Mock run (no Ollama needed)
   python scripts/run_inference.py --model llama3.1 --mock
 
-  # List all available models
+  # List available models
   python scripts/run_inference.py --list_models
 """
 
 from __future__ import annotations
 import argparse
 import csv
+import glob
 import logging
 import os
 import sys
-import time
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
 
-from prompts.prompt_templates import PROMPT_REGISTRY, PROMPT_STRATEGIES, TASKS
+from prompts.prompt_templates import PROMPT_REGISTRY, PROMPT_STRATEGIES, TASKS, INPUT_MODES
 from scripts.llm_clients import (
-    get_client, SUPPORTED_MODELS, OLLAMA_MODELS, MODEL_REGISTRY, get_model_description
+    get_client, SUPPORTED_MODELS, MODEL_REGISTRY, get_model_description,
 )
 from scripts.reproducibility import (
     save_run_config, save_env_snapshot, assert_dataset_unchanged,
-    make_result_row, EXTENDED_FIELDNAMES, dataset_checksum,
+    make_result_row, EXTENDED_FIELDNAMES, dataset_checksum, GROUND_TRUTH_COL,
 )
 
 logging.basicConfig(
@@ -55,12 +57,19 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
-TASK_TO_COL = {"ambiguity": "ambiguous", "incompleteness": "incomplete"}
+ROOT = Path(__file__).resolve().parents[1]
+DEFAULT_DATASET_DIR = str(ROOT / "dataset")
 
 
 # ─────────────────────────────────────────────
 # HELPERS
 # ─────────────────────────────────────────────
+
+def discover_projects(dataset_dir: str) -> list[str]:
+    """Return sorted list of project stems (e.g. ['project_01','project_02'])."""
+    files = glob.glob(os.path.join(dataset_dir, "*.csv"))
+    return sorted(Path(f).stem for f in files)
+
 
 def load_dataset(path: str) -> list[dict]:
     issues = []
@@ -71,15 +80,23 @@ def load_dataset(path: str) -> list[dict]:
     return issues
 
 
-def result_path(output_dir: str, model_alias: str, task: str, strategy: str) -> str:
-    """All results for a model go into results/<model_alias>/"""
-    folder = os.path.join(output_dir, model_alias)
+def result_path(
+    output_dir: str,
+    model_alias: str,
+    project: str,
+    input_mode: str,
+    task: str,
+    strategy: str,
+) -> str:
+    """
+    results/<model>/<project>/<input_mode>/<model>_<task>_<strategy>.csv
+    """
+    folder = os.path.join(output_dir, model_alias, project, input_mode)
     os.makedirs(folder, exist_ok=True)
     return os.path.join(folder, f"{model_alias}_{task}_{strategy}.csv")
 
 
 def is_complete(path: str, expected_rows: int) -> bool:
-    """Return True if the result CSV exists and has the expected number of data rows."""
     if not os.path.exists(path):
         return False
     try:
@@ -97,36 +114,33 @@ def is_complete(path: str, expected_rows: int) -> bool:
 def run_combination(
     issues: list[dict],
     model_alias: str,
+    project: str,
+    input_mode: str,
     task: str,
     strategy: str,
     mock: bool = False,
     output_dir: str = "results",
     expected_checksum: str | None = None,
-    dataset_path: str = "dataset/ground_truth.csv",
+    dataset_path: str = "",
     resume: bool = False,
 ) -> str:
-    """
-    Run inference for one (model, task, strategy) combination.
-    Returns path to output CSV.
-    """
-    out_path = result_path(output_dir, model_alias, task, strategy)
+    out_path = result_path(output_dir, model_alias, project, input_mode, task, strategy)
 
-    # Resume: skip if already complete
     if resume and is_complete(out_path, len(issues)):
         logger.info("  [SKIP — already done] %s", out_path)
         return out_path
 
-    if expected_checksum:
+    if expected_checksum and dataset_path:
         assert_dataset_unchanged(dataset_path, expected_checksum)
 
     client       = get_client(model_alias, mock=mock)
-    prompt_fn    = PROMPT_REGISTRY[task][strategy]
-    label_col    = TASK_TO_COL[task]
+    prompt_fn    = PROMPT_REGISTRY[task][strategy][input_mode]
+    label_col    = GROUND_TRUTH_COL[(task, input_mode)]
     model_string = MODEL_REGISTRY[model_alias]["model_string"]
 
     logger.info(
-        "Running: model=%-12s  task=%-16s  strategy=%-14s",
-        f"{model_alias} ({model_string})", task, strategy,
+        "Running: model=%-12s  project=%-12s  mode=%-12s  task=%-16s  strategy=%s",
+        model_alias, project, input_mode, task, strategy,
     )
 
     with open(out_path, "w", newline="", encoding="utf-8") as f:
@@ -134,7 +148,7 @@ def run_combination(
         writer.writeheader()
 
         for i, issue in enumerate(issues):
-            prompt = prompt_fn(issue["title"], issue["description"])
+            prompt = prompt_fn(issue["Title"], issue.get("Description", ""))
             label, raw = client.predict(prompt)
 
             writer.writerow(make_result_row(
@@ -144,6 +158,10 @@ def run_combination(
                 raw_response=raw,
                 prompt_text=prompt,
                 model_version=model_string,
+                project=project,
+                input_mode=input_mode,
+                task=task,
+                strategy=strategy,
             ))
 
             if (i + 1) % 20 == 0:
@@ -159,38 +177,42 @@ def run_combination(
 
 def parse_args():
     p = argparse.ArgumentParser(
-        description="Run LLM inference for a single model",
+        description="Run LLM inference for a single model across projects and input modes",
         formatter_class=argparse.RawDescriptionHelpFormatter,
         epilog="""
 Examples:
   python scripts/run_inference.py --model llama3.1
-  python scripts/run_inference.py --model qwen2.5 --task ambiguity
-  python scripts/run_inference.py --model mistral --strategy zero_shot --resume
+  python scripts/run_inference.py --model llama3.1 --project project_01
+  python scripts/run_inference.py --model llama3.1 --input_mode title_only
+  python scripts/run_inference.py --model llama3.1 --project project_02 --input_mode title_desc --task ambiguity
+  python scripts/run_inference.py --model llama3.1 --resume
+  python scripts/run_inference.py --model llama3.1 --mock
   python scripts/run_inference.py --list_models
         """,
     )
     p.add_argument("--model",       choices=SUPPORTED_MODELS, default=None,
-                   help="Model alias to run (required unless --list_models)")
-    p.add_argument("--task",        choices=TASKS,             default=None,
-                   help="Specific task (default: all tasks)")
+                   help="Model alias (required unless --list_models)")
+    p.add_argument("--project",     default=None,
+                   help="Restrict to one project stem, e.g. 'project_01' (default: all)")
+    p.add_argument("--input_mode",  choices=INPUT_MODES, default=None,
+                   help="'title_only' or 'title_desc' (default: both)")
+    p.add_argument("--task",        choices=TASKS,          default=None,
+                   help="Restrict to one task (default: all)")
     p.add_argument("--strategy",    choices=PROMPT_STRATEGIES, default=None,
-                   help="Specific strategy (default: all strategies)")
-    p.add_argument("--dataset",     default="dataset/ground_truth.csv")
-    p.add_argument("--output_dir",  default="results",
-                   help="Root results directory (model subfolder created automatically)")
-    p.add_argument("--mock",        action="store_true",
-                   help="Use mock client — no Ollama needed")
+                   help="Restrict to one strategy (default: all)")
+    p.add_argument("--dataset_dir", default=DEFAULT_DATASET_DIR,
+                   help="Directory containing project CSV files")
+    p.add_argument("--output_dir",  default="results")
+    p.add_argument("--mock",        action="store_true")
     p.add_argument("--resume",      action="store_true",
                    help="Skip combinations that already have complete result CSVs")
-    p.add_argument("--list_models", action="store_true",
-                   help="Print available models and exit")
+    p.add_argument("--list_models", action="store_true")
     return p.parse_args()
 
 
 def main():
     args = parse_args()
 
-    # ── List models ──────────────────────────────────────────────
     if args.list_models:
         print("\nAvailable models:")
         print(f"  {'Alias':<12}  {'Backend':<8}  {'Model String':<40}  Description")
@@ -204,56 +226,73 @@ def main():
         print("ERROR: --model is required. Use --list_models to see options.")
         sys.exit(1)
 
-    tasks      = [args.task]     if args.task     else TASKS
-    strategies = [args.strategy] if args.strategy else PROMPT_STRATEGIES
+    # Resolve dimension lists
+    all_projects   = discover_projects(args.dataset_dir)
+    if not all_projects:
+        logger.error("No CSV files found in dataset dir '%s'", args.dataset_dir)
+        sys.exit(1)
 
-    issues   = load_dataset(args.dataset)
-    checksum = dataset_checksum(args.dataset)
-    logger.info("Dataset checksum (md5): %s", checksum)
+    projects   = [args.project]    if args.project    else all_projects
+    modes      = [args.input_mode] if args.input_mode else INPUT_MODES
+    tasks      = [args.task]       if args.task       else TASKS
+    strategies = [args.strategy]   if args.strategy   else PROMPT_STRATEGIES
 
-    # Save run config for this model
-    model_output_dir = os.path.join(args.output_dir, args.model)
-    os.makedirs(model_output_dir, exist_ok=True)
+    logger.info("Model      : %s  (%s)", args.model, get_model_description(args.model))
+    logger.info("Projects   : %s", projects)
+    logger.info("Input modes: %s", modes)
+    logger.info("Tasks      : %s", tasks)
+    logger.info("Strategies : %s", strategies)
+    total = len(projects) * len(modes) * len(tasks) * len(strategies)
+    logger.info("Combos     : %d", total)
 
+    model_out = os.path.join(args.output_dir, args.model)
+    os.makedirs(model_out, exist_ok=True)
+
+    dataset_paths = [
+        os.path.join(args.dataset_dir, f"{p}.csv") for p in projects
+    ]
     save_run_config(
-        output_dir=model_output_dir,
-        dataset_path=args.dataset,
+        output_dir=model_out,
+        dataset_paths=dataset_paths,
         models=[args.model],
         tasks=tasks,
         strategies=strategies,
+        input_modes=modes,
+        projects=projects,
         model_versions={args.model: MODEL_REGISTRY[args.model]["model_string"]},
         extra={"mock_mode": args.mock, "resume": args.resume},
     )
-    save_env_snapshot(model_output_dir)
+    save_env_snapshot(model_out)
 
-    total = len(tasks) * len(strategies)
-    done  = 0
+    done = 0
+    for project in projects:
+        dataset_path = os.path.join(args.dataset_dir, f"{project}.csv")
+        if not os.path.exists(dataset_path):
+            logger.warning("Dataset not found: %s — skipping", dataset_path)
+            continue
+        issues   = load_dataset(dataset_path)
+        checksum = dataset_checksum(dataset_path)
 
-    logger.info("")
-    logger.info("Model      : %s  (%s)", args.model, get_model_description(args.model))
-    logger.info("Backend    : %s", MODEL_REGISTRY[args.model]["backend"])
-    logger.info("Tasks      : %s", tasks)
-    logger.info("Strategies : %s", strategies)
-    logger.info("Combos     : %d", total)
-    logger.info("")
+        for input_mode in modes:
+            for task in tasks:
+                for strategy in strategies:
+                    done += 1
+                    logger.info("── Combo %d/%d: %s | %s | %s | %s ──",
+                                done, total, project, input_mode, task, strategy)
+                    run_combination(
+                        issues=issues,
+                        model_alias=args.model,
+                        project=project,
+                        input_mode=input_mode,
+                        task=task,
+                        strategy=strategy,
+                        mock=args.mock,
+                        output_dir=args.output_dir,
+                        expected_checksum=checksum,
+                        dataset_path=dataset_path,
+                        resume=args.resume,
+                    )
 
-    for task in tasks:
-        for strategy in strategies:
-            done += 1
-            logger.info("── Combo %d/%d: %s | %s ──", done, total, task, strategy)
-            run_combination(
-                issues=issues,
-                model_alias=args.model,
-                task=task,
-                strategy=strategy,
-                mock=args.mock,
-                output_dir=args.output_dir,
-                expected_checksum=checksum,
-                dataset_path=args.dataset,
-                resume=args.resume,
-            )
-
-    logger.info("")
     logger.info("✓ Done — results in '%s/%s/'", args.output_dir, args.model)
 
 

@@ -1,22 +1,24 @@
 """
 scripts/generate_figures.py
-Generate publication-quality figures from evaluation/full_metrics.json.
+Generate publication-quality figures from evaluation metrics.
 
-Model-aware: reads whatever models are present in the metrics JSON —
-no hardcoded model list. Works whether you have 1 model or all 3.
+Figure output layout
+--------------------
+  figures/<project>/<input_mode>/
+      f1_heatmap_<task>.png
+      metrics_bar_<task>.png
+      confusion_matrices.png
+      ensemble_vs_individual.png
 
-Figures generated
------------------
-  1. f1_heatmap_<task>.png          – F1 heatmap: models × strategies
-  2. metrics_bar_<task>.png         – Grouped bar per model (best strategy)
-  3. confusion_matrices.png         – Grid of confusion matrices
-  4. ensemble_vs_individual.png     – Ensemble vs individual best F1
+  figures/combined/             ← aggregate across all projects
+      (same set of figures)
 
 Usage
 -----
   python scripts/generate_figures.py
+  python scripts/generate_figures.py --project project_01 --input_mode title_only
   python scripts/generate_figures.py --models llama3.1 qwen2.5
-  python scripts/generate_figures.py --metrics_json evaluation/full_metrics.json
+  python scripts/generate_figures.py --metrics_json evaluation/combined/full_metrics.json --output_dir figures/combined
 """
 
 from __future__ import annotations
@@ -39,33 +41,33 @@ except ImportError:
     HAS_MPL = False
 
 from scripts.llm_clients import MODEL_REGISTRY, get_model_description
+from prompts.prompt_templates import INPUT_MODES, TASKS
 
 logger = logging.getLogger(__name__)
 logging.basicConfig(level=logging.INFO, format="%(asctime)s [%(levelname)s] %(message)s")
 
 STRATEGIES = ["zero_shot", "few_shot", "cot", "few_shot_cot"]
+_PALETTE   = ["#4C72B0", "#DD8452", "#55A868", "#C44E52", "#8172B2", "#937860"]
 
-# Colour palette — enough for any number of models
-_PALETTE = ["#4C72B0", "#DD8452", "#55A868", "#C44E52", "#8172B2", "#937860"]
-
-def _model_color(models: list[str]) -> dict[str, str]:
-    colors = {}
-    for i, m in enumerate(models):
-        colors[m] = _PALETTE[i % len(_PALETTE)]
-    colors["ensemble"] = "#2d2d2d"   # always dark for ensemble
-    return colors
-
-def _model_label(alias: str) -> str:
-    """Short display label: alias + description on second line."""
-    if alias == "ensemble":
-        return "Ensemble"
-    desc = get_model_description(alias)
-    return f"{alias}\n({desc})"
+ROOT = Path(__file__).resolve().parents[1]
 
 
 # ─────────────────────────────────────────────
 # HELPERS
 # ─────────────────────────────────────────────
+
+def _model_color(models: list[str]) -> dict[str, str]:
+    colors = {m: _PALETTE[i % len(_PALETTE)] for i, m in enumerate(models)}
+    colors["ensemble"] = "#2d2d2d"
+    return colors
+
+
+def _model_label(alias: str) -> str:
+    if alias == "ensemble":
+        return "Ensemble"
+    desc = get_model_description(alias)
+    return f"{alias}\n({desc})"
+
 
 def load_metrics(path: str) -> dict:
     with open(path) as f:
@@ -87,7 +89,6 @@ def _get_val(data: list[dict], model: str, strategy: str, metric: str = "f1"):
 
 
 def _best_per_model(data: list[dict]) -> dict[str, dict]:
-    """Return {model: best_row} keyed on highest F1."""
     best: dict[str, dict] = {}
     for row in data:
         m = row["model"]
@@ -99,14 +100,12 @@ def _best_per_model(data: list[dict]) -> dict[str, dict]:
 
 
 def _models_in_data(data: list[dict]) -> list[str]:
-    """Ordered unique model names found in the metrics data."""
     seen, result = set(), []
     for row in data:
         m = row["model"]
         if m not in seen:
             seen.add(m)
             result.append(m)
-    # Put ensemble last
     if "ensemble" in result:
         result.remove("ensemble")
         result.append("ensemble")
@@ -118,7 +117,7 @@ def _models_in_data(data: list[dict]) -> list[str]:
 # ─────────────────────────────────────────────
 
 def plot_f1_heatmap(task_data: list[dict], task: str, output_dir: str,
-                    models: list[str] | None = None):
+                    models: list[str] | None = None, subtitle: str = ""):
     all_models = models or _models_in_data(task_data)
     matrix = np.zeros((len(all_models), len(STRATEGIES)))
 
@@ -143,8 +142,10 @@ def plot_f1_heatmap(task_data: list[dict], task: str, output_dir: str,
                     fontsize=10, fontweight="bold",
                     color="white" if v > 0.65 else "black")
 
-    ax.set_title(f"F1-score Heatmap — {task.capitalize()} Detection",
-                 fontsize=13, fontweight="bold")
+    title = f"F1-score Heatmap — {task.capitalize()} Detection"
+    if subtitle:
+        title += f"\n{subtitle}"
+    ax.set_title(title, fontsize=12, fontweight="bold")
     ax.set_xlabel("Prompting Strategy", fontsize=11)
     ax.set_ylabel("Model", fontsize=11)
     plt.tight_layout()
@@ -156,18 +157,18 @@ def plot_f1_heatmap(task_data: list[dict], task: str, output_dir: str,
 # ─────────────────────────────────────────────
 
 def plot_metrics_bar(task_data: list[dict], task: str, output_dir: str,
-                     models: list[str] | None = None):
+                     models: list[str] | None = None, subtitle: str = ""):
     all_models = models or _models_in_data(task_data)
     best = _best_per_model(task_data)
     present = [m for m in all_models if m in best]
     if not present:
         return
 
-    metrics     = ["accuracy", "precision", "recall", "f1"]
-    m_colors    = ["#4C72B0", "#DD8452", "#55A868", "#C44E52"]
-    x           = np.arange(len(present))
-    width       = 0.18
-    offsets     = [-1.5, -0.5, 0.5, 1.5]
+    metrics  = ["accuracy", "precision", "recall", "f1"]
+    m_colors = ["#4C72B0", "#DD8452", "#55A868", "#C44E52"]
+    x        = np.arange(len(present))
+    width    = 0.18
+    offsets  = [-1.5, -0.5, 0.5, 1.5]
 
     fig, ax = plt.subplots(figsize=(max(10, len(present) * 3), 5))
 
@@ -184,8 +185,10 @@ def plot_metrics_bar(task_data: list[dict], task: str, output_dir: str,
     ax.set_xticklabels(labels, fontsize=9)
     ax.set_ylim(0, 1.15)
     ax.set_ylabel("Score", fontsize=11)
-    ax.set_title(f"Best Performance per Model — {task.capitalize()} Detection",
-                 fontsize=12, fontweight="bold")
+    title = f"Best Performance per Model — {task.capitalize()} Detection"
+    if subtitle:
+        title += f"\n{subtitle}"
+    ax.set_title(title, fontsize=12, fontweight="bold")
     ax.legend(loc="upper right", fontsize=10)
     ax.yaxis.grid(True, alpha=0.4)
     ax.set_axisbelow(True)
@@ -198,10 +201,9 @@ def plot_metrics_bar(task_data: list[dict], task: str, output_dir: str,
 # ─────────────────────────────────────────────
 
 def plot_confusion_matrices(all_metrics: dict, output_dir: str,
-                             models: list[str] | None = None):
+                             models: list[str] | None = None, subtitle: str = ""):
     tasks = list(all_metrics.keys())
 
-    # Find best overall strategy
     strategy_f1: dict[str, list[float]] = {s: [] for s in STRATEGIES}
     for task_data in all_metrics.values():
         for row in task_data:
@@ -213,7 +215,8 @@ def plot_confusion_matrices(all_metrics: dict, output_dir: str,
     )
     logger.info("Using strategy '%s' for confusion matrices", best_strat)
 
-    all_models = models or _models_in_data(list(all_metrics.values())[0])
+    first_task_data = list(all_metrics.values())[0]
+    all_models = models or _models_in_data(first_task_data)
     n_rows, n_cols = len(tasks), len(all_models)
 
     fig, axes = plt.subplots(n_rows, n_cols,
@@ -240,7 +243,10 @@ def plot_confusion_matrices(all_metrics: dict, output_dir: str,
                             color="white" if cm[ii, jj] > cm.max() / 2 else "black")
             ax.set_title(f"{_model_label(model)} | {task[:5]}", fontsize=9, fontweight="bold")
 
-    fig.suptitle(f"Confusion Matrices  [{best_strat}]", fontsize=13, fontweight="bold")
+    suptitle = f"Confusion Matrices  [{best_strat}]"
+    if subtitle:
+        suptitle += f"  —  {subtitle}"
+    fig.suptitle(suptitle, fontsize=13, fontweight="bold")
     plt.tight_layout()
     _save(fig, os.path.join(output_dir, "confusion_matrices.png"))
 
@@ -250,7 +256,7 @@ def plot_confusion_matrices(all_metrics: dict, output_dir: str,
 # ─────────────────────────────────────────────
 
 def plot_ensemble_vs_individual(all_metrics: dict, output_dir: str,
-                                 models: list[str] | None = None):
+                                 models: list[str] | None = None, subtitle: str = ""):
     tasks = list(all_metrics.keys())
     fig, axes = plt.subplots(1, len(tasks),
                               figsize=(7 * len(tasks), 5), sharey=True,
@@ -263,7 +269,7 @@ def plot_ensemble_vs_individual(all_metrics: dict, output_dir: str,
         best       = _best_per_model(task_data)
         present    = [m for m in all_models if m in best]
 
-        f1_vals = [best[m]["f1"] for m in present]
+        f1_vals    = [best[m]["f1"] for m in present]
         bar_colors = [colors.get(m, "#888") for m in present]
         bars = ax.bar(range(len(present)), f1_vals,
                       color=bar_colors, alpha=0.85, width=0.5)
@@ -275,52 +281,177 @@ def plot_ensemble_vs_individual(all_metrics: dict, output_dir: str,
         ax.set_xticks(range(len(present)))
         ax.set_xticklabels([_model_label(m) for m in present], fontsize=9)
         ax.set_ylim(0, 1.12)
-        ax.set_title(f"{task.capitalize()} Detection\n(Best F1 per model)",
-                     fontsize=12, fontweight="bold")
+        ax.set_title(f"{task.capitalize()} Detection\n(Best F1 per model)", fontsize=12, fontweight="bold")
         ax.set_xlabel("Model", fontsize=11)
         ax.yaxis.grid(True, alpha=0.4)
         ax.set_axisbelow(True)
 
     axes[0][0].set_ylabel("F1-score", fontsize=11)
-    fig.suptitle("Ensemble vs Individual Models  (Best F1)", fontsize=13, fontweight="bold")
+    suptitle = "Ensemble vs Individual Models  (Best F1)"
+    if subtitle:
+        suptitle += f"  —  {subtitle}"
+    fig.suptitle(suptitle, fontsize=13, fontweight="bold")
     plt.tight_layout()
     _save(fig, os.path.join(output_dir, "ensemble_vs_individual.png"))
 
 
 # ─────────────────────────────────────────────
-# MAIN
+# FIGURE 5 — TITLE_ONLY vs TITLE_DESC COMPARISON
+# ─────────────────────────────────────────────
+
+def plot_input_mode_comparison(
+    combined_metrics_by_mode: dict[str, dict],   # {input_mode: {task: [rows]}}
+    output_dir: str,
+    models: list[str] | None = None,
+    subtitle: str = "",
+):
+    """
+    Bar chart comparing F1 between title_only and title_desc for each model × task.
+    combined_metrics_by_mode = {"title_only": {task: [rows]}, "title_desc": {task: [rows]}}
+    """
+    if not HAS_MPL:
+        return
+    if len(combined_metrics_by_mode) < 2:
+        return
+
+    tasks = list(next(iter(combined_metrics_by_mode.values())).keys())
+    modes = list(combined_metrics_by_mode.keys())
+
+    mode_colors = {"title_only": "#4C72B0", "title_desc": "#DD8452"}
+
+    for task in tasks:
+        # Gather best F1 per (model, mode)
+        model_set: set[str] = set()
+        for mode_data in combined_metrics_by_mode.values():
+            for row in mode_data.get(task, []):
+                model_set.add(row["model"])
+        all_models_sorted = models or sorted(model_set)
+
+        x      = np.arange(len(all_models_sorted))
+        width  = 0.35
+        fig, ax = plt.subplots(figsize=(max(10, len(all_models_sorted) * 3), 5))
+
+        for i, mode in enumerate(modes):
+            task_data = combined_metrics_by_mode.get(mode, {}).get(task, [])
+            best = _best_per_model(task_data)
+            vals = [best.get(m, {}).get("f1", 0) for m in all_models_sorted]
+            offset = (i - 0.5) * width
+            bars = ax.bar(x + offset, vals, width,
+                          label=mode.replace("_", " "),
+                          color=mode_colors.get(mode, "#888"), alpha=0.85)
+            for bar, v in zip(bars, vals):
+                ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.01,
+                        f"{v:.2f}", ha="center", va="bottom", fontsize=9)
+
+        ax.set_xticks(x)
+        ax.set_xticklabels([_model_label(m) for m in all_models_sorted], fontsize=10)
+        ax.set_ylim(0, 1.15)
+        ax.set_ylabel("F1-score (best strategy)", fontsize=11)
+        title = f"Title-only vs Title+Description — {task.capitalize()} Detection"
+        if subtitle:
+            title += f"\n{subtitle}"
+        ax.set_title(title, fontsize=12, fontweight="bold")
+        ax.legend(fontsize=11)
+        ax.yaxis.grid(True, alpha=0.4)
+        ax.set_axisbelow(True)
+        plt.tight_layout()
+        _save(fig, os.path.join(output_dir, f"input_mode_comparison_{task}.png"))
+
+
+# ─────────────────────────────────────────────
+# GENERATE ALL FIGURES FOR ONE SLICE
+# ─────────────────────────────────────────────
+
+def generate_figures_for_slice(
+    metrics_json: str,
+    output_dir: str,
+    models: list[str] | None = None,
+    subtitle: str = "",
+):
+    if not os.path.exists(metrics_json):
+        logger.warning("Metrics file not found: %s — skipping", metrics_json)
+        return
+    os.makedirs(output_dir, exist_ok=True)
+    all_metrics = load_metrics(metrics_json)
+
+    if models is None:
+        first_task = next(iter(all_metrics.values()))
+        models = _models_in_data(first_task)
+
+    for task, task_data in all_metrics.items():
+        plot_f1_heatmap(task_data, task, output_dir, models, subtitle)
+        plot_metrics_bar(task_data, task, output_dir, models, subtitle)
+
+    plot_confusion_matrices(all_metrics, output_dir, models, subtitle)
+    plot_ensemble_vs_individual(all_metrics, output_dir, models, subtitle)
+    logger.info("Figures saved to '%s/'", output_dir)
+
+
+# ─────────────────────────────────────────────
+# GENERATE ALL (per-slice + combined + comparison)
 # ─────────────────────────────────────────────
 
 def generate_all_figures(
-    metrics_json: str = "evaluation/full_metrics.json",
+    eval_dir: str = "evaluation",
     output_dir: str = "figures",
     models: list[str] | None = None,
+    projects: list[str] | None = None,
+    input_modes: list[str] | None = None,
 ):
     if not HAS_MPL:
         logger.error("matplotlib / numpy not installed: pip install matplotlib numpy")
         sys.exit(1)
-    if not os.path.exists(metrics_json):
-        logger.error("Metrics file not found: %s — run evaluate_all.py first", metrics_json)
-        sys.exit(1)
 
-    os.makedirs(output_dir, exist_ok=True)
-    all_metrics = load_metrics(metrics_json)
+    if input_modes is None:
+        input_modes = INPUT_MODES
 
-    # If models not specified, derive from JSON
-    if models is None:
-        first_task = next(iter(all_metrics.values()))
-        models = _models_in_data(first_task)
-    logger.info("Generating figures for models: %s", models)
+    # Auto-discover projects from eval_dir if not specified
+    if projects is None:
+        projects = []
+        if os.path.isdir(eval_dir):
+            for name in sorted(os.listdir(eval_dir)):
+                if name.startswith("project") and os.path.isdir(os.path.join(eval_dir, name)):
+                    projects.append(name)
 
-    for task, task_data in all_metrics.items():
-        plot_f1_heatmap(task_data, task, output_dir, models)
-        plot_metrics_bar(task_data, task, output_dir, models)
+    # Per-slice figures
+    for project in projects:
+        for input_mode in input_modes:
+            metrics_json = os.path.join(eval_dir, project, input_mode, "full_metrics.json")
+            fig_dir      = os.path.join(output_dir, project, input_mode)
+            subtitle     = f"{project} / {input_mode.replace('_', ' ')}"
+            generate_figures_for_slice(metrics_json, fig_dir, models, subtitle)
 
-    plot_confusion_matrices(all_metrics, output_dir, models)
-    plot_ensemble_vs_individual(all_metrics, output_dir, models)
+    # Combined figures
+    combined_json = os.path.join(eval_dir, "combined", "full_metrics.json")
+    generate_figures_for_slice(
+        combined_json,
+        os.path.join(output_dir, "combined"),
+        models,
+        subtitle="All Projects Combined",
+    )
 
-    logger.info("All figures saved to '%s/'", output_dir)
+    # Title-only vs title+desc comparison (using combined metrics)
+    if os.path.exists(combined_json) and HAS_MPL:
+        combined_data = load_metrics(combined_json)
 
+        # Split rows by input_mode
+        mode_split: dict[str, dict] = {m: {t: [] for t in TASKS} for m in input_modes}
+        for task, rows in combined_data.items():
+            for row in rows:
+                mode = row.get("input_mode", "")
+                if mode in mode_split:
+                    mode_split[mode][task].append(row)
+
+        comparison_dir = os.path.join(output_dir, "combined")
+        plot_input_mode_comparison(mode_split, comparison_dir, models,
+                                   subtitle="All Projects Combined")
+
+    logger.info("\nAll figures written under '%s/'", output_dir)
+
+
+# ─────────────────────────────────────────────
+# MAIN
+# ─────────────────────────────────────────────
 
 def parse_args():
     p = argparse.ArgumentParser(
@@ -329,16 +460,41 @@ def parse_args():
         epilog="""
 Examples:
   python scripts/generate_figures.py
+  python scripts/generate_figures.py --project project_01 --input_mode title_only
   python scripts/generate_figures.py --models llama3.1 qwen2.5
+  # Single slice from a specific metrics JSON:
+  python scripts/generate_figures.py --metrics_json evaluation/project_01/title_only/full_metrics.json --output_dir figures/project_01/title_only
         """,
     )
-    p.add_argument("--metrics_json", default="evaluation/full_metrics.json")
+    p.add_argument("--eval_dir",     default="evaluation",
+                   help="Root evaluation directory (default: evaluation)")
     p.add_argument("--output_dir",   default="figures")
-    p.add_argument("--models", nargs="+", default=None,
-                   help="Restrict figures to these model aliases")
+    p.add_argument("--models",       nargs="+", default=None)
+    p.add_argument("--project",      default=None, help="Restrict to one project")
+    p.add_argument("--input_mode",   choices=INPUT_MODES, default=None)
+    # Legacy / direct path override
+    p.add_argument("--metrics_json", default=None,
+                   help="Point directly to a full_metrics.json for a single-slice run")
     return p.parse_args()
 
 
 if __name__ == "__main__":
     args = parse_args()
-    generate_all_figures(args.metrics_json, args.output_dir, args.models)
+
+    if args.metrics_json:
+        # Single-slice mode
+        generate_figures_for_slice(
+            metrics_json=args.metrics_json,
+            output_dir=args.output_dir,
+            models=args.models,
+        )
+    else:
+        projects    = [args.project]    if args.project    else None
+        input_modes = [args.input_mode] if args.input_mode else None
+        generate_all_figures(
+            eval_dir=args.eval_dir,
+            output_dir=args.output_dir,
+            models=args.models,
+            projects=projects,
+            input_modes=input_modes,
+        )
