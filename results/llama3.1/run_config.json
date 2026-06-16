@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-06-16T22:42:44.201663",
+  "dataset_paths": [
+    "/workspace/llm_research/dataset/project_01.csv",
+    "/workspace/llm_research/dataset/project_02.csv",
+    "/workspace/llm_research/dataset/project_03.csv",
+    "/workspace/llm_research/dataset/project_04.csv",
+    "/workspace/llm_research/dataset/project_05.csv"
+  ],
+  "models": [
+    "llama3.1"
+  ],
+  "tasks": [
+    "ambiguity",
+    "incompleteness"
+  ],
+  "strategies": [
+    "zero_shot",
+    "few_shot",
+    "cot",
+    "few_shot_cot"
+  ],
+  "input_modes": [
+    "title_only",
+    "title_desc"
+  ],
+  "projects": [
+    "project_01",
+    "project_02",
+    "project_03",
+    "project_04",
+    "project_05"
+  ],
+  "model_versions": {
+    "llama3.1": "llama3.1:8b"
+  },
+  "mock_mode": false,
+  "resume": false
+}
