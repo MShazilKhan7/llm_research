@@ -1,0 +1,671 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-38493,Review API Runtime Services Documentation,0,1,"- The issue title and description are clear about the task: reviewing specific documentation pages.
+- However, the scope of ""confirm whether or not any updates are necessary"" is somewhat vague. It does not specify what criteria should be used to determine if an update is needed.
+- There's no mention of a timeline, target audience, or expected outcomes beyond confirming if updates are necessary.
+- The description lists several pages but doesn't provide specific details about the content that needs review or any context for why these particular pages were chosen.
+- While the task itself is clear, the lack of criteria and context makes it difficult to understand exactly what changes might be required.
+
+Final Answer: Yes",ac948b6685852c7b,qwen2.5:14b,0,2026-06-17T16:05:11.584024,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38975,Tutorial Series: Customize for Android,0,1,"- The title ""Tutorial Series: Customize for Android"" is clear about the intent but lacks specific details.
+- The description states that a new tutorial series should be created with an aim to customize basic application features specifically for Android. However, it does not specify which UI elements need customization or what constitutes 'Android-specific' features.
+- There's no mention of scope (e.g., number of tutorials, target audience), timeline, or specific requirements for the customization process.
+- The description can be interpreted in multiple ways since it doesn't provide concrete examples or criteria for determining what qualifies as an Android-specific UI feature.
+- Given these points, the issue lacks clear context and is open to various interpretations.
+
+Final Answer: Yes",1341bd125737d66e,qwen2.5:14b,0,2026-06-17T16:05:14.991261,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40855,APIDoc: Window.modalStyle and modalTransitionStyle properties are undocumented,0,0,"- The title specifies that ""Window.modalStyle"" and ""modalTransitionStyle"" properties are undocumented.
+- The description clarifies these properties are used in KS (modal_windows.js) and mentioned in sample code within the Window TDoc.
+- However, it is not clear what specific documentation should be updated or where exactly these properties need to be listed.
+- There's no ambiguity about which properties are being referred to or their current usage context.
+- The issue lacks clarity on the exact scope of changes needed for documentation but does provide enough information to understand the problem.
+
+Final Answer: No",2e92f54d629068e8,qwen2.5:14b,0,2026-06-17T16:05:17.844267,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40336,APIDoc: Check all deprecated API members for appropriate message,0,1,"- The title ""APIDoc: Check all deprecated API members for appropriate message"" provides a clear context about the task related to checking deprecated API members.
+- However, the description is quite detailed but still contains some vague elements. For example, it mentions ""If there is an alternative API, add a deprecation message where appropriate,"" which does not specify what constitutes 'appropriate' in this context.
+- The description also includes specific examples like Ti.Network.TCPSocket, but these examples do not provide clear criteria for determining whether other APIs are similarly affected or how to handle them.
+- While the task is generally clear about checking deprecated members and ensuring there are no bogus removed APIs, it lacks precise instructions on what constitutes a 'bogus' removal and under what conditions a deprecation message should be added.
+- The description does not provide specific metrics or criteria for determining if a deprecation message is appropriate or how to handle the restoration of summaries.
+
+Final Answer: Yes",9f92554d9b154c14,qwen2.5:14b,0,2026-06-17T16:05:22.104967,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38324,Create Appcelerator Studio Guide page,0,1,"- The title ""Create Appcelerator Studio Guide page"" is clear but lacks detail.
+- The description states to create and re-organize content but does not specify what exact content or how it should be organized.
+- There's no mention of the scope, such as which sections need updating or if there are specific guidelines for organization.
+- Without a detailed breakdown of tasks or criteria for ""re-organization,"" this request can be interpreted in multiple ways by different people.
+- The description lacks clear context and objectives, making it difficult to understand what is expected.
+
+Final Answer: Yes",eca2bebafff209c5,qwen2.5:14b,0,2026-06-17T16:05:25.101223,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39589,Update Android Menu docs re: overflow (...) menu on devices with hardware menu button,0,0,"- **Step 1:** Evaluate the title and description for clarity.
+  - The issue title specifies ""Update Android Menu docs re: overflow (...) menu on devices with hardware menu button.""
+  - The description provides a link to documentation that discusses how actions are hidden in the action overflow, mentioning both software and hardware buttons.
+
+- **Step 2:** Check if there is any vague language or lack of context.
+  - The title clearly states what needs updating: Android Menu docs regarding the overflow menu on devices with hardware menu buttons.
+  - The description provides a specific reference to existing documentation that discusses the issue in detail, including how actions are handled and displayed.
+
+- **Step 3:** Determine if there is any ambiguity about scope or interpretation.
+  - The title and description both clearly define what needs updating: the documentation should mention how devices with hardware menu buttons handle overflow menus.
+  - There is no room for multiple interpretations; it specifies exactly which part of the documentation needs to be updated.
+
+- **Step 4:** Confirm if there are any missing details that would make the issue unclear.
+  - The description provides a direct link and context from existing Android documentation, making it clear what aspect of the overflow menu behavior should be documented or clarified.
+
+- **Step 5:**",c1b65f1693367573,qwen2.5:14b,0,2026-06-17T16:05:30.415590,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38275,Rename AMPLIFY Appcelerator Services to Axway Mobile Analytics,0,0,"- The title specifies a clear action: renaming specific items.
+- The description provides detailed instructions on what needs to be renamed and where these changes should occur.
+- However, the description lacks clarity regarding why certain terms are being changed or if there are any additional steps beyond renaming that need to be taken.
+- There is no mention of whether this change affects other parts of the system or if it requires coordination with other teams or systems.
+- The scope and context for the renaming action could be more clearly defined, but the specific actions themselves (renaming) are clear.
+
+Final Answer: No",eb6b6bb28e1e4860,qwen2.5:14b,0,2026-06-17T16:05:33.398547,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38193,Remove very outdated Ti.Map documentation,0,1,"- The title mentions ""very outdated Ti.Map documentation"" but does not specify which version of the documentation is being referred to.
+- The description provides a specific link and details about when changes were made (""since 3.x""), indicating that there is context around the issue.
+- However, it lacks clarity on what exactly needs to be removed or updated in the documentation. It only states that the documentation has been replaced by another module but does not specify the exact content or sections of the documentation that need removal.
+- The description includes a link to a pull request which might provide more context, but without additional details within the issue itself about what specifically needs to be done, there is still ambiguity regarding the scope and nature of the task.
+- While some information is provided, it does not clearly define the exact steps or requirements for resolving the issue.
+
+Final Answer: Yes",77d8eb38b29582dd,qwen2.5:14b,0,2026-06-17T16:05:37.307438,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40376,Docs: Code highlighting incorrectly applied to some example blocks,0,1,"- The issue title specifies that code highlighting is incorrectly applied to some example blocks.
+- The description provides a specific URL and mentions two examples where the problem occurs: ""A XML sample"" and ""constructor"".
+- However, the description does not specify what exactly is incorrect about the code highlighting or how it should be corrected.
+- Without clear details on which parts of the code are highlighted incorrectly and what the correct highlighting should look like, there's ambiguity in understanding the exact nature of the issue.
+- The lack of specific instructions on how to fix the problem makes it unclear whether the solution involves changing CSS styles, modifying HTML structure, or something else entirely.
+
+Final Answer: Yes",3edd258e1dcc0bdc,qwen2.5:14b,0,2026-06-17T16:05:40.431382,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39190,Fix link to View.touchEnabled from View.enabled,0,0,"- **Step 1:** Analyze the title and description for clarity.
+  - The issue title specifies ""Fix link to View.touchEnabled from View.enabled,"" which is clear about what needs fixing.
+  
+- **Step 2:** Check if there's any vague language or lack of context.
+  - The description provides a specific URL and expected outcome, indicating that the documentation links incorrectly point to deprecated properties instead of the correct ones.
+
+- **Step 3:** Determine if the scope is unclear.
+  - The issue clearly defines what needs fixing: changing incorrect links in the documentation. This is well-defined and scoped.
+
+- **Step 4:** Evaluate if there are multiple possible interpretations.
+  - There's no ambiguity here; it’s clear that the link should point to `touchEnabled` instead of `enabled`.
+
+- **Step 5:** Conclude based on the analysis.
+  - The issue description provides a specific problem and expected solution, with no room for misinterpretation.
+
+Final Answer: No",d7564521b11006dc,qwen2.5:14b,0,2026-06-17T16:05:44.772231,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38138,Create and publish release note for SDK 7.3.1.RC,0,1,"- The title specifies the task to create and publish a release note for SDK version 7.3.1.RC.
+- The description repeats the same action without providing additional details or context such as what information should be included in the release notes, where it should be published, or any specific guidelines.
+- There is no mention of the scope of content to include in the release notes (e.g., new features, bug fixes, breaking changes).
+- The description does not specify a target audience for the release note or provide any criteria for what constitutes an adequate release note.
+- Given the lack of detail about the content and process for creating the release note, there is room for interpretation on how to proceed with this task.
+
+Final Answer: Yes",09e37e5775735373,qwen2.5:14b,0,2026-06-17T16:05:48.154890,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38570,Create and publish release note for Arrow 1.10.0,0,1,"- The title specifies the task clearly as ""Create and publish release note for Arrow 1.10.0.""
+- The description provides a direct link to the release board: https://jira.appcelerator.org/projects/API/versions/18168, which gives context about where the information can be found.
+- However, it does not specify what content should be included in the release note or how the release note should be formatted.
+- There is no mention of who should review the release notes before publishing them or any specific guidelines for creating the release notes.
+- The scope and requirements are somewhat unclear as there's a lack of detail on the expected format, content, and approval process.
+
+Final Answer: Yes",24c04ec78f3faa40,qwen2.5:14b,0,2026-06-17T16:05:51.506320,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39606,APIDoc: Geolocation documentation - potential error add remove event listener,0,1,"- The issue title mentions a potential error in the APIDoc for Geolocation regarding add/remove event listener.
+- The description provides context about reading the removeEventListener documentation and pointing out that the example given is not specific to Titanium.Geolocation but rather demonstrates an unrelated window event handling scenario.
+- The question asks whether the current section of the documentation should be updated to reflect proper usage with Titanium.Geolocation, specifically mentioning how listeners are added and removed for location events.
+- However, the description does not clearly specify what changes need to be made or provide a concrete example of the correct implementation within the Geolocation context. It leaves room for interpretation about exactly which part of the documentation needs updating.
+- The issue lacks clear scope as it is more of a suggestion rather than a specific bug report and does not provide explicit instructions on how to modify the existing documentation.
+
+Final Answer: Yes",ca384b66468c0804,qwen2.5:14b,0,2026-06-17T16:05:55.422646,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40579,Doc BUG: Titanium.UI.iPad.Popover explicitly requires a View as child but in fact requires a Window,0,0,"- The issue title mentions a discrepancy between the documentation and actual implementation of Titanium.UI.iPad.Popover.
+- The description clearly states that the documentation incorrectly specifies that a View is required as a child for Popover, while in reality, it requires a Window or NavigationGroup.
+- Despite mentioning multiple requirements (View, Window, NavigationGroup), the issue provides specific details about what each component entails and how they differ from the documented behavior.
+- The description includes a URL to the incorrect documentation page, providing clear context and scope for the change needed.
+- Although there are multiple components mentioned (View, Window, NavigationGroup), the issue is not ambiguous because it clearly outlines the discrepancy and provides specific examples of what works and what does not.
+
+Final Answer: No",03dba6170ea261bc,qwen2.5:14b,0,2026-06-17T16:05:59.011135,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40465,APIDOC: Ti.UI.TableViewSection.borderRadius does not work,0,1,"- The issue title mentions ""Ti.UI.TableViewSection.borderRadius"" but the description refers to ""Ti.UI.TableViewSelection"", which is a different property and class.
+- The description lacks clear context about what exactly does not work; it only states that altering the value of borderRadius doesn't seem to have any effect, without specifying expected behavior or conditions under which this occurs.
+- There's ambiguity regarding whether this issue pertains to documentation being incorrect (doc bug) or a product defect (product bug).
+- The test case provided is incomplete and does not demonstrate how borderRadius is altered or what the expected outcome should be.
+- Given these points, there are multiple interpretations possible for both the nature of the problem and its resolution path.
+
+Final Answer: Yes",8a59e38d73ecca5f,qwen2.5:14b,0,2026-06-17T16:06:02.591084,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38497,New documentation page needed for API Builder -> Swagger Specifications,0,1,"- The title specifies that a new documentation page is needed for ""API Builder -> Swagger Specifications,"" which indicates the scope of the issue.
+- However, the description does not specify what content should be included on this new page or any specific requirements beyond mentioning to reach out to Jamie Peabody/<USER> for technical details. This leaves room for interpretation about what exactly needs to be documented and how detailed it should be.
+- The lack of clear instructions or examples in the description means that different people might interpret the task differently, leading to potential inconsistencies in the final documentation.
+- There is no mention of any existing guidelines or standards for creating such a page, which could help clarify expectations and reduce ambiguity.
+- While the title provides some clarity, the description's vagueness regarding content specifics and lack of detailed instructions make it ambiguous.
+
+Final Answer: Yes",d50fbfcc1f326525,qwen2.5:14b,0,2026-06-17T16:06:06.458569,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39864,ACS User - need to be able to delete user without logging in as that user,0,1,"- The issue title and description both mention ""ACS User"" but do not clearly define what an ACS user is or how it differs from other types of users.
+- The requirement to delete a user without logging in as that user is clear, but the context for why this needs to be done (EMC's need) could benefit from more detail about the specific use case and requirements.
+- There is ambiguity regarding whether the documentation is incorrect or if there’s an alternative method to achieve the desired functionality. The statement ""Wei mentions that we can support this"" implies a solution but lacks specifics on how it would be implemented.
+- The description ends with ""Since I am not sure of the syntax i cannot check this (using curl commands)"", indicating uncertainty about the technical steps required, which adds to the ambiguity.
+- While the core requirement is clear, the surrounding context and implementation details are vague or unclear.
+
+Final Answer: Yes",bd60c8247b38e9dc,qwen2.5:14b,0,2026-06-17T16:06:10.527344,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38249,Create and publish release note for API Builder 3.0.0,0,1,"- The title specifies a clear task: creating and publishing release notes for API Builder 3.0.0.
+- However, the description uses ambiguous language such as ""Update } to include the entry,"" which does not specify what document or file needs updating.
+- There is no clear context provided about where the update should be made (e.g., a specific file name or location).
+- The phrase ""publish the API Builder Zoomin bundle to prod"" lacks clarity regarding the exact steps involved in this process and any prerequisites.
+- Overall, while the task seems straightforward, the description contains vague references that could lead to multiple interpretations.
+
+Final Answer: Yes",746718fb9d1667b8,qwen2.5:14b,0,2026-06-17T16:06:13.666644,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38348,Improve the doc navigation,0,1,"- The title ""Improve the doc navigation"" is somewhat vague but provides a general idea of what needs to be addressed.
+- The description mentions specific products and a model for navigation, which gives some context about what needs improvement.
+- However, it lacks clear metrics or criteria for what constitutes 'consistent' navigation. It does not specify how current navigation differs from the proposed one or why consistency is necessary.
+- There's no mention of who will implement this change, timelines, or any specific requirements beyond a general model.
+- The description could be interpreted in multiple ways regarding the extent and nature of changes required for each product.
+
+Final Answer: Yes",8fcf47912b0c16f8,qwen2.5:14b,0,2026-06-17T16:06:16.781548,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38714,incorrect link,0,1,"- The title ""incorrect link"" is vague and does not specify which link or what aspect of it is incorrect.
+- The description mentions a specific URL but lacks clarity about what exactly is wrong with the content displayed at that URL. It only states that the content is incorrect without specifying how it is incorrect (e.g., missing information, incorrect data).
+- There is no clear context provided regarding when this issue occurs or under which conditions.
+- The description does not specify a specific component or part of the application where the problem lies, making it difficult to understand the scope of the issue.
+- While there is an attached screenshot mentioned, without seeing it, one cannot fully determine if all necessary details are conveyed in the text.
+
+Final Answer: Yes",67ea22733b4916da,qwen2.5:14b,0,2026-06-17T16:06:20.169233,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38876,404 page is (unformatted) landing page,0,1,"- The title ""404 page is (unformatted) landing page"" uses vague language and does not clearly specify what the expected format or content of a 404 page should be.
+- The description mentions that invalid URLs under certain conditions show an unformatted landing page, but it lacks clear context about what constitutes an ""invalid URL"" and how this differs from other scenarios.
+- The issue describes two different behaviors for handling invalid URLs (one in the root directory and another under a specific path), but does not provide enough detail to understand why these differences exist or what is expected behaviorally.
+- There's no clear scope defined regarding which parts of the documentation are affected, nor any indication of how this affects user experience or system functionality beyond vague statements about formatting issues.
+- The description can be interpreted in multiple ways due to its lack of specificity and context.
+
+Final Answer: Yes",1110a87b4c42e021,qwen2.5:14b,0,2026-06-17T16:06:24.096466,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38300,Add a migration banner to all pages in the guides2 space,0,1,"- **Title and Description Analysis**: The title ""Add a migration banner to all pages in the guides2 space"" is clear about the action needed but lacks detail on how it should be implemented. The description provides more context by specifying that a script needs to add a banner with specific text.
+- **Clarity of Action**: The description clearly states what needs to happen: create a script, where this script will run (all pages in the guides2 space), and what content the banner should contain.
+- **Vagueness Check**: While the title is somewhat vague, the description provides sufficient detail about the expected outcome. However, it does not specify technical details such as how to implement the script or any specific requirements for the banner's appearance (e.g., size, position).
+- **Scope and Interpretation**: The scope of adding a banner across all pages in a specific space is clear but could be interpreted differently if there are multiple ways to define ""all pages"" or different methods to ensure the banner appears consistently.
+- **Final Determination**: Although the description provides more context than the title, it still leaves room for interpretation regarding technical implementation details and consistency requirements.
+
+Final Answer: Yes",4eea5c142f326014,qwen2.5:14b,0,2026-06-17T16:06:29.098321,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38460,web site link doesn't exist,0,1,"- The issue title ""web site link doesn't exist"" is vague and does not specify which exact link or webpage is being referred to.
+- The description mentions a specific URL but lacks clarity on whether the problem lies with the webex link itself, its registration under a project, or another aspect of the website's functionality.
+- There is no clear context provided about what should happen when clicking the 'View Webinar' button and how it currently deviates from expectations.
+- The description does not specify if there are any error messages or additional details that could help pinpoint the issue more accurately.
+- Given these points, the issue lacks specificity and can be interpreted in multiple ways due to insufficient detail.
+
+Final Answer: Yes",4ba5dcdd35ee6047,qwen2.5:14b,0,2026-06-17T16:06:32.485413,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40544,Android: documentation about how to handle Android app first run is missing,0,1,"- The title mentions that documentation about handling the first run of an Android app is missing.
+- The description talks about a specific problem related to restarting apps after installation and links to Google bugs and a workaround implemented in JIRA.
+- However, the issue lacks clarity on what exactly needs to be documented. It does not specify which aspects or steps should be included in the documentation.
+- There's no clear scope defined for the documentation; it’s unclear whether the documentation should cover only workarounds or also include details about the bugs and their impacts.
+- The description could be interpreted differently by different readers, as it doesn’t provide a precise list of what needs to be documented.
+
+Final Answer: Yes",11205c326fd0c086,qwen2.5:14b,0,2026-06-17T16:06:35.739975,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39279,iOS: createEmailDialog method doesn't work on some devices,0,1,"- The issue title mentions that the ""createEmailDialog method doesn't work on some devices,"" which is somewhat vague but provides a clear indication of the problem.
+- The description includes specific scenarios where the email dialog works or does not work across different simulators and actual devices, providing context for when the issue occurs.
+- However, the description lacks details about why it fails on certain devices and what exactly happens (e.g., error messages, logs) beyond the simulator's message in iOS 8.
+- The absence of specific technical details such as stack traces or error codes makes it harder to pinpoint the exact cause of the problem.
+- Despite providing some context through various device scenarios, the lack of clear failure symptoms and technical details leaves room for multiple interpretations about what exactly is wrong.
+
+Final Answer: Yes",875cc30dca51f20a,qwen2.5:14b,0,2026-06-17T16:06:39.443383,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38926,Update iOS Interactive Notifications guide for Apple Watch,0,1,"- **Title Analysis**: The title ""Update iOS Interactive Notifications guide for Apple Watch"" is clear about what needs to be done but lacks context on why or how.
+- **Description Analysis**:
+  - It specifies that the current guide does not cover Apple Watch, which provides a specific scope.
+  - It suggests linking an existing GitHub sample project to update the guide, providing a concrete action item.
+  - However, it doesn't specify what aspects of iOS Interactive Notifications should be covered for Apple Watch or any performance criteria.
+- **Vagueness Check**: The description does not provide clear metrics or specific requirements on how the guide should be updated (e.g., which features to include, expected outcomes).
+- **Context and Scope**:
+  - While it mentions a sample project that could be used, there is no detailed context about what changes are necessary beyond linking this resource.
+  - The scope of updating the guide for Apple Watch is clear but lacks specifics on implementation details or desired results.
+
+Final Answer: Yes",5fc5cafe4409df61,qwen2.5:14b,0,2026-06-17T16:06:43.898067,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40983,APIDoc: Remove click type events for mapview,0,0,"- The title specifies ""Remove click type events for mapview,"" which is clear about the action to take.
+- The description provides a reference link (http://jira.appcelerator.org/browse/TIMOB-1104) that explains why these events are not supported on mapviews, providing context and clarity.
+- It explicitly mentions which events should be removed (""click event... singletap, doubletap, dblclick, etc.""), making the scope clear.
+- The description states that these events ""are still listed in the API docs,"" indicating exactly where they need to be addressed.
+- There is no ambiguity regarding what needs to be done or where it needs to be done; the instructions are specific and actionable.
+
+Final Answer: No",9ef3658cf99c6a0e,qwen2.5:14b,0,2026-06-17T16:06:47.327872,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40873,APIDoc: ImageView Documentation clarification,0,1,"- The issue title ""APIDoc: ImageView Documentation clarification"" is specific and indicates that there's a need for clarifying documentation.
+- The description provides detailed examples of how the current implementation behaves differently from what the notes suggest. It mentions specific scenarios where setting width and height does not result in scaling on both axes as expected.
+- However, the issue lacks clarity regarding which parameter (height or width) Titanium uses to scale the image and under what conditions it decides this. The description states that ""which parameter [height or width] Titanium uses is not clearly defined in the notes,"" indicating ambiguity in how the ImageView scales images based on these parameters.
+- While examples are provided, they do not fully clarify the behavior across all possible scenarios, leaving room for multiple interpretations of how the scaling works under different conditions.
+- The proposed solution to update the documentation includes a statement about maintaining aspect ratio and scaling based on one parameter but does not specify which parameter is chosen or under what circumstances.
+
+Final Answer: Yes",f123781fa02a6a16,qwen2.5:14b,0,2026-06-17T16:06:51.859594,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38583,Nodejs reset password token,0,1,"- The issue title ""Nodejs reset password token"" is somewhat vague but provides a hint about the context.
+- In the description, it mentions that the ""reset_password_token"" is not being passed from an email template when clicking on a link. This indicates there might be an implementation or configuration problem with how tokens are handled in emails.
+- The issue also points out potential documentation problems regarding the absence of a ""key"" parameter in the provided URL example, which could lead to confusion for users trying to implement password reset functionality.
+- However, while the description provides some context about what is happening (token not being passed), it lacks specific details such as error messages or logs that would help pinpoint the exact cause of the issue.
+- The mention of a Stack Overflow thread suggests there might be broader issues with how this feature is documented and implemented across different environments.
+
+Final Answer: Yes",3a66e548e4b8db78,qwen2.5:14b,0,2026-06-17T16:06:56.120938,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38547,Create and publish release note for Alloy 1.9.2,0,1,"- The title specifies ""Alloy 1.9.2"" but the description mentions ""Alloy 5.5.0"".
+- There is a discrepancy between the version numbers in the title and the description.
+- Without additional context or clarification, it's unclear which version of Alloy should be addressed (1.9.2 vs. 5.5.0).
+- The lack of specific details about what constitutes a ""release note"" or how to publish it adds ambiguity.
+- Given these inconsistencies and missing information, the issue is ambiguous.
+
+Final Answer: Yes",149c677b6b34b46f,qwen2.5:14b,0,2026-06-17T16:06:58.992289,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39410,"Doctools: hide ACS REST API """"pseudo types"""" in API reference TOC",0,1,"- The title mentions ""pseudo types"" which are not defined or explained.
+- The description clarifies that PushLogs and PushLogDetails are not actual REST API types but rather returned by specific methods. However, it does not specify how they should be hidden in the TOC.
+- There is no clear scope on what exactly needs to be done to hide these pseudo types from the TOC.
+- The term ""pseudo types"" could be interpreted differently depending on the context or understanding of the reader.
+- The description lacks specific instructions and technical details about implementing the hiding mechanism.
+
+Final Answer: Yes",0589e727a0139d52,qwen2.5:14b,0,2026-06-17T16:07:01.906370,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38316,Remove Mobile Web Support Reference from documentation,0,0,"- The title and description clearly state the action to be taken: removing references to Mobile Web Support from documentation.
+- The context is provided with a specific version of SDK (7.0) where this change will take place.
+- Specific URLs are given for the references that need to be removed, providing clear scope and detail.
+- There is no ambiguity in what needs to be done or where it should be applied.
+- All necessary information is clearly stated without room for multiple interpretations.
+
+Final Answer: No",0d4350935bd6034e,qwen2.5:14b,0,2026-06-17T16:07:04.471550,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40070,DocTools: Allow linking to guides sections by name in Cloud docs,0,1,"- The title specifies a clear goal: ""Allow linking to guides sections by name.""
+- However, the description is somewhat vague about what exactly needs to be changed or improved.
+- It mentions that JSDuck creates anchors with numbered sections but does not specify how these should be modified to allow linking by name instead of numbers.
+- The context provided (reference to lib/jsduck) helps understand where this issue applies but doesn't clarify the specific changes required in the code or documentation.
+- There is no clear scope defined for what constitutes ""linking to guides sections by name"" and how it differs from the current implementation.
+
+Final Answer: Yes",fba9a5d00023d2db,qwen2.5:14b,0,2026-06-17T16:07:07.547046,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38806,Alloy Map sample code needs to be updated,0,1,"- **Vague Language**: The description mentions that the ""Alloy map sample should be updated,"" but it does not specify what exactly needs to be changed or why.
+- **Lack of Clear Context**: There is no clear context provided about which part of the documentation or codebase needs updating, nor are there specific details on how the update should be implemented.
+- **Unclear Scope**: The description lacks clarity regarding the scope of changes required. It does not specify whether it involves modifying existing sample code, adding new samples, or both.
+- **Multiple Interpretations**: Without detailed instructions, one could interpret this issue in multiple ways—whether to change syntax, add examples, or update outdated references.
+- **Final Answer: Yes**",076839fd4e6fe3fd,qwen2.5:14b,0,2026-06-17T16:07:10.905076,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40752,As a Titanium developer,0,1,"- The title ""As a Titanium developer"" is incomplete and does not specify the user's role or intent clearly.
+- The description starts with ""I want to have access to complete and accurate APIDoc for Titanium/Database APIs"", which is somewhat clear but lacks specificity about what constitutes ""complete and accurate"".
+- It lists file names (Titanium/Database/Database.yml, Titanium/Database/DB.yml, Titanium/Database/ResultSet.yml) without explaining why these files are important or how they relate to the request.
+- The description does not provide any context on why access to these documents is necessary or what problems arise from their absence.
+- There's no clear scope defined for what ""complete and accurate"" means in terms of documentation content, format, or expected outcomes.
+
+Final Answer: Yes",693dfa886276dfbb,qwen2.5:14b,0,2026-06-17T16:07:14.527767,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38413,Update API Builder Doc landing page on Axway Doc Portal,0,1,"- The title specifies a clear task: updating the landing page for API Builder on the Axway Doc Portal.
+- However, the description lacks specific details about what changes are needed or how to implement them beyond mentioning an attachment with an outline.
+- Without the attachment, it's unclear exactly which aspects of the documentation need updating and how they should be structured.
+- The scope of the update is not clearly defined; there’s no mention of specific sections that require modification or any criteria for what constitutes a ""current release.""
+- Given these points, while the task seems straightforward, the description leaves room for interpretation regarding the specifics of the update.
+
+Final Answer: Yes",7e56b4708aae2e54,qwen2.5:14b,0,2026-06-17T16:07:17.646425,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40079,APIDoc: iOS: Sound player volume -- setting device volume,0,1,"- The title of the issue mentions ""APIDoc"" and refers to handling device volume on iOS, which suggests documentation-related work.
+- However, the description includes a problem statement about sound player volume being too low on devices and simulators, indicating an actual software issue rather than just documentation.
+- The description lacks clear context regarding what exactly needs to be documented versus what is a functional requirement or bug report. It mixes both aspects without distinguishing them clearly.
+- There's no specific scope defined for the documentation task; it’s unclear whether the document should cover how to set device volume, why the sound player volume behaves as described, or something else entirely.
+- The issue description could be interpreted in multiple ways due to its mixed content and lack of clear separation between problem reporting and documentation requirements.
+
+Final Answer: Yes",c7d957c38d77c349,qwen2.5:14b,0,2026-06-17T16:07:21.392469,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39208,Clarify 'autoStyle' docs,0,1,"- **Vague Language**: The description mentions phrases like ""take full advantage"" and ""properly update,"" which are not clearly defined.
+- **Lack of Clear Context**: While the issue points to specific sections in documentation, it does not specify what exactly needs clarification or how these terms should be interpreted.
+- **Unclear Scope**: It is unclear whether the task involves reorganizing existing content or adding new examples and explanations.
+- **Multiple Interpretations**: The description could mean different things depending on who reads it. For example, one might think it requires more detailed descriptions of functionality, while another might see it as needing better organization of current information.
+- **Final Answer: Yes**",fa297cf30b6606f1,qwen2.5:14b,0,2026-06-17T16:07:24.767848,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38600,Confirm and/or update Migrating Node.ACS Applications to Arrow page,0,1,"- The issue title is somewhat vague as it does not specify what exactly needs to be confirmed or updated.
+- The description provides a list of items that need confirmation or updating but lacks specific details about the current state and desired outcome for each item.
+- There are multiple sections listed (Introduction, Create an Arrow project, package.json, etc.), which makes the scope unclear without further context on what changes are needed in each section.
+- The task to ""Fix capitalization on all sections"" is clear but does not provide enough information about how the current state differs from the desired state.
+- Overall, while there is a list of tasks, the lack of specific details and context makes it difficult to understand exactly what needs to be done.
+
+Final Answer: Yes",c8e6b5f9d7b14350,qwen2.5:14b,0,2026-06-17T16:07:28.303982,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40801,APIDoc: Background Gradient options not documented,0,1,"- The title mentions ""Background Gradient options not documented,"" which is specific about what needs documentation.
+- However, the description uses vague language: ""Currently we don't really document these."" This phrase does not specify exactly what is missing or how it should be addressed.
+- The description suggests adding a pseudotype for the background gradient object but does not provide clear instructions on what constitutes an acceptable pseudotype or where to place this documentation within existing documents.
+- There's no mention of specific requirements, such as which API endpoints are affected, what kind of details need to be included in the documentation, or any examples that should accompany the new content.
+- The lack of detailed context and clear scope makes it difficult for a developer to understand exactly what needs to be done.
+
+Final Answer: Yes",8d01554613776ccc,qwen2.5:14b,0,2026-06-17T16:07:31.765006,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40937,APIDoc: Facebook code snippet not being rendered,0,1,"- The issue title and description clearly identify the specific problem: a code snippet on the APIDoc page for Facebook is not rendering properly.
+- The URL provided in the description points to the exact location of the problematic code snippet, which helps in identifying the context.
+- However, the description does not specify what ""not being rendered properly"" means exactly. It could mean that the code appears incorrectly formatted or missing entirely.
+- There's no clear indication of how the rendering should look or what the expected outcome is beyond a vague example provided.
+- The lack of specific details about the issue’s symptoms and desired state makes it somewhat ambiguous.
+
+Final Answer: Yes",decdfdf14d28aaa3,qwen2.5:14b,0,2026-06-17T16:07:34.871468,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38132,Create and publish release note for CLI 7.0.6.RC,0,0,"- The title specifies the exact task to be performed: ""Create and publish release note for CLI 7.0.6.RC"".
+- The description repeats the same information as the title without providing additional context or details.
+- There is no ambiguity regarding what needs to be done; it clearly states creating and publishing a release note for a specific version of CLI (Command Line Interface).
+- However, there are no specifics about the content that should go into the release notes, such as which changes were made in this version, who should review or approve the release notes before publication, etc.
+- Despite lacking detailed instructions on how to create the release notes, the task itself is not ambiguous.
+
+Final Answer: No",46b915777d7a3fc7,qwen2.5:14b,0,2026-06-17T16:07:38.166090,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38986,Android Themes guide needs serious updating,0,1,"- The issue title ""Android Themes guide needs serious updating"" is somewhat vague and does not specify the exact nature of the updates required.
+- The description provides several specific points for improvement but lacks clear context or scope. For example, it mentions removing information about Release 3.3.x and earlier without specifying why this removal is necessary beyond stating that support has ended.
+- There are multiple suggestions for reorganizing content (e.g., moving sections around) which can be interpreted in different ways depending on the reader's understanding of what constitutes ""easy to complex"" or ""easier.""
+- The description ends with a request for discussion and mentions another user who might help, but it does not provide clear instructions or next steps.
+- Overall, while there are specific points mentioned, the lack of detailed context and multiple possible interpretations make this issue ambiguous.
+
+Final Answer: Yes",7d275dc0a00d20c0,qwen2.5:14b,0,2026-06-17T16:07:42.328879,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38790,Update and extend guide on Transitions,0,1,"- **Vague Language**: The description mentions that the guide needs an update but does not specify what changes or additions are required. It also references another walkthrough without clearly stating how it should be integrated.
+- **Lack of Clear Context**: There is no clear indication of which parts of the existing guide need updating, nor is there a detailed explanation of what new information should be added.
+- **Unclear Scope**: The description does not define the scope of the update or specify whether only Android transitions are to be covered or if other platforms should also be included.
+- **Multiple Interpretations**: Given the lack of specifics, one could interpret this issue in multiple ways. For example, it is unclear whether the task involves updating existing content, adding new sections, or both.
+- **Final Answer: Yes**",b7e8ad863f7b4cdc,qwen2.5:14b,0,2026-06-17T16:07:46.068946,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38051,Ti.Platform.id documentation needs clarification,0,1,"- The title mentions ""Ti.Platform.id documentation needs clarification,"" which is specific about the area needing improvement.
+- However, the description uses vague language such as ""might be UDID"" and does not clearly define what Ti.Platform.id actually represents across different platforms.
+- The scope of the issue is unclear; it asks for a more accurate description but doesn't specify exactly what details are missing or how to improve clarity.
+- There's ambiguity about whether Ti.Platform.id should be used as a unique identifier, especially in terms of user authentication and its potential changes over time.
+- The description raises questions without providing clear answers or specific requirements for the documentation update.
+
+Final Answer: Yes",7146eb17a19cd1c1,qwen2.5:14b,0,2026-06-17T16:07:49.234372,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38667,Create and publish Studio 4.7.1.GA release note,0,0,"- The title specifies the exact task to be performed: ""Create and publish Studio 4.7.1.GA release note.""
+- The description is very similar but lacks detail on how or where it should be published.
+- However, both the title and description clearly state what needs to be done without ambiguity regarding which version of Studio (4.7.1.GA) and the nature of the task (creating a release note).
+- There's no vague language or unclear scope in terms of understanding what is required from the user.
+- The context provided is sufficient for someone familiar with the process to understand the requirements.
+
+Final Answer: No",4d460d455cd7afaf,qwen2.5:14b,0,2026-06-17T16:07:52.256536,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38004,Link for 'Titanium.UI.iOS.SystemButton' seems to be broken,0,0,"- The issue title mentions a specific component ('Titanium.UI.iOS.SystemButton') and indicates that there's a problem with its documentation link.
+- The description provides a clear context: the broken link is located under the removal/deprecation notice on a specific page URL.
+- The exact behavior is described: clicking the link redirects to the main documentation page instead of the intended location.
+- There are no vague terms or unclear references in either the title or the description.
+- All necessary details for reproducing and addressing the issue are provided.
+
+Final Answer: No",df29627f04c99038,qwen2.5:14b,0,2026-06-17T16:07:54.962092,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38293,Create and publish release note for SDK 6.3.0.GA,0,1,"- The title specifies ""SDK 6.3.0.GA"" but the description mentions ""SDK 6.2.3.GA"".
+- There is a discrepancy between the version numbers in the title and the description.
+- This inconsistency can lead to confusion about which SDK release note needs to be created and published.
+- The scope of work (which SDK version) is unclear due to this mismatch.
+- Given the conflicting information, it's not clear whether the task is for 6.3.0.GA or 6.2.3.GA.
+
+Final Answer: Yes",44e232d943a1e634,qwen2.5:14b,0,2026-06-17T16:07:57.971701,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39823,Guides: Update Launch options,0,1,"- The title ""Guides: Update Launch options"" is somewhat clear but does not specify the exact nature of the update or which guides are involved.
+- The description mentions updating multiple instances where specific terms like ""Run/Debug/Package > iOS Device, iPhone Simulator, iPad Simulator, Android Emulator and Android Device"" are used due to changes in target names and options. This provides some context but lacks specificity regarding what exactly needs to be changed or how the updates should look.
+- The description does not specify which guides need updating or provide examples of the new target names and options, making it difficult for someone to understand fully without additional information.
+- While the issue describes a clear task (updating launch options), it is ambiguous about the exact changes required and lacks specific details that would make it actionable.
+- Given the lack of precise instructions on what needs updating and how, this issue can be interpreted in multiple ways.
+
+Final Answer: Yes",a230a665816fd1cf,qwen2.5:14b,0,2026-06-17T16:08:02.053861,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38256,Document required Android modules changes due to V8 changes,0,1,"- The title mentions ""Android modules changes due to V8 changes,"" but does not specify which Android modules or what specific changes are being referred to.
+- The description states that developers need to recompile their modules in version 7.0.0, but it is unclear exactly why this is necessary and what the implications of these changes are for existing codebases.
+- There is a suggestion to provide a guide for updating modules, but no specific details about what should be included in the guide or how comprehensive it needs to be.
+- The description mentions possibly providing an automatic migration tool (""hook""), but does not specify whether this is mandatory or optional and lacks technical specifics on its implementation.
+- Overall, while there are clear intentions behind the issue (documenting changes and helping developers adapt), the details needed for actionable steps are missing.
+
+Final Answer: Yes",6600d1ef14373e5b,qwen2.5:14b,0,2026-06-17T16:08:05.884797,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39381,Node.ACS cannot catch stdout & stderr from child processes forked by app,0,1,"- The title and description clearly identify specific commands ('acs loglist' and 'acs logcat') that are used to show logs.
+- The issue specifies a clear context: these commands work for the root process but not for child processes forked by the app's root process.
+- However, the description does not provide any additional details about why this is happening or what behavior is expected from the child processes.
+- While it mentions that outputs are ""not caught,"" there is no explicit mention of what should be done to resolve this issue or how the system should behave differently.
+- The lack of specific expectations and resolution steps makes the issue somewhat ambiguous in terms of next steps for developers.
+
+Final Answer: Yes",8afafbe25245b15a,qwen2.5:14b,0,2026-06-17T16:08:09.257299,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40888,APIDoc: remove from docs advice about passing functions cross-context,0,0,"- The title and description both refer to a specific action: removing advice about passing functions cross-context from the documentation.
+- The context is provided by mentioning conversations with named individuals (Don, Blain, Steven, Fred) and changes in iOS memory management.
+- A specific URL for the section of the API documentation that needs modification is given.
+- The description clearly states what should replace the removed advice: passing simple objects and JSON via custom events.
+- There are no ambiguities regarding which part of the documentation to modify or what content should be replaced.
+
+Final Answer: No",f96f7f319e1eefd7,qwen2.5:14b,0,2026-06-17T16:08:12.128523,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39024,Migration: Node.ACS instructions should link new guide,0,1,"- The title mentions ""Node.ACS instructions should link new guide,"" but it does not specify what exactly needs to be linked or where.
+- The description uses vague language such as ""[migration page|https://web.appcelerator.com/product/migrate-app#node_acs_instructions]"" and ""[guide|http://docs.appcelerator.com/platform/latest/#!/guide/Migrating_Node.ACS_Applications_to_Arrow],"" which does not provide clear context or scope.
+- The description suggests linking to a new guide but does not specify the exact location, format, or requirements for this link.
+- There is an ambiguity in ""and visa versa,"" which should be ""vice versa"" and implies that there might be another direction of migration mentioned but unclearly stated.
+- Overall, the issue lacks clear instructions on what needs to be done and how it should be implemented.
+
+Final Answer: Yes",3c0c2a4aaa8bf4a7,qwen2.5:14b,0,2026-06-17T16:08:16.187641,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38189,Update Pull Request Guide and Building SDK From source,0,1,"- The title mentions two distinct tasks: updating the Pull Request Guide and building SDK from source.
+- The description focuses on updating the Pull Request Guide due to outdated information about scons method usage.
+- There is no clear mention or detail regarding how to build the SDK from source, which is part of the title but not addressed in the description.
+- The scope of the issue is unclear as it does not specify whether both tasks should be completed simultaneously or if only one task (updating the guide) needs attention.
+- The description lacks specific details on what changes are needed for updating the Pull Request Guide and how to avoid duplicating content between different documentation files.
+
+Final Answer: Yes",81e80474dbf72d41,qwen2.5:14b,0,2026-06-17T16:08:19.461289,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38180,Ti.UI.WebView documentation broken/missing,0,1,"- The title mentions that the documentation for Ti.UI.WebView is broken or missing.
+- The description provides a specific URL to the problematic documentation: https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.WebView.
+- However, the description does not specify what exactly is wrong with the documentation (e.g., which parts are missing, how it's broken).
+- There is no clear expected outcome or target state for the documentation beyond stating that ""Docs should be visible again,"" which lacks detail and specificity.
+- The issue could be interpreted in multiple ways since it doesn't provide enough information about what needs to be fixed or improved.
+
+Final Answer: Yes",38fb5d3bee28f18b,qwen2.5:14b,0,2026-06-17T16:08:22.585030,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40251,"JDT install directions reference """"Helios"""" not """"Indigo"""" Eclipse platform",0,0,"- The title and description both clearly reference specific versions of Eclipse (""Helios"" 3.6 and ""Indigo"" 3.7).
+- The issue specifies that documentation needs to be updated from referring to the old version (""Helios"") to the new version (""Indigo"").
+- There is a clear context provided, including a link to the relevant documentation.
+- The scope of the problem is well-defined: updating certain references in the documentation.
+- No part of the description or title can be interpreted in multiple ways; it is specific and unambiguous.
+
+Final Answer: No",1aa3dc40f9f9df66,qwen2.5:14b,0,2026-06-17T16:08:25.466688,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38133,Create and publish release note for CLI 7.0.5.GA,0,1,"- The title specifies the exact task to be performed: creating and publishing a release note for CLI version 7.0.5.GA.
+- The description repeats the same information as the title without adding any additional context or details that could clarify what is meant by ""create"" and ""publish.""
+- There are no specific requirements mentioned about the content of the release notes, such as which changes should be included, formatting guidelines, or where to publish them.
+- Without further detail on how to create the release note (e.g., what information it should contain) or where to publish it (e.g., a URL), there is ambiguity in understanding exactly what actions are required.
+- The lack of specific instructions leaves room for interpretation regarding the scope and requirements of creating and publishing the release notes.
+
+Final Answer: Yes",53f5e0ade42ead20,qwen2.5:14b,0,2026-06-17T16:08:29.177092,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40671,APIDoc: Filesystem.File.createTimestamp returns 0 on Android for resource files,0,1,"- The title specifies the exact method and context (""Filesystem.File.createTimestamp returns 0 on Android for resource files"").
+- The description clearly states that the issue is about a specific method not providing useful data for resource files on Android.
+- However, the phrase ""and possibly others"" in the description introduces ambiguity as it does not specify which other methods might be affected or how they are related to the initial problem.
+- Despite the clear context provided, the inclusion of potentially ambiguous references (""possibly others"") makes the issue less precise and harder to address directly without further clarification.
+- The core issue is well-defined but the mention of ""others"" introduces an element of vagueness that could lead to misinterpretation or unnecessary investigation.
+
+Final Answer: Yes",8e0a1f5de06882b8,qwen2.5:14b,0,2026-06-17T16:08:32.613307,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40346,APIDoc: Analytics doc should mention raw data export,0,1,"- The title mentions ""Analytics doc"" but does not specify which document or section of the documentation needs updating.
+- The description is vague about what specific analytics data isn't available in the UI and how it should be mentioned for raw data export.
+- There's no clear scope defined; it references multiple documents (Ti Analytics guides, API docs) without specifying their exact locations or requirements.
+- The phrase ""make clear"" is ambiguous as it does not provide a precise guideline on what needs to be clarified or in what manner.
+- Overall, the issue lacks specific details and can be interpreted in several ways due to its vagueness.
+
+Final Answer: Yes",7444c0b26e185b5f,qwen2.5:14b,0,2026-06-17T16:08:35.670484,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39667,ACS Custom Object Documentation Needs Corrected,0,1,"- The title mentions ""ACS Custom Object Documentation Needs Corrected,"" which is somewhat vague but indicates a specific area of concern.
+- The description specifies that the 'show()' method documentation contains incorrect ('delete') verbiage and needs to be updated. This provides clear context about what exactly needs correction.
+- However, the issue does not specify how the 'delete' verbiage should be corrected or provide any examples of the desired changes, leaving room for interpretation on what constitutes a proper update.
+- The description includes a link to the documentation in question, which helps clarify the scope and location of the problem but doesn't eliminate ambiguity regarding the nature of the correction needed.
+- Given that while the issue points out a specific problem with documentation, it lacks detailed instructions or examples about how to correct it, making it open to multiple interpretations.
+
+Final Answer: Yes",3de857d966d99ae4,qwen2.5:14b,0,2026-06-17T16:08:39.496347,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38873,Ti.UI.Android.openPreferences: Does not explain how to get a preference value,0,0,"- The title mentions ""does not explain how to get a preference value,"" which is specific about the missing functionality.
+- The description clearly references a previous request and provides context by mentioning a ticket number (TIDOC-11) and specifying that documentation needs to be added for retrieving preferences via `Ti.UI.Android.openPreferences`.
+- However, the description uses placeholders like `[~<USER>]` which are unclear without additional context about who or what `<USER>` refers to.
+- The issue specifies exactly where the documentation should be added (http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Android-method-openPreferences), providing clear scope and location for the requested change.
+- Despite some minor ambiguity in placeholders, the overall intent of the request is clear regarding what needs to be documented.
+
+Final Answer: No",1910c0fb1ffdfcb5,qwen2.5:14b,0,2026-06-17T16:08:43.234935,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39183,Please help review the error messages of on-demand-pricing node.ACS part,0,0,"- The issue title is somewhat vague but provides a context about reviewing error messages for the on-demand-pricing feature of node.ACS.
+- The description clearly outlines specific error and success message codes along with their descriptions and contexts in which they are shown to users or internally used by the system.
+- However, there are some minor grammatical errors and typos (e.g., ""tgat"" instead of ""that"", missing commas after some messages), but these do not significantly impact understanding.
+- The scope is clear as it specifies both user-facing error messages and internal dashboard-related error messages.
+- Despite the minor issues with grammar, the descriptions are detailed enough to understand what each message means and when they should be displayed.
+
+Final Answer: No",3068b9b7b98d4567,qwen2.5:14b,0,2026-06-17T16:08:46.746278,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38123,Create and publish release note for SDK 7.4.0.GA,0,0,"- The title specifies the exact task to be performed: creating and publishing a release note for SDK version 7.4.0.GA.
+- The description is concise but matches the title exactly without adding any ambiguity or additional unclear requirements.
+- There are no vague terms used in either the title or the description that could lead to multiple interpretations of what needs to be done.
+- Both the scope and context are clear: it pertains specifically to SDK 7.4.0.GA, which is a specific version number.
+- The task is straightforward with no room for misinterpretation regarding what needs to be accomplished.
+
+Final Answer: No",278ae5aa6ac942d1,qwen2.5:14b,0,2026-06-17T16:08:49.984294,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40183,Guides: Enhance doc for installing/using modules,0,1,"- The issue title ""Guides: Enhance doc for installing/using modules"" is somewhat vague but provides a general context about improving documentation.
+- The description mentions specific changes needed in the documentation regarding the ~/Library directory usage and visibility issues. However, it does not specify which documents need to be updated or where these updates should be made within the existing guides.
+- There are multiple points mentioned (visibility instructions, unzipping modules, troubleshooting incorrect version messages, editing tiapp.xml), each with varying levels of detail but no clear prioritization or scope defined.
+- The description lacks a clear target audience and does not specify which parts of the documentation should be updated first or how these changes will fit into existing guides.
+- Given the multiple points and lack of specific instructions on where to make changes, this issue can be interpreted in several ways depending on who reads it.
+
+Final Answer: Yes",26274b3541e0e2f3,qwen2.5:14b,0,2026-06-17T16:08:54.002961,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38293,Create and publish release note for SDK 6.3.0.GA,0,0,"- The title and description are identical and very specific about the task at hand.
+- They clearly state that a release note needs to be created and published for version 6.3.0.GA of the SDK.
+- There is no ambiguity regarding what ""release note"" means or which SDK version it refers to.
+- However, there's no additional context provided such as when this should happen relative to other tasks, who will review the release notes before publishing, or any specific content guidelines for writing the release notes.
+- Despite the lack of some procedural details, the core task is clear and unambiguous.
+
+Final Answer: No",7c002a73204907b5,qwen2.5:14b,0,2026-06-17T16:08:57.152991,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38201,Fix/Replace links to /cloud in the wiki docs,0,1,"- The title ""Fix/Replace links to /cloud in the wiki docs"" is somewhat vague but provides a general idea of what needs fixing.
+- The description specifies exact URLs that need to be updated and where they should point. This gives clear context about which documents are affected and what changes are required.
+- However, it does not specify all instances or provide a comprehensive list of links that need updating, leaving room for interpretation on the extent of the task.
+- While the issue description is more detailed than the title, there's still ambiguity regarding whether only these two URLs should be updated or if other similar links in the same document or elsewhere also need to be addressed.
+- The scope of which documents and links are affected by this change could be broader than what is explicitly stated.
+
+Final Answer: Yes",4c6ae31d3e76dee4,qwen2.5:14b,0,2026-06-17T16:09:00.806537,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39132,Update docs template to better match new Dashboard look and feel,0,1,"- **Title and Description Analysis**: The title ""Update docs template to better match new Dashboard look and feel"" is somewhat vague but provides a general direction. However, the description gives more context about what changes are expected.
+- **Context Clarity**: The description mentions that there will be a UI update for the Dashboard global header and suggests that the documentation site should include main UI elements from this redesign. This indicates an understanding of the scope but lacks specific details on which elements to match or how exactly they should look.
+- **Specificity of Requirements**: While it is clear that changes are needed, there is no detailed specification about what constitutes ""main UI elements"" or how these elements should be integrated into the documentation template. The description does not provide concrete examples or design guidelines.
+- **Interpretation Ambiguities**: Without specific details on which UI elements to include and how they should be implemented in the documentation site, there is room for multiple interpretations of what constitutes a ""better match.""
+- **Final Answer: Yes**",0b6dcec2493e57bb,qwen2.5:14b,0,2026-06-17T16:09:05.237672,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39524,Create a new method likes/query.json,0,1,"- The title ""Create a new method likes/query.json"" is somewhat vague as it does not specify the exact functionality or requirements of the method.
+- The description provides detailed information about the parameters and expected behavior of the GET request to query likes. However, it lacks clarity on how these parameters should be used together and under what conditions they are valid.
+- There is no clear context provided regarding why this feature is needed or in which part of the application it will be implemented.
+- The description mentions ""custom fields"" but does not specify what these custom fields might include or how they differ from the predefined fields listed.
+- While the parameters and their usage are described, there is ambiguity around the exact implementation details and edge cases that need to be handled.
+
+Final Answer: Yes",a74d333af353b3f0,qwen2.5:14b,0,2026-06-17T16:09:09.083822,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39749,Localization of app name for Android is out-of-date,0,1,"- The title mentions that the localization of the app name on Android is out-of-date but does not specify what needs to be updated or how.
+- The description provides context about a blog post and testing results but lacks clear instructions for updating the documentation or fixing the issue.
+- There's no specific scope defined; it’s unclear whether the task involves updating the wiki page, modifying code, or both.
+- The language used is somewhat vague (""perhaps wrong altogether"") which leaves room for multiple interpretations of what needs to be done.
+- No concrete steps are provided on how to proceed with fixing the issue.
+
+Final Answer: Yes",5fb6668764ee8608,qwen2.5:14b,0,2026-06-17T16:09:12.303469,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39943,BlackBerry : Path for getting the logs from simulator is incorrect,0,0,"- **Step 1:** Evaluate the clarity of the issue title.
+  - The title ""BlackBerry : Path for getting the logs from simulator is incorrect"" specifies a clear problem related to an incorrect path in BlackBerry's simulator log retrieval process.
+
+- **Step 2:** Analyze the description for specific details and context.
+  - The description provides detailed steps on how to reproduce the issue, including links to documentation and exact paths. It clearly states what the actual result is (incorrect path) and what the expected result should be ('/accounts/1000/appdata/<app_id>/log').
+
+- **Step 3:** Check for any vague language or lack of context.
+  - The description does not use vague terms; it provides a precise sequence of actions to reproduce the issue, along with clear references and expected outcomes.
+
+- **Step 4:** Determine if there are multiple possible interpretations.
+  - There is only one interpretation based on the provided steps and results. It clearly outlines what needs to be fixed without any room for ambiguity.
+
+- **Step 5:** Conclude whether the issue meets criteria for being ambiguous.
+  - The issue description provides a clear, detailed explanation of the problem with specific references and expected outcomes, leaving no room for multiple interpretations",ba0243640649133e,qwen2.5:14b,0,2026-06-17T16:09:17.653111,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40067,DocTools: validate script is broken due to docgen changes,0,0,"- The issue title mentions that the validate script is broken due to docgen changes but does not specify what exactly is wrong or how it affects functionality.
+- The description provides a specific context: a pull request (PR) has introduced an argument in the `process_yaml` method, which causes the validate.py script to fail with an error message indicating incorrect arguments.
+- It also mentions another failure when attempting to fix the initial issue by changing the call to include the required argument. This indicates that there are multiple steps and conditions involved in reproducing the problem.
+- The description includes detailed technical information such as file paths, method names, and specific error messages, which helps clarify the scope of the issue.
+- Despite some vagueness in the title, the body of the description provides clear context about what has changed, how it affects existing code, and the exact nature of the errors encountered.
+
+Final Answer: No",dfbc329d4723e847,qwen2.5:14b,0,2026-06-17T16:09:21.855281,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39723,Support new Node.ACS command : download,0,1,"- The title mentions a new command ""download"" for Node.ACS but does not provide much context or detail.
+- The description specifies that the command should download an app source file with specified parameters such as app name and version. However, it lacks clarity on what happens if these parameters are not provided.
+- While the description outlines some default behaviors (downloading the currently active app version when no version is specified), it does not clearly define all possible scenarios or edge cases.
+- The language used in describing how to handle unspecified parameters (""can run in app dir"") is somewhat vague and could be interpreted differently by different readers.
+- Overall, while there are some specifics provided about what the command should do, there's still room for ambiguity regarding its full scope and behavior under all conditions.
+
+Final Answer: Yes",a59d728db12c0d01,qwen2.5:14b,0,2026-06-17T16:09:25.596732,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38628,Specify supported Arrow Model Field data types,0,1,"- The issue title ""Specify supported Arrow Model Field data types"" is clear and specific about what needs to be addressed.
+- However, the description lacks clarity on exactly which fields need specification or how they should be implemented. It references online documentation but does not provide a concrete list of required changes or actions.
+- The description mentions that support for additional types like ""array"" and ""date"" is needed beyond primitive JavaScript types, but it doesn't specify what these additions entail or how they differ from existing implementations.
+- There's no clear context provided about the current state versus desired state of supported data types, making it difficult to understand the full scope of work required.
+- The description could be interpreted in multiple ways regarding which fields need specification and how they should align with both JavaScript primitive types and additional types like arrays or dates.
+
+Final Answer: Yes",eda92d85f2bfc8dd,qwen2.5:14b,0,2026-06-17T16:09:29.413425,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38181,Review and revise the APS documentation,0,1,"- The issue title ""Review and revise the APS documentation"" is clear in its intent but lacks detail.
+- The description provides specific URLs for the documents to be reviewed and revised, which gives context.
+- However, it does not specify what constitutes a necessary revision or improvement criteria, leaving room for interpretation on how to review and test the samples.
+- There's an additional note about dropping content mentioning ""Soasta"" or ""Test,"" but this is somewhat vague without further explanation of why these should be removed.
+- The scope of revisions is broad (reviewing multiple documents) but lacks specific guidelines or criteria, making it open to different interpretations.
+
+Final Answer: Yes",8fc3687650189991,qwen2.5:14b,0,2026-06-17T16:09:32.587928,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39239,"Android: TableView: SearchBar not working if """"filterAttribute"""" is an arbitrary property",0,1,"- **Vague Language**: The description mentions ""arbitrary property"" which is not clearly defined. It's unclear what constitutes an ""arbitrary property.""
+- **Clear Context**: While there is some context provided about the issue occurring when setting `filterAttribute` after a `TableViewRow` creation, it lacks clarity on why this affects Android specifically and how it differs from iOS.
+- **Scope Unclear**: The scope of the problem isn't well-defined. It's not clear if the issue applies to all properties or only certain types of properties.
+- **Multiple Interpretations**: There are multiple ways to interpret what ""arbitrary property"" means, leading to potential confusion about which specific scenarios this issue covers.
+- **Final Answer: Yes**",45d3805a67663f41,qwen2.5:14b,0,2026-06-17T16:09:36.192824,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38938,Docs: Ti.UI.View.add supports an array of views as well as single Ti.Ui.View,0,1,"- The title of the issue specifies that Ti.UI.View.add supports an array of views as well as a single view.
+- The description provides specific links to code in different platforms (iOS, Android) indicating where the functionality is implemented or not yet implemented.
+- However, the description mentions ""TIMOB-19394 and TIMOB-19482 will fix this parity issue,"" but does not provide details about these issues or how they relate to the current documentation update needed.
+- The requirement for updating the documentation is clear in context of fixing a parity issue across platforms, but it lacks specific instructions on what changes need to be made to the documentation.
+- While the description provides some clarity regarding the functionality and its implementation status across different platforms, it does not provide explicit details about how the documentation should be updated.
+
+Final Answer: Yes",91710fa9bea61b0d,qwen2.5:14b,0,2026-06-17T16:09:40.226327,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40941,APIDoc: remove period from platform list,0,0,"- The title specifies a clear action to take (""remove period from platform list"").
+- The description provides a specific file location and context for where the change should be made.
+- However, the description is somewhat vague about what exactly constitutes ""a superfluous period"" without further clarification or examples beyond one instance.
+- There's no ambiguity in understanding that a period needs to be removed but there could be some uncertainty on how many periods are affected or if all instances of periods need removal.
+- The example provided helps clarify the issue, but it doesn't fully eliminate potential confusion about scope.
+
+Final Answer: No",f436d4bfd5043318,qwen2.5:14b,0,2026-06-17T16:09:43.227383,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40635,APIDoc: Update docs for medium-priority iPad modules,0,1,"- The title specifies ""medium-priority iPad modules,"" but it does not define what constitutes a medium priority or list all the relevant modules.
+- The description mentions updating documentation for specific modules: Ti.UI.iPad and Ti.UI.iPad.Popover. However, it is unclear if these are the only modules to be updated or if there are other medium-priority iPad modules that should also be included.
+- There is no clear scope defined regarding which parts of the documentation need updating (e.g., API references, usage examples, tutorials).
+- The description does not provide any context about why these specific modules were chosen for this update or what criteria determine their priority level.
+- Given the lack of specificity and clarity in both the title and description, there is room for multiple interpretations regarding which modules should be updated and how extensive the updates need to be.
+
+Final Answer: Yes",e5310bad2cf2a6a9,qwen2.5:14b,0,2026-06-17T16:09:47.068433,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39299,Updates guides to show how to localise NSLocationAlwaysUsageDescription,0,1,"- The title mentions ""localise NSLocationAlwaysUsageDescription,"" but it is not clear what specific changes or updates are required.
+- The description references internationalization guides and Ti.Geolocation API reference, but the content seems to be a mix of unrelated text and broken links.
+- There is no clear scope defined for which parts of the documentation need updating or how exactly these should be localized.
+- The description does not provide specific instructions on what needs to be done or any context about why this update is necessary.
+- Given the lack of clarity in both title and description, it can be interpreted in multiple ways regarding the actual changes required.
+
+Final Answer: Yes",e111471592c67ea6,qwen2.5:14b,0,2026-06-17T16:09:50.234828,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40438,Poor grammar in Ti.UI.TabGroup,0,1,"- The title ""Poor grammar in Ti.UI.TabGroup"" is somewhat vague but does point towards an issue with the documentation or code related to Ti.UI.TabGroup.
+- In the description, there are multiple grammatical errors and unclear sentences such as ""the may be opened and closed,"" which makes it difficult to understand what exactly needs fixing.
+- The description also includes a question about whether something should be rephrased (""Should this be 'they may be opened'?""), indicating uncertainty or ambiguity in the wording.
+- Additionally, there is an unclear reference to Vishal's comment about ""the Tab Group has a built-in Nav group"" and whether it needs documentation. This part of the description lacks clarity on what action should be taken regarding the Nav group.
+- Overall, the issue description uses vague language, contains grammatical errors, and includes multiple questions without clear instructions or context.
+
+Final Answer: Yes",f9fb7441bb08ee72,qwen2.5:14b,0,2026-06-17T16:09:54.294467,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38738,There is an error in Positioning and dimensions of elements section of the documentation,0,0,"- The issue title specifies the exact section of the documentation where an error is found.
+- The description clearly states what the current incorrect information is and provides the correct information that should replace it.
+- There is no ambiguity in the context or scope; the problem is confined to a specific part of the documentation with clear instructions on how to fix it.
+- The language used is precise, specifying exact coordinates and dimensions without any vagueness.
+- All necessary details are provided for someone to understand and correct the issue.
+
+Final Answer: No",270547aebd5044cb,qwen2.5:14b,0,2026-06-17T16:09:57.133727,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39253,we will no longer show the listed information,0,1,"- The title ""we will no longer show the listed information"" is vague and does not specify which fields or under what conditions they should be hidden.
+- The description provides specific details about removing empty fields from certain objects but lacks clarity in some areas. For example, it mentions ""if custom_fields are empty do not show them"", which is clear enough for that context.
+- However, the phrase ""if external_ccounts has no conten in user object"" contains a typo (""conten"" instead of ""content"") and could be misinterpreted without clarification.
+- The description does specify exact fields to remove when they are empty (e.g., ""stats"", ""storage"", ""custom_fields"", ""external_accounts""), which provides some clarity but still leaves room for interpretation regarding the scope and conditions under which these changes should occur.
+- Overall, while there is some clear context provided in the description, the title's vagueness and a minor ambiguity due to the typo contribute to an overall sense of uncertainty.
+
+Final Answer: Yes",023bb6df9634bf20,qwen2.5:14b,0,2026-06-17T16:10:01.552264,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39534,Alloy: missing Style in the Style priorities description,0,0,"- The issue title mentions ""missing Style in the Style priorities description,"" which indicates a specific problem.
+- The description provides a clear reference to the section where the missing style should be added: https://wiki.appcelerator.org/display/guides2/Alloy+Styles+and+Themes#AlloyStylesandThemes-StylePriorities.
+- It specifies exactly what needs to be added and gives an example of how it should look, including file paths and syntax details.
+- The description is specific about the context (View-Controller Style File with Platform-Specific Styles) and provides a clear example for implementation.
+- There is no ambiguity in understanding what needs to be done or where.
+
+Final Answer: No",ecf1ec0e1cd22fa2,qwen2.5:14b,0,2026-06-17T16:10:05.060398,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39218,Move Cloud and CloudPush to Modules namespace,0,1,"- The title specifies moving API documentation for ""Cloud"" and ""CloudPush"" from one namespace to another.
+- The description provides clear instructions on what needs to be done: move the API docs, add forward links, and update existing links in cloud_docs.
+- However, it does not specify which exact files or directories are involved, nor does it provide a detailed scope of how extensive these changes should be (e.g., all occurrences or specific instances).
+- The description lacks any mention of testing requirements or validation steps to ensure the move is successful and that no functionality is broken.
+- While the instructions are clear in their intent, the lack of specificity regarding file paths, directories, and testing makes it somewhat ambiguous.
+
+Final Answer: Yes",b2c669443239165c,qwen2.5:14b,0,2026-06-17T16:10:08.507429,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39395,Provides detailed steps to import/run ti.cloud example,0,1,"- The title of the issue is clear and specific about what it aims to achieve: providing detailed steps for importing and running an example.
+- However, the description lacks clarity in several aspects. It mentions that there should be a finished project to import but then states it's not easy to share ACS-enabled projects due to key generation requirements.
+- The description does not provide clear instructions on how to proceed with dragging/dropping files into a new services-enabled project or what exact steps are needed for this process.
+- There is no specific context provided about the current state of documentation or what exactly needs improvement in terms of clarity and usability.
+- Given these points, the issue description is ambiguous as it does not provide clear, actionable instructions on how to import/run the sample application.
+
+Final Answer: Yes",ebdf92631c865e5f,qwen2.5:14b,0,2026-06-17T16:10:12.101605,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39480,Guides: Document offline installation of Appcelerator Platform,0,1,"- The title and description are clear about the goal: documenting an offline installation process for specific components.
+- However, the phrase ""I'm not sure if all of this is even possible to be run offline"" introduces uncertainty regarding feasibility.
+- The description does not specify which parts of the installation might or might not work offline, leaving room for multiple interpretations.
+- There's no clear scope defined for what needs to be documented and under what conditions (e.g., specific versions, operating systems).
+- Given these points, there is ambiguity in whether all components can indeed be installed offline and how this should be documented.
+
+Final Answer: Yes",a0334c74e2491607,qwen2.5:14b,0,2026-06-17T16:10:15.210273,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-39599,Node.ACS organization support,0,1,"- The title ""Node.ACS organization support"" is vague and does not specify the exact nature of the changes or requirements.
+- The description mentions adding support for organizations but lacks specific details about what exactly needs to be implemented or how it should function.
+- There are no clear acceptance criteria, performance metrics, or expected outcomes defined in either the title or the description.
+- The phrase ""Will add more details later"" indicates that the current information is incomplete and not ready for implementation without further clarification.
+- Referring to an external document (https://wiki.appcelerator.org/display/cls/Node.ACS+Organization+Support+Feature+Guide) does not provide enough context within the issue itself, making it unclear what specific actions are required based on this reference alone.
+
+Final Answer: Yes",927f6961c7db538f,qwen2.5:14b,0,2026-06-17T16:10:18.778844,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38337,Create Alloy Framework How-tos page,0,1,"- The title ""Create Alloy Framework How-tos page"" is clear but lacks detail about what exactly needs to be created.
+- The description states ""Create and re-organize the Alloy Framework content for the """"How-tos"""" page."" This implies multiple actions: creation and organization, but it does not specify which parts of the framework should be included or how they should be organized.
+- There is no clear scope defined. It's unclear what specific sections or functionalities of the Alloy Framework need to be covered in the ""How-tos"" page.
+- The description lacks context about the target audience and their expected level of knowledge, making it difficult to determine the appropriate content depth and complexity.
+- Given these points, the issue is ambiguous due to vague language regarding the scope and organization requirements.
+
+Final Answer: Yes",473c52c0cfcc41b0,qwen2.5:14b,0,2026-06-17T16:10:22.482047,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-38517,Create and publish release note for SDK 6.0.2.RC,0,1,"- The title specifies a clear action to be taken (""Create and publish release note for SDK 6.0.2.RC"").
+- However, the description is very brief: ""Create and publish the SDK 6.0.2.RC release note."" It lacks details such as what information should be included in the release notes or where it should be published.
+- There's no mention of who will review the release notes before publishing them or any specific guidelines for creating the content.
+- The scope is unclear since there are no specifics about the format, style, or required sections of the release note.
+- Given these points, while the task seems straightforward, the lack of detail and context makes it ambiguous in terms of how to proceed with creating and publishing the release notes.
+
+Final Answer: Yes",a33c8195ed3a31b4,qwen2.5:14b,0,2026-06-17T16:10:26.081964,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40653,APIDoc: Ti.UI.orientationModes property should mention Ti.Gesture.orientation,0,1,"- The title specifies that there is an issue with documentation regarding the `Ti.UI.orientationModes` property.
+- The description mentions that the old `Ti.UI.orientation` could be used for both getting and setting orientation values but does not clearly state what needs to be done with `orientationModes`.
+- It suggests including a reference to `Ti.Gesture.orientation`, but it is unclear whether this means adding documentation, modifying code, or something else.
+- The description lacks specific instructions on how the property should be updated or what changes are expected in the documentation.
+- There is no clear context provided about why this change is necessary or its impact.
+
+Final Answer: Yes",56bbacd5df99a900,qwen2.5:14b,0,2026-06-17T16:10:29.430313,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40413,Link takes you to the wiki creation page,0,1,"- The issue title is vague but provides a hint about what might be wrong.
+- The description includes specific steps to reproduce the problem and clearly states both expected and actual results.
+- However, the description does not specify which links are problematic beyond the one mentioned. It asks if there are other similar issues with links in the documentation, implying that this could be a broader issue affecting multiple links.
+- Without more context or details about the scope of affected links, it is unclear whether the problem is isolated to one link or widespread across the entire documentation set.
+- The question at the end introduces ambiguity by asking if there are other similar issues without providing criteria for identifying them.
+
+Final Answer: Yes",ce607ec441a94085,qwen2.5:14b,0,2026-06-17T16:10:32.607628,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40608,Guides: MW overview should reference MW limitations page,0,1,"- The title and description are somewhat clear about what needs to be done: adding a reference from one page to another.
+- However, there is no specific context provided on why this reference should exist or its importance.
+- The issue does not specify the exact location where the link should be added or how it should appear (e.g., text of the link).
+- There's an assumption that if the link already exists and isn't noticed by the reporter, then there is no action needed. This ambiguity leaves room for interpretation on whether the task has been completed.
+- The description lacks clear scope regarding what other pages or sections might need similar references.
+
+Final Answer: Yes",a355f043daa4f4d3,qwen2.5:14b,0,2026-06-17T16:10:35.720751,project_02,title_desc,ambiguity,few_shot_cot
+ISSUE-40894,APIDoc: Documentation missing for MaskedImage,0,1,"- The issue mentions that the documentation for `Titanium.UI.createMaskedImage()` is missing but does not specify what exactly should be documented or how it should look.
+- It states that the KitchenSink example is not helpful and asks to make something ""more clear"" without specifying what needs clarification.
+- There are no specific requirements or examples provided on how to implement a masked image in a circle, leaving room for interpretation of what constitutes an adequate solution.
+- The issue includes links to other questions but does not provide context about why these links are relevant or what they should contribute to the current issue.
+- Overall, the description lacks clear scope and specific requirements, making it open to multiple interpretations.
+
+Final Answer: Yes",9db5e26a10c1e06c,qwen2.5:14b,0,2026-06-17T16:10:39.049736,project_02,title_desc,ambiguity,few_shot_cot

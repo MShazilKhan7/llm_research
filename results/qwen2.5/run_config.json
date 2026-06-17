@@ -1,0 +1,39 @@
+{
+  "timestamp_utc": "2026-06-17T19:08:25.332837",
+  "dataset_paths": [
+    "/workspace/llm_research/dataset/project_01.csv",
+    "/workspace/llm_research/dataset/project_02.csv",
+    "/workspace/llm_research/dataset/project_03.csv",
+    "/workspace/llm_research/dataset/project_04.csv",
+    "/workspace/llm_research/dataset/project_05.csv"
+  ],
+  "models": [
+    "qwen2.5"
+  ],
+  "tasks": [
+    "ambiguity",
+    "incompleteness"
+  ],
+  "strategies": [
+    "zero_shot",
+    "few_shot",
+    "cot",
+    "few_shot_cot"
+  ],
+  "input_modes": [
+    "title_only",
+    "title_desc"
+  ],
+  "projects": [
+    "project_01",
+    "project_02",
+    "project_03",
+    "project_04",
+    "project_05"
+  ],
+  "model_versions": {
+    "qwen2.5": "qwen2.5:14b"
+  },
+  "mock_mode": false,
+  "resume": true
+}

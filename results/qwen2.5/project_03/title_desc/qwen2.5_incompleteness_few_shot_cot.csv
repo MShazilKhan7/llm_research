@@ -1,0 +1,1123 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-207056,Build badges in several github repos have stopped working,0,1,"Reasoning:
+- Missing: Steps to reproduce the issue.
+- Missing: Expected vs actual behavior details.
+- Missing: Acceptance criteria.
+- Environment details are somewhat provided but not fully clear (migration to ci.evernym.com).
+- Affected components are mentioned (readme.md files in several repos), but no specific list or examples of affected repositories.
+
+Final Answer: Yes",7f06373e78886cfd,qwen2.5:14b,0,2026-06-17T17:21:42.525716,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206571,Indy-sdk integration,0,1,"Reasoning:
+- The title ""Indy-sdk integration"" is vague without specific details.
+- Description mentions the need to support two versions of 'client' code but does not specify why or how this affects the current system.
+- It states a requirement to use indy-sdk only and integrate it into the CLI, but lacks specifics on what exactly needs to be done for this integration.
+- Missing: clear acceptance criteria, steps to reproduce (if applicable), expected vs actual behavior, affected components, environment details.
+
+Final Answer: Yes",a909bc2d8106f103,qwen2.5:14b,0,2026-06-17T17:21:45.134956,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205754,Assist EV QA,0,1,"Reasoning: The issue description provides an overview of a task involving quality assurance for the Evernym Indy Node team but lacks several critical details:
+1. **Steps to Reproduce**: There are no specific steps provided on how to perform the QA tasks.
+2. **Expected vs Actual Behaviour**: No information is given about what constitutes successful completion or any expected outcomes versus actual results.
+3. **Acceptance Criteria**: While there is a section labeled ""Acceptance Criteria,"" it does not clearly define what needs to be achieved for the task to be considered complete.
+4. **Affected Components**: The description doesn't specify which components of the software are being tested.
+5. **Environment Details**: No details about the testing environment or setup requirements are provided.
+
+Final Answer: Yes",ce1bf0c29fab4a20,qwen2.5:14b,0,2026-06-17T17:21:48.590966,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206786,I should be able to load a .sovrin file from a URL directly into the CLI,0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions ""loading a .sovrin file from a URL directly into the CLI,"" which is clear about the feature request.
+2. **Expected Behavior**: The description implies that users should be able to load files directly from a URL without downloading them first, but it does not explicitly state what the expected behavior is in terms of how this process should work or what success looks like.
+3. **Steps to Reproduce**: There are no specific steps provided for reproducing the issue or demonstrating the desired feature.
+4. **Acceptance Criteria**: The description lacks any acceptance criteria that would define when the requirement has been met (e.g., ""User can input a URL and have the file loaded into the CLI without errors"").
+5. **Affected Components**: While it's clear that this involves the CLI, there is no mention of other components or systems involved.
+6. **Environment Details**: No environment details are provided to understand where this feature should work (e.g., specific versions of software, operating system requirements).
+
+Given these points, the issue description lacks essential information such as acceptance criteria and steps to reproduce.
+
+Final Answer: Yes",10d4c6c2b4f276f2,qwen2.5:14b,0,2026-06-17T17:21:53.705838,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206184,Configurations should contain certain version of pip,0,1,"Reasoning:
+- The issue title mentions that configurations should contain a certain version of pip.
+- The description provides logs indicating an error when trying to start the node service after the release of pip 10. However, it does not specify which version of pip is required or what the expected behavior should be.
+- There are no clear steps provided on how to reproduce this issue.
+- No acceptance criteria or environment details (such as OS, Python version) are mentioned.
+
+Given these points, the description lacks essential information such as:
+1. The specific version of pip that needs to be installed/configured.
+2. Steps to reproduce the issue.
+3. Expected behavior after applying the correct configuration.
+4. Environment details and acceptance criteria.
+
+Final Answer: Yes",347d7c2ea0c3b29b,qwen2.5:14b,0,2026-06-17T17:21:57.705519,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205916,read_ledger tool is not able to read the sovrin plugin ledger,0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**:
+   - The title mentions that the read_ledger tool cannot read the sovrin plugin ledger.
+   - The description provides a solution to add specific configurations in `read_ledger` and `indy_config.py`.
+
+2. **Missing Information Check**:
+   - Steps to reproduce: Not provided.
+   - Expected vs Actual Behaviour: Missing. It's unclear what the expected behaviour should be compared to the actual issue described.
+   - Acceptance Criteria: Not specified.
+   - Affected Components: Only partially mentioned (read_ledger tool and indy_config.py).
+   - Environment Details: No environment details are provided.
+
+3. **Additional Required Information**:
+   - Steps to reproduce the issue would help in verifying the problem.
+   - Expected behaviour should be clearly defined for comparison with actual results.
+   - Acceptance criteria need to be specified to ensure that the solution meets requirements.
+   - Affected components and their interactions should be detailed.
+
+Given these points, the issue lacks critical information necessary for a thorough understanding and resolution of the problem.
+
+Final Answer: Yes",b38036ca1cbfad18,qwen2.5:14b,0,2026-06-17T17:22:02.806220,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206000,AttributeError: 'NoneType' object has no attribute 'request' during load,0,1,"Reasoning:
+- **Steps to Reproduce:** Provided. The steps include preparing a new pool with 25 nodes and running a load test from 5 instances.
+- **Actual Results:** Provided. The actual results indicate that the pool stopped writing after only 11k transactions (and less than 90 minutes) and could not finish catchup.
+- **Expected Behavior:** Not explicitly stated, but implied by the issue title and description: the system should handle the load without crashing or stopping operations prematurely.
+- **Acceptance Criteria:** Missing. There are no clear acceptance criteria defined for what constitutes a successful resolution of this issue.
+- **Affected Components:** Implied to be related to pool/node management and transaction handling, but not explicitly stated.
+- **Environment Details:** The description mentions logs will be available on LogProcessor:~/logs/attribute_error_11jul2018, which provides some context about the environment.
+
+Given that acceptance criteria are missing, it is difficult to fully understand what needs to be achieved for this issue to be resolved. Therefore, the information provided is incomplete.
+
+Final Answer: Yes",6c03a4d24f4fd10e,qwen2.5:14b,0,2026-06-17T17:22:07.757739,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207179,Make sure Nodes upgrade eagerly,0,1,"Reasoning: The issue description mentions that nodes should upgrade eagerly when processing an upgrade transaction and provides some conditions under which this should happen. However, several critical pieces of information are missing:
+1. **Steps to Reproduce**: There are no clear steps provided on how to reproduce the scenario where a node needs to upgrade eagerly.
+2. **Expected vs Actual Behavior**: The description does not clearly state what the current behavior is and what it should be.
+3. **Acceptance Criteria**: No acceptance criteria or success conditions are defined for this issue.
+4. **Affected Components**: While nodes are mentioned, there's no detailed information about which specific components of the system are involved in this upgrade process.
+5. **Environment Details**: There’s no mention of the environment setup required to test this feature.
+
+Given these missing details, it is difficult to fully understand and address the issue effectively.
+
+Final Answer: Yes",4a9314e93b2047e0,qwen2.5:14b,0,2026-06-17T17:22:11.854941,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207175,Testing: do a lot of concurrent writes and reads to same values,0,1,"Reasoning:
+1. The title mentions ""Testing"" and describes a scenario involving concurrent writes and reads.
+2. The description provides some details about the test scenario but lacks specific steps to reproduce the issue or detailed acceptance criteria.
+3. It mentions writing test scripts, which implies that there should be clear instructions on how to perform these tests.
+4. There is no mention of expected vs actual behavior, affected components, environment details, or any other critical information necessary for a complete issue report.
+
+Given the lack of essential information such as detailed steps and acceptance criteria, this issue can be considered INCOMPLETE.
+
+Final Answer: Yes",7e97574a28279095,qwen2.5:14b,0,2026-06-17T17:22:14.828402,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205301,Responses to client validator info requests very slow on a StagingNet node,0,0,"Reasoning:
+- The issue title and description mention the slow response time for validator-info commands on a specific node.
+- It provides details about the environment (Sovrin StagingNet, sovrin.sicpa.com).
+- Steps to reproduce are somewhat implied: running validator-info requests from indy-cli or other scripts.
+- Expected behavior is provided: normal response times should be less than 2 seconds.
+- Actual behavior is described: responses take around 34 seconds on the specific node.
+- Environment details (top command output, free -m, lsof) are included to provide context about system load and resource usage.
+- The description also asks for further investigation into whether this slow response extends to other client requests.
+
+The issue provides a clear problem statement, expected vs. actual behavior, reproduction steps, environment details, and scope of concern (whether it affects only validator-info or all client queries). Therefore, the information provided is sufficient to understand and potentially address the issue.
+
+Final Answer: No",a488755755308114,qwen2.5:14b,0,2026-06-17T17:22:20.022732,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206412,Create Entity Relationship Diagram of current ledger objects including primary and secondary keys used to link each object together.,0,1,"Reasoning: The issue description provides a clear task of creating an Entity Relationship Diagram (ERD) for specific objects within a ledger system. However, it lacks several critical pieces of information that would be necessary to fully understand and implement the requirement:
+
+1. **Scope**: While the title mentions ""current ledger objects,"" there is no explicit definition or boundary set for what constitutes these objects.
+2. **Acceptance Criteria**: There are no specific criteria provided to determine when this task can be considered complete.
+3. **Technical Details**: The description does not specify which tools should be used to create the ERD, nor does it provide any technical specifications (e.g., format of the diagram).
+4. **Environment and Dependencies**: No information is given about the environment in which the ledger operates or any dependencies that might affect the creation of the ERD.
+5. **Expected Outcome**: While there is a mention of demonstrating proper object retrieval calls, this is not clearly articulated as an acceptance criterion.
+
+Given these missing elements, it's challenging to fully understand and implement the requirement without additional details.
+
+Final Answer: Yes",00d6e278d463226b,qwen2.5:14b,0,2026-06-17T17:22:25.016434,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206580,Explore: Can doing a ping in the Getting Started Tutorial delete the active wallet,0,1,"Step-by-Step Reasoning:
+1. **Title**: The title mentions an unexpected behavior (""ping"" command deleting the active wallet) but does not clearly state it as a requirement or expected feature.
+2. **Description**:
+   - **Steps to Reproduce**: The description provides some context about running through the Getting Started Tutorial and using the `ping` command, but it lacks clear step-by-step instructions on how to reproduce the issue.
+   - **Expected vs Actual Behavior**: It mentions that the active wallet was deleted when a ping command was run, which is unexpected. However, there's no explicit statement of expected behavior (what should happen instead).
+   - **Acceptance Criteria**: There are no acceptance criteria provided for verifying or fixing this issue.
+   - **Affected Components**: The description implies that the wallet management system and possibly the tutorial documentation might be affected, but it does not specify these components clearly.
+   - **Environment Details**: No specific environment details (e.g., OS version, software versions) are mentioned.
+
+Given the lack of clear reproduction steps, expected behavior, acceptance criteria, and detailed environmental information, this issue is missing essential information to proceed effectively with verification or fixing.
+
+Final Answer: Yes",93143fc042620e17,qwen2.5:14b,0,2026-06-17T17:22:30.219501,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206497,Unclear messages appear during reading transactions,0,0,"Reasoning:
+- The issue title mentions ""Unclear messages appear during reading transactions,"" which indicates a problem with message clarity.
+- Steps to reproduce are provided in detail, including setting up nodes, installing clients, copying files, and running commands. This is sufficient for reproduction.
+- Actual results show the output of CLI commands when performing read transactions after stopping services on n-1 nodes one-by-one. The messages that appear during these steps are described as unclear or strange.
+- Expected results suggest that either no error messages should be shown or they should be informative to the user, implying a clear expectation for what constitutes an acceptable message output.
+- Environment details such as version information (indy-node=1.2.209) and setup instructions are provided.
+
+However, there is missing information regarding:
+- Expected vs actual behavior: While it's mentioned that messages should not be shown or should be informative, the specific expected behavior in terms of what constitutes an acceptable message output is somewhat vague.
+- Acceptance criteria: There is no clear definition of what would constitute a solution to this issue. What exactly needs to change for the issue to be resolved?
+- Affected components: While it's implied that the CLI and possibly the node services are affected, there isn't explicit mention or",86290d009f937f17,qwen2.5:14b,0,2026-06-17T17:22:36.903483,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205266,1.10.0 Release,0,1,"Reasoning:
+- The issue title ""1.10.0 Release"" is vague but acceptable for a release management context.
+- Description includes several items under *Release Goal* and *Acceptance Criteria*, which are generally clear about the objectives of the release process.
+- It specifies regular instructions such as code testing, review upstream releases, automated CI/CD build production, tagging in Git, documentation preparation, and release notes creation.
+- The description also outlines steps for enabling others to use the release, including communication with stakeholders.
+
+However:
+- Missing specific details about what exactly is ""ready"" to be released.
+- No explicit mention of affected components or environment details.
+- While there are acceptance criteria, they are quite high-level and lack concrete examples or detailed requirements that would typically be needed for a software issue.
+
+Given the context of release management, while it's clear this is a high-level overview of what needs to happen during a release process, it lacks specific technical details necessary for implementation or testing purposes. 
+
+Final Answer: Yes",869364c33e6f919e,qwen2.5:14b,0,2026-06-17T17:22:42.000492,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206591,Incubation: Remove all non-Indy branding from indy-anoncreds repo,0,1,"Reasoning:
+1. The title mentions the goal of removing non-Indy branding from the indy-anoncreds repository.
+2. The description provides a list of items to be addressed: package names, code primitive names, paths, and documentation.
+3. It specifies that full-text search for ""Sovrin"" and ""Evernym"" should return nothing after the changes are made.
+
+However:
+- There is no mention of acceptance criteria or specific steps on how to achieve this goal.
+- No environment details or affected components are provided.
+- The description lacks a clear scope, timeline, or priority level.
+
+Final Answer: Yes",e360d7f5a0b03e00,qwen2.5:14b,0,2026-06-17T17:22:45.124255,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207055,Make the tests working using pure pytest,0,1,"Step-by-Step Reasoning:
+1. The title ""Make the tests working using pure pytest"" is somewhat vague but understandable.
+2. The description provides context about a runner.py script used for testing across multiple repositories and discusses two options with their disadvantages.
+3. However, it lacks clear acceptance criteria or specific steps to reproduce the issue related to making tests work without the runner.py script.
+4. There's no mention of expected vs actual behavior regarding pytest commands.
+5. The description does not specify affected components or environment details necessary for reproducing and solving the problem.
+
+Final Answer: Yes",9159ccfdf4a658d0,qwen2.5:14b,0,2026-06-17T17:22:47.994251,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206198,The node blacklisted the remaining nodes during network problems,0,1,"Step-by-Step Reasoning:
+
+1. **Title and Description**: The title mentions ""node blacklisting"" during network problems but does not clearly describe the issue or expected behavior.
+2. **Steps to Reproduce**:
+   - Provided: Yes, detailed steps are given including creating a pool with 15 nodes, applying suppressor.sh script on specific nodes, and starting a load test.
+3. **Expected vs Actual Behavior**:
+   - Expected: Not explicitly stated but implied that all nodes should have the same number of transactions after reconnection.
+   - Actual: Node1, node2, node3 have fewer transactions (592) compared to other nodes (5072).
+4. **Acceptance Criteria**: Missing explicit acceptance criteria for what constitutes a successful resolution or expected outcome.
+5. **Affected Components**:
+   - Nodes involved in the issue are specified (node1, node2, node3), but no specific components within these nodes are mentioned.
+6. **Environment Details**:
+   - The environment setup is somewhat described with pool creation and script application details, but lacks specifics like software versions or network configurations.
+
+Given that while steps to reproduce are provided, the issue description lacks clear expected behavior, acceptance criteria, and detailed environment information",07955fdab6e08dd6,qwen2.5:14b,0,2026-06-17T17:22:53.371692,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205670,Tests using the sdk fail on the master branch,0,0,"Step-by-Step Reasoning:
+
+1. **Title**: The title ""Tests using the sdk fail on the master branch"" is clear but lacks detail about what specific tests are failing and why.
+2. **Description**:
+   - **Steps to Reproduce**: Provided (""Easiest way to reproduce is to run plenum/test/sdk/test_sdk_bindings.py"").
+   - **Expected vs Actual Behaviour**: Mentioned that tests fail on the master branch with a new transaction format, while they work on older branches.
+   - **Environment Details**: Provides information about the genesis file formats and mentions specific libraries (libindy.so, libindy-crypto.so) and their versions from the master branch. Also mentions installed dependencies (libsodium18 and libsodium18-dev).
+   - **Affected Components**: Specifies that the issue is related to indy-sdk's inability to parse new transaction format.
+   - **Acceptance Criteria**: Not explicitly stated, but implied by mentioning that tests should pass with older branches.
+
+Despite providing a lot of information, there are still some missing elements:
+- The description does not clearly state what the expected behavior should be when running the test on the master branch.
+- There is no clear acceptance criteria defined for resolving this issue.
+- While environment details are",2a6fbf18cee9393d,qwen2.5:14b,0,2026-06-17T17:22:59.130023,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205185,Write a script to upgrade audit ledger for the new state recovered from ledger,0,1,"Reasoning:
+- The title and description do not specify clear steps to reproduce the issue.
+- There is no mention of expected vs actual behavior.
+- No acceptance criteria are provided for what constitutes a successful upgrade or migration.
+- Affected components or environment details are not specified.
+
+Final Answer: Yes",4eb9cfb388283b54,qwen2.5:14b,0,2026-06-17T17:23:01.067121,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205803,Find out maximal pool performance numbers for mixed mode (read and write),0,1,"Reasoning:
+- The title mentions ""Find out maximal pool performance numbers for mixed mode (read and write)"" but does not specify what constitutes a 'maximal' performance or how to measure it.
+- The description talks about running tests with metrics enabled, increasing load gradually, and considering mixture modes as in INDY-1343. However:
+  - It lacks clear acceptance criteria on what defines successful performance.
+  - There are no specific steps to reproduce the scenario.
+  - No expected vs actual behavior is provided.
+  - The environment details or affected components are not specified.
+  - The description does not provide a concrete way to measure success or failure.
+
+Final Answer: Yes",9dbf57da7128ba42,qwen2.5:14b,0,2026-06-17T17:23:04.304624,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206213,Read-ledger without storage copy in case of RocksDB (RocksDB read-only mode support),0,0,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions ""RocksDB read-only mode support"" and the description elaborates on how RocksDB supports read-only mode differently from LevelDB.
+2. **Expected vs Actual Behaviour**:
+   - Expected: Support for opening storage in read-only mode by `read_ledger` script when using RocksDB.
+   - Actual: Currently, the code does not support this feature.
+3. **Steps to Reproduce**: The description implies that there are no specific steps provided to reproduce the issue since it's more about a missing feature rather than an error or bug.
+4. **Acceptance Criteria**:
+   - Missing clear acceptance criteria for what needs to be implemented (e.g., how to modify `read_ledger` script, expected behavior when using RocksDB in read-only mode).
+5. **Affected Components**: The issue affects the storage handling logic and possibly the `read_ledger` script.
+6. **Environment Details**:
+   - Missing details about the environment where this feature is needed (e.g., specific versions of RocksDB, other dependencies).
+
+Given these points, while there are some details provided, the description lacks clear acceptance criteria, steps to reproduce, and detailed environment information.",86bdd33e944a9e0b,qwen2.5:14b,0,2026-06-17T17:23:09.585393,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205553,Node that does not upgrade spams the config ledger,0,0,"Step-by-Step Reasoning:
+
+1. **Title and Description**: The title and description are clear about the issue: a specific node did not upgrade properly and spammed the config ledger with ""in-progress"" transactions.
+2. **Steps to Reproduce**: While there is an indication of when and how the issue occurred (upgrade transaction posted at 18:05 on Friday, Dec. 14), it's not clear if these steps are sufficient for others to reproduce the problem consistently.
+3. **Expected vs Actual Behaviour**:
+   - Expected: The node should have upgraded properly without spamming the ledger.
+   - Actual: The node did not upgrade and spammed the config ledger with ""in-progress"" transactions.
+4. **Acceptance Criteria**: There are no explicit acceptance criteria mentioned for resolving this issue.
+5. **Affected Components**: It is clear that the indy-node-control service might be involved, but it's not explicitly stated which components are affected beyond the node and possibly the control service.
+6. **Environment Details**:
+   - Sovrin TestNet environment is specified.
+   - The problematic node name (sovrin.sicpa.com) is provided.
+7. **Additional Information**: Logs from the problematic node and config ledger data",00f8d3fc72d8055a,qwen2.5:14b,0,2026-06-17T17:23:15.155725,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206193,[QA] Script for filling the ledger doesn't work,0,1,"Reasoning:
+- The issue provides steps to reproduce the problem.
+- It includes actual results and logs from running the script.
+- However, it lacks expected results beyond a brief statement that ""Generated transactions should be written.""
+- There is no clear acceptance criteria or details about what constitutes successful execution of the script.
+- Environment details are somewhat implied but not explicitly stated (e.g., specific versions of dependencies).
+
+Given these points, while there is some information provided, the lack of detailed expected results and acceptance criteria makes it difficult to fully understand the issue.
+
+Final Answer: Yes",e70d85ba7f59b173,qwen2.5:14b,0,2026-06-17T17:23:19.078867,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207334,Send NYM command is not executed on Shakedown Pool 1,0,0,"Step-by-Step Reasoning:
+1. **Build Info**: Provided (0.3.103).
+2. **Steps to Reproduce**:
+   - Connect test environment.
+   - Execute ""send NYM"" with some destination parameter.
+3. **Actual Results**: There is no error/success message, and the NYM is not added.
+4. **Expected Results**: An error or success message should be displayed, and the NYM should be added.
+
+The issue description includes:
+- Build information (version).
+- Steps to reproduce the problem.
+- Actual results observed.
+- Expected results.
+
+However, there are a few missing details that would enhance clarity and completeness:
+- Environment details beyond just ""test environment"" could help in reproducing the issue accurately.
+- Specific destination parameter values used for testing might be necessary if certain parameters cause different behaviors.
+- Affected components or modules within the system (e.g., specific API endpoints, database tables) are not mentioned.
+
+Despite these minor omissions, the core information needed to understand and potentially reproduce the issue is present. The missing details would improve the ticket but do not render it entirely incomplete.
+
+Final Answer: No",874a8df93ec6da81,qwen2.5:14b,0,2026-06-17T17:23:24.473411,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206998,roll back default where zmq high water mark = 0,0,0,"Step-by-step reasoning:
+
+1. **Title and Description Analysis**:
+   - The title ""roll back default where zmq high water mark = 0"" is somewhat vague but provides a hint about the issue.
+   - The description mentions that it's a follow-up to another ticket (INDY-366) which changed the default FIFO queue in ZMQ to be unlimited.
+
+2. **Missing Information**:
+   - Steps to reproduce: Not provided.
+   - Expected vs Actual Behaviour: Mentioned but not clearly defined.
+     - Expected: Finite high water mark, detection of nearing high water mark, graceful error reporting, discarding old messages rather than new ones, and exiting the daemon process gracefully if the limit is exceeded.
+     - Actual: Default setting with an unlimited queue which masks problems for a longer period.
+   - Acceptance Criteria: Not clearly defined or listed.
+   - Affected Components: ZMQ FIFO queue settings are mentioned but no specific components or modules are detailed.
+   - Environment Details: No environment details provided.
+
+3. **Completeness of Information**:
+   - The description provides some context and desired changes, but lacks clear steps to reproduce the issue, a precise definition of expected vs actual behavior, acceptance criteria, affected components, and environment",eff8e2eea673234b,qwen2.5:14b,0,2026-06-17T17:23:29.923465,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206222,Errors with configs during installation,0,0,"Reasoning:
+- The issue title is ""Errors with configs during installation"".
+- The description mentions the version of the package involved (""indy-node 1.3.412"").
+- Steps to reproduce are provided: install the indy-node package.
+- Actual result is described: errors appear at the end of installation, specifying which files cannot be found.
+- Expected results are stated clearly: no errors should appear during installation.
+
+The description provides a clear indication of what happens when installing the package and what the expected outcome should be. It also specifies the exact version of the software involved and mentions specific error messages encountered.
+
+Final Answer: No",7997d51568d5f925,qwen2.5:14b,0,2026-06-17T17:23:33.105120,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207211,Node crashes if out of disk space,0,1,"Reasoning: The issue description mentions that the node crashes when out of disk space and provides an error message (""no space left on device""). However, it lacks several critical details:
+1. Steps to reproduce the issue.
+2. Expected behavior versus actual observed behavior.
+3. Affected components or modules (e.g., specific parts of the codebase).
+4. Environment details such as operating system, disk size, and other relevant configurations.
+
+Final Answer: Yes",98d7f29c46fa41fe,qwen2.5:14b,0,2026-06-17T17:23:35.471675,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205565,Unable to choose volume type using pool automation scripts,0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions an issue with choosing volume types using pool automation scripts.
+2. **Actual vs Expected Behaviour**:
+   - Actual Results: Volumes created via automation scripts are of the standard magnetic type, whereas manually created instances have gp2 (SSD) volumes.
+   - Expected Results: Ability to configure volume type based on size or other criteria when using automation scripts.
+3. **Reproduction Steps**: The description does not provide specific steps to reproduce the issue.
+4. **Acceptance Criteria**: There are no clear acceptance criteria mentioned for resolving this issue.
+5. **Affected Components and Environment Details**:
+   - Affected Component: Pool Automation Scripts
+   - Missing Information: Specific environment details (e.g., cloud provider, script version) or configuration settings that might be relevant.
+
+Given the lack of detailed reproduction steps and acceptance criteria, along with missing specific environmental context, this issue is incomplete.
+
+Final Answer: Yes",21005f305c84a650,qwen2.5:14b,0,2026-06-17T17:23:39.741032,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205746,1.6.74 Release,0,1,"Reasoning: The issue description provides an overview of tasks to be performed for a software release but lacks several critical details:
+1. **Steps to Reproduce**: There are no specific steps provided on how to perform the tasks.
+2. **Expected vs Actual Behaviour**: It does not specify what should happen if any task fails or what the expected outcome is after completing all tasks.
+3. **Acceptance Criteria**: While some acceptance criteria are listed, they are vague and incomplete (e.g., ""Code is tested"" but no details on how it's tested).
+4. **Affected Components**: No specific components or modules that will be affected by this release are mentioned.
+5. **Environment Details**: There is no information about the environment in which these tasks should be performed.
+
+Final Answer: Yes",eff24ea5993e0167,qwen2.5:14b,0,2026-06-17T17:23:43.273626,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207177,"Ledgers """"stall"""" gracefully",0,1,"Reasoning: 
+- The issue title is vague (""Ledgers 'stall' gracefully"") but the description provides more context.
+- The description explains what happens when a ledger transaction causes an exception and how it should be handled gracefully. It mentions that the ledger will be set to a ""STALLED"" state, and on startup or upgrade, the node will attempt to restart the stalled ledger.
+- However, there are no specific steps to reproduce the issue, expected vs actual behavior is not clearly defined, acceptance criteria are missing, affected components are only vaguely mentioned (node, ledgers), and environment details are completely absent.
+
+Final Answer: Yes",f5e30abaaaecc669,qwen2.5:14b,0,2026-06-17T17:23:46.535997,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207246,Sovrin-Client: Show command cannot show files with space in the name,0,-1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title clearly states the issue: ""Show command cannot show files with space in the name"". This is specific.
+2. **Setup Details Provided**: The description includes setup details such as running Sovrin 0.3.20, which provides context for testing.
+3. **Reproduction Steps**: There are reproduction steps provided:
+   - Command used: `sovrin> show """"/WindowsEnding fabre invitation""""`
+   - Error message received: ""Invalid command: 'show """"/WindowsEnding fabre invitation""""'""
+4. **Expected vs Actual Behaviour**:
+   - Expected: The show command should understand file names with spaces.
+   - Actual: The show command does not understand file names with spaces and returns an error.
+5. **Acceptance Criteria**: While the description doesn't explicitly state acceptance criteria, it implicitly suggests that the command should work for filenames containing spaces.
+6. **Affected Components**: It is clear from the title and description that the affected component is the `show` command in Sovrin 0.3.20.
+
+Given these points, the issue provides sufficient information to understand the problem, reproduce it, and know what needs fixing (the show command",d43b373b71b2d04e,qwen2.5:14b,0,2026-06-17T17:23:51.982613,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207346,Unexpected behavior of the testSendNodeSucceedsIfServicesIsMissed test,0,1,"Reasoning: 
+- Missing steps to reproduce the issue.
+- No clear description of expected vs actual behavior.
+- Lack of acceptance criteria or conditions for resolution.
+- Absence of environment details where this occurs.
+- No information about affected components or specific test scenarios.
+
+Final Answer: Yes",17d0b481d1eb6856,qwen2.5:14b,0,2026-06-17T17:23:53.864337,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207079,Node with malformed ldb files has inconsistent behavior,0,1,"Reasoning:
+- The issue title and description indicate that there's a problem related to nodes having malformed ldb files.
+- Steps to reproduce for two cases are provided: deleting symbols from specific .ldb files in ~/attr_db/ and ~/config_state/.
+- Actual results are given, specifying the node's behavior when certain files are malformed or absent.
+- Expected results are somewhat unclear but indicate that clarification is needed regarding the node's expected behavior when all ldb files are absent.
+
+However, there are several missing pieces of information:
+1. The description lacks a clear statement of what the expected behavior should be for nodes with malformed ldb files.
+2. There’s no acceptance criteria provided to validate if the issue has been resolved.
+3. While steps to reproduce are given for two cases, it's not entirely clear how these steps relate to all possible scenarios or whether there might be other affected components beyond those mentioned.
+
+Final Answer: Yes",48da5bc08aba2fff,qwen2.5:14b,0,2026-06-17T17:23:57.989031,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205870,Node can't catch up large ledger,0,0,"Reasoning:
+- **Environment:** Provided with version details of the software being used.
+- **Steps to Reproduce:** Clear steps are given for reproducing the issue.
+- **Actual Results:** Logs and messages indicating what happens when trying to catch up a node with a large ledger.
+- **Expected Results:** Clearly stated that the clear node should complete the catch-up process.
+- **Additional Information:** Provides context about pool restore issues and behavior with different transaction counts.
+
+The description includes all necessary details for understanding and reproducing the issue, including environment specifics, reproduction steps, actual results, expected outcomes, and additional relevant information. Therefore, this issue is not missing any essential information.
+
+Final Answer: No",eb762140f78dad02,qwen2.5:14b,0,2026-06-17T17:24:01.693652,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207163,F-value tests: How many nodes can I lose before the network stops? Is it 2f+1? Is it n-f?,0,1,"Reasoning:
+- The title and description are essentially identical, indicating a lack of detailed information.
+- There is no clear statement of the problem or issue being faced.
+- No specific steps to reproduce the issue are provided.
+- Expected vs actual behavior is not clearly defined.
+- Acceptance criteria are missing.
+- Affected components or environment details are not specified.
+
+Final Answer: Yes",647f1fe35eccdd75,qwen2.5:14b,0,2026-06-17T17:24:03.976812,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205602,Write and Read request flow,0,1,"Reasoning: The description mentions creating activity diagrams for write and read request flows, but it lacks essential details such as:
+- What specific components or modules are involved in these flows?
+- What constitutes an optimistic scenario versus a negative one?
+- Are there any acceptance criteria or expected outcomes provided?
+- Is there information about the environment or context where this issue applies?
+
+Without these critical pieces of information, the description is incomplete.
+
+Final Answer: Yes",8ff152833485f6b3,qwen2.5:14b,0,2026-06-17T17:24:06.296506,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207255,Sovrin-Client: Show file command of not much use,0,1,"Step-by-Step Reasoning:
+1. **Title Analysis**: The title ""Sovrin-Client: Show file command of not much use"" indicates a concern about the usefulness of a specific command in the Sovrin client software.
+2. **Description Content**:
+   - Mentions a related defect (INDY-179).
+   - Describes an issue with the ""*show <file>*"" command, stating it does not support tabbing like a Linux shell.
+   - Suggests that users can use Linux-based editors to read files instead of using this command.
+   - Concludes that the command is redundant and not useful.
+
+3. **Missing Information**:
+   - No clear steps to reproduce the issue are provided.
+   - Expected vs actual behavior is implied but not explicitly stated.
+   - Acceptance criteria for resolving the issue are missing.
+   - Affected components or environment details (e.g., specific versions of software, operating systems) are not mentioned.
+
+Given these points, the description lacks essential information to fully understand and address the issue effectively. The absence of clear reproduction steps, expected behavior, acceptance criteria, and environmental context makes it difficult for developers to work on this issue without further clarification.
+
+Final Answer: Yes",d52040a902c31319,qwen2.5:14b,0,2026-06-17T17:24:11.614950,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205400,Update docs for Transaction Author agreement,0,1,"Reasoning: The issue description provides a clear list of tasks to be performed:
+- Updating specific documentation files (`requests.md`, `transactions.md`, and `auth_map.md`)
+- Adding information about new TAA fields and txns in certain documents
+
+However, the description lacks several critical pieces of information that would make it complete for implementation:
+1. Specific details on what exactly needs to be added or updated (e.g., content, examples, screenshots).
+2. Acceptance criteria to verify if the updates meet requirements.
+3. Any relevant environment or component details that might affect how these changes are implemented.
+
+Without this essential information, developers would struggle to understand fully what is required and whether their work meets expectations.
+
+Final Answer: Yes",f08082ec52fd97a5,qwen2.5:14b,0,2026-06-17T17:24:15.072862,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205519,Incorrect pool upgrade txn validation,0,1,"Step-by-Step Reasoning:
+1. **Title and Description**: The title ""Incorrect pool upgrade txn validation"" is clear but the description lacks detail.
+2. **Build Info**: Provided (""indy-node 1.6.760"").
+3. **Steps to Reproduce**:
+   - Steps are provided: Send a pool upgrade transaction with different time spans (day, month, year) but same HH:MM:SS.
+4. **Actual Results**:
+   - The description mentions that the schedule is invalid because the time span between upgrades is 0 seconds, which is less than specified in the config.
+5. **Expected Results**:
+   - It states that ""Pool upgrade command should be validated correctly.""
+6. **Acceptance Criteria**: Missing explicit acceptance criteria for validation correctness.
+7. **Environment Details**: Build info provided but no other environment details (e.g., OS, network conditions).
+8. **Affected Components**: Not explicitly mentioned, though it's implied to be related to the pool upgrade transaction processing.
+
+The issue description provides steps to reproduce and actual results but lacks explicit acceptance criteria and detailed environment information. Therefore, it is missing essential elements for a complete issue report.
+
+Final Answer: Yes",52b19242dbfa67ea,qwen2.5:14b,0,2026-06-17T17:24:20.213991,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205808,Performance of monitor should be improved,0,1,"Reasoning:
+- The title and description mention a performance issue with the `_monitor.requestOrdered` function under high load conditions.
+- It describes that requests are received faster than they can be ordered, causing delays.
+- However, it lacks specific details such as:
+  - Steps to reproduce the issue (how to create high load conditions).
+  - Expected vs actual behavior (what should happen versus what is happening currently).
+  - Acceptance criteria for resolving this performance issue.
+  - Affected components or environment details (which parts of the system are involved, which versions of software, etc.).
+- Without these critical pieces of information, it's difficult to fully understand and address the problem.
+
+Final Answer: Yes",20004f4edeea1d77,qwen2.5:14b,0,2026-06-17T17:24:23.571688,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205232,PBFT View Change Debug: Part 2,0,1,"Reasoning: The description lists several tasks and their statuses but lacks essential details such as:
+- Steps to reproduce any issues or problems.
+- Expected vs actual behavior for each task.
+- Acceptance criteria for completion of the tasks.
+- Affected components or specific areas in the codebase.
+- Environment details where this issue is observed.
+
+The description seems more like a checklist of things to do rather than a clear, detailed report of an issue that needs resolution. It does not provide enough information to understand what exactly needs fixing or how to verify if it's fixed.
+
+Final Answer: Yes",785a1ef88287c079,qwen2.5:14b,0,2026-06-17T17:24:26.486708,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206367,Knowledge transfer on Indy build processes,0,1,"Reasoning: The issue description mentions a need for knowledge transfer regarding Indy node build processes but lacks essential details such as:
+- Specific steps or methods required for transferring this knowledge.
+- Expected outcomes or criteria to measure success.
+- Affected components or systems involved in the build process.
+- Environment details where these builds occur.
+
+Final Answer: Yes",3b7b3cd7b1809fd1,qwen2.5:14b,0,2026-06-17T17:24:28.505557,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205283,Support ubuntu 20.04 in system tests,0,0,"Step-by-Step Reasoning:
+1. **Title and Description**: The title ""Support ubuntu 20.04 in system tests"" is clear about the goal.
+2. **Acceptance Criteria**:
+   - The acceptance criteria are provided: ""# test pool can be run in ubuntu 20.04 env (all nodes the same env for now)"" and ""# client might be run in any env"".
+3. **Expected vs Actual Behaviour**: 
+   - Expected behaviour is that system tests should work on Ubuntu 20.04.
+   - The current actual behavior isn't specified, but it's implied that they don’t currently support this environment.
+4. **Steps to Reproduce**:
+   - No specific steps are provided for reproducing the issue or testing the acceptance criteria.
+5. **Affected Components**: 
+   - It mentions system tests and possibly client components, but no detailed breakdown is given.
+6. **Environment Details**:
+   - The description specifies Ubuntu 20.04 as the target environment.
+
+Given these points, while there are some details provided (acceptance criteria, expected behavior), critical information such as steps to reproduce or a clear list of affected components and their interactions is missing. This makes it difficult to fully",e54b8f072a188797,qwen2.5:14b,0,2026-06-17T17:24:33.878932,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206407,generate_indy_pool_transactions can be run only by indy user,0,0,"Step-by-Step Reasoning:
+1. **Title and Description**: The title clearly states the issue: ""generate_indy_pool_transactions can be run only by indy user"". The description provides detailed steps to reproduce the problem.
+2. **Steps to Reproduce**:
+   - Setup machine with installed sovrin package.
+   - Set yourself as any user different from _indy_.
+   - Try to generate transactions using `generate_indy_pool_transactions` command.
+3. **Actual Results**: Permission denied error appears for file `/etc/indy/indy_config.py`, and the transaction file was not generated.
+4. **Expected Result**: The command should work without errors, implying that it should be possible to run the command as a non-indy user.
+5. **Additional Information**:
+   - Priority is marked as Highest due to its impact on agent installation scripts for vagrant.
+   - Problem only occurs in master version of vagrant scripts; stable versions are unaffected.
+   - Issue also reproduces on the latest version for non-vagrant setup.
+
+The issue description includes all necessary details such as steps to reproduce, actual vs expected behavior, and additional context about affected environments. Therefore, it is not missing any essential information.
+
+Final Answer: No",585deab94d6bda5a,qwen2.5:14b,0,2026-06-17T17:24:39.338583,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206381,ATTRIB transaction with ENC and HASH doesn't work,0,1,"Reasoning:
+- The title mentions ""ATTRIB transaction with ENC and HASH doesn't work,"" indicating an issue with a specific type of transaction.
+- However, the description is vague and does not provide clear details about what exactly needs to be done or fixed. It asks for ensuring that certain commands (""ATTRIB"" and ""GET_ATTRIB"") work correctly but lacks specifics on how they should behave or what their current issues are.
+- There's a mention of enabling tests in indy-node, which is somewhat specific but still doesn't provide clear acceptance criteria or expected outcomes.
+- The description also mentions updating documentation, but it does not specify the exact changes needed or the context for these updates.
+
+The issue lacks:
+1. Clear steps to reproduce the problem.
+2. Expected vs actual behavior details.
+3. Specific acceptance criteria.
+4. Affected components and environment details.
+
+Final Answer: Yes",4afea3cf13e44150,qwen2.5:14b,0,2026-06-17T17:24:43.388217,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205817,Research performance of static validation against message schema,0,1,"Step-by-Step Reasoning:
+1. The title and description are somewhat vague but mention research on performance improvement.
+2. Acceptance criteria are provided with three possible outcomes: everything is fine, there's an obvious issue in the code, or a fundamental change to the approach is proposed.
+3. However, the description lacks specific details such as steps to reproduce the performance issue, expected vs actual behavior, affected components, environment details, and clear acceptance criteria for what constitutes ""improvement.""
+4. The description does not provide enough information on how to measure or define success in improving performance.
+
+Final Answer: Yes",55b1e90a5257bb58,qwen2.5:14b,0,2026-06-17T17:24:46.367312,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207214,The CLI initialization becomes too slow,0,0,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title ""The CLI initialization becomes too slow"" indicates a performance issue with the CLI tool.
+2. **Reproduction Steps**: The description mentions that the command `sovrin` takes tens of seconds to initialize after some usage, but it does not provide clear steps on how to reproduce this consistently or under what conditions (e.g., specific environment setup).
+3. **Expected vs Actual Behavior**:
+   - Expected: CLI should initialize quickly.
+   - Actual: CLI initialization is slow after prolonged use.
+4. **Acceptance Criteria**: The description lacks any acceptance criteria that define when the issue would be considered resolved, such as a maximum acceptable time for initialization or performance benchmarks.
+5. **Affected Components**: While it mentions the `sovrin` command and implies some underlying Python code (`python3 -m cProfile`), there is no detailed information about which specific components are causing the slowdown (e.g., network calls, database queries).
+6. **Environment Details**: The description does not provide details about the environment in which this issue occurs (e.g., operating system, version of CLI tool, hardware specifications).
+
+Given these points, the issue lacks clear reproduction steps and acceptance criteria, as",d31d7867d06c7b8d,qwen2.5:14b,0,2026-06-17T17:24:51.746500,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205760,POA: Delegate issuance to a processor,0,0,"Step-by-Step Reasoning:
+
+1. **Title and Description**: The title ""POA: Delegate issuance to a processor"" provides context but does not specify an issue or bug.
+2. **Story**: Describes the user's need for delegating credential issuing, which is clear in terms of what the feature should achieve.
+3. **Requirements**:
+   - Controller can change processors by updating the credential definition.
+   - History of processors must be retained.
+4. **Acceptance Criteria**:
+   - Create a plan and get an architectural review from stakeholders.
+   - Create necessary issues.
+5. **Possible Approaches**: Describes technical solutions including adding an ""issuer"" field to cred def transactions and ensuring verifiers can determine the correct cred def sequence number for claims in proofs.
+6. **Notes**: Explains how this feature modifies the credential verification process into a 4-party story involving controller, processor, prover, and verifier.
+
+The issue description provides clear requirements, acceptance criteria, possible technical solutions, and context about stakeholders involved. It does not seem to be missing any essential information such as steps to reproduce an error or environment details since it is more of a feature request rather than a bug report.
+
+Final Answer: No",837b273d6d305580,qwen2.5:14b,0,2026-06-17T17:24:57.255274,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205269,Implement helper script for AWS pool operations with snapshots,0,1,"Reasoning:
+- The title mentions ""helper script for AWS pool operations with snapshots"".
+- The description is somewhat unclear but seems to suggest implementing a helper script that deals with AWS volumes and instances.
+- Missing information includes:
+  - Specific requirements or functionalities of the script.
+  - Expected behavior of the script.
+  - Steps to reproduce or test the functionality (if applicable).
+  - Affected components in the system.
+  - Environment details where this script will be used.
+
+Final Answer: Yes",b4f758be7434b871,qwen2.5:14b,0,2026-06-17T17:24:59.918845,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207178,An upgrade should be idempotent,0,0,"Step-by-Step Reasoning:
+1. **Title**: The title ""An upgrade should be idempotent"" provides a clear statement of intent but lacks detail.
+2. **Description**:
+   - It mentions that an upgrade to version 5 is idempotent, meaning it can be applied multiple times without changing the state beyond the initial application.
+   - It describes scenarios involving nodes at different versions and how upgrades should behave in these cases.
+   - However, there are no specific steps to reproduce the issue or verify the behavior.
+3. **Additional User Input**:
+   - The user mentions that an upgrade can run an additional script which needs to be idempotent as well.
+   - A test is suggested where the upgrade process should be applied twice on each node and verified for idempotence.
+4. **Missing Information**:
+   - Steps to reproduce the issue or verify the behavior are not provided.
+   - Expected vs actual behavior is not clearly defined.
+   - Acceptance criteria, such as specific conditions under which the upgrade must behave idempotently, are missing.
+   - Environment details (e.g., node configurations, network setup) are not specified.
+
+Given these points, the issue lacks clear reproduction steps and acceptance criteria to fully understand and test",74a2ce8567f4649d,qwen2.5:14b,0,2026-06-17T17:25:05.257855,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205965,Ledger upgrade transaction should specify a package name,0,0,"Step-by-Step Reasoning:
+1. **Title and Description**: The title clearly states what needs to be addressed: specifying a package name in ledger upgrade transactions.
+2. **Acceptance Criteria**:
+   - The description includes acceptance criteria that specify the inclusion of an optional parameter for POOL_UPGRADE transaction with a package name.
+3. **Reproduction Steps**: While not explicitly stated, the scenario is clear enough from the context provided: administrators need to specify their network-specific package in upgrade transactions rather than using the generic Indy Node package.
+4. **Expected vs Actual Behaviour**:
+   - Expected: Upgrade transaction should include a value containing the specific package name (e.g., Sovrin).
+   - Actual: Currently, it defaults to ""IndyNode"".
+5. **Environment Details**: The description mentions that this is relevant for an Indy Network and specifically references the Sovrin network.
+6. **Affected Components**:
+   - POOL_UPGRADE transaction
+   - Node upgrade script
+
+The issue provides clear acceptance criteria, expected behavior, affected components, and context about the environment where it applies. It also includes a link to documentation that further clarifies the requirement.
+
+Final Answer: No",efce11e46b9addb6,qwen2.5:14b,0,2026-06-17T17:25:10.454910,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207326,Prove the pool upgrade mechanism by performing a noticeable upgrade test,0,1,"Reasoning: The issue description lacks several critical pieces of information:
+1. **Steps to Reproduce**: There are no clear steps provided on how to perform the upgrade test.
+2. **Expected vs Actual Behavior**: It is not specified what the expected outcome should be or what constitutes a ""noticeable difference.""
+3. **Acceptance Criteria**: No acceptance criteria are defined, such as success conditions or pass/fail scenarios.
+4. **Affected Components**: The description does not specify which components of the system will be affected by this upgrade test.
+5. **Environment Details**: There is no mention of the environment setup required to perform the upgrade test.
+
+Given these missing details, it's difficult for a developer to understand and implement the task effectively.
+
+Final Answer: Yes",37cf34c307c803eb,qwen2.5:14b,0,2026-06-17T17:25:14.038836,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206117,Simple Timeout fixes of the current View Change protocol,0,1,"Reasoning: The issue description mentions problems with the existing View Change protocol and suggests several possible fixes to improve stability. However, it lacks essential details such as:
+- Specific steps to reproduce the issues.
+- Expected vs actual behavior for each fix proposed.
+- Acceptance criteria that define when a fix is considered successful.
+- Affected components or modules within the system.
+- Environment details where this issue occurs.
+
+Without these critical pieces of information, stakeholders cannot fully understand and address the problem effectively. Therefore, this issue report is incomplete.
+
+Final Answer: Yes",7ba336f6e4e3f38c,qwen2.5:14b,0,2026-06-17T17:25:16.846663,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206655,As I Validator or Observer Node,0,1,"Reasoning: The issue description lacks clarity and essential details. It mentions the need to present Signed State Proof for client requests but does not specify:
+- Steps to reproduce or how to trigger this feature.
+- Expected vs actual behavior.
+- Acceptance criteria for what constitutes a successful implementation.
+- Affected components or modules within the system.
+- Environment details such as operating systems, versions of dependencies, etc.
+
+The references provided (GitHub pull request and Google Doc link) do not substitute for clear requirements in the description itself. The title is also vague and does not provide context about the issue's nature or scope.
+
+Final Answer: Yes",13ca9789feaaf8e7,qwen2.5:14b,0,2026-06-17T17:25:19.983325,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207231,eliminate runtime warnings that show during tests,0,1,"Reasoning: The issue description mentions runtime warnings during tests but lacks several critical details:
+1. **Steps to Reproduce**: No specific steps provided for reproducing the warning.
+2. **Expected vs Actual Behaviour**: It's not clear what the expected outcome should be after addressing the warnings (e.g., no warnings, certain types of warnings disabled).
+3. **Acceptance Criteria**: There are no criteria listed that define when this issue is resolved.
+4. **Affected Components**: No specific components or modules where these warnings occur are mentioned.
+5. **Environment Details**: The environment in which the tests are run (e.g., OS, test framework version) is not provided.
+
+Final Answer: Yes",7daa4fd84dab631d,qwen2.5:14b,0,2026-06-17T17:25:23.236827,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206217,Clarify current permissible actions with DID's roles,0,0,"Step-by-Step Reasoning:
+1. The title of the issue is ""Clarify current permissible actions with DID's roles"". This suggests that there might be some ambiguity or lack of clarity regarding what actions are allowed based on different roles in a decentralized identity (DID) system.
+2. In the description, two main assumptions are listed: 
+   - Only the person who performed an operation can add it back.
+   - A Trustee can perform any operation regardless of who removed the role.
+3. The description mentions ""Findings"" and provides a link to a Google Spreadsheet that presumably contains more detailed information about the current state of permissible actions with DID roles.
+
+However, the issue description is missing several key pieces of information:
+- Steps to reproduce or clarify the ambiguity (if applicable).
+- Expected vs actual behavior: What should be clarified? How does it differ from what currently exists?
+- Acceptance criteria: What would make this issue resolved?
+- Affected components: Which parts of the system are involved in these actions and roles?
+- Environment details: Under which conditions or scenarios is this issue relevant?
+
+Given that there's no clear indication of what needs to be clarified beyond the assumptions, nor any specific acceptance criteria or steps for resolution, the information provided is insufficient.",4b88baf54d788f43,qwen2.5:14b,0,2026-06-17T17:25:28.539645,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205635,Enable PreViewChange Strategy,0,1,"Step-by-Step Reasoning:
+1. The title ""Enable PreViewChange Strategy"" is clear but lacks detail.
+2. Description mentions that a PreViewChange strategy was implemented and is currently disabled by default.
+3. Acceptance criteria are provided, which include:
+   - Ensuring no side effects.
+   - Conducting load testing with specific parameters (10 NYMs per second).
+   - Verifying fast view changes and ledger synchronization.
+   - Enabling the strategy by default.
+
+However, there is missing information such as:
+- Specific steps to reproduce or test the acceptance criteria.
+- Expected vs actual behavior during testing.
+- Affected components or environment details where this feature will be tested.
+- Any additional requirements or constraints not covered in the description.
+
+Final Answer: Yes",960dd591ebe59af7,qwen2.5:14b,0,2026-06-17T17:25:32.142286,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205719,Validator info tool should show windowed throughput statistics,0,1,"Reasoning: The issue description mentions the need for windowed throughput statistics in the validator_info tool but lacks several critical details:
+1. **Steps to Reproduce**: There are no specific steps provided to reproduce or test this feature.
+2. **Expected vs Actual Behaviour**: It is not clear what the expected behavior should be, nor is there any mention of current actual behavior that needs fixing or enhancement.
+3. **Acceptance Criteria**: The description does not outline acceptance criteria for when the issue can be considered resolved.
+4. **Affected Components**: While it mentions monitor and validator_info, specific components within these tools are not detailed.
+5. **Environment Details**: There is no information about the environment in which this feature should work (e.g., version of software, operating system).
+
+The description also includes several questions that need to be answered before proceeding with implementation, such as determining if the current windowed throughput measurements can be reused and whether there should be a configurable window size. These details are crucial for defining the scope and requirements clearly.
+
+Final Answer: Yes",d2a06d8f63eab012,qwen2.5:14b,0,2026-06-17T17:25:36.660372,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205358,indy-node upgrade problem - No such directory,0,0,"Step-by-Step Reasoning:
+
+1. **Environment Details**: The description provides clear environment details including the network setup and version numbers of the software being upgraded.
+2. **Steps to Reproduce**: Detailed steps are provided for upgrading indy-node from 1.6.83 to 1.7.1, which includes commands like `sudo apt update`, stopping services, and installing new packages.
+3. **Expected Behavior**: The expected behavior is clearly stated as ""No errors during upgrade.""
+4. **Observed Behavior**: Detailed output of the command execution is provided, showing where the error occurred (""No such file or directory"").
+5. **Additional Notes**: A workaround is mentioned that allowed the system to be upgraded despite encountering an issue.
+
+Given these points, all essential information for understanding and reproducing the issue seems to be present:
+- Environment details
+- Steps to reproduce
+- Expected vs observed behavior
+
+Final Answer: No",13c9724eb31e5d16,qwen2.5:14b,0,2026-06-17T17:25:41.211254,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206471,Validator-info tool is not working with build 1.2.49,0,0,"Step-by-Step Reasoning:
+1. **Title and Description**: The title mentions a specific issue with the ""validator-info"" tool in build 1.2.49.
+2. **Steps to Reproduce**:
+   - Installation of validator node.
+   - Running `validator-info -v` or just `validator-info`.
+3. **Expected vs Actual Behaviour**:
+   - Expected: The command should provide information about the validator node.
+   - Actual: An error message stating ""There are no info files in /var/lib/indy"".
+4. **Acceptance Criteria**: Not explicitly mentioned, but implied that running the tool should not result in an error and should display expected information.
+5. **Affected Components**:
+   - Tool: `validator-info`.
+   - Environment: Validator node installation.
+6. **Environment Details**:
+   - Build version: 1.2.49.
+   - User context: indy user.
+   - Log file details: validator-info.log is present but empty.
+
+The issue description provides a clear error message, steps to reproduce the problem, and mentions the affected components and environment details. However, it lacks explicit acceptance criteria for what should happen when running `validator-info`.
+
+Final Answer: No",e4f210f83d73dac5,qwen2.5:14b,0,2026-06-17T17:25:46.710013,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207259,[send NYM] Add verkey and update verkey commands don't work,0,-1,"Step-by-step reasoning:
+
+1. **Build Info**: Provided.
+2. **Overview**: Describes the problem succinctly but lacks detail on why it's a problem or its impact.
+3. **Steps to Reproduce**:
+   - Add new key identifier.
+   - Login as Trustee and add initial verkey to new identifier.
+   - Login as new identifier by its key and update its own verkey.
+4. **Actual Results**: 
+   - Command ""list ids with verkeys"" returns incorrect verkeys compared to those returned by ""send GET_NYM"".
+   - Update verkey command throws an error that is not user-friendly.
+5. **Expected Results**:
+   - Add verkey and update verkey commands should add and update verkey respectively.
+   - All errors due to these commands should be human-readable.
+6. **Additional Info**: Mentions the issue blocks complex confirmation of another issue (INDY-110).
+
+The description provides steps to reproduce, actual results, expected results, and additional context about the impact on other issues. However, it lacks detailed information such as:
+- Specific error messages or screenshots for better understanding.
+- Affected components or modules within the software.
+- Environment details like operating system, version of dependencies,",9716a5798e7a9981,qwen2.5:14b,0,2026-06-17T17:25:52.247077,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206618,Allow a steward to update his node entry in the ledger - including the verkey,0,1,"Reasoning:
+- The issue describes a specific problem where a steward needs to update their node entry in the ledger with a new verkey.
+- It provides context about why this is necessary: when replacing a node in a validator network and changing its public-private key pair, there's no way currently for the steward to reflect these changes on the ledger.
+- The description includes an example of how the current system works (steward trying to update or add a new node entry but being denied due to existing entries).
+- It suggests that instead of checking during node creation for one node per steward, the check should be when promoting or creating a validator node to allow only one validator per steward.
+- However, it lacks clear acceptance criteria, steps to reproduce the issue, expected vs actual behavior, and environment details.
+
+Final Answer: Yes",f74690acfff870b6,qwen2.5:14b,0,2026-06-17T17:25:56.824849,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205847,Fail to update pool ledger if no connection to a node in the genesis file in old cli,0,0,"Step-by-Step Reasoning:
+
+1. **Title and Description**: The title mentions a failure in updating the pool ledger when there's no connection to a node specified in the genesis file for an older version of the CLI. The description provides some context about previous versions handling this scenario differently.
+
+2. **Reproduction Steps**:
+   - Missing clear steps on how to reproduce the issue.
+   - No specific actions or commands are provided to replicate the problem.
+
+3. **Expected vs Actual Behaviour**:
+   - Expected: Pool data updates should be requested from another node if one is unreachable.
+   - Actual: The pool catch-up does not occur, and repeated messages about reconnecting appear in the terminal logs.
+   
+4. **Acceptance Criteria**: 
+   - No acceptance criteria are provided to define what success looks like for resolving this issue.
+
+5. **Affected Components**:
+   - Affected components (CLI version, specific node versions) are mentioned but not clearly defined or isolated.
+
+6. **Environment Details**:
+   - The description mentions a specific IP address and port number, indicating the environment where the problem occurs.
+   - However, no broader environmental context is provided (e.g., OS, network configuration).
+
+7. **Additional Information**: 
+   - CLI",a8ab275e67b6a74d,qwen2.5:14b,0,2026-06-17T17:26:02.576947,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205621,Expected object or value error during batch handling,0,-1,"Step-by-Step Reasoning:
+1. **Title**: The title ""Expected object or value error during batch handling"" provides some context but is not detailed enough to understand the issue fully.
+2. **Description**:
+   - **Error Context**: Describes that errors are found in logs related to batch handling, specifically mentioning an ""Expected object or value"" error on serialization of 'pi' or 'po'.
+   - **Impact**: The description states that a whole batch is discarded when such an error occurs.
+   - **Acceptance Criteria**:
+     - Investigate the source code for batch creation.
+     - Write unit and integration tests to emulate error raising.
+     - Create a fix to avoid this error and ensure normal batch handling.
+
+3. **Missing Information**:
+   - The description lacks clear steps to reproduce the issue, which is crucial for debugging and testing purposes.
+   - Expected vs actual behavior is somewhat described but could be more detailed (e.g., what should happen when an 'Expected object or value' error occurs).
+   - Affected components are not explicitly mentioned; it's implied that batch handling and serialization processes are involved.
+   - Environment details such as the version of software, operating system, or specific configurations are missing.
+
+Given these points, while",be94c82a834e7590,qwen2.5:14b,0,2026-06-17T17:26:08.117364,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206100,Support Payment API txns in load script,0,1,"Reasoning: The description mentions the requirement to support Payment API transactions provided by libindy and its wrappers within a load script. However, it lacks several critical details:
+1. Specific steps or criteria for how this support should be implemented.
+2. Expected behavior after implementation.
+3. Acceptance criteria to verify if the requirement is met.
+4. Affected components or modules in the system.
+5. Environment details where this feature needs to work.
+
+Final Answer: Yes",bb906b5a7810a261,qwen2.5:14b,0,2026-06-17T17:26:10.643104,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206303,Ordering of 3PC-batches on a backup replica may stop after a catch-up,0,0,"Step-by-Step Reasoning:
+
+1. **Title and Description Analysis**:
+   - The title ""Ordering of 3PC-batches on a backup replica may stop after a catch-up"" provides some context but is quite vague.
+   - The description delves into technical details about the issue, including specific terms like ""PREPREPARE,"" ""PREPAREs,"" and ""watermarks."" However, it lacks clarity in explaining what exactly stops or fails.
+
+2. **Steps to Reproduce**:
+   - There are no clear steps provided for reproducing the issue.
+   - The description mentions a scenario involving catch-up operations but does not outline specific actions or conditions needed to trigger the problem.
+
+3. **Expected vs Actual Behavior**:
+   - While there is some explanation of what happens (ordering stops), it's unclear what the expected behavior should be in this context.
+   - There’s no explicit statement about what the system should do differently compared to its current state.
+
+4. **Acceptance Criteria**:
+   - The description mentions that ""the specified logic must be reworked"" but does not provide clear acceptance criteria or specific requirements for how the issue should be resolved.
+   
+5. **Affected Components and Environment Details**:
+   - While it’s",af869b9d61e15bf8,qwen2.5:14b,0,2026-06-17T17:26:16.126062,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206249,Add Docker getting started configuration,0,1,"Reasoning: The issue description provides a high-level overview of what needs to be done but lacks several critical details:
+1. **Steps to Reproduce**: There are no specific steps provided for how to set up the Docker-based sandbox.
+2. **Expected vs Actual Behaviour**: It does not specify what the expected outcome should look like or if there is any current issue that this feature aims to resolve.
+3. **Acceptance Criteria**: The description lacks clear acceptance criteria, such as success conditions and test cases.
+4. **Affected Components**: While it mentions a Docker-based sandbox for Hyperledger Indy, it does not specify which components of the system will be affected or how they interact with each other.
+5. **Environment Details**: There is no mention of the required environment setup (e.g., operating systems, software versions) needed to implement this feature.
+
+Final Answer: Yes",9cd6637efb0e78cb,qwen2.5:14b,0,2026-06-17T17:26:20.175202,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207080,Valid write transactions may be rejected as having invalid signatures (case 2),0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions a specific issue related to write transactions being incorrectly flagged as having invalid signatures.
+2. **Reproduction Steps**: There is mention of running a test script with certain parameters, but the actual steps are not clearly outlined in a way that someone else could reproduce the issue easily.
+3. **Expected vs Actual Behaviour**:
+   - Expected: Valid write transactions should be accepted.
+   - Actual: Write transactions are incorrectly rejected as having invalid signatures.
+4. **Acceptance Criteria**: The description does not provide clear acceptance criteria for resolving this issue.
+5. **Affected Components**: It mentions specific components like `sovrin-client` and `sovrin-node`, but the exact affected modules or classes within these components are not specified.
+6. **Environment Details**:
+   - Environment: Local VM with sovrin-client master 0.3.150, Shakedown Pool 3.
+   - Configuration details are provided but lack clarity on how to set up this environment for others to reproduce the issue.
+
+Given that the description lacks clear reproduction steps and acceptance criteria, it is missing essential information needed to fully understand and resolve the issue.
+
+Final Answer: Yes",c513596b097d8b91,qwen2.5:14b,0,2026-06-17T17:26:25.451109,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206714,Primary fails to send pre-prepare,0,0,"Step-by-Step Reasoning:
+
+1. **Title**: The title ""Primary fails to send pre-prepare"" provides a clear indication of the issue but lacks detail.
+2. **Description**:
+   - **Environment Details**: Provides information about the environment, including the ESN (Enterprise Service Network), load test conditions, and specific node names ('metis', 'play').
+   - **Error Observation**: Describes that one of the nodes lost sync during a low-volume load test.
+   - **Reproduction Steps**: Includes timestamps and logs for when the issue occurred. Also mentions manual testing with CLI commands to reproduce the problem.
+   - **Troubleshooting Details**: Provides steps taken to diagnose, including restarting processes and forcing view changes.
+   - **Expected vs Actual Behaviour**: The expected behavior is that transactions should be accepted by all nodes, but during the error period, only two out of eight nodes received PREPREPARE messages.
+   - **Logs Provided**: INFO-level logs are attached for both the primary node ('play') and the problematic node ('metis').
+   
+3. **Missing Information**:
+   - While detailed steps to reproduce and troubleshooting information are provided, there is no explicit acceptance criteria or clear definition of what constitutes a successful resolution.
+
+Given these points, while",3fe58e6aaa3a3f2d,qwen2.5:14b,0,2026-06-17T17:26:30.986495,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207130,Node with multiple NICs:,1,1,"Reasoning: The provided description lacks essential details such as what specific problem or feature request is being made regarding nodes with multiple network interface cards (NICs). It mentions ""Things tried"" and ""Findings,"" but does not specify the actual issue, expected behavior, steps to reproduce, affected components, environment details, or acceptance criteria. This makes it impossible to understand the full context of the problem or how to address it.
+
+Final Answer: Yes",cff8188224d4ede9,qwen2.5:14b,0,2026-06-17T17:26:33.498480,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206872,As a Steward,0,0,"Step-by-Step Reasoning:
+1. **Title**: The title ""As a Steward"" is incomplete as it does not specify the full user story or requirement.
+2. **Description**:
+   - **Requirement Details**: The description mentions several types of notifications that need to be sent to stewards, such as View Change start/end, Catchup start/end, Blacklisting events, Suspicious Primary, Performance degradation, and Upgrade start/end.
+   - **Current State**: It references existing email notification capabilities but does not specify how these new requirements fit into the current system or what changes are needed.
+3. **Missing Information**:
+   - **Steps to Reproduce**: Not provided for any specific scenario.
+   - **Expected vs Actual Behaviour**: No comparison is given between expected and actual behavior.
+   - **Acceptance Criteria**: There are no clear acceptance criteria defined for each type of notification or the overall feature.
+   - **Affected Components**: While it mentions existing email notifications, there's no detail on which components need to be modified or added.
+   - **Environment Details**: No specific environment details (e.g., server configuration, client setup) are provided.
+
+Given these points, the issue lacks essential information such as acceptance criteria and detailed steps for implementation. Therefore,",42d1a9ced5897361,qwen2.5:14b,0,2026-06-17T17:26:38.858499,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206649,DOC: Request for release notes on Indy-node 1.1.31,0,0,"Reasoning: The issue description provides detailed information about release notes for Indy-node version 1.1.31. It includes major fixes, changes and additions, CLI command modifications, and improvements to log messages. While it is a documentation request, the provided details are comprehensive and cover all necessary aspects of the release.
+
+Final Answer: No",20558ebbdd102518,qwen2.5:14b,0,2026-06-17T17:26:41.181495,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207129,Some nodes are slow to process network data,0,1,"Reasoning:
+- The title and description do not clearly define what ""slow"" means in terms of performance metrics.
+- There is no specific information on which nodes are affected or under what conditions the issue occurs.
+- No steps to reproduce the problem are provided.
+- Expected vs actual behavior is not detailed; it's unclear what should be happening versus what is actually observed.
+- Acceptance criteria for resolving this issue are missing.
+- Affected components and environment details (e.g., network topology, node configurations) are not specified.
+
+Final Answer: Yes",c9fb656c5494d27d,qwen2.5:14b,0,2026-06-17T17:26:44.011334,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206996,improve timestamp mechanism to use fuzzy,0,1,"Reasoning: 
+- The title mentions ""improve timestamp mechanism to use fuzzy"", but it is unclear what ""fuzzy"" means in this context.
+- The description talks about consensus on timestamps and relates it to state proof style consensus for validators, but lacks clarity and specific details.
+- Missing information includes:
+  - What exactly needs improvement or change regarding the timestamp mechanism?
+  - How should the fuzzy timestamp be implemented?
+  - Expected behavior after implementing the changes.
+  - Affected components or modules in the system.
+  - Steps to reproduce or test the issue (if it's a bug report).
+- The description does not provide clear acceptance criteria, environment details, or any specific requirements.
+
+Final Answer: Yes",419b3dc6cc2a34e3,qwen2.5:14b,0,2026-06-17T17:26:47.311888,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205942,"How-to """"Add new node to existing pool",0,1,"Reasoning: The given description lacks essential information such as steps to reproduce the issue, expected vs actual behavior, acceptance criteria, affected components, and environment details. It only mentions that adding a new node to an existing pool is not covered in the documentation and refers to an acceptance scenario as the unique knowledge source. This does not provide enough context or actionable information for resolving the issue.
+
+Final Answer: Yes",0e255bdb726c0943,qwen2.5:14b,0,2026-06-17T17:26:49.504625,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207319,REF validator,0,1,"Reasoning:
+- The title ""REF validator"" does not clearly describe the issue or requirement.
+- The description mentions adding a validation for transaction sequence numbers but lacks several critical details:
+  - What is the expected behavior of this new validation?
+  - Where exactly should this validation be implemented (specific file, function)?
+  - How will success and failure cases be determined?
+  - Are there any acceptance criteria or test scenarios provided?
+
+Given these missing elements, it's difficult to fully understand and implement the requirement as stated.
+
+Final Answer: Yes",231376c684e8621a,qwen2.5:14b,0,2026-06-17T17:26:52.152312,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205527,Implementation: Improve catch-up to use audit ledger for consistency,0,-1,"Step-by-Step Reasoning:
+
+1. **Title Analysis**: The title ""Implementation: Improve catch-up to use audit ledger for consistency"" provides a clear indication of the issue but lacks detail on specific steps or expected outcomes.
+
+2. **Description Content**:
+   - *Acceptance criteria* are provided, which is good.
+   - It references an external document (https://github.com/hyperledger/indy-plenum/blob/master/design/catchup-and-audit-proposal.md#catch-up) for detailed implementation logic.
+   - The description outlines the process of improving catch-up using audit ledger:
+     - LEDGER_STATUS request and response
+     - REQUEST_CONSISTENCY_PROOF message structure
+     - Node's response to REQUEST_CONSISTENCY_PROOF
+     - Catch-up proceeding as usual after receiving CONSISTENCY_PROOF
+
+3. **Missing Information**:
+   - The description does not provide steps to reproduce the issue.
+   - Expected vs actual behavior is implied but not explicitly stated.
+   - Environment details or affected components are not mentioned.
+   - While acceptance criteria are outlined, they rely on external documentation for full understanding.
+
+4. **Conclusion**: Although the description provides a detailed outline of what needs to be done and some acceptance criteria, it",898d9eb0f6f9ed21,qwen2.5:14b,0,2026-06-17T17:26:57.508390,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206160,Analyse the current View Change protocol issues,0,1,"Step-by-Step Reasoning:
+1. **Title**: The title ""Analyse the current View Change protocol issues"" is clear but lacks detail.
+2. **Description**:
+   - Mentions facing issues with the current View Change protocol.
+   - Suggests implementing PBFT View Change protocol as an option.
+   - Requires a deep analysis of the existing protocol to understand issues and gain confidence in new implementation.
+   - Specifies output: result of analysis and list of issues.
+   - Future tasks include test plan, test cases, and fixes (implementation).
+
+3. **Missing Information**:
+   - No specific steps to reproduce or identify the exact nature of the current issues.
+   - No acceptance criteria defined for what constitutes a successful analysis.
+   - No environment details provided where this protocol is used.
+   - No affected components mentioned that are part of the View Change protocol.
+
+4. **Conclusion**: The description lacks concrete details on how to proceed with the analysis, expected outcomes beyond just listing issues, and specific requirements or criteria for completion.
+
+Final Answer: Yes",fadc7bbb4e0025c1,qwen2.5:14b,0,2026-06-17T17:27:02.201626,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206183,Date in log name doesn't accord to the day when the log was rotated,0,1,"Reasoning:
+- The issue title and description indicate that there is a discrepancy between the dates shown in the log file names and the actual date when the logs were rotated.
+- Steps to reproduce are provided, which include setting up the pool and observing the logs after several weeks. This gives some context on how to replicate the problem.
+- Actual results are detailed: The same date (Monday of this week) is specified in log names during the week, and it's unclear when files like NodeX.log.2018-04-09.gz were created or rewritten.
+- Expected results are also provided: Dates in log file names should match the actual rotation dates, or alternatively, no date should be included at all.
+
+However, there is a lack of information regarding:
+- Affected components (which specific parts of the system are involved).
+- Environment details (operating systems, versions, configurations, etc.).
+- Acceptance criteria for resolving this issue.
+- Any additional steps to reproduce or verify the problem in different scenarios.
+
+Given these missing elements, while there is a clear description and reproduction steps provided, it's still incomplete due to the lack of environment details and acceptance criteria.
+
+Final Answer: Yes",389f073e5d50a588,qwen2.5:14b,0,2026-06-17T17:27:08.921537,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206911,list keyrings showing results twice,0,1,"Reasoning:
+- The issue title mentions that the 'list keyrings' command shows duplicate results.
+- The description provides a reproduction scenario using the CLI and includes the exact output of running the 'list keyrings' command.
+- However, it lacks clear acceptance criteria (what should be fixed or expected outcome).
+- It also does not specify which components are affected by this issue.
+- There is no mention of environment details such as OS version, software version, etc.
+
+Final Answer: Yes",cceb106141a2a82b,qwen2.5:14b,0,2026-06-17T17:27:12.122480,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205543,As a user of Valdiator Info script,0,1,"Reasoning: The issue description mentions acceptance criteria and specifies where certain information should appear (verbose and JSON outputs). However, it lacks several critical pieces of information:
+1. Steps to reproduce or a clear scenario for testing.
+2. Expected vs actual behavior is not clearly defined.
+3. Affected components are not specified.
+4. Environment details such as the version of Valdiator Info script or any dependencies are missing.
+
+Final Answer: Yes",44bbc1154e0a8cb0,qwen2.5:14b,0,2026-06-17T17:27:14.544700,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206727,Accidental tests of indy-node intermittently fail on Jenkins,0,1,"Reasoning: The issue description provides links to Jenkins builds where tests of the indy-node fail intermittently. However, it lacks essential details such as:
+1. Steps to reproduce the failure.
+2. Expected vs actual behavior during these failures.
+3. Affected components or specific test cases that are failing.
+4. Environment details (e.g., OS, version of software, build configuration).
+5. Acceptance criteria for resolving this issue.
+
+Without these critical pieces of information, it is difficult to understand the root cause and devise a solution effectively.
+
+Final Answer: Yes",262b1c83c5c8cc65,qwen2.5:14b,0,2026-06-17T17:27:17.480067,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205664,Is there any replacement for leveldb?,0,1,"Reasoning:
+- The title and description do not specify a software issue or problem to be solved.
+- There are no steps to reproduce an error or describe expected vs actual behavior.
+- No acceptance criteria, affected components, or environment details are provided.
+- This appears to be more of a question seeking advice rather than reporting an incomplete requirement.
+
+Final Answer: Yes",8f4832665edc714e,qwen2.5:14b,0,2026-06-17T17:27:19.608674,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205912,As a Sovrin Foundation,0,1,"Step-by-Step Reasoning:
+1. **Title**: The title ""As a Sovrin Foundation"" is incomplete and does not clearly describe the issue.
+2. **Description**:
+   - It mentions testing and checking nodes for proper configuration and participation in consensus.
+   - Specifies requirements for each node (hardware, configuration, networking).
+   - Mentions that stewards need to have correct configurations.
+3. **Acceptance Criteria**: 
+   - Lists specific checks needed for every node and steward: hardware, NICs configuration, firewall settings, BLS keys, and participation in consensus.
+
+Despite the acceptance criteria being detailed, there are several missing elements:
+- No clear steps to reproduce or verify the issue.
+- Missing environment details (e.g., which version of software is used).
+- Lack of expected vs actual behavior description.
+- The title does not provide a clear context for the issue.
+
+Final Answer: Yes",5774a46fc97d64b8,qwen2.5:14b,0,2026-06-17T17:27:23.651134,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206478,The pool state should be updated after any node BLS key changing,0,1,"Step-by-Step Reasoning:
+1. **Title**: The title ""The pool state should be updated after any node BLS key changing"" is clear about the issue but lacks detail.
+2. **Description**:
+   - **Problem Description**: Describes a scenario where the pool state is not updated when a node's BLS key changes, leading to issues with verifying transactions signed by old keys.
+   - **Expected Behavior**: The description suggests that the pool state should be updated immediately after any change in node BLS keys.
+   - **Reproduction Steps**: While it describes scenarios and their outcomes, it does not provide explicit steps to reproduce the issue.
+   - **Acceptance Criteria**: There is no clear acceptance criteria mentioned for what constitutes a solution or how success will be measured.
+   - **Affected Components**: The affected components (pool state, node BLS keys) are implied but not explicitly stated.
+   - **Environment Details**: No specific environment details are provided.
+
+Given the lack of explicit reproduction steps and acceptance criteria, this issue is missing essential information to fully understand and address it effectively.
+
+Final Answer: Yes",e09b4a1a2a0ae60b,qwen2.5:14b,0,2026-06-17T17:27:28.713522,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207005,"Nodes not receiving new transaction if its """"View"""" list is different from other nodes in the pool",0,-1,"Step-by-Step Reasoning:
+
+1. **Title and Description Analysis**:
+   - The title mentions a specific issue related to nodes not receiving new transactions if their ""View"" list is different from other nodes in the pool.
+   - The description provides some context about load testing, adding trust anchors, observing ledger counts, and identifying discrepancies between Node1 and other nodes.
+
+2. **Reproduction Steps**:
+   - The user mentions running `add_key.py` to add 200 trust anchors and then checking ledger counts on different nodes.
+   - They also mention running `load_test.py` to send new transactions and observing the discrepancy in ledger counts between Node1 and other nodes.
+
+3. **Expected vs Actual Behaviour**:
+   - Expected: All nodes should process new transactions uniformly after adding trust anchors and sending new transactions.
+   - Actual: Only Nodes 2-10 processed new transactions, while Node1 did not receive any new transactions until it was restarted.
+
+4. **Environment Details**:
+   - The description mentions running scripts (`add_key.py`, `load_test.py`) and observing ledger counts on different nodes.
+   - It also provides log file details showing the ""primary is"" and ""selected primary"" configurations for each node, indicating a",bb5973d995ede64a,qwen2.5:14b,0,2026-06-17T17:27:34.204103,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205432,Auto trigger CD pipeline for release-* branches,0,0,"Step-by-Step Reasoning:
+1. The title of the issue is clear and specific to auto-triggering CD pipelines for release-* branches.
+2. The description provides context about why automatic triggering is suppressed currently due to potential issues with service commits during the pipeline execution.
+3. It outlines a problem scenario where new push ""service"" commits trigger additional builds, which can cause unnecessary pipeline runs.
+4. The issue describes two options for addressing this:
+   - Configuring Jenkins plugins to skip certain types of commits (e.g., not tagged and not from bot user).
+   - Allowing triggering but turning off GitHub notifications and aborting builds under specific conditions.
+
+However, the description lacks several critical pieces of information that would make it a complete issue report:
+
+- **Acceptance Criteria**: There are no clear acceptance criteria defined for what success looks like.
+- **Steps to Reproduce**: While there is an explanation of the problem scenario, there are no explicit steps provided to reproduce the issue or test potential solutions.
+- **Environment Details**: No specific environment details (e.g., Jenkins version, CD pipeline configuration) are mentioned that would help in understanding and reproducing the issue.
+- **Affected Components**: The description does not specify which components of the system are affected by this issue.",743d150e47be27ef,qwen2.5:14b,0,2026-06-17T17:27:39.675718,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207212,Node memory leak,0,1,"Reasoning:
+- The issue title is ""Node memory leak"".
+- Description: It mentions that the master repo was used and a specific script (`load_test.py`) was run on a local pool with 4 nodes for 90000 transactions.
+- Output of `ps` command shows continuous growth in memory usage by the node.
+
+However, the description is missing several critical pieces of information:
+1. **Steps to Reproduce**: While it mentions running `load_test.py`, there are no detailed steps provided on how exactly this test was executed or what parameters were used.
+2. **Expected vs Actual Behaviour**: The issue does not specify what the expected memory usage should be and how it differs from the actual observed behavior.
+3. **Acceptance Criteria**: There is no mention of criteria that would define when a fix for this issue would be considered complete.
+4. **Affected Components**: While nodes are mentioned, there's no detail on which specific components or modules within the node are causing the memory leak.
+5. **Environment Details**: The description lacks information about the environment setup (e.g., OS version, Python version, Node configuration).
+
+Given these missing details, it is not possible to fully understand and address this issue effectively.
+
+Final Answer: Yes",f8e6c338e8e82c3d,qwen2.5:14b,0,2026-06-17T17:27:45.050541,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206218,Node is restarted because of Out of memory error,0,1,"Step-by-Step Reasoning:
+1. **Title and Description**: The title mentions ""Node is restarted because of Out of memory error,"" which gives a clear indication of the issue.
+2. **Reproduction Steps**: The description states that the issue occurs during load testing with 25 nodes, but it does not provide specific steps to reproduce the problem consistently.
+3. **Expected vs Actual Behaviour**: It mentions that some nodes (specifically 3 or 4) are being restarted due to an out-of-memory error, which is the actual observed behavior. However, there's no clear expected behavior described.
+4. **Acceptance Criteria**: There are no acceptance criteria mentioned for resolving this issue.
+5. **Affected Components**: The affected component seems to be nodes in a pool under load testing conditions, but it does not specify if it’s related to specific software or hardware components.
+6. **Environment Details**: While the description mentions that the issue happens during load testing with 25 nodes, there is no detailed information about the environment setup (e.g., OS version, node configuration, memory limits).
+
+Given these points, while some basic details are provided, essential elements such as clear reproduction steps and acceptance criteria are missing.
+
+Final Answer: Yes",3636a8f0d63719c1,qwen2.5:14b,0,2026-06-17T17:27:50.314694,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206980,A primary may not be able to send checkpoints after re-start,0,1,"Step-by-step reasoning:
+
+1. **Title**: The title ""A primary may not be able to send checkpoints after re-start"" provides a clear issue statement but lacks detail.
+2. **Description**:
+   - **Reproduction Steps**: Provides steps: Have 3 nodes, stop the Primary, restart the Primary without changing view due to insufficient InstanceChange for consensus, and start sending transactions.
+   - **Expected vs Actual Behaviour**: The description mentions that the re-started Primary can send transactions but may have issues with checkpoint logic because it lost checkpoints.
+   - **Affected Components**: Mentions nodes, primary, and checkpoint logic.
+   - **Environment Details**: Specifies a scenario involving 3 nodes and consensus view changes.
+   - **Acceptance Criteria**: Not explicitly stated.
+
+However, the description is somewhat lacking in clarity regarding:
+- Specific expected behavior for checkpoints after re-starting the Primary.
+- Clear acceptance criteria to validate if the issue is resolved or not.
+- Detailed environment setup beyond mentioning 3 nodes (e.g., software version, network conditions).
+
+Given these points, while there are some details provided, they fall short of being comprehensive enough to fully understand and reproduce the issue without additional context.
+
+Final Answer: Yes",bbf2c0565559316b,qwen2.5:14b,0,2026-06-17T17:27:55.592989,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206016,Upgrade failed on pool from 1.3.62 to 1.4.66,0,0,"Step-by-Step Reasoning:
+
+1. **Title and Description**: The title ""Upgrade failed on pool from 1.3.62 to 1.4.66"" is clear about the issue being an upgrade failure.
+   
+2. **Steps to Reproduce**:
+   - Upgraded nodes from version 1.3.57 to 1.3.62 successfully.
+   - Attempted to upgrade from 1.3.62 to 1.4.66 on a specific date and time (noon for sending the transaction, 1:30pm for scheduling).
+   - Checked nodes the next day and found partial success with some nodes upgraded while others failed.
+
+3. **Expected vs Actual Behaviour**:
+   - Expected all nodes to upgrade successfully.
+   - Actual result was that only three out of four nodes were upgraded; one node did not attempt an upgrade, and there are no logs indicating any activity on the other non-upgraded nodes.
+
+4. **Acceptance Criteria**: Not explicitly stated but implied by the expected behavior (all nodes should be upgraded).
+
+5. **Affected Components**:
+   - Nodes running the indy-node service.
+   - AWS infrastructure where the nodes are hosted.
+
+6. **Environment",d967e56a51cec38f,qwen2.5:14b,0,2026-06-17T17:28:01.176356,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205350,Use more trusted docker image for system tests client docker container,0,1,"Step-by-Step Reasoning:
+1. The issue title and description are about evaluating the current docker image used for system tests and considering alternatives.
+2. It mentions that the current base image is [https://hub.docker.com/r/teracy/ubuntu/tags] but questions its safety for build pipelines.
+3. There are three options proposed: continue using it, switch to another more trusted base image, or create a custom image based on ubuntu:16.04.
+4. The description provides related links that could be useful in making the decision about which docker image to use.
+
+However:
+- Missing: specific acceptance criteria for choosing an alternative image
+- Missing: detailed steps to reproduce any issues with the current image (if there are any)
+- Missing: expected behavior after implementing a new or custom image
+
+While the issue provides context and potential solutions, it lacks clear acceptance criteria and reproduction steps. This makes it difficult to fully understand what needs to be done and how success will be measured.
+
+Final Answer: Yes",dd96701227ad65f8,qwen2.5:14b,0,2026-06-17T17:28:05.848460,project_03,title_desc,incompleteness,few_shot_cot

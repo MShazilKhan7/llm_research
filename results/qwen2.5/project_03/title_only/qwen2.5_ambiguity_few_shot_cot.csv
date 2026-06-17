@@ -1,0 +1,645 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-207056,Build badges in several github repos have stopped working,0,1,"- The title mentions ""build badges,"" which is a specific feature but does not clarify what aspect of the build badges has failed.
+- It states that these badges have ""stopped working"" without specifying why or under what conditions this failure occurs.
+- The phrase ""several github repos"" indicates multiple repositories are affected, but it doesn't specify which ones or how many, making the scope unclear.
+- There is no mention of error messages, logs, or any other diagnostic information that would help pinpoint the issue.
+- Given these points, the title lacks clear context and could be interpreted in various ways regarding what exactly has stopped working and why.
+
+Final Answer: Yes",08391d8f1f7a471b,qwen2.5:14b,0,2026-06-17T16:35:16.229961,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206571,Indy-sdk integration,0,1,"- The title ""Indy-sdk integration"" does not specify what exactly needs to be integrated or with which system.
+- It lacks context about the current state and desired outcome of the integration process.
+- There is no mention of specific components, modules, or functionalities involved in this integration task.
+- Without additional details, it's unclear whether this refers to a new feature addition, bug fixing, performance optimization, etc., making its scope ambiguous.
+- The title does not provide enough information for stakeholders to understand the issue’s impact and importance.
+
+Final Answer: Yes",44b940282bd2798b,qwen2.5:14b,0,2026-06-17T16:35:19.076134,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205754,Assist EV QA,0,1,"- The title ""Assist EV QA"" lacks specificity about what exactly needs to be assisted or improved.
+- It does not specify which aspect of EV (Electric Vehicle) Quality Assurance requires assistance.
+- There is no clear context provided regarding the nature of the problem or task.
+- The scope of the issue is unclear; it could mean different things to different people.
+- Without additional details, this title can be interpreted in multiple ways.
+
+Final Answer: Yes",16b0327b071ddb55,qwen2.5:14b,0,2026-06-17T16:35:21.468994,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206786,I should be able to load a .sovrin file from a URL directly into the CLI,0,1,"- The title specifies an action (""load"") and a specific type of file ("".sovrin"").
+- It mentions where this should happen (""from a URL directly into the CLI""), providing context.
+- However, it does not specify what ""I"" refers to or provide any technical details about how this loading process should work.
+- The title lacks clarity on whether there is an existing issue preventing this action from happening or if it's suggesting new functionality.
+- Given these points, while some aspects are clear, the overall intent and scope of the requirement remain somewhat unclear.
+
+Final Answer: Yes",385911a50ee4f20f,qwen2.5:14b,0,2026-06-17T16:35:24.339634,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206184,Configurations should contain certain version of pip,0,1,"- The title mentions ""configurations,"" but it does not specify which configurations or where they are located.
+- It states that these configurations ""should contain"" a specific version of pip, but the exact version number is missing.
+- There's no context provided about why this version of pip is necessary or what problems arise from having an incorrect version.
+- The title could be interpreted in multiple ways: it might refer to development environment setup, deployment scripts, or configuration files for a service.
+- Given these points, the issue lacks clear scope and specific details.
+
+Final Answer: Yes",001e59eea05575fb,qwen2.5:14b,0,2026-06-17T16:35:27.129759,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205916,read_ledger tool is not able to read the sovrin plugin ledger,0,1,"- The title specifies a particular tool (""read_ledger"") and its failure to perform an expected function.
+- It mentions a specific context or component (""sovrin plugin ledger""), which provides clear scope for the issue.
+- However, it does not specify what exactly is failing (e.g., connection error, permission issues) or under what conditions this problem occurs.
+- The title lacks details about the environment setup and steps to reproduce the issue, making it harder to diagnose without further information.
+- Despite some clarity on the tool and component involved, the lack of specific failure details makes the issue somewhat ambiguous.
+
+Final Answer: Yes",17cf37fde2c661fb,qwen2.5:14b,0,2026-06-17T16:35:30.079504,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206000,AttributeError: 'NoneType' object has no attribute 'request' during load,0,1,"- The title mentions a specific error type: `AttributeError`.
+- It specifies that the error occurs with a `'NoneType'` object.
+- The context of the issue is provided: it happens ""during load"".
+- However, the title does not specify which file or module this occurred in.
+- Without knowing the exact location and possibly more details about what was being loaded, there's some ambiguity regarding where to look for the problem.
+
+Final Answer: Yes",f184b6995b3dc431,qwen2.5:14b,0,2026-06-17T16:35:32.497747,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207179,Make sure Nodes upgrade eagerly,1,1,"- The title ""Make sure Nodes upgrade eagerly"" uses vague language regarding what constitutes an eager upgrade and under what conditions.
+- It lacks clear context about which nodes are involved or the specific environment in which this should occur.
+- There is no clear scope defined for how to measure if the upgrade is happening eagerly enough.
+- The phrase can be interpreted in multiple ways, such as whether it means frequent upgrades, immediate response to new versions, or some other criteria.
+- Given these points, the title does not provide sufficient clarity and specificity.
+
+Final Answer: Yes",1dadddc7c4198d48,qwen2.5:14b,0,2026-06-17T16:35:35.255222,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207175,Testing: do a lot of concurrent writes and reads to same values,1,1,"- The title mentions ""do a lot of concurrent writes and reads,"" which is vague as it does not specify how many operations or the exact conditions under which these operations should occur.
+- It refers to ""same values"" without clarifying what specific data or variables are involved, making it unclear about the scope and context.
+- There's no indication of expected outcomes or criteria for success in this testing scenario.
+- The phrase ""do a lot"" is subjective and can be interpreted differently by various individuals.
+- Given these points, the title lacks specificity and clear instructions, leading to potential misunderstandings.
+
+Final Answer: Yes",c86837d7cd3df03f,qwen2.5:14b,0,2026-06-17T16:35:38.222317,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205301,Responses to client validator info requests very slow on a StagingNet node,0,1,"- The title mentions ""Responses to client validator info requests,"" which specifies the type of request being made.
+- It states that these responses are ""very slow,"" indicating a performance issue.
+- However, it does not specify what constitutes ""slow"" or provide any baseline for comparison.
+- The context is given as ""on a StagingNet node,"" but this could be ambiguous if there are multiple nodes in the same network and it's unclear which specific node is affected.
+- While the title provides some clarity on the issue, the lack of specific performance metrics and potential ambiguity about which exact node is experiencing issues makes it somewhat vague.
+
+Final Answer: Yes",fa9dbb7f2f31cd66,qwen2.5:14b,0,2026-06-17T16:35:41.326191,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206412,Create Entity Relationship Diagram of current ledger objects including primary and secondary keys used to link each object together.,0,0,"- The title specifies a clear task: creating an entity relationship diagram.
+- It mentions the scope clearly: ""current ledger objects.""
+- It details what information is needed for the diagram: primary and secondary keys used to link each object together.
+- There are no vague terms or ambiguous references in the title.
+- All necessary components and their relationships are specified, leaving little room for misinterpretation.
+
+Final Answer: No",e263b50bfd4d9d28,qwen2.5:14b,0,2026-06-17T16:35:43.511654,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206580,Explore: Can doing a ping in the Getting Started Tutorial delete the active wallet,0,1,"- The title starts with ""Explore:"", which suggests an exploratory or investigative nature rather than a clear problem statement.
+- It mentions ""doing a ping"" but does not specify what exactly is meant by ""ping"" in this context. Is it a network operation, a function call within the application, or something else?
+- The phrase ""Getting Started Tutorial"" provides some context but doesn't clarify whether the issue occurs during the tutorial itself or if the tutorial describes an unexpected behavior.
+- It asks if performing a ping can delete the active wallet, which implies there might be unintended side effects from what is supposed to be a simple action. However, it does not specify under what conditions this happens or how frequently.
+- The overall title leaves room for multiple interpretations about what exactly needs investigation and whether it's an actual issue or just a hypothesis.
+
+Final Answer: Yes",4e534c68fb9fe41c,qwen2.5:14b,0,2026-06-17T16:35:47.298410,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206497,Unclear messages appear during reading transactions,0,1,"- The title mentions ""unclear messages,"" which is vague as it does not specify what kind of messages or under what circumstances they occur.
+- It lacks context about the system or component where these unclear messages appear.
+- There's no clear scope defined; it doesn't indicate whether this affects a specific feature, module, or the entire application.
+- The phrase ""during reading transactions"" is somewhat ambiguous without additional details on which transactions are involved and what constitutes ""reading.""
+- Overall, the title does not provide enough information to understand the exact nature of the issue or how to reproduce it.
+
+Final Answer: Yes",3cb1f8d55a299292,qwen2.5:14b,0,2026-06-17T16:35:50.241263,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205266,1.10.0 Release,0,1,"- The title ""1.10.0 Release"" does not specify what aspect of the release is being addressed or what action needs to be taken.
+- It lacks context about whether this refers to preparing for a release, documenting a release, or something else entirely.
+- There's no clear scope defined — it could mean anything from version tagging in source control to finalizing documentation and deployment steps.
+- The title does not provide any specific details that would help understand the nature of the issue or task at hand.
+- Given these points, the title is too vague and open-ended for someone to understand exactly what needs to be done.
+
+Final Answer: Yes",d3b7489d9d15e905,qwen2.5:14b,0,2026-06-17T16:35:53.429215,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206591,Incubation: Remove all non-Indy branding from indy-anoncreds repo,0,1,"- The title mentions ""Incubation,"" which could imply a phase or status but does not clearly define the scope of work.
+- It specifies to remove ""all non-Indy branding"" from the ""indy-anoncreds repo."" This is clear about what needs to be done and where, but it lacks context on why this action is necessary.
+- The term ""non-Indy branding"" could be ambiguous as it does not specify what exactly constitutes ""non-Indy branding.""
+- Without additional details, one might wonder if there are specific types of branding that should remain or if the task includes all non-Indy elements regardless of their nature.
+- While the title provides a clear action and location, its vagueness regarding the definition of ""non-Indy branding"" makes it ambiguous.
+
+Final Answer: Yes",a060d49ed0220287,qwen2.5:14b,0,2026-06-17T16:35:57.103310,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207055,Make the tests working using pure pytest,0,1,"- The title ""Make the tests working using pure pytest"" is somewhat vague because it does not specify which tests are involved or what issues they currently have.
+- It lacks clear context about why these specific tests need to be made to work with pytest and under what conditions.
+- The scope of the issue is unclear; it doesn't mention if this applies to all tests, a subset of them, or just one particular test case.
+- The phrase ""make the tests working"" could mean different things depending on who reads it — fixing failing tests, improving test coverage, or ensuring compatibility with pytest.
+- Given these points, the title does not provide enough clarity for someone to understand exactly what needs to be done without further information.
+
+Final Answer: Yes",8661040d2786e9cf,qwen2.5:14b,0,2026-06-17T16:36:00.463086,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206198,The node blacklisted the remaining nodes during network problems,0,1,"- The title mentions ""node blacklisting"" but does not specify which node or what criteria led to this action.
+- It refers to ""network problems,"" which is a vague term that could encompass various issues such as connectivity loss, packet loss, latency spikes, etc., without providing specifics.
+- There's no indication of the scope or impact of the issue; it’s unclear if this affects all nodes in the network or just specific ones.
+- The phrase ""remaining nodes"" lacks context — it is not clear which nodes are remaining relative to what situation or initial state.
+- Given these points, the title does not provide enough clarity for a developer to understand the exact nature of the problem without further investigation.
+
+Final Answer: Yes",f27f8da00bf20458,qwen2.5:14b,0,2026-06-17T16:36:03.805703,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205670,Tests using the sdk fail on the master branch,0,1,"- The title mentions ""Tests using the sdk"" but does not specify which tests or what specific SDK is being referred to.
+- It states that these tests ""fail,"" but it doesn't clarify why they fail or under what conditions.
+- The phrase ""on the master branch"" provides some context, but without knowing more about the project's structure and typical workflow, this could be ambiguous for someone unfamiliar with the system.
+- There is no indication of which part of the SDK might be causing issues or if it’s a general problem across all tests using the SDK.
+- The title lacks specific details that would help in understanding the exact nature of the issue or how to reproduce and fix it.
+
+Final Answer: Yes",05de1e1c3d321f22,qwen2.5:14b,0,2026-06-17T16:36:06.982364,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205185,Write a script to upgrade audit ledger for the new state recovered from ledger,0,1,"- The title mentions ""write a script,"" which is clear about the task but does not specify what kind of script or its purpose beyond upgrading an audit ledger.
+- It refers to ""upgrade audit ledger"" without specifying how it should be upgraded or what changes are required, making this part vague.
+- The phrase ""new state recovered from ledger"" introduces ambiguity because it's unclear what constitutes a ""new state,"" and the process of recovery is not detailed enough for someone to understand fully.
+- There’s no mention of specific components involved in the upgrade process or any context about when or how often this script should be run, leading to potential misinterpretations.
+- Overall, while the title gives some direction, it lacks sufficient detail to clearly define the scope and requirements of the task.
+
+Final Answer: Yes",6969136bd1180514,qwen2.5:14b,0,2026-06-17T16:36:10.626831,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205803,Find out maximal pool performance numbers for mixed mode (read and write),0,1,"- The title mentions ""maximal pool performance,"" but it does not specify which pool or what criteria are used to measure performance.
+- It refers to a ""mixed mode"" involving both read and write operations, but the context of these operations is unclear. For example, in what system or application?
+- There's no indication of how ""performance numbers"" should be determined or what metrics will be used (e.g., latency, throughput).
+- The scope of the issue is vague; it does not specify which part of the software needs improvement or if this is a general investigation.
+- Given these points, the title lacks clear context and specific details necessary to understand the exact requirements.
+
+Final Answer: Yes",092675432fb1683c,qwen2.5:14b,0,2026-06-17T16:36:13.866825,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206213,Read-ledger without storage copy in case of RocksDB (RocksDB read-only mode support),0,1,"- The title mentions ""Read-ledger without storage copy,"" which is somewhat unclear. It's not immediately obvious what a ""read-ledger"" is or why it would be significant to do this without a storage copy.
+- The phrase ""in case of RocksDB"" provides some context but does not clarify the meaning of ""read-ledger.""
+- The title includes ""RocksDB read-only mode support,"" which suggests that the issue might be about enabling a specific feature in RocksDB, but it's unclear how this relates to the rest of the title.
+- There is no clear scope or expected outcome described. It’s not evident what problem needs solving or what behavior should change as a result.
+- The language used is somewhat vague and could be interpreted differently by different readers.
+
+Final Answer: Yes",430ab1cce4b4c821,qwen2.5:14b,0,2026-06-17T16:36:17.456765,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205553,Node that does not upgrade spams the config ledger,0,1,"- The title mentions a ""Node"" but does not specify which node or type of node.
+- It states that this node ""does not upgrade,"" but it is unclear what version or update is being referred to.
+- The phrase ""spams the config ledger"" implies excessive logging or writing, but it lacks clarity on how frequently and under what conditions this occurs.
+- There's no context provided about why an un-upgraded node would spam the configuration ledger or what the expected behavior should be.
+- Overall, the title does not provide enough specific details to understand the exact nature of the issue.
+
+Final Answer: Yes",32340eb3c4c1b1d9,qwen2.5:14b,0,2026-06-17T16:36:20.448177,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206193,[QA] Script for filling the ledger doesn't work,1,1,"- The title mentions a script that is used to fill a ledger but does not specify what exactly is wrong with it.
+- It lacks context about which part of the script or ledger is problematic and under what conditions the issue occurs.
+- There's no clear scope defined; for example, whether this affects all ledgers or specific ones.
+- The phrase ""doesn't work"" is vague and can be interpreted in multiple ways (e.g., crashes, hangs, produces incorrect results).
+- Given these points, the title does not provide enough detail to understand the issue clearly.
+
+Final Answer: Yes",e378d11d9a0ca81a,qwen2.5:14b,0,2026-06-17T16:36:23.310488,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207334,Send NYM command is not executed on Shakedown Pool 1,0,1,"- The title specifies a particular action (""Send NYM command"") and indicates that it's not being executed.
+- It mentions a specific environment or context (""Shakedown Pool 1""), which provides some clarity on where the issue occurs.
+- However, ""NYM"" is an acronym that might be unclear to someone unfamiliar with the system, potentially leading to ambiguity about what exactly the command does and why its execution matters.
+- The title doesn't provide details about the expected behavior or any conditions under which this problem arises, leaving room for interpretation.
+- While it's more specific than some examples given, the use of an acronym without explanation can introduce ambiguity.
+
+Final Answer: Yes",a4ef0a2fd346a83f,qwen2.5:14b,0,2026-06-17T16:36:26.430743,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206998,roll back default where zmq high water mark = 0,0,1,"- The title mentions ""roll back default,"" which is vague and does not specify what needs to be rolled back or why.
+- It references ""zmq"" but does not clarify if it's ZeroMQ or another similar technology.
+- The phrase ""high water mark = 0"" implies a specific configuration setting, but the context of this value being problematic or needing adjustment is unclear.
+- There’s no clear scope or expected outcome described in the title; it doesn’t specify what should happen after rolling back to default settings.
+- Overall, the title lacks specificity and could be interpreted in multiple ways without additional information.
+
+Final Answer: Yes",7d81cde44d66d8e6,qwen2.5:14b,0,2026-06-17T16:36:29.447616,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206222,Errors with configs during installation,1,1,"- The title mentions ""errors,"" but it does not specify what kind of errors or where they occur within the configuration process.
+- It refers to ""configs"" without specifying which configurations are problematic or in what context these configurations are being applied.
+- The term ""during installation"" is vague and could refer to any part of the installation process, making it unclear at what stage the issue occurs.
+- There's no indication of specific symptoms or expected behavior, leaving room for multiple interpretations about the nature of the problem.
+- Given the lack of detail regarding the type of errors, configuration specifics, and exact timing during installation, this title is ambiguous.
+
+Final Answer: Yes",102519988029f3ba,qwen2.5:14b,0,2026-06-17T16:36:32.569735,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207211,Node crashes if out of disk space,0,1,"- The title specifies a clear condition (""out of disk space"").
+- It describes a specific outcome (""Node crashes"").
+- However, it does not specify which node or in what context the issue occurs.
+- Without additional details about the environment or system specifics, there is some ambiguity regarding where and how this problem manifests.
+- Despite the clarity on the cause and effect relationship, the lack of contextual information makes it somewhat ambiguous.
+
+Final Answer: Yes",089ebd3415b5ba8a,qwen2.5:14b,0,2026-06-17T16:36:34.921935,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205565,Unable to choose volume type using pool automation scripts,0,1,"- The title mentions ""volume type,"" but it does not specify which types of volumes are involved or what criteria should be used for choosing them.
+- It refers to ""pool automation scripts"" without specifying the name or version of these scripts, making it unclear which specific script is causing issues.
+- There's no indication of where in the process this issue occurs (e.g., during creation, modification, deletion) or under what conditions.
+- The phrase ""unable to choose"" does not provide enough context about why selection is impossible — whether due to a UI limitation, API restrictions, or other reasons.
+- Overall, while it hints at an automation problem related to volume types, the lack of specific details makes it difficult to understand the exact nature and scope of the issue.
+
+Final Answer: Yes",204e1a10f00b4c6f,qwen2.5:14b,0,2026-06-17T16:36:38.434876,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205746,1.6.74 Release,0,1,"- The title ""1.6.74 Release"" does not specify what aspect of the release is being addressed or what issues are related to this version.
+- It lacks context about whether there were specific bugs fixed, features added, or performance improvements made in this release.
+- Without additional information, it's unclear if the issue pertains to a problem during the release process itself or refers to user-reported issues after the release.
+- The scope of the title is too broad and does not provide enough detail for someone to understand what needs to be addressed or verified.
+- Given these points, the title fails to provide clear direction on how to proceed with resolving any potential issues related to this release.
+
+Final Answer: Yes",4695c9d0b91f643f,qwen2.5:14b,0,2026-06-17T16:36:41.725301,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207177,"Ledgers """"stall"""" gracefully",1,1,"- The term ""stall"" is vague; it could mean that the ledgers stop functioning entirely or slow down significantly.
+- There's no context provided about what kind of ledgers are being referred to (financial, technical, etc.).
+- It’s unclear under which conditions this stalling occurs and how it should be handled gracefully.
+- The scope of the issue is not clear; it does not specify if this applies to all ledgers or a specific type.
+- ""Gracefully"" can mean different things depending on the context (e.g., user experience, system stability).
+
+Final Answer: Yes",5e2f3155e9c98078,qwen2.5:14b,0,2026-06-17T16:36:44.705887,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207246,Sovrin-Client: Show command cannot show files with space in the name,0,1,"- The title specifies a particular client (""Sovrin-Client"") and a specific command (""Show"").
+- It clearly describes an issue related to displaying files that contain spaces in their names.
+- However, it does not specify the expected behavior or what happens when trying to show such files (e.g., error message, incorrect display).
+- The scope is somewhat clear but lacks detail on how the problem manifests and what should be fixed.
+- Despite some clarity, there's still room for interpretation regarding the exact nature of the issue beyond just mentioning spaces in filenames.
+
+Final Answer: Yes",1dc465fe0bb20632,qwen2.5:14b,0,2026-06-17T16:36:47.450180,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207346,Unexpected behavior of the testSendNodeSucceedsIfServicesIsMissed test,0,1,"- The title mentions ""unexpected behavior,"" which is a vague term and does not specify what exactly is happening or how it differs from expected behavior.
+- It refers to a specific test case (""testSendNodeSucceedsIfServicesIsMissed""), but the description of the unexpected behavior is lacking.
+- The phrase ""if services is missed"" could be interpreted in multiple ways — does it mean missing service calls, missing configuration files, or something else?
+- Without additional context about what constitutes expected behavior and what specific aspect of the test case is failing, the issue remains unclear.
+- Given these points, the title lacks clarity regarding the nature of the unexpected behavior and its scope.
+
+Final Answer: Yes",aa79a8fd7a84f99b,qwen2.5:14b,0,2026-06-17T16:36:50.708077,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207079,Node with malformed ldb files has inconsistent behavior,1,1,"- The title mentions ""Node,"" but it does not specify which node or in what context this node operates.
+- It refers to ""malformed ldb files"" without providing details about the nature of the malformation or how it affects behavior.
+- The term ""inconsistent behavior"" is vague and could mean different things depending on the context, such as erratic performance, unexpected outputs, or other issues.
+- There's no clear scope defined for what constitutes ""inconsistent behavior,"" making it difficult to understand exactly what needs fixing or improving.
+- Given these points, the title lacks specificity and clarity about the exact nature of the problem and its impact.
+
+Final Answer: Yes",29d03bf485d6a573,qwen2.5:14b,0,2026-06-17T16:36:53.799913,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205870,Node can't catch up large ledger,0,1,"- The term ""large ledger"" is somewhat vague; it does not specify what constitutes a ""large"" ledger or how this differs from other ledgers.
+- The phrase ""can't catch up"" implies there's an issue with synchronization but doesn’t clarify the exact nature of the problem (e.g., timing issues, data corruption).
+- It’s unclear which node is experiencing the issue and whether it affects all nodes or just specific ones.
+- There is no context provided about what happens when a node can't catch up to a large ledger; for example, does it crash, slow down, or miss transactions?
+- The title lacks technical details that would help in diagnosing the problem more precisely.
+
+Final Answer: Yes",a6c8c567523cd1fa,qwen2.5:14b,0,2026-06-17T16:36:57.110727,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207163,F-value tests: How many nodes can I lose before the network stops? Is it 2f+1? Is it n-f?,0,1,"- The title uses a question format which implies uncertainty and seeks clarification.
+- It mentions ""F-value tests"" but does not define what these are or their context within the software.
+- The phrase ""How many nodes can I lose before the network stops?"" is vague; it doesn't specify under what conditions, in what environment, or with reference to what criteria.
+- The title includes a mathematical expression (""2f+1"") and another one (""n-f""), but does not explain their relevance or how they relate to the software's behavior.
+- Overall, the issue lacks clear context and scope, making it difficult to understand without additional information.
+
+Final Answer: Yes",2ca86ab740e9f798,qwen2.5:14b,0,2026-06-17T16:37:00.209095,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205602,Write and Read request flow,0,1,"- The title ""Write and Read request flow"" does not specify which part of the system or application is involved.
+- It lacks context about what exactly needs to be written or read and under what conditions.
+- There's no clear scope defined; it could refer to database operations, API requests, file I/O, etc.
+- The title can be interpreted in multiple ways without additional information.
+- Given these points, the issue title is ambiguous as it does not provide enough detail for a developer to understand the specific requirements or context.
+
+Final Answer: Yes",5101af6e9dba8b2b,qwen2.5:14b,0,2026-06-17T16:37:02.961022,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207255,Sovrin-Client: Show file command of not much use,0,1,"- The title mentions ""Sovrin-Client,"" which provides some context about the software component.
+- However, it uses vague language such as ""not much use"" without specifying why or in what scenarios the command is not useful.
+- There's no clear scope or specific conditions under which this issue occurs.
+- The phrase ""Show file command"" lacks detail; it doesn't specify which exact command or functionality within the client is being referred to.
+- Overall, the title does not provide enough information for a developer to understand the nature of the problem clearly.
+
+Final Answer: Yes",992d085a6e8c1871,qwen2.5:14b,0,2026-06-17T16:37:05.826356,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205400,Update docs for Transaction Author agreement,0,1,"- The title mentions ""docs,"" but it does not specify which documentation needs to be updated or where these documents are located.
+- It refers to a ""Transaction Author agreement,"" but the context of what this agreement entails and how it relates to the documentation is unclear.
+- There's no indication of what changes need to be made in the documentation, such as adding new information, correcting errors, or updating existing content.
+- The scope of the update (e.g., specific sections, pages, or files) is not defined, making it difficult to understand exactly what needs to be done.
+- Given these points, the title lacks clear context and scope, leading to multiple possible interpretations.
+
+Final Answer: Yes",822769ee0e5bf36b,qwen2.5:14b,0,2026-06-17T16:37:09.063105,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205519,Incorrect pool upgrade txn validation,0,1,"- The term ""incorrect"" is used but does not specify what exactly is incorrect or how it differs from expected behavior.
+- ""pool upgrade txn"" lacks context; it's unclear which specific pool and transaction are being referred to.
+- There’s no indication of the scope or environment where this issue occurs (e.g., development, production).
+- The title doesn't provide enough information about what constitutes a correct validation process for comparison.
+- Overall, the title does not give clear details that would allow someone to understand the specific nature and context of the problem.
+
+Final Answer: Yes",9bd2a96a6b832993,qwen2.5:14b,0,2026-06-17T16:37:11.872736,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205808,Performance of monitor should be improved,1,1,"- The title mentions ""performance,"" which is a broad term that could refer to various aspects such as speed, efficiency, or responsiveness.
+- It specifies ""monitor"" but does not clarify if it refers to hardware (like a display monitor) or software monitoring tools.
+- There are no specific metrics or targets mentioned for what constitutes improved performance.
+- The scope of improvement is unclear; it doesn't specify which features or functionalities need enhancement.
+- Without additional context, the title can be interpreted in multiple ways regarding what needs to be done and how.
+
+Final Answer: Yes",dfb7f5400240ed98,qwen2.5:14b,0,2026-06-17T16:37:14.624930,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205232,PBFT View Change Debug: Part 2,0,1,"- The title ""PBFT View Change Debug: Part 2"" refers to a specific context involving PBFT (Practical Byzantine Fault Tolerance) and view change debugging.
+- However, the term ""Debug"" is vague as it does not specify what exactly needs to be debugged or what issues are being addressed in this part of the debugging process.
+- The phrase ""Part 2"" implies there was a previous part but does not provide any context about what was covered before or how this part relates to earlier work.
+- Without additional information, one cannot determine the exact scope or specific actions required for this debug task.
+- Given these points, the title is ambiguous as it lacks clear details and context.
+
+Final Answer: Yes",b665aab72e7a6519,qwen2.5:14b,0,2026-06-17T16:37:18.054073,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206367,Knowledge transfer on Indy build processes,0,1,"- The title ""Knowledge transfer on Indy build processes"" lacks specificity about what exactly needs to be transferred or improved.
+- It does not specify which aspects of the build process are in question or why knowledge transfer is necessary.
+- There's no clear scope defined; it could mean training, documentation creation, or something else entirely.
+- The term ""Indy build processes"" might be specific within a certain context but without additional details, its meaning can vary widely.
+- Given these points, the title does not provide enough clarity to understand the exact nature of the issue.
+
+Final Answer: Yes",e9bf559ed609afa3,qwen2.5:14b,0,2026-06-17T16:37:20.915050,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205283,Support ubuntu 20.04 in system tests,0,1,"- The title specifies a clear action (""Support"") and a specific operating system version (""ubuntu 20.04"").
+- However, it does not specify the context or scope of what ""support"" entails.
+- It is unclear whether this means adding ubuntu 20.04 to existing tests, creating new tests specifically for this OS version, or ensuring compatibility with an already supported feature set.
+- The title lacks details about which components or functionalities need to be tested and how the support will be verified.
+- Given these ambiguities, the issue title does not provide enough clarity on what needs to be done.
+
+Final Answer: Yes",8b149dd250fdaa78,qwen2.5:14b,0,2026-06-17T16:37:23.959070,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206407,generate_indy_pool_transactions can be run only by indy user,0,1,"- The title specifies a function name ""generate_indy_pool_transactions"".
+- It states that this function can only be executed by an ""indy user"", which implies there are restrictions on who can run the command.
+- However, it does not clarify what constitutes an ""indy user"" or provide context about why such restrictions exist.
+- The title lacks details about potential error messages, expected behavior when a non-indy user tries to execute the function, or any broader system implications.
+- Given these points, while the title provides some information, it is still somewhat vague regarding the definition of an ""indy user"" and the consequences of violating this rule.
+
+Final Answer: Yes",b0d7305ec455c9a0,qwen2.5:14b,0,2026-06-17T16:37:27.102469,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206381,ATTRIB transaction with ENC and HASH doesn't work,0,1,"- The title mentions ""ATTRIB transaction,"" which is a technical term but does not specify what exactly is wrong or failing.
+- It includes conditions (""with ENC and HASH""), but it's unclear whether these are supposed to be part of the problem or just context for when the issue occurs.
+- There is no indication of expected behavior, error messages, or specific symptoms that would help diagnose the issue.
+- The title does not specify which component or module is involved in this transaction, making it difficult to pinpoint where the problem might lie.
+- Overall, the lack of clear details about what ""doesn't work"" means and under what conditions makes the issue ambiguous.
+
+Final Answer: Yes",403213a26eaf439b,qwen2.5:14b,0,2026-06-17T16:37:30.262409,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205817,Research performance of static validation against message schema,0,1,"- The title mentions ""Research performance,"" which is a broad term and does not specify what exactly needs to be researched or how.
+- It lacks clear context about the environment in which this research will take place (e.g., specific system, conditions).
+- The scope of the issue is unclear; it doesn't define what aspects of performance are being considered (e.g., speed, efficiency) and against what baseline.
+- ""Static validation"" could refer to various methods or tools, making it ambiguous without further details.
+- ""Message schema"" is mentioned but does not provide enough context about its nature or relevance in the research scope.
+
+Final Answer: Yes",861128093a1211da,qwen2.5:14b,0,2026-06-17T16:37:33.326518,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207214,The CLI initialization becomes too slow,0,1,"- The title mentions ""CLI initialization,"" which specifies a particular process but does not specify what aspect of it is problematic.
+- It states that the process has become ""too slow"" without defining what constitutes ""too slow.""
+- There's no context provided about when this issue started or under what conditions it occurs.
+- No specific metric or baseline performance data is mentioned to quantify ""too slow.""
+- The scope and expected outcome are unclear, as there’s no indication of the desired improvement level or target performance.
+
+Final Answer: Yes",0fd729c411948f76,qwen2.5:14b,0,2026-06-17T16:37:35.888057,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205760,POA: Delegate issuance to a processor,0,1,"- The title ""POA: Delegate issuance to a processor"" uses an acronym (POA) without specifying what it stands for.
+- It mentions ""issuance,"" but does not clarify what kind of issuance or in which context this is happening.
+- The term ""processor"" could refer to multiple things, such as a hardware component, software module, or even a person.
+- There's no clear scope or specific action item described beyond the vague directive to delegate something.
+- Given these points, the title lacks clarity and can be interpreted in several ways without additional context.
+
+Final Answer: Yes",5d3d5c0cd6f95139,qwen2.5:14b,0,2026-06-17T16:37:38.779309,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205269,Implement helper script for AWS pool operations with snapshots,0,1,"- The title mentions ""helper script,"" which is clear about what needs to be implemented.
+- It specifies that this script will be used for ""AWS pool operations,"" indicating the context and environment where it will operate.
+- However, the term ""pool operations"" can refer to various actions such as creating, deleting, or managing resource pools in AWS. This lack of specificity makes the scope unclear.
+- The title mentions ""snapshots,"" which narrows down the type of operation but does not specify what exactly needs to be done with snapshots (e.g., taking a snapshot, restoring from a snapshot).
+- Given that there is ambiguity regarding the exact operations and actions related to snapshots within pool management, the title lacks clarity.
+
+Final Answer: Yes",6008e02c3e2ac6db,qwen2.5:14b,0,2026-06-17T16:37:42.152975,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207178,An upgrade should be idempotent,0,1,"- The title ""An upgrade should be idempotent"" does not specify which software or system is being referred to.
+- It lacks context about what constitutes an 'upgrade' in this scenario — could it refer to a database migration, application deployment, or something else?
+- There's no mention of the scope or boundaries of the upgrade process that needs to be idempotent.
+- The title does not provide any specific conditions under which the upgrade should behave idempotently.
+- Given these points, there is ambiguity about what exactly needs to be addressed and how.
+
+Final Answer: Yes",7521a76a790f71d3,qwen2.5:14b,0,2026-06-17T16:37:44.934378,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205965,Ledger upgrade transaction should specify a package name,0,1,"- The title specifies that a ""Ledger upgrade transaction"" needs to include a ""package name"".
+- It is clear what component is being referred to (""Ledger upgrade transaction"").
+- However, it does not specify why the package name is necessary or under what conditions this requirement applies.
+- There's no context provided about how the absence of a package name affects functionality or user experience.
+- The scope and implications of adding a package name are unclear without further details.
+
+Final Answer: Yes",6ab5d4f17e044e9f,qwen2.5:14b,0,2026-06-17T16:37:47.425525,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207326,Prove the pool upgrade mechanism by performing a noticeable upgrade test,0,1,"- The title mentions ""prove"" but does not specify what exactly needs to be proven or how.
+- It refers to an ""upgrade mechanism,"" which is vague without specifying the technology or system involved.
+- The phrase ""performing a noticeable upgrade test"" lacks clarity on what constitutes a ""noticeable"" change and under what criteria it should be judged as such.
+- There's no clear scope or context provided for understanding the specific requirements of the upgrade test.
+- Overall, the title leaves too many questions unanswered and can be interpreted in multiple ways.
+
+Final Answer: Yes",b8bb2595f3c9ff64,qwen2.5:14b,0,2026-06-17T16:37:50.166353,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206117,Simple Timeout fixes of the current View Change protocol,0,1,"- The title mentions ""Simple Timeout fixes,"" which is vague and does not specify what exactly needs to be fixed or how.
+- It refers to a ""current View Change protocol"" without providing details about the specific issues within this protocol that need fixing.
+- There's no clear scope defined for what constitutes a ""simple fix.""
+- The term ""fixes"" can imply multiple changes, but it’s unclear if there is one issue or several related ones being addressed.
+- Overall, the title lacks specificity regarding which timeouts are involved and how they should be fixed.
+
+Final Answer: Yes",f13405b97e721783,qwen2.5:14b,0,2026-06-17T16:37:52.975231,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206655,As I Validator or Observer Node,0,1,"- The title ""As I Validator or Observer Node"" lacks a clear verb and action item. It is not clear what needs to be done.
+- There is no context provided about the system or environment in which this role operates.
+- The phrase can be interpreted in multiple ways: Is it asking for clarification on roles? Or is there an issue with being a Validator or Observer Node?
+- Without additional information, one cannot determine if this title refers to a problem, a question, or a task.
+- Given the lack of specificity and clarity, the title does not provide enough detail to understand what needs to be addressed.
+
+Final Answer: Yes",a9c493320993c959,qwen2.5:14b,0,2026-06-17T16:37:56.004506,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207231,eliminate runtime warnings that show during tests,0,1,"- The title mentions ""runtime warnings,"" which is a clear indication of what needs to be addressed.
+- However, it does not specify where these warnings occur or in which part of the code they are generated.
+- It also lacks details on what constitutes an acceptable state after eliminating the warnings (e.g., no warnings at all, specific types of warnings).
+- The phrase ""during tests"" is somewhat vague as it doesn't clarify if these are unit tests, integration tests, or other types of tests.
+- Overall, while the title points to a clear issue, it lacks specificity regarding scope and expected outcome.
+
+Final Answer: Yes",59bb35156c684de4,qwen2.5:14b,0,2026-06-17T16:37:58.985586,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206217,Clarify current permissible actions with DID's roles,0,1,"- The title mentions ""current permissible actions,"" which is somewhat vague without specifying what these actions are or in what context they apply.
+- It refers to ""DID's roles"" but does not clarify the scope of roles or how they relate to the permissible actions.
+- Without additional details, it’s unclear whether this pertains to a specific feature, module, or system-wide functionality.
+- The title lacks specificity regarding which aspects of DID roles need clarification and under what circumstances.
+- Given these points, the issue title is ambiguous as it does not provide enough context or detail for clear understanding.
+
+Final Answer: Yes",7a56cbeec56ede50,qwen2.5:14b,0,2026-06-17T16:38:01.924246,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205635,Enable PreViewChange Strategy,0,1,"- The title ""Enable PreViewChange Strategy"" lacks context about what ""PreViewChange Strategy"" refers to.
+- It is unclear whether this strategy affects a specific part of the software or multiple components.
+- There is no indication of when or under what conditions this strategy should be enabled.
+- Without additional details, it's impossible to determine if enabling this strategy will have any unintended consequences or interactions with other parts of the system.
+- The title does not specify expected outcomes or behaviors after enabling the strategy.
+
+Final Answer: Yes",419a074d10ad058e,qwen2.5:14b,0,2026-06-17T16:38:04.623396,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205719,Validator info tool should show windowed throughput statistics,0,1,"- The title mentions ""Validator info tool,"" which specifies a particular software component.
+- However, it does not specify what aspect of the tool needs improvement or what exactly is meant by ""windowed throughput.""
+- The term ""throughput"" could refer to various metrics depending on the context (e.g., number of validations per second).
+- Without additional details about the expected behavior and specific conditions under which this should be implemented, the scope remains unclear.
+- Given these points, while it specifies a component, the lack of clarity regarding what exactly needs to change or how makes the title ambiguous.
+
+Final Answer: Yes",d1015a4ceb4cbbff,qwen2.5:14b,0,2026-06-17T16:38:07.509905,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205358,indy-node upgrade problem - No such directory,0,1,"- The title mentions ""indy-node upgrade problem,"" which indicates a specific context related to upgrading an 'indy-node' component.
+- However, the phrase ""No such directory"" is vague and does not specify which directory or what action was being attempted when this error occurred.
+- Without knowing the exact path or the intended operation during the upgrade process, it's unclear how to reproduce or resolve the issue.
+- The title lacks clear context about where in the upgrade process the problem occurs or what steps were taken prior to encountering the ""No such directory"" message.
+- Given these points, the title is ambiguous as it does not provide enough information for a developer to understand and address the issue effectively.
+
+Final Answer: Yes",f79a2585e1191d15,qwen2.5:14b,0,2026-06-17T16:38:10.881822,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206471,Validator-info tool is not working with build 1.2.49,0,1,"- The title mentions a specific tool name (""Validator-info"").
+- It specifies that there's an issue with the tool in relation to a particular build version (""build 1.2.49"").
+- However, it does not specify what exactly is wrong or how the tool should be working.
+- Without knowing the expected behavior of ""Validator-info"" and what constitutes as ""not working,"" the scope remains unclear.
+- The title lacks details about error messages, symptoms, or conditions under which the problem occurs.
+
+Final Answer: Yes",42e8f2ed339ff16b,qwen2.5:14b,0,2026-06-17T16:38:13.518432,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207259,[send NYM] Add verkey and update verkey commands don't work,0,1,"- The title mentions ""Add verkey"" and ""update verkey,"" which are specific actions.
+- However, it does not specify what exactly is not working or in what context these commands fail.
+- There's no clear indication of the environment, system state, or expected behavior when performing these actions.
+- The phrase ""don't work"" is vague; it could mean various issues such as command syntax errors, server-side failures, or client-side issues.
+- Without more details about the failure modes and context, the title leaves room for multiple interpretations.
+
+Final Answer: Yes",b477c27f8a030c51,qwen2.5:14b,0,2026-06-17T16:38:16.323327,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206618,Allow a steward to update his node entry in the ledger - including the verkey,0,0,"- The title specifies that it involves a ""steward"" and an action of updating.
+- It mentions a specific component (""node entry"") within a system context (""ledger"").
+- However, the term ""verkey"" is not commonly understood without additional context, which might be ambiguous to someone unfamiliar with this terminology.
+- The scope of what needs to be updated (the node entry) and how it relates to the verkey is clear but assumes prior knowledge about the ledger system's structure.
+- Despite some potential ambiguity around technical terms, the overall action and component are clearly defined.
+
+Final Answer: No",bcbc04d1b176bf18,qwen2.5:14b,0,2026-06-17T16:38:19.201514,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205847,Fail to update pool ledger if no connection to a node in the genesis file in old cli,0,1,"- The title mentions ""fail to update pool ledger,"" which indicates an error but does not specify what kind of failure or under what conditions.
+- It specifies that this happens when there is no connection to a node in the genesis file. However, it doesn't clarify if the issue arises due to missing configuration, network issues, or other reasons.
+- The phrase ""in old cli"" suggests an environment context but does not specify which version of the CLI is considered 'old' or what the expected behavior should be.
+- There's no clear scope defined for resolving this issue; it’s unclear whether the problem lies in the connection logic, configuration handling, or elsewhere.
+- Overall, while some details are provided, they do not form a complete and unambiguous description of the issue.
+
+Final Answer: Yes",393d3ed8ef3281a2,qwen2.5:14b,0,2026-06-17T16:38:22.784697,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205621,Expected object or value error during batch handling,0,1,"- The title mentions an ""Expected object or value error,"" which is a specific type of runtime error.
+- However, it does not specify the exact location where this error occurs within the codebase.
+- It also lacks context about what kind of objects or values are expected and why they might be causing issues during batch handling.
+- The term ""batch handling"" could refer to various processes depending on the application's functionality, making its scope unclear.
+- Without more details, it is difficult to pinpoint exactly where the issue lies or how to reproduce it.
+
+Final Answer: Yes",40027fbbb73c88bb,qwen2.5:14b,0,2026-06-17T16:38:25.578321,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206100,Support Payment API txns in load script,0,1,"- The title mentions ""Support Payment API txns,"" which is somewhat clear but could refer to various aspects of payment APIs.
+- It specifies a ""load script"" where the support should be implemented, providing some context.
+- However, it does not specify what kind of transactions or under what conditions these transactions need to be supported.
+- The scope and requirements for supporting the transactions are unclear; there's no mention of performance criteria, security measures, or specific transaction types.
+- Given the lack of detail about the nature of the transactions and the exact support needed, this title is ambiguous.
+
+Final Answer: Yes",92718d9d0adaf5ab,qwen2.5:14b,0,2026-06-17T16:38:28.480857,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206303,Ordering of 3PC-batches on a backup replica may stop after a catch-up,0,1,"- The title mentions ""ordering of 3PC-batches,"" which refers to a specific technical process but does not clarify what aspect or component is causing issues.
+- It specifies the context as ""on a backup replica"" and an event ""after a catch-up,"" indicating some conditions under which the problem occurs, but it's still somewhat unclear without more details about what exactly happens during this process.
+- The phrase ""may stop"" implies that there could be various reasons or scenarios leading to this issue, making it ambiguous as to whether it’s a specific bug or a general performance concern.
+- There is no clear scope defined for the problem; it does not specify which part of the system is affected beyond mentioning 3PC-batches and backup replicas.
+- The title lacks specificity regarding expected behavior or outcomes, leaving room for multiple interpretations about what exactly needs to be fixed.
+
+Final Answer: Yes",64d3a8daf3934ccc,qwen2.5:14b,0,2026-06-17T16:38:32.362561,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206249,Add Docker getting started configuration,0,1,"- The title ""Add Docker getting started configuration"" is somewhat vague as it does not specify which application or project's Docker setup is being referred to.
+- It lacks clear context about the environment in which this Docker configuration should be used (e.g., development, testing, production).
+- There is no mention of specific requirements or features that need to be included in the ""getting started"" configuration.
+- The scope of what constitutes a ""getting started"" configuration can vary widely and may lead to different interpretations among developers.
+- Given these points, the title does not provide enough detail for someone to understand exactly what needs to be done without further clarification.
+
+Final Answer: Yes",f076232791cd799b,qwen2.5:14b,0,2026-06-17T16:38:35.431662,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207080,Valid write transactions may be rejected as having invalid signatures (case 2),0,1,"- The title mentions ""valid write transactions,"" which implies a specific context within a system that handles transactional data.
+- However, the phrase ""may be rejected"" is vague and does not specify under what conditions or scenarios this rejection occurs.
+- The term ""invalid signatures"" suggests there might be an issue with authentication or authorization, but it doesn't clarify why valid transactions are being flagged as having invalid signatures.
+- There's a reference to ""(case 2),"" which implies there may be other cases, but without additional context about what these cases represent, the title remains unclear.
+- The overall scope and exact nature of the problem described in the title are not clear enough for someone unfamiliar with the system to understand fully.
+
+Final Answer: Yes",0c5e867846f12441,qwen2.5:14b,0,2026-06-17T16:38:38.793931,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206714,Primary fails to send pre-prepare,0,1,"- The title mentions ""Primary"" but does not specify which system or component is being referred to as the primary.
+- It states that something fails to send a ""pre-prepare,"" but it's unclear what exactly constitutes a pre-prepare in this context and under what conditions this failure occurs.
+- There is no mention of any specific environment, version, or scenario where this issue happens, making it hard to reproduce or understand the scope.
+- The term ""fails"" is somewhat vague without additional details about the nature of the failure (e.g., error message, symptoms).
+- Overall, while the title provides some context, it lacks specificity and clear instructions on what needs fixing.
+
+Final Answer: Yes",4d9b9dab70f8b142,qwen2.5:14b,0,2026-06-17T16:38:42.058342,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207130,Node with multiple NICs:,0,1,"- The title ""Node with multiple NICs"" does not specify a problem or improvement goal; it merely describes a system configuration.
+- There is no clear action item or issue to be addressed. It could imply several different scenarios: setting up network configurations, troubleshooting connectivity issues, optimizing performance, etc.
+- Without additional context, the scope of what needs to be done remains unclear. Is this about installation, testing, or maintenance?
+- The title lacks specificity regarding expected outcomes or conditions under which an issue occurs.
+- Given these points, the title is open-ended and can be interpreted in multiple ways without further details.
+
+Final Answer: Yes",aec731913fc9f412,qwen2.5:14b,0,2026-06-17T16:38:45.091699,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206872,As a Steward,0,1,"- The title ""As a Steward"" is incomplete; it does not describe an action or problem to be addressed.
+- It lacks context and scope — what exactly needs to be done as a steward?
+- There's no indication of the system component, feature, or specific issue related to being a steward.
+- This phrase could refer to any number of tasks or responsibilities without further clarification.
+- The title is too vague and open-ended for anyone to understand its intent clearly.
+
+Final Answer: Yes",246e5b962a5b4690,qwen2.5:14b,0,2026-06-17T16:38:47.615001,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206649,DOC: Request for release notes on Indy-node 1.1.31,0,1,"- The title specifies a clear action (""Request for release notes"").
+- It mentions a specific component (""Indy-node"") and version (""1.1.31""), providing context.
+- However, the term ""DOC"" at the beginning is ambiguous without additional explanation; it could mean documentation or some other internal designation.
+- Despite the clarity of the request itself, the initial abbreviation might cause confusion about the nature or purpose of the request.
+- The title does not lack clear scope regarding what release notes are requested for but may be unclear to someone unfamiliar with ""DOC"".
+
+Final Answer: Yes",11022dd10d148630,qwen2.5:14b,0,2026-06-17T16:38:50.411997,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207129,Some nodes are slow to process network data,1,1,"- The title mentions ""some nodes,"" which is vague as it does not specify which nodes or how many.
+- It states that these nodes are ""slow to process network data"" but does not define what constitutes being slow or under what conditions the slowness occurs.
+- There is no context provided about where in the system these nodes exist, their function, or any specific scenario when this issue arises.
+- The title lacks a clear scope and could be interpreted differently by various stakeholders due to its vagueness.
+- Given the lack of specificity regarding which nodes are affected, what ""slow"" means, and under what conditions, the title is ambiguous.
+
+Final Answer: Yes",9df51cf192f21842,qwen2.5:14b,0,2026-06-17T16:38:53.923318,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206996,improve timestamp mechanism to use fuzzy,0,1,"- The title uses vague language such as ""improve"" without specifying what needs improvement or how it should be improved.
+- It mentions a ""timestamp mechanism,"" but does not clarify which part of the system this refers to or its specific function.
+- The phrase ""to use fuzzy"" is unclear and ambiguous. It could mean implementing a fuzzy logic approach, using approximate timestamps, or something else entirely.
+- There is no clear context provided about why this improvement is necessary or what problem it aims to solve.
+- Given these points, the title does not provide enough information for stakeholders to understand the scope of work required.
+
+Final Answer: Yes",a710ad0f0421955d,qwen2.5:14b,0,2026-06-17T16:38:57.131990,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205942,"How-to """"Add new node to existing pool",0,1,"- The title starts with ""How-to"", which suggests it is a question or guide rather than an issue report.
+- It lacks clear context about the system or environment where this action needs to be performed.
+- The phrase ""Add new node"" does not specify what kind of node (e.g., server, client) or in what capacity.
+- There is no mention of how the existing pool is defined or managed.
+- The title can be interpreted in multiple ways without additional context.
+
+Final Answer: Yes",275fa1f631d33ee8,qwen2.5:14b,0,2026-06-17T16:38:59.677286,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207319,REF validator,0,1,"- The title ""REF validator"" is very brief and lacks context.
+- It does not specify what exactly needs to be validated or in which part of the software.
+- There's no indication of the scope or the specific issue related to validation.
+- Without additional information, it can be interpreted in multiple ways (e.g., validating references in a database, checking for reference errors in code).
+- The title does not provide enough detail to understand what needs fixing or improving.
+
+Final Answer: Yes",7967d1c86eefb419,qwen2.5:14b,0,2026-06-17T16:39:02.172178,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205527,Implementation: Improve catch-up to use audit ledger for consistency,0,1,"- The title mentions ""catch-up,"" which could refer to a feature or process but does not specify what exactly needs improvement.
+- It refers to using an ""audit ledger"" for ""consistency,"" but it is unclear how this will be implemented and what the expected outcome should be.
+- There is no clear scope defined; it's not evident whether this affects one module, multiple components, or the entire system.
+- The term ""improve"" is vague without specifying performance metrics, user experience enhancements, or other specific goals.
+- Overall, the title lacks clarity about the exact nature of the improvement and its impact on the system.
+
+Final Answer: Yes",58f4809466cfb961,qwen2.5:14b,0,2026-06-17T16:39:05.259442,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206160,Analyse the current View Change protocol issues,0,1,"- The title uses the verb ""analyse"" which is a general term and does not specify an action or outcome.
+- It mentions ""current View Change protocol issues,"" but it doesn't clarify what these issues are or how they manifest.
+- There's no indication of scope, such as specific components, conditions under which the issue occurs, or expected behavior.
+- The title can be interpreted in multiple ways — does it mean identifying issues, fixing them, documenting them, etc.?
+- Given the lack of specificity and clear context, this title is ambiguous.
+
+Final Answer: Yes",0bd9ee3ab06697c0,qwen2.5:14b,0,2026-06-17T16:39:08.065417,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206183,Date in log name doesn't accord to the day when the log was rotated,0,1,"- The title mentions ""Date in log name,"" which specifies a particular aspect of the logging system.
+- It states that this date does not match the actual day when the log was rotated, indicating a specific issue with synchronization or timestamping.
+- However, it is unclear what component or part of the software is responsible for this discrepancy (e.g., logging service, configuration settings).
+- The title lacks context about why the dates should be aligned and under what conditions this misalignment occurs.
+- Given these points, while the core problem is somewhat clear, there are still elements that could benefit from more specificity.
+
+Final Answer: Yes",a5419a7c291be20b,qwen2.5:14b,0,2026-06-17T16:39:11.061720,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206911,list keyrings showing results twice,0,1,"- The title mentions ""list keyrings,"" which indicates a specific feature or functionality within an application.
+- However, it does not specify under what conditions the issue occurs. Is this happening consistently every time the list is generated, or only in certain scenarios?
+- The phrase ""showing results twice"" lacks context about why this duplication happens and whether there are any specific triggers or inputs that cause this behavior.
+- There's no mention of which part of the system (e.g., frontend, backend) experiences this issue or what kind of data is involved.
+- Given these points, the title does not provide enough detail to understand the exact nature of the problem or how to reproduce it.
+
+Final Answer: Yes",5bec1ec4cf5334a1,qwen2.5:14b,0,2026-06-17T16:39:14.329293,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205543,As a user of Valdiator Info script,0,1,"- The title ""As a user of Valdiator Info script"" lacks a complete sentence and does not describe an actual problem or feature request.
+- It is unclear what the user wants to achieve or report by mentioning they are a user of this script.
+- There is no indication of any specific issue, enhancement, or context that would help understand the intent behind the title.
+- The term ""Valdiator Info"" seems misspelled and could refer to different scripts or tools depending on how it's corrected (Validator Info? Validation Info?).
+- Given these points, the title does not provide enough information for anyone to understand what needs to be addressed.
+
+Final Answer: Yes",eb44b0da142fb22e,qwen2.5:14b,0,2026-06-17T16:39:17.496369,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206727,Accidental tests of indy-node intermittently fail on Jenkins,0,1,"- The title mentions ""accidental tests,"" which is vague and unclear. It does not specify what constitutes an accidental test or why these tests are happening.
+- ""indy-node"" refers to a specific component but does not clarify the nature of its functionality or how it relates to the issue.
+- ""intermittently fail on Jenkins"" indicates that failures occur occasionally, but it doesn't provide enough context about when and under what conditions these failures happen.
+- The title lacks details such as error messages, failure patterns, or specific test cases that could help in diagnosing the problem.
+- Overall, the title does not provide a clear scope of the issue or sufficient detail to understand its nature accurately.
+
+Final Answer: Yes",ecce88e2b223b55a,qwen2.5:14b,0,2026-06-17T16:39:20.816404,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205664,Is there any replacement for leveldb?,0,1,"- The title ""Is there any replacement for leveldb?"" is a question rather than an issue or task.
+- It lacks context about why a replacement is needed and what criteria the replacement should meet.
+- There's no clear scope defined; it doesn't specify which application, system, or component uses LevelDB.
+- The phrase ""any replacement"" is vague and could mean different things to different people (e.g., any database, any key-value store).
+- Without additional context, this title cannot be understood as a specific software issue.
+
+Final Answer: Yes",5040a4cde4932e8a,qwen2.5:14b,0,2026-06-17T16:39:23.571549,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205912,As a Sovrin Foundation,0,1,"- The title ""As a Sovrin Foundation"" does not describe any specific problem or feature request.
+- It lacks context and scope; it is unclear what action or issue this refers to within the Sovrin Foundation's framework.
+- There is no indication of what needs fixing, improving, or implementing.
+- This phrase could be the beginning of a user story but without continuation, it remains incomplete and ambiguous.
+- The title does not provide enough information for anyone to understand the intended purpose or requirement.
+
+Final Answer: Yes",6e0bd035ed0da609,qwen2.5:14b,0,2026-06-17T16:39:26.170631,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206478,The pool state should be updated after any node BLS key changing,0,1,"- **Step 1:** Analyze the language used in the title. ""The pool state should be updated"" is clear about what needs to happen.
+- **Step 2:** Examine if there's any ambiguity regarding what component or system part is involved. The term ""pool state"" suggests a specific context, but it doesn't specify which pool exactly.
+- **Step 3:** Check the clarity of conditions under which this update should occur. ""after any node BLS key changing"" specifies when the action should take place, but ""any node"" could imply all nodes or just one unspecified node.
+- **Step 4:** Determine if there's a clear scope or boundary for the issue. The title does not specify whether it applies to a specific environment or scenario, making its applicability ambiguous.
+- **Step 5:** Evaluate overall clarity and specificity of the title. While the action (updating pool state) is clear, the context and conditions are somewhat vague.
+
+Final Answer: Yes",02454a292a17bba0,qwen2.5:14b,0,2026-06-17T16:39:30.500639,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207005,"Nodes not receiving new transaction if its """"View"""" list is different from other nodes in the pool",0,1,"- The title mentions ""Nodes"" and a specific condition related to transactions and their ""View"" lists.
+- However, it does not specify what constitutes a ""different View,"" which could mean various things such as differing views of the network state, different sets of peers, or other interpretations.
+- The term ""pool"" is used but lacks clarity on whether it refers to a specific part of the system or a general concept within the software architecture.
+- Without further context about what exactly should be consistent across nodes and how discrepancies in the ""View"" list affect transaction processing, the issue remains unclear.
+- Given these ambiguities, the title does not provide enough detail for someone unfamiliar with the system to understand the exact nature of the problem.
+
+Final Answer: Yes",3cdf522a7f750ab2,qwen2.5:14b,0,2026-06-17T16:39:33.923678,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205432,Auto trigger CD pipeline for release-* branches,0,1,"- The title mentions ""Auto trigger CD pipeline,"" which is clear about the action to be taken.
+- However, it does not specify what conditions or events should trigger this action.
+- It refers to ""release-* branches"" but does not clarify if there are specific criteria for these branches (e.g., naming conventions, branch states).
+- The title lacks context regarding why this auto-triggering is necessary and under which circumstances it should occur.
+- Given the lack of detail about triggering conditions and branch specifics, the scope remains unclear.
+
+Final Answer: Yes",d6caa9c172b4abb8,qwen2.5:14b,0,2026-06-17T16:39:36.633879,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207212,Node memory leak,0,1,"- The title ""Node memory leak"" indicates a problem with memory usage in a Node.js application.
+- However, it does not specify which part of the code or which module is causing the issue.
+- It also lacks details about the extent and impact of the memory leak, such as how much memory is being leaked or under what conditions this occurs.
+- The title could refer to any number of potential issues within a Node.js application, making it difficult to pinpoint exactly where the problem lies without further context.
+- Given these points, the issue title does not provide enough specific information to clearly understand and address the problem effectively.
+
+Final Answer: Yes",67ba0f7ead48f74b,qwen2.5:14b,0,2026-06-17T16:39:39.659805,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206218,Node is restarted because of Out of memory error,0,1,"- The title mentions a specific event (""Node is restarted"") and a reason for it (""Out of memory error"").
+- However, it does not specify which node or in what context this occurs.
+- It lacks details about the environment, system, or conditions under which this issue happens.
+- Without more information, one cannot determine if this refers to a single instance or a recurring problem across multiple nodes.
+- The title is somewhat clear but could benefit from additional context for clarity.
+
+Final Answer: Yes",c0f68a5a4a38f9cc,qwen2.5:14b,0,2026-06-17T16:39:42.211429,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206980,A primary may not be able to send checkpoints after re-start,0,1,"- The title mentions ""a primary,"" which could refer to a specific role or component in a system but does not specify the exact context or environment.
+- It states that ""may not be able to send checkpoints after re-start"" — this implies there is an issue with sending checkpoints, but it doesn't clarify what exactly fails (e.g., network issues, software bugs) and under which conditions.
+- The phrase ""after re-start"" suggests a specific scenario but does not provide enough information about the system state before or during the restart process.
+- There's no mention of any error messages, logs, or steps to reproduce the issue, making it hard to understand the full scope of the problem.
+- Overall, while the title hints at an operational failure, it lacks specificity and clear context, leading to multiple possible interpretations.
+
+Final Answer: Yes",7ebc4e43c5563bf2,qwen2.5:14b,0,2026-06-17T16:39:45.948251,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206016,Upgrade failed on pool from 1.3.62 to 1.4.66,0,1,"- The title specifies an action (""Upgrade failed"") and provides version numbers (""from 1.3.62 to 1.4.66"").
+- It mentions a specific context or component (""on pool""), which helps narrow down the scope.
+- However, it does not provide additional details such as error messages, conditions under which the failure occurred, or what exactly went wrong during the upgrade process.
+- The lack of these specifics could lead to multiple interpretations about why the upgrade failed and how to address it.
+- Despite some clarity in specifying the action and versions involved, the absence of detailed context makes the issue somewhat ambiguous.
+
+Final Answer: Yes",bb129ca3f151c3f5,qwen2.5:14b,0,2026-06-17T16:39:49.079529,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205350,Use more trusted docker image for system tests client docker container,0,1,"- The title mentions ""more trusted"" which is subjective and lacks a clear definition of what constitutes a ""trusted"" Docker image.
+- It specifies the context as ""system tests client docker container,"" but it does not clarify whether this refers to all system tests or just specific ones.
+- There's no indication of how trustworthiness will be measured or what criteria are used to determine if an image is more trusted than another.
+- The scope of which Docker images need to change and the extent of changes required are unclear.
+- Given these points, the title does not provide enough clarity for a developer to understand exactly what needs to be done.
+
+Final Answer: Yes",9813e975d3b342b9,qwen2.5:14b,0,2026-06-17T16:39:52.208057,project_03,title_only,ambiguity,few_shot_cot

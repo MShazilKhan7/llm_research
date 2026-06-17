@@ -1,0 +1,658 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-253177,Inconsistent output between java driver and mongo shell,0,1,"- The title mentions ""inconsistent output,"" which indicates a discrepancy but does not specify what exactly is inconsistent or under what conditions.
+- It compares the Java driver to the Mongo Shell, implying there are differences in behavior between these two interfaces, but it doesn't provide details on when and how this inconsistency occurs.
+- There's no mention of specific data sets, operations, or expected outcomes that would help clarify the issue.
+- The scope is unclear since it does not specify which part of the Java driver or Mongo Shell is causing the problem.
+- Given these points, the title lacks sufficient detail to understand the exact nature and context of the inconsistency.
+
+Final Answer: Yes",8e05d44a2a331684,qwen2.5:14b,0,2026-06-17T18:38:00.611943,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253467,size not accepting $numberlong argument,0,1,"- The title mentions ""size"" but does not specify which function or method is being referred to. This could be ambiguous if there are multiple functions named similarly.
+- It states that ""$numberlong"" is not accepted as an argument, but it doesn't clarify what the expected behavior should be or why this is problematic.
+- There's no context provided about where this issue occurs (e.g., in a specific module, during a particular operation).
+- The term ""argument"" could refer to various types of input parameters without specifying which one exactly is causing issues.
+- Overall, while it hints at a specific problem with an argument type not being accepted by the ""size"" function or method, there's insufficient detail to understand fully what needs fixing.
+
+Final Answer: Yes",67e056197de34136,qwen2.5:14b,0,2026-06-17T18:38:05.363618,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253452,MongoCollection.insertOne throws NullPointerException with WriteConcern.UNACKNOWLEDGED & retryWrites=true,0,0,"- The title specifies a clear exception type (`NullPointerException`).
+- It mentions specific parameters and conditions under which the issue occurs (`WriteConcern.UNACKNOWLEDGED`, `retryWrites=true`).
+- However, it does not specify which line of code or file is causing this issue.
+- Despite the lack of file/line information, the context provided narrows down the scope significantly to a particular method call with specific parameters.
+- The title provides enough detail about the problem and its conditions for developers to understand what needs fixing.
+
+Final Answer: No",a400fb26685439d2,qwen2.5:14b,0,2026-06-17T18:38:09.468277,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253505,Add an option to toggle SSL certificate validation,0,1,"- The title mentions adding a feature (""an option""), which is clear in intent.
+- However, it does not specify where this option should be added or how users will interact with it.
+- ""Toggle SSL certificate validation"" implies a binary choice but lacks context on why this toggle might be necessary and under what circumstances it would be used.
+- The title doesn't provide information about the impact of enabling or disabling SSL certificate validation, which could affect security considerations.
+- While the core action is clear (adding an option), the lack of detail regarding implementation details and potential implications makes the scope somewhat unclear.
+
+Final Answer: Yes",49b422286ce3c797,qwen2.5:14b,0,2026-06-17T18:38:14.003694,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255080,JSON parser parses braces incorrectly,1,1,"- The title mentions a ""JSON parser,"" which specifies the component involved.
+- It states that the parser ""parses braces incorrectly,"" indicating a specific behavior or bug.
+- However, it does not specify what kind of braces are being referred to (e.g., curly braces `{}`, square brackets `[]`, etc.), nor does it provide context about where this issue occurs in the JSON structure.
+- Without knowing which type of brace is involved and under what conditions, there could be multiple interpretations of what ""incorrectly"" means.
+- The lack of specific details makes it difficult to understand exactly what needs fixing or how to reproduce the problem.
+
+Final Answer: Yes",d335be10aef31bd9,qwen2.5:14b,0,2026-06-17T18:38:19.300053,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255534,Looking for performance tips loading results from a find() with the java driver.,0,1,"- The title mentions ""performance tips,"" which is somewhat vague as it does not specify what kind of performance issues are being faced or what specific improvements are desired.
+- It refers to ""loading results from a find() with the java driver,"" which provides some context but lacks details about the environment, data size, or expected behavior.
+- The scope of the issue is unclear; it could be asking for general advice on optimizing queries or seeking solutions to a specific performance bottleneck.
+- Without more information, such as what has already been tried and what kind of results are being observed, the title does not provide enough detail to understand the exact nature of the problem.
+- The language used in the title is somewhat vague and could be interpreted differently by different readers.
+
+Final Answer: Yes",24f39f111651db98,qwen2.5:14b,0,2026-06-17T18:38:24.690821,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255332,Binary field $type is represented in JSON as a number instead of a two-byte hex string,0,0,"- The title specifies that there is an issue with how a binary field named `$type` is being represented.
+- It clearly states the current representation: ""as a number"".
+- It also provides the expected correct representation: ""a two-byte hex string"".
+- The context of JSON serialization and deserialization is implied, which gives clear scope to the problem.
+- There are no ambiguities in what needs to be fixed or how it should be interpreted.
+
+Final Answer: No",085303c099fc7ffc,qwen2.5:14b,0,2026-06-17T18:38:28.673778,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254781,Iterable Codec,1,1,"- The title ""Iterable Codec"" does not specify what aspect of an iterable codec needs attention or improvement.
+- It lacks context about whether it refers to a bug, performance issue, feature request, or something else entirely.
+- There is no clear scope defined; it could mean different things depending on the reader's interpretation (e.g., implementing a new codec for iterables, fixing issues with an existing one).
+- The title does not provide any specific conditions under which the problem occurs or what behavior is expected.
+- Given these points, the issue title is ambiguous as it can be interpreted in multiple ways without additional context.
+
+Final Answer: Yes",b0d42bd1cd44d7e4,qwen2.5:14b,0,2026-06-17T18:38:33.312762,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254021,NettyStream does not handle clean socket closures from the server,0,1,"- The title mentions ""NettyStream,"" which is a specific component or module.
+- It specifies that there's an issue with handling ""clean socket closures from the server.""
+- However, it does not clarify what constitutes a ""clean closure"" in this context.
+- Without knowing the expected behavior for clean socket closures and the current observed behavior, the scope of the problem remains unclear.
+- The title lacks details about specific conditions or scenarios under which the issue occurs.
+
+Final Answer: Yes",ce47af53a38bfef2,qwen2.5:14b,0,2026-06-17T18:38:37.545700,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255615,Include cursor-id in CursorNotFound exception,0,1,"- The title specifies a clear action to be taken (""Include cursor-id"").
+- It mentions a specific type of exception (""CursorNotFound""), which provides context.
+- However, it does not specify where or how the ""cursor-id"" should be included in the exception.
+- Without additional details on implementation specifics (e.g., file location, method name), there is some ambiguity about the exact scope and approach to solving this issue.
+- Despite providing a clear goal, the lack of specific instructions leaves room for interpretation.
+
+Final Answer: Yes",b260feacf6a876a1,qwen2.5:14b,0,2026-06-17T18:38:42.146398,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254855,Discrimination in Jackson-Codec,1,1,"- The title ""Discrimination in Jackson-Codec"" uses a vague term (""discrimination"") which could refer to multiple issues such as data discrimination, code discrimination, or even social issues.
+- It lacks clear context about what aspect of the Jackson-Codec is being discriminated against and under what conditions this occurs.
+- The scope is unclear; it does not specify whether this refers to a bug, performance issue, security concern, or something else entirely.
+- Without additional information, ""discrimination"" can be interpreted in multiple ways within the context of software development.
+- Given these points, the title fails to provide enough clarity and specificity for an effective analysis.
+
+Final Answer: Yes",59d7e3741b820eac,qwen2.5:14b,0,2026-06-17T18:38:45.956842,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-256012,Add w/wtimeout to WriteConcern (getLastError),0,1,"- The title mentions ""Add w/wtimeout to WriteConcern,"" which specifies a particular feature or configuration change.
+- However, it lacks context about why this addition is necessary and what problem it aims to solve.
+- The term ""getLastError"" is mentioned but does not provide enough information on how it relates to the main task of adding ""w/wtimeout.""
+- There's no clear scope defined for what changes are expected or where these changes should be implemented.
+- Overall, while specific terms are used, they do not form a complete and unambiguous request without additional context.
+
+Final Answer: Yes",84ca317cfb00b147,qwen2.5:14b,0,2026-06-17T18:38:50.799107,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253265,Provide an option to use pooled NIO direct buffers to minimise impact on GC,0,1,"- The title mentions ""pooled NIO direct buffers,"" which is a specific technical term.
+- However, it does not specify where or how this option should be implemented.
+- The phrase ""minimise impact on GC"" lacks clarity about what level of improvement is expected and under what conditions.
+- There's no clear scope defined for the implementation or testing criteria.
+- Given these points, the title could be interpreted in multiple ways without further context.
+
+Final Answer: Yes",025e0aa231d8a95f,qwen2.5:14b,0,2026-06-17T18:38:55.093774,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254440,DocumentCodec and DBObjectCodec treat nested Maps/Iterables differently,0,1,"- The title mentions ""DocumentCodec"" and ""DBObjectCodec"", which are specific components.
+- It specifies that these components handle ""nested Maps/Iterables"" differently, indicating a clear scope of the issue related to data structures.
+- However, it does not provide details on what exactly is different or under what conditions this difference occurs.
+- The lack of context about expected behavior and the absence of any specific scenario makes it hard to understand the exact nature of the problem.
+- While the title points towards a clear component and scope, the vagueness in describing how they differ leaves room for multiple interpretations.
+
+Final Answer: Yes",4a57def467cd5c96,qwen2.5:14b,0,2026-06-17T18:38:59.799594,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255480,Secondary reads on lists of mongos fail until first write,0,1,"- The title mentions ""Secondary reads on lists of mongos,"" which is specific to a database context involving MongoDB.
+- However, the phrase ""fail until first write"" is somewhat vague. It does not specify what exactly fails or under what conditions it starts working after the first write.
+- There's no clear indication of the scope or extent of the failure; for example, whether this affects all secondary reads or only specific scenarios.
+- The title lacks context about why these failures occur and how they are related to the ""first write.""
+- Given the lack of clarity regarding what exactly fails and under what conditions it resolves, the issue is ambiguous.
+
+Final Answer: Yes",f6bab6f7ae291dc0,qwen2.5:14b,0,2026-06-17T18:39:04.906656,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255171,Saved extra fields for Gridfs does not go in metadata sub-document,0,1,"- The title mentions ""Saved extra fields,"" which is somewhat vague without specifying what these fields are or why they need to be saved.
+- It states that the fields do not go into a ""metadata sub-document,"" but it does not clarify where they should go instead, nor does it specify under what conditions this issue occurs.
+- The term ""Gridfs"" is mentioned, which implies a specific context (likely related to file storage), but without more detail about Gridfs or its metadata structure, the scope remains unclear.
+- There's no indication of expected behavior or how the current state differs from the desired outcome, making it hard to understand what needs fixing.
+- The title does not provide enough information for someone unfamiliar with the system to understand the issue clearly.
+
+Final Answer: Yes",cc42350475e0a244,qwen2.5:14b,0,2026-06-17T18:39:09.566396,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254446,Repeated connection with expected authentication errors is not deterministic,0,1,"- The title mentions ""repeated connection,"" which implies a scenario involving multiple attempts to connect.
+- It states there are ""expected authentication errors,"" indicating that the system should return specific error messages under certain conditions.
+- However, the phrase ""not deterministic"" is vague and can be interpreted in different ways. Does it mean the errors do not occur consistently across repeated tests? Or does it imply that the timing or nature of the errors varies unpredictably?
+- The title lacks clear context about which component or part of the system is experiencing this issue.
+- Without more specific details, such as what conditions trigger these errors and how they should behave deterministically, the scope of the problem remains unclear.
+
+Final Answer: Yes",524f5aa986edc131,qwen2.5:14b,0,2026-06-17T18:39:14.413526,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254233,Custom logging implementation,1,1,"- The title ""Custom logging implementation"" does not specify what aspect of logging needs to be customized or why it is necessary.
+- It lacks context about which part of the system this custom logging will affect and under what conditions.
+- There's no clear scope defined; it could mean adding new log levels, changing existing logs, or implementing a completely different logging framework.
+- The title does not provide any specific requirements or expected outcomes from the customization process.
+- Given these points, the issue title is open to multiple interpretations without further details.
+
+Final Answer: Yes",0f92cdd9abea6d3e,qwen2.5:14b,0,2026-06-17T18:39:18.403612,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252701,Update documentation for Text Search,0,1,"- The title ""Update documentation for Text Search"" specifies an action (""update"") and a target (""documentation for Text Search"").
+- However, it does not specify what aspects of the documentation need to be updated or why.
+- There is no clear scope defined; it could mean adding new content, fixing errors, improving clarity, etc.
+- Without additional context, this title can be interpreted in multiple ways, making it ambiguous regarding the exact changes required.
+- The lack of specific details about what needs updating makes it difficult to understand the full extent or nature of the update needed.
+
+Final Answer: Yes",97300a4a78c8f799,qwen2.5:14b,0,2026-06-17T18:39:22.629609,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255572,Morphia Integration in java driver,0,1,"- The title ""Morphia Integration in java driver"" does not specify what aspect of integration is being referred to or what problem needs solving.
+- It lacks context about the specific issue or feature request related to Morphia and Java driver integration.
+- There's no clear scope defined; it could mean adding support, fixing a bug, improving performance, etc., without further details.
+- The title does not provide enough information for someone unfamiliar with the project to understand what needs to be done or what problem exists.
+- Given these points, the issue title is ambiguous as it can be interpreted in multiple ways and lacks clear direction.
+
+Final Answer: Yes",8ba647dac9cc0103,qwen2.5:14b,0,2026-06-17T18:39:26.924118,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255511,Respect the QueryFailure response flag in OP_REPLY,0,0,"- The title mentions ""QueryFailure response flag,"" which is a specific technical term indicating that it refers to a particular condition or state.
+- It specifies ""OP_REPLY"" as the context where this flag should be respected. This implies a clear scope within a certain operation or protocol.
+- However, without additional details about what respecting the flag entails (e.g., how it affects behavior), there is some ambiguity in understanding exactly what needs to change or be implemented.
+- The title does not provide information on why this respect for the QueryFailure response flag is necessary or its broader impact, which could lead to multiple interpretations of the requirement's intent.
+- Despite these minor ambiguities, the core action and context are clear enough that a developer familiar with the system would likely understand what needs to be done.
+
+Final Answer: No",d7a2658b7ce6a641,qwen2.5:14b,0,2026-06-17T18:39:32.108094,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254614,2.12.x breaks compatibility with mongoDB v1.8,0,1,"- The title mentions a version number ""2.12.x"" which could refer to any minor or patch release within the 2.12 series.
+- It states that this version breaks compatibility with MongoDB v1.8 but does not specify what aspect of compatibility is broken (e.g., data schema, API calls).
+- The title lacks context about where and how the incompatibility occurs; it doesn't mention specific features or modules affected.
+- Without additional details, one cannot determine if the issue refers to a particular use case or environment setup that triggers this problem.
+- Given these points, the title is not clear enough for someone unfamiliar with the system to understand the exact nature of the compatibility issues.
+
+Final Answer: Yes",40b360a4217033a1,qwen2.5:14b,0,2026-06-17T18:39:36.384845,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253354,Deprecate DBCursor#addSpecial,0,1,"- The title specifies a clear action to be taken (""Deprecate"").
+- It mentions an exact method name (""DBCursor#addSpecial""), which provides context.
+- However, the term ""deprecate"" can sometimes imply different actions depending on the project's conventions or policies (e.g., marking as deprecated in code but still allowing usage vs. removing entirely).
+- Without additional details about what deprecation means for this specific method and how it will be implemented, there is some ambiguity.
+- The title does not provide information about why the method needs to be deprecated or any alternatives that should replace its use.
+
+Final Answer: Yes",fc9ee80f34a04d88,qwen2.5:14b,0,2026-06-17T18:39:41.185846,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255153,update description of fsync write concern flag,0,1,"- The title mentions ""update description,"" which implies a change in documentation or configuration settings related to ""fsync write concern flag.""
+- However, it does not specify what aspect of the description needs updating or why an update is necessary.
+- There's no context provided about where this description exists (e.g., database schema, API documentation) or how the current description differs from the desired one.
+- The scope of the change (""update"") could mean various things: adding details, correcting inaccuracies, improving clarity, etc.
+- Given these points, the title lacks specificity and clear context, making it open to multiple interpretations.
+
+Final Answer: Yes",628e786ee9668fa9,qwen2.5:14b,0,2026-06-17T18:39:45.649228,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255938,DBCursor.copy() does not copy batch size,0,1,"- The title specifies a method name (`DBCursor.copy()`), which provides clear context about where the problem lies.
+- It mentions that the issue is related to copying a ""batch size,"" indicating what aspect of the method's behavior is problematic.
+- However, it does not specify whether this means the batch size should be copied but isn't or if there’s an unexpected side effect when calling `copy()`.
+- The title lacks details about expected behavior and current observed behavior, which could lead to multiple interpretations.
+- Given these points, while the issue title is more specific than some others, it still leaves room for ambiguity regarding what exactly should be happening with the batch size.
+
+Final Answer: Yes",b885bad4608dadda,qwen2.5:14b,0,2026-06-17T18:39:50.342284,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253697,"upload mo artifacts"""" Evergreen post-task is failing",0,1,"- The title mentions ""upload mo artifacts"", but it's unclear what ""mo"" refers to and whether this is a typo or an abbreviation.
+- It states that the ""Evergreen post-task is failing"", which implies there’s a specific task in Evergreen, but doesn’t provide enough context about why it’s failing or under what conditions.
+- The scope of the issue isn't clear; it's not specified if the failure happens consistently or only under certain circumstances.
+- There are multiple possible interpretations for ""upload mo artifacts"" and its relation to the post-task failure without further details.
+- Overall, the title lacks specificity regarding the nature of the problem, making it difficult to understand the exact issue being reported.
+
+Final Answer: Yes",aeb5d737236c4e4e,qwen2.5:14b,0,2026-06-17T18:39:55.149867,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253111,minWireVersion is 1 but it should be 2,0,0,"- The title specifies a clear condition (""minWireVersion is 1"").
+- It also provides an expected outcome (""it should be 2"").
+- There is no ambiguity in the values or conditions mentioned.
+- The context and scope are well-defined, indicating a specific configuration issue.
+- No vague language or multiple interpretations are present.
+
+Final Answer: No",05eb3b4ba685f8b5,qwen2.5:14b,0,2026-06-17T18:39:59.217415,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252640,Documentation links 404,0,1,"- The title mentions ""Documentation links,"" which indicates that there is an issue with documentation links.
+- However, it does not specify which specific documentation links are affected or where these links are located within the system.
+- The term ""404"" means that some links are broken and return a 404 error (page not found), but it doesn't provide enough information about how many links are affected, their context, or what kind of documentation they refer to.
+- Without more details, one cannot determine if this issue is isolated to a single page or affects multiple parts of the system's documentation.
+- The title lacks clear scope and specific context, making it difficult to understand the full extent of the problem.
+
+Final Answer: Yes",313d9b93bffd5018,qwen2.5:14b,0,2026-06-17T18:40:03.402223,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255236,DBObject.equals can fail when binary data exists,0,1,"- The title mentions a specific method (`DBObject.equals`) which provides clear context about what is being discussed.
+- It specifies under what conditions the failure occurs (""when binary data exists""), providing clarity on the scope and circumstances of the issue.
+- However, it does not specify how or why the equals method fails, leaving room for interpretation regarding the nature of the problem (e.g., unexpected behavior, incorrect comparison).
+- The title lacks details about the expected outcome or what constitutes a failure in this context, which could lead to multiple interpretations of the issue's severity and resolution.
+- Despite mentioning specific conditions under which the issue occurs, the lack of detail on how it fails makes the title somewhat ambiguous.
+
+Final Answer: Yes",e3f39252211c1816,qwen2.5:14b,0,2026-06-17T18:40:08.137409,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255324,Increase GridFS max chunk size,0,1,"- The title specifies an action (""Increase"") but does not specify by how much or what the current value is.
+- It mentions ""GridFS"" which could be clear to someone familiar with MongoDB's file system, but it lacks context for those unfamiliar.
+- The term ""max chunk size"" is specific and related to database operations, but without knowing why this needs increasing or its impact on performance/storage, the scope remains unclear.
+- There’s no indication of what problem this change aims to solve or any associated benefits or risks.
+- Given these points, while it's somewhat clear in terms of functionality, it lacks sufficient detail about the desired outcome and context.
+
+Final Answer: Yes",ecf675807ee06ae8,qwen2.5:14b,0,2026-06-17T18:40:12.374443,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254743,Server selection exception should chain exceptions from server monitors,0,1,"- The title mentions ""Server selection exception,"" which is a clear technical term indicating a specific type of error.
+- It specifies that this exception should ""chain exceptions from server monitors."" This implies a relationship between the main exception and other exceptions generated by server monitors, providing context about the expected behavior.
+- However, it does not specify under what conditions or in what scenarios these chained exceptions are supposed to occur. The scope is somewhat unclear without additional details on when this chaining should happen.
+- The title lacks specific implementation details such as which part of the code needs modification or how exactly the exception chaining should be implemented.
+- Despite some clarity, there's still ambiguity regarding the exact conditions and scope under which these exceptions are supposed to chain.
+
+Final Answer: Yes",0909de73322d765c,qwen2.5:14b,0,2026-06-17T18:40:17.474752,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253069,Remove mongodb-driver-embedded-android package,0,1,"- The title specifies a clear action to be taken (""Remove"").
+- It mentions an exact package name (""mongodb-driver-embedded-android""), which provides context.
+- However, it does not explain why the package needs to be removed or what impact this removal will have on other parts of the system.
+- There is no mention of any conditions under which this removal should occur or any alternative solutions that might be considered.
+- The title lacks details about the expected outcome or benefits from removing the specified package.
+
+Final Answer: Yes",58053b46fa099b5d,qwen2.5:14b,0,2026-06-17T18:40:22.351981,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254867,Add type-safe jsMode support in MapReduceCommand,0,1,"- The title mentions ""type-safe jsMode,"" which is a specific feature or requirement.
+- However, it does not specify what exactly needs to be added or how the existing system should interact with this new type-safe jsMode support.
+- It also lacks context about where in the MapReduceCommand this change will take place and what impact it might have on other parts of the system.
+- The term ""jsMode"" is somewhat ambiguous without further explanation, as it could refer to different modes or configurations within JavaScript execution contexts.
+- Given these points, while there's some specificity, the overall scope and exact requirements are unclear.
+
+Final Answer: Yes",1dc829e8ffc95dc0,qwen2.5:14b,0,2026-06-17T18:40:27.060611,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252707,Storing unsigned integer to Mongodb from java,0,1,"- The title mentions storing an ""unsigned integer"" in MongoDB from Java.
+- It specifies the data type (""unsigned integer"") and the database system (""MongoDB"").
+- However, it does not specify which part of the application or component is involved in this process.
+- There's no context provided about why this operation might be problematic or what specific issue arises during storage.
+- The title could imply a question about how to store unsigned integers in MongoDB from Java, but it also could suggest an existing problem with such storage.
+
+Final Answer: Yes",8e74aa4f819f0601,qwen2.5:14b,0,2026-06-17T18:40:31.144296,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255700,Possible bug with JSON parser,0,1,"- The title uses the word ""Possible,"" which indicates uncertainty about whether there is actually a bug or not.
+- It mentions ""bug"" without specifying what kind of issue it is or where exactly it occurs within the JSON parser.
+- There's no mention of specific conditions under which this might occur, such as input data types or edge cases.
+- The scope of the problem is unclear; it could refer to any number of potential issues with parsing JSON.
+- Without more context, multiple interpretations are possible regarding what constitutes a ""bug"" in the parser.
+
+Final Answer: Yes",e08ec167430292a0,qwen2.5:14b,0,2026-06-17T18:40:35.342977,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253917,$geoNear Aggregation pipeline in Mongo JAVA driver,0,1,"- The title mentions ""$geoNear Aggregation pipeline,"" which is a specific feature of MongoDB.
+- However, it does not specify what the issue or problem with this feature is.
+- There's no indication of whether there’s an error, performance concern, or any other type of issue.
+- Without context about the expected behavior or the actual observed behavior, the scope and nature of the issue remain unclear.
+- The title lacks details such as specific conditions under which the issue occurs or what component in the Java driver is problematic.
+
+Final Answer: Yes",5cf3a8d7d49b6d10,qwen2.5:14b,0,2026-06-17T18:40:40.077090,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254894,The aggregation method is inaccurately showing type,0,1,"- The title mentions ""aggregation method,"" which specifies a particular function or process within the software.
+- However, it does not specify what kind of data this aggregation method deals with or in what context the issue occurs.
+- The phrase ""inaccurately showing type"" is vague; it doesn't clarify whether the wrong data type is being displayed or if there's an error in how types are categorized during aggregation.
+- Without more details, one cannot determine the exact nature of the problem or its scope within the software system.
+- Given these points, the title lacks sufficient clarity and specificity to understand the issue fully.
+
+Final Answer: Yes",a3abfba2f2517331,qwen2.5:14b,0,2026-06-17T18:40:44.543302,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253334,Deprecate MongoIterable#forEach,1,0,"- The title specifies a clear action to be taken (""Deprecate"").
+- It mentions an exact method name and its location within the codebase (""MongoIterable#forEach"").
+- There is no ambiguity about which component or feature this issue pertains to.
+- The scope of the task is well-defined: it involves marking a specific method as deprecated.
+- No additional context or clarification is needed to understand what needs to be done.
+
+Final Answer: No",0a5b63b169aea866,qwen2.5:14b,0,2026-06-17T18:40:48.174559,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255443,Errors when DBRef's $id is Object instead of simple value,0,1,"- The title mentions ""Errors,"" which indicates a problem but does not specify what kind of errors or their severity.
+- It refers to ""DBRef's $id"" without providing context about the database system or application environment where this occurs.
+- The issue specifies that an error happens when ""$id is Object instead of simple value,"" but it doesn't clarify why an object type for $id is unexpected or what the expected behavior should be.
+- There’s no indication of which part of the software (e.g., a specific module, function) encounters this problem, making the scope unclear.
+- The title does not provide enough information to understand the full context and implications of the issue.
+
+Final Answer: Yes",5eb2f5157ce1c18e,qwen2.5:14b,0,2026-06-17T18:40:53.167251,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253221,mongodb+srv schema can cause NullPointerException,0,1,"- The title mentions a specific technology (""mongodb+srv"") which provides some context about the system component involved.
+- However, it does not specify where or under what conditions the ""NullPointerException"" occurs within this schema.
+- The term ""can cause"" is vague and implies that there might be multiple scenarios leading to the exception without specifying any particular one.
+- There's no clear scope or specific scenario described in which the issue happens, making it hard to reproduce or understand fully.
+- Given these points, the title lacks clarity about the exact conditions under which the NullPointerException occurs.
+
+Final Answer: Yes",c33b5f1e23d2964e,qwen2.5:14b,0,2026-06-17T18:40:57.527131,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253502,Re-enable write concern tests for dropDatabase command,0,1,"- The title specifies a clear action (""Re-enable"") which indicates that these tests were previously disabled.
+- It mentions specific functionality (""write concern tests""), providing context about the type of test involved.
+- However, it does not specify why these tests were disabled or what conditions should be met for re-enabling them.
+- The scope is somewhat narrow as it focuses on a particular command (""dropDatabase"") but doesn't provide broader context regarding other commands or system states.
+- Despite some clarity in the action and functionality, the lack of detail about the reasons behind disabling these tests makes the title ambiguous.
+
+Final Answer: Yes",eb549335021b7325,qwen2.5:14b,0,2026-06-17T18:41:02.094972,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255435,Thread Locals not being freed in thread pool,0,1,"- The title mentions ""Thread Locals"" which is a specific concept in Java and other programming languages.
+- However, it does not specify the exact context or environment where this issue occurs (e.g., application name, version).
+- It lacks details about what behavior is expected or what conditions trigger the problem.
+- The phrase ""not being freed"" could mean different things depending on the implementation of thread pools and how Thread Locals are managed.
+- Without more specific information, it's unclear whether this refers to a memory leak, performance issue, or another type of bug.
+
+Final Answer: Yes",3925ed3c214a72a3,qwen2.5:14b,0,2026-06-17T18:41:06.146124,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255744,authentication for replica set fails frequently because 'getnonce' and 'authenticate' command is issued to different server,0,1,"- The title mentions ""authentication for replica set fails frequently,"" which indicates a specific problem with the authentication process in a replica set.
+- However, it does not specify what kind of authentication mechanism or protocol is being used, nor does it clarify why the 'getnonce' and 'authenticate' commands are issued to different servers.
+- The phrase ""issued to different server"" lacks clarity; it's unclear whether this is intended behavior or an error condition.
+- Without additional context about the system architecture, the nature of the replica set, and the expected workflow for authentication, the issue remains vague in terms of scope and resolution steps.
+- Given these ambiguities, the title does not provide enough information to understand the exact problem or how to resolve it.
+
+Final Answer: Yes",bf7641ba94de09df,qwen2.5:14b,0,2026-06-17T18:41:10.224640,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255326,No Such Method Exception When Instantiating Mongo Client,0,1,"- The title mentions a specific exception type (""NoSuchMethodException"").
+- It specifies where this exception occurs (""When Instantiating Mongo Client"").
+- However, it does not specify the version of MongoDB or Java that is being used.
+- Without knowing the exact versions and context, there could be multiple reasons for encountering such an issue.
+- The title lacks some necessary details to pinpoint the problem accurately.
+
+Final Answer: Yes",48b5883eee169d25,qwen2.5:14b,0,2026-06-17T18:41:12.436209,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255548,Stackoverflow when querying document with cycle reference using DBRef,0,0,"- The title mentions a ""Stackoverflow"" error, which is specific and clear.
+- It specifies that this occurs during a ""querying document"" process, providing context for the issue.
+- However, it lacks detail on what exactly causes the cycle reference or how to reproduce the problem consistently.
+- The use of ""cycle reference using DBRef"" could be clearer; it's not entirely obvious without additional knowledge about DBRef and its usage in this context.
+- Despite some ambiguity around the exact nature of the cycle reference issue, the core problem (Stackoverflow during querying) is clear.
+
+Final Answer: No",f6eaf29196334acd,qwen2.5:14b,0,2026-06-17T18:41:15.672456,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254528,Add MongoCollection.dropIndex(Bson keys),0,0,"- The title specifies a clear action to be taken: ""Add MongoCollection.dropIndex(Bson keys)"".
+- It mentions specific components and parameters involved: ""MongoCollection"" and ""Bson keys"".
+- There is no ambiguity about what needs to be done or where it should be implemented.
+- The context of the operation (dropping an index in a MongoDB collection) is clear from the title.
+- No vague language or unclear scope exists that would make interpretation difficult.
+
+Final Answer: No",2b55b58be1e08f0d,qwen2.5:14b,0,2026-06-17T18:41:18.230063,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254203,Add equals() and toString() to Updates,0,0,"- The title specifies two methods that need to be added: `equals()` and `toString()`.
+- It mentions a specific class or entity where these methods should be implemented: `Updates`.
+- There is no ambiguity about which methods are required or in which context they should be added.
+- However, the title does not provide any additional details such as why these methods need to be added (e.g., for unit testing, debugging purposes), what specific behavior is expected from them, or if there are existing guidelines that must be followed while implementing these methods.
+
+Final Answer: No",b5fb180db296b3c3,qwen2.5:14b,0,2026-06-17T18:41:21.067006,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254082,Connection and thread leakage in DefaultServerMonitor,0,1,"- The title mentions ""Connection and thread leakage,"" which indicates a problem with resource management but does not specify what kind of connections or threads are involved.
+- It refers to ""DefaultServerMonitor"" as the context, but it is unclear whether this is a class name, module name, or another type of identifier without additional information.
+- The term ""leakage"" can be interpreted in multiple ways — it could mean that connections and threads are not being properly closed after use, or there might be an issue with resource allocation that leads to excessive consumption.
+- There is no mention of specific symptoms, such as performance degradation, errors thrown, or system crashes, which would provide clearer context for the problem.
+- The scope of the issue (e.g., under what conditions it occurs) and its impact are not specified.
+
+Final Answer: Yes",07643e6170a33e0f,qwen2.5:14b,0,2026-06-17T18:41:24.798832,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253763,Reduce size of Evergreen matrix,0,1,"- The title ""Reduce size of Evergreen matrix"" does not specify what is meant by ""size."" It could refer to file size, memory usage, number of elements in the matrix, or some other metric.
+- There is no context provided about why reducing the size is necessary or how it should be measured.
+- The scope of the issue is unclear. Does this involve changing data input, optimizing code, or something else?
+- Without additional details, there are multiple interpretations possible for what ""reduce size"" entails and how to achieve it.
+- Given these ambiguities, the title does not provide enough clarity to understand the specific requirements.
+
+Final Answer: Yes",691c34bfedd3d414,qwen2.5:14b,0,2026-06-17T18:41:27.894975,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254130,Ensure Loggers are past to ErrorHandlingCallbacks,0,1,"- The title ""Ensure Loggers are past to ErrorHandlingCallbacks"" contains a grammatical error (""past"" should be ""passed"").
+- It is unclear what specific action needs to be taken or what the expected outcome is.
+- There's no context provided about which part of the system this refers to, making it hard to understand the scope.
+- The title does not specify whether this is an existing issue that needs fixing or a new requirement for future development.
+- Due to these ambiguities and lack of clarity, the title cannot be understood without additional information.
+
+Final Answer: Yes",c8a30281b0cec835,qwen2.5:14b,0,2026-06-17T18:41:30.696133,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253459,how to implement nested query in java API,0,1,"- The title ""how to implement nested query in java API"" is a question rather than an issue or bug report.
+- It lacks specific context about the problem being faced or the desired outcome.
+- The scope of what constitutes a 'nested query' and how it should be implemented can vary widely depending on the use case.
+- Without additional details, this title could refer to any number of implementation strategies for nested queries in Java APIs.
+- Given these points, the issue title is ambiguous as it does not provide enough information to understand the specific problem or requirement clearly.
+
+Final Answer: Yes",63e908b6bc18cf20,qwen2.5:14b,0,2026-06-17T18:41:33.518007,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255998,Tried to save too large of an object. max size: 2098176,0,1,"- The title mentions ""too large of an object,"" which implies a specific condition but does not specify the type or nature of the object.
+- It specifies a maximum size limit: 2098176. This provides some context, indicating that there is a size constraint being violated.
+- However, it lacks details about where this issue occurs (e.g., in which module or function), what kind of error message was received, and the expected behavior when trying to save an object exceeding the limit.
+- The title does not provide enough information for someone unfamiliar with the system to understand the full scope of the problem or how to reproduce it.
+- While there is some specificity regarding the size constraint, the overall context and implications are unclear.
+
+Final Answer: Yes",540e09e8649eab60,qwen2.5:14b,0,2026-06-17T18:41:37.005257,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254903,REPLICA_ACKNOWLEDGED not working at the time of arbiter Node,0,1,"- The title mentions ""REPLICA_ACKNOWLEDGED"", which is a specific term in database replication contexts.
+- However, it does not specify what exactly is not working or how it should be functioning.
+- The involvement of an ""arbiter Node"" adds context but doesn't clarify the issue's scope or expected behavior.
+- Without details on the conditions under which this occurs (e.g., specific operations, error messages), the title remains unclear.
+- Given these points, while there is some specificity in terms used, the overall meaning and implications of the problem are not clear.
+
+Final Answer: Yes",d8b8cefe90330bd1,qwen2.5:14b,0,2026-06-17T18:41:39.905097,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253040,mavenLocal should be first repository,0,1,"- The title specifies a clear action (""mavenLocal should be first repository"").
+- However, it lacks context about why this change is necessary or what problem it solves.
+- It does not specify the scope of where ""mavenLocal"" needs to be prioritized (e.g., in which build configurations or environments).
+- There's no indication of the impact or expected outcome from making this change.
+- The title could mean different things depending on the context, such as whether it refers to a specific project setup or a general recommendation.
+
+Final Answer: Yes",dbdea66de5fbfd60,qwen2.5:14b,0,2026-06-17T18:41:42.654506,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255829,Publish maven SNAPSHOTs,0,1,"- The title ""Publish maven SNAPSHOTs"" does not specify what project or module's snapshots need to be published.
+- It is unclear whether this refers to a specific build process, an automated task, or a manual action required by developers.
+- There is no indication of the context in which these snapshots should be published (e.g., after every commit, on certain branches, etc.).
+- The scope of what constitutes ""publishing"" maven SNAPSHOTs is ambiguous; it could mean deploying to a repository, updating metadata, or other actions.
+- Without additional details about the environment and specific requirements, this title leaves too much open to interpretation.
+
+Final Answer: Yes",31382143e1be0b1d,qwen2.5:14b,0,2026-06-17T18:41:45.890098,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253678,Document new Pojo updates,0,1,"- The title ""Document new Pojo updates"" does not specify which Pojos have been updated or what changes were made.
+- It is unclear whether this refers to documenting the source code changes in comments, creating API documentation, or writing user guides.
+- There is no indication of the scope (which parts of the system are affected) or the context (why these updates need documentation).
+- The title lacks specific details that would help understand what needs to be done and how it should be accomplished.
+- Given the lack of clarity on the exact nature and extent of the task, this issue title is ambiguous.
+
+Final Answer: Yes",e0f438013fe9c31b,qwen2.5:14b,0,2026-06-17T18:41:48.906046,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255807,Allow bson decoder per operation (find/cusor),0,1,"- The title mentions ""bson decoder,"" which is a clear technical term referring to a specific component.
+- However, it lacks clarity on what exactly needs to be allowed or changed regarding the bson decoder for operations like find and cursor.
+- It does not specify whether this involves adding new functionality, modifying existing code, or changing configuration settings.
+- The scope of ""per operation"" is somewhat vague without further details about which operations are involved and how they differ from each other in terms of bson decoding requirements.
+- Overall, while the title mentions specific technical elements, it lacks clear action items and context to understand what needs to be done.
+
+Final Answer: Yes",24bbeec65651bd07,qwen2.5:14b,0,2026-06-17T18:41:51.990567,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252979,Remove CLIRR support from the build,0,1,"- The title specifies an action to be taken (""Remove CLIRR support"").
+- It mentions a specific context or component related to the build process.
+- However, it does not specify why CLIRR support needs to be removed or what impact this removal will have on other parts of the system.
+- Without additional details about the reasons and implications, there is some ambiguity regarding the scope and necessity of the action.
+- The title could be clearer if it provided more context around the decision to remove CLIRR support.
+
+Final Answer: Yes",8401967d4045423b,qwen2.5:14b,0,2026-06-17T18:41:54.674037,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252775,Multiple reads of BsonBinary UUID return different results,0,1,"- The title mentions ""Multiple reads,"" which implies repeated attempts to read data but does not specify under what conditions or how many times.
+- It specifies the type of data being read (""BsonBinary UUID""), providing some context about the nature of the issue.
+- However, it lacks clarity on why multiple reads should return different results and in what scenarios this happens (e.g., concurrent access, caching issues).
+- The title does not provide information about which component or function is responsible for these inconsistent reads.
+- Given the lack of specific conditions and context, there are multiple interpretations possible regarding the nature and cause of the issue.
+
+Final Answer: Yes",2a8801012decc76d,qwen2.5:14b,0,2026-06-17T18:41:57.722747,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254111,Allow setting of standard server selection and server monitoring options in the connection string,0,1,"- The title mentions ""standard server selection"" but does not specify what constitutes a ""standard.""
+- It also refers to ""server monitoring options,"" which is vague without specifying what these options are or how they should be monitored.
+- There's no context provided about the specific application, environment, or expected behavior after setting these options in the connection string.
+- The scope of the issue is unclear; it does not specify whether this involves adding new features to an existing system or modifying current functionality.
+- Given the lack of specificity regarding what ""standard"" means and the ambiguity around server monitoring options, the title can be interpreted in multiple ways.
+
+Final Answer: Yes",6edf0eaeeb99f70d,qwen2.5:14b,0,2026-06-17T18:42:00.821579,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255459,Aggregate and mapReduce commands sent to mongos break when setting read preference,0,1,"- The title mentions ""Aggregate and mapReduce commands,"" which are specific MongoDB operations.
+- It specifies that these commands ""break"" when a certain condition is met: ""setting read preference.""
+- However, the term ""break"" can be ambiguous as it does not specify what exactly happens (e.g., error message, unexpected behavior).
+- The title lacks details about the expected outcome or the nature of the failure.
+- While the context and scope are somewhat clear, the lack of specific information on how these commands fail makes the issue ambiguous.
+
+Final Answer: Yes",1223c483f5e93ae9,qwen2.5:14b,0,2026-06-17T18:42:03.573507,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253919,DBCollection.distinct() fails when a null value is in the result,0,1,"- The title specifies that there is an issue with the `DBCollection.distinct()` method.
+- It clearly states under what condition this failure occurs: ""when a null value is in the result"".
+- However, it does not specify which database system or programming language context this applies to (e.g., MongoDB and Java).
+- The title lacks details about expected behavior versus actual behavior, such as whether an exception should be thrown or if the method should handle null values gracefully.
+- Despite some clarity on the condition of failure, the lack of specific context regarding the environment and expected outcome makes it somewhat ambiguous.
+
+Final Answer: Yes",a62de55c64c09ad7,qwen2.5:14b,0,2026-06-17T18:42:06.574683,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254628,Force slaveOK on a direct connection to a replica set membe,0,1,"- The title mentions ""force slaveOK,"" which is an action but does not specify what needs to be forced or why.
+- It refers to a ""direct connection"" without specifying the context of this connection or its purpose.
+- The term ""replica set member"" is mentioned, but it's unclear whether there are specific requirements for this member or if it applies generally to all members in a replica set.
+- There’s no clear scope defined; it doesn’t specify which part of the system or codebase needs modification.
+- Overall, while some technical terms are used, they do not provide enough context or clarity about what exactly is being requested.
+
+Final Answer: Yes",14516dfed4c34461,qwen2.5:14b,0,2026-06-17T18:42:09.724134,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255956,Use weakrefs for static list of Mongo instances,0,1,"- The title mentions ""weakrefs,"" which is a specific programming concept used to manage object references in memory.
+- It specifies that this should be applied to a ""static list of Mongo instances.""
+- However, it does not clarify why weak references are necessary or what problem they solve.
+- There's no indication of the scope beyond mentioning ""Mongo instances"" but without specifying which part of the application or system these instances belong to.
+- The title lacks context about potential performance benefits, memory management issues, or other reasons for using weak references.
+
+Final Answer: Yes",8094d50ddb7c1a70,qwen2.5:14b,0,2026-06-17T18:42:12.435617,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253509,Make Java driver spec compliant - FY2019Q2,0,1,"- The title mentions ""Make Java driver spec compliant,"" which is a clear action but lacks specificity about what exactly needs to be made compliant.
+- It does not specify the version of the Java driver or the specific standards it should comply with.
+- The term ""spec"" can refer to multiple documents or sets of guidelines, leading to ambiguity.
+- Including ""FY2019Q2"" provides a timeframe but does not clarify what aspect of compliance is required within that period.
+- Overall, while the title gives some context about improving compliance, it lacks clear details on which standards and how specific changes should be made.
+
+Final Answer: Yes",49b519cb8d3d10c9,qwen2.5:14b,0,2026-06-17T18:42:15.504758,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252673,GetMore not closing cursor after exception leading mongos to OOM,0,1,"- The title mentions ""GetMore"" and an ""exception,"" which are specific technical terms.
+- It specifies a consequence (""mongos to OOM""), indicating that the issue leads to an Out Of Memory condition in mongos.
+- However, it lacks clarity on what exactly is not closing (the cursor or something else) and under what conditions this happens.
+- The title does not provide enough context about when or how often this occurs, making it hard to reproduce or understand fully without additional information.
+- While the issue points towards a specific problem with ""GetMore"" operations, the vagueness in describing the exact behavior and conditions makes it ambiguous.
+
+Final Answer: Yes",e38d5fe8c3b5770c,qwen2.5:14b,0,2026-06-17T18:42:18.630670,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254365,Remove errant Javadoc for w = -1 in WriteConcern constructors.,0,0,"- The title specifies a very particular action to take (""Remove errant Javadoc"").
+- It mentions a specific condition (""w = -1"") which provides context.
+- It identifies the exact location of the issue (""WriteConcern constructors""), narrowing down the scope.
+- There is no ambiguity about what needs to be done or where it should be addressed.
+- The title does not use vague language and clearly describes the problem.
+
+Final Answer: No",b33cc11be9ad11d6,qwen2.5:14b,0,2026-06-17T18:42:20.976132,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253861,Add to Enum<JsonMode>,1,1,"- The title ""Add to Enum<JsonMode>"" is brief but does not specify what exactly needs to be added.
+- It lacks context about where this enum is used or why the addition is necessary.
+- There's no indication of which specific value or functionality should be included in the enum.
+- Without further details, it’s unclear whether this refers to a new mode for JSON processing or something else entirely.
+- The scope and purpose of adding to the Enum are not clear from the title alone.
+
+Final Answer: Yes",703c2679b6daf159,qwen2.5:14b,0,2026-06-17T18:42:23.644424,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254940,Consider supporting writetimeout for sockets implementations that support it,0,1,"- The title mentions ""writetimeout"" but does not specify what exactly this term means or how it should be implemented.
+- It is unclear which specific socket implementations are being referred to and whether all such implementations need to support this feature or only certain ones.
+- There is no clear context provided about why supporting writetimeout is necessary, under what conditions, or the expected outcome.
+- The title does not specify any particular component of the software that needs modification or enhancement.
+- Given these points, the issue title lacks clarity and specificity.
+
+Final Answer: Yes",b32046621d5747e8,qwen2.5:14b,0,2026-06-17T18:42:26.418598,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252879,MongoClient.listCollectionNames() returns truncated names,0,1,"- The title specifies a method name (`MongoClient.listCollectionNames()`), which provides clear context about where the problem occurs.
+- It describes an observable behavior (""returns truncated names""), indicating what is wrong with this method's output.
+- However, it does not specify under what conditions or in what scenarios the truncation happens. This lack of detail could lead to multiple interpretations of when and how the issue manifests.
+- The title lacks information about expected versus actual results, which would help clarify the scope of the problem.
+- Despite providing some clarity on where the issue is located, the absence of specific conditions or expectations makes it somewhat ambiguous.
+
+Final Answer: Yes",42f0530573db4058,qwen2.5:14b,0,2026-06-17T18:42:29.665808,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255508,Connection timeout is ignored in ConnectionStatus,0,1,"- The title mentions ""Connection timeout is ignored,"" which specifies a particular behavior that needs to be addressed.
+- However, it does not specify where or under what conditions this issue occurs. Is the timeout being ignored in all scenarios, or only specific ones?
+- There's no context provided about why ignoring the connection timeout is problematic or how it affects system functionality.
+- The scope of the problem isn't clear; for example, which part of ""ConnectionStatus"" is involved and under what circumstances does this happen?
+- Given these points, while the title hints at a specific issue, it lacks sufficient detail to be unambiguous about its exact nature and extent.
+
+Final Answer: Yes",63dce4dc4642e6b7,qwen2.5:14b,0,2026-06-17T18:42:32.771064,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252730,Test that readPreferenceTags are always interpreted as an array,0,1,"- The title specifies a clear action to be taken (""Test...""), which is good.
+- It mentions ""readPreferenceTags"", indicating the specific component or setting involved.
+- However, it lacks context about what system or application this relates to.
+- The phrase ""always interpreted as an array"" could mean different things depending on the current implementation details.
+- Without knowing more about existing behavior and requirements, there's ambiguity in interpreting how these tags should always be treated.
+
+Final Answer: Yes",6f4f56f2a2a82531,qwen2.5:14b,0,2026-06-17T18:42:35.270849,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255584,skip() throw exception with the source code version 2.7.2-141,0,1,"- The title mentions ""skip()"", which refers to a specific method or function.
+- It states that an exception is thrown, indicating a clear issue with the ""skip()"" operation.
+- However, it lacks context about what kind of exception is being thrown and under what conditions.
+- The version number (2.7.2-141) provides some context but does not clarify why or how this specific version causes issues.
+- Overall, while there are clear elements like the method name and version, the lack of detail on the nature of the exception makes it somewhat unclear.
+
+Final Answer: Yes",7bffa17f72a8fdc0,qwen2.5:14b,0,2026-06-17T18:42:38.141543,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253722,Add more host types to run on in Evergreen,0,1,"- The title ""Add more host types to run on in Evergreen"" does not specify what constitutes a ""host type.""
+- It is unclear whether the term ""Evergreen"" refers to a specific application or environment.
+- There is no indication of which features or functionalities are affected by adding these new host types.
+- The scope and impact of this change are not defined, making it difficult to understand the requirements.
+- Without additional context, multiple interpretations can be made about what exactly needs to be added and why.
+
+Final Answer: Yes",2d86a81315f8aef2,qwen2.5:14b,0,2026-06-17T18:42:40.776970,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255096,remove ensureIndex() methods,0,1,"- The title ""remove ensureIndex() methods"" specifies an action to be taken (""remove"") and a specific method or function (""ensureIndex()"").
+- However, it does not specify where these methods are located within the codebase.
+- It also lacks context about why these methods need to be removed (e.g., due to deprecation, performance issues).
+- The scope of which files or modules contain these methods is unclear without further information.
+- Given the lack of specific location and reason for removal, there's ambiguity in understanding what exactly needs to be done.
+
+Final Answer: Yes",d75fbf68345adb48,qwen2.5:14b,0,2026-06-17T18:42:43.629916,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252635,Replace default signatory in Gradle signing plugin with notary service,0,1,"- The title specifies a clear action (""Replace default signatory"").
+- It mentions specific components involved (""Gradle signing plugin"" and ""notary service"").
+- However, it does not specify the exact nature of the change or the impact on existing functionality.
+- There is no context provided about why this replacement is necessary or what problems it aims to solve.
+- The scope of the changes required is somewhat unclear without additional details.
+
+Final Answer: Yes",aad459e90eddcfba,qwen2.5:14b,0,2026-06-17T18:42:45.969938,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252884,Revert NPE error handling in Reactive Streams driver,0,1,"- The title mentions ""Revert,"" which implies undoing a previous change related to error handling.
+- It specifies an exact type of error (""NPE"" likely meaning NullPointerException).
+- However, it does not specify the context or scope of what exactly is being reverted in terms of code changes or functionality.
+- Without knowing the specific details of the previous change and its impact, the title lacks clear context for understanding the full implications of the revert action.
+- The term ""Reactive Streams driver"" narrows down the component but does not provide enough detail about which part of the driver's error handling is being reverted.
+
+Final Answer: Yes",575706b627bc1661,qwen2.5:14b,0,2026-06-17T18:42:48.995605,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252572,Median and Percentile Accumulators,0,1,"- The title ""Median and Percentile Accumulators"" does not specify what kind of accumulators are being referred to or in which context they are used.
+- It is unclear whether the issue pertains to a bug, performance optimization, feature request, or documentation update related to these accumulators.
+- There is no mention of specific components, expected behavior, or conditions under which this issue occurs.
+- The scope and intent behind mentioning ""Median and Percentile Accumulators"" are not clear; it could refer to multiple aspects of software functionality without additional context.
+- Given the lack of specificity regarding what needs fixing or improving, the title is ambiguous.
+
+Final Answer: Yes",66454c2cb9ea5fec,qwen2.5:14b,0,2026-06-17T18:42:52.130038,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254092,DBCollection aggregate methods that take AggregationOptions fail to set slaveOk bit when read preference demands it,0,1,"- The title mentions ""DBCollection aggregate methods,"" which specifies a particular API or method in the software.
+- It states these methods ""take AggregationOptions,"" indicating that there is a specific parameter involved.
+- However, it does not specify what exactly fails when using these options; it only says they fail to set the slaveOk bit under certain conditions.
+- The condition mentioned (""read preference demands it"") is somewhat vague and could be interpreted in multiple ways without further context about what constitutes ""demands.""
+- Despite some clarity on the methods involved, the lack of specific details about the failure scenario or exact conditions makes the title ambiguous.
+
+Final Answer: Yes",772d03d5dd02980e,qwen2.5:14b,0,2026-06-17T18:42:55.150363,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252719,Add tests for allowed cases when authSource is given but username is not,0,1,"- The title specifies a clear context involving ""authSource"" and ""username"".
+- It mentions adding tests specifically for scenarios where an ""authSource"" is provided but a ""username"" is missing.
+- However, the term ""allowed cases"" can be ambiguous as it does not specify what these allowed cases are or under which conditions they apply.
+- The title lacks details about the expected behavior or outcomes of these test cases.
+- Given the potential for multiple interpretations regarding what constitutes an ""allowed case"", the issue title is somewhat unclear.
+
+Final Answer: Yes",721b6f56d6470cf5,qwen2.5:14b,0,2026-06-17T18:42:57.922268,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254567,Regression applying read preference with tag set,0,1,"- The title mentions ""regression,"" which indicates a problem but does not specify what exactly regressed or how it affects functionality.
+- It refers to ""read preference"" and ""tag set,"" which are technical terms that might be clear within the context of a specific system, but without additional details, these terms could mean different things in various contexts.
+- The scope is unclear; it doesn't specify whether this issue affects one particular feature or multiple parts of the software.
+- There's no indication of what ""regression"" means here — does it imply performance degradation, incorrect data retrieval, or something else?
+- Given the lack of specificity and context, there are multiple interpretations possible for what exactly is wrong and how to address it.
+
+Final Answer: Yes",3abeb9f8b2e5fc9b,qwen2.5:14b,0,2026-06-17T18:43:01.353046,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253271,"Remove QueryBatchCursorFunctionalSpecification """"should get more from a secondary"""" test",0,1,"- The title mentions ""Remove"" which indicates an action to be taken but does not specify why this removal is necessary.
+- It refers to a specific test name: ""should get more from a secondary"", however, the context and reason for removing this particular test are unclear.
+- There's no indication of what component or system this test belongs to beyond mentioning ""QueryBatchCursorFunctionalSpecification"".
+- The title does not provide any information about the impact of removing this test or how it affects other parts of the software.
+- Overall, while the action is clear (removing a specific test), the reasons and implications are vague.
+
+Final Answer: Yes",68ebba0b3c1087e7,qwen2.5:14b,0,2026-06-17T18:43:04.417309,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255652,Driver does not support field negation,1,1,"- The title mentions ""Driver"" but it is unclear which specific driver or type of driver is being referred to.
+- It states that there is an issue with ""field negation,"" but the context and scope of what constitutes a field and how negation should be supported are not clear.
+- There is no mention of any specific conditions under which this problem occurs, such as particular input data or system configurations.
+- The title does not specify whether this refers to a feature that needs implementation or an existing bug in functionality.
+- Given the lack of specificity regarding the driver type and the exact nature of field negation, there are multiple possible interpretations of what the issue entails.
+
+Final Answer: Yes",5178d3419c4e6ddc,qwen2.5:14b,0,2026-06-17T18:43:07.598288,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-252711,Support package scanning for Discriminators,0,1,"- The title mentions ""package scanning,"" which is a technical term but does not specify what kind of packages or in what context.
+- It refers to ""Discriminators"" without providing any additional information about their nature or role within the system.
+- There's no clear scope defined; it’s unclear whether this involves adding new functionality, fixing an existing issue, or improving performance.
+- The title does not provide enough detail for someone unfamiliar with the context to understand what needs to be done or what the expected outcome is.
+- Given these points, the title lacks specificity and clarity about its requirements.
+
+Final Answer: Yes",042033b16a0b974c,qwen2.5:14b,0,2026-06-17T18:43:10.565434,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254972,Remove deprecated methods from MapReduceOutput,0,1,"- The title specifies a clear action to be taken (""Remove deprecated methods"").
+- It mentions a specific component or context (""MapReduceOutput"").
+- However, it does not specify which methods are deprecated or why they need removal.
+- Without knowing the exact methods and their implications, the scope of work is unclear.
+- There's ambiguity in understanding exactly what needs to be removed without further details.
+
+Final Answer: Yes",3eed6f91ae9f8c18,qwen2.5:14b,0,2026-06-17T18:43:12.777759,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255595,Add getters/setters to MongoOptions class,0,0,"- The title specifies a clear action (""Add getters/setters"").
+- It mentions a specific class (""MongoOptions""), which provides context.
+- However, it does not specify why these getters and setters are needed or what the expected outcome is.
+- There's no indication of any conditions under which this should be done or any scope beyond adding methods to one class.
+- While the title is clear about the task at hand, it lacks detail regarding the purpose or broader context.
+
+Final Answer: No",4fedc4f2564f838f,qwen2.5:14b,0,2026-06-17T18:43:15.469276,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254357,Add .save and .saveMany to MongoCollection,0,1,"- The title specifies adding two methods (.save and .saveMany) to a specific class or interface (MongoCollection).
+- It clearly indicates the action needed (adding methods), which is unambiguous.
+- However, it does not specify where these methods should be added in relation to existing code or if they are new additions to an API.
+- The title lacks context about why these methods need to be added and what problem they solve.
+- Despite being clear on the task at hand, the lack of broader context makes it somewhat ambiguous regarding its purpose.
+
+Final Answer: Yes",0d8c371462ebef9b,qwen2.5:14b,0,2026-06-17T18:43:18.439164,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253658,Name driver modules using Automatic-Module-Name,0,1,"- The title specifies a clear action to be taken: ""name driver modules"".
+- It mentions a specific mechanism for naming: ""using Automatic-Module-Name"".
+- However, it does not specify which driver modules are involved or the context in which this should occur.
+- Without knowing which drivers and their current state, the scope of work is unclear.
+- The title could be interpreted as applying to all driver modules or a specific subset.
+
+Final Answer: Yes",dcdba2b013a5c540,qwen2.5:14b,0,2026-06-17T18:43:20.813631,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254032,GridFSDownloadStream - exception when destination buffer size != file chunk size,0,1,"- The title specifies a particular class or module (""GridFSDownloadStream""), which provides context.
+- It mentions an occurrence of an ""exception,"" indicating there is a specific error condition.
+- However, the phrase ""destination buffer size != file chunk size"" lacks clarity. It does not specify what happens when this inequality occurs (e.g., what kind of exception or behavior).
+- The title does not provide enough information about the expected behavior or conditions under which the issue arises.
+- While it points to a specific scenario, the lack of detail on the nature and impact of the exception makes it ambiguous.
+
+Final Answer: Yes",0d5344a9ed52b3cb,qwen2.5:14b,0,2026-06-17T18:43:23.784196,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-256021,JSON.parse() and serialize() do not preserve the _id field across serializations as expected,0,1,"- The title mentions ""JSON.parse()"" and ""serialize()"", which are specific functions.
+- It specifies that ""_id"" fields should be preserved across serializations but aren't.
+- However, it does not specify the programming language or context in which this issue occurs.
+- The expected behavior is clear (""_id field should be preserved""), but the lack of a specified environment might lead to different interpretations.
+- Despite some clarity on the problem itself, the ambiguity around the specific environment could cause confusion.
+
+Final Answer: Yes",cae77067e58889b0,qwen2.5:14b,0,2026-06-17T18:43:26.438017,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-254447,Improve runCommand API documentation,0,1,"- The title mentions ""Improve"" which is a vague term as it does not specify what aspects of improvement are needed.
+- It refers to ""runCommand API"", but it doesn't clarify whether the issue pertains to adding missing information, correcting inaccuracies, or enhancing clarity and detail in existing documentation.
+- There's no mention of specific requirements or goals for the improvement, such as target audience, expected outcomes, or detailed changes to be made.
+- The scope is unclear; it does not specify which parts of the API documentation need improvement or why certain sections are problematic.
+- Given these points, the title lacks specificity and could lead to multiple interpretations about what exactly needs to be done.
+
+Final Answer: Yes",e3d6b428a3cfd5bc,qwen2.5:14b,0,2026-06-17T18:43:29.678528,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-255432,Binary class should implements equals and hashCode,0,1,"- The title specifies a clear action (""implements equals and hashCode"").
+- It mentions a specific type of class (""Binary class""), which provides context.
+- However, it does not specify why these methods need to be implemented or the consequences if they are not.
+- There is no mention of any conditions under which this should occur or any scope limitations.
+- The title lacks details about what ""equals"" and ""hashCode"" implementations should look like or how they will interact with other parts of the system.
+
+Final Answer: Yes",009804134bdea027,qwen2.5:14b,0,2026-06-17T18:43:32.298925,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253042,Java driver 3.11 page still says 3.10,0,0,"- The title mentions a specific version discrepancy (""Java driver 3.11"" vs ""3.10"").
+- It specifies the exact nature of the issue: incorrect version information on a page.
+- There is no ambiguity about what needs to be fixed or improved.
+- The context and scope are clear, indicating that there's outdated information on a web page related to the Java driver version.
+- Given the clarity in specifying both the current state (3.11) and the incorrect state (says 3.10), it is not ambiguous.
+
+Final Answer: No",2edadcb31771ba17,qwen2.5:14b,0,2026-06-17T18:43:35.174055,project_05,title_only,ambiguity,few_shot_cot
+ISSUE-253390,Change Stream startAtOperationTime MongoCommandException,0,1,"- The title mentions ""Change Stream,"" which is a feature in MongoDB for real-time data change notifications.
+- It specifies ""startAtOperationTime"" as part of the issue context, indicating that there's an exception related to starting a Change Stream at a specific operation time.
+- However, it only states ""MongoCommandException"" without providing details about what specifically caused this command exception or in which scenario it occurs.
+- The lack of additional context such as the exact error message, conditions under which the issue happens, or expected behavior makes it difficult to understand the full scope and nature of the problem.
+- While the title provides some specific terms, it is still somewhat vague regarding what needs to be changed or fixed.
+
+Final Answer: Yes",b7fe3be107184c5e,qwen2.5:14b,0,2026-06-17T18:43:38.522815,project_05,title_only,ambiguity,few_shot_cot

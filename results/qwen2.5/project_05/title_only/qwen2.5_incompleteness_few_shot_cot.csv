@@ -1,0 +1,888 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-253177,Inconsistent output between java driver and mongo shell,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""inconsistent output"" which implies there is a discrepancy or bug.
+2. It specifies the inconsistency occurs between two components: ""java driver"" and ""mongo shell"".
+3. However, the title lacks details such as:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Affected versions/components
+   - Environment details (e.g., Java version, MongoDB version)
+4. Without these critical pieces of information, it is difficult for developers to understand and resolve the issue effectively.
+
+Final Answer: Yes",708419d36c88a7f2,qwen2.5:14b,0,2026-06-17T18:53:48.855269,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253467,size not accepting $numberlong argument,1,1,"Reasoning: The title ""size not accepting $numberlong argument"" indicates an issue with a specific argument type ($numberlong) being rejected by the 'size' function or method. However, it lacks critical details such as:
+- Steps to reproduce the problem.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment details (e.g., programming language, database version).
+Without these essential pieces of information, the issue is incomplete.
+
+Final Answer: Yes",9f8a8cbd55a0c07b,qwen2.5:14b,0,2026-06-17T18:53:51.332970,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253452,MongoCollection.insertOne throws NullPointerException with WriteConcern.UNACKNOWLEDGED & retryWrites=true,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific error (`NullPointerException`) and the conditions under which it occurs (`WriteConcern.UNACKNOWLEDGED` and `retryWrites=true`).
+2. It specifies the method that throws the exception (`MongoCollection.insertOne`), providing clear context about the affected component.
+3. However, the issue does not provide:
+   - Steps to reproduce the problem
+   - Expected vs actual behavior (what should happen versus what actually happens)
+   - Acceptance criteria for resolving the issue
+   - Environment details such as version numbers or configurations
+
+Given these points, while the title provides some useful information about the error and affected component, it lacks critical details necessary for a complete issue report.
+
+Final Answer: Yes",4c4a41837bf307ba,qwen2.5:14b,0,2026-06-17T18:53:54.827181,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253505,Add an option to toggle SSL certificate validation,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Add an option to toggle SSL certificate validation"" suggests a feature request.
+2. It mentions the action needed (""toggle SSL certificate validation""), but it lacks details on how this should be implemented, where in the UI it will appear, and what the consequences of toggling are.
+3. There is no mention of acceptance criteria, expected behavior when toggled on/off, or any environment-specific information (e.g., which platforms or versions).
+4. The title does not provide steps to reproduce an issue if there's a problem with this feature, nor does it specify what the current state is and how it should change.
+
+Given these points, the title lacks essential details that would make it complete for development purposes.
+
+Final Answer: Yes",bf8805bbd7ec6333,qwen2.5:14b,0,2026-06-17T18:53:58.313607,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255080,JSON parser parses braces incorrectly,0,1,"Reasoning: The title ""JSON parser parses braces incorrectly"" indicates a problem with how the JSON parser handles certain characters or structures. However, it lacks essential details such as:
+
+1. Steps to reproduce the issue.
+2. Expected vs actual behavior.
+3. Affected components and environment details.
+
+Without these critical pieces of information, the issue is incomplete for proper analysis and resolution.
+
+Final Answer: Yes",6d455e104ec18520,qwen2.5:14b,0,2026-06-17T18:54:00.492431,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255534,Looking for performance tips loading results from a find() with the java driver.,0,1,"Reasoning: The title ""Looking for performance tips loading results from a find() with the java driver"" suggests that someone is seeking advice on improving performance when using the Java driver to load results from a `find()` operation. However, it lacks essential information such as:
+- Specific steps to reproduce or observe the issue.
+- Expected vs actual behavior (what is slow and why it's considered suboptimal).
+- Affected components or environment details (database version, hardware specs, etc.).
+- Acceptance criteria for what would constitute an improvement.
+
+Final Answer: Yes",5689f3897cfa9aee,qwen2.5:14b,0,2026-06-17T18:54:03.313605,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255332,Binary field $type is represented in JSON as a number instead of a two-byte hex string,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions that there's an incorrect representation of the `$type` binary field in JSON.
+2. It specifies what is wrong: it should be a two-byte hex string but is represented as a number instead.
+3. However, the title lacks details on how to reproduce this issue (e.g., specific steps or conditions).
+4. There are no acceptance criteria mentioned that would define when the issue is resolved.
+5. No environment details or affected components are provided.
+
+Based on these points, while the title gives some information about what the problem is, it does not provide enough detail for a developer to understand and reproduce the issue effectively.
+
+Final Answer: Yes",a32387c95c7404cd,qwen2.5:14b,0,2026-06-17T18:54:06.539305,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254781,Iterable Codec,1,1,"Step-by-Step Reasoning:
+
+1. The title ""Iterable Codec"" does not specify any particular problem or feature request.
+2. It lacks details about what needs to be done, expected behavior, acceptance criteria, affected components, environment details, or steps to reproduce an issue.
+3. There is no indication of the context in which this codec should operate or how it interacts with other parts of the system.
+
+Final Answer: Yes",e8355e601f5bba26,qwen2.5:14b,0,2026-06-17T18:54:08.730862,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254021,NettyStream does not handle clean socket closures from the server,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""NettyStream"", which is likely a specific component or module.
+2. It states that there's an issue with handling ""clean socket closures from the server"".
+3. However, it does not provide:
+   - Steps to reproduce the problem.
+   - Expected vs actual behavior (what should happen versus what actually happens).
+   - Acceptance criteria for resolving this issue.
+   - Environment details or affected components beyond mentioning NettyStream.
+
+Given these points, while the title gives a hint about the nature of the problem, it lacks critical information needed to fully understand and address the issue effectively.
+
+Final Answer: Yes",12b1129709e7ebeb,qwen2.5:14b,0,2026-06-17T18:54:11.895086,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255615,Include cursor-id in CursorNotFound exception,0,1,"Reasoning: The title ""Include cursor-id in CursorNotFound exception"" suggests that there is a request to include an additional piece of information (cursor-id) when the CursorNotFound exception occurs. However, this title lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment details where the problem occurs.
+
+Without these critical pieces of information, it is difficult for developers and testers to understand the full scope of the issue and how to address it effectively. Therefore, this title appears to be missing essential information that would make the issue complete.
+
+Final Answer: Yes",13c73a8d58c76355,qwen2.5:14b,0,2026-06-17T18:54:14.938345,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254855,Discrimination in Jackson-Codec,1,1,"Reasoning: The title ""Discrimination in Jackson-Codec"" is vague and lacks essential details. It does not specify what kind of discrimination is occurring, the steps to reproduce the issue, expected vs actual behavior, affected components, or environment details. Without these critical pieces of information, it's impossible to understand the nature of the problem fully.
+
+Final Answer: Yes",c79912d8513fb314,qwen2.5:14b,0,2026-06-17T18:54:17.004631,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-256012,Add w/wtimeout to WriteConcern (getLastError),0,1,"Step-by-Step Reasoning:
+
+1. The title ""Add w/wtimeout to WriteConcern (getLastError)"" suggests an enhancement or modification request for a specific feature in the software.
+2. It mentions adding a parameter (""w/wtimeout"") to an existing functionality (""WriteConcern"" and ""getLastError"").
+3. However, it lacks essential details such as:
+   - What is the exact change being proposed?
+   - Why is this change necessary?
+   - How should the system behave after implementing this change?
+   - Are there any acceptance criteria or test cases mentioned?
+4. The title does not provide steps to reproduce an issue (if applicable), expected vs actual behavior, affected components, or environment details.
+5. Given these missing elements, it is difficult for a developer to understand and implement the requested feature without further clarification.
+
+Final Answer: Yes",3b35c9020f2b85fd,qwen2.5:14b,0,2026-06-17T18:54:20.839299,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253265,Provide an option to use pooled NIO direct buffers to minimise impact on GC,0,1,"Reasoning: The title ""Provide an option to use pooled NIO direct buffers to minimise impact on GC"" suggests a feature request or enhancement. However, it lacks essential details such as:
+- Steps to reproduce the issue (if applicable)
+- Expected vs actual behavior
+- Acceptance criteria for the new feature
+- Affected components and environment details
+
+Without these critical pieces of information, the title is incomplete.
+
+Final Answer: Yes",3c1d59f810083c86,qwen2.5:14b,0,2026-06-17T18:54:23.135333,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254440,DocumentCodec and DBObjectCodec treat nested Maps/Iterables differently,0,1,"Reasoning: The title ""DocumentCodec and DBObjectCodec treat nested Maps/Iterables differently"" provides some information about the issue but lacks essential details. It mentions that there is a difference in how two specific components handle nested data structures, but it does not specify:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or environment details.
+- Acceptance criteria.
+
+Without these critical pieces of information, the title alone cannot provide enough context for developers to understand and resolve the issue effectively. Therefore, this issue is incomplete.
+
+Final Answer: Yes",911a6d2493e8cf83,qwen2.5:14b,0,2026-06-17T18:54:25.893757,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255480,Secondary reads on lists of mongos fail until first write,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Secondary reads on lists of mongos fail"".
+2. It specifies that the failure occurs ""until first write"", which implies a sequence of events.
+3. However, it lacks details such as:
+   - What exactly is failing (error message/code)?
+   - Steps to reproduce the issue?
+   - Expected vs actual behavior?
+   - Affected components or environment details?
+
+Given these points, while there are some clues about what might be happening, critical information necessary for a proper analysis and resolution of the issue is missing.
+
+Final Answer: Yes",01e06224348983ce,qwen2.5:14b,0,2026-06-17T18:54:28.808985,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255171,Saved extra fields for Gridfs does not go in metadata sub-document,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Saved extra fields for Gridfs"" which indicates a specific feature or data handling issue.
+2. It states that these fields do not go into the metadata sub-document as expected.
+3. However, the title lacks details such as:
+   - Steps to reproduce the problem
+   - Expected vs actual behavior
+   - Affected components (e.g., database schema, API endpoint)
+   - Environment details (e.g., version of software, operating system)
+
+Given these points, while the issue is somewhat clear in its statement about what should happen versus what does happen, it lacks sufficient detail to be actionable or fully understood without additional context.
+
+Final Answer: Yes",eb0a730bbd39171c,qwen2.5:14b,0,2026-06-17T18:54:32.108604,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254446,Repeated connection with expected authentication errors is not deterministic,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Repeated connection,"" which implies a scenario involving multiple attempts to connect.
+2. It also states ""expected authentication errors,"" indicating that the issue involves some form of authentication failure during these connections.
+3. However, the phrase ""is not deterministic"" suggests inconsistency or unpredictability in how often or under what conditions these errors occur.
+
+Despite this information:
+- The title does not provide specific steps to reproduce the issue.
+- It lacks details about the expected vs actual behavior beyond mentioning authentication errors.
+- There is no mention of acceptance criteria, affected components, or environment details.
+- No clear indication of which part of the system (e.g., API endpoint) is involved.
+
+Given these missing elements, the title does not provide enough information to fully understand and address the issue effectively.
+
+Final Answer: Yes",dc10c13ab9177e91,qwen2.5:14b,0,2026-06-17T18:54:35.863745,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254233,Custom logging implementation,1,1,"Reasoning: The title ""Custom logging implementation"" does not provide any specific details about what needs to be implemented or how it should behave. It lacks information such as the scope of the custom logging, expected behavior, acceptance criteria, affected components, and environment details.
+
+Final Answer: Yes",7f67d6a711d01905,qwen2.5:14b,0,2026-06-17T18:54:37.605665,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252701,Update documentation for Text Search,1,1,"Reasoning: The title ""Update documentation for Text Search"" lacks essential details such as what specific parts of the documentation need to be updated, who will perform the update, acceptance criteria, and any affected components or environment details. It does not provide enough information to understand the scope or requirements of the task.
+
+Final Answer: Yes",d0397bfef2e0fdeb,qwen2.5:14b,0,2026-06-17T18:54:39.476314,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255572,Morphia Integration in java driver,0,1,"Reasoning: The title ""Morphia Integration in java driver"" does not provide enough information to determine if it is a complete issue. It lacks details such as the specific problem or feature request related to Morphia integration, steps to reproduce any issues, expected vs actual behavior, acceptance criteria, affected components, and environment details.
+
+Final Answer: Yes",7f9da6a60f3aa1c0,qwen2.5:14b,0,2026-06-17T18:54:41.452696,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255511,Respect the QueryFailure response flag in OP_REPLY,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Respect the QueryFailure response flag in OP_REPLY"" suggests that there is an issue related to handling a specific response flag within a particular operation.
+2. However, it lacks essential details such as:
+   - Steps to reproduce the problem.
+   - Expected vs actual behavior.
+   - Affected components or modules.
+   - Environment details (e.g., database version, client version).
+3. Without these critical pieces of information, it is difficult for developers and testers to understand the full scope of the issue and how to address it effectively.
+
+Final Answer: Yes",ff27dc423618db04,qwen2.5:14b,0,2026-06-17T18:54:44.494808,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254614,2.12.x breaks compatibility with mongoDB v1.8,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific version of software (""2.12.x"") and a specific issue related to breaking compatibility.
+2. It specifies the affected component (""mongoDB v1.8"").
+3. However, it does not provide details on what exactly is broken or how to reproduce the issue.
+4. There's no mention of expected vs actual behavior, acceptance criteria, or environment details.
+
+Given these points, while some essential information is provided (affected version and component), critical details such as reproduction steps, expected vs actual behavior, and other necessary context are missing.
+
+Final Answer: Yes",3b20d810f00fa202,qwen2.5:14b,0,2026-06-17T18:54:47.524577,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253354,Deprecate DBCursor#addSpecial,1,1,"Step-by-Step Reasoning:
+
+1. The title ""Deprecate DBCursor#addSpecial"" indicates an intention to deprecate a specific method in the codebase.
+2. However, it lacks essential details such as:
+   - Why this method is being deprecated (rationale or issue it causes).
+   - What should be used instead of this method.
+   - Acceptance criteria for the deprecation process.
+   - Affected components and their impact.
+   - Environment details where this change will take place.
+
+Final Answer: Yes",6791d7d10ce5924c,qwen2.5:14b,0,2026-06-17T18:54:50.190253,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255153,update description of fsync write concern flag,0,1,"Reasoning: The title ""update description of fsync write concern flag"" suggests that there is a need to modify or clarify the documentation for a specific feature related to database operations. However, it lacks essential details such as what exactly needs to be updated in the description, why this update is necessary, and whether there are any expected changes in behavior or functionality due to this update.
+
+- Missing: What specifically needs updating.
+- Missing: Why the update is needed (e.g., clarification of existing behavior, addition of new information).
+- Missing: Expected outcome after the update.
+- Missing: Affected components or environment details.
+
+Final Answer: Yes",0ff8fd3bdb4d8d89,qwen2.5:14b,0,2026-06-17T18:54:53.159877,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255938,DBCursor.copy() does not copy batch size,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific method `DBCursor.copy()` and indicates that it is not copying the batch size.
+2. However, the issue lacks details such as:
+   - Steps to reproduce the problem.
+   - Expected behavior vs actual observed behavior.
+   - Affected components or modules.
+   - Environment details (e.g., database version, programming language version).
+3. Without these critical pieces of information, it is difficult for developers to understand and resolve the issue effectively.
+
+Final Answer: Yes",88e9e526973dadbd,qwen2.5:14b,0,2026-06-17T18:54:55.850895,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253697,"upload mo artifacts"""" Evergreen post-task is failing",1,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""upload mo artifacts"", which suggests a specific action or feature.
+2. It also states that an ""Evergreen post-task"" is failing, indicating there's an issue with a particular task or process.
+3. However, the title lacks critical details such as:
+   - Steps to reproduce the failure
+   - Expected vs actual behavior
+   - Affected components (e.g., specific modules, services)
+   - Environment details (e.g., OS version, software versions)
+4. Without these essential pieces of information, it's difficult for a developer or analyst to understand and resolve the issue effectively.
+
+Final Answer: Yes",d90f4b5459495967,qwen2.5:14b,0,2026-06-17T18:54:59.100487,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253111,minWireVersion is 1 but it should be 2,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific value (`minWireVersion` is 1) and the expected value (it should be 2).
+2. However, it lacks details on:
+   - Steps to reproduce the issue.
+   - Affected components or modules.
+   - Expected vs actual behavior beyond the version number discrepancy.
+   - Environment details where this occurs.
+   - Acceptance criteria for resolving the issue.
+
+Given these missing elements, the title does not provide enough information to fully understand and address the problem effectively.
+
+Final Answer: Yes",227ccc52884f2f36,qwen2.5:14b,0,2026-06-17T18:55:01.922451,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252640,Documentation links 404,1,1,"Reasoning: The title ""Documentation links 404"" indicates that some documentation links are not working and return a 404 error. However, it lacks essential details such as which specific links are broken, the environment where this issue occurs, expected behavior, steps to reproduce, or acceptance criteria.
+
+Final Answer: Yes",8d1ab57df7a3b0bc,qwen2.5:14b,0,2026-06-17T18:55:03.834114,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255236,DBObject.equals can fail when binary data exists,0,1,"Reasoning: The title ""DBObject.equals can fail when binary data exists"" provides some information about a potential bug but lacks essential details. It mentions that the `equals` method of `DBObject` might fail in certain conditions involving binary data, but it does not specify:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or environment details.
+- Acceptance criteria.
+
+Given these missing elements, the title is incomplete for a proper analysis and resolution of the issue.
+
+Final Answer: Yes",7be5cf5299243f2f,qwen2.5:14b,0,2026-06-17T18:55:06.407188,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255324,Increase GridFS max chunk size,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Increase GridFS max chunk size"" specifies a change to an existing system component (GridFS) and mentions the parameter that needs adjustment (max chunk size).
+2. However, it lacks critical details such as:
+   - Why this increase is necessary.
+   - What the current value of the max chunk size is.
+   - The proposed new value for the max chunk size.
+   - Any potential impacts on performance or storage.
+   - Steps to reproduce any issues related to the current limit.
+   - Expected behavior after increasing the max chunk size.
+3. Without these details, it's impossible to fully understand and address the issue effectively.
+
+Final Answer: Yes",b198bb91ff28b13d,qwen2.5:14b,0,2026-06-17T18:55:09.682023,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254743,Server selection exception should chain exceptions from server monitors,0,1,"Reasoning: The title ""Server selection exception should chain exceptions from server monitors"" provides some information about an expected change in behavior but lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment details where this occurs.
+
+Without these critical pieces of information, it is difficult for a developer to understand and address the problem effectively. Therefore, this title suggests an incomplete issue report.
+
+Final Answer: Yes",7661a4ab5f10a2a7,qwen2.5:14b,0,2026-06-17T18:55:12.108517,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253069,Remove mongodb-driver-embedded-android package,0,1,"Reasoning: The title ""Remove mongodb-driver-embedded-android package"" lacks essential information such as why this package needs to be removed, what impact it will have on the system or other components, whether there are any dependencies that need to be addressed, and how the removal should be verified. It does not provide steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details.
+
+Final Answer: Yes",62081f945ba1c102,qwen2.5:14b,0,2026-06-17T18:55:14.365594,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254867,Add type-safe jsMode support in MapReduceCommand,0,1,"Reasoning: The title ""Add type-safe jsMode support in MapReduceCommand"" suggests that there is a request to add a feature or modify existing functionality. However, it lacks essential details such as:
+- What exactly needs to be done to implement this feature.
+- Expected behavior after the implementation.
+- Steps to reproduce any issues if applicable (though it seems more like a feature request than an issue).
+- Affected components and environment details.
+
+Final Answer: Yes",d291d6112a14ad3e,qwen2.5:14b,0,2026-06-17T18:55:16.775171,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252707,Storing unsigned integer to Mongodb from java,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Storing unsigned integer to Mongodb from java"".
+2. It specifies the data type (unsigned integer), the database (MongoDB), and the programming language (Java).
+3. However, it lacks details on:
+   - Steps to reproduce the issue.
+   - Expected vs actual behavior.
+   - Acceptance criteria for successful storage.
+   - Environment details such as MongoDB version or Java version.
+4. Without these critical pieces of information, it's difficult to understand the full scope and requirements of the issue.
+
+Final Answer: Yes",2fdc05b843253a24,qwen2.5:14b,0,2026-06-17T18:55:19.650732,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255700,Possible bug with JSON parser,1,1,"Reasoning: The title ""Possible bug with JSON parser"" is very vague. It does not specify what kind of error occurs, under which conditions it happens, or any steps to reproduce the issue. There's no mention of expected vs actual behavior, acceptance criteria, affected components, or environment details.
+
+Final Answer: Yes",a25f4fe220a4b77e,qwen2.5:14b,0,2026-06-17T18:55:21.525124,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253917,$geoNear Aggregation pipeline in Mongo JAVA driver,0,1,"Step-by-Step Reasoning:
+
+1. The title ""$geoNear Aggregation pipeline in Mongo JAVA driver"" mentions a specific feature or functionality within the MongoDB Java driver.
+2. It specifies that it is related to the $geoNear aggregation stage, which implies a particular use case involving geographical data and proximity searches.
+3. However, the title lacks essential information such as:
+   - Steps to reproduce an issue (if there is one)
+   - Expected vs actual behavior
+   - Acceptance criteria
+   - Affected components or modules within the Java driver
+   - Environment details where this occurs
+
+Given these points, the title does not provide enough context for a requirements analyst to understand the full scope of the issue or task.
+
+Final Answer: Yes",7bc545db19d27b17,qwen2.5:14b,0,2026-06-17T18:55:24.953785,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254894,The aggregation method is inaccurately showing type,0,1,"Reasoning: The title ""The aggregation method is inaccurately showing type"" indicates that there might be an issue with how data types are being displayed or processed in the context of some aggregation function. However, it lacks critical details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior (what should happen versus what happens now).
+- Affected components or modules.
+- Environment details where this occurs.
+
+Without these essential pieces of information, it is difficult for developers and testers to understand and resolve the problem effectively. Therefore, based on the provided title alone, the issue appears incomplete.
+
+Final Answer: Yes",d6b17396f5293b7a,qwen2.5:14b,0,2026-06-17T18:55:27.833067,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253334,Deprecate MongoIterable#forEach,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Deprecate MongoIterable#forEach"" indicates an intention to deprecate a specific method in the MongoIterable class.
+2. However, it lacks essential details such as:
+   - Why this method should be deprecated (rationale or issue with the current implementation).
+   - What alternative methods or approaches are recommended.
+   - Acceptance criteria for deprecation.
+   - Affected components and their impact.
+   - Environment details where this change is applicable.
+
+Final Answer: Yes",bb635ac9169d3134,qwen2.5:14b,0,2026-06-17T18:55:30.509572,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255443,Errors when DBRef's $id is Object instead of simple value,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Errors"" which indicates there is a problem.
+2. It specifies the context of the issue: ""DBRef's $id"".
+3. It describes what causes the error: ""$id is Object instead of simple value"".
+
+However, the title lacks several critical pieces of information:
+- Steps to reproduce the issue
+- Expected vs actual behavior
+- Affected components or modules
+- Environment details (e.g., database version, application version)
+- Acceptance criteria
+
+Final Answer: Yes",548155025f427d87,qwen2.5:14b,0,2026-06-17T18:55:33.231358,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253221,mongodb+srv schema can cause NullPointerException,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific technical detail (""mongodb+srv schema""), which indicates it is related to a particular database setup.
+2. It also specifies an error condition (""can cause NullPointerException"").
+3. However, the title lacks critical information such as:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Affected components or modules
+   - Environment details (e.g., version of MongoDB, Java version)
+4. Without these details, it is difficult for developers to understand and resolve the problem effectively.
+
+Final Answer: Yes",0d61c239c6479814,qwen2.5:14b,0,2026-06-17T18:55:36.071263,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253502,Re-enable write concern tests for dropDatabase command,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Re-enable write concern tests for dropDatabase command"" suggests that there is a need to re-enable certain tests related to the `dropDatabase` command and write concerns.
+2. However, this title lacks essential information such as:
+   - Why these tests were disabled in the first place?
+   - What specific changes or conditions are required to re-enable them?
+   - Which environment or version of the software is affected?
+   - Expected behavior after enabling the tests.
+   - Steps to reproduce the issue (if there was an issue with disabling).
+3. The title does not provide any acceptance criteria, which would be necessary to understand what success looks like for this task.
+
+Final Answer: Yes",652ec327240c974b,qwen2.5:14b,0,2026-06-17T18:55:39.508980,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255435,Thread Locals not being freed in thread pool,0,1,"Reasoning: The title ""Thread Locals not being freed in thread pool"" suggests an issue with a specific component (thread pool) and behavior (Thread Locals not being freed). However, it lacks essential details such as:
+- Steps to reproduce the problem.
+- Expected vs actual behavior.
+- Affected components beyond just mentioning the thread pool.
+- Environment details where this occurs.
+- Acceptance criteria for resolving the issue.
+
+Final Answer: Yes",b3a24a90af52ed35,qwen2.5:14b,0,2026-06-17T18:55:41.839229,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255744,authentication for replica set fails frequently because 'getnonce' and 'authenticate' command is issued to different server,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions an issue with ""authentication for replica set"".
+2. It states that the failure happens frequently.
+3. It specifies that 'getnonce' and 'authenticate' commands are issued to different servers, which seems to be the cause of the problem.
+
+However, the title lacks several critical pieces of information:
+- Steps to reproduce the issue
+- Expected vs actual behavior (what should happen versus what actually occurs)
+- Affected components or modules
+- Environment details (e.g., version numbers, operating system, database type)
+
+Final Answer: Yes",6cfb25815e70b466,qwen2.5:14b,0,2026-06-17T18:55:44.768594,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255326,No Such Method Exception When Instantiating Mongo Client,1,1,"Reasoning: The title ""No Such Method Exception When Instantiating Mongo Client"" indicates an error occurring during a specific operation. However, it lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected behavior vs actual behavior.
+- Affected components or environment details (e.g., version of MongoDB driver, Java version).
+- Acceptance criteria for resolving the issue.
+
+Final Answer: Yes",0403ed9481b8ccfe,qwen2.5:14b,0,2026-06-17T18:55:46.982304,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255548,Stackoverflow when querying document with cycle reference using DBRef,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific error (""Stackoverflow"") which indicates an issue.
+2. It specifies the context of the problem: ""querying document with cycle reference using DBRef"".
+3. However, it lacks details on how to reproduce the issue (e.g., steps or code snippet).
+4. There is no mention of expected vs actual behavior.
+5. No acceptance criteria are provided.
+6. The environment and affected components are not detailed.
+
+Given these points, while there is some information about what the problem is, critical elements such as reproduction steps and acceptance criteria are missing to fully understand and resolve the issue.
+
+Final Answer: Yes",12a81ae5883db35f,qwen2.5:14b,0,2026-06-17T18:55:50.340840,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254528,Add MongoCollection.dropIndex(Bson keys),0,1,"Reasoning: The title ""Add MongoCollection.dropIndex(Bson keys)"" suggests an action to be taken in code but lacks essential details such as the context of why this is needed, expected behavior after implementation, acceptance criteria, affected components, and environment details. It does not provide enough information for a developer or analyst to understand the full scope of the issue or how to reproduce it.
+
+Final Answer: Yes",122d0e04fb7e5e47,qwen2.5:14b,0,2026-06-17T18:55:52.546851,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254203,Add equals() and toString() to Updates,0,1,"Reasoning: The title ""Add equals() and toString() to Updates"" specifies a task but lacks essential details such as where these methods should be added, what the expected behavior of these methods is, acceptance criteria for their implementation, or any environment-specific information. It does not provide enough context to understand the full scope of the issue.
+
+Final Answer: Yes",db9faaf89622c0c9,qwen2.5:14b,0,2026-06-17T18:55:54.557562,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254082,Connection and thread leakage in DefaultServerMonitor,0,1,"Reasoning: The title ""Connection and thread leakage in DefaultServerMonitor"" indicates a potential problem with connection and thread management within the DefaultServerMonitor component. However, it lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components beyond just mentioning DefaultServerMonitor.
+- Environment details (e.g., operating system, version of software).
+- Acceptance criteria.
+
+Without these critical pieces of information, the title alone does not provide enough context for a developer or analyst to understand and address the problem effectively. Therefore, it is INCOMPLETE.
+
+Final Answer: Yes",79f169bb58cb8fa0,qwen2.5:14b,0,2026-06-17T18:55:57.531614,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253763,Reduce size of Evergreen matrix,0,1,"Reasoning: The title ""Reduce size of Evergreen matrix"" lacks essential details such as what exactly needs to be reduced, by how much, which components or features are affected, and the expected outcome. It does not specify steps to reproduce, acceptance criteria, environment details, or any other necessary information for a complete issue report.
+
+Final Answer: Yes",23d6e3cd73fd319c,qwen2.5:14b,0,2026-06-17T18:55:59.523621,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254130,Ensure Loggers are past to ErrorHandlingCallbacks,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Ensure Loggers are past to ErrorHandlingCallbacks"" suggests that there is a requirement for loggers to be passed to error handling callbacks.
+2. However, the title lacks essential details such as:
+   - What specific action or change needs to happen?
+   - How should this be implemented (code snippet, configuration changes)?
+   - Expected behavior after implementing this change?
+   - Affected components or modules?
+   - Environment details where this issue is observed?
+
+Given these missing elements, the title does not provide enough information for a developer to understand and address the requirement effectively.
+
+Final Answer: Yes",3c0bccbaaf15ec5e,qwen2.5:14b,0,2026-06-17T18:56:02.621329,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253459,how to implement nested query in java API,0,1,"Reasoning: The title ""how to implement nested query in java API"" is a question asking for guidance on implementation but does not specify any details about the expected behavior, acceptance criteria, affected components, or environment. It lacks clear reproduction steps and specific requirements that would make it actionable.
+
+Final Answer: Yes",b89263bd18c84f9e,qwen2.5:14b,0,2026-06-17T18:56:04.440914,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255998,Tried to save too large of an object. max size: 2098176,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Tried to save too large of an object.""
+   - This indicates a specific action and the outcome.
+   
+2. It specifies ""max size: 2098176""
+   - Provides a concrete value for what is considered too large.
+
+3. However, it lacks:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior (what should happen when trying to save an object of this size)
+   - Affected components or environment details
+   - Acceptance criteria
+
+Given these points, while there is some information provided about the nature of the problem, critical elements such as reproduction steps and expected behavior are missing.
+
+Final Answer: Yes",0784071269923556,qwen2.5:14b,0,2026-06-17T18:56:07.759500,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254903,REPLICA_ACKNOWLEDGED not working at the time of arbiter Node,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""REPLICA_ACKNOWLEDGED"", which seems to be a specific term or state in a database replication context.
+2. It states that this is not working at the time of an arbiter Node, indicating there's a problem with replica acknowledgment during a particular node status (arbiter).
+3. However, the title lacks essential details such as:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Affected components or modules
+   - Environment details (e.g., database version, operating system)
+4. Without these critical pieces of information, it's challenging for developers to understand and resolve the problem effectively.
+
+Final Answer: Yes",53989afc07deb10d,qwen2.5:14b,0,2026-06-17T18:56:11.107106,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253040,mavenLocal should be first repository,0,1,"Reasoning: The title ""mavenLocal should be first repository"" lacks essential details such as why it needs to be the first repository, what issues arise from its current position, steps to reproduce any problems, expected vs actual behavior, and acceptance criteria. It does not provide enough information for a developer or analyst to understand the full scope of the issue.
+
+Final Answer: Yes",1acd18808f1c5d90,qwen2.5:14b,0,2026-06-17T18:56:13.236035,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255829,Publish maven SNAPSHOTs,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Publish maven SNAPSHOTs"" is very brief and does not provide any specific details about the problem or feature request.
+2. It lacks information on what exactly needs to be done, such as steps to reproduce an issue (if it's a bug), expected vs actual behavior, acceptance criteria, affected components, environment details, etc.
+3. There are no clear indications of whether this is a feature request, a bug report, or a general task description.
+4. The title does not specify the context in which ""Publish maven SNAPSHOTs"" should occur (e.g., under what conditions, by whom, with what frequency).
+5. Without additional details, it's impossible to understand the full scope of the issue or how to verify its resolution.
+
+Final Answer: Yes",ee5379642f82e176,qwen2.5:14b,0,2026-06-17T18:56:16.957553,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253678,Document new Pojo updates,0,1,"Reasoning: The title ""Document new Pojo updates"" lacks essential information such as what specific changes or additions are being documented, who needs to document them, the scope of these updates, and any acceptance criteria for completing this task. It does not provide enough detail to understand the full requirements or how to proceed with documenting the updates.
+
+Final Answer: Yes",4c78e74ae94311ae,qwen2.5:14b,0,2026-06-17T18:56:18.989801,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255807,Allow bson decoder per operation (find/cusor),0,1,"Step-by-Step Reasoning:
+
+1. The title ""Allow bson decoder per operation (find/cursor)"" suggests a feature request or enhancement related to BSON decoding for specific operations.
+2. It mentions two operations: find and cursor.
+3. However, the title lacks essential details such as:
+   - What is the expected behavior of this new functionality?
+   - How should it be implemented?
+   - Are there any acceptance criteria provided?
+   - Which components or modules are affected by this change?
+   - Is there a specific environment or context in which this issue applies?
+
+Given these points, the title does not provide enough information to fully understand and address the request.
+
+Final Answer: Yes",9bf455b131b3d2e4,qwen2.5:14b,0,2026-06-17T18:56:22.236107,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252979,Remove CLIRR support from the build,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Remove CLIRR support from the build"" indicates an action to be taken but lacks essential details.
+2. It does not specify why CLIRR support needs to be removed or what the consequences of removing it are.
+3. There is no mention of steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details.
+4. The title alone does not provide enough information for a developer to understand the full scope and requirements of the task.
+
+Final Answer: Yes",2dddb8b61ca18577,qwen2.5:14b,0,2026-06-17T18:56:24.898782,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252775,Multiple reads of BsonBinary UUID return different results,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Multiple reads"" which implies there are steps to reproduce the issue.
+2. It specifies that these reads involve a ""BsonBinary UUID"", indicating the affected component or data type.
+3. However, it only states that different results are returned without specifying what those results should be (expected behavior) or what they actually are (actual behavior).
+4. There is no mention of acceptance criteria, environment details, or any other necessary information to fully understand and reproduce the issue.
+
+Final Answer: Yes",ad3c20a12fe7000a,qwen2.5:14b,0,2026-06-17T18:56:27.605680,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254111,Allow setting of standard server selection and server monitoring options in the connection string,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Allow setting of standard server selection and server monitoring options.""
+2. It specifies these settings should be done via a ""connection string,"" which is the method for configuration.
+3. However, it lacks details on what exactly needs to be set in the connection string (specific parameters or values).
+4. There's no mention of expected behavior after setting these options.
+5. No information about how to reproduce any issue or verify if the feature works as intended.
+6. Missing acceptance criteria and environment details.
+
+Final Answer: Yes",8f3e8d2eac305ca6,qwen2.5:14b,0,2026-06-17T18:56:30.441848,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255459,Aggregate and mapReduce commands sent to mongos break when setting read preference,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions specific database operations (""Aggregate"" and ""mapReduce"").
+2. It specifies the component involved (""mongos"").
+3. It indicates a failure condition (""break when setting read preference"").
+
+However, the issue title lacks:
+- Steps to reproduce the problem.
+- Expected vs actual behavior details.
+- Acceptance criteria for resolving the issue.
+- Environment details (e.g., MongoDB version, operating system).
+
+Final Answer: Yes",5ee32cd168f4c206,qwen2.5:14b,0,2026-06-17T18:56:32.904828,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253919,DBCollection.distinct() fails when a null value is in the result,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""DBCollection.distinct()"" which indicates a specific method or function.
+2. It states that this method fails under certain conditions (""when a null value is in the result"").
+3. However, it does not provide:
+   - Steps to reproduce the issue.
+   - Expected vs actual behavior (what should happen versus what actually happens).
+   - Affected components beyond mentioning ""DBCollection.distinct()"".
+   - Environment details such as database version or programming language used.
+
+Given these points, while there is some information provided about a specific failure condition, it lacks critical details necessary for proper analysis and resolution of the issue.
+
+Final Answer: Yes",fe14ceceabb0182e,qwen2.5:14b,0,2026-06-17T18:56:36.146396,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254628,Force slaveOK on a direct connection to a replica set membe,1,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Force slaveOK"" which implies there is an action or configuration that needs to be enforced.
+2. It refers to a ""direct connection to a replica set member,"" indicating the context of database replication and connections.
+3. However, the title lacks essential details such as:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Affected components (e.g., specific software version or environment)
+   - Acceptance criteria for resolving the issue
+
+Given these points, the title does not provide enough information to understand the full scope of the problem and how it should be addressed.
+
+Final Answer: Yes",2bc818d583e95e3a,qwen2.5:14b,0,2026-06-17T18:56:39.406265,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255956,Use weakrefs for static list of Mongo instances,0,1,"Reasoning: The title ""Use weakrefs for static list of Mongo instances"" suggests a change or recommendation related to using weak references in the context of managing a static list of MongoDB instance connections. However, it lacks essential details such as:
+- Why this change is necessary.
+- What problems it aims to solve.
+- Steps to reproduce any issues if applicable.
+- Expected behavior after implementing the change.
+- Affected components or modules.
+- Environment details where this applies.
+
+Final Answer: Yes",484fdf84e5a05a35,qwen2.5:14b,0,2026-06-17T18:56:41.839851,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253509,Make Java driver spec compliant - FY2019Q2,0,1,"Step-by-Step Reasoning:
+
+Title: ""Make Java driver spec compliant - FY2019Q2""
+
+1. **Scope and Objective**: The title mentions making the Java driver specification compliant but does not specify what compliance means or which specifications are being referred to.
+2. **Steps to Reproduce/Reproduction Steps**: There are no steps provided for reproducing any issue or demonstrating how to make the driver non-compliant.
+3. **Expected vs Actual Behavior**: The title does not describe either expected behavior (what should happen) or actual behavior (what is happening).
+4. **Acceptance Criteria**: No acceptance criteria are mentioned, such as what constitutes compliance or how success will be measured.
+5. **Affected Components**: While it mentions the Java driver, there's no detail on which parts of the driver need to be compliant or if any specific components are affected.
+6. **Environment Details**: The title does not provide information about the environment in which this needs to happen (e.g., operating system, version details).
+
+Given these points, the issue lacks essential details that would make it actionable and clear.
+
+Final Answer: Yes",1f3e857f2a1d5ad4,qwen2.5:14b,0,2026-06-17T18:56:46.756699,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252673,GetMore not closing cursor after exception leading mongos to OOM,0,1,"Step-by-Step Reasoning:
+
+1. **Title Analysis**: The title mentions ""GetMore"", which is a MongoDB operation for fetching additional data from a cursor.
+2. **Issue Description**:
+   - It states that the cursor does not close after an exception occurs.
+   - This leads to mongos (MongoDB router) running out of memory (OOM).
+3. **Missing Information**:
+   - Steps to reproduce the issue are missing.
+   - Expected vs actual behavior is not clearly stated.
+   - Acceptance criteria for resolving this issue are absent.
+   - Affected components and environment details are not provided.
+
+Given these points, the title lacks critical information needed to fully understand and address the problem effectively. Therefore, it can be classified as INCOMPLETE.
+
+Final Answer: Yes",c649c9d9857f9c4e,qwen2.5:14b,0,2026-06-17T18:56:50.354853,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254365,Remove errant Javadoc for w = -1 in WriteConcern constructors.,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Remove errant Javadoc"" which indicates a specific task to be performed.
+2. It specifies the context of the issue: ""w = -1 in WriteConcern constructors"".
+3. However, it lacks details such as:
+   - Steps to reproduce or verify the issue (if applicable).
+   - Expected vs actual behavior.
+   - Affected components or modules.
+   - Environment details where this occurs.
+4. The title does not provide acceptance criteria for what constitutes a resolution.
+
+Given these points, while the title provides some context about the specific Javadoc that needs to be removed, it lacks essential information required to fully understand and address the issue comprehensively.
+
+Final Answer: Yes",e92b827cd2e09dd3,qwen2.5:14b,0,2026-06-17T18:56:53.766016,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253861,Add to Enum<JsonMode>,1,1,"Reasoning: The title ""Add to Enum<JsonMode>"" is very vague. It does not specify what needs to be added to the enum, why it's needed, or any acceptance criteria. There are no details about affected components, environment requirements, or steps to reproduce if there were an issue.
+
+Final Answer: Yes",20fa8b980f79d9ef,qwen2.5:14b,0,2026-06-17T18:56:55.693927,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254940,Consider supporting writetimeout for sockets implementations that support it,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""writetimeout"" which is a specific feature or parameter.
+2. It suggests adding this feature to certain socket implementations but does not specify which ones.
+3. There are no details about the expected behavior, acceptance criteria, steps to reproduce an issue (if any), affected components, or environment details.
+4. The title lacks clarity on what exactly needs to be done and why it is necessary.
+
+Final Answer: Yes",34e348632bc5c800,qwen2.5:14b,0,2026-06-17T18:56:58.163827,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252879,MongoClient.listCollectionNames() returns truncated names,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific method (`MongoClient.listCollectionNames()`), which is good for identifying the affected component.
+2. It describes an issue with returned values (""returns truncated names""), indicating there's a discrepancy between expected and actual behavior.
+3. However, the title lacks details on:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior in detail (how are the names supposed to be returned versus how they are actually returned?)
+   - Affected environment or versions of MongoDB/MongoClient
+   - Acceptance criteria for resolving this issue
+
+Given these points, while the title provides some information about the problem, it is missing crucial details that would allow a developer to understand and resolve the issue effectively.
+
+Final Answer: Yes",d8b7f19f09a788d7,qwen2.5:14b,0,2026-06-17T18:57:01.733386,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255508,Connection timeout is ignored in ConnectionStatus,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Connection timeout"" and that it's being ""ignored"".
+2. It specifies where this occurs (""in ConnectionStatus"").
+3. However, the title lacks details on how to reproduce the issue.
+4. There is no mention of expected vs actual behavior.
+5. No acceptance criteria are provided.
+6. Affected components or environment details are not mentioned.
+
+Given these points, the title does not provide enough information for a developer to understand and resolve the issue effectively.
+
+Final Answer: Yes",036b476cad852c67,qwen2.5:14b,0,2026-06-17T18:57:04.422904,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252730,Test that readPreferenceTags are always interpreted as an array,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Test that readPreferenceTags are always interpreted as an array"" suggests a test case or requirement related to the interpretation of `readPreferenceTags`.
+2. It mentions what should be tested: ensuring `readPreferenceTags` is always treated as an array.
+3. However, it lacks essential details such as:
+   - Steps to reproduce (if applicable).
+   - Expected vs actual behavior.
+   - Acceptance criteria for passing/failing the test.
+   - Affected components or environment details.
+
+Given these points, the title does not provide enough information to fully understand and address the issue effectively. Therefore, it is INCOMPLETE.
+
+Final Answer: Yes",96933ceb0b21ee75,qwen2.5:14b,0,2026-06-17T18:57:07.635767,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255584,skip() throw exception with the source code version 2.7.2-141,0,1,"Step-by-step reasoning:
+
+Title: ""skip() throw exception with the source code version 2.7.2-141""
+
+1. The title mentions a specific method (`skip()`), which is good.
+2. It indicates that an exception is thrown, but it does not specify what type of exception or any error message details.
+3. A specific version number (2.7.2-141) is mentioned, which helps in identifying the context.
+4. However, there are no steps to reproduce the issue provided.
+5. There's no mention of expected behavior versus actual behavior.
+6. No acceptance criteria or affected components are specified.
+7. Environment details such as operating system, browser version, etc., are missing.
+
+Given these points, the title lacks critical information needed for a proper analysis and resolution of the issue.
+
+Final Answer: Yes",3f0e60e29fe20234,qwen2.5:14b,0,2026-06-17T18:57:11.503988,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253722,Add more host types to run on in Evergreen,0,1,"Reasoning: The title ""Add more host types to run on in Evergreen"" suggests that there is a request to support additional host types for the software called Evergreen. However, it lacks essential details such as what specific host types are needed, how these new hosts should integrate with existing systems, expected behavior when running on these new hosts, acceptance criteria, and any potential impact on current functionality or performance.
+
+Final Answer: Yes",384a6611644239f4,qwen2.5:14b,0,2026-06-17T18:57:13.868607,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255096,remove ensureIndex() methods,0,1,"Step-by-Step Reasoning:
+
+1. The title ""remove ensureIndex() methods"" suggests an action to be taken on a specific method.
+2. However, it lacks essential details such as:
+   - Why these methods need to be removed?
+   - What are the consequences of removing them (e.g., impact on performance, functionality)?
+   - Are there any acceptance criteria or tests that should be run after removal?
+   - Which components or modules use these methods and will be affected by their removal?
+3. There is no information about steps to reproduce an issue, expected vs actual behavior, environment details, or specific requirements.
+
+Final Answer: Yes",4673ad28b199bb96,qwen2.5:14b,0,2026-06-17T18:57:17.154646,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252635,Replace default signatory in Gradle signing plugin with notary service,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Replace default signatory"" - This indicates a change to the existing functionality.
+2. It specifies ""in Gradle signing plugin"" - This identifies the affected component.
+3. It states ""with notary service"" - This suggests what will replace the default signatory.
+
+However, the issue title lacks:
+- Steps to reproduce
+- Expected vs actual behavior
+- Acceptance criteria
+- Environment details
+
+Final Answer: Yes",a49daccbea501189,qwen2.5:14b,0,2026-06-17T18:57:19.701324,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252884,Revert NPE error handling in Reactive Streams driver,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Revert NPE error handling"" which implies a change to how NullPointerExceptions are handled.
+2. It specifies the context as being within the ""Reactive Streams driver"".
+3. However, it does not provide any details about why this revert is necessary, what the current behavior is, or what the expected outcome should be after reverting.
+4. There's no mention of steps to reproduce the issue, acceptance criteria, affected components beyond mentioning the driver, or environment details.
+
+Given these points, the title lacks essential information needed for a complete issue report.
+
+Final Answer: Yes",a6835124ad7c496e,qwen2.5:14b,0,2026-06-17T18:57:22.703341,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252572,Median and Percentile Accumulators,1,1,"Step-by-Step Reasoning:
+
+1. The title ""Median and Percentile Accumulators"" does not specify any particular problem or feature request.
+2. It lacks details about the expected behavior, steps to reproduce an issue if it's a bug report, affected components, environment details, or acceptance criteria.
+3. There is no indication of what needs to be done with these accumulators (e.g., adding functionality, fixing a bug, improving performance).
+4. The title does not provide enough context for understanding the scope or requirements of the issue.
+
+Final Answer: Yes",22494fc5cd28ec2d,qwen2.5:14b,0,2026-06-17T18:57:25.484710,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254092,DBCollection aggregate methods that take AggregationOptions fail to set slaveOk bit when read preference demands it,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""DBCollection aggregate methods"" and ""AggregationOptions"", which indicates a specific feature or functionality.
+2. It states that these methods fail to set the ""slaveOk bit"".
+3. However, it does not provide clear steps to reproduce the issue, expected vs actual behavior, acceptance criteria, affected components, or environment details.
+
+Given this information:
+- The title lacks detailed reproduction steps and conditions under which the failure occurs.
+- There is no mention of what should happen instead (expected behavior).
+- No specific acceptance criteria are provided for resolving the issue.
+- Environment details such as database version, driver version, etc., are not mentioned.
+
+Final Answer: Yes",a57d2a4217f34239,qwen2.5:14b,0,2026-06-17T18:57:28.792824,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252719,Add tests for allowed cases when authSource is given but username is not,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Add tests"" which implies a testing requirement.
+2. It specifies the condition under consideration: ""authSource is given but username is not"".
+3. However, it does not specify what these tests should cover in detail (e.g., expected outcomes, edge cases).
+4. There's no mention of acceptance criteria or how to verify if the tests are successful.
+5. The title lacks information about which components or modules are affected by this requirement.
+
+Given that essential details such as test scenarios, expected results, and verification steps are missing, the issue is incomplete.
+
+Final Answer: Yes",bff5637473ef66c8,qwen2.5:14b,0,2026-06-17T18:57:31.851914,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254567,Regression applying read preference with tag set,0,1,"Reasoning: The title ""Regression applying read preference with tag set"" suggests that there is a regression issue related to applying a read preference with a specific tag set. However, the title lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment details (e.g., database version, client library version).
+Without these critical pieces of information, it is difficult for developers and testers to understand the scope of the problem and how to address it effectively.
+
+Final Answer: Yes",e914bd96b7b8b256,qwen2.5:14b,0,2026-06-17T18:57:34.474106,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253271,"Remove QueryBatchCursorFunctionalSpecification """"should get more from a secondary"""" test",0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Remove"" which implies an action to be taken.
+2. It references a specific test case: ""QueryBatchCursorFunctionalSpecification 'should get more from a secondary'"".
+3. However, the title does not provide any context about why this test needs to be removed or what impact its removal will have on the system.
+4. There is no mention of steps to reproduce an issue, expected vs actual behavior, acceptance criteria, affected components, or environment details.
+
+Given these points, the title lacks essential information that would make it a complete issue report.
+
+Final Answer: Yes",60e06b835ef1b28c,qwen2.5:14b,0,2026-06-17T18:57:37.486866,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255652,Driver does not support field negation,0,1,"Reasoning: The title ""Driver does not support field negation"" indicates a problem with a specific feature or functionality. However, it lacks essential details such as steps to reproduce the issue, expected vs actual behavior, acceptance criteria, affected components, and environment details. Without these specifics, it is difficult for developers to understand the full scope of the issue and how to resolve it.
+
+Final Answer: Yes",14eaed176a1c4d08,qwen2.5:14b,0,2026-06-17T18:57:39.694915,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-252711,Support package scanning for Discriminators,0,1,"Reasoning: The title ""Support package scanning for Discriminators"" lacks essential details such as what exactly needs to be supported, how it should work, the expected behavior, and any specific acceptance criteria. It does not mention steps to reproduce or environment details either.
+
+Final Answer: Yes",09655395a81bf757,qwen2.5:14b,0,2026-06-17T18:57:41.459678,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254972,Remove deprecated methods from MapReduceOutput,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Remove deprecated methods from MapReduceOutput"" indicates an action to be taken but lacks several critical details.
+2. It does not specify the scope of which methods are deprecated or where they can be found.
+3. There is no mention of acceptance criteria, such as how to verify that all deprecated methods have been removed correctly.
+4. The title does not provide any information about the environment in which this task needs to be performed (e.g., specific version of software).
+5. It lacks steps to reproduce or test the removal process.
+
+Given these points, the issue title is missing essential details required for a complete and actionable item.
+
+Final Answer: Yes",331c4d90da3cb8fa,qwen2.5:14b,0,2026-06-17T18:57:44.741377,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255595,Add getters/setters to MongoOptions class,0,1,"Reasoning: The title ""Add getters/setters to MongoOptions class"" specifies a task but lacks essential details such as why these getters and setters are needed, what the expected behavior should be after their addition, which components or parts of the system will be affected, and any acceptance criteria that need to be met. Without this information, it is difficult to fully understand the scope and requirements of the issue.
+
+Final Answer: Yes",4ded70baba7918a5,qwen2.5:14b,0,2026-06-17T18:57:47.013886,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254357,Add .save and .saveMany to MongoCollection,0,1,"Reasoning: The title ""Add .save and .saveMany to MongoCollection"" suggests a feature request for adding methods to an existing API or library. However, it lacks essential details such as:
+- What the exact behavior of these new methods should be.
+- How they differ from existing save mechanisms (if any).
+- Acceptance criteria for testing if the implementation is correct.
+- Affected components and their interactions with other parts of the system.
+- Environment details where this feature will be implemented or tested.
+
+Final Answer: Yes",45ff9c9c944b55cb,qwen2.5:14b,0,2026-06-17T18:57:49.635707,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253658,Name driver modules using Automatic-Module-Name,0,1,"Reasoning: The title ""Name driver modules using Automatic-Module-Name"" suggests a task or feature request but lacks essential details such as the context of what needs to be named, how it should be implemented, expected behavior, acceptance criteria, and any affected components. It does not provide enough information for someone to understand fully what is required or how to reproduce or test this issue.
+
+Final Answer: Yes",9a83392fa5f84d81,qwen2.5:14b,0,2026-06-17T18:57:51.817251,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254032,GridFSDownloadStream - exception when destination buffer size != file chunk size,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific component: ""GridFSDownloadStream"".
+2. It indicates an issue with exceptions occurring under certain conditions.
+3. The condition is specified as when the destination buffer size does not equal the file chunk size.
+
+However, the title lacks:
+- Steps to reproduce the issue
+- Expected vs actual behavior details
+- Acceptance criteria for resolving the issue
+- Affected components beyond ""GridFSDownloadStream""
+- Environment details (e.g., version of software, operating system)
+
+Final Answer: Yes",272eb1cbb4f3bb0a,qwen2.5:14b,0,2026-06-17T18:57:54.539112,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-256021,JSON.parse() and serialize() do not preserve the _id field across serializations as expected,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions specific functions (`JSON.parse()` and `serialize()`), which indicates a clear area of concern.
+2. It specifies an unexpected behavior: the `_id` field is not preserved across serializations.
+3. However, it does not provide:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior in detail
+   - Affected components or environment details
+4. The title lacks acceptance criteria and any context about why preserving the `_id` field is important.
+
+Final Answer: Yes",e1719ac99fc83f67,qwen2.5:14b,0,2026-06-17T18:57:57.206923,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-254447,Improve runCommand API documentation,0,1,"Reasoning: The title ""Improve runCommand API documentation"" suggests a need for better documentation but lacks essential details such as what specific improvements are needed, who will implement them, the scope of changes, and acceptance criteria. Without these details, it is difficult to understand the full extent of the task or how success will be measured.
+
+Final Answer: Yes",c54ce2257e466ece,qwen2.5:14b,0,2026-06-17T18:57:59.213484,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-255432,Binary class should implements equals and hashCode,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Binary class should implement equals and hashCode"" specifies a requirement for a binary class to include implementations of the `equals` and `hashCode` methods.
+2. However, it lacks essential details such as:
+   - Steps to reproduce any issues or verify the implementation.
+   - Expected behavior after implementing these methods.
+   - Acceptance criteria (how to know if the issue is resolved).
+   - Affected components or modules.
+   - Environment details where this requirement applies.
+
+Given that there are no reproduction steps, expected vs actual behavior, acceptance criteria, affected components, or environment details provided in the title, it can be considered incomplete.
+
+Final Answer: Yes",a9ae7efedbeb5df6,qwen2.5:14b,0,2026-06-17T18:58:02.499743,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253042,Java driver 3.11 page still says 3.10,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Java driver 3.11"" and indicates that the documentation or webpage is outdated.
+2. It states that the page still says ""3.10,"" implying there's a version mismatch issue.
+3. However, the title lacks details such as:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior (what should be displayed versus what is currently displayed)
+   - Affected components or environment details
+4. The title does not provide enough information for someone to understand the full scope of the problem or how to fix it.
+
+Final Answer: Yes",1f216994c1ce475e,qwen2.5:14b,0,2026-06-17T18:58:05.556617,project_05,title_only,incompleteness,few_shot_cot
+ISSUE-253390,Change Stream startAtOperationTime MongoCommandException,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Change Stream"" and ""startAtOperationTime"", which indicates a specific feature or functionality within MongoDB.
+2. It also includes an exception type: ""MongoCommandException"".
+3. However, the title does not provide any information about:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Affected components or environment details
+4. The title lacks context on what exactly is failing and under which conditions.
+
+Given these points, the title seems to be missing essential information that would allow for a proper understanding of the issue's scope and how it can be reproduced or fixed.
+
+Final Answer: Yes",d8296dd1eb9ae0ca,qwen2.5:14b,0,2026-06-17T18:58:08.741679,project_05,title_only,incompleteness,few_shot_cot

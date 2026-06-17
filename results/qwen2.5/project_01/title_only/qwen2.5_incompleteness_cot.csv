@@ -1,0 +1,1243 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-2087,CLI error when not specifying module type in module commands is cryptic an not helpful,0,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title mentions a CLI error occurring when not specifying a module type in module commands.
+- It also states that the error message is cryptic and unhelpful.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- Reproduction Steps: The title does not provide specific steps to reproduce the issue. While it mentions ""not specifying module type,"" this alone isn't enough for a developer to replicate the problem without knowing which commands are involved and in what sequence.
+- Expected vs Actual Behavior: There is no clear distinction between expected behavior (what should happen when a module type is not specified) versus actual behavior (the cryptic error message).
+- Context: The title lacks context about the environment or specific conditions under which this issue occurs.
+
+Step 3: Evaluate if a developer can understand the full scope from the title alone.
+- A developer would need more information to fully comprehend and address the issue, such as exact commands that trigger the problem, expected output when module type is specified correctly, and details about the environment where the error happens.
+
+Final Answer: Yes",3c22e45a937a864c,qwen2.5:14b,0,2026-06-17T14:47:31.386629,project_01,title_only,incompleteness,cot
+ISSUE-2338,Error in correlation strategy in aggregator.xml,1,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title mentions an ""Error in correlation strategy"" which indicates there's a problem with how data or events are being correlated within some process.
+- It specifies that this error occurs in ""aggregator.xml"", suggesting it's related to a configuration file for an aggregator component.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any information on how to reproduce the issue.
+- There is no mention of what the expected behavior should be compared to the actual observed behavior.
+- No acceptance criteria are mentioned.
+- While it specifies a file name and an error type, it lacks details about which components are affected or the environment in which this occurs.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+- A developer might be able to start looking into ""aggregator.xml"" for issues related to correlation strategy errors but would likely need more information to fully diagnose and resolve the issue.
+
+Final Answer: Yes",e4c118658502e059,qwen2.5:14b,0,2026-06-17T14:47:35.995082,project_01,title_only,incompleteness,cot
+ISSUE-0972,deploy-working-dir is set to to root directory when container is started as service,0,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title mentions that ""deploy-working-dir"" is set to the root directory when a container starts as a service.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- Missing Reproduction Steps: The title does not provide any specific steps on how to reproduce this issue. It's unclear what actions need to be taken for this situation to occur.
+- Expected vs Actual Behavior: While it mentions that ""deploy-working-dir"" is set to the root directory when a container starts as a service, there is no indication of what the expected behavior should be or why setting it to the root directory is problematic.
+- Context and Affected Components: The title does not provide information about which components are affected by this issue. It also lacks details on the environment in which this occurs (e.g., specific container runtime, operating system).
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- Given the lack of detailed steps to reproduce and expected behavior, it is unlikely that a developer would have enough information to fully comprehend or address the issue based on the title alone.
+
+Final Answer: Yes",3da97f3dd3d0f6b9,qwen2.5:14b,0,2026-06-17T14:47:41.184368,project_01,title_only,incompleteness,cot
+ISSUE-2665,Spike to model the cluster nodes.,1,1,"Step 1: Analyze what the title conveys.
+The title ""Spike to model the cluster nodes"" suggests that there is an intention to create a spike (a short, exploratory task) for modeling cluster nodes. However, it does not provide specific details about what exactly needs to be done or why.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned.
+- Expected vs actual behavior: Not provided.
+- Acceptance criteria: No clear acceptance criteria are outlined.
+- Affected components: The affected component (cluster nodes) is mentioned, but no details about other potentially involved parts of the system are given.
+- Environment details: There's no mention of any environment or context in which this spike should be performed.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of specific information such as detailed objectives, expected outcomes, and environmental specifics, it is unlikely that a developer would have enough clarity to fully understand what needs to be done based on just this title. The task seems vague without further context.
+
+Final Answer: Yes",84fb6e58ca12bcd2,qwen2.5:14b,0,2026-06-17T14:47:46.084425,project_01,title_only,incompleteness,cot
+ISSUE-1414,Rename metrics repositories setValue(x,1,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title mentions ""Rename metrics repositories setValue(x)""
+- It suggests an action to rename something related to metrics repositories and includes a method call `setValue(x)`.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- There are no clear instructions on how to reproduce the issue.
+- The expected outcome after renaming is not specified.
+- No information about what should happen with `setValue(x)`.
+- No mention of affected components or environment details.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- A developer would likely need more context, such as why renaming is necessary and how `setValue(x)` fits into this scenario.
+- The title lacks clarity on what problem it addresses or what needs to be fixed.
+
+Final Answer: Yes",0d706989de0f83f5,qwen2.5:14b,0,2026-06-17T14:47:50.098866,project_01,title_only,incompleteness,cot
+ISSUE-0394,Tasks Launcher should be able to record status to a central repository,0,0,"Step 1: Analyze what the issue title conveys.
+The title ""Tasks Launcher should be able to record status to a central repository"" suggests that there is a feature request or an enhancement for the Tasks Launcher component. It implies that this component needs functionality to record its status in some kind of centralized storage.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: The title does not provide any steps on how to trigger the recording of status or what conditions are necessary for it to occur.
+- Expected vs actual behavior: There is no mention of what should happen currently versus what needs to change. It only states a desired capability without specifying current limitations or issues.
+- Acceptance criteria: No specific acceptance criteria are mentioned, such as how often the status should be recorded, which fields need to be included in the record, etc.
+- Affected components: While it mentions ""Tasks Launcher,"" there is no indication of other potentially affected systems or components that might interact with this feature.
+- Environment details: The title does not provide any information about the environment where this functionality needs to work (e.g., specific operating system, version numbers).
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of",e3b6f9c221774e1c,qwen2.5:14b,0,2026-06-17T14:47:55.453695,project_01,title_only,incompleteness,cot
+ISSUE-2850,Richer module options metadata,1,1,"Step 1: Analyze what the title conveys.
+The title ""Richer module options metadata"" suggests that there is a request for enhancing the metadata related to module options, but it does not provide specific details about what needs to be changed or added.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned.
+- Expected vs actual behavior: Not provided.
+- Acceptance criteria: No clear acceptance criteria are outlined.
+- Affected components: The affected component (module options metadata) is vague and does not specify which modules or what changes are needed.
+- Environment details: None specified.
+
+Step 3: Evaluate if a developer can understand the full scope from the title alone.
+Given the lack of specific information, it would be challenging for a developer to fully grasp the requirements or know how to proceed with implementing this change based solely on the provided title. More detailed information is needed to clarify what ""richer"" means in terms of metadata and which modules are involved.
+
+Final Answer: Yes",d2b9374a659da8c9,qwen2.5:14b,0,2026-06-17T14:48:00.016188,project_01,title_only,incompleteness,cot
+ISSUE-0549,Port FTP as s-c-s source module,1,0,"Step 1: Analyze what the title conveys.
+The title ""Port FTP as s-c-s source module"" suggests an action to be taken (porting) and specifies that it involves FTP and something referred to as ""s-c-s source module"". However, there is no clear indication of what ""s-c-s"" stands for or how this relates to the porting process.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not provided. The title does not describe any steps needed to perform the task.
+- Expected vs actual behavior: There's no mention of expected outcomes or discrepancies with current behavior.
+- Acceptance criteria: No acceptance criteria are mentioned, such as what success looks like after completing this task.
+- Affected components: While it mentions FTP and an ""s-c-s source module"", there is no detail on other affected parts of the system.
+- Environment details: There's no information about the environment in which this porting should take place.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of context around what ""s-c-s"" means, and without any additional details like steps or expected outcomes, it would be challenging for a developer to fully grasp the",914e46011067409d,qwen2.5:14b,0,2026-06-17T14:48:05.415635,project_01,title_only,incompleteness,cot
+ISSUE-2979,Change url to access UI from browser,0,0,"Step 1: Analyze what the issue title conveys.
+The title ""Change url to access UI from browser"" suggests that there is an intention to modify how users can access a user interface via a URL in their web browser. However, it does not provide specific details about why this change is necessary or what the current state of accessing the UI looks like.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not provided; there are no instructions on how to currently access the UI or what needs to be changed.
+- Expected vs actual behavior: The expected outcome (new URL) is not clearly stated, nor is it clear what the current issue with accessing the UI via browser is.
+- Acceptance criteria: There's no indication of what success looks like after this change.
+- Affected components: It’s unclear which parts of the system are involved in making this change or if there are any dependencies.
+- Environment details: No information about the environment (e.g., specific browsers, server configurations) is provided.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+Given the lack of detail regarding why the URL needs to be changed and what the current problem or desired outcome is, it would be challenging",3aee1d2b9923c6d3,qwen2.5:14b,0,2026-06-17T14:48:10.763335,project_01,title_only,incompleteness,cot
+ISSUE-0714,Add Logging to ZooKeeperContainerRepository,1,1,"Step 1: Analyze what the title conveys.
+The issue title ""Add Logging to ZooKeeperContainerRepository"" suggests that there is a need to implement logging functionality within a specific class or module named `ZooKeeperContainerRepository`.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any information on how to reproduce an issue (if it's addressing a bug).
+- It doesn't specify what kind of logging is needed (e.g., debug, info, error) or where exactly in the code this logging should be added.
+- There are no details about expected behavior after adding the logging.
+- The environment and affected components are not mentioned.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+While it's clear that there is a task to add logging, the lack of specific details means a developer would need additional information to fully understand what needs to be done. This includes knowing why this logging is necessary (e.g., for debugging purposes), where exactly in the codebase the changes should be made, and how these changes will impact other parts of the system.
+
+Final Answer: Yes",51fb4548975379f6,qwen2.5:14b,0,2026-06-17T14:48:15.781365,project_01,title_only,incompleteness,cot
+ISSUE-1907,DefaultContainerMatcher - Improve Logging and mention affected Module,0,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title mentions ""DefaultContainerMatcher"" which seems to be a specific component or class within the software.
+- It suggests an improvement in logging for this component/module.
+- It also indicates that the affected module should be mentioned.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behaviour, or context.
+- The title does not provide any information on how to reproduce the issue.
+- There is no mention of what the current behavior is or what the expected behavior should be after improvement.
+- No specific environment details are provided (e.g., operating system, version numbers).
+
+Step 3: Evaluate if a developer can understand the full scope from the title alone.
+- While it's clear that logging needs to be improved for ""DefaultContainerMatcher"", and there is an indication of mentioning the affected module, these points alone do not provide enough information for a developer to fully understand or address the issue.
+
+Final Answer: Yes",5a2a75c0c44528a7,qwen2.5:14b,0,2026-06-17T14:48:20.205105,project_01,title_only,incompleteness,cot
+ISSUE-1146,http-client Improvement (userDefinedHeaderPrefix),1,1,"Step 1: Analyze what the title conveys.
+The issue title ""http-client Improvement (userDefinedHeaderPrefix)"" suggests that there is an improvement being proposed for an HTTP client component, specifically related to a feature or setting called ""userDefinedHeaderPrefix"".
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps to reproduce an issue.
+- There's no indication of what the current behavior is or what the expected behavior should be.
+- It lacks details about acceptance criteria and affected components.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+Given only this title, it would be challenging for a developer to fully grasp the extent of the improvement needed or how it affects existing functionality without additional context such as detailed requirements, examples, or specific use cases.
+
+Final Answer: Yes",ab236696dd2c82ad,qwen2.5:14b,0,2026-06-17T14:48:24.249737,project_01,title_only,incompleteness,cot
+ISSUE-3079,Deploy a new job module *after* XD-singlenode container has started.,0,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title mentions deploying a new job module.
+- It specifies that this deployment should occur after an XD-singlenode container has started.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- There are no specific steps provided to reproduce the issue.
+- Expected behavior is not mentioned (what should happen when the job module is deployed).
+- The environment details and acceptance criteria are not specified.
+- It's unclear what problem this deployment aims to solve or if there is an existing issue.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+- A developer would likely need more information such as:
+  - Detailed steps for deploying the job module.
+  - Expected behavior after deployment.
+  - Any specific conditions that must be met before and during deployment.
+  - The context of why this deployment is necessary.
+
+Final Answer: Yes",66704b10d2ec020e,qwen2.5:14b,0,2026-06-17T14:48:28.624016,project_01,title_only,incompleteness,cot
+ISSUE-0367,Spike: Study scope to add support for hdfs commands in shell,1,1,"Step 1: Analyze what the title conveys.
+The title ""Spike: Study scope to add support for hdfs commands in shell"" suggests that there is an intention to study and possibly implement support for HDFS (Hadoop Distributed File System) commands within a shell environment. However, it does not provide specific details about the issue or problem.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned.
+- Expected vs actual behavior: Not provided.
+- Acceptance criteria: No clear acceptance criteria are outlined.
+- Affected components: While HDFS and shell environment are mentioned, it's not clear which specific components or parts of these systems will be affected.
+- Environment details: The title does not specify the operating system, version numbers, or any other environmental specifics.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given that the title is labeled as ""Spike"" (a term often used for exploratory work), it implies preliminary investigation. However, without additional context about what needs to be studied and how support should be added, developers would likely need more information to proceed effectively.
+
+Final Answer: Yes",7276bd58302f21cf,qwen2.5:14b,0,2026-06-17T14:48:33.758004,project_01,title_only,incompleteness,cot
+ISSUE-3374,Documentation for AggregateCounter,1,1,"Step 1: Analyze what the title conveys.
+The issue title ""Documentation for AggregateCounter"" suggests that there is an issue related to documentation for a component named ""AggregateCounter"". It does not provide any specific details about the nature of the problem or what needs to be done.
+
+Step 2: Determine if the title suggests missing information.
+- The title lacks steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, and environment details. 
+- There is no indication of a bug, enhancement request, or any specific issue that requires addressing beyond mentioning documentation.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+Given only this title, a developer would not have enough information to fully comprehend what needs to be done or what problem exists. The title is too vague and does not provide actionable details for resolving an issue.
+
+Final Answer: Yes",bea162077f92f61e,qwen2.5:14b,0,2026-06-17T14:48:37.822015,project_01,title_only,incompleteness,cot
+ISSUE-0460,First deploy/launch of Pig job that includes yarn-site.xml file fails,0,1,"Step 1: Analyze what the issue title conveys.
+- The title indicates that there is an initial deployment or launch problem with a Pig job.
+- It mentions that this issue occurs when the Pig job includes a yarn-site.xml file.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce are not mentioned. We don't know what specific actions lead to the failure.
+- Expected behavior is not clear from the title alone; we only know there's a failure, but not what was expected beforehand.
+- Acceptance criteria are not provided. There’s no indication of what success looks like in this scenario.
+- Affected components might be implied (Pig job and yarn-site.xml), but it doesn't specify if other components or configurations are involved.
+- Environment details such as the version of Pig, Hadoop, YARN, or operating system are not mentioned.
+
+Step 3: Assess whether a developer can understand the full scope from just the title.
+- While the issue is clear in terms of what happens (the job fails on first deploy/launch), it lacks critical information for troubleshooting and reproducing the problem. A developer would need more details to diagnose and fix this issue effectively.
+
+Final Answer: Yes",42878fb95e1b21c2,qwen2.5:14b,0,2026-06-17T14:48:43.081637,project_01,title_only,incompleteness,cot
+ISSUE-0456,Refactor Task parsing,1,1,"Step 1: Analyze what the title conveys.
+The title ""Refactor Task parsing"" suggests that there is a need to improve or restructure how tasks are parsed in some software system.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any specific steps to reproduce an issue, expected behavior after refactoring, acceptance criteria for what constitutes successful refactoring, affected components, or environment details.
+- It is vague about why this refactor is necessary and what problems it aims to solve.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title ""Refactor Task parsing,"" a developer would likely need more information to fully understand the requirements of the task, such as:
+- Why the current task parsing needs refactoring
+- What specific aspects or parts of the task parsing are problematic
+- The expected outcome after refactoring
+
+Final Answer: Yes",b783905d57748b12,qwen2.5:14b,0,2026-06-17T14:48:47.252942,project_01,title_only,incompleteness,cot
+ISSUE-3038,Add Spring XD Build Plan for Java 8 to Bamboo,0,1,"Step 1: Analyze what the issue title conveys.
+The title ""Add Spring XD Build Plan for Java 8 to Bamboo"" suggests that there is a need to create or modify an existing build plan in Bamboo CI/CD tool specifically for Spring XD projects using Java 8.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any information on how to reproduce the issue (if it's considered an issue rather than a feature request).
+- It doesn't specify what the current state is and what should be achieved after implementing this change (expected vs actual behavior).
+- There are no details about acceptance criteria, affected components, or environment specifics.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+While the title gives an idea of the task at hand, it lacks critical information that would allow a developer to fully comprehend and execute the request. For instance, there's no mention of what needs to be done specifically in terms of configuration or code changes.
+
+Final Answer: Yes",ac8f036e3fa4acd1,qwen2.5:14b,0,2026-06-17T14:48:51.886881,project_01,title_only,incompleteness,cot
+ISSUE-0976,Create a gpload batch job,1,1,"Step 1: Analyze what the title conveys.
+The title ""Create a gpload batch job"" suggests that there is a request to create some kind of automated process using gpload, which is likely related to loading data into a database system.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any specific steps on how to reproduce or implement this task.
+- There's no indication of what expected behavior should be after creating the batch job.
+- No acceptance criteria are mentioned, such as success conditions or validation rules.
+- It doesn't specify which components will be affected by this change.
+- Environment details (like database version, operating system requirements) are not provided.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of detail in the title, it is unlikely that a developer would have enough information to fully comprehend what needs to be done or how to verify its correctness without additional context.
+
+Final Answer: Yes",5c4335252d7b95fb,qwen2.5:14b,0,2026-06-17T14:48:56.287350,project_01,title_only,incompleteness,cot
+ISSUE-1548,Document the configuration of the JobRepository,0,1,"Step 1: Analyze what the title conveys.
+The issue title ""Document the configuration of the JobRepository"" suggests that there is a need to create documentation for how the JobRepository should be configured. However, it does not provide any specific details about why this documentation is needed or what aspects of the configuration are critical.
+
+Step 2: Determine if the title suggests missing information.
+The title lacks several key pieces of information:
+- Why is documenting the configuration necessary? Is there a problem with existing configurations?
+- What specific parts of the JobRepository's configuration need to be documented?
+- Are there any particular issues or errors that this documentation aims to resolve?
+
+Step 3: Evaluate if a developer can understand the full scope from the title alone.
+A developer would likely require more context and details to fully comprehend what needs to be done. The title does not provide enough information for a developer to start working on the task effectively.
+
+Final Answer: Yes",97884fc7f581ebe4,qwen2.5:14b,0,2026-06-17T14:49:00.516385,project_01,title_only,incompleteness,cot
+ISSUE-1672,Add Basic Auth support,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Add Basic Auth support"" suggests that there is a request to implement basic authentication functionality in some software.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps on how to reproduce an issue (if it's an issue) or how to test the feature once implemented.
+- There are no details about what ""Basic Auth support"" entails specifically. Is this for API endpoints? Web applications? A particular module?
+- Expected behavior is not mentioned, such as whether users should be prompted for credentials upon accessing certain resources or if there are specific security requirements that need to be met.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, it's challenging for a developer to fully grasp what needs to be done. They would likely require additional information such as:
+- Which parts of the application or system should have Basic Auth support?
+- What are the security requirements and standards that need to be followed?
+- Are there any specific use cases or scenarios where this feature will be used?
+
+Final Answer: Yes",d09af5ae8fdaafd3,qwen2.5:14b,0,2026-06-17T14:49:05.638787,project_01,title_only,incompleteness,cot
+ISSUE-1002,Remove Reactor Stream processor from ref docs to spring-xd-modules,0,1,"Step 1: Analyze what the title conveys.
+The title ""Remove Reactor Stream processor from ref docs to spring-xd-modules"" suggests an action to be taken, which is removing something specific (""Reactor Stream processor"") from a particular location (""ref docs to spring-xd-modules"").
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps to reproduce any issue or describe how to perform the removal process.
+- It doesn't specify expected behavior after the removal is completed.
+- There's no mention of acceptance criteria, affected components, or environment details.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+While the action (removal) and target (Reactor Stream processor in ref docs to spring-xd-modules) are clear, critical information such as why this removal is necessary, what impact it will have on other parts of the system, or how to verify that the task has been completed successfully is missing.
+
+Final Answer: Yes",09369ac1a481e003,qwen2.5:14b,0,2026-06-17T14:49:10.157739,project_01,title_only,incompleteness,cot
+ISSUE-0927,Add support to deploy stream in a single container,0,0,"Step 1: Analyze what the issue title conveys.
+The title ""Add support to deploy stream in a single container"" suggests that there is a request for new functionality within an existing system or application. It implies that currently, it's not possible to deploy a stream (likely referring to data streaming) into a single container and that this feature needs to be added.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- Reproduction Steps: The title does not provide any specific steps on how to reproduce an issue or demonstrate the problem. It's more of a request for new functionality rather than reporting an existing bug.
+- Expected vs Actual Behavior: There is no mention of what should happen currently versus what needs to change after implementing this feature.
+- Context and Affected Components: The title does not specify which components are involved, whether it affects any specific part of the system or application, or if there are any dependencies.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+While the title gives an idea about what needs to be done (adding support for deploying streams in single containers), it lacks critical details that would allow developers to fully grasp and implement this feature. Developers typically need more information",d1f56a4e8436befa,qwen2.5:14b,0,2026-06-17T14:49:15.491884,project_01,title_only,incompleteness,cot
+ISSUE-0336,[Int Tests] Enhance test coverage for Lattice SPI,1,0,"Step 1: Analyze what the title conveys.
+The title ""[Int Tests] Enhance test coverage for Lattice SPI"" suggests that there is an intention to improve the internal testing of some software component called ""Lattice SPI"". It indicates a goal or task but does not provide specific details about how this enhancement will be achieved.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned. The title doesn't describe any steps needed to achieve the improvement in test coverage.
+- Expected vs actual behavior: There is no indication of what the current state is or what the expected outcome should be after enhancement.
+- Acceptance criteria: No specific acceptance criteria are outlined for when this task can be considered complete.
+- Affected components: While ""Lattice SPI"" is mentioned, there's no detail about other components that might be involved in achieving better test coverage.
+- Environment details: The environment or setup required to enhance the tests isn't specified.
+
+Step 3: Assess if a developer could understand the full scope from just the title.
+Given only this title, a developer would likely need more information to start working on this task effectively. They might require specifics about what aspects of Lattice SPI's test coverage are lacking and how they should",bac1353e972f04d5,qwen2.5:14b,0,2026-06-17T14:49:20.846354,project_01,title_only,incompleteness,cot
+ISSUE-2604,JobPlugin - Use containsKey when checking for Parameters,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""JobPlugin - Use containsKey when checking for Parameters"" suggests that there is an issue related to how parameters are being checked in a JobPlugin component. It implies that instead of using some other method, one should use `containsKey` to check if a parameter exists.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any information on how to reproduce the issue.
+- There is no mention of what the current implementation is doing wrong or what it should be doing differently (expected vs actual behavior).
+- It lacks details about which specific parameters are involved and in what context they are being checked.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, a developer would likely need more information to fully understand the issue. The title does not provide enough detail for someone to know exactly what needs fixing or how it affects the system's functionality.
+
+Final Answer: Yes",d55bba5b06a8808d,qwen2.5:14b,0,2026-06-17T14:49:25.462779,project_01,title_only,incompleteness,cot
+ISSUE-1900,Enable FtpHdfsTest,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Enable FtpHdfsTest"" suggests an action to enable a test named `FtpHdfsTest`. It does not provide any context about why this needs to be enabled, whether it is currently disabled or failing, or what the expected outcome should be.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce are completely absent. There's no indication of how one would go about enabling this test.
+- Expected behavior is not mentioned. It’s unclear what success looks like after enabling `FtpHdfsTest`.
+- Acceptance criteria are not provided, making it difficult for a developer to know when the issue is resolved.
+- Affected components or environment details are missing. There's no information on which parts of the system this test interacts with or under what conditions (e.g., specific versions of software).
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of detail, it is unlikely that a developer would have enough context to fully understand and address the issue based solely on ""Enable FtpHdfsTest"".
+
+Final Answer: Yes",3685afeb6d2a5bba,qwen2.5:14b,0,2026-06-17T14:49:30.534175,project_01,title_only,incompleteness,cot
+ISSUE-0514,Add PHD HDFS as s-c-s module,1,1,"Step 1: Analyze what the title conveys.
+The title ""Add PHD HDFS as s-c-s module"" suggests that there is a request to integrate PHD HDFS into an existing system or framework, possibly as part of a specific module referred to as 's-c-s'.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any steps on how to reproduce the issue (if it's considered an issue rather than a feature request).
+- There is no mention of expected behavior or acceptance criteria for this addition.
+- It lacks details about affected components and environment specifics.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the limited information, a developer would likely need more context to fully understand what needs to be done. The title does not provide enough detail on how PHD HDFS should interact with other parts of the system or what specific functionalities are expected.
+
+Final Answer: Yes",bd33947d016d3c2c,qwen2.5:14b,0,2026-06-17T14:49:34.847779,project_01,title_only,incompleteness,cot
+ISSUE-1536,CompositeModuleDefinition should contain more than List<ModuleDefinition>,1,1,"Step 1: Analyze what the title conveys.
+The title ""CompositeModuleDefinition should contain more than List<ModuleDefinition>"" suggests that there is an expectation for the CompositeModuleDefinition class or structure to include something beyond a simple list of ModuleDefinition objects. However, it does not specify what exactly should be included instead.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not provided in the title.
+- Expected vs actual behavior: The expected change is implied but not clearly stated.
+- Acceptance criteria: Missing from the title.
+- Affected components: Only CompositeModuleDefinition and ModuleDefinition are mentioned, which might be insufficient for a full understanding of affected areas.
+- Environment details: No environment or context information is provided.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the limited information in the title, it's unlikely that a developer would have enough context to fully understand what needs to change and why without additional details. The title lacks specifics about what should replace the List<ModuleDefinition> or how this impacts functionality.
+
+Final Answer: Yes",c6a4aa98044421b5,qwen2.5:14b,0,2026-06-17T14:49:39.772489,project_01,title_only,incompleteness,cot
+ISSUE-2545,Provide a clean way to get a reference to the MessageBus running in SingleNodeApplication,0,0,"Step 1: Analyze what the issue title conveys.
+The title ""Provide a clean way to get a reference to the MessageBus running in SingleNodeApplication"" suggests that there is a need for an improvement or addition to the existing codebase. It implies that developers are looking for a better method to access the MessageBus component within the context of a SingleNodeApplication.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- Reproduction Steps: The title does not provide any specific steps on how to reproduce an issue or scenario where this problem occurs. It is more about requesting a feature enhancement rather than reporting a bug.
+- Expected vs Actual Behavior: There's no indication of what the current behavior is and what needs to be changed, only that there should be ""a clean way"" to achieve something.
+- Context: While it mentions SingleNodeApplication and MessageBus, it lacks details on why this functionality is needed or how it fits into a larger system.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+The title provides some context but falls short of giving enough information for a developer to fully grasp what needs to be done. It does not specify acceptance criteria, affected components beyond mentioning",b3d6a070e1b1775f,qwen2.5:14b,0,2026-06-17T14:49:45.117738,project_01,title_only,incompleteness,cot
+ISSUE-3424,Final review of REST API structure document for streams,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Final review of REST API structure document for streams"" suggests that there is a need to conduct a final review of a document related to the REST API structure specifically for streams.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any information about how to reproduce an issue.
+- It does not mention what the expected vs actual behavior should be.
+- There is no indication of acceptance criteria or affected components.
+- No environment details are provided.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+The title indicates that there is a document for review, but it lacks specific instructions on what needs to be reviewed (e.g., checking consistency, verifying functionality, etc.). It does not provide enough context or actionable steps for a developer.
+
+Final Answer: Yes",447655cb99c32134,qwen2.5:14b,0,2026-06-17T14:49:49.243170,project_01,title_only,incompleteness,cot
+ISSUE-2913,Change default admin port from 8080,1,1,"Step 1: Analyze what the issue title conveys.
+- The title indicates that there is a request to change the default admin port from 8080 to another unspecified port.
+
+Step 2: Determine if the title suggests missing information.
+- Missing reproduction steps: Yes, it does not provide any instructions on how to reproduce or verify this change.
+- Expected vs actual behavior: The expected behavior (changing the port) is mentioned but there's no indication of what should happen after changing it or what the current issue with 8080 is.
+- Acceptance criteria: Not clear from the title alone whether there are specific acceptance criteria for making this change, such as testing requirements or validation steps.
+- Affected components: The title does not specify which parts of the system will be affected by this port change.
+- Environment details: No information about the environment where this change is needed (e.g., development, staging, production).
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- A developer would likely need more context to fully understand and implement this request. The reasons for changing the port, potential impacts on other services or configurations, and testing requirements are not clear.
+
+Final Answer: Yes",f556c35dea85182c,qwen2.5:14b,0,2026-06-17T14:49:54.557305,project_01,title_only,incompleteness,cot
+ISSUE-2866,Find runtime modules by type and/or name,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Find runtime modules by type and/or name"" suggests that there is an action to be performed on runtime modules, which involves searching for them based on their type or name.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any information about how to reproduce the issue (if it's a bug).
+- It doesn't specify what the expected outcome should be when performing this action.
+- There is no mention of acceptance criteria, affected components, or environment details.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title, a developer would likely need more information to fully understand and address the issue. The title lacks specifics about what needs to be implemented, how it should behave in different scenarios, and under which conditions or environments this functionality is required.
+
+Final Answer: Yes",beafce4896a4f737,qwen2.5:14b,0,2026-06-17T14:49:58.832262,project_01,title_only,incompleteness,cot
+ISSUE-1470,User wants to package and deploy an XD application,1,1,"Step 1: Analyze what the issue title conveys.
+- The title indicates that there is a desire to package and deploy an XD application.
+
+Step 2: Determine if the title suggests missing information.
+- There are no details about how to reproduce the issue, expected behavior after packaging and deploying, acceptance criteria for successful deployment, affected components, or environment specifics (e.g., operating system, version of XD).
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+- The title does not provide enough information for a developer to fully comprehend what needs to be done. It lacks specific steps, expected outcomes, and necessary context.
+
+Final Answer: Yes",1401e481e3c6fb39,qwen2.5:14b,0,2026-06-17T14:50:02.261861,project_01,title_only,incompleteness,cot
+ISSUE-0697,Create a spark standalone cluster on CI to run spark streaming tests,0,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title mentions creating a Spark standalone cluster on CI (Continuous Integration).
+- It also indicates that this setup is intended to run Spark streaming tests.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- There are no specific steps provided for how to create the cluster or run the tests.
+- The expected outcome of creating such a cluster and running tests is not mentioned (e.g., what should happen after setting up the environment).
+- No details about the current issue or problem being faced are given.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+- While it's clear that the goal is to set up a Spark standalone cluster for CI and run tests, there isn't enough information provided for a developer to fully comprehend what needs to be done without additional details such as environment setup instructions, test cases, or specific requirements.
+
+Final Answer: Yes",06249e77406986c3,qwen2.5:14b,0,2026-06-17T14:50:06.687498,project_01,title_only,incompleteness,cot
+ISSUE-0518,Port Redis counter as s-c-s sink,1,1,"Step 1: Analyze what the title conveys.
+The title ""Port Redis counter as s-c-s sink"" suggests an action to be taken, which is porting a Redis counter implementation to work with some kind of 's-c-s' sink. However, it does not provide clear context or details about what exactly needs to be done.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not provided in the title.
+- Expected vs actual behavior: Not mentioned.
+- Acceptance criteria: No specific criteria are outlined.
+- Affected components: Only mentions Redis and 's-c-s', but does not specify what these terms mean or how they interact.
+- Environment details: None specified.
+
+Step 3: Evaluate if a developer can understand the full scope from the title alone.
+Given the lack of detail, it is unlikely that a developer would have enough information to fully understand the requirements and proceed with development without further clarification.
+
+Final Answer: Yes",371ffb27241253ff,qwen2.5:14b,0,2026-06-17T14:50:11.065489,project_01,title_only,incompleteness,cot
+ISSUE-1072,Large number of required options in jdbc sink definition,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Large number of required options in jdbc sink definition"" suggests that there is an issue related to the JDBC sink configuration, specifically mentioning that it requires a large number of options.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps to reproduce the problem.
+- It doesn't mention what the expected behavior should be compared to the actual observed behavior.
+- There is no indication about acceptance criteria, affected components, or environment details.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, it's unclear whether the issue is related to usability, performance, configuration complexity, or something else. A developer would need more information to fully grasp and address the problem effectively.
+
+Final Answer: Yes",1c822e32986ffa44,qwen2.5:14b,0,2026-06-17T14:50:15.110282,project_01,title_only,incompleteness,cot
+ISSUE-1097,Temp files for stream create not being cleaned,1,1,"Step 1: Analyze what the issue title conveys.
+- The title mentions ""Temp files for stream create not being cleaned.""
+- It implies that temporary files created during the process of creating streams are not getting deleted or cleaned up as expected.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned. We don't know how to recreate this issue.
+- Expected vs actual behavior: The title hints at an unexpected behavior (temp files not being cleaned), but it doesn’t specify what should happen instead.
+- Acceptance criteria: There is no mention of any acceptance criteria or conditions that need to be met for the issue to be resolved.
+- Affected components: While we can infer that this might involve file handling and stream creation, specific affected components are not detailed.
+- Environment details: No information about the environment (e.g., operating system, version numbers) is provided.
+
+Step 3: Assess if a developer could understand the full scope from just the title.
+- A developer would likely need more context to fully understand and address this issue. The lack of specific steps or conditions makes it difficult for them to start troubleshooting effectively.
+
+Final Answer: Yes",b5c477d0eab76ff1,qwen2.5:14b,0,2026-06-17T14:50:20.208638,project_01,title_only,incompleteness,cot
+ISSUE-2832,The HDFS Sink should support compressing files as they are copied,0,1,"Step 1: Analyze what the issue title conveys.
+The title ""The HDFS Sink should support compressing files as they are copied"" suggests that there is a request or requirement for an enhancement to the HDFS Sink component, specifically to add file compression functionality during the copying process.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- Reproduction Steps: The title does not provide any specific steps on how to reproduce the issue or test the feature. It only states a desired capability.
+- Expected vs Actual Behavior: There is no mention of what currently happens versus what should happen when files are copied without this enhancement.
+- Context and Affected Components: While it mentions HDFS Sink, there's no detailed information about other components that might be involved or how they interact with the proposed change.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title, a developer would not have enough information to fully understand the requirements for implementing this feature. They would need additional details such as:
+- How compression should be triggered (automatically or manually)?
+- Which file formats are supported?
+- Performance implications and testing criteria.
+
+Final Answer: Yes",75b9d6f6f2d25a21,qwen2.5:14b,0,2026-06-17T14:50:25.469530,project_01,title_only,incompleteness,cot
+ISSUE-1088,HDFS StoreMessageHandlers are not very resilient,1,0,"Step 1: Analyze what the title conveys.
+The title ""HDFS StoreMessageHandlers are not very resilient"" suggests that there is an issue with the resilience of HDFS's StoreMessageHandlers. It implies that these handlers do not handle certain situations well, but it does not specify what those situations are or how they should be handled.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: The title does not provide any steps on how to reproduce this issue.
+- Expected vs actual behavior: There is no mention of expected versus actual behavior. It only states that something is ""not very resilient,"" which is vague and lacks specifics.
+- Acceptance criteria: No acceptance criteria are mentioned or implied by the title.
+- Affected components: While it mentions HDFS StoreMessageHandlers, it does not specify other affected components if any exist.
+- Environment details: The environment in which this issue occurs is not specified.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+Given the lack of specific information about what exactly makes these handlers ""not very resilient,"" and without additional context, it would be challenging for a developer to fully grasp the nature or extent of the problem based solely on this title. More details",fa4a6127fcc1bf5a,qwen2.5:14b,0,2026-06-17T14:50:30.870492,project_01,title_only,incompleteness,cot
+ISSUE-0993,XD on Lattice POC,1,1,"Step 1: Analyze what information is conveyed by the title ""XD on Lattice POC"".
+- The title mentions ""XD"" and ""Lattice POC"", but it does not provide any clear indication of a specific issue or problem.
+- It's unclear whether ""XD"" refers to an abbreviation, a feature name, or something else entirely.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- There are no details about how to reproduce the issue, what the expected behavior should be, or any acceptance criteria.
+- The environment and affected components are not specified either. It's unclear whether ""Lattice POC"" refers to a specific component or an entire system.
+
+Step 3: Assess if a developer can understand the full scope of the issue from the title alone.
+- Given the lack of detail in the title, it is unlikely that a developer would be able to fully comprehend the nature and extent of the problem without additional information.
+
+Final Answer: Yes",ae2039d2413fd1f9,qwen2.5:14b,0,2026-06-17T14:50:35.350582,project_01,title_only,incompleteness,cot
+ISSUE-3212,Parsing stream definition with parameter containing single quotes not working,0,1,"Step 1: Analyze what the issue title conveys.
+- The title indicates that there is an issue with parsing a stream definition when it contains a parameter with single quotes.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce are not mentioned in the title. It's unclear how one would encounter this issue or replicate it.
+- Expected vs actual behavior is not detailed. The title does not specify what should happen versus what actually happens when encountering a parameter with single quotes.
+- Acceptance criteria, affected components, and environment details are also missing from the title.
+
+Step 3: Assess if a developer can understand the full scope of the issue from the title alone.
+- While the title gives some context about the nature of the problem (parsing stream definition), it lacks specific details that would allow a developer to fully comprehend or address the issue without additional information.
+
+Final Answer: Yes",99ffc93e5b1e2ab8,qwen2.5:14b,0,2026-06-17T14:50:39.493092,project_01,title_only,incompleteness,cot
+ISSUE-0131,Support partitioning for Kafka even if count == 1,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Support partitioning for Kafka even if count == 1"" suggests that there is an existing limitation in how Kafka handles partitioning when the count of something (likely partitions) equals one. It implies a request to modify this behavior.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not provided; it's unclear what specific scenario or steps would lead to encountering this issue.
+- Expected vs actual behaviour: The expected change is implied but not explicitly stated (support partitioning even when count == 1), and the current behavior isn't detailed.
+- Acceptance criteria: There are no clear acceptance criteria mentioned that a developer could use to verify if the issue has been resolved.
+- Affected components: Kafka's partitioning mechanism is mentioned, but it doesn’t specify which part of the system or codebase needs modification.
+- Environment details: No environment-specific information is provided.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+Given the lack of detailed steps, expected behavior, and acceptance criteria, a developer would likely need more context to fully grasp what changes are required and how they should be implemented.
+
+Final Answer: Yes",f832116c891125d8,qwen2.5:14b,0,2026-06-17T14:50:44.835124,project_01,title_only,incompleteness,cot
+ISSUE-2806,User should be able to view the list of all the job definitions,0,1,"Step 1: Analyze what the issue title conveys.
+- The title indicates that there is a requirement for users to be able to view a list of all job definitions.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any specific steps on how to reproduce this feature or check its functionality.
+- It doesn't mention what the expected behavior should look like when implemented.
+- There is no indication about acceptance criteria, affected components, or environment details.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+- While it's clear that there needs to be a feature allowing users to view job definitions, the lack of detail makes it difficult for developers to know exactly what they need to implement or test.
+
+Final Answer: Yes",9a95e30e6230099a,qwen2.5:14b,0,2026-06-17T14:50:48.589881,project_01,title_only,incompleteness,cot
+ISSUE-3281,Create proper test coverage for Controllers,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Create proper test coverage for Controllers"" suggests that there is a need to improve testing for controllers in the software.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps on how to create this test coverage.
+- It doesn't mention what ""proper test coverage"" entails (e.g., code coverage percentage, types of tests).
+- There is no indication of what the current state of testing for controllers is or what issues exist with it.
+- No expected behavior or acceptance criteria are mentioned.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of detail about specific requirements and context, a developer would likely need more information to fully understand the task at hand. The title does not provide enough details for someone to start working on it without further clarification.
+
+Final Answer: Yes",2e4fc23ef08108a9,qwen2.5:14b,0,2026-06-17T14:50:52.924175,project_01,title_only,incompleteness,cot
+ISSUE-0114,Spring flo issue with unexpected char,1,1,"Step 1: Analyze what the title conveys.
+- The title mentions ""Spring flo issue with unexpected char"".
+- It suggests there is an issue related to Spring framework and some unexpected character.
+
+Step 2: Determine if the title suggests missing information.
+- There are no steps provided on how to reproduce the issue.
+- No expected behavior or actual behavior is mentioned.
+- No acceptance criteria, affected components, or environment details are given.
+- The term ""unexpected char"" is vague without further context about what character and where it appears.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- Given the vagueness of ""unexpected char"", developers would likely need more information to reproduce and fix the issue.
+- Without additional details, the issue remains unclear and hard to address effectively.
+
+Final Answer: Yes",01e398a2f5290aa2,qwen2.5:14b,0,2026-06-17T14:50:56.787190,project_01,title_only,incompleteness,cot
+ISSUE-2819,Create OOTB batch job for export and processing multiple files from HDFS to MongoDB,0,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title mentions creating an ""OOTB"" (Out of the Box) batch job for exporting and processing multiple files.
+- It specifies that these files are to be moved from HDFS (Hadoop Distributed File System) to MongoDB.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps on how to reproduce the issue or create the batch job.
+- There is no mention of what the expected outcome should be after creating this batch job.
+- No acceptance criteria are mentioned (e.g., performance requirements, error handling).
+- It lacks details about which components will be affected and in what environment this task needs to be performed.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- While the general idea is clear, there's insufficient detail for a developer to start working on it without further clarification. The title does not provide enough context or specifics about requirements, making it difficult to fully comprehend what needs to be done.
+
+Final Answer: Yes",0d1ad2e2cb5914ec,qwen2.5:14b,0,2026-06-17T14:51:01.715583,project_01,title_only,incompleteness,cot
+ISSUE-3583,Creating a tap throws an exception,1,1,"Step 1: Analyze what the issue title conveys.
+- The title ""Creating a tap throws an exception"" indicates that there is an error when creating something called a 'tap'.
+- It suggests that an unexpected behavior occurs, specifically an exception being thrown.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce are not provided. We don't know under what conditions or how this issue happens.
+- Expected vs actual behaviour is only partially described. The expected behavior might be successful creation of a 'tap', but we're not sure without more context.
+- Acceptance criteria, affected components, and environment details are completely missing.
+
+Step 3: Assess if the title alone provides enough information for a developer to understand the full scope of the issue.
+- Given only this title, it's challenging for a developer to fully grasp what is happening or how to reproduce the problem. More context would be needed to diagnose and fix the issue effectively.
+
+Final Answer: Yes",5fd260d4caa5a4ee,qwen2.5:14b,0,2026-06-17T14:51:06.072012,project_01,title_only,incompleteness,cot
+ISSUE-1320,Upgrade CI Acceptance AMI to HVM,1,0,"Step 1: Analyze what the title conveys.
+The title ""Upgrade CI Acceptance AMI to HVM"" suggests an action related to upgrading a specific component in a Continuous Integration (CI) environment. It mentions changing the AMI (Amazon Machine Image) used for acceptance testing to use Hardware Virtualization (HVM).
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: The title does not provide any steps on how to perform this upgrade or what changes are required in the process.
+- Expected vs actual behavior: There is no mention of expected outcomes after the upgrade, nor any indication of current issues that need fixing.
+- Acceptance criteria: No acceptance criteria are mentioned for verifying if the upgrade was successful.
+- Affected components: While it mentions CI and AMI, there's no detail on which specific parts or systems will be impacted by this change.
+- Environment details: The title does not provide any information about the current environment setup or what changes might be needed in other configurations due to this upgrade.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of detailed steps, expected outcomes, and context around affected systems and environments, it is unlikely that a developer would have enough",ae3a61e7d72e8678,qwen2.5:14b,0,2026-06-17T14:51:11.492338,project_01,title_only,incompleteness,cot
+ISSUE-3683,Sonar build is failing,1,1,"Step 1: Analyze what the issue title conveys.
+- The title ""Sonar build is failing"" indicates that there is an issue with the Sonar build process, which likely refers to a code analysis tool used in software development.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any specific steps to reproduce the failure.
+- It doesn't mention what the expected behavior should be or what the actual observed behavior is.
+- There's no indication of acceptance criteria, affected components, or environment details (such as operating system, version numbers, etc.).
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- A developer would likely need more information to diagnose and resolve the issue. The title lacks specifics that are typically required for effective troubleshooting.
+
+Final Answer: Yes",f724dbe7d1467d2c,qwen2.5:14b,0,2026-06-17T14:51:15.373520,project_01,title_only,incompleteness,cot
+ISSUE-0297,Port Mail as s-c-s sink,1,1,"Step 1: Analyze what the title conveys.
+The title ""Port Mail as s-c-s sink"" suggests an action to be taken on some kind of mail system, possibly integrating it with another system or component referred to as 's-c-s' (which could stand for service-to-service communication, source-code-system, etc., but is not clear from the context).
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any steps on how to reproduce the issue or action.
+- There's no indication of expected behavior after the porting process.
+- It lacks details about acceptance criteria and what success looks like.
+- No affected components are mentioned, nor is there any environment detail provided.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of context and specific instructions, it's unlikely that a developer would be able to fully comprehend the task or issue without additional information. The term 's-c-s' is ambiguous without further explanation, making it difficult for anyone to know exactly what needs to be done.
+
+Final Answer: Yes",cc32bd55cba90571,qwen2.5:14b,0,2026-06-17T14:51:20.168890,project_01,title_only,incompleteness,cot
+ISSUE-2837,User requires wiki page on how to use the XD EC2 Installer,0,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title mentions that a user requires a wiki page on how to use the XD EC2 Installer.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- There are no details about specific issues encountered while using the installer.
+- No mention of what should happen (expected behavior) versus what is happening (actual behavior).
+- The environment and affected components are not specified.
+- Steps to reproduce any issue are completely absent.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- A developer would need more information such as:
+  - What specific problems or questions does the user have?
+  - Which version of XD EC2 Installer is being used?
+  - Is there an error message or unexpected behavior that needs addressing?
+
+Final Answer: Yes",73acb85fda43264d,qwen2.5:14b,0,2026-06-17T14:51:24.244233,project_01,title_only,incompleteness,cot
+ISSUE-0692,Document the new analytics tab features,0,1,"Step 1: Analyze what the title conveys.
+The issue title ""Document the new analytics tab features"" suggests that there is a need to create documentation for newly added features in an analytics tab. However, it does not provide specific details about which features are being referred to or how they should be documented.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned.
+- Expected vs actual behavior: Not provided.
+- Acceptance criteria: No clear acceptance criteria are outlined.
+- Affected components: The analytics tab is mentioned, but no other specific details about affected components or features within the tab.
+- Environment details: None specified.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, a developer would likely need more information to fully understand what needs to be documented and how. The lack of specifics makes it difficult for someone to start working on this task without further clarification.
+
+Final Answer: Yes",f280950a25bfeb28,qwen2.5:14b,0,2026-06-17T14:51:28.663513,project_01,title_only,incompleteness,cot
+ISSUE-1393,Workaround latest boot snapshot issue,1,1,"Step 1: Analyze what the title conveys.
+- The title ""Workaround latest boot snapshot issue"" suggests there is an issue related to the boot process of a system or application, specifically with a recent snapshot.
+
+Step 2: Determine if essential information is missing.
+- Steps to reproduce the issue are not mentioned in the title.
+- Expected vs actual behavior is not described.
+- Acceptance criteria for resolving the issue are not provided.
+- Affected components and environment details are not specified.
+
+Step 3: Evaluate whether a developer can understand the full scope from the title alone.
+- The title does not provide enough information for a developer to fully comprehend the nature of the problem, how it manifests, or what needs to be done to resolve it. A developer would need more context and specific details about the issue.
+
+Final Answer: Yes",fec5392027fed369,qwen2.5:14b,0,2026-06-17T14:51:32.567920,project_01,title_only,incompleteness,cot
+ISSUE-1213,Add test coverage for 'complex objects' as payload,1,0,"Step 1: Analyze what the issue title conveys.
+The title ""Add test coverage for 'complex objects' as payload"" suggests that there is a need to write tests for handling complex objects in some kind of data transfer or processing scenario, likely where these objects are part of a request payload.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: The title does not provide any steps on how to reproduce an issue or test case scenarios. It only mentions adding test coverage which is more about writing tests rather than reproducing an existing problem.
+- Expected vs Actual Behaviour: There's no mention of what should be expected versus the actual outcome, which would typically be necessary for diagnosing issues.
+- Acceptance Criteria: The title does not specify any criteria that need to be met for this task to be considered complete or successful.
+- Affected Components: While it mentions 'complex objects' and 'payload', there is no indication of specific components or systems involved.
+- Environment Details: No environment details are provided, such as the programming language, framework, or operating system.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of detailed information about what constitutes ""complex objects"", where these objects",7a5850a8133c0628,qwen2.5:14b,0,2026-06-17T14:51:38.122763,project_01,title_only,incompleteness,cot
+ISSUE-2096,Create documentation section for the shell,1,1,"Step 1: Analyze what information is conveyed by the issue title.
+The title ""Create documentation section for the shell"" suggests that there is a need to create some form of documentation related to a shell component or feature.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps to reproduce an issue or describe how to test the creation of this documentation section.
+- There is no mention of what the expected outcome should be after creating the documentation.
+- No details are provided about which shell component needs documentation or in what format it should be written.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title, a developer would likely need additional information to fully understand the requirements and complete this task effectively. The lack of specific details makes it difficult for developers to know exactly what is expected or how to proceed with creating the documentation.
+
+Final Answer: Yes",638646903e2781db,qwen2.5:14b,0,2026-06-17T14:51:42.466873,project_01,title_only,incompleteness,cot
+ISSUE-0695,Example hashtag-count MR job fails when running XD on YARN with PHD 3.0,0,1,"Step 1: Analyze what information is conveyed in the title.
+- The issue involves a hashtag-count MapReduce job.
+- It fails when running on XD (likely referring to Hadoop Distribution like Cloudera or Hortonworks).
+- The failure occurs while using YARN as the resource manager.
+- PHD 3.0 is mentioned, which likely refers to Pivotal HD version 3.0.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- While the title provides some technical details about the environment and the nature of the failure, it does not provide:
+  - Steps to reproduce the issue.
+  - Expected vs actual behavior (what should happen versus what actually happens).
+  - Acceptance criteria for resolving the issue.
+  - Specific error messages or logs that indicate why the job fails.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- The title gives some context but lacks critical details necessary to diagnose and resolve the problem effectively. A developer would need more information such as:
+  - Detailed steps to reproduce the issue.
+  - Expected behavior of the hashtag-count job when running under specified conditions.
+  - Actual observed behavior or error messages.
+
+Final Answer: Yes",8690d05d5a59b43f,qwen2.5:14b,0,2026-06-17T14:51:47.836168,project_01,title_only,incompleteness,cot
+ISSUE-1859,Investigate deployed module context close upon container shutdown,0,1,"Step 1: Analyze what the title conveys.
+The title ""Investigate deployed module context close upon container shutdown"" suggests that there is an issue related to a deployed module's behavior when its container shuts down. It implies that something unexpected happens with the module's context during this process.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps to reproduce the issue.
+- There is no mention of expected vs actual behavior, which would be crucial for understanding what exactly needs investigation.
+- No acceptance criteria are mentioned.
+- While it mentions ""deployed module context close,"" there's no clear indication of affected components or environment details.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of specific steps, expected behavior, and other critical information, a developer would likely need more detail to fully comprehend and address this issue effectively. The title is vague about what exactly needs investigation beyond suggesting that something happens with the module's context during container shutdown.
+
+Final Answer: Yes",e685387c2969b168,qwen2.5:14b,0,2026-06-17T14:51:52.470709,project_01,title_only,incompleteness,cot
+ISSUE-2486,Add XD deployment for YARN,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Add XD deployment for YARN"" suggests that there is a request to add a new feature or capability, specifically deploying something called ""XD"" in an environment that uses YARN.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps on how to reproduce the issue (if it's even considered an issue rather than a feature request).
+- It doesn't specify what expected behavior should be after this deployment is completed.
+- There are no acceptance criteria mentioned, such as success conditions or test cases that need to be passed.
+- No details about affected components or environment specifics are provided.
+
+Step 3: Assess if the title alone provides enough context for a developer.
+Given only the title ""Add XD deployment for YARN,"" it is insufficient for a developer to understand the full scope of what needs to be done. The developer would need additional information such as:
+- What exactly does ""XD"" refer to?
+- How should this deployment interact with or affect existing components in the YARN environment?
+- Are there specific configurations, dependencies, or prerequisites that must be met before proceeding?
+
+Final Answer: Yes",67ee43611c62467a,qwen2.5:14b,0,2026-06-17T14:51:57.631374,project_01,title_only,incompleteness,cot
+ISSUE-1473,Document Kafka message bus,1,1,"Step 1: Analyze what the title conveys.
+The issue title ""Document Kafka message bus"" suggests that there is a need to create documentation for a Kafka message bus system.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any specific steps to reproduce an issue or describe expected vs actual behavior.
+- There are no acceptance criteria, affected components, or environment details mentioned in the title.
+- It is unclear what exactly needs to be documented and why it's necessary.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, a developer would likely need more information about what aspects of the Kafka message bus system should be documented, who will use the documentation, and any specific requirements or guidelines for creating the document.
+
+Final Answer: Yes",fa6a3f4d2c08f570,qwen2.5:14b,0,2026-06-17T14:52:01.466643,project_01,title_only,incompleteness,cot
+ISSUE-1928,Module option validation not happening anymore,1,1,"Step 1: Analyze what the issue title conveys.
+- The title ""Module option validation not happening anymore"" suggests that there is an issue with module option validation which was previously working but now has stopped.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps to reproduce the issue, expected behavior before and after the change, acceptance criteria, affected components, or environment details. It lacks specific context about when this started happening, what changes might have caused it, or which module is involved.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- A developer would likely need more information to diagnose and fix the issue effectively. The lack of detail makes it difficult for them to know where to start looking or what exactly has changed since the validation was working correctly.
+
+Final Answer: Yes",ad76e15ea1722570,qwen2.5:14b,0,2026-06-17T14:52:05.353378,project_01,title_only,incompleteness,cot
+ISSUE-2209,Validate existence of batch job at the admin side,0,1,"Step 1: Analyze what the issue title conveys.
+The title ""Validate existence of batch job at the admin side"" suggests that there is an action to be taken on the administrative interface to check if a batch job exists. However, it does not provide specific details about how this validation should occur or what the expected outcome would be.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not provided in the title.
+- Expected vs actual behavior: The expected behavior is implied but not clearly stated (e.g., whether a batch job should always exist under certain conditions).
+- Acceptance criteria: Missing. There's no clear indication of what needs to be done to consider this issue resolved.
+- Affected components: Not specified, though it implies an admin interface and possibly a backend system for checking the existence of batch jobs.
+- Environment details: No environment or context is provided.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of specific steps, expected outcomes, acceptance criteria, affected components, and environmental context, it would be challenging for a developer to fully grasp what needs to be done based on this title alone. The issue lacks clarity and detail.
+
+Final Answer: Yes",82a90d329d5165df,qwen2.5:14b,0,2026-06-17T14:52:10.758033,project_01,title_only,incompleteness,cot
+ISSUE-2118,Stream-lib - analytics operators,1,1,"Step 1: Analyze what information is conveyed by the issue title.
+- The title ""Stream-lib - analytics operators"" suggests that there might be an issue related to a library called Stream-lib, which deals with some kind of analytics operations.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- There are no details about what specific problem is occurring within the analytics operators in Stream-lib.
+- The title does not provide any information on how to reproduce the issue, what the expected behavior should be, or what the actual observed behavior is.
+- It lacks acceptance criteria and environment details that would help developers understand the context of the issue.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- Given only this title, it's unclear whether there is an error, performance issue, missing feature, or something else related to analytics operators in Stream-lib. A developer would need more information to fully comprehend and address the problem.
+
+Final Answer: Yes",3dd2013ba47b553f,qwen2.5:14b,0,2026-06-17T14:52:15.272070,project_01,title_only,incompleteness,cot
+ISSUE-1678,Preserve partition state on container restarts,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Preserve partition state on container restarts"" suggests that there is an issue related to maintaining the state of partitions when containers are restarted.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps to reproduce the problem.
+- It doesn't specify what the expected behavior should be compared to the actual observed behavior.
+- There's no mention of acceptance criteria, affected components, or environment details.
+
+Step 3: Evaluate whether a developer can understand the full scope from the title alone.
+While the title gives an idea about the issue (preserving partition state during container restarts), it lacks specific details that would allow a developer to fully comprehend and address the problem. A developer would need additional information such as how to reproduce the issue, what exactly is not working as expected, which components are involved, etc.
+
+Final Answer: Yes",e65ff45be4ed8d4e,qwen2.5:14b,0,2026-06-17T14:52:19.501846,project_01,title_only,incompleteness,cot
+ISSUE-2005,Paging support for ModuleMetadata/Container repositories,0,1,"Step 1: Analyze what the title conveys.
+The title ""Paging support for ModuleMetadata/Container repositories"" suggests that there is a request or issue related to adding paging functionality to certain data structures within a software system, specifically involving ModuleMetadata and Container repositories.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps to reproduce an issue.
+- It doesn't specify expected behavior compared to actual behavior.
+- There is no mention of acceptance criteria or specific requirements for this feature.
+- No environment details or affected components are mentioned in the title alone.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+While the title gives an idea about what needs to be done (adding paging support), it lacks crucial information that would allow developers to fully understand and implement this feature effectively. Developers typically need detailed requirements, including how paging should work, which components are involved beyond just repositories, expected performance metrics, etc.
+
+Final Answer: Yes",52611920074d5a3e,qwen2.5:14b,0,2026-06-17T14:52:23.967758,project_01,title_only,incompleteness,cot
+ISSUE-0138,Upgrade to SHDP 2.2.1.GA,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Upgrade to SHDP 2.2.1.GA"" suggests that there is an intention or need to upgrade something called SHDP (Spring Handler Dispatch Proxy) to a specific version, 2.2.1.GA.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any steps on how to perform the upgrade.
+- There are no details about expected behavior after the upgrade or issues encountered during the process.
+- It lacks context regarding why this upgrade is necessary, what problems it aims to solve, or which components of the system will be affected by this change.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title, a developer would likely need additional information such as:
+- The current version being used and why an upgrade is necessary.
+- Specific steps to perform the upgrade.
+- Expected outcomes or changes after upgrading.
+- Any potential risks or issues that might arise during or after the upgrade.
+
+Final Answer: Yes",65cb03592703ea1a,qwen2.5:14b,0,2026-06-17T14:52:28.735062,project_01,title_only,incompleteness,cot
+ISSUE-1267,Add in-memory based Aggregate Field Value Counters,1,0,"Step 1: Analyze what the title conveys.
+The title ""Add in-memory based Aggregate Field Value Counters"" suggests that there is a request to implement a feature where field values are counted using an in-memory approach. However, it does not provide specific details about how this should be implemented or why it's needed.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned; no issue to reproduce here as this is a request for new functionality.
+- Expected vs actual behavior: The expected behavior is implied (counting field values in memory), but there’s no mention of what should happen currently or how it differs from expectations.
+- Acceptance criteria: There are no specific acceptance criteria outlined, such as performance requirements or the exact fields to be counted.
+- Affected components: No details about which parts of the system will be impacted by this change.
+- Environment details: The environment in which this feature should work is not specified.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of specific implementation details, performance requirements, or context for why this feature is needed, it would be challenging for a developer to fully grasp what needs to be done based solely on this title.",4fc31545c0406d84,qwen2.5:14b,0,2026-06-17T14:52:34.097742,project_01,title_only,incompleteness,cot
+ISSUE-2220,Support Groovy bean definitions as XD extensions,1,1,"Step 1: Analyze what the title conveys.
+The title ""Support Groovy bean definitions as XD extensions"" suggests that there is a request to add support for using Groovy-based bean definitions within an existing framework or system, possibly related to Spring XD.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps on how to reproduce any issue.
+- It doesn't specify what the expected behavior should be after implementing this feature.
+- There is no mention of acceptance criteria for when this support would be considered complete or working correctly.
+- No details about affected components are provided, such as which parts of the system need modification or addition.
+- The environment in which this change will take place (e.g., specific versions of software) is not mentioned.
+
+Step 3: Assess if a developer can understand the full scope from just the title.
+Given only the title, it's challenging for a developer to fully grasp what needs to be done. They would need additional information such as how Groovy bean definitions should integrate with existing XD extensions, which components are involved in this integration, and what tests or criteria will confirm that the feature works correctly.
+
+Final Answer: Yes",74c5e4fa8e240b9f,qwen2.5:14b,0,2026-06-17T14:52:39.303896,project_01,title_only,incompleteness,cot
+ISSUE-0982,Harmonize poller configuration,1,1,"Step 1: Analyze what the title conveys.
+The title ""Harmonize poller configuration"" suggests an action to be taken on some kind of software component called a 'poller'. It implies that there is a need for consistency or standardization in how this poller is configured.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any specific steps to reproduce an issue, expected behavior after harmonizing the configuration, acceptance criteria, affected components, or environment details.
+- It lacks context about why the harmonization is necessary and what problems it aims to solve.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+Given only this title, a developer would likely need more information to fully understand the requirements of the task. The term ""harmonize"" is somewhat vague without additional context about what needs to be harmonized and why it's necessary.
+
+Final Answer: Yes",d10e5f5c929a551d,qwen2.5:14b,0,2026-06-17T14:52:43.511270,project_01,title_only,incompleteness,cot
+ISSUE-3457,Retrieve information for an aggregate counter,1,1,"Step 1: Analyze what the title conveys.
+The title ""Retrieve information for an aggregate counter"" suggests that there is some functionality related to retrieving data about an aggregate counter, which likely involves collecting or summarizing data across multiple instances of a metric.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps on how to reproduce the issue.
+- It doesn't mention what the expected outcome should be when retrieving information for an aggregate counter.
+- There is no indication about the environment in which this functionality operates (e.g., programming language, database system).
+- No acceptance criteria are mentioned.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title, it's unclear what specific problem or enhancement is being addressed. A developer would need more information to fully comprehend and implement this feature or fix an issue related to it.
+
+Final Answer: Yes",dc3a3e2a6425574d,qwen2.5:14b,0,2026-06-17T14:52:47.781758,project_01,title_only,incompleteness,cot
+ISSUE-0753,Spring XD admin fails to redeploy modules after Spring XD container successfully reconnectes to Zookeeper,0,1,"Step 1: Analyze what information is conveyed by the title.
+- The issue involves Spring XD admin failing to redeploy modules.
+- There was a successful reconnection of the Spring XD container to Zookeeper.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behaviour, or context.
+- Missing details on how to reproduce the issue (specific actions leading up to the failure).
+- No clear indication of what the expected behavior should be after redeploying modules.
+- Lack of information about acceptance criteria and environment setup.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- The title does not provide enough context for developers to fully comprehend or reproduce the issue without additional details such as steps to reproduce, expected vs actual behavior, affected components, and environment specifics.
+
+Final Answer: Yes",30fba9609c0bd85f,qwen2.5:14b,0,2026-06-17T14:52:51.604580,project_01,title_only,incompleteness,cot
+ISSUE-1005,"Composite Modules should inherit """"xd.*"""" properties",1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Composite Modules should inherit """"xd.*"""" properties"" suggests that there is an expectation for composite modules to inherit certain properties denoted by ""xd.*"". However, it does not specify what these properties are or how they should be inherited.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not provided in the title.
+- Expected vs actual behavior: The expected behavior is somewhat clear (composite modules inheriting certain properties), but there's no mention of the current state or actual behavior, which would help understand what needs fixing.
+- Acceptance criteria: There are no specific acceptance criteria mentioned that a developer can use to verify if the issue has been resolved.
+- Affected components: While it mentions composite modules, other affected components are not specified.
+- Environment details: No environment details such as operating system or software version are provided.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+Given the lack of specific information about what ""xd.*"" properties entail and how they should be inherited, it is unlikely that a developer would have enough context to fully understand the issue's requirements without additional details.
+
+Final Answer: Yes",25b78bd120179cf2,qwen2.5:14b,0,2026-06-17T14:52:56.863810,project_01,title_only,incompleteness,cot
+ISSUE-0247,Move Kafka @Rule to a separate repo,0,1,"Step 1: Analyze what the issue title conveys.
+The title ""Move Kafka @Rule to a separate repo"" suggests an action to be taken regarding some Kafka-related code or configuration that is currently using the `@Rule` annotation and needs to be moved into its own repository.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps on how to reproduce any issue, nor does it describe what the current behavior is versus what is expected after moving the Kafka @Rule to a separate repo.
+- There's no mention of acceptance criteria or specific details about which components are affected by this change.
+- No environment details (such as operating system, version numbers) are provided.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title, it is unclear what exactly needs to be moved and why. A developer would need additional context such as:
+- What specific files or directories contain the Kafka @Rule?
+- Why is this move necessary (e.g., organizational reasons, codebase cleanup)?
+- Are there any dependencies that will be affected by moving these rules?
+
+Final Answer: Yes",0bbb994288b770ac,qwen2.5:14b,0,2026-06-17T14:53:01.945848,project_01,title_only,incompleteness,cot
+ISSUE-2390,Create RPM for distribution,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Create RPM for distribution"" suggests that there is a task to create an RPM package which can be distributed.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any information on how to reproduce the situation (if it's related to a problem) or what specific actions are needed to complete the task.
+- There is no mention of expected vs actual behavior which would be necessary for identifying issues.
+- No acceptance criteria or environment details are provided, making it unclear what exactly needs to be done and in what context.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, a developer would likely need more information such as:
+- What is the purpose of creating the RPM?
+- Which software or application should be packaged into an RPM?
+- Are there specific requirements for the RPM (e.g., dependencies, versioning)?
+- Where and how will the RPM be distributed?
+
+Final Answer: Yes",2ded1854e5d20da6,qwen2.5:14b,0,2026-06-17T14:53:06.694595,project_01,title_only,incompleteness,cot
+ISSUE-3476,Add Spring/Integration MBean Exporters to Module ApplicationContexts,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Add Spring/Integration MBean Exporters to Module ApplicationContexts"" suggests that there is a request to add functionality related to exporting Managed Beans (MBeans) for integration with Spring's application context in specific modules.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any information on how to reproduce an issue or what the current problem is. It seems more like a feature request rather than reporting an existing bug.
+- There are no details about the expected vs actual behavior of the system.
+- No acceptance criteria or environment details (such as which version of Spring, Java, etc.) are mentioned.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+While the title gives some idea of what needs to be done, it lacks critical information that would allow a developer to fully understand and implement this feature. For example:
+- Which specific modules need these exporters?
+- What is the exact nature of the MBean Exporters (e.g., JMX)?
+- Are there any existing patterns or best practices for adding such functionality?
+
+Final Answer: Yes",1e027c4924d18058,qwen2.5:14b,0,2026-06-17T14:53:11.898810,project_01,title_only,incompleteness,cot
+ISSUE-2808,Add documentation for gemfire cache-listener source,0,0,"Step 1: Analyze what the issue title conveys.
+The title ""Add documentation for gemfire cache-listener source"" suggests that there is a need to create or update documentation related to a specific feature in GemFire, which is a distributed data management platform. The feature mentioned here is the `cache-listener` source.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- Reproduction Steps: There are no details on how to reproduce an issue or what actions need to be taken to address this documentation gap.
+- Expected vs Actual Behavior: The title does not mention any discrepancy between expected and actual behavior. It is purely about adding documentation.
+- Context: While the title mentions a specific feature (`cache-listener`), it lacks context such as why this documentation needs to be added, what parts of the `cache-listener` source are involved, or how users will benefit from having this documentation.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+A developer would likely need more information to fully understand the extent and specifics of the task. The title does not provide enough detail about what exactly needs to be documented (e.g., API usage, configuration details, examples), which components",6ee9debc300d5061,qwen2.5:14b,0,2026-06-17T14:53:17.340199,project_01,title_only,incompleteness,cot
+ISSUE-2171,Add a 'rank' expression to be used by the container matcher,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Add a 'rank' expression to be used by the container matcher"" suggests that there is a request or requirement to add functionality related to a 'rank' expression in some context involving a container matcher.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps to reproduce an issue or describe how to test this feature.
+- It doesn't specify what the expected behavior should be after adding the 'rank' expression.
+- There is no mention of acceptance criteria or details about the environment where this change would take place.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title, it's unclear how to implement the feature, what its impact will be, and whether there are any specific requirements for testing or validation. A developer would likely need more information to proceed effectively with this task.
+
+Final Answer: Yes",5ee769220b51a01f,qwen2.5:14b,0,2026-06-17T14:53:21.775201,project_01,title_only,incompleteness,cot
+ISSUE-0332,[Unit Tests] Enhance test coverage for YARN SPI,0,1,"Step 1: Analyze what the title conveys.
+The title ""[Unit Tests] Enhance test coverage for YARN SPI"" suggests that there is an intention to improve unit tests specifically for the YARN Service Provider Interface (SPI).
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps to reproduce any issue or describe a specific problem.
+- It doesn't mention expected vs actual behavior, which would be necessary to understand what needs fixing or improving.
+- There is no acceptance criteria outlined that defines when this enhancement will be considered complete.
+- No environment details are provided (e.g., operating system, version of YARN).
+- The affected components are somewhat implied but not explicitly detailed.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+While it's clear there is an intention to enhance test coverage for YARN SPI, the lack of specific details makes it difficult for a developer to fully grasp what needs to be done or how success will be measured. The title lacks actionable information that would allow someone to start working on this task effectively.
+
+Final Answer: Yes",ee5f260e7ef5211d,qwen2.5:14b,0,2026-06-17T14:53:26.666297,project_01,title_only,incompleteness,cot
+ISSUE-0424,Prevent external libraries from overriding uber-jar dependencies,0,0,"Step 1: Analyze what the issue title conveys.
+The title ""Prevent external libraries from overriding uber-jar dependencies"" suggests that there is an issue related to how external libraries interact with or affect the dependencies within a project's uber-jar (a single, executable JAR file containing all necessary classes and resources).
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: The title does not provide any steps on how to reproduce this issue. It is unclear what actions need to be taken for this problem to occur.
+- Expected vs actual behavior: There's no indication of what the expected outcome should be or what the current problematic behavior looks like.
+- Acceptance criteria: No acceptance criteria are mentioned, meaning it’s not clear when an issue would be considered resolved.
+- Affected components: While it mentions external libraries and uber-jar dependencies, specific affected components (like a particular library name or dependency) are not specified.
+- Environment details: The title does not provide any information about the environment in which this problem occurs.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of detailed steps to reproduce, expected behavior, acceptance criteria, and specific affected components, it is unlikely that",82a9a2f743065e7a,qwen2.5:14b,0,2026-06-17T14:53:32.057837,project_01,title_only,incompleteness,cot
+ISSUE-0373,Remove hardcoded yarn app version jars,0,1,"Step 1: Analyze what the title conveys.
+The title ""Remove hardcoded yarn app version jars"" suggests that there is an issue with hardcoded versions of YARN application JAR files, and the task is to remove these hardcodes.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps on how to reproduce the problem or fix it.
+- It doesn't specify what the expected behavior should be after removing the hardcoded version jars.
+- There's no mention of acceptance criteria, affected components, or environment details.
+- The context and scope of the issue are vague; for example, which parts of the application are involved?
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the limited information in the title, it is unlikely that a developer would have enough context to fully understand what needs to be done or how to verify that the issue has been resolved.
+
+Final Answer: Yes",1334a2b335dcd491,qwen2.5:14b,0,2026-06-17T14:53:36.379493,project_01,title_only,incompleteness,cot
+ISSUE-0586,Replace spring-xd-messagebus-* dependencies with SCS,1,1,"Step 1: Analyze what the issue title conveys.
+The title ""Replace spring-xd-messagebus-* dependencies with SCS"" suggests that there is an intention to replace certain Spring XD message bus dependencies with something referred to as SCS. However, it does not provide any specific details about why this replacement is necessary or how it should be done.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned.
+- Expected vs actual behavior: Not provided.
+- Acceptance criteria: No clear acceptance criteria are outlined.
+- Affected components: While it mentions dependencies, specific affected components are not detailed.
+- Environment details: There is no mention of any environment or context in which this change should be made.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of detail about why the replacement is needed, how to perform it, and what the expected outcome should look like, a developer would likely need more information to fully understand and address this issue effectively.
+
+Final Answer: Yes",58477578fac9ec8f,qwen2.5:14b,0,2026-06-17T14:53:41.002024,project_01,title_only,incompleteness,cot
+ISSUE-1621,Create CompositeModuleRegistry,1,1,"Step 1: Analyze what the title conveys.
+The issue title ""Create CompositeModuleRegistry"" suggests that there is a task to create something called a `CompositeModuleRegistry`. However, it does not provide any context about why this needs to be created or how it should function.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned.
+- Expected vs actual behavior: Not provided.
+- Acceptance criteria: No details on what constitutes completion of this task.
+- Affected components: The component name is given, but no context about other affected parts or dependencies.
+- Environment details: None specified.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title ""Create CompositeModuleRegistry"", it's unclear what exactly needs to be done. A developer would need more information such as:
+- Why is this `CompositeModuleRegistry` needed?
+- What are its expected functionalities or interactions with other components?
+- Are there specific requirements or constraints for creating this module?
+
+Final Answer: Yes",b1bd0418d1786877,qwen2.5:14b,0,2026-06-17T14:53:45.730124,project_01,title_only,incompleteness,cot
+ISSUE-0407,"Add """"module list"""" command",1,0,"Step 1: Analyze what the issue title conveys.
+The title ""Add 'module list' command"" suggests that there is a request to add a new feature in the form of a command called ""module list"". However, it does not provide any additional context or details about why this command is needed, how it should function, or where it fits into the existing system.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not applicable for a feature request.
+- Expected vs actual behavior: The expected behavior of the new command is not described. There's no indication of what output or functionality this command should provide.
+- Acceptance criteria: No acceptance criteria are mentioned, such as success conditions or test cases that would confirm the command works correctly.
+- Affected components: It’s unclear which parts of the system will be impacted by adding this new feature.
+- Environment details: There is no information about the environment in which this command should work.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title, a developer would likely need more detailed specifications to implement this feature effectively. The lack of specifics makes it difficult for developers to know exactly what needs to be done or how to verify",25ab8d7c2c2194b2,qwen2.5:14b,0,2026-06-17T14:53:51.130732,project_01,title_only,incompleteness,cot
+ISSUE-0597,Remove XML REST Endpoints,1,1,"Step 1: Analyze what the title conveys.
+The title ""Remove XML REST Endpoints"" suggests an action to be taken, which is removing certain endpoints that use XML for data exchange in a RESTful API.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any steps on how to remove these endpoints.
+- It doesn't specify what the expected outcome should look like after removal.
+- There's no mention of acceptance criteria, affected components, or environment details.
+- No indication is given about why these endpoints need to be removed or under which circumstances.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, a developer would likely have many questions and might not fully comprehend what needs to be done. The lack of context makes it difficult for someone to start working on this issue without further details.
+
+Final Answer: Yes",dcd8dc8f6d447933,qwen2.5:14b,0,2026-06-17T14:53:55.293805,project_01,title_only,incompleteness,cot
+ISSUE-0814,RemoteFileToHadoopTests fails on 1.1.x,1,1,"Step-by-Step Analysis:
+
+1. **Information Conveyed by the Title:**
+   - The issue is related to tests named ""RemoteFileToHadoopTests"".
+   - It mentions that these tests fail.
+   - There's a version reference, ""1.1.x"".
+
+2. **Suggested Missing Information:**
+   - Steps to reproduce the failure are not provided in the title.
+   - Expected behavior of the test is not mentioned (what should happen when running RemoteFileToHadoopTests).
+   - Actual observed behavior is only partially described (""fails"").
+   - No acceptance criteria or conditions for resolving the issue are given.
+   - Environment details such as operating system, Java version, Hadoop configuration, etc., are missing.
+
+3. **Developer Understanding:**
+   - A developer would need more information to understand why these tests fail and how to reproduce the issue.
+   - The title does not provide enough context for a developer to start debugging or fixing the problem effectively.
+
+Final Answer: Yes",60941da544cca0f6,qwen2.5:14b,0,2026-06-17T14:53:59.723664,project_01,title_only,incompleteness,cot
+ISSUE-1955,Can't use webhdfs with hdfs sink,1,1,"Step 1: Analyze what the issue title conveys.
+- The title indicates that there is an inability to use webhdfs with hdfs sink.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any steps to reproduce the problem, expected behavior, actual behavior, acceptance criteria, affected components, or environment details.
+- It lacks context on what exactly is failing when trying to use webhdfs with hdfs sink and under which conditions.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+- A developer would likely need more information such as specific error messages, configurations, versions of software involved, or detailed steps to reproduce the issue in order to effectively diagnose and resolve it.
+
+Final Answer: Yes",9cb3e92bd7d0de81,qwen2.5:14b,0,2026-06-17T14:54:03.336878,project_01,title_only,incompleteness,cot
+ISSUE-2908,Create an easier short-cut for launching adhoc Batch Jobs,0,1,"Step 1: Analyze what the issue title conveys.
+The title ""Create an easier short-cut for launching adhoc Batch Jobs"" suggests that there is a need to improve the process of starting ad-hoc batch jobs by creating a more convenient shortcut.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps on how to reproduce the issue or create the shortcut.
+- It doesn't specify what the current method is for launching ad-hoc batch jobs and what the desired outcome should be.
+- There's no mention of acceptance criteria or environment details.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, it would be challenging for a developer to fully grasp the requirements. The title lacks specifics about how the shortcut should work, what its impact on existing processes might be, and under which conditions it needs to function.
+
+Final Answer: Yes",2e5ca3c388ab4bf9,qwen2.5:14b,0,2026-06-17T14:54:07.650447,project_01,title_only,incompleteness,cot
+ISSUE-2746,Add support for Hortonworks Data Platform 2.0,0,1,"Step 1: Analyze what the issue title conveys.
+The title ""Add support for Hortonworks Data Platform 2.0"" suggests that there is a request to enhance or modify an existing software system to work with a specific version of Hortonworks Data Platform.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any information on how to reproduce the issue (if it's considered an issue rather than a feature request).
+- It doesn't specify what the current state is and what needs to change (expected vs actual behavior).
+- There are no details about acceptance criteria, affected components, or environment specifics.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, a developer would likely need more information such as:
+- What functionalities of Hortonworks Data Platform 2.0 should be supported?
+- How does the current system interact with earlier versions of Hortonworks Data Platform?
+- Are there specific features or APIs that must be integrated?
+
+Final Answer: Yes",f29060f7f890a89c,qwen2.5:14b,0,2026-06-17T14:54:12.328497,project_01,title_only,incompleteness,cot
+ISSUE-0945,Provide an option for hdfs sink to not use tmp extension,0,1,"Step 1: Analyze what the issue title conveys.
+The title ""Provide an option for hdfs sink to not use tmp extension"" suggests that there is a request to add functionality to HDFS (Hadoop Distributed File System) where users can choose whether or not to use a temporary file extension when writing data.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide steps on how to reproduce an issue, which would be necessary for debugging and testing purposes.
+- It doesn't specify what the expected behavior should be compared to the current actual behavior.
+- There is no mention of acceptance criteria or specific conditions under which this feature should operate.
+- While it mentions HDFS sink, there's no detailed information about affected components or environment details.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title, a developer would likely need more context to fully understand and implement the requested change. The title lacks specific requirements that are necessary for development and testing.
+
+Final Answer: Yes",085ed7af9b1c08c4,qwen2.5:14b,0,2026-06-17T14:54:16.981337,project_01,title_only,incompleteness,cot
+ISSUE-3110,"Simplify """"instance"""" deployment code",1,1,"Step 1: Analyze what the title conveys.
+The title ""Simplify """"instance"""" deployment code"" suggests that there is an existing deployment code related to instances which needs simplification.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- The title does not provide any specific steps to reproduce a problem or scenario.
+- It doesn't mention what the current state of the ""instance"" deployment code looks like or how it should be simplified.
+- There is no indication of expected vs actual behavior or acceptance criteria for simplification.
+- No environment details or affected components are mentioned.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only this title, a developer would likely need more information to fully understand what needs to be done. The task is vague and does not provide enough context about the current state of the code, specific requirements for simplification, or any acceptance criteria.
+
+Final Answer: Yes",9d79f1aff26369c8,qwen2.5:14b,0,2026-06-17T14:54:21.356473,project_01,title_only,incompleteness,cot
+ISSUE-0623,Change in file source breaks backward compatibility,1,1,"Step 1: Analyze what the title conveys.
+- The title suggests that there is an issue related to changing the source of a file which affects backward compatibility.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide specific steps to reproduce the problem, expected behavior compared to actual behavior, acceptance criteria, affected components, or environment details.
+- It lacks context on what exactly changed in the file source and how it impacts backward compatibility.
+
+Step 3: Assess whether a developer can understand the full scope from the title alone.
+- A developer would likely need more information such as specific changes made, which files are involved, and what kind of backward compatibility issues arise to fully comprehend and address this issue.
+
+Final Answer: Yes",8da598b0120f5fcd,qwen2.5:14b,0,2026-06-17T14:54:24.924402,project_01,title_only,incompleteness,cot
+ISSUE-2217,Make transport configuration extensible.,0,1,"Step 1: Analyze what the title conveys.
+The title ""Make transport configuration extensible"" suggests that there is a need to modify an existing system's transport configuration settings so they can be more flexible or adaptable. However, it does not provide specific details about what needs to be done or why.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned.
+- Expected vs actual behavior: Not provided.
+- Acceptance criteria: No clear acceptance criteria are outlined.
+- Affected components: The affected component (transport configuration) is identified, but no details about other potentially impacted parts of the system are given.
+- Environment details: There's no mention of any specific environment or context in which this change should be made.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title ""Make transport configuration extensible,"" it is unlikely that a developer would have enough information to fully understand what needs to be done, how it will impact other parts of the system, or under which conditions this change should be implemented.
+
+Final Answer: Yes",e50b6e16d8a563a0,qwen2.5:14b,0,2026-06-17T14:54:29.696483,project_01,title_only,incompleteness,cot
+ISSUE-2661,With Partitioned Jobs,1,1,"Step 1: Analyze what the title conveys.
+The issue title ""With Partitioned Jobs"" is vague and does not provide specific details about the problem being reported. It mentions partitioned jobs, but it doesn't specify any issues or symptoms related to these jobs.
+
+Step 2: Determine if the title suggests missing information.
+- Steps to reproduce: Not mentioned.
+- Expected vs actual behavior: No indication of what should be happening versus what is actually occurring.
+- Acceptance criteria: None provided.
+- Affected components: Unclear which specific component(s) are involved.
+- Environment details: No environment or context is given.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given the lack of detail, it would be challenging for a developer to fully comprehend the issue's nature and scope based solely on this title. More information is needed to diagnose and resolve the problem effectively.
+
+Final Answer: Yes",f1566d2ab8fd1dfc,qwen2.5:14b,0,2026-06-17T14:54:33.876987,project_01,title_only,incompleteness,cot
+ISSUE-3656,Create TCP source module,1,1,"Step 1: Analyze what the title conveys.
+The issue title ""Create TCP source module"" suggests that there is a requirement to develop a new software component, specifically a TCP source module.
+
+Step 2: Determine if the title suggests missing information.
+- The title does not provide any steps to reproduce an issue or describe how to test the module.
+- There's no mention of expected behavior or acceptance criteria for this module.
+- It doesn't specify which components will be affected by adding this new module.
+- No environment details are provided, such as operating system requirements or network configurations.
+
+Step 3: Assess if a developer can understand the full scope from the title alone.
+Given only the title ""Create TCP source module,"" it is not clear what specific functionality needs to be implemented, how it should interact with other parts of the system, or under which conditions it must operate correctly. A developer would need additional details to proceed effectively.
+
+Final Answer: Yes",281b3861a6df9872,qwen2.5:14b,0,2026-06-17T14:54:38.132609,project_01,title_only,incompleteness,cot
+ISSUE-1872,No main manifest attribute in xd-yarn-client jar,0,1,"Step 1: Analyze what the title conveys.
+The title ""No main manifest attribute in xd-yarn-client jar"" indicates that there is an issue with a missing 'main' attribute in the MANIFEST.MF file of the xd-yarn-client JAR file. This suggests a problem related to the packaging or configuration of this specific Java application component.
+
+Step 2: Determine if the title suggests missing reproduction steps, expected behavior, or context.
+- Reproduction Steps: The title does not provide any information on how to reproduce the issue.
+- Expected vs Actual Behavior: There is no mention of what was expected versus what actually happened.
+- Context and Affected Components: While it specifies that there's an issue with a particular JAR file (xd-yarn-client), it doesn't specify which components or systems are affected beyond this specific jar file.
+
+Step 3: Assess if the developer can understand the full scope from the title alone.
+Given only the title, a developer would likely need more information to fully understand and address the issue. The lack of details about how to reproduce the problem, expected behavior, and broader context makes it difficult for someone to diagnose or fix this issue without additional information.
+
+Final Answer: Yes",5cc805b90c43eabc,qwen2.5:14b,0,2026-06-17T14:54:43.356540,project_01,title_only,incompleteness,cot

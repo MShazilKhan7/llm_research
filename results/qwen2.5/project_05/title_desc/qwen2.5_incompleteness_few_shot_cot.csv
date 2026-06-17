@@ -1,0 +1,856 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-253177,Inconsistent output between java driver and mongo shell,1,1,"Reasoning: The description mentions an inconsistency between Java driver and MongoDB shell but lacks several critical details:
+1. **Steps to Reproduce**: There are no clear steps provided on how to reproduce the issue.
+2. **Expected vs Actual Behaviour**: It does not specify what the expected output should be or what the actual observed behavior is.
+3. **Acceptance Criteria**: No acceptance criteria are mentioned, which would define when the issue can be considered resolved.
+4. **Affected Components**: While it mentions a specific Java driver code snippet and MongoDB shell version, there's no clear indication of other affected components or environments.
+5. **Environment Details**: The description does not provide details about the environment setup (e.g., OS, Java version, MongoDB server version).
+
+Final Answer: Yes",956c9379d1d04e52,qwen2.5:14b,0,2026-06-17T19:24:38.264994,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253467,size not accepting $numberlong argument,1,1,"Reasoning:
+- The title mentions ""size not accepting $numberlong argument"", indicating an issue with a specific command or operation.
+- The description starts by mentioning the use of a command to create the oplog but is incomplete. It does not specify what exactly went wrong, which arguments were used, expected vs actual behavior, or how to reproduce the issue.
+
+Missing information:
+1. Expected vs Actual Behavior: What was supposed to happen versus what actually happened.
+2. Steps to Reproduce: How can someone else replicate this issue?
+3. Affected Components: Which specific part of the system is causing the problem (e.g., a particular API endpoint, database operation).
+4. Environment Details: Information about the environment where the issue occurred (e.g., MongoDB version).
+
+Final Answer: Yes",21e6c3ddcbcf619d,qwen2.5:14b,0,2026-06-17T19:24:41.838953,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253452,MongoCollection.insertOne throws NullPointerException with WriteConcern.UNACKNOWLEDGED & retryWrites=true,0,-1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions a specific error (`NullPointerException`) with `WriteConcern.UNACKNOWLEDGED` and `retryWrites=true`. The description provides more context about the issue.
+2. **Reproduction Steps**: The description includes code that reproduces the issue, which is helpful for debugging purposes.
+3. **Expected vs Actual Behaviour**:
+   - Expected: Insert operation should succeed without throwing an exception when using `WriteConcern.UNACKNOWLEDGED` and `retryWrites=true`.
+   - Actual: A `NullPointerException` occurs at a specific line in the MongoDB internal connection protocol helper.
+4. **Affected Components**: The issue affects the MongoDB Java driver, specifically related to write concerns and retry writes functionality.
+5. **Environment Details**:
+   - Database type: MongoDB
+   - Client library: MongoDB Java Driver
+   - Configuration: `retryWrites=true`, `WriteConcern.UNACKNOWLEDGED`
+6. **Acceptance Criteria**: The description implies that the acceptance criteria would be for the insert operation to succeed without exceptions under these conditions.
+7. **Missing Information**:
+   - While there is a detailed error message and code snippet, it lacks explicit steps on how to reproduce the issue beyond the provided code",2823998d991e1dd1,qwen2.5:14b,0,2026-06-17T19:24:47.166689,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253505,Add an option to toggle SSL certificate validation,1,1,"Reasoning:
+- The title suggests the need for a feature: ""Add an option to toggle SSL certificate validation.""
+- The description mentions that the Java driver does not currently offer this option and compares it with other drivers.
+- Missing information includes:
+  - Expected behavior after adding the option (how should toggling work?).
+  - Steps to reproduce or test the absence of the feature.
+  - Affected components or modules in the system.
+  - Environment details where this issue is observed.
+  - Acceptance criteria for when the feature is implemented.
+
+Final Answer: Yes",8a7844a81760cd8c,qwen2.5:14b,0,2026-06-17T19:24:50.067310,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255080,JSON parser parses braces incorrectly,0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title ""JSON parser parses braces incorrectly"" provides a clear indication of the issue.
+2. **Reproduction Steps**: The description mentions that parsing JSON with too many braces causes an incorrect result, but it does not provide specific steps to reproduce the error consistently.
+3. **Expected vs Actual Behaviour**:
+   - Expected: The JSON should be parsed correctly or return an appropriate error message for invalid input.
+   - Actual: The parser produces a key with an unexpected value (""{{{{{""""$oid""""}}"").
+4. **Acceptance Criteria**: There are no acceptance criteria specified to define what constitutes a correct resolution of the issue.
+5. **Affected Components**: It mentions that this is happening specifically with the strict extended JSON parser, but does not specify other components or their interactions.
+6. **Environment Details**: No environment details such as version numbers, operating system, or specific configurations are provided.
+
+Given these points, while there is some information about what happens when invalid input is given to the JSON parser, it lacks clear reproduction steps and acceptance criteria necessary for a complete issue report.
+
+Final Answer: Yes",db6eb5144e458bdd,qwen2.5:14b,0,2026-06-17T19:24:55.058745,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255534,Looking for performance tips loading results from a find() with the java driver.,1,1,"Reasoning:
+- The title mentions performance tips for loading results from a find() operation using the Java driver.
+- The description starts by mentioning a question about improving performance but does not clearly state what kind of issue or feature request it is.
+- It provides some code snippet related to querying MongoDB, but lacks details on:
+  - Expected vs actual behavior
+  - Steps to reproduce (if this is an issue)
+  - Affected components and environment details
+  - Acceptance criteria if this is a feature request
+
+Given the lack of clear information about what needs to be achieved or fixed, it's missing essential details.
+
+Final Answer: Yes",fcbe09090d89bbe2,qwen2.5:14b,0,2026-06-17T19:24:58.207929,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255332,Binary field $type is represented in JSON as a number instead of a two-byte hex string,0,1,"Reasoning: The issue description mentions that a binary field is incorrectly represented in JSON as a number instead of a two-byte hex string. However, it lacks several critical pieces of information:
+1. Steps to reproduce the issue.
+2. Expected vs actual behavior details.
+3. Affected components or modules.
+4. Environment details (e.g., programming language, version of software being used).
+5. Acceptance criteria for resolving this issue.
+
+Without these details, it is difficult to fully understand and address the problem effectively.
+
+Final Answer: Yes",033ec0bdb52fe04e,qwen2.5:14b,0,2026-06-17T19:25:00.860058,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254781,Iterable Codec,0,1,"Reasoning:
+- The title ""Iterable Codec"" does not clearly describe the issue.
+- The description mentions needing a codec that supports decoding into an iterable but lacks specific details such as:
+  - What is the expected input format?
+  - What should be the output format or structure?
+  - Are there any constraints on the size, type of data, etc.?
+  - How does this differ from existing functionality? (if applicable)
+- There are no acceptance criteria provided.
+- No steps to reproduce or test cases are given.
+- The environment details and affected components are not specified.
+
+Final Answer: Yes",6cf09d613f99f51d,qwen2.5:14b,0,2026-06-17T19:25:03.804319,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254021,NettyStream does not handle clean socket closures from the server,0,1,"Reasoning:
+- The issue title indicates a problem with NettyStream handling clean socket closures from the server.
+- The description mentions that when restarting the server, NettyStream's channel does not capture socket closed events and leaves pending readers hanging.
+- However, the description is incomplete. It lacks specific steps to reproduce the issue, expected behavior compared to actual behavior, acceptance criteria, affected components beyond mentioning ""NettyStream,"" and environment details.
+
+Final Answer: Yes",8e71bfdaf23cc77a,qwen2.5:14b,0,2026-06-17T19:25:06.200733,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255615,Include cursor-id in CursorNotFound exception,0,1,"Reasoning: The description lacks essential details such as what specific changes are required, how it affects the system or user experience, steps to reproduce if applicable, expected vs actual behavior, acceptance criteria, and environment details. It only mentions a vague benefit during testing and diagnostics but does not provide actionable information for developers.
+
+Final Answer: Yes",c1ed5dcec2f62ace,qwen2.5:14b,0,2026-06-17T19:25:08.075010,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254855,Discrimination in Jackson-Codec,0,1,"Reasoning: The description provided is very vague. It mentions ""discrimination in Jackson-Codec"" but does not specify what the issue is or how it affects functionality. Additionally, there are no steps to reproduce the problem, expected vs actual behavior, acceptance criteria, affected components, or environment details mentioned.
+
+Final Answer: Yes",77d245e6928c4ee8,qwen2.5:14b,0,2026-06-17T19:25:10.020592,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-256012,Add w/wtimeout to WriteConcern (getLastError),0,1,"Reasoning:
+1. The title mentions ""Add w/wtimeout to WriteConcern (getLastError)"", which indicates a specific feature request.
+2. The description provides a link to MongoDB documentation about replication and acknowledgement via getLastError, but it does not specify what exactly needs to be added or how the feature should work in detail.
+3. Missing information includes:
+   - Specific requirements for implementing w/wtimeout
+   - Expected behavior when using this new feature
+   - Acceptance criteria for testing the implementation
+   - Affected components and their interactions
+   - Environment details where this issue is relevant
+
+Given these points, the description lacks sufficient detail to proceed with development or testing.
+
+Final Answer: Yes",501acb2596b7d10d,qwen2.5:14b,0,2026-06-17T19:25:13.284093,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253265,Provide an option to use pooled NIO direct buffers to minimise impact on GC,1,1,"Reasoning: The issue description lacks several critical pieces of information:
+1. **Steps to Reproduce**: There are no clear steps provided on how to reproduce the problem or scenario.
+2. **Expected vs Actual Behaviour**: It does not specify what the expected behavior should be and what is currently happening (actual behavior).
+3. **Acceptance Criteria**: No acceptance criteria are mentioned, which would define when this issue can be considered resolved.
+4. **Affected Components**: While it mentions GridFS and HTTP serving of binary data, there's no clear indication of other affected components or the scope of changes required.
+5. **Environment Details**: There is no information about the environment in which this problem occurs (e.g., specific versions of software, operating system details).
+
+Given these missing elements, the issue description does not provide enough detail to fully understand and address the problem.
+
+Final Answer: Yes",2b184b1bf856c2f2,qwen2.5:14b,0,2026-06-17T19:25:17.166232,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254440,DocumentCodec and DBObjectCodec treat nested Maps/Iterables differently,1,1,"Reasoning:
+- Title: ""DocumentCodec and DBObjectCodec treat nested Maps/Iterables differently""
+- Description: ""This is closely related to JAVA-1760. The fix was made for } but } remained unchanged.""
+
+The description lacks several critical pieces of information that would be necessary to fully understand the issue:
+
+1. **Steps to Reproduce**: There are no clear steps provided on how to reproduce this issue.
+2. **Expected vs Actual Behavior**: It is not specified what the expected behavior should be and what the actual observed behavior is.
+3. **Acceptance Criteria**: No criteria for acceptance of a fix or resolution are mentioned.
+4. **Affected Components**: While it mentions DocumentCodec and DBObjectCodec, there's no detailed explanation about which specific functionalities within these components are affected.
+5. **Environment Details**: There’s no information provided regarding the environment in which this issue occurs (e.g., Java version, database type).
+
+Given that the description is vague and lacks essential details to understand or resolve the issue effectively, it can be classified as INCOMPLETE.
+
+Final Answer: Yes",b7d3271b78822f58,qwen2.5:14b,0,2026-06-17T19:25:21.949452,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255480,Secondary reads on lists of mongos fail until first write,1,1,"Reasoning:
+1. **Title and Description**: The title mentions ""Secondary reads on lists of mongos fail until first write"" which indicates an issue with secondary read operations failing under certain conditions.
+2. **Reproduction Steps**: Missing clear steps to reproduce the issue, such as specific commands or configurations that trigger this behavior.
+3. **Expected vs Actual Behavior**: While it hints at a regression introduced by JAVA-656, there is no explicit description of what should be happening versus what actually happens (expected vs actual behavior).
+4. **Acceptance Criteria**: No acceptance criteria are provided to define when the issue would be considered resolved.
+5. **Affected Components**: The description mentions ""Mongo constructor that takes a list of ServerAddress"", but it does not specify which components or modules are affected beyond this.
+6. **Environment Details**: There is no mention of environment details such as MongoDB version, Java driver version, or any other relevant configurations.
+
+Given the lack of clear reproduction steps, expected vs actual behavior, acceptance criteria, and detailed environment information, the issue description is incomplete.
+
+Final Answer: Yes",61b029718d2aad04,qwen2.5:14b,0,2026-06-17T19:25:26.689211,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255171,Saved extra fields for Gridfs does not go in metadata sub-document,0,1,"Reasoning: The description is very brief and lacks essential details:
+- It doesn't specify what ""some metadata"" refers to or how it's structured.
+- There are no steps provided on how to reproduce the issue.
+- Expected vs actual behavior isn’t clearly defined.
+- No acceptance criteria are mentioned.
+- Affected components (e.g., specific API endpoints, UI elements) aren't detailed.
+- Environment details such as versions of software used are missing.
+
+Final Answer: Yes",03efb5ad3e69ab3d,qwen2.5:14b,0,2026-06-17T19:25:29.174855,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254446,Repeated connection with expected authentication errors is not deterministic,0,0,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions ""Repeated connection with expected authentication errors is not deterministic."" This suggests an issue related to the unpredictability of authentication error responses when attempting multiple connections.
+2. **Expected vs Actual Behavior**:
+   - Expected: Repeated attempts at connecting with incorrect credentials should consistently result in authentication failure exceptions.
+   - Actual: The behavior is inconsistent or non-deterministic, meaning sometimes it works as expected and other times it does not.
+3. **Steps to Reproduce**: The description provides a partial code snippet but lacks clear steps on how to reproduce the issue:
+   ```java
+   MongoClient mongo = ...;
+   try {
+       // Connect logic here
+   } catch (MongoException me) {
+       // auth failure exception handling
+   }
+   ```
+   - Missing: Specific details about the environment setup, exact connection parameters, and a complete sequence of actions to reproduce the issue.
+4. **Acceptance Criteria**: The description does not provide any acceptance criteria or conditions under which the issue would be considered resolved.
+5. **Affected Components**:
+   - Affected Component: MongoDB client library (MongoClient).
+6. **Environment Details**: No information about the environment, such as operating system",5aae64874bc2682d,qwen2.5:14b,0,2026-06-17T19:25:34.444010,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254233,Custom logging implementation,0,1,"Reasoning:
+- Missing information on what specific functionality is required for integrating with a custom logging framework.
+- No clear acceptance criteria or expected behavior after integration.
+- No steps provided to reproduce the issue or demonstrate the problem.
+- Lack of details about affected components and environment specifics.
+
+Final Answer: Yes",3f2511fe9f4552ac,qwen2.5:14b,0,2026-06-17T19:25:36.367100,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252701,Update documentation for Text Search,1,1,"Reasoning: The description provided is incomplete and lacks essential details such as what changes need to be made in the documentation, who will perform these updates, expected outcomes, acceptance criteria, and any specific sections or files that require updating. There's also a mention of ""$search for Atlas"" which isn't clear without additional context.
+
+Final Answer: Yes",d79edd6ae11f4e1d,qwen2.5:14b,0,2026-06-17T19:25:38.363763,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255572,Morphia Integration in java driver,0,1,"Reasoning:
+- Title: ""Morphia Integration in java driver""
+- Description: The description mentions that the official Java driver is about to release version 2.8 and notes that Morphia integration was planned for version 3.0.
+
+The issue lacks several critical pieces of information:
+1. **Steps to Reproduce**: There are no steps provided on how to reproduce or encounter this issue.
+2. **Expected vs Actual Behaviour**: The description does not specify what the expected behavior should be and what the actual observed behavior is.
+3. **Acceptance Criteria**: No acceptance criteria are mentioned, such as when Morphia integration will be complete or what features it should include.
+4. **Affected Components**: It's unclear which specific components of the Java driver would be affected by this integration.
+5. **Environment Details**: There are no details about the environment in which this issue is observed (e.g., operating system, version of Java).
+
+Given these missing elements, the issue description does not provide enough information to understand or address the problem effectively.
+
+Final Answer: Yes",0d2b2d6c1fff040f,qwen2.5:14b,0,2026-06-17T19:25:42.959087,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255511,Respect the QueryFailure response flag in OP_REPLY,0,1,"Reasoning: The issue description provides a link to documentation and mentions that the Java driver has a constant defined for the QueryFailure response flag. However, it lacks several critical pieces of information:
+1. Steps to reproduce the issue.
+2. Expected vs actual behavior.
+3. Affected components or modules.
+4. Environment details (e.g., MongoDB version, Java driver version).
+5. Acceptance criteria.
+
+Without these essential details, it is impossible for a developer to understand and address this issue effectively.
+
+Final Answer: Yes",1ddef7fa5221f86f,qwen2.5:14b,0,2026-06-17T19:25:45.590286,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254614,2.12.x breaks compatibility with mongoDB v1.8,0,1,"Reasoning: 
+- The issue title and description indicate a compatibility problem between Java driver version 2.12.x and MongoDB v1.8.
+- It mentions the specific error encountered (`com.mongodb.MongoTimeoutException` caused by `java.lang.NullPointerException`) along with a stack trace, which provides context on where the failure occurs.
+- The root cause is suggested to be related to an expected field (""versionArray"") in a specific method of the Java driver code (v. 2.12.0).
+- However, it lacks clear steps to reproduce the issue beyond mentioning that it fails at startup.
+- Expected vs actual behavior is somewhat implied but not explicitly stated.
+- Acceptance criteria are missing.
+- Affected components and environment details are partially provided (Java driver version and MongoDB version), but more context would be helpful.
+
+Final Answer: Yes",907029eb0d9010ca,qwen2.5:14b,0,2026-06-17T19:25:49.476053,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253354,Deprecate DBCursor#addSpecial,1,1,"Reasoning: The description provided is very brief and lacks essential details such as:
+- Why deprecating DBCursor#addSpecial is necessary.
+- What the impact of this change will be on existing codebases.
+- Acceptance criteria for when this feature can be considered deprecated.
+- Affected components or modules in the software.
+- Environment details where this issue applies.
+
+Final Answer: Yes",a560be593c37ce3e,qwen2.5:14b,0,2026-06-17T19:25:51.586252,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255153,update description of fsync write concern flag,0,1,"Reasoning: The given issue lacks several critical details:
+1. **Steps to Reproduce**: There are no steps provided on how to observe or test the current incorrect description.
+2. **Expected vs Actual Behavior**: It does not specify what the current behavior is and what it should be after the update.
+3. **Acceptance Criteria**: No criteria are given for determining when this issue has been resolved satisfactorily.
+4. **Affected Components**: While it mentions Javadoc, there's no indication of other potential affected areas or components that might need updates.
+
+Final Answer: Yes",dd08956cd223d454,qwen2.5:14b,0,2026-06-17T19:25:54.387027,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255938,DBCursor.copy() does not copy batch size,0,1,"Step-by-Step Reasoning:
+
+1. **Title and Description Analysis**:
+   - The title mentions ""DBCursor.copy() does not copy batch size"".
+   - The description states: ""the batchSize field is not copied to the new DBCursor object in method """"copy"""".
+
+2. **Missing Information Check**:
+   - Steps to reproduce are missing.
+   - Expected vs actual behavior is only partially described (it mentions that `batchSize` is not copied, but it does not specify what should happen instead).
+   - Acceptance criteria are missing.
+   - Affected components or environment details are not provided.
+
+3. **Evaluation**:
+   - The issue description lacks clear steps to reproduce the problem and detailed expected behavior compared to actual behavior.
+   - There's no mention of how this affects the system or what should be done to fix it (acceptance criteria).
+
+Final Answer: Yes",a7b2c5e9dfad30c9,qwen2.5:14b,0,2026-06-17T19:25:58.370654,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253697,"upload mo artifacts"""" Evergreen post-task is failing",0,1,"Reasoning:
+- The issue title and description indicate that the ""upload mo artifacts"" Evergreen post-task is failing.
+- Logs are provided showing environment variables being set and commands running.
+- There are specific error messages indicating missing files: `Command failed: missing file /data/mci/8d4abb008de048b4b5b6f694c215f135/src/mongodb-logs.tar.gz` and `missing file /data/mci/8d4abb008de048b4b5b6f694c215f135/drivers-tools/.evergreen/orchestration/server.log`.
+- However, the issue description lacks details on:
+  - Expected behavior
+  - Steps to reproduce
+  - Affected components or environment details beyond what is shown in logs
+  - Acceptance criteria
+
+Given these points, while there are some environmental and error details provided, critical information such as expected vs actual behavior, reproduction steps, and acceptance criteria are missing.
+
+Final Answer: Yes",fbfda86b47b50d6e,qwen2.5:14b,0,2026-06-17T19:26:04.544570,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253111,minWireVersion is 1 but it should be 2,0,1,"Reasoning: 
+- The title and description indicate that there's an issue with the `minWireVersion` being set to 1 instead of 2.
+- However, the description lacks essential details such as:
+  - Steps to reproduce the issue.
+  - Expected vs actual behavior (what should happen if minWireVersion is 2).
+  - Affected components or modules.
+  - Environment details where this occurs.
+  - Acceptance criteria for resolving the issue.
+
+Final Answer: Yes",6a2f0547431c438d,qwen2.5:14b,0,2026-06-17T19:26:07.570071,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252640,Documentation links 404,0,1,"Reasoning:
+- The issue title is ""Documentation links 404"".
+- Description: On http://mongodb.github.io/mongo-java-driver/4.0/driver-scala/, all of the """"reference"""" links appear to be broken.
+- Missing information includes:
+  - Steps to reproduce (though it's implied by accessing the URL and clicking on reference links).
+  - Expected vs actual behavior (it’s not clear what should happen if the links were working correctly, only that they are currently broken).
+  - Affected components or environment details (no specific version of MongoDB Java driver is mentioned, no browser or OS information provided).
+
+Final Answer: Yes",8a0ad0b8e8a43ebb,qwen2.5:14b,0,2026-06-17T19:26:10.687468,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255236,DBObject.equals can fail when binary data exists,1,1,"Reasoning: The description provided is very brief and lacks essential details. It mentions a potential issue with the `DBObject.equals` method failing when binary data exists but does not provide:
+
+1. Steps to reproduce the problem.
+2. Expected vs actual behavior.
+3. Affected components or classes.
+4. Environment details (e.g., database version, programming language).
+5. Acceptance criteria.
+
+Without these critical pieces of information, it is impossible for a developer to understand and resolve this issue effectively.
+
+Final Answer: Yes",f916243af3e11545,qwen2.5:14b,0,2026-06-17T19:26:13.284441,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255324,Increase GridFS max chunk size,0,1,"Reasoning: The issue description mentions a desire to increase the `MAX_CHUNKSIZE` in GridFS.java from its current value of `(long)(3.5 * 1000 * 1000)` to `15*1000*1000`. However, it lacks essential information such as:
+- Why is this change necessary? What problem does it solve?
+- Are there any potential risks or side effects of increasing the chunk size?
+- How will this affect performance or storage requirements?
+- Is there a specific use case or scenario where this increase is needed?
+- Steps to reproduce or verify the necessity of this change.
+- Acceptance criteria for when the issue can be considered resolved.
+
+Final Answer: Yes",be6f68522cbf7186,qwen2.5:14b,0,2026-06-17T19:26:16.801926,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254743,Server selection exception should chain exceptions from server monitors,1,1,"Reasoning: The issue description mentions that BaseCluster.selectServer throws a MongoTimeoutException when no matching servers can be found for the selector. However, it does not clearly specify what should happen if exceptions from server monitors are the reason there are no matching servers. It lacks details on:
+1. What specific changes or new behaviors are expected.
+2. Steps to reproduce the issue.
+3. Affected components and their interactions.
+4. Expected vs actual behavior in detail.
+
+Final Answer: Yes",54a50c8978c87063,qwen2.5:14b,0,2026-06-17T19:26:19.306789,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253069,Remove mongodb-driver-embedded-android package,0,1,"Reasoning: The description ""We no longer need to maintain this"" is vague and does not provide enough information. It lacks details such as why the package is no longer needed, what impact removing it will have on existing functionality, whether there are dependencies or alternatives that should be considered, and any acceptance criteria for removal.
+
+Final Answer: Yes",bb125af01fca0224,qwen2.5:14b,0,2026-06-17T19:26:21.198579,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254867,Add type-safe jsMode support in MapReduceCommand,0,1,"Reasoning:
+- The title mentions ""add type-safe jsMode support in MapReduceCommand"".
+- The description states that currently this can only be done using the addExtraOption method and suggests there should be a type-safe set of methods for it.
+- Missing information includes: 
+  - What exactly is meant by ""type-safe jsMode support""?
+  - How will these new methods differ from or improve upon the existing addExtraOption method?
+  - Expected behavior after implementing this feature.
+  - Acceptance criteria to verify that the issue has been resolved.
+  - Affected components and environment details.
+
+Final Answer: Yes",3e00483660f35d30,qwen2.5:14b,0,2026-06-17T19:26:24.194779,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252707,Storing unsigned integer to Mongodb from java,0,0,"Step-by-Step Reasoning:
+1. **Title and Description**: The title mentions storing an unsigned integer in MongoDB using Java.
+2. **Issue Details**:
+   - Problem: An exception is thrown when trying to insert a BigInteger value into MongoDB.
+   - Exception: `org.bson.codecs.configuration.CodecConfigurationException`.
+3. **Reproduction Steps**:
+   - Not explicitly provided, but the issue can be reproduced by attempting to store a BigInteger object in MongoDB using the Java driver version 3.12.13.
+4. **Expected vs Actual Behaviour**:
+   - Expected: The unsigned integer should be stored successfully in MongoDB.
+   - Actual: An exception is thrown indicating that there's no codec for class `java.math.BigInteger`.
+5. **Acceptance Criteria**: Not provided.
+6. **Affected Components**:
+   - Java driver version 3.12.13
+   - MongoDB database
+7. **Environment Details**:
+   - Missing information about the MongoDB server version, operating system, and other relevant configurations.
+
+The issue description lacks clear acceptance criteria and detailed environment details which are necessary for a complete understanding of the problem and its resolution. While it provides some reproduction steps and expected vs actual behavior, these alone do not make",e3045a2125698938,qwen2.5:14b,0,2026-06-17T19:26:29.521898,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255700,Possible bug with JSON parser,1,1,"Reasoning: The description ""It seems strange that this test passes"" does not provide any specific information about the nature of the issue. It lacks details such as:
+- Steps to reproduce the problem.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment details (e.g., OS, version numbers).
+- Acceptance criteria.
+
+Without these essential pieces of information, it is impossible for a developer to understand and address this potential bug effectively. Therefore, this issue report is incomplete.
+
+Final Answer: Yes",98f5b416bb1f1f25,qwen2.5:14b,0,2026-06-17T19:26:32.231844,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253917,$geoNear Aggregation pipeline in Mongo JAVA driver,0,1,"Reasoning:
+- The title mentions ""$geoNear Aggregation pipeline in Mongo JAVA driver"".
+- The description states that the $geoNear aggregation pipeline operator is not present in the Mongo Java driver and suggests manually writing Bson for this.
+- Missing information includes: 
+  - Steps to reproduce (not clear how one would encounter or test this issue).
+  - Expected vs actual behavior (what should happen versus what happens now).
+  - Acceptance criteria (how do we know when it's fixed?).
+  - Affected components (which parts of the system are impacted by this missing feature).
+  - Environment details (version of Java, MongoDB version, etc.).
+
+Final Answer: Yes",8eae43cdeab4400d,qwen2.5:14b,0,2026-06-17T19:26:35.442916,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254894,The aggregation method is inaccurately showing type,1,1,"Reasoning: The issue description is incomplete and lacks essential details. It mentions initializing a MongoDB client and setting up a database collection but does not describe the problem or how to reproduce it. There are no steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details provided.
+
+Final Answer: Yes",99afc58912ca9d2d,qwen2.5:14b,0,2026-06-17T19:26:37.383122,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253334,Deprecate MongoIterable#forEach,0,1,"Step-by-Step Reasoning:
+1. The issue title indicates that there is a conflict between `MongoIterable#forEach` and Java 8's default `forEach` method.
+2. The description mentions the problem occurs when using lambda expressions with these methods, leading to compiler errors due to type ambiguity.
+3. However, the description lacks several critical pieces of information:
+   - Steps to reproduce the issue (e.g., specific code example).
+   - Expected behavior versus actual behavior.
+   - Affected components or modules.
+   - Environment details where this occurs (Java version, MongoDB driver version).
+4. There is no acceptance criteria mentioned for resolving this issue.
+
+Final Answer: Yes",a006e339c75aea16,qwen2.5:14b,0,2026-06-17T19:26:40.570965,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255443,Errors when DBRef's $id is Object instead of simple value,0,1,"Reasoning: The description mentions that MongoDB can store objects in the _id field but does not specify what kind of errors occur or how this affects application functionality. It lacks details on:
+- What specific issues arise when an Object is used instead of a simple value.
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components and environment details.
+
+Final Answer: Yes",c446022507340a76,qwen2.5:14b,0,2026-06-17T19:26:42.821212,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253221,mongodb+srv schema can cause NullPointerException,0,1,"Reasoning: The description mentions a potential issue with MongoDB's connection mechanism but lacks several critical details:
+1. Steps to reproduce the problem.
+2. Expected vs actual behavior.
+3. Affected components or classes in the codebase.
+4. Environment details such as version of MongoDB driver, Java version, etc.
+
+Without these details, it is difficult for developers to understand and resolve the issue effectively.
+
+Final Answer: Yes",c37b51a9967e734a,qwen2.5:14b,0,2026-06-17T19:26:45.047700,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253502,Re-enable write concern tests for dropDatabase command,0,1,"Reasoning: The description mentions a specific problem related to ""write concern failures for dropDatabase"" and its impact on ""failed command in 4.1 server builds."" However, it lacks several critical pieces of information:
+- Steps to reproduce the issue.
+- Expected vs actual behavior (what should happen versus what is happening).
+- Affected components or modules.
+- Environment details such as database version, operating system, etc.
+- Acceptance criteria for resolving this issue.
+
+Final Answer: Yes",699b7b155d7e23a6,qwen2.5:14b,0,2026-06-17T19:26:47.481287,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255435,Thread Locals not being freed in thread pool,0,1,"Step-by-step reasoning:
+
+1. **Title and Description Analysis**:
+   - The title mentions ""Thread Locals not being freed in thread pool"".
+   - The description talks about a memory leak issue due to thread local data remaining on threads in the Tomcat 7 thread pool.
+
+2. **Missing Information Check**:
+   - Steps to reproduce: Not provided.
+   - Expected vs Actual Behaviour: Mentioned that there is a memory leak, but no clear expected behavior or actual observed behavior beyond this general statement.
+   - Acceptance Criteria: None specified.
+   - Affected Components: Tomcat 7 thread pool and possibly other components involved in managing thread local data.
+   - Environment Details: Only mentions Tomcat 7; no specific version details of the application, Java version, or any other relevant environment configurations.
+
+3. **Additional Information**:
+   - Links to JIRA issues are provided but do not substitute for detailed steps or criteria within this issue description itself.
+
+Given these points, the issue lacks clear reproduction steps and acceptance criteria, which are essential for a complete software requirement or bug report.
+
+Final Answer: Yes",f3988f79373c6904,qwen2.5:14b,0,2026-06-17T19:26:52.296503,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255744,authentication for replica set fails frequently because 'getnonce' and 'authenticate' command is issued to different server,0,1,"Step-by-Step Reasoning:
+1. The title mentions an issue with authentication failing frequently in a replica set context.
+2. The description starts to provide some code but cuts off abruptly after mentioning the import statements and adding one server address to a list.
+3. Missing information includes:
+   - Full reproduction steps (the provided snippet is incomplete).
+   - Expected vs actual behavior (what should happen versus what happens currently).
+   - Acceptance criteria (how we know when this issue is resolved).
+   - Affected components or environment details (which parts of the system are involved, and under which conditions does it occur).
+
+Given these points, the description lacks sufficient detail to understand the full scope of the problem and how to reproduce it.
+
+Final Answer: Yes",794e465f1f12d4a2,qwen2.5:14b,0,2026-06-17T19:26:55.918040,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255326,No Such Method Exception When Instantiating Mongo Client,0,0,"Step-by-Step Reasoning:
+1. **Title and Description**: The title ""No Such Method Exception When Instantiating Mongo Client"" clearly indicates the issue.
+2. **Reproduction Steps**: The description provides a detailed stack trace indicating where the exception occurs, which is helpful for debugging.
+3. **Expected vs Actual Behaviour**:
+   - Expected: A MongoClient should be instantiated without throwing an exception.
+   - Actual: An exception `java.lang.NoSuchMethodError` is thrown when trying to instantiate the MongoClient.
+4. **Environment Details**: The description includes specific details about the environment, such as Java driver version (2.11.1 and 2.9.3), OS (Ubuntu 12.04 LTS), and Java version (1.7.0_17).
+5. **Code Snippet**: A code snippet is provided that shows how the MongoClient is being instantiated, which helps in understanding the context of the issue.
+6. **Acceptance Criteria**: While not explicitly stated, the implicit acceptance criteria would be to instantiate a MongoClient without encountering this exception.
+
+Given these points, the description provides sufficient information about the environment, reproduction steps, and expected vs actual behavior. Therefore, it is complete from an analyst's perspective for debugging purposes.",ed5ee09774444008,qwen2.5:14b,0,2026-06-17T19:27:01.318739,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255548,Stackoverflow when querying document with cycle reference using DBRef,1,1,"Reasoning: The description is incomplete as it does not provide a full reproduction process or steps to reproduce the error. It also lacks details about expected vs actual behavior and acceptance criteria. Additionally, the environment details are missing (e.g., version of MongoDB, Java Driver version). While there's an indication that the issue might be related to cycle references using DBRef, it is not clear enough for a developer to understand or reproduce the problem.
+
+Final Answer: Yes",c6655000ad967a47,qwen2.5:14b,0,2026-06-17T19:27:03.858766,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254528,Add MongoCollection.dropIndex(Bson keys),0,1,"Reasoning:
+- The title and description suggest adding a new method `dropIndex(Bson keys)` as a complement to the existing `dropIndex(String indexName)`.
+- It mentions that this will make it easier for users to drop an index without needing to know its name.
+- However, there is no clear acceptance criteria or expected behavior defined.
+- No steps to reproduce are provided since this is about adding functionality rather than fixing a bug.
+- The description does not specify the environment details or affected components.
+
+Given these points, while the issue provides some context and rationale for the change, it lacks essential information such as detailed acceptance criteria and specific requirements. Therefore, it can be considered incomplete.
+
+Final Answer: Yes",e04254a1ed730b2c,qwen2.5:14b,0,2026-06-17T19:27:07.161373,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254203,Add equals() and toString() to Updates,0,1,"Reasoning:
+- Title and description mention that certain methods are missing from specific classes.
+- Description states the current issue: ""The implementation classes used for the com.mongodb.client.model.Updates factory currently don't implement toString() or equals().""
+- It mentions a difficulty in debugging due to this lack of functionality.
+
+However, the following essential information is missing:
+1. Steps to reproduce the problem (if applicable).
+2. Expected behavior if these methods were implemented.
+3. Acceptance criteria for resolving this issue.
+4. Affected components beyond just mentioning class names.
+5. Environment details where this issue occurs.
+
+Final Answer: Yes",34f1bf4a1f0d9736,qwen2.5:14b,0,2026-06-17T19:27:10.177468,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254082,Connection and thread leakage in DefaultServerMonitor,1,1,"Reasoning: The description provided is vague and lacks essential details. It mentions ""network issues"" but does not specify what kind of issues or how to reproduce them. There are no steps to reproduce the issue, no expected vs actual behavior described, no acceptance criteria mentioned, and no environment details given.
+
+Final Answer: Yes",1d8a4d799df18f1a,qwen2.5:14b,0,2026-06-17T19:27:12.097761,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253763,Reduce size of Evergreen matrix,0,1,"Reasoning: The description mentions reducing the size of the Evergreen matrix but does not specify how or what changes are needed. It lacks details on which specific combinations to remove, expected outcomes, acceptance criteria, and any potential impact on testing coverage.
+
+Final Answer: Yes",666670cbb62f3c24,qwen2.5:14b,0,2026-06-17T19:27:13.838065,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254130,Ensure Loggers are past to ErrorHandlingCallbacks,0,1,"Reasoning: The description lacks clarity and essential details. It does not specify what ""}"" refers to or how it relates to loggers being passed to ErrorHandlingCallbacks. There are no steps to reproduce the issue, expected behavior is unclear, and there's no mention of acceptance criteria or affected components.
+
+Final Answer: Yes",52df77a99bd80f2f,qwen2.5:14b,0,2026-06-17T19:27:15.735325,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253459,how to implement nested query in java API,1,1,"Reasoning: The given issue description is missing several critical pieces of information:
+1. It does not specify what the problem or requirement is clearly.
+2. There are no steps to reproduce a specific scenario or error.
+3. Expected vs actual behavior is not described.
+4. No acceptance criteria are provided.
+5. Affected components and environment details are absent.
+
+The description seems incomplete as it only starts mentioning how to implement something but does not provide enough context, expected outcome, or any concrete issue that needs addressing.
+
+Final Answer: Yes",f85dccaaf9151bde,qwen2.5:14b,0,2026-06-17T19:27:18.364810,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255998,Tried to save too large of an object. max size: 2098176,0,0,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**:
+   - The title ""Tried to save too large of an object. max size: 2098176"" provides some context but lacks detail.
+   - The description includes a stack trace indicating the error occurred in Java code, specifically with MongoDB's `com.mongodb.ByteEncoder` and `DBApiLayer`.
+
+2. **Reproduction Steps**:
+   - There are no clear steps provided to reproduce this issue.
+
+3. **Expected vs Actual Behaviour**:
+   - Expected: Saving an object of a certain size should succeed.
+   - Actual: An exception is thrown indicating the object exceeds the maximum allowed size (2098176 bytes).
+   - However, there's no explicit mention of what the expected behavior should be beyond this.
+
+4. **Acceptance Criteria**:
+   - No acceptance criteria are provided to define when the issue would be considered resolved.
+
+5. **Affected Components and Environment Details**:
+   - Affected component: Java driver for MongoDB.
+   - Environment details (e.g., version of Java, MongoDB) are not specified.
+
+6. **Additional Information Needed**:
+   - Steps to reproduce the error.
+   - Expected behavior in",f1190c241a2649fd,qwen2.5:14b,0,2026-06-17T19:27:23.737485,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254903,REPLICA_ACKNOWLEDGED not working at the time of arbiter Node,1,1,"Reasoning: The description is very brief and lacks essential details. It mentions a MongoDB setup with three nodes but does not specify the exact issue related to ""REPLICA_ACKNOWLEDGED"" or how it fails when an arbiter node is involved. There are no steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details provided.
+
+Final Answer: Yes",367509db0863f856,qwen2.5:14b,0,2026-06-17T19:27:25.959206,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253040,mavenLocal should be first repository,0,1,"Reasoning: The description mentions that it is confusing to depend on a SNAPSHOT build while debugging but lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment details where this occurs.
+
+Final Answer: Yes",bdff26fe180d9e99,qwen2.5:14b,0,2026-06-17T19:27:27.766571,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255829,Publish maven SNAPSHOTs,0,1,"Reasoning: The issue description mentions a desire for publishing Maven SNAPSHOTs of the Java driver to make improvements and fixes available immediately. However, it lacks several critical pieces of information:
+- Specific steps or criteria for how and when these SNAPSHOTs should be published.
+- Expected behavior after implementing this change.
+- Acceptance criteria that would define success.
+- Affected components or systems.
+- Environment details where this will take place.
+
+Final Answer: Yes",4a400a32d283e5ec,qwen2.5:14b,0,2026-06-17T19:27:30.166006,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253678,Document new Pojo updates,0,1,"Reasoning: The description ""Document the changes in the PojoCodec for 3.6"" is very brief and lacks essential details such as what specific changes need to be documented, who will perform this task, where these documents should be stored or linked, and any acceptance criteria that would confirm the completion of the documentation.
+
+Final Answer: Yes",debb99bce142148d,qwen2.5:14b,0,2026-06-17T19:27:32.175918,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255807,Allow bson decoder per operation (find/cusor),0,1,"Reasoning:
+- The title mentions ""bson decoder per operation"" but does not specify which operations are involved.
+- The description talks about removing the need for DBCallbacks and setting up callbacks per operation but lacks clear steps to reproduce or specific acceptance criteria.
+- It is unclear what exactly needs to be implemented, how it should behave in different scenarios, and whether there are any environment details that matter.
+
+Final Answer: Yes",dd7f3023f36c429d,qwen2.5:14b,0,2026-06-17T19:27:34.418478,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252979,Remove CLIRR support from the build,0,1,"Reasoning: 
+- Missing steps to reproduce or any specific actions required.
+- No mention of expected vs actual behavior.
+- Lack of acceptance criteria for what needs to be done.
+- No affected components or environment details provided.
+
+Final Answer: Yes",f12ad3fbc6c74240,qwen2.5:14b,0,2026-06-17T19:27:36.048590,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252775,Multiple reads of BsonBinary UUID return different results,0,1,"Reasoning:
+- The issue title and description indicate that there's an inconsistency in how BsonBinary objects are being read multiple times.
+- However, the description lacks several critical pieces of information:
+  - Steps to reproduce the issue: How can someone else replicate this problem?
+  - Expected vs. actual behavior: What is expected when reading a BsonBinary object multiple times? What is actually observed?
+  - Affected components: Is it specific to certain versions or configurations?
+  - Environment details: Which version of the software, operating system, and other relevant technical specifications are involved?
+
+Final Answer: Yes",1184cf8a65eceb9e,qwen2.5:14b,0,2026-06-17T19:27:39.006939,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254111,Allow setting of standard server selection and server monitoring options in the connection string,0,1,"Step-by-Step Reasoning:
+1. The title and description are clear about what needs to be done: allowing setting of server selection and monitoring options in the connection string.
+2. It specifies which configuration options should be available: `serverSelectionTimeoutMS`, `localThresholdMS`, and `heartbeatFrequencyMS`.
+3. Links to specifications for these options are provided, indicating where more detailed information can be found.
+4. However, it lacks specific acceptance criteria (how to verify if the requirement is met).
+5. There's no mention of expected behavior or actual behavior discrepancies.
+6. No steps to reproduce an issue or test cases are given.
+7. The environment details and affected components are not specified.
+
+Final Answer: Yes",d527d6e82fb61877,qwen2.5:14b,0,2026-06-17T19:27:42.392089,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255459,Aggregate and mapReduce commands sent to mongos break when setting read preference,0,1,"Reasoning: The issue description mentions an incompatibility but lacks several critical details:
+1. Specific steps to reproduce the problem.
+2. Expected vs actual behavior when using aggregate and mapReduce commands with different mongos versions.
+3. Affected components or specific API endpoints.
+4. Environment details such as MongoDB version, operating system, etc.
+
+Without these details, it's impossible for developers to understand the issue fully and create a solution that meets all requirements.
+
+Final Answer: Yes",08ea1263ac327bd3,qwen2.5:14b,0,2026-06-17T19:27:44.963754,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253919,DBCollection.distinct() fails when a null value is in the result,1,1,"Reasoning:
+- The title mentions ""DBCollection.distinct() fails when a null value is in the result"", which indicates an issue with a specific MongoDB method.
+- However, the description starts abruptly with ""} on a collection that contains a document like { """"_id"""": """"..."". This does not provide clear steps to reproduce the issue or any context about what command was executed and how it failed.
+- Missing information includes:
+  - The exact command or query used
+  - Expected vs actual behavior (what should happen versus what actually happens)
+  - Affected components or environment details (e.g., MongoDB version, programming language used)
+  - Steps to reproduce the issue
+
+Final Answer: Yes",00f83b09a6495a15,qwen2.5:14b,0,2026-06-17T19:27:48.226257,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254628,Force slaveOK on a direct connection to a replica set membe,0,1,"Reasoning:
+- The title and description are somewhat unclear. It mentions ""Force slaveOK on a direct connection to a replica set member,"" but it does not clearly define what needs to be done or why.
+- Missing: specific steps to reproduce the issue, expected vs actual behavior, acceptance criteria, affected components, environment details (e.g., database version, MongoDB configuration).
+- The description suggests that users should always be able to query without specifying a secondary read preference or setting the slave ok bit. However, it lacks clarity on what this means in terms of implementation and testing.
+- No clear acceptance criteria are provided for how success will be measured.
+
+Final Answer: Yes",ebfb38de7fb63816,qwen2.5:14b,0,2026-06-17T19:27:51.350425,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255956,Use weakrefs for static list of Mongo instances,0,1,"Reasoning: The issue description mentions using weak references for MongoDB instances created by static methods and provides a GitHub commit link. However, it lacks essential details such as:
+- Steps to reproduce the problem or demonstrate the need.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment details (e.g., version of software, operating system).
+- Acceptance criteria.
+
+Final Answer: Yes",eae4fcb86ad3f0ad,qwen2.5:14b,0,2026-06-17T19:27:53.550896,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253509,Make Java driver spec compliant - FY2019Q2,0,1,"Reasoning:
+- The title mentions making the Java driver specification compliant but does not specify what compliance means or which specifications are being referred to.
+- The description states it is a tracking ticket for all Java tickets related to spec compliance but lacks details on specific requirements, acceptance criteria, affected components, or environment details.
+- There are no steps provided to reproduce any issues or scenarios.
+- No expected vs actual behavior is described.
+- No acceptance criteria are mentioned.
+
+Final Answer: Yes",86ec7cf30dd7696b,qwen2.5:14b,0,2026-06-17T19:27:56.041594,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252673,GetMore not closing cursor after exception leading mongos to OOM,1,1,"Reasoning: The issue description is incomplete and lacks essential details. It mentions a code snippet but does not clearly describe the problem, expected behavior, actual behavior, steps to reproduce, or any acceptance criteria. Additionally, it doesn't specify which components are affected or provide environment details.
+
+Final Answer: Yes",c2471f045e5e5b42,qwen2.5:14b,0,2026-06-17T19:27:57.883676,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254365,Remove errant Javadoc for w = -1 in WriteConcern constructors.,0,1,"Reasoning: 
+- The title and description indicate a documentation issue related to Javadoc for the WriteConcern constructors.
+- It mentions that ""w = -1"" is documented but not supported anymore.
+- However, it lacks details such as:
+  - Steps to reproduce or verify the issue (if applicable).
+  - Expected vs actual behavior.
+  - Affected components or modules.
+  - Environment details where this occurs.
+
+Final Answer: Yes",ac8e21a15c94e759,qwen2.5:14b,0,2026-06-17T19:28:00.223477,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253861,Add to Enum<JsonMode>,0,1,"Step-by-Step Reasoning:
+1. The title ""Add to Enum<JsonMode>"" is clear about what needs to be added.
+2. Description provides context: currently there are two values in the enum - 'STRICT' and 'SHELL'.
+3. A new value 'SIMPLE' or 'NOTEXTENDED' is proposed, which returns raw values without using BSON extended JSON datatypes (as opposed to how 'SHELL' does) but also not returning a full JSON document for BSON types like 'STRICT' does.
+4. Examples are given for how the output would differ based on the mode selected.
+
+However:
+- The description lacks acceptance criteria, which is crucial for testing and validation purposes.
+- There's no mention of affected components or environment details that might be necessary for implementation.
+- While examples are provided, there are no explicit steps to reproduce or verify the issue if it were a bug report instead of a feature request.
+
+Final Answer: Yes",4bf4e6a0e2b8a300,qwen2.5:14b,0,2026-06-17T19:28:04.498998,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254940,Consider supporting writetimeout for sockets implementations that support it,0,1,"Reasoning:
+- The title mentions ""writetimeout"" which implies the issue is about setting a timeout for writing operations.
+- The description states that while some implementations like NIO and Netty support write timeouts, Java's standard Socket implementation does not.
+- However, it lacks specific details such as:
+  - What exactly needs to be done (e.g., adding support in the java.net.Socket class).
+  - Expected behavior after implementing this feature.
+  - Acceptance criteria for testing if the issue is resolved.
+  - Affected components or modules that need changes.
+  - Environment details where this would apply.
+
+Final Answer: Yes",5914a90aae69dde3,qwen2.5:14b,0,2026-06-17T19:28:07.632873,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252879,MongoClient.listCollectionNames() returns truncated names,0,1,"Reasoning: The issue description provides some useful information but is missing several key details:
+- It mentions a specific version and environment (version 3.10.0 with Azure CosmosDB) where the problem occurs.
+- It states that an earlier version (3.9.1) works correctly, implying there's a regression or change in behavior.
+- However, it lacks clear steps to reproduce the issue, expected vs actual behavior, acceptance criteria, and affected components.
+
+The description does not provide enough information for developers to understand the full scope of the problem or how to verify its resolution. Therefore, this issue is incomplete due to missing essential details.
+
+Final Answer: Yes",2d18ac858ac30408,qwen2.5:14b,0,2026-06-17T19:28:10.799973,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255508,Connection timeout is ignored in ConnectionStatus,0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions ""Connection timeout is ignored in ConnectionStatus"", which indicates a specific issue related to the connection timeout being overridden or not respected.
+2. **Reproduction Steps**: There are no clear steps provided for reproducing the issue, such as how to set up the environment, what actions to take, and expected outcomes.
+3. **Expected vs Actual Behavior**:
+   - Expected: The code should use a 1-second connection timeout (`options.connectTimeout = 1000`).
+   - Actual: The default 20-second timeout is used instead.
+4. **Acceptance Criteria**: There are no acceptance criteria mentioned to validate the resolution of this issue.
+5. **Affected Components**:
+   - `MongoOptions`
+   - `Mongo`
+6. **Environment Details**: No specific environment details or configurations are provided, such as operating system, Java version, MongoDB version, etc.
+
+Given these points, the description lacks clear reproduction steps and acceptance criteria, which are essential for a complete issue report.
+
+Final Answer: Yes",06278404ee60588d,qwen2.5:14b,0,2026-06-17T19:28:15.535293,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252730,Test that readPreferenceTags are always interpreted as an array,0,1,"Reasoning:
+1. The title mentions ""readPreferenceTags"" and testing their interpretation as an array.
+2. The description references a specific ticket number (DRIVERS-989) but does not provide the actual details or context of that ticket.
+3. Missing information includes:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Acceptance criteria for the test case
+   - Affected components or modules
+   - Environment details where this occurs
+
+Given these points, the description lacks sufficient detail to understand and address the issue effectively.
+
+Final Answer: Yes",c9064ed1cc93f179,qwen2.5:14b,0,2026-06-17T19:28:18.470643,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255584,skip() throw exception with the source code version 2.7.2-141,0,1,"Reasoning: 
+The given description lacks several critical pieces of information:
+1. **Steps to Reproduce**: There are no clear steps provided on how to reproduce the issue.
+2. **Expected vs Actual Behaviour**: The expected behavior and what actually happens when encountering the exception are not described.
+3. **Acceptance Criteria**: No criteria for acceptance or success is mentioned.
+4. **Affected Components**: While it mentions a Java driver, there's no detail about which specific part of the driver is causing issues.
+5. **Environment Details**: The description does not provide information on the environment setup (e.g., operating system, version details of other dependencies).
+
+Final Answer: Yes",d285ed7e61147ded,qwen2.5:14b,0,2026-06-17T19:28:21.641282,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253722,Add more host types to run on in Evergreen,0,1,"Reasoning:
+- The title and description mention adding more host types to Evergreen.
+- It specifies the recommendation from the build team for specific host types like ""rhel62-test"", ""rhel70-small"", etc.
+- However, it lacks details on how these changes will be implemented (technical steps).
+- There is no information about acceptance criteria or expected behavior after implementation.
+- No environment details are provided to understand where and how this feature should work.
+- The description does not mention any reproduction steps for testing the addition of new host types.
+
+Final Answer: Yes",b220031c4c1ef62c,qwen2.5:14b,0,2026-06-17T19:28:24.526867,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255096,remove ensureIndex() methods,0,1,"Reasoning: The description mentions removing specific methods but lacks essential details such as why these methods need to be removed, the impact on existing functionality, acceptance criteria for removal, affected components or modules, and any environment-specific information. Without this context, it's difficult to assess the completeness of the request.
+
+Final Answer: Yes",431394b4936b0320,qwen2.5:14b,0,2026-06-17T19:28:26.428019,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252635,Replace default signatory in Gradle signing plugin with notary service,0,1,"Reasoning: The issue description mentions that the Gradle signing plugin currently uses the Bouncycastle library for signing artifacts and suggests replacing it with a notary service. However, several critical pieces of information are missing:
+1. **Steps to Reproduce**: There are no steps provided on how to reproduce or implement this change.
+2. **Expected vs Actual Behaviour**: The description does not specify what the expected behavior should be after implementing the suggested change and what the current actual behavior is.
+3. **Acceptance Criteria**: No acceptance criteria are mentioned, such as success conditions or test cases that would confirm if the issue has been resolved.
+4. **Affected Components**: While it mentions the Gradle signing plugin, there's no detail on which specific parts of the plugin will be affected by this change.
+5. **Environment Details**: There is no information about the environment in which this change should take place (e.g., version of Gradle, operating system requirements).
+
+Final Answer: Yes",2bc5043c2d9282cf,qwen2.5:14b,0,2026-06-17T19:28:30.695510,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252884,Revert NPE error handling in Reactive Streams driver,0,1,"Reasoning: The description ""JAVARS-209 can now be removed thanks to JAVA-3382"" does not provide any specific information about the issue at hand. It lacks details such as what exactly needs to be reverted, why it is being reverted, steps to reproduce if there are any issues, expected behavior after reverting, affected components or environment details.
+
+Final Answer: Yes",d7a6b190d5b560ac,qwen2.5:14b,0,2026-06-17T19:28:32.936410,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252572,Median and Percentile Accumulators,0,1,"Reasoning:
+- The title mentions ""Median and Percentile Accumulators,"" which indicates a feature request for calculating medians and percentiles.
+- The description starts with a summary but does not fully explain the requirement. It states that the ability to calculate median and percentile should be provided in the $group stage of an aggregation pipeline, but it lacks details on how this functionality will work or what specific changes are needed.
+- There is no mention of expected behavior, acceptance criteria, affected components, environment details, or steps to reproduce (if applicable).
+- The description cuts off mid-sentence under ""Motivation,"" suggesting that there might be more information intended about why this feature is necessary but it's not provided.
+
+Final Answer: Yes",7fe90602d9fc561f,qwen2.5:14b,0,2026-06-17T19:28:36.250857,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254092,DBCollection aggregate methods that take AggregationOptions fail to set slaveOk bit when read preference demands it,0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title and description indicate an issue with the DBCollection aggregate method in certain conditions.
+2. **Expected vs Actual Behaviour**:
+   - Expected: When read preference demands it, the slaveOk bit should be set.
+   - Actual: The slaveOk bit is not being set when using AggregationOptions.
+3. **Steps to Reproduce**: Missing clear steps on how to reproduce this issue in a specific environment or scenario.
+4. **Acceptance Criteria**:
+   - Not explicitly stated what needs to be achieved for the issue to be resolved.
+5. **Affected Components**:
+   - DBCollection aggregate method and AggregationOptions are mentioned, but no other components are specified.
+6. **Environment Details**: 
+   - Only mentions ""When connected to a replica set"" without specifying version details or exact configurations.
+
+Given these points, the issue lacks clear reproduction steps, acceptance criteria, and detailed environment information which are essential for resolving it effectively.
+
+Final Answer: Yes",8405b7334c220472,qwen2.5:14b,0,2026-06-17T19:28:40.811829,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252719,Add tests for allowed cases when authSource is given but username is not,0,1,"Reasoning:
+- The title mentions adding tests for a specific case involving authentication sources.
+- The description references another ticket (https://jira.mongodb.org/browse/SPEC-1270) which presumably contains more details about the requirements or specifications.
+- However, the current issue lacks clear acceptance criteria, expected behavior, and steps to reproduce if applicable. It also does not specify what exactly needs to be tested or how the tests should behave in different scenarios.
+
+Final Answer: Yes",a7ea4854d2c40845,qwen2.5:14b,0,2026-06-17T19:28:43.251093,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254567,Regression applying read preference with tag set,0,1,"Reasoning:
+- The issue title mentions ""Regression applying read preference with tag set,"" which indicates there is a problem related to the configuration of read preferences and tags in MongoDB.
+- The description provides some context about using replica sets with tagging for load balancing reads between secondary nodes. However, it lacks clear steps to reproduce the issue.
+- It mentions following specific instructions from MongoDB documentation but does not provide explicit details on what was done or how the error occurred.
+- There is no mention of expected behavior versus actual behavior, which would be crucial for diagnosing and fixing the problem.
+- The environment details are vague; it's unclear if this is happening in a development, staging, or production environment.
+- No acceptance criteria are provided to understand what success looks like.
+
+Given these points, the issue description lacks essential information such as clear reproduction steps, expected vs. actual behavior, and detailed environment setup.
+
+Final Answer: Yes",5c7379636b32a01e,qwen2.5:14b,0,2026-06-17T19:28:47.277239,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253271,"Remove QueryBatchCursorFunctionalSpecification """"should get more from a secondary"""" test",0,1,"Step-by-Step Reasoning:
+
+1. **Title and Description Analysis**:
+   - The title mentions removing a specific test case related to MongoDB's QueryBatchCursorFunctionalSpecification.
+   - The description provides details about the failure of this test in certain environments but lacks clear steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment setup.
+
+2. **Missing Information**:
+   - Steps to Reproduce: Not clearly defined.
+   - Expected Behavior: Only partially described (test should run against replica sets).
+   - Actual Behavior: Described as failing with a specific error message but no clear explanation of what the failure means in terms of expected vs actual behavior.
+   - Acceptance Criteria: Missing.
+   - Affected Components: Mentioned that it fails on certain MongoDB versions and configurations, but not detailed enough to understand all affected components.
+   - Environment Details: Only mentions localhost:27019 and some specific MongoDB versions (3.2 and 3.4) with auth and ssl enabled.
+
+Given the lack of clear reproduction steps, acceptance criteria, and comprehensive environment details, this issue is missing essential information that would allow for a thorough understanding and resolution of the problem.
+
+Final Answer: Yes",66f50a745037f77d,qwen2.5:14b,0,2026-06-17T19:28:52.703350,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255652,Driver does not support field negation,0,1,"Reasoning:
+- The issue title mentions ""Driver does not support field negation.""
+- The description provides a link to MongoDB documentation about field projection.
+- It states that field negation is supported in the core of MongoDB but not in the Java Driver.
+- An incomplete example code snippet is provided: `BasicDBObject fields = new BasicDBObject(); fields.put(""""somebigfield`
+  
+The issue lacks several critical pieces of information:
+1. **Steps to Reproduce**: There are no clear steps on how to reproduce this issue using a specific scenario or test case.
+2. **Expected vs Actual Behaviour**: While it mentions that field negation is supported in the core but not in the Java Driver, there's no explicit statement about what should happen versus what actually happens when trying to use field negation with the Java driver.
+3. **Acceptance Criteria**: There are no criteria provided for determining if this issue has been resolved or how it will be tested once fixed.
+4. **Environment Details**: No specific environment details (e.g., version of MongoDB, Java Driver) are mentioned.
+
+Final Answer: Yes",06fc5ef353d40edc,qwen2.5:14b,0,2026-06-17T19:28:57.614790,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252711,Support package scanning for Discriminators,0,1,"Reasoning: The issue description mentions a problem with current class registration methods when using discriminators in the system. However, it lacks several critical pieces of information:
+1. **Steps to Reproduce**: There are no clear steps provided on how to reproduce the issue.
+2. **Expected vs Actual Behaviour**: It does not specify what the expected behavior should be or what the actual observed behavior is.
+3. **Acceptance Criteria**: No acceptance criteria are given, which would define when this feature can be considered complete and working as intended.
+4. **Affected Components**: While it mentions PojoCodecProvider, there's no detailed information on other affected components or how they interact with the issue.
+5. **Environment Details**: There is no mention of specific environments where this problem occurs (e.g., development, production).
+
+Given these missing details, the issue description does not provide enough information to fully understand and address the reported problem.
+
+Final Answer: Yes",2efc4db4d5e1a8e6,qwen2.5:14b,0,2026-06-17T19:29:01.834845,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254972,Remove deprecated methods from MapReduceOutput,0,1,"Reasoning: The description lists specific methods to be removed but lacks several critical pieces of information:
+- Steps to reproduce the need for removal (though this might not always apply if it's a clear maintenance task).
+- Expected behavior after removal.
+- Affected components or modules beyond just ""MapReduceOutput"".
+- Acceptance criteria to verify that the deprecated methods are indeed removed and no functionality is broken.
+- Environment details where this applies.
+
+Final Answer: Yes",ca8be4c3a586a6c2,qwen2.5:14b,0,2026-06-17T19:29:04.193304,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255595,Add getters/setters to MongoOptions class,0,1,"Reasoning: The description lacks essential details such as what specific getters and setters are needed, why they are necessary for easier usage with the Spring framework, acceptance criteria, affected components, or any steps to reproduce or test this change. It does not specify which methods should be added or how their addition will improve usability.
+
+Final Answer: Yes",e53cebf9403e4cf9,qwen2.5:14b,0,2026-06-17T19:29:06.146094,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254357,Add .save and .saveMany to MongoCollection,0,1,"Reasoning: 
+- Missing details about what exactly needs to be added (.save and .saveMany methods).
+- No description of the expected behavior or how these methods should work.
+- No mention of acceptance criteria or conditions under which this feature would be considered complete.
+- No indication of affected components or environment details.
+
+Final Answer: Yes",af517e9430f87cd0,qwen2.5:14b,0,2026-06-17T19:29:08.170011,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253658,Name driver modules using Automatic-Module-Name,0,1,"Reasoning: The description provided is vague and lacks essential details. It does not specify what needs to be done (""name driver modules using Automatic-Module-Name""), the expected outcome, steps to reproduce if applicable, affected components, or any acceptance criteria. There's no clear understanding of the problem statement or how it should be resolved.
+
+Final Answer: Yes",e8d966ce5cb1ec12,qwen2.5:14b,0,2026-06-17T19:29:10.188593,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254032,GridFSDownloadStream - exception when destination buffer size != file chunk size,0,1,"Reasoning: The description mentions an issue related to downloading files via GridFSDownloadStream but lacks several critical details:
+1. **Steps to Reproduce**: There are no clear steps provided on how to reproduce the issue.
+2. **Expected vs Actual Behaviour**: It does not specify what the expected behavior should be and what the actual observed behavior is when encountering this exception.
+3. **Acceptance Criteria**: No acceptance criteria or conditions under which the problem would be considered resolved are mentioned.
+4. **Affected Components**: While it mentions GridFSDownloadStream, there's no detailed information about other components that might be involved (e.g., file storage system, database).
+5. **Environment Details**: There is no mention of the environment in which this issue occurs (e.g., specific versions of software, operating systems).
+
+Given these missing details, the issue description does not provide enough information to fully understand or address the problem.
+
+Final Answer: Yes",c30f87efd7877684,qwen2.5:14b,0,2026-06-17T19:29:14.281994,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-256021,JSON.parse() and serialize() do not preserve the _id field across serializations as expected,0,1,"Reasoning: 
+- Missing steps to reproduce.
+- No clear description of expected vs actual behaviour beyond a vague statement that ""the current behavior might be intended.""
+- Lack of acceptance criteria or environment details.
+
+Final Answer: Yes",a648e7fe7330a45c,qwen2.5:14b,0,2026-06-17T19:29:15.845486,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254447,Improve runCommand API documentation,0,1,"Reasoning:
+- The title mentions ""Improve runCommand API documentation,"" which indicates the need for better documentation.
+- However, the description is unclear and lacks specific details about what needs to be improved or clarified in the documentation. It does not specify which methods are being referred to by the placeholder `}` nor provide clear examples of how the read preference affects command execution.
+- The table provided is incomplete and confusing; it uses placeholders like `}` without context, making it hard to understand the actual intent behind the issue.
+
+Final Answer: Yes",31bd8d47b7f0b81c,qwen2.5:14b,0,2026-06-17T19:29:18.502977,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255432,Binary class should implements equals and hashCode,0,1,"Reasoning: The description mentions that comparing Binary objects is difficult but does not specify the exact issues or steps to reproduce. It lacks details on what should be implemented (specific methods and their expected behavior), acceptance criteria, affected components, or environment details.
+
+Final Answer: Yes",61bb2df850539683,qwen2.5:14b,0,2026-06-17T19:29:20.187188,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253042,Java driver 3.11 page still says 3.10,0,1,"Reasoning: The issue description mentions that the Java driver 3.11 page incorrectly displays version 3.10 information but lacks essential details such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, and environment details. Additionally, there are sections like ""Scope of changes,"" ""Impact to Other Docs,"" ""MVP (Work and Date),"" and ""Resources"" that appear to be placeholders without any content filled in.
+
+Final Answer: Yes",e1037438b9b20253,qwen2.5:14b,0,2026-06-17T19:29:22.677689,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253390,Change Stream startAtOperationTime MongoCommandException,0,1,"Reasoning:
+- The issue title and description mention a specific exception (`MongoCommandException`) related to `ChangeStreamIterable.startAtOperationTime()`.
+- It states that the exception occurs every time this method is used.
+- The error message indicates an issue with using resume options incorrectly: ""Only one type of resume option is allowed"".
+- However, it lacks details such as:
+  - Steps to reproduce the issue (how exactly does one trigger this exception?).
+  - Expected vs actual behavior (what should happen when `startAtOperationTime()` is called and what actually happens instead?).
+  - Affected components or environment details (which version of MongoDB/MongoDB driver, operating system, etc.).
+- Without these details, it's difficult to diagnose the issue accurately.
+
+Final Answer: Yes",dcf5931a74d39472,qwen2.5:14b,0,2026-06-17T19:29:26.313717,project_05,title_desc,incompleteness,few_shot_cot

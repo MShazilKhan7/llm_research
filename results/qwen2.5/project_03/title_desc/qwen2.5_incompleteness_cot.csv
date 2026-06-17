@@ -1,0 +1,1375 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-207056,Build badges in several github repos have stopped working,0,1,"Step 1: Key Information Provided
+- Build badges have stopped working after migrating to ci.evernym.com.
+- Readme.md files need updating with the new CI URL.
+- Currently, build badges are implemented only for master branches; stable branch badges also need implementation.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue (how can a developer verify that the build badges have stopped working?).
+- Expected vs actual behavior (what should be happening versus what is actually occurring with the build badges).
+- Acceptance criteria (specific conditions or requirements for resolving this issue).
+- Affected components and environment details (which specific repositories are affected, which CI/CD tools are being used, etc.).
+
+Step 3: Developer Actionability
+Without clear reproduction steps, expected behavior, acceptance criteria, and detailed environmental information, a developer would likely need to ask additional questions before proceeding with the resolution of this issue.
+
+Final Answer: Yes",e115ca0c3c92fc1f,qwen2.5:14b,0,2026-06-17T17:14:00.885017,project_03,title_desc,incompleteness,cot
+ISSUE-206571,Indy-sdk integration,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue mentions that there are currently two versions of 'client' code to support: python (indy-client) and indy-sdk.
+- There is a need to use only indy-sdk, possibly integrating it into the current CLI.
+
+Step 2: Determine what essential information is missing from the issue.
+- Steps to reproduce the problem or scenario are not provided.
+- Expected behavior after integration of indy-sdk into the current CLI is not specified.
+- Acceptance criteria for completing this task are absent.
+- No details about affected components or environment specifics (e.g., operating system, version numbers) are given.
+
+Step 3: Evaluate if a developer can act on this issue without needing additional information.
+Given the lack of specific steps to reproduce, expected behavior, acceptance criteria, and environmental details, it would be challenging for a developer to start working on this task effectively. They would likely need more detailed instructions or requirements before proceeding.
+
+Final Answer: Yes",540d5e5f97a9bf6e,qwen2.5:14b,0,2026-06-17T17:14:05.361231,project_03,title_desc,incompleteness,cot
+ISSUE-205754,Assist EV QA,0,1,"Step 1: Identify the key information provided in the issue.
+- The Evernym Indy Node team will assist other Evernym teams with QA tasks.
+- Each engineer will spend one day running QA scripts provided by the Evernym QA team.
+- Instructions on what to test and how to report results will be provided.
+- Part of the day should be spent doing structured QA, and part should be spent doing exploratory testing.
+- Feedback is expected on how to improve testing instructions and activities.
+
+Step 2: Identify essential information that is missing from the issue.
+- Steps to reproduce any specific issues or scenarios are not mentioned.
+- Expected behavior for the QA tasks is not clearly defined.
+- Acceptance criteria beyond the general description provided are lacking.
+- Environment details (e.g., operating system, version of software) are not specified.
+- Specific reproduction steps and actual vs expected behaviors are missing.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given that there is no clear guidance on how to reproduce issues or what the expected outcomes should be, it would be difficult for a developer to proceed with testing without additional clarification. The absence of specific acceptance criteria and environment details also hinders actionable progress.
+
+Final Answer: Yes",29d705715dc0efc5,qwen2.5:14b,0,2026-06-17T17:14:10.702835,project_03,title_desc,incompleteness,cot
+ISSUE-206786,I should be able to load a .sovrin file from a URL directly into the CLI,0,1,"Step 1: Identify the key information provided in the issue.
+- The user wants to load a .sovrin file directly from a URL into the CLI.
+- Currently, users need to download the .sovrin files before opening them with the CLI.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the desired functionality or the current problem (if any).
+- Expected behavior when trying to load a .sovrin file from a URL directly into the CLI.
+- Acceptance criteria for this feature request.
+- Affected components and environment details such as operating system, version of the software, etc.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given that there are no specific steps to reproduce or test cases provided, it would be challenging for a developer to implement this feature effectively. The lack of expected behavior and acceptance criteria means developers cannot verify whether their implementation meets the user's requirements.
+
+Final Answer: Yes",4b284c865341fe6f,qwen2.5:14b,0,2026-06-17T17:14:15.087134,project_03,title_desc,incompleteness,cot
+ISSUE-206184,Configurations should contain certain version of pip,0,1,"Step 1: Key Information Provided
+- The Node service cannot start after the release of pip version 10.
+- There is a traceback indicating an AttributeError related to 'pip' module missing the attribute 'utils'.
+- Logs show that the system tried to restart the service but failed repeatedly.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue are not provided. It's unclear how one can replicate this problem in their environment.
+- Expected behavior is not described; it’s implied, but not explicitly stated what should happen when starting the Node service.
+- Acceptance criteria for resolving the issue are missing.
+- Environment details such as operating system version, Python version, and other relevant software versions are not provided.
+
+Step 3: Developer Actionability
+Given the lack of detailed steps to reproduce, expected behavior, acceptance criteria, and environment specifics, a developer would likely need additional information before they can effectively address this issue. The current description does not provide enough context for a developer to understand the full scope of the problem or how to verify its resolution.
+
+Final Answer: Yes",9725cbc5a487fc19,qwen2.5:14b,0,2026-06-17T17:14:20.364015,project_03,title_desc,incompleteness,cot
+ISSUE-205916,read_ledger tool is not able to read the sovrin plugin ledger,0,1,"Step 1: Identify the key information provided in the issue.
+- The read_ledger tool cannot find the sovrin payment plugin ledgers.
+- A proposed fix is to modify the code by adding specific conditions and configuration settings.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the problem are not given. Without these, it's unclear how to verify if the issue exists or if a solution works.
+- Expected behavior is not described. It’s important to know what should happen when using the read_ledger tool with sovtoken ledgers.
+- Environment details (such as operating system, version of software components involved) are missing.
+- Acceptance criteria for the fix are absent.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given that reproduction steps and expected behavior are not provided, it would be challenging for a developer to confirm whether the problem exists or has been resolved. Additionally, the lack of environment details means developers might need to make assumptions about compatibility and configuration.
+
+Final Answer: Yes",7b049489b01ac735,qwen2.5:14b,0,2026-06-17T17:14:25.193095,project_03,title_desc,incompleteness,cot
+ISSUE-206000,AttributeError: 'NoneType' object has no attribute 'request' during load,0,0,"Step 1: Identify the key information provided in the issue.
+- The issue title indicates an AttributeError related to 'NoneType' object during load testing.
+- Steps to reproduce are given, including preparing a new pool with 25 nodes and running a specific command for a load test.
+- Actual results indicate that the pool stopped writing after only 11k transactions (less than 90 minutes) and could not finish catchup.
+
+Step 2: Identify missing essential information.
+- Expected behavior is not clearly stated. It's implied that the expected result would be successful completion of the transaction load test, but this isn't explicitly mentioned.
+- Acceptance criteria are not provided; it’s unclear what success looks like in terms of performance metrics or other specific requirements.
+- Environment details such as operating system version, Python version, and any relevant software dependencies are missing. This information is crucial for reproducing the issue accurately.
+- The logs location is given but no direct link or detailed log excerpts are provided to understand the error context better.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of clear expected behavior, acceptance criteria, and environment details, it would be challenging for a developer to fully understand the scope of",a988d52109c5b687,qwen2.5:14b,0,2026-06-17T17:14:30.765234,project_03,title_desc,incompleteness,cot
+ISSUE-207179,Make sure Nodes upgrade eagerly,0,1,"Step 1: Identify the key information provided in the issue.
+- The title suggests that nodes should upgrade eagerly when processing an upgrade transaction.
+- The description mentions that if a node is catching up and processes an upgrade transaction, it should schedule the upgrade just like normal operations. If the date/time of the upgrade is in the past, it should be upgraded immediately.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the scenario where nodes do not upgrade eagerly.
+- Expected behavior when a node processes an upgrade transaction and the date/time is in the past or future.
+- Acceptance criteria for determining if the issue has been resolved.
+- Affected components (e.g., specific software modules, database schema).
+- Environment details such as operating system, version of the application, etc.
+
+Step 3: Determine whether a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce, expected behavior, acceptance criteria, and environment details, it is challenging for a developer to understand fully what needs to be implemented or fixed. The description lacks clarity regarding how to verify if the upgrade process works as intended.
+
+Final Answer: Yes",43bd1ae050941e58,qwen2.5:14b,0,2026-06-17T17:14:35.891113,project_03,title_desc,incompleteness,cot
+ISSUE-207175,Testing: do a lot of concurrent writes and reads to same values,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue describes testing a scenario involving concurrent writes and reads to the same values using different clients.
+- It mentions finding bugs related to INDY-354 and INDY-355.
+
+Step 2: Determine what essential information is missing from the issue.
+- Steps to reproduce the issue are not provided. There's no clear description of how to set up the test environment or execute the tests.
+- Expected behavior is not specified. It’s unclear what the system should do under these conditions.
+- Acceptance criteria for the testing scenario are absent, making it difficult to know when a test has been successfully completed.
+- Environment details such as software versions, hardware specifications, and network configurations are missing.
+
+Step 3: Evaluate if a developer can act on this issue without needing additional information.
+Given the lack of detailed steps, expected behavior, acceptance criteria, and environment specifics, a developer would likely need to ask for more information before proceeding with development or testing activities.
+
+Final Answer: Yes",4bca2ea7178b672e,qwen2.5:14b,0,2026-06-17T17:14:40.590890,project_03,title_desc,incompleteness,cot
+ISSUE-205301,Responses to client validator info requests very slow on a StagingNet node,0,1,"Step 1: Key Information Provided
+- The issue describes that a specific node on the Sovrin StagingNet responds slowly to validator-info commands.
+- It mentions that other nodes respond in less than 2 seconds, while this particular node takes about 34 seconds.
+- Some diagnostics are provided (top command output and lsof -p PID | wc -l).
+- The steward reports normal behavior when running from the local command line.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue are not clearly defined. It's unclear if this is a consistent problem or under what conditions it occurs.
+- Expected vs actual behavior is somewhat described but lacks clarity on other client requests.
+- Acceptance criteria for resolving the issue are missing.
+- Environment details beyond the diagnostics provided (e.g., OS version, network configuration) are not specified.
+
+Step 3: Developer Actionability
+- A developer would likely need more specific steps to reproduce and a clearer understanding of what constitutes normal behavior across different client requests before they can effectively diagnose or resolve this issue.
+
+Final Answer: Yes",d800f22ef889a0d1,qwen2.5:14b,0,2026-06-17T17:14:46.195741,project_03,title_desc,incompleteness,cot
+ISSUE-206412,Create Entity Relationship Diagram of current ledger objects including primary and secondary keys used to link each object together.,0,1,"Step 1: Identify the key information provided in the issue.
+- The task involves creating an Entity Relationship Diagram (ERD) of current ledger objects.
+- Specific data objects are mentioned, such as schema, claim definition, revocation registry, nym+attrs/did document, claim request, claim, proof request, and proofs.
+
+Step 2: Identify what essential information is missing from the issue description.
+- Steps to reproduce or create the ERD are not provided. It's unclear how exactly one should go about creating this diagram.
+- Expected behavior or outcome of the ERD creation process isn't specified. What should the final ERD look like?
+- No acceptance criteria are given, making it difficult for a developer to know when they have completed the task satisfactorily.
+- Environment details such as which ledger system is being used and any specific tools required for creating the diagram are not mentioned.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed instructions, expected outcomes, acceptance criteria, and environment specifics, it would be challenging for a developer to start working on this task confidently. They would likely need additional details before proceeding.
+
+Final Answer: Yes",a6010f6ca8f6fca6,qwen2.5:14b,0,2026-06-17T17:14:51.707271,project_03,title_desc,incompleteness,cot
+ISSUE-206580,Explore: Can doing a ping in the Getting Started Tutorial delete the active wallet,0,1,"Step 1: Key Information Provided
+- A user encountered an unexpected behavior while following the Getting Started Tutorial.
+- The command 'ping Acme Corp' was executed outside of the tutorial instructions.
+- The active wallet was deleted after executing this command.
+
+Step 2: Essential Missing Information
+- Steps to reproduce the issue (specific sequence of actions leading to the deletion of the active wallet).
+- Expected behavior when running 'ping Acme Corp'.
+- Actual observed behavior beyond just stating that the wallet was deleted.
+- Acceptance criteria for resolving the issue.
+- Affected components and their versions.
+- Environment details such as operating system, software version, etc.
+
+Step 3: Developer Actionability
+Given the lack of detailed reproduction steps, expected vs actual behavior, acceptance criteria, affected components, and environment details, a developer would need to ask for more information before they can effectively reproduce and address this issue.
+
+Final Answer: Yes",18f1e4d8c6fd61df,qwen2.5:14b,0,2026-06-17T17:14:55.826632,project_03,title_desc,incompleteness,cot
+ISSUE-206497,Unclear messages appear during reading transactions,0,1,"Step 1: Key Information Provided
+- The issue involves unclear messages appearing during the reading of transactions.
+- Steps to reproduce are provided, including setting up nodes and running client commands.
+- Actual results show strange output from CLI when performing GET_NYM operations after stopping services on n-1 nodes one-by-one.
+
+Step 2: Missing Essential Information
+- Expected behavior is not clearly defined. The issue mentions that messages should be either not shown or informative for the user, but it does not specify what exactly constitutes an ""informative"" message.
+- There's no acceptance criteria provided to determine when this issue would be considered resolved.
+- Environment details are somewhat lacking; while version information and steps to reproduce are given, there is no mention of operating system, network configuration, or other potential environmental factors that could affect the outcome.
+
+Step 3: Developer Actionability
+- A developer might struggle with understanding what constitutes a successful resolution without clear acceptance criteria and expected behavior.
+- The issue does not provide enough context for a developer to reproduce the problem consistently across different environments.
+
+Final Answer: Yes",3dd34dc274d9e3b3,qwen2.5:14b,0,2026-06-17T17:15:01.802755,project_03,title_desc,incompleteness,cot
+ISSUE-205266,1.10.0 Release,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue describes goals and acceptance criteria for releasing version 1.10.0 of some software.
+- It outlines tasks such as testing code, reviewing upstream releases, producing an official build, tagging it in Git, preparing documentation, creating release notes, marking the release on GitHub, updating JIRA, and informing stakeholders.
+
+Step 2: Identify what essential information is missing.
+- The issue lacks specific steps to reproduce any issues or problems related to this release process.
+- There are no details about expected vs actual behavior for acceptance criteria.
+- No environment details (e.g., operating system, version of software dependencies) are provided.
+- No clear description of the problem being solved by this release is given.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+- Given that there's no specific problem statement or steps to reproduce an issue, it would be challenging for a developer to understand what exactly needs fixing or improving based solely on the provided description. The acceptance criteria are somewhat vague and lack concrete examples of expected outcomes.
+
+Final Answer: Yes",3b36c497ae60b0aa,qwen2.5:14b,0,2026-06-17T17:15:07.255276,project_03,title_desc,incompleteness,cot
+ISSUE-206591,Incubation: Remove all non-Indy branding from indy-anoncreds repo,0,0,"Step 1: Key Information Provided
+- The goal is to remove all non-Indy branding and names from the indy-anoncreds repository.
+- This includes package names, code primitive names, paths, and documentation.
+- A full-text search for ""Sovrin"" and ""Evernym"" should return nothing after completion.
+
+Step 2: Essential Information Missing
+- Steps to reproduce or verify the issue are not provided. There is no clear guidance on how a developer can check if the branding has been completely removed.
+- Expected behavior after the change is vaguely described (""full-text search for Sovrin and Evernym will return nothing""). This does not provide enough detail about what specific files, directories, or strings should be changed.
+- No acceptance criteria are provided to define when the task is considered complete.
+- Environment details such as which version of the repository this applies to, or any dependencies that need to be addressed, are missing.
+
+Step 3: Developer Actionability
+Given the lack of detailed steps and clear acceptance criteria, a developer would likely need additional information before starting work on this issue. They might ask for specific examples of what needs to change, how to verify changes across different parts of the codebase, or which exact strings should be replaced.
+
+Final",d04532903be46cd7,qwen2.5:14b,0,2026-06-17T17:15:12.657372,project_03,title_desc,incompleteness,cot
+ISSUE-207055,Make the tests working using pure pytest,0,1,"Step 1: Identify the key information provided in the issue.
+- There is a runner.py script used across four repositories.
+- The script is utilized both in CI and local testing environments.
+- Two options are presented, each with its own disadvantages:
+  - Option 1: Store copies of the script in each repository.
+  - Option 2: Store the script in a common repository for developers to obtain it.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the problem or desired outcome are not provided.
+- Expected behavior after implementing the solution using pytest commands is unclear.
+- Acceptance criteria for the proposed changes are absent.
+- Environment details (e.g., operating system, Python version) are not specified.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given that there's no clear direction on how to proceed with making tests work using pytest commands and no specific acceptance criteria or environment details provided, it would be challenging for a developer to start working on the issue effectively. The lack of concrete steps and expected outcomes means additional clarification is necessary.
+
+Final Answer: Yes",62551cf633355879,qwen2.5:14b,0,2026-06-17T17:15:17.705416,project_03,title_desc,incompleteness,cot
+ISSUE-206198,The node blacklisted the remaining nodes during network problems,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue describes a scenario where nodes are blacklisted during network problems.
+- Steps to reproduce involve creating a pool with 15 nodes, applying a suppressor script on specific nodes, and starting a load test.
+- Actual results indicate that some nodes have fewer transactions than others after the test.
+
+Step 2: Identify missing essential information.
+- The issue lacks clear expected behavior. What should happen under these conditions?
+- There is no acceptance criteria provided to determine if the issue has been resolved.
+- Environment details such as software versions, network configurations, and hardware specifications are not mentioned.
+- While steps to reproduce are somewhat detailed, they could be clearer or more specific (e.g., exact commands used for applying suppressor.sh).
+
+Step 3: Determine if a developer can act on this issue without additional information.
+Given the missing details about expected behavior, acceptance criteria, and environment specifics, it would be challenging for a developer to fully understand the scope of the problem and how to verify its resolution.
+
+Final Answer: Yes",b7ae0af0b67e7c5d,qwen2.5:14b,0,2026-06-17T17:15:22.484811,project_03,title_desc,incompleteness,cot
+ISSUE-205670,Tests using the sdk fail on the master branch,0,-1,"Step 1: Key Information Provided
+- The issue describes failing tests on the master branch of an SDK.
+- Tests that require indy-sdk fail at `indy_open_pool_ledger`.
+- There is a difference in genesis file formats between passing and failing tests.
+- A specific test script (`plenum/test/sdk/test_sdk_bindings.py`) can be used to reproduce the issue.
+- The error message `_load_cdll: Can't load libindy: .... libindy.so: undefined symbol: crypto_pwhash` occurs when running the mentioned test file.
+
+Step 2: Missing Essential Information
+- While there is a mention of reproduction steps, it's not clear if these are comprehensive enough for another developer to reproduce the issue without additional context.
+- Expected vs actual behavior is somewhat implied but not explicitly stated (tests fail on master branch with new genesis format).
+- Acceptance criteria are missing; what would constitute a resolution?
+- Environment details such as OS version, Python version, and other dependencies are not provided.
+- The user asks if they need a newer version of `libsodium`, but this is more of an inquiry rather than part of the issue description.
+
+Step 3: Developer Actionability
+Given the current information, while it's possible to attempt reproducing the",6846bf48abeab797,qwen2.5:14b,0,2026-06-17T17:15:28.193288,project_03,title_desc,incompleteness,cot
+ISSUE-205185,Write a script to upgrade audit ledger for the new state recovered from ledger,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue describes a problem with incorrect merkle hash calculations in the audit history of live Indy networks due to bugs (INDY-2283).
+- This issue prevents new nodes from coming into consensus in these pools.
+- A migration is needed to correct the history.
+
+Step 2: Identify what essential information is missing.
+- Steps to reproduce the problem are not provided.
+- Expected behavior after applying the script is not specified.
+- Acceptance criteria for the solution are not outlined.
+- Affected components and their versions are not mentioned.
+- Environment details (e.g., operating system, Indy version) are lacking.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the missing essential information such as reproduction steps, expected behavior, acceptance criteria, affected components, and environment details, it would be challenging for a developer to start working on this issue effectively. The developer would likely need additional context to understand how to implement the required script correctly.
+
+Final Answer: Yes",c6a5aee5971e01f0,qwen2.5:14b,0,2026-06-17T17:15:33.034654,project_03,title_desc,incompleteness,cot
+ISSUE-205803,Find out maximal pool performance numbers for mixed mode (read and write),0,1,"Step 1: Identify the key information provided in the issue.
+- The goal is to find out maximal pool performance numbers for mixed mode operations (read and write).
+- Reference to INDY-1343, which likely provides context or a related issue.
+- Mention of FEEs (presumably transaction fees) being supported in the load script.
+- A run strategy that involves gradually increasing the load while monitoring metrics.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the scenario are not provided. How should one set up and execute this test?
+- Expected behavior or performance benchmarks are not specified. What would be considered acceptable performance numbers?
+- Acceptance criteria for when the maximal pool performance has been reached are unclear.
+- Environment details such as hardware specifications, software versions, network conditions, etc., are missing.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of specific steps to reproduce, expected behavior, acceptance criteria, and environment details, it would be challenging for a developer to start working on this issue effectively. Additional clarification is necessary before proceeding with development or testing efforts.
+
+Final Answer: Yes",7b672f0b8b1e4aff,qwen2.5:14b,0,2026-06-17T17:15:38.207073,project_03,title_desc,incompleteness,cot
+ISSUE-206213,Read-ledger without storage copy in case of RocksDB (RocksDB read-only mode support),0,1,"Step 1: Identify the key information provided in the issue.
+- The issue discusses the support of read-only mode in RocksDB.
+- It mentions that several processes can open the same storage in read-only mode.
+- Currently, the code does not support opening a RocksDB storage in read-only mode.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the problem or how to enable read-only mode in the current implementation are not provided.
+- Expected behavior when attempting to open a RocksDB storage in read-only mode is not specified.
+- Acceptance criteria for implementing this feature are not outlined.
+- Environment details such as operating system, version of RocksDB, and any other relevant software dependencies are missing.
+
+Step 3: Evaluate if the developer can act on this issue without additional information.
+- Given that there are no clear steps to reproduce or expected behavior defined, a developer would likely need more specific guidance before proceeding with implementation. Without these details, it's difficult for a developer to understand what needs to be done and how success will be measured.
+
+Final Answer: Yes",484d46e90271af82,qwen2.5:14b,0,2026-06-17T17:15:43.024696,project_03,title_desc,incompleteness,cot
+ISSUE-205553,Node that does not upgrade spams the config ledger,0,0,"Step 1: Key Information Provided
+- A trustee posted an upgrade transaction for Sovrin TestNet.
+- Most nodes upgraded properly except one named sovrin.sicpa.com.
+- The problematic node continually wrote ""in-progress"" transactions to the config ledger at a rate of about 1 every 3 seconds until manually restarted by another transaction.
+- Logs from the node suggest that the indy-node-control service might not have been running.
+- There were no entries in journalctl from indy-node-control.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue are missing. It's unclear how to recreate this scenario with other nodes or under what specific conditions it occurs.
+- Expected behavior is not clearly defined. What should happen when a node fails to upgrade?
+- Acceptance criteria for resolving the issue are absent. How will one know if the problem has been fixed?
+- Environment details such as OS version, indy-node and indy-node-control versions, network configuration, etc., are not provided.
+- Specific logs or error messages that could help diagnose the root cause of the failure to upgrade are only mentioned but not attached.
+
+Step 3: Developer Actionability
+Given the missing information, a developer would likely need additional details before they can effectively debug",ee57ab38b563ea45,qwen2.5:14b,0,2026-06-17T17:15:48.456532,project_03,title_desc,incompleteness,cot
+ISSUE-206193,[QA] Script for filling the ledger doesn't work,0,0,"Step 1: Analyzing the provided information:
+- The issue title indicates that a script for filling the ledger doesn't work.
+- Steps to reproduce are given but they seem incomplete or unclear as they do not specify how to set up the pool, what exactly is meant by ""Make sure that it works,"" and there's no mention of any specific errors or issues encountered after running the scripts.
+- Actual results show debug logs indicating some operations were performed (like registering VCS backends, starting ledger, recovering tree), but do not indicate a failure point or error message beyond an assertion error at the end.
+- Expected results are vague: ""Generated transactions should be written.""
+
+Step 2: Identifying missing essential information:
+- The steps to reproduce lack clarity and completeness. For example, it's unclear what is meant by ""Make sure that it works.""
+- There is no clear description of expected behavior beyond a general statement about transaction generation.
+- No acceptance criteria are provided.
+- Environment details such as the version of Python or specific libraries used are not mentioned.
+- The actual results do not provide enough context to understand why the script failed, and there's no indication of what was supposed to happen after running `add_json_txns_to_ledger.py`.
+
+Step 3:",5b77c76b71a2280e,qwen2.5:14b,0,2026-06-17T17:15:55.006610,project_03,title_desc,incompleteness,cot
+ISSUE-207334,Send NYM command is not executed on Shakedown Pool 1,0,1,"Step 1: Identify the key information provided in the issue.
+- Build Info: 0.3.103
+- Steps to Reproduce:
+  1. Connect test environment.
+  2. Execute ""send NYM"" with some destination parameter.
+- Actual Results: There is no error/success message. NYM is not added.
+- Expected Results: There should be an error/success message. NYM should be added.
+
+Step 2: Identify what essential information is missing.
+- The issue description lacks specific details about the environment (e.g., operating system, network configuration).
+- It does not specify which destination parameter was used in step 2 of reproduction steps.
+- There are no acceptance criteria provided to validate if a fix meets requirements.
+- Expected behavior should be more detailed. For example, what kind of error/success message is expected?
+
+Step 3: Determine whether the developer can act on this issue without asking for more information.
+Given the missing details about the environment and specific parameters used in reproduction steps, it would be challenging for a developer to reproduce the issue accurately or understand all aspects of the problem.
+
+Final Answer: Yes",370162278a87894c,qwen2.5:14b,0,2026-06-17T17:16:00.429610,project_03,title_desc,incompleteness,cot
+ISSUE-206998,roll back default where zmq high water mark = 0,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue is related to INDY-366 where the default FIFO queue in ZMQ was changed to be unlimited.
+- There are suggestions to set a finite high water mark, detect nearing the high water mark and report it gracefully, implement logic to discard old messages rather than new ones when the limit is reached, and exit the daemon process gracefully if the high water mark is exceeded.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the problem are not provided.
+- Expected vs actual behavior is not clearly defined.
+- Acceptance criteria for each of the suggested changes are not specified.
+- Affected components and environment details (e.g., operating system, version numbers) are not mentioned.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given that there are no specific steps to reproduce the problem or clear acceptance criteria, it would be challenging for a developer to start working on this issue effectively. The lack of environment details also complicates understanding and reproducing the scenario.
+
+Final Answer: Yes",0014f81ce09cdad0,qwen2.5:14b,0,2026-06-17T17:16:05.434296,project_03,title_desc,incompleteness,cot
+ISSUE-206222,Errors with configs during installation,0,0,"Step 1: Identify the key information provided in the issue.
+- Issue Title: Errors with configs during installation
+- Issue Description: indy-node version 1.3.412
+- Steps to Reproduce: Install indy-node package.
+- Actual Result: Two errors appear at the end of installation:
+  - /var/lib/dpkg/info/indy-node.postinst: line 129: /etc/supervisor/indy-node.conf: No such file or directory
+  - grep: /etc/indy/node_control.conf: No such file or directory
+- Expected Results: Errors should not appear.
+
+Step 2: Identify what essential information is missing.
+- The issue description lacks detailed steps to reproduce the problem. While it mentions installing the package, there are no specific commands or configurations mentioned that could help in reproducing the error.
+- There's no mention of expected behavior beyond ""Errors should not appear,"" which doesn't provide enough detail for a developer to understand what is supposed to happen during installation.
+- The issue does not specify the environment details such as operating system, version, and any other relevant software configurations that might affect the outcome.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.",79c902f433dfb6b0,qwen2.5:14b,0,2026-06-17T17:16:10.860407,project_03,title_desc,incompleteness,cot
+ISSUE-207211,Node crashes if out of disk space,0,1,"Step 1: Identify the key information provided in the issue.
+- The node crashes when out of disk space.
+- A leveldb exception is thrown with the message ""no space left on device"".
+- There's a suggestion to handle this case more gracefully.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the issue are not provided. How can someone else recreate this situation?
+- Expected behavior is not specified. What should happen when there's no disk space available instead of crashing?
+- Acceptance criteria for resolving the issue are absent. How will we know if the problem is fixed?
+- Environment details (e.g., operating system, version numbers) are missing.
+- Affected components or parts of the software that need to be modified are not detailed.
+
+Step 3: Evaluate whether a developer can act on this issue without additional information.
+Given the lack of specific steps to reproduce and clear acceptance criteria, it would be challenging for a developer to start working on this issue effectively. They would likely need more details about how to replicate the problem and what constitutes an acceptable solution.
+
+Final Answer: Yes",07ccaab251b06e21,qwen2.5:14b,0,2026-06-17T17:16:15.690807,project_03,title_desc,incompleteness,cot
+ISSUE-205565,Unable to choose volume type using pool automation scripts,0,1,"Step 1: Identify the key information provided in the issue.
+- The user cannot choose volume type using pool automation scripts.
+- When instances are created manually, volumes have gp2 (SSD) type.
+- Expected behavior is to configure volume type based on its size.
+
+Step 2: Determine what essential information is missing from the issue report.
+- Steps to reproduce the problem are not provided.
+- The environment details such as OS version, script versions, and any specific configurations are not mentioned.
+- Acceptance criteria or clear expected results beyond a vague statement about configuring volume type based on size are lacking.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given the missing steps to reproduce, environment details, and acceptance criteria, it is challenging for a developer to understand the full scope of the problem and how to verify its resolution. Therefore, more information would be necessary before proceeding with development or debugging efforts.
+
+Final Answer: Yes",9b9b8d22224087c4,qwen2.5:14b,0,2026-06-17T17:16:20.018095,project_03,title_desc,incompleteness,cot
+ISSUE-205746,1.6.74 Release,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue title mentions ""1.6.74 Release"".
+- The description outlines tasks to be performed for the release, including testing code, tagging the release, drafting and reviewing release notes, and ensuring a new Indy-Plenum release is included.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the problem or task are not provided. There's no clear description of how to perform these tasks beyond the high-level overview.
+- Expected behavior is not clearly defined. It’s unclear what specific outcomes should be achieved for each acceptance criterion.
+- Environment details such as operating system, version numbers, and other relevant technical specifications are missing.
+- No information about actual observed behavior or any issues encountered during testing.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce tasks, specific acceptance criteria, expected vs. actual behaviors, and environment details, it would be challenging for a developer to proceed with confidence that all necessary aspects are covered or understood correctly.
+
+Final Answer: Yes",1884a82347520392,qwen2.5:14b,0,2026-06-17T17:16:24.967484,project_03,title_desc,incompleteness,cot
+ISSUE-207177,"Ledgers """"stall"""" gracefully",0,-1,"Step 1: Identify the key information provided in the issue.
+- The issue describes how ledgers will handle exceptions during transaction processing by entering a ""STALLED"" state.
+- A detailed error message is logged when an exception occurs.
+- On startup, upgrade, or periodically, the node attempts to restart stalled ledgers but does not proceed past the current state and does not participate in 3PC for that ledger.
+
+Step 2: Identify what essential information is missing from the issue description.
+- Steps to reproduce the problem are not provided. Without these steps, it's difficult to verify if the described behavior occurs as expected or if there are any edge cases.
+- Expected vs actual behavior is not clearly defined. The description outlines how ledgers should handle exceptions but does not specify what the system currently does in comparison.
+- Acceptance criteria for this feature are missing. It’s unclear what needs to be tested and validated to consider this issue resolved.
+- Environment details such as operating systems, versions of software components involved, or specific hardware requirements are not provided.
+
+Step 3: Determine if a developer can act on the issue without asking for more information.
+Given the lack of reproduction steps, clear expected vs actual behavior, acceptance criteria, and environment details, it would be challenging for",353b2aeeab01e82a,qwen2.5:14b,0,2026-06-17T17:16:30.460069,project_03,title_desc,incompleteness,cot
+ISSUE-207246,Sovrin-Client: Show command cannot show files with space in the name,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue title indicates that there's an issue with the ""show"" command when trying to display files with spaces in their names.
+- The description mentions running Sovrin version 0.3.20 and provides a specific example of an invalid command.
+
+Step 2: Identify what essential information is missing.
+- Steps to reproduce the problem are not clearly outlined; it's unclear if the issue happens consistently or under certain conditions.
+- Expected behavior is not described. What should happen when trying to show a file with spaces in its name?
+- Acceptance criteria for resolving this issue are absent, making it difficult to know what constitutes a fix.
+- Environment details beyond Sovrin version 0.3.20 and the operating system (Windows) are lacking.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce, expected behavior, acceptance criteria, and comprehensive environment details, it would be challenging for a developer to fully understand and resolve the issue based solely on the provided description. Additional clarification is needed.
+
+Final Answer: Yes",119af5af8a978aea,qwen2.5:14b,0,2026-06-17T17:16:35.623134,project_03,title_desc,incompleteness,cot
+ISSUE-207346,Unexpected behavior of the testSendNodeSucceedsIfServicesIsMissed test,0,1,"Step 1: Identify the key information provided in the issue.
+- The title mentions an unexpected behavior of the testSendNodeSucceedsIfServicesIsMissed test.
+- The description states that the test causes downstream tests to fail and hang the testing process.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the issue are not provided. Without these, it's difficult for a developer to replicate the problem.
+- Expected behavior of the test is not described. This makes it hard to understand what should be happening versus what actually happens.
+- Acceptance criteria or conditions under which the issue can be considered resolved are missing.
+- Affected components and environment details (such as operating system, version numbers, etc.) are not provided.
+
+Step 3: Evaluate if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce, expected behavior, acceptance criteria, affected components, and environment details, it would be challenging for a developer to effectively address or debug this issue. Additional information is necessary before any meaningful action can be taken.
+
+Final Answer: Yes",40d4f6b6bd0fa2d6,qwen2.5:14b,0,2026-06-17T17:16:40.350098,project_03,title_desc,incompleteness,cot
+ISSUE-207079,Node with malformed ldb files has inconsistent behavior,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue describes inconsistent behavior of a node when certain ldb files are malformed or missing.
+- It provides two specific cases where symbols are deleted from different .ldb files and the node's response is noted.
+
+Step 2: Determine what essential information is missing.
+- Expected Results: While actual results are provided, expected results are not clearly defined. The description mentions ""Clarification is needed due to +node starts successful when ALL this ldb files are absent+"" but it’s unclear if this is a part of the issue or an additional comment.
+- Environment Details: There's no mention of the environment in which the node operates (e.g., operating system, version details).
+- Acceptance Criteria: The criteria for resolving the issue are not specified.
+
+Step 3: Evaluate whether a developer can act on this issue without asking for more information.
+- Given that expected results and acceptance criteria are missing, it would be difficult for a developer to understand what constitutes a resolution or how to verify if the problem is fixed. Additionally, lacking environment details makes it hard to reproduce the issue in different setups.
+
+Final Answer: Yes",c4dc57f2e9ddbe32,qwen2.5:14b,0,2026-06-17T17:16:45.462607,project_03,title_desc,incompleteness,cot
+ISSUE-205870,Node can't catch up large ledger,0,0,"Step 1: Key Information Provided
+- Environment details: indy-node version 1.5.551.
+- Steps to reproduce the issue are outlined but not fully detailed.
+- Actual results include log messages indicating that Node24 cannot catch up with the ledger due to too many split steps and inability to create batches.
+- Expected result is stated as clear node completing catch-up.
+- Additional information about pool restore issues and behavior for a smaller number of transactions.
+
+Step 2: Missing Essential Information
+- The issue description lacks detailed reproduction steps, such as specific commands or configurations used during the process.
+- There's no explicit mention of expected vs actual behavior beyond the high-level summary in ""Expected Results"".
+- No acceptance criteria are provided to define what success looks like for resolving this issue.
+- Environment details could be more comprehensive (e.g., OS version, hardware specifications).
+- The logs mentioned might provide additional context but aren't directly included or referenced fully.
+
+Step 3: Developer Actionability
+Given the current level of detail, a developer would likely need to ask for more information before they can effectively reproduce and address this issue. Specifically, they may require:
+- More detailed reproduction steps.
+- Full log files or direct access to them.
+- Additional environment details",332417fe790432f4,qwen2.5:14b,0,2026-06-17T17:16:51.152221,project_03,title_desc,incompleteness,cot
+ISSUE-207163,F-value tests: How many nodes can I lose before the network stops? Is it 2f+1? Is it n-f?,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue title and description both ask about F-value tests and how many nodes can be lost before the network stops functioning.
+- It mentions two possible formulas: ""2f+1"" and ""n-f"".
+- There is no mention of specific steps taken to investigate or reproduce this issue.
+
+Step 2: Identify what essential information is missing.
+- Steps to reproduce the problem are not provided. Without these, it's unclear how one would test or verify the issue.
+- Expected behavior is not clearly defined. It’s not clear what should happen when nodes fail according to the F-value tests.
+- Acceptance criteria for resolving this issue are absent. There is no indication of what needs to be proven or demonstrated to consider the issue resolved.
+- Environment details (e.g., network topology, node types, software versions) are missing. This information would help in understanding and reproducing the scenario.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of specific steps to reproduce, expected behavior, acceptance criteria, and environment details, it is unlikely that a developer could effectively work on or resolve this issue without requesting additional information first.
+
+Final Answer: Yes",d930586691f4e9c7,qwen2.5:14b,0,2026-06-17T17:16:56.638845,project_03,title_desc,incompleteness,cot
+ISSUE-205602,Write and Read request flow,0,1,"Step 1: Identify the key information provided in the issue.
+- The task involves creating activity diagrams for write and read request flows.
+- It includes both optimistic and negative scenarios.
+
+Step 2: Determine what essential information is missing from the issue description.
+- Steps to reproduce the scenario are not mentioned, which is crucial for understanding how to create the activity diagrams.
+- Expected behavior or acceptance criteria are not specified. This means it's unclear what constitutes a complete and correct diagram.
+- No details about the environment or affected components are provided.
+
+Step 3: Evaluate if a developer can act on this issue without needing additional information.
+Given the lack of specific steps, expected outcomes, and environmental context, a developer would likely need to ask for more details before proceeding with the task. Without these specifics, there's ambiguity in what is required from the activity diagrams.
+
+Final Answer: Yes",8f5cbf0335ea6eb3,qwen2.5:14b,0,2026-06-17T17:17:00.648095,project_03,title_desc,incompleteness,cot
+ISSUE-207255,Sovrin-Client: Show file command of not much use,0,1,"Step 1: Key Information Provided
+- The ""*show <file>*"" command does not support tabbing like a Linux shell.
+- Users need to know the file's location in advance.
+- Users can use Linux-based editors instead of this command.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue (how to trigger the problem).
+- Expected vs actual behavior (what should happen versus what actually happens when using the ""*show <file>*"" command).
+- Acceptance criteria (specific conditions that must be met for the issue to be resolved).
+- Affected components (which parts of the software are impacted by this issue).
+- Environment details (operating system, version of Sovrin-Client, etc.).
+
+Step 3: Developer Actionability
+Without clear reproduction steps and expected behavior, a developer cannot effectively diagnose or fix the problem. Additionally, acceptance criteria and environment details would help ensure that any changes made address all relevant scenarios.
+
+Final Answer: Yes",31af6ea6bf37de0d,qwen2.5:14b,0,2026-06-17T17:17:05.322056,project_03,title_desc,incompleteness,cot
+ISSUE-205400,Update docs for Transaction Author agreement,0,1,"Step 1: Identify the key information provided in the issue.
+- The task involves updating documentation files (`requests.md`, `transactions.md`, and `auth_map.md`) with new information about Transaction Author Agreement (TAA) fields, transactions, requests for TAA and AML, and an owner field.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the issue or task are not provided. The description does not specify how to verify if the updates have been correctly implemented.
+- Expected behavior after completing the update is not mentioned.
+- There's no acceptance criteria defined for when this task can be considered complete.
+- No environment details or specific version information of the software is given.
+
+Step 3: Evaluate whether a developer can act on this issue without asking for more information.
+- Given that there are no clear steps to reproduce, expected behavior, or acceptance criteria, it would likely require additional clarification from the requester before proceeding. A developer might need further details about what exactly needs to be added and how to verify if the updates meet requirements.
+
+Final Answer: Yes",a8a8ed3f30d7e777,qwen2.5:14b,0,2026-06-17T17:17:10.057635,project_03,title_desc,incompleteness,cot
+ISSUE-205519,Incorrect pool upgrade txn validation,0,0,"Step 1: Identify the key information provided in the issue.
+- Build Info: indy-node version 1.6.760
+- Steps to Reproduce: Send pool upgrade txn with time span of 1 day, 1 month, or 1 year but with the same HH:MM:SS time.
+- Actual Results: The transaction is not valid because the time span between upgrades is 0 seconds which is less than specified in the config.
+- Expected Results: Pool upgrade command should be validated correctly.
+
+Step 2: Identify what essential information is missing.
+- The issue description does not provide clear and detailed steps to reproduce the problem. For example, it's unclear how exactly one sends a pool upgrade transaction with specific time spans.
+- There is no mention of expected behavior beyond stating that the validation should work correctly, which doesn't give enough detail for developers to understand what constitutes correct validation in this context.
+- The environment details are not provided (e.g., operating system, network configuration).
+- Acceptance criteria or success conditions are missing.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps and clear expected behavior, it would be difficult for a developer to reproduce the problem",8662ea19cdae9368,qwen2.5:14b,0,2026-06-17T17:17:15.484882,project_03,title_desc,incompleteness,cot
+ISSUE-205808,Performance of monitor should be improved,0,0,"Step 1: Identify the key information provided in the issue.
+- The issue describes performance degradation of _monitor.requestOrdered_ under high load conditions.
+- It mentions that requests are received faster than they can be ordered, leading to increased processing time for _monitor.requestOrdered_.
+
+Step 2: Determine what essential information is missing from the issue report.
+- Steps to reproduce the problem are not provided. Without these steps, it's difficult to replicate and verify the issue.
+- Expected behavior under high load conditions is not clearly stated. It’s unclear how long or in what manner _monitor.requestOrdered_ should perform optimally.
+- Acceptance criteria for resolving this performance issue are missing. There's no clear definition of success or improvement.
+- Affected components other than _monitor.requestOrdered_ might be involved, but they aren't mentioned.
+- Environment details such as the operating system, hardware specifications, and software versions are not provided.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given the lack of specific steps to reproduce, expected behavior, acceptance criteria, affected components, and environment details, it would be challenging for a developer to effectively address or test the solution for this performance issue. More detailed information is necessary to proceed with development.",f7046a0070155233,qwen2.5:14b,0,2026-06-17T17:17:20.881790,project_03,title_desc,incompleteness,cot
+ISSUE-205232,PBFT View Change Debug: Part 2,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue title and description are related to debugging PBFT view changes.
+- It lists several tasks that have been completed or marked as ""TBD"" (""To Be Determined"").
+- There is a mention of ongoing work on load testing, simulation tests improvement, and fixing an issue with primary selection when Node txns are in flight.
+
+Step 2: Identify what essential information is missing.
+- The description does not provide clear steps to reproduce the problem or any specific issues that need addressing beyond high-level tasks.
+- There's no mention of expected vs actual behavior for debugging PBFT view changes.
+- No acceptance criteria, affected components, or environment details are provided.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+- Given the lack of specific issues and missing essential details like steps to reproduce and expected behavior, it's unlikely that a developer could effectively work on this issue without additional clarification.
+
+Final Answer: Yes",a2a39d37547d0032,qwen2.5:14b,0,2026-06-17T17:17:25.423381,project_03,title_desc,incompleteness,cot
+ISSUE-206367,Knowledge transfer on Indy build processes,0,1,"Step 1: Identify the key information provided in the issue.
+- The goal is to provide steward support by disseminating knowledge about Indy node build processes.
+- Time and documentation are requested to educate specific users and others as directed.
+
+Step 2: Determine what essential information is missing from the issue.
+- Steps to reproduce the problem or scenario (not applicable here, but necessary for issues that describe a bug).
+- Expected vs actual behavior (the description does not mention any discrepancy between expected and actual outcomes).
+- Acceptance criteria (no clear acceptance criteria are provided; it's unclear what success looks like in this context).
+- Affected components (it’s vague about which parts of the build process need to be documented or taught).
+- Environment details (there is no information on the environment where these processes take place).
+
+Step 3: Evaluate if a developer can act on this issue without needing additional information.
+Given that there are significant gaps in the description, such as lack of clarity around what needs to be documented and how success will be measured, it would be challenging for a developer to proceed with implementing or addressing this request effectively.
+
+Final Answer: Yes",79c848c204b30ef6,qwen2.5:14b,0,2026-06-17T17:17:30.319026,project_03,title_desc,incompleteness,cot
+ISSUE-205283,Support ubuntu 20.04 in system tests,0,0,"Step 1: Identify the key information provided in the issue.
+- The issue title and description indicate that there's a need to update system tests to support Ubuntu 20.04 as a testing environment.
+- Acceptance criteria are mentioned, stating that:
+  - Test pools should be runnable in an Ubuntu 20.04 environment (all nodes using the same environment for now).
+  - The client can run in any environment.
+  - There should be no test regressions.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the problem or how to set up the testing environment are not provided.
+- Expected behavior after implementing the changes is not clearly defined beyond ""no tests regression.""
+- Specific details about affected components and their current state in other environments (e.g., Ubuntu 18.04) are missing.
+- Environment details such as required software versions, dependencies, or configurations for Ubuntu 20.04 are not provided.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce, clear expected behavior beyond non-regression, and specific environment setup instructions, it would be challenging for a developer to start working on this",418069c81631a95f,qwen2.5:14b,0,2026-06-17T17:17:35.754844,project_03,title_desc,incompleteness,cot
+ISSUE-206407,generate_indy_pool_transactions can be run only by indy user,0,0,"Step 1: Identify the key information provided in the issue.
+- The issue describes a problem with running `generate_indy_pool_transactions` as a non-indy user.
+- Steps to reproduce are given, including setting up the machine and attempting to run the command.
+- Actual results include a permission denied error for `/etc/indy/indy_config.py`.
+- Expected result is that the command should work without errors.
+- Additional information mentions the issue's priority and its occurrence in specific versions of vagrant scripts.
+
+Step 2: Identify missing essential information.
+- The steps to reproduce are somewhat clear but could be more detailed, especially regarding how the user sets themselves as a non-indy user.
+- Expected vs actual behavior is described but lacks clarity on what exactly should happen if it worked correctly (e.g., successful transaction file generation).
+- No acceptance criteria are provided for this issue.
+- Environment details such as OS version, sovrin package version, and any other relevant configurations are not specified.
+
+Step 3: Determine if a developer can act on the issue without asking for more information.
+Given the missing details about environment setup and clearer expected behavior, it would be challenging for a developer to fully understand and reproduce the issue without additional context. The lack of specific acceptance criteria",7406cf84637e6d8f,qwen2.5:14b,0,2026-06-17T17:17:41.250959,project_03,title_desc,incompleteness,cot
+ISSUE-206381,ATTRIB transaction with ENC and HASH doesn't work,0,0,"Step 1: Identify the key information provided in the issue.
+- The issue mentions that the ATTRIB and GET_ATTRIB transactions do not work correctly when ENC and HASH are involved.
+- It suggests enabling corresponding tests in indy-node.
+- It also mentions updating documentation in requests.md.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the issue are not provided. Without these, it's difficult for a developer to understand how to recreate the problem.
+- Expected behavior is not clearly defined. The description does not specify what should happen when ATTRIB and GET_ATTRIB transactions work correctly with ENC and HASH.
+- Actual observed behavior is also missing. There’s no information on what happens currently when trying to use these transactions, which contrasts with expected behavior.
+- Environment details are lacking. It's unclear in which environment or under what conditions this issue occurs (e.g., specific version of software, operating system).
+- Acceptance criteria are not provided. Developers need clear acceptance criteria to know when the issue is resolved.
+
+Step 3: Evaluate if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce, expected vs actual behavior, and environment details, it would be challenging for a developer to start working on this issue",e44b1cd3cdff93f8,qwen2.5:14b,0,2026-06-17T17:17:46.722263,project_03,title_desc,incompleteness,cot
+ISSUE-205817,Research performance of static validation against message schema,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue discusses the performance of static validation against message schema.
+- It mentions that the validation process is slow based on metrics.
+- There are three possible acceptance criteria to address this issue.
+
+Step 2: Determine what essential information is missing from the issue.
+- Steps to reproduce the problem are not provided.
+- Expected behavior and actual behavior are not clearly defined.
+- No specific environment details or affected components are mentioned.
+- Acceptance criteria are listed but lack detailed descriptions of each option.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+- Without clear steps to reproduce the problem, it's difficult for developers to understand and verify the issue.
+- The absence of expected vs. actual behavior makes it hard to define what needs improvement.
+- Lack of environment details or affected components complicates troubleshooting.
+
+Final Answer: Yes",84e9c483f8a3b500,qwen2.5:14b,0,2026-06-17T17:17:50.884739,project_03,title_desc,incompleteness,cot
+ISSUE-207214,The CLI initialization becomes too slow,0,1,"Step 1: Identify the key information provided in the issue.
+- The CLI initialization becomes slow over time.
+- A specific command (`sovrin`) is mentioned as taking tens of seconds to execute after some usage.
+- An attachment contains profiling results from running `python3 -m cProfile` on the `sovrin` command.
+
+Step 2: Identify what essential information is missing.
+- Steps to reproduce the issue are not provided. It's unclear how often or under what conditions this happens.
+- Expected behavior is not described; it’s only mentioned that the CLI initialization becomes slow, but no baseline performance metrics or expected time frames are given for comparison.
+- Acceptance criteria are absent. There's no clear definition of when the issue would be considered resolved.
+- Affected components and environment details (such as operating system, Python version, hardware specifications) are not provided.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed reproduction steps, expected behavior, acceptance criteria, affected components, and environment details, it would be challenging for a developer to effectively diagnose or fix the problem based solely on the current description. Additional context is necessary.
+
+Final Answer: Yes",1bfc6a3f7805c7a5,qwen2.5:14b,0,2026-06-17T17:17:56.196169,project_03,title_desc,incompleteness,cot
+ISSUE-205760,POA: Delegate issuance to a processor,0,1,"Step 1: Key Information Provided
+
+- The issue describes the need to delegate credential issuance from a controller organization to a third-party processor.
+- It outlines that verifiers should be able to identify both the controller and the processor involved in issuing credentials.
+- There are specific requirements for updating credential definitions when changing processors, retaining history of processors, and adding an ""issuer"" field to cred def transactions.
+
+Step 2: Missing Essential Information
+
+- Steps to reproduce the issue or scenario are not provided. It's unclear how one would test this feature without detailed steps.
+- Expected vs actual behavior is not clearly defined. The description does not specify what should happen if these requirements are met versus what happens currently.
+- Acceptance criteria are somewhat vague and lack specific pass/fail conditions that a developer can use to verify completion of the task.
+- Environment details such as which Indy network version this applies to, or any other technical specifications, are missing.
+
+Step 3: Developer Actionability
+
+Given the current level of detail, a developer would likely need additional information before they could start implementing this feature. The lack of clear acceptance criteria and reproduction steps means that it's difficult for developers to know when their work is complete or how to test their implementation effectively.
+
+Final Answer: Yes",c4f9c794565d7fa0,qwen2.5:14b,0,2026-06-17T17:18:01.801076,project_03,title_desc,incompleteness,cot
+ISSUE-205269,Implement helper script for AWS pool operations with snapshots,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue title and description suggest that there's a need to implement a helper script for AWS pool operations involving snapshots, volumes, and instances.
+- The goal is to reduce switching time between upgrade and load AWS setups.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce or understand how the current process works without this script are not provided.
+- Expected behavior of the new helper script is unclear. What specific operations should it perform?
+- Acceptance criteria for the implementation are absent, making it difficult to know when the issue is resolved.
+- Affected components and environment details (e.g., AWS services involved, required permissions) are missing.
+
+Step 3: Evaluate if a developer can act on this issue without asking for more information.
+- Given the lack of detailed requirements such as specific operations, expected behavior, acceptance criteria, and environmental context, it would be challenging for a developer to start working on this task effectively. They would likely need additional details before proceeding.
+
+Final Answer: Yes",2052b37e776d3f77,qwen2.5:14b,0,2026-06-17T17:18:06.596077,project_03,title_desc,incompleteness,cot
+ISSUE-207178,An upgrade should be idempotent,0,-1,"Step 1: Identify the key information provided in the issue.
+- The issue discusses the concept of idempotence in software upgrades.
+- It mentions that an upgrade to version 5 should be allowed even if a previous upgrade has already been applied, implying that upgrades should not affect nodes that are already at the target version.
+- There is mention of a script that runs during the upgrade process and the need for this script's changes to also be idempotent.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the problem or scenario being described are absent. Without these, it’s unclear how one would test or verify the behavior.
+- Expected vs actual behavior is not clearly defined. The description does not specify what should happen if an upgrade script runs twice on a node that has already been upgraded.
+- Acceptance criteria for ensuring idempotence of both the upgrade process and the scripts are not detailed.
+- Environment details such as operating system, software versions, or specific configurations are missing.
+
+Step 3: Determine whether a developer can act on this issue without asking for more information.
+Given the lack of clear reproduction steps, expected behavior, acceptance criteria, and environment details, it would be challenging for a developer to implement or test the described",9147daaabe67ec72,qwen2.5:14b,0,2026-06-17T17:18:12.208623,project_03,title_desc,incompleteness,cot
+ISSUE-205965,Ledger upgrade transaction should specify a package name,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue describes a requirement for an upgrade transaction to specify a package name instead of using a generic Indy Node package.
+- It mentions acceptance criteria that include adding a new optional parameter to POOL_UPGRADE transactions with a package name.
+- There are notes about specific use cases, such as the Sovrin network wanting their own package.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the problem or scenario where this requirement is necessary are not provided.
+- Expected behavior after implementing the change is not clearly defined beyond adding a new parameter.
+- Actual behavior that needs fixing or improving isn't described, making it hard to understand why this change is needed.
+- No specific environment details (e.g., operating system, version of Indy Node) are mentioned.
+
+Step 3: Determine if a developer can act on the issue without asking for more information.
+Given the lack of clear reproduction steps and detailed expected behavior, a developer would likely need additional context to understand fully what needs to be implemented. The acceptance criteria provide some guidance but do not cover all necessary aspects for implementation.
+
+Final Answer: Yes",8df352cbdaf0aea7,qwen2.5:14b,0,2026-06-17T17:18:17.324949,project_03,title_desc,incompleteness,cot
+ISSUE-207326,Prove the pool upgrade mechanism by performing a noticeable upgrade test,0,1,"Step 1: Identify the key information provided in the issue.
+- The task involves proving an upgrade mechanism by performing an upgrade that has noticeable differences.
+- A demo is required upon completion.
+
+Step 2: Determine what essential information is missing from the issue.
+- Steps to reproduce the upgrade process are not specified.
+- Expected behavior after the upgrade is unclear (what constitutes a ""noticeable difference""?).
+- Acceptance criteria for the task are absent, making it difficult to know when the task is complete.
+- No details about the environment or components affected by this upgrade are provided.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given the lack of specific steps, expected outcomes, and environmental context, a developer would likely need more detailed instructions before proceeding with the task. Without these specifics, there's a risk that the upgrade test might not adequately prove the mechanism or could be misinterpreted.
+
+Final Answer: Yes",c5c3ef64897a31d2,qwen2.5:14b,0,2026-06-17T17:18:21.623969,project_03,title_desc,incompleteness,cot
+ISSUE-206117,Simple Timeout fixes of the current View Change protocol,0,-1,"Step 1: Identify the key information provided in the issue.
+- The issue describes problems with the existing View Change protocol and suggests possible fixes to improve stability.
+- It mentions specific issues INDY-1296 and INDY-1303, which presumably provide more context about the current problems.
+- Several potential fixes are proposed, including not processing certain messages, sending COMMITs, simplifying catch-up logic, and implementing positive timeouts.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the problem are not provided. Without these steps, it's difficult for a developer to understand how to test their changes or verify that they have fixed the issue.
+- Expected behavior after applying the proposed fixes is not clearly defined. Developers need to know what should happen in order to validate if their implementation meets requirements.
+- Environment details (such as specific versions of software, hardware configurations, etc.) are missing. This information would help developers understand which environments these changes might affect and how they could test them.
+- Acceptance criteria or success metrics for the proposed fixes are not provided. Developers need clear acceptance criteria to know when their work is complete.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.",415e8e44fc2abc1c,qwen2.5:14b,0,2026-06-17T17:18:27.244773,project_03,title_desc,incompleteness,cot
+ISSUE-206655,As I Validator or Observer Node,0,1,"Step 1: Analyze the provided information.
+- The title mentions ""As I Validator or Observer Node"".
+- The description states a need to present Signed State Proof for client requests and refers to support generation of State Proofs creation for client requests.
+- Links are provided to GitHub and Google Docs, presumably containing more detailed information.
+
+Step 2: Identify missing essential information.
+- Steps to reproduce the issue or feature request are not clear.
+- Expected behavior is not explicitly stated; it's unclear what exactly needs to be achieved with the State Proof generation.
+- Acceptance criteria for when this feature can be considered complete are absent.
+- Affected components and environment details (such as specific software versions, operating systems) are missing.
+
+Step 3: Determine if a developer can act on this issue without additional information.
+Given the lack of clear reproduction steps, expected behavior, acceptance criteria, and environmental context, it would be challenging for a developer to fully understand and implement the requested feature or fix the issue based solely on the provided description. Additional details are necessary.
+
+Final Answer: Yes",594efcddf6da0a07,qwen2.5:14b,0,2026-06-17T17:18:31.939916,project_03,title_desc,incompleteness,cot
+ISSUE-207231,eliminate runtime warnings that show during tests,0,0,"Step 1: Identify the key information provided in the issue.
+- The issue mentions that there are runtime warnings during unit and integration tests.
+- It suggests either updating the code to eliminate these warnings or proving their irrelevance and disabling them.
+
+Step 2: Determine what essential information is missing from the issue.
+- Steps to reproduce the warning messages are not provided. Without knowing how to consistently trigger the warnings, it's difficult for a developer to address them effectively.
+- Expected behavior after addressing the issue is not clear. Is the goal to have no warnings at all during testing, or just specific types of warnings?
+- Acceptance criteria are missing. There’s no clear definition of what constitutes an acceptable solution (e.g., which warnings should be addressed and how).
+- Affected components are not specified. It's unclear if these warnings come from a particular module or across the entire codebase.
+- Environment details such as operating system, programming language version, testing framework used, etc., are missing.
+
+Step 3: Evaluate whether a developer can act on this issue without additional information.
+Given the lack of specific steps to reproduce the warning messages and clear acceptance criteria, it would be challenging for a developer to start working on this issue effectively. They would need more details about which warnings",32dc98c75157c399,qwen2.5:14b,0,2026-06-17T17:18:37.341991,project_03,title_desc,incompleteness,cot
+ISSUE-206217,Clarify current permissible actions with DID's roles,0,1,"Step 1: Analyze the provided information.
+- The issue title suggests that there's a need to clarify permissible actions based on DID roles.
+- The description mentions two main assumptions about who can perform certain operations and links to findings in a Google Sheet.
+
+Step 2: Identify missing essential details.
+- Steps to reproduce the issue are not provided.
+- Expected vs actual behavior is not clearly defined.
+- Acceptance criteria for resolving this issue are absent.
+- Affected components or specific parts of the system that need clarification are not mentioned.
+- Environment details (such as software version, operating systems) are missing.
+
+Step 3: Determine if a developer can act on this issue without additional information.
+Given the lack of clear reproduction steps and acceptance criteria, it would be challenging for a developer to understand exactly what needs to be done or how to verify that the issue is resolved. The current description does not provide enough actionable details.
+
+Final Answer: Yes",45e8bea38f335c26,qwen2.5:14b,0,2026-06-17T17:18:41.604988,project_03,title_desc,incompleteness,cot
+ISSUE-205635,Enable PreViewChange Strategy,0,0,"Step 1: Identify the key information provided in the issue.
+- A PreViewChange strategy has been implemented to speed up and improve stability during view changes.
+- The strategy is currently disabled by default.
+- Acceptance criteria are outlined, including:
+  - Ensuring there are no side effects.
+  - Conducting load testing with regular view changes enabled.
+  - Checking specific performance metrics (NYMs per second, fast view changes, ledger synchronization).
+
+Step 2: Identify what essential information is missing from the issue description.
+- Steps to reproduce the scenario where this strategy should be tested or activated are not provided.
+- Expected behavior after enabling and testing the PreViewChange strategy is not clearly defined beyond the acceptance criteria.
+- No specific environment details (e.g., operating system, version of software) are mentioned.
+- There are no clear instructions on how to enable the strategy for testing purposes.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce and test the feature, as well as missing environment details, it would be challenging for a developer to start working on this task effectively. The acceptance criteria are somewhat vague regarding what constitutes ""no side effects"" or how to verify that ledgers remain",80899d09a22efa47,qwen2.5:14b,0,2026-06-17T17:18:46.935913,project_03,title_desc,incompleteness,cot
+ISSUE-205719,Validator info tool should show windowed throughput statistics,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue describes a need to show windowed throughput statistics in the validator info tool.
+- It mentions that there are already existing windowed throughput measurements for write requests in monitor.
+- There is a suggestion to reuse this code for read throughput measurements and use it in validator_info.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the problem or how to implement the feature are not provided.
+- Expected behavior after implementing the feature is not clearly defined.
+- Acceptance criteria, such as specific metrics or thresholds that need to be met, are absent.
+- Environment details (e.g., operating system, version of software) and affected components are not specified.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+- Given the lack of clear steps, expected behavior, acceptance criteria, and environment details, it would be challenging for a developer to start working on this task effectively. The developer would likely need additional clarification before proceeding.
+
+Final Answer: Yes",eadffa0a461e6a9a,qwen2.5:14b,0,2026-06-17T17:18:51.791368,project_03,title_desc,incompleteness,cot
+ISSUE-205358,indy-node upgrade problem - No such directory,0,1,"Step 1: Key information provided in the issue:
+- Environment details: 1 node each in BuilderNet and StagingNet.
+- Upgrade process from indy-node version 1.6.83 to 1.7.1.
+- Error message indicating a missing file during upgrade.
+
+Step 2: Essential information that is missing:
+- Specific steps leading up to the error (e.g., what was done immediately before the error occurred).
+- Expected behavior after the upgrade process completes successfully.
+- Detailed environment setup and configuration, such as supervisor configurations or other dependencies.
+- Acceptance criteria for a successful upgrade.
+
+Step 3: Can a developer act on this issue without asking for more information?
+No, the developer would likely need additional details to reproduce the error and understand why `/etc/supervisor/indy-node.conf` is missing. The current description does not provide enough context or steps to reliably replicate the problem.
+
+Final Answer: Yes",008833b0126d3e2c,qwen2.5:14b,0,2026-06-17T17:18:56.330898,project_03,title_desc,incompleteness,cot
+ISSUE-206471,Validator-info tool is not working with build 1.2.49,0,1,"Step 1: Key Information Provided
+- The user installed the validator node.
+- They tried running `validator-info -v` or just `validator-info`.
+- An error message appears stating ""There are no info files in /var/lib/indy"".
+- A log file (`validator-info.log`) exists but is empty.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue (specific commands and sequence of actions).
+- Expected behavior before running the command.
+- Acceptance criteria for resolving this issue.
+- Affected components or dependencies.
+- Environment details such as operating system, version numbers of related software, etc.
+
+Step 3: Developer Actionability
+Without detailed reproduction steps, expected behavior, acceptance criteria, affected components, and environment details, a developer would likely need to ask the reporter for more information before they can effectively diagnose and resolve this issue.
+
+Final Answer: Yes",c36a957c5aa3a58f,qwen2.5:14b,0,2026-06-17T17:19:00.394808,project_03,title_desc,incompleteness,cot
+ISSUE-207259,[send NYM] Add verkey and update verkey commands don't work,0,0,"Step 1: Identify the key information provided in the issue.
+- Build Info: sovrin-node 0.3.19 and sovrin-client 0.3.20
+- Overview of the problem: Add verkey and update verkey commands don't work as expected.
+- Steps to reproduce are partially outlined but not fully detailed.
+- Actual results include incorrect verkeys returned by a command and an error when trying to update the verkey.
+- Expected results are that add and update verkey commands should function correctly, and errors should be human-readable.
+
+Step 2: Identify what essential information is missing.
+- The steps to reproduce are not fully detailed. For example, it's unclear how to ""Add new key identifier"" or what specific commands were used for adding and updating the verkeys.
+- Expected behavior is mentioned but lacks detail on what exactly should happen when running these commands (e.g., expected output).
+- No acceptance criteria are provided.
+- Environment details such as operating system, version of dependencies other than sovrin-node and sovrin-client, or any specific configurations are missing.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce, expected",da249aa2499b2683,qwen2.5:14b,0,2026-06-17T17:19:05.872965,project_03,title_desc,incompleteness,cot
+ISSUE-206618,Allow a steward to update his node entry in the ledger - including the verkey,0,1,"Step 1: Key Information Provided
+- A steward can currently only have one node entry in the ledger.
+- The requirement should be to allow multiple node entries but restrict only one validator per steward.
+- There is a need to update the ledger when a steward changes the verkey of an existing node.
+- An example scenario where a steward tried to replace a node and change its public-private key pair, leading to issues with updating the ledger.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue (specific actions that lead to the problem).
+- Expected vs actual behavior (what should happen when trying to update the verkey versus what currently happens).
+- Acceptance criteria for resolving this issue.
+- Affected components and environment details (which parts of the system are involved, specific versions or configurations).
+
+Step 3: Developer Actionability
+Given the lack of detailed steps to reproduce, expected behavior, acceptance criteria, and environmental context, a developer would likely need additional information before they can effectively address this issue.
+
+Final Answer: Yes",b1b0c208b414e0f3,qwen2.5:14b,0,2026-06-17T17:19:11.133318,project_03,title_desc,incompleteness,cot
+ISSUE-205847,Fail to update pool ledger if no connection to a node in the genesis file in old cli,0,1,"Step 1: Key Information Provided
+- The issue seems to be related to an inability to update the pool ledger when there's no connection to a node specified in the genesis file.
+- Older versions of indy-node (like 1.3.X) could handle this situation better by requesting updates from another available node, whereas newer versions like 1.5.515 cannot.
+- The client repeatedly tries to reconnect to an unreachable node and does not proceed with pool data updates.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue are missing.
+- Expected behavior is not clearly defined (what should happen when a node in the genesis file is unreachable?).
+- Acceptance criteria for resolving this issue are absent.
+- Specific environment details such as OS, CLI version, and network configuration are not provided.
+
+Step 3: Developer Actionability
+Given the lack of detailed reproduction steps, expected behavior, acceptance criteria, and specific environmental context, a developer would likely need to ask for more information before they can effectively diagnose or resolve this issue.
+
+Final Answer: Yes",cfbbdddfb38913da,qwen2.5:14b,0,2026-06-17T17:19:16.254078,project_03,title_desc,incompleteness,cot
+ISSUE-205621,Expected object or value error during batch handling,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue describes an error during batch handling when analyzing logs from INDY-1835.
+- Errors are related to serialization of 'pi' or 'po'.
+- All batches are discarded due to these errors.
+- Acceptance criteria include investigating source code, writing tests, and creating a fix.
+
+Step 2: Identify what essential information is missing.
+- Steps to reproduce the issue are not provided.
+- Expected behavior before the error occurs is not described.
+- Actual behavior after the error occurs is vaguely mentioned but lacks detail.
+- Environment details (e.g., operating system, software version) are not specified.
+- Specific acceptance criteria for testing and validation of the fix are missing.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce the error, clear expected vs. actual behavior descriptions, environment details, and specific acceptance criteria, it would be challenging for a developer to fully understand and address the issue without additional clarification.
+
+Final Answer: Yes",7cc8c40394bf512b,qwen2.5:14b,0,2026-06-17T17:19:21.153217,project_03,title_desc,incompleteness,cot
+ISSUE-206100,Support Payment API txns in load script,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue title and description indicate that there's a need to support Payment API transactions within a load script.
+- It mentions that these APIs are provided by libindy and its wrappers.
+
+Step 2: Determine what essential information is missing from the issue.
+- Steps to reproduce the problem or how to implement the feature are not given.
+- Expected behavior after implementing this feature is not described.
+- Acceptance criteria for when the task can be considered complete are absent.
+- Affected components, such as specific parts of the codebase that need modification, are not detailed.
+- Environment details like operating system requirements, version numbers of dependencies (libindy), or any other relevant technical specifications are missing.
+
+Step 3: Evaluate if a developer could act on this issue without needing additional information.
+Given the lack of specifics about how to implement the feature and what success looks like, it would be challenging for a developer to proceed confidently. They would likely need clarification on these points before starting work.
+
+Final Answer: Yes",2d6b10c338c4070f,qwen2.5:14b,0,2026-06-17T17:19:25.804773,project_03,title_desc,incompleteness,cot
+ISSUE-206303,Ordering of 3PC-batches on a backup replica may stop after a catch-up,0,1,"Step 1: Key Information Provided
+- The issue describes a problem with the ordering of 3PC-batches on a backup replica after a catch-up.
+- It explains that the backup replica may stop processing new batches due to an incorrect adjustment mechanism for prepared certificates.
+- There is mention of specific message types (PREPREPARE, PREPARE) and their sequence in normal operation versus out-of-order scenarios.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue are not clearly defined. While there's a description of what happens, it lacks concrete steps that can be followed by another developer.
+- Expected vs actual behavior is somewhat described but could be more explicit and clear for understanding.
+- Acceptance criteria or specific conditions under which this issue should be considered resolved are missing.
+- Environment details such as the version of software being used, operating system specifics, etc., are not provided.
+
+Step 3: Developer Actionability
+Given the current description, a developer would likely need to ask for more information before they can effectively address and resolve the issue. The lack of clear reproduction steps and acceptance criteria makes it difficult to verify if changes have successfully addressed the problem or to understand exactly what needs fixing.
+
+Final Answer: Yes",36e1c3e433510397,qwen2.5:14b,0,2026-06-17T17:19:31.250979,project_03,title_desc,incompleteness,cot
+ISSUE-206249,Add Docker getting started configuration,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue requests adding a Docker-based sandbox to enable quick and easy exploration of Hyperledger Indy concepts.
+- It references an existing getting-started guide from Sovrin's repository.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce or set up the environment are not specified.
+- Expected behavior after setting up the Docker-based sandbox is not detailed.
+- Acceptance criteria for completing this task are not provided.
+- Environment details (e.g., required software versions, hardware specifications) are not mentioned.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given the lack of specific steps to reproduce, expected behavior, acceptance criteria, and environment details, it would be challenging for a developer to start working on this task effectively. The absence of these critical pieces of information means that developers might need clarification or further instructions before they can proceed.
+
+Final Answer: Yes",22778d872a074e1c,qwen2.5:14b,0,2026-06-17T17:19:35.606192,project_03,title_desc,incompleteness,cot
+ISSUE-207080,Valid write transactions may be rejected as having invalid signatures (case 2),0,1,"Step 1: Key Information Provided
+- The issue title indicates that valid write transactions are being rejected due to invalid signatures.
+- It mentions specific test scripts and parameters used when the bug occurred.
+- It specifies the versions of sovrin-client and sovrin-node, along with the environment (local VM, Shakedown Pool 3).
+- There is a note about manually copying files to the VM because Jenkins was unavailable.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue are not clearly outlined.
+- Expected behavior vs. actual behavior is not described in detail.
+- Acceptance criteria for resolving this bug are missing.
+- Specific environment details (e.g., OS version, network configuration) are not provided.
+- Detailed logs or error messages that could help diagnose the problem are only mentioned as being attached but aren't included in the description.
+
+Step 3: Developer Actionability
+Given the lack of clear reproduction steps and detailed expected vs. actual behavior descriptions, a developer would likely need to ask for more information before they can effectively address this issue.
+
+Final Answer: Yes",cec9743a390b4a97,qwen2.5:14b,0,2026-06-17T17:19:40.382800,project_03,title_desc,incompleteness,cot
+ISSUE-206714,Primary fails to send pre-prepare,0,1,"Step 1: Key Information Provided
+- The error occurred during a low-volume load test.
+- Node 'metis' lost sync and did not recover while node 'play' was the primary.
+- Logs indicate that PREPREPAREs were sent to only two out of eight nodes.
+- Restarting the sovrin-node process on metis or forcing a view change resolved the issue temporarily.
+- No connectivity issues were observed.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the error are not clearly defined. While there is some description of what happened, it's unclear if these steps can be reliably followed by others to replicate the problem.
+- Expected vs actual behavior is somewhat described but could be more detailed and clear.
+- Acceptance criteria for resolving this issue are missing.
+- Environment details such as software versions, hardware specifications, network configurations, etc., are not provided.
+
+Step 3: Developer Actionability
+Given the lack of clear reproduction steps and environment details, a developer would likely need to ask for additional information before they can effectively diagnose and resolve the issue. The current description provides some context but lacks specificity in critical areas that would allow for precise troubleshooting.
+
+Final Answer: Yes",bf8a38f8724b4d0e,qwen2.5:14b,0,2026-06-17T17:19:45.691291,project_03,title_desc,incompleteness,cot
+ISSUE-207130,Node with multiple NICs:,1,1,"Step 1: Identify the key information provided in the issue.
+- The title mentions ""Node with multiple NICs.""
+- Under ""Things tried,"" there is no specific information given about what has been attempted.
+- Under ""Findings,"" there are no details provided.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the problem or scenario are not mentioned.
+- Expected behavior and actual observed behavior are not described.
+- Acceptance criteria for resolving the issue are absent.
+- Affected components (which NICs, network configurations) are not detailed.
+- Environment details such as operating system version, software versions, hardware specifications, etc., are missing.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given the lack of specific steps to reproduce, expected vs. actual behavior, acceptance criteria, affected components, and environment details, it is not possible for a developer to fully understand or resolve the issue based solely on the provided description.
+
+Final Answer: Yes",f625d1041d0092d0,qwen2.5:14b,0,2026-06-17T17:19:50.197556,project_03,title_desc,incompleteness,cot
+ISSUE-206872,As a Steward,0,-1,"Step 1: Identify the key information provided in the issue.
+- The user needs to receive notifications about important events on the Node.
+- There are existing ways and plugins for notification such as email, SQS, etc.
+- Currently, there is a feature to notify Stewards about Suspicious Spikes via email (INDY-1251).
+- A list of additional types of notifications that need to be implemented: View Change start/end, Catchup start/end, Blacklisting a Node/Client, Suspicious Primary, Performance degradation, Upgrade start/end, and other severe errors/warnings.
+
+Step 2: Identify what essential information is missing.
+- Steps to reproduce the issue or how to implement these new notifications are not provided.
+- Expected behavior for each type of notification is not detailed (e.g., which events should trigger a specific notification).
+- Acceptance criteria for when this feature can be considered complete are lacking.
+- Environment details such as operating system, Node version, and any other relevant technical specifications are missing.
+
+Step 3: Determine if the developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce, expected behavior, acceptance criteria, and environment details, a developer would likely need additional information before they could",68069812aea35c29,qwen2.5:14b,0,2026-06-17T17:19:55.653791,project_03,title_desc,incompleteness,cot
+ISSUE-206649,DOC: Request for release notes on Indy-node 1.1.31,0,1,"Step 1: Key Information Provided
+- Version Information: indy-node=1.1.31 and other related versions.
+- Major Fixes: List of fixes including INDY-410, INDY-466, etc.
+- Changes and Additions: New ledger serialization, directory structure changes, genesis transaction file renaming, new CLI commands, terminology modifications, improvements to log messages.
+
+Step 2: Essential Information Missing
+- Steps to reproduce the issue (if any).
+- Expected vs actual behavior (since this seems like a release notes request, it's unclear if there is an expected behavior or issue to be reproduced).
+- Acceptance criteria.
+- Affected components and environment details are somewhat provided but not in a structured way that would help developers understand what they need to test.
+
+Step 3: Developer Actionability
+A developer cannot act on this issue without asking for more information. While the release notes provide detailed changes, there is no clear indication of an issue or steps needed to verify these changes. The document seems to be informational rather than a request to fix something specific.
+
+Final Answer: Yes",bea6bd4b05d8b11e,qwen2.5:14b,0,2026-06-17T17:20:00.851045,project_03,title_desc,incompleteness,cot
+ISSUE-207129,Some nodes are slow to process network data,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue mentions that some nodes are slow to process network data.
+- This slowness is causing senders to be busy.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the issue are not provided.
+- Expected behavior and actual behavior are not clearly defined.
+- No acceptance criteria or specific conditions for resolving the issue are mentioned.
+- Affected components (which nodes, network protocols, etc.) are not specified.
+- Environment details such as operating system, hardware specifications, software versions, etc., are missing.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given the lack of specific details about reproduction steps, expected behavior, and environment specifics, it would be challenging for a developer to understand the full scope of the problem or how to effectively address it. More detailed information is necessary before any meaningful action can be taken.
+
+Final Answer: Yes",439be088e343be7f,qwen2.5:14b,0,2026-06-17T17:20:05.304301,project_03,title_desc,incompleteness,cot
+ISSUE-206996,improve timestamp mechanism to use fuzzy,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue suggests improving the timestamp mechanism to use a fuzzy consensus approach similar to how validators are determined in BLS signatures.
+- It mentions that the timestamp could be computed at the same time as other parts of the state proof.
+
+Step 2: Determine what essential information is missing from the issue.
+- Steps to reproduce the problem or scenario where this improvement would be necessary are not provided.
+- Expected behavior after implementing the suggested change is not clearly defined.
+- Acceptance criteria for when the enhancement can be considered complete are absent.
+- Affected components and their interactions with the timestamp mechanism are unclear.
+- Environment details such as operating system, software version, or specific conditions under which this issue arises are missing.
+
+Step 3: Evaluate if a developer could act on this issue without needing additional information.
+Given the lack of detailed steps to reproduce, expected behavior, acceptance criteria, and environment specifics, it would be challenging for a developer to start working on this enhancement effectively. More details are required before development can begin.
+
+Final Answer: Yes",d224ee003989e473,qwen2.5:14b,0,2026-06-17T17:20:10.103115,project_03,title_desc,incompleteness,cot
+ISSUE-205942,"How-to """"Add new node to existing pool",0,1,"Step 1: Identify the key information provided in the issue.
+- The title suggests that adding a new node to an existing pool is not covered by documentation.
+- The description mentions there's no current documentation, and the only unique knowledge source is an acceptance scenario.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the problem or how to add a new node to an existing pool are not provided.
+- Expected behavior when adding a new node is not described.
+- Actual behavior (what happens currently) is not mentioned.
+- Acceptance criteria for successfully adding a new node are not specified.
+- Affected components and environment details (e.g., software version, operating system) are missing.
+
+Step 3: Evaluate if the issue can be acted upon without additional information.
+- A developer would need to know how to add a new node, what should happen when it's added correctly, and under which conditions or environments this applies. Without these specifics, the task cannot be completed effectively.
+
+Final Answer: Yes",a8ed970c41d64ef7,qwen2.5:14b,0,2026-06-17T17:20:14.639529,project_03,title_desc,incompleteness,cot
+ISSUE-207319,REF validator,0,1,"Step 1: Analyze the provided information.
+- The issue title mentions ""REF validator"".
+- The description states that REF refers to a transaction by sequence number and suggests adding validation in plenum.
+
+Step 2: Identify missing essential information.
+- Steps to reproduce the problem are not given.
+- Expected behavior is not clearly defined.
+- Actual observed behavior is not mentioned.
+- Acceptance criteria for resolving this issue are absent.
+- Affected components or specific parts of the codebase are not detailed.
+- Environment details (e.g., operating system, version numbers) are missing.
+
+Step 3: Determine if a developer can act on this issue without additional information.
+Given the lack of clear instructions and necessary details, it would be challenging for a developer to implement the suggested changes effectively. The description does not provide enough context or specifics to proceed confidently with development or testing.
+
+Final Answer: Yes",4ebc12de454986a0,qwen2.5:14b,0,2026-06-17T17:20:18.726201,project_03,title_desc,incompleteness,cot
+ISSUE-205527,Implementation: Improve catch-up to use audit ledger for consistency,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue describes an improvement to the catch-up process using the audit ledger for consistency.
+- It references specific acceptance criteria and links to a design document that outlines how this should be implemented.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the problem or scenario are not provided. While there's a description of how the feature should work, there’s no clear indication of how one would test it or verify its correctness.
+- Expected vs actual behavior is not clearly defined. The issue describes what should happen but does not specify what currently happens (if anything) and what the expected outcome should be after implementation.
+- Environment details are missing. There's no information about which version of the software this applies to, specific configurations, or any other environmental factors that might affect how this feature is implemented or tested.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given the lack of clear reproduction steps and expected behavior, it would be challenging for a developer to implement this change confidently. They would need more details about what constitutes success in implementing these changes and under which conditions they should test their implementation.
+
+Final Answer: Yes",d36a8e55c1a67826,qwen2.5:14b,0,2026-06-17T17:20:23.966485,project_03,title_desc,incompleteness,cot
+ISSUE-206160,Analyse the current View Change protocol issues,0,1,"Step 1: Identify the key information provided in the issue.
+- The current View Change protocol has issues that need to be analyzed.
+- One option is to implement PBFT View Change protocol.
+- A deep analysis of the existing protocol is required for understanding and confidence in new implementation.
+
+Step 2: Determine what essential information is missing from the issue description.
+- Steps to reproduce the issues with the current View Change protocol are not provided.
+- Expected behavior or acceptance criteria are not specified.
+- Affected components, environment details (e.g., software version, operating system), and specific examples of issues encountered are not mentioned.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+Given that the issue lacks clear reproduction steps, expected vs actual behavior, and detailed environmental context, it would be challenging for a developer to start working on this task effectively. The vagueness in the description means developers might need to ask for more details before they can proceed.
+
+Final Answer: Yes",390841c997ac30a8,qwen2.5:14b,0,2026-06-17T17:20:28.494084,project_03,title_desc,incompleteness,cot
+ISSUE-206183,Date in log name doesn't accord to the day when the log was rotated,0,1,"Step 1: Key Information Provided
+- The issue describes that the date in log filenames does not match the actual rotation date of logs.
+- It provides examples of log files with incorrect dates and correct dates.
+- There are specific commands to list the logs on different nodes.
+
+Step 2: Missing Essential Information
+- While there is a description of what the problem looks like, it lacks clear expected behavior beyond ""Dates in logs names should accord to the date when the log was rotated.""
+- The steps provided are not detailed enough for someone unfamiliar with the system to reproduce the issue.
+- There's no mention of acceptance criteria or specific conditions under which this issue occurs (e.g., certain configurations, specific times).
+- Environment details such as OS version, software versions, and exact setup instructions are missing.
+
+Step 3: Developer Actionability
+Given the lack of clear reproduction steps and detailed expected behavior, a developer would likely need to ask for more information before they can effectively address this issue. The current description does not provide enough context or clarity for a developer to understand what needs fixing without additional details.
+
+Final Answer: Yes",46d1e017a12f1468,qwen2.5:14b,0,2026-06-17T17:20:34.925973,project_03,title_desc,incompleteness,cot
+ISSUE-206911,list keyrings showing results twice,0,0,"Step 1: Identify the key information provided in the issue.
+- The user reports that when they run the 'list keyrings' command from the CLI, duplicate results are shown.
+- They provide a sample output of what is displayed after running the command.
+
+Step 2: Determine what essential information is missing.
+- Steps to reproduce the issue are not clearly defined. While it mentions sending the command 'list keyrings', there's no clear sequence or context for when this happens (e.g., under which conditions).
+- Expected behavior is not specified. It’s unclear whether duplicates should never appear, and if so, how many times a result should be listed.
+- Acceptance criteria are missing. There's no indication of what the outcome should look like after fixing the issue.
+- Environment details such as OS version, CLI version, or any other relevant software versions are not provided.
+
+Step 3: Evaluate whether a developer can act on this issue without additional information.
+Given the lack of clear reproduction steps and expected behavior, along with missing environment details, it would be challenging for a developer to reproduce the issue accurately or understand what needs to be fixed. The absence of these critical pieces of information means that further clarification is necessary before any development work can begin.
+
+Final Answer",e1b54e7d93bd1b91,qwen2.5:14b,0,2026-06-17T17:20:40.890316,project_03,title_desc,incompleteness,cot
+ISSUE-205543,As a user of Valdiator Info script,0,1,"Step 1: Identify the key information provided in the issue.
+- The user needs to know whether the pool has write consensus and when the state was updated last time.
+- Acceptance Criteria:
+  - Add the time when state was updated for every ledger into validator info output.
+  - This should be present in verbose and json output, but not in default output.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the problem or how to test the acceptance criteria are not provided.
+- Expected behavior after implementing the changes is not clearly defined.
+- Environment details (such as operating system, version of software, etc.) are missing.
+- Affected components and their versions are not specified.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of detailed steps to reproduce, expected behavior, environment details, and affected components, it would be challenging for a developer to fully understand and implement the requirements as stated. Additional clarification is necessary before proceeding with development work.
+
+Final Answer: Yes",2f46988eebf12688,qwen2.5:14b,0,2026-06-17T17:20:45.663986,project_03,title_desc,incompleteness,cot
+ISSUE-206727,Accidental tests of indy-node intermittently fail on Jenkins,0,1,"Step 1: Analyze the provided information.
+- The issue title mentions that ""accidental tests of indy-node intermittently fail on Jenkins.""
+- The description provides links to several Jenkins builds where these failures occurred.
+
+Step 2: Identify missing essential information.
+- Steps to reproduce the issue are not provided. Without knowing how to trigger the failure, it's difficult for a developer to diagnose and fix the problem.
+- Expected vs actual behavior is not clearly defined. It’s unclear what the expected outcome should be versus what actually happens during these failures.
+- Acceptance criteria are missing. There's no clear definition of when this issue would be considered resolved.
+- Affected components or specific parts of the codebase that might cause this failure are not mentioned.
+- Environment details such as operating system, version of Jenkins, build tools used, etc., are not provided.
+
+Step 3: Determine if a developer can act on this information without additional context.
+Given the lack of detailed steps to reproduce and clear definitions of expected behavior, it would be challenging for a developer to start working on resolving this issue effectively. They would likely need more specific details about what is failing and under which conditions.
+
+Final Answer: Yes",eb4b0487f271bdfb,qwen2.5:14b,0,2026-06-17T17:20:50.899111,project_03,title_desc,incompleteness,cot
+ISSUE-205664,Is there any replacement for leveldb?,0,1,"Step 1: Identify the key information provided in the issue.
+- The user wants to replace LevelDB with another database.
+- They are seeking suggestions or alternatives.
+
+Step 2: Determine what essential information is missing.
+- There are no reproduction steps, expected behavior, acceptance criteria, affected components, or environment details provided.
+- The question lacks context about why they want to replace LevelDB and in which application or system it's being used.
+- No specific requirements or constraints for the replacement database are mentioned.
+
+Step 3: Evaluate if a developer can act on this issue without additional information.
+- A developer would need more context to provide meaningful suggestions, such as performance requirements, data size considerations, integration needs with existing systems, and other technical details about why LevelDB is being replaced.
+- Without these specifics, the request cannot be adequately addressed.
+
+Final Answer: Yes",1ab785125a602674,qwen2.5:14b,0,2026-06-17T17:20:54.901785,project_03,title_desc,incompleteness,cot
+ISSUE-205912,As a Sovrin Foundation,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue involves testing and checking that all nodes on the live pool are configured properly and participate in consensus.
+- There are specific requirements for each node, including hardware specifications, configuration details, networking settings, firewall rules, BLS keys, and participation in consensus.
+
+Step 2: Identify what essential information is missing from the issue description.
+- Steps to reproduce the problem or verify the solution are not provided.
+- Expected behavior is mentioned but not clearly defined (e.g., how a properly configured node should behave).
+- No specific acceptance criteria for each requirement listed under ""We need to check the following.""
+- Environment details such as operating system, network topology, and software versions are missing.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+- Given the lack of detailed steps, expected behavior, and environment specifics, it would be challenging for a developer to start working on this issue effectively. They would likely need additional details before proceeding.
+
+Final Answer: Yes",c237025e90f3a6ab,qwen2.5:14b,0,2026-06-17T17:20:59.538667,project_03,title_desc,incompleteness,cot
+ISSUE-206478,The pool state should be updated after any node BLS key changing,0,1,"Step 1: Key Information Provided
+- The pool state needs to be updated after any node BLS key changing.
+- There are specific cases where the current system fails to get NYM using BLS signatures when no transactions have been written to the ledger after a BLS key change.
+- In certain scenarios, it's impossible to verify transactions signed with old keys due to pool state not being updated.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue are missing. It is unclear how one can replicate this problem in their environment.
+- Expected behavior is not clearly defined. What should happen after a node BLS key change?
+- Acceptance criteria for resolving this issue are absent. How will we know when the issue has been fixed?
+- Environment details such as software version, operating system, and any other relevant configurations are missing.
+
+Step 3: Developer Actionability
+Given the lack of clear reproduction steps, expected behavior, acceptance criteria, and environment details, a developer would likely need to ask for more information before they can effectively address this issue. Without these specifics, it's challenging to implement a solution that fully addresses the problem described.
+
+Final Answer: Yes",6dbd7b7f5adcf02b,qwen2.5:14b,0,2026-06-17T17:21:04.572381,project_03,title_desc,incompleteness,cot
+ISSUE-207005,"Nodes not receiving new transaction if its """"View"""" list is different from other nodes in the pool",0,-1,"Step 1: Key Information Provided
+- The issue describes a situation where Node1 does not receive new transactions when its list of primary nodes differs from other nodes in the pool.
+- A discrepancy was observed between Node1 and Nodes 2-10 after running load_test.py, with only Nodes 2-10 processing new transactions.
+- Logs indicate that Node1 has a different view of which node is primary compared to Nodes 2-10.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue are not clearly defined. The description mentions running add_key.py and load_test.py, but it's unclear what specific configurations or conditions led to the discrepancy.
+- Expected behavior is not explicitly stated. It should be clear whether Node1 should have processed new transactions despite having a different view of primary nodes.
+- Acceptance criteria for resolving this issue are missing. What would need to happen for the issue to be considered resolved?
+- Environment details such as software version, network configuration, and hardware specifications are not provided.
+
+Step 3: Developer Actionability
+Given the lack of clear reproduction steps, expected behavior, acceptance criteria, and environment details, a developer would likely need additional information before they could effectively diagnose and resolve this issue. The current description does",97ac9466cd913c95,qwen2.5:14b,0,2026-06-17T17:21:10.137253,project_03,title_desc,incompleteness,cot
+ISSUE-205432,Auto trigger CD pipeline for release-* branches,0,1,"Step 1: Identify the key information provided in the issue.
+- The current system suppresses automatic triggering of CD pipelines for release-* branches due to potential issues with service commits.
+- There are two main options proposed:
+  - Configure Jenkins projects to skip certain types of commits (e.g., tagged, from bot user).
+  - Allow all commits to trigger builds but disable notifications and abort builds under specific conditions.
+
+Step 2: Identify what essential information is missing.
+- Steps to reproduce the issue or problem scenario are not provided.
+- Expected behavior after implementing a solution is not clearly defined.
+- Acceptance criteria for the proposed solutions are lacking.
+- Environment details (e.g., Jenkins version, CD pipeline tools used) are not specified.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of specific steps to reproduce, expected behavior, acceptance criteria, and environment details, it would be challenging for a developer to implement a solution confidently. The proposed options require further clarification regarding conditions and configurations.
+
+Final Answer: Yes",1997d0c0cbd31fd1,qwen2.5:14b,0,2026-06-17T17:21:14.896435,project_03,title_desc,incompleteness,cot
+ISSUE-207212,Node memory leak,0,0,"Step 1: Identify the key information provided in the issue.
+- The issue involves a master repo being used.
+- A script named `load_test.py` is run on a local pool with 4 nodes.
+- The test runs for 90,000 transactions.
+- The output of the `ps` command shows continuous growth in memory usage by the node.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce the issue are not clearly defined. While it mentions running a specific script and number of nodes, there's no detailed step-by-step guide on how to replicate this scenario.
+- Expected behavior is not provided. It’s unclear what normal memory usage should look like or if there was an expectation that memory would stabilize after reaching some level.
+- Acceptance criteria are missing. There's no clear definition of when the issue can be considered resolved, such as a specific threshold for acceptable memory usage.
+- Affected components are not detailed beyond mentioning nodes and `ps` command output. It’s unclear which parts of the system or codebase might be causing this behavior.
+- Environment details (e.g., operating system version, node configuration, Python version) are missing.
+
+Step 3: Determine if a developer can act on",e3728903e741b585,qwen2.5:14b,0,2026-06-17T17:21:20.293961,project_03,title_desc,incompleteness,cot
+ISSUE-206218,Node is restarted because of Out of memory error,0,1,"Step 1: Identify the key information provided in the issue.
+- The issue occurs during load testing with 25 nodes.
+- Some nodes (specifically 3 or 4) are being restarted due to an Out of memory error as seen in journalctl logs.
+
+Step 2: Determine what essential information is missing from the issue report.
+- Steps to reproduce the issue are not provided. It's unclear how to consistently trigger this problem.
+- Expected behavior is not described. What should be happening instead of nodes restarting?
+- Acceptance criteria for resolving the issue are absent. How will we know when it’s fixed?
+- Specific environment details (e.g., OS version, node configurations, load test specifics) are missing.
+
+Step 3: Evaluate if a developer can act on this issue without needing additional information.
+Given the lack of detailed steps to reproduce and clear acceptance criteria, along with insufficient environmental context, developers would likely need more information before they could effectively address or debug this issue.
+
+Final Answer: Yes",7b16d8479dba46ad,qwen2.5:14b,0,2026-06-17T17:21:24.795088,project_03,title_desc,incompleteness,cot
+ISSUE-206980,A primary may not be able to send checkpoints after re-start,0,-1,"Step 1: Identify the key information provided in the issue.
+- The issue involves a primary node that may not be able to send checkpoints after being restarted.
+- There are three nodes involved, and when the primary is stopped and re-started without changing the view, it might fail to send checkpoints correctly.
+- A fix for sending transactions (INDY-334) exists but does not address checkpoint logic.
+
+Step 2: Identify what essential information is missing from the issue description.
+- The steps to reproduce the problem are vague. It mentions having three nodes and stopping/restarting the primary, but it lacks clear, detailed instructions on how to replicate this scenario.
+- Expected behavior is not clearly defined. What should happen with checkpoints after a restart? Is there an error message or specific failure mode?
+- Acceptance criteria for resolving this issue are missing. How will we know when the problem is fixed?
+- Environment details (e.g., software version, operating system) are absent.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given the lack of clear reproduction steps and acceptance criteria, it would be challenging for a developer to start working on this issue effectively. They would need additional context about how to reproduce the problem reliably",684b9db4230b1037,qwen2.5:14b,0,2026-06-17T17:21:30.143047,project_03,title_desc,incompleteness,cot
+ISSUE-206016,Upgrade failed on pool from 1.3.62 to 1.4.66,0,1,"Step 1: Key Information Provided
+- The user has upgraded nodes from version 1.3.57 to 1.3.62 successfully.
+- An attempt was made to upgrade the nodes from 1.3.62 to 1.4.66.
+- Some nodes were upgraded successfully, while others failed.
+- Logs are attached for reference.
+- The machines are located in AWS and their details can be found in a Google Spreadsheet.
+
+Step 2: Missing Essential Information
+- Steps to reproduce the issue (specific actions leading up to the upgrade failure).
+- Expected vs actual behavior (what was expected after the upgrade, what actually happened).
+- Acceptance criteria for the upgrade process.
+- Detailed environment information (OS version, hardware specifications, network configurations, etc.).
+- Specific error messages or logs from nodes that failed to upgrade.
+
+Step 3: Developer Actionability
+Given the lack of detailed steps to reproduce and clear acceptance criteria, a developer would likely need more specific details about the issue before they can effectively diagnose and resolve it.
+
+Final Answer: Yes",e459966e9a4ec155,qwen2.5:14b,0,2026-06-17T17:21:35.251517,project_03,title_desc,incompleteness,cot
+ISSUE-205350,Use more trusted docker image for system tests client docker container,0,1,"Step 1: Identify the key information provided in the issue.
+- The current base image used for dind client is [https://hub.docker.com/r/teracy/ubuntu/tags].
+- There are concerns about its safety and trustworthiness.
+- No official docker dind image based on ubuntu:16.04 exists currently.
+
+Step 2: Identify what essential information is missing from the issue.
+- Steps to reproduce any issues or problems with the current setup.
+- Expected behavior when using a more trusted base image.
+- Acceptance criteria for choosing a new base image.
+- Affected components and their specific requirements.
+- Environment details where this issue occurs.
+
+Step 3: Determine if a developer can act on this issue without asking for more information.
+Given that there are no clear steps to reproduce, expected behavior, acceptance criteria, or environment details provided, it is difficult for a developer to proceed with resolving the issue effectively. The lack of these critical pieces of information means that developers would need additional context and clarification before they can take action.
+
+Final Answer: Yes",0c5c572a0a2bffdd,qwen2.5:14b,0,2026-06-17T17:21:40.119683,project_03,title_desc,incompleteness,cot

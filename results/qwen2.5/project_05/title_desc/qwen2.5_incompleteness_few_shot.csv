@@ -1,0 +1,95 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-253177,Inconsistent output between java driver and mongo shell,1,1,Yes,d51d726640180467,qwen2.5:14b,0,2026-06-17T19:15:39.097900,project_05,title_desc,incompleteness,few_shot
+ISSUE-253467,size not accepting $numberlong argument,1,1,Yes,fa1482d21dc17717,qwen2.5:14b,0,2026-06-17T19:15:40.072659,project_05,title_desc,incompleteness,few_shot
+ISSUE-253452,MongoCollection.insertOne throws NullPointerException with WriteConcern.UNACKNOWLEDGED & retryWrites=true,0,1,Yes,64b929c6a128169d,qwen2.5:14b,0,2026-06-17T19:15:41.075551,project_05,title_desc,incompleteness,few_shot
+ISSUE-253505,Add an option to toggle SSL certificate validation,1,1,Yes,17219093bad1c4c3,qwen2.5:14b,0,2026-06-17T19:15:41.979949,project_05,title_desc,incompleteness,few_shot
+ISSUE-255080,JSON parser parses braces incorrectly,0,0,No,917c3df29af51203,qwen2.5:14b,0,2026-06-17T19:15:43.064335,project_05,title_desc,incompleteness,few_shot
+ISSUE-255534,Looking for performance tips loading results from a find() with the java driver.,1,1,Yes,c6a033b38315abf7,qwen2.5:14b,0,2026-06-17T19:15:44.031810,project_05,title_desc,incompleteness,few_shot
+ISSUE-255332,Binary field $type is represented in JSON as a number instead of a two-byte hex string,0,1,Yes,cd0bbee960c22df2,qwen2.5:14b,0,2026-06-17T19:15:45.064923,project_05,title_desc,incompleteness,few_shot
+ISSUE-254781,Iterable Codec,0,1,Yes,b2a135b77147e0d5,qwen2.5:14b,0,2026-06-17T19:15:46.062412,project_05,title_desc,incompleteness,few_shot
+ISSUE-254021,NettyStream does not handle clean socket closures from the server,0,1,Yes,93e96965a72aa353,qwen2.5:14b,0,2026-06-17T19:15:47.056886,project_05,title_desc,incompleteness,few_shot
+ISSUE-255615,Include cursor-id in CursorNotFound exception,0,1,Yes,fd2d81771600c903,qwen2.5:14b,0,2026-06-17T19:15:48.060722,project_05,title_desc,incompleteness,few_shot
+ISSUE-254855,Discrimination in Jackson-Codec,0,1,Yes,865c3edcf18d5b81,qwen2.5:14b,0,2026-06-17T19:15:49.077900,project_05,title_desc,incompleteness,few_shot
+ISSUE-256012,Add w/wtimeout to WriteConcern (getLastError),0,1,Yes,9d9b7e5eb5245a0e,qwen2.5:14b,0,2026-06-17T19:15:49.998757,project_05,title_desc,incompleteness,few_shot
+ISSUE-253265,Provide an option to use pooled NIO direct buffers to minimise impact on GC,1,1,Yes,3dbc652cf507f0d7,qwen2.5:14b,0,2026-06-17T19:15:51.075698,project_05,title_desc,incompleteness,few_shot
+ISSUE-254440,DocumentCodec and DBObjectCodec treat nested Maps/Iterables differently,1,1,Yes,472a597d69ca77d9,qwen2.5:14b,0,2026-06-17T19:15:52.074511,project_05,title_desc,incompleteness,few_shot
+ISSUE-255480,Secondary reads on lists of mongos fail until first write,1,1,Yes,5b01f4e6861f3280,qwen2.5:14b,0,2026-06-17T19:15:53.071201,project_05,title_desc,incompleteness,few_shot
+ISSUE-255171,Saved extra fields for Gridfs does not go in metadata sub-document,0,1,Yes,e02d7b8b70b04dad,qwen2.5:14b,0,2026-06-17T19:15:54.055787,project_05,title_desc,incompleteness,few_shot
+ISSUE-254446,Repeated connection with expected authentication errors is not deterministic,0,1,Yes,32763024f281b069,qwen2.5:14b,0,2026-06-17T19:15:55.048617,project_05,title_desc,incompleteness,few_shot
+ISSUE-254233,Custom logging implementation,0,1,Yes,a24044a67725e4cc,qwen2.5:14b,0,2026-06-17T19:15:56.030070,project_05,title_desc,incompleteness,few_shot
+ISSUE-252701,Update documentation for Text Search,1,1,Yes,0c8f834ff4d1cbde,qwen2.5:14b,0,2026-06-17T19:15:57.048941,project_05,title_desc,incompleteness,few_shot
+ISSUE-255572,Morphia Integration in java driver,0,1,Yes,51dac1a8e0aff840,qwen2.5:14b,0,2026-06-17T19:15:58.098986,project_05,title_desc,incompleteness,few_shot
+ISSUE-255511,Respect the QueryFailure response flag in OP_REPLY,0,1,Yes,c1ab987a221732e7,qwen2.5:14b,0,2026-06-17T19:15:59.073998,project_05,title_desc,incompleteness,few_shot
+ISSUE-254614,2.12.x breaks compatibility with mongoDB v1.8,0,0,No,030b97e7ccbf1f94,qwen2.5:14b,0,2026-06-17T19:16:00.083895,project_05,title_desc,incompleteness,few_shot
+ISSUE-253354,Deprecate DBCursor#addSpecial,1,1,Yes,ab7aaefa81f65270,qwen2.5:14b,0,2026-06-17T19:16:01.064870,project_05,title_desc,incompleteness,few_shot
+ISSUE-255153,update description of fsync write concern flag,0,1,Yes,606e45bacdd7cb0c,qwen2.5:14b,0,2026-06-17T19:16:02.067694,project_05,title_desc,incompleteness,few_shot
+ISSUE-255938,DBCursor.copy() does not copy batch size,0,1,Yes,0438e012b596d022,qwen2.5:14b,0,2026-06-17T19:16:03.081180,project_05,title_desc,incompleteness,few_shot
+ISSUE-253697,"upload mo artifacts"""" Evergreen post-task is failing",0,1,Yes,718ad6eb4d042fbd,qwen2.5:14b,0,2026-06-17T19:16:05.296741,project_05,title_desc,incompleteness,few_shot
+ISSUE-253111,minWireVersion is 1 but it should be 2,0,1,Yes,fa68365a6336e6d3,qwen2.5:14b,0,2026-06-17T19:16:06.563796,project_05,title_desc,incompleteness,few_shot
+ISSUE-252640,Documentation links 404,0,1,Yes,22463badaf81ec15,qwen2.5:14b,0,2026-06-17T19:16:07.264319,project_05,title_desc,incompleteness,few_shot
+ISSUE-255236,DBObject.equals can fail when binary data exists,1,1,Yes,fb40730fc7e3c0cc,qwen2.5:14b,0,2026-06-17T19:16:08.369214,project_05,title_desc,incompleteness,few_shot
+ISSUE-255324,Increase GridFS max chunk size,0,1,Yes,2b51a9c0d5debc73,qwen2.5:14b,0,2026-06-17T19:16:09.489596,project_05,title_desc,incompleteness,few_shot
+ISSUE-254743,Server selection exception should chain exceptions from server monitors,1,1,Yes,6e97f64770650c4c,qwen2.5:14b,0,2026-06-17T19:16:10.379719,project_05,title_desc,incompleteness,few_shot
+ISSUE-253069,Remove mongodb-driver-embedded-android package,0,1,Yes,183ea1d7a6823a50,qwen2.5:14b,0,2026-06-17T19:16:11.451364,project_05,title_desc,incompleteness,few_shot
+ISSUE-254867,Add type-safe jsMode support in MapReduceCommand,0,1,Yes,065e3a6bdf839b3b,qwen2.5:14b,0,2026-06-17T19:16:12.367882,project_05,title_desc,incompleteness,few_shot
+ISSUE-252707,Storing unsigned integer to Mongodb from java,0,0,No,4e2d87eeae348bcc,qwen2.5:14b,0,2026-06-17T19:16:13.385132,project_05,title_desc,incompleteness,few_shot
+ISSUE-255700,Possible bug with JSON parser,1,1,Yes,621f5e8218df4e91,qwen2.5:14b,0,2026-06-17T19:16:14.312865,project_05,title_desc,incompleteness,few_shot
+ISSUE-253917,$geoNear Aggregation pipeline in Mongo JAVA driver,0,1,Yes,e66235862399a68a,qwen2.5:14b,0,2026-06-17T19:16:15.328026,project_05,title_desc,incompleteness,few_shot
+ISSUE-254894,The aggregation method is inaccurately showing type,1,1,Yes,754614880d6ee61a,qwen2.5:14b,0,2026-06-17T19:16:16.282070,project_05,title_desc,incompleteness,few_shot
+ISSUE-253334,Deprecate MongoIterable#forEach,0,1,Yes,50e4925046cef9c0,qwen2.5:14b,0,2026-06-17T19:16:17.378047,project_05,title_desc,incompleteness,few_shot
+ISSUE-255443,Errors when DBRef's $id is Object instead of simple value,0,1,Yes,25d342d50ad3e1ce,qwen2.5:14b,0,2026-06-17T19:16:18.310413,project_05,title_desc,incompleteness,few_shot
+ISSUE-253221,mongodb+srv schema can cause NullPointerException,0,1,Yes,bf5cf00899c2d985,qwen2.5:14b,0,2026-06-17T19:16:19.369085,project_05,title_desc,incompleteness,few_shot
+ISSUE-253502,Re-enable write concern tests for dropDatabase command,0,1,Yes,e87dea3dc744b3f1,qwen2.5:14b,0,2026-06-17T19:16:20.366263,project_05,title_desc,incompleteness,few_shot
+ISSUE-255435,Thread Locals not being freed in thread pool,0,0,No,d322cf96b028fc28,qwen2.5:14b,0,2026-06-17T19:16:21.382169,project_05,title_desc,incompleteness,few_shot
+ISSUE-255744,authentication for replica set fails frequently because 'getnonce' and 'authenticate' command is issued to different server,0,1,Yes,6334532c67d937e7,qwen2.5:14b,0,2026-06-17T19:16:22.348957,project_05,title_desc,incompleteness,few_shot
+ISSUE-255326,No Such Method Exception When Instantiating Mongo Client,0,0,No,bfbc27322c1903f8,qwen2.5:14b,0,2026-06-17T19:16:23.445202,project_05,title_desc,incompleteness,few_shot
+ISSUE-255548,Stackoverflow when querying document with cycle reference using DBRef,1,1,Yes,de710de7dd419b9e,qwen2.5:14b,0,2026-06-17T19:16:24.467753,project_05,title_desc,incompleteness,few_shot
+ISSUE-254528,Add MongoCollection.dropIndex(Bson keys),0,1,Yes,b0bb06f74349f920,qwen2.5:14b,0,2026-06-17T19:16:25.374074,project_05,title_desc,incompleteness,few_shot
+ISSUE-254203,Add equals() and toString() to Updates,0,1,Yes,f933963ab949a983,qwen2.5:14b,0,2026-06-17T19:16:26.367703,project_05,title_desc,incompleteness,few_shot
+ISSUE-254082,Connection and thread leakage in DefaultServerMonitor,1,1,Yes,fe87635f35813ade,qwen2.5:14b,0,2026-06-17T19:16:27.372752,project_05,title_desc,incompleteness,few_shot
+ISSUE-253763,Reduce size of Evergreen matrix,0,1,Yes,bac304304e2292e4,qwen2.5:14b,0,2026-06-17T19:16:28.363647,project_05,title_desc,incompleteness,few_shot
+ISSUE-254130,Ensure Loggers are past to ErrorHandlingCallbacks,0,1,Yes,10e2dbdcd6e8d9d5,qwen2.5:14b,0,2026-06-17T19:16:29.327630,project_05,title_desc,incompleteness,few_shot
+ISSUE-253459,how to implement nested query in java API,1,1,Yes,748a4df959e07c19,qwen2.5:14b,0,2026-06-17T19:16:30.388230,project_05,title_desc,incompleteness,few_shot
+ISSUE-255998,Tried to save too large of an object. max size: 2098176,0,1,Yes,dd106b89f6f2934f,qwen2.5:14b,0,2026-06-17T19:16:31.474459,project_05,title_desc,incompleteness,few_shot
+ISSUE-254903,REPLICA_ACKNOWLEDGED not working at the time of arbiter Node,1,1,Yes,3810c096d9614c6e,qwen2.5:14b,0,2026-06-17T19:16:32.365879,project_05,title_desc,incompleteness,few_shot
+ISSUE-253040,mavenLocal should be first repository,0,1,Yes,e4a3f04d0d3a7dc2,qwen2.5:14b,0,2026-06-17T19:16:33.330609,project_05,title_desc,incompleteness,few_shot
+ISSUE-255829,Publish maven SNAPSHOTs,0,1,Yes,7b666cff9f73f1fb,qwen2.5:14b,0,2026-06-17T19:16:34.373439,project_05,title_desc,incompleteness,few_shot
+ISSUE-253678,Document new Pojo updates,0,1,Yes,27e6c610ac713cc9,qwen2.5:14b,0,2026-06-17T19:16:35.353549,project_05,title_desc,incompleteness,few_shot
+ISSUE-255807,Allow bson decoder per operation (find/cusor),0,1,Yes,970c6afda6f7163c,qwen2.5:14b,0,2026-06-17T19:16:36.369286,project_05,title_desc,incompleteness,few_shot
+ISSUE-252979,Remove CLIRR support from the build,0,1,Yes,7946469d12569f8f,qwen2.5:14b,0,2026-06-17T19:16:37.376306,project_05,title_desc,incompleteness,few_shot
+ISSUE-252775,Multiple reads of BsonBinary UUID return different results,0,1,Yes,82c60f6d16459f65,qwen2.5:14b,0,2026-06-17T19:16:38.362253,project_05,title_desc,incompleteness,few_shot
+ISSUE-254111,Allow setting of standard server selection and server monitoring options in the connection string,0,1,Yes,7d0dd1565a4f235a,qwen2.5:14b,0,2026-06-17T19:16:39.427709,project_05,title_desc,incompleteness,few_shot
+ISSUE-255459,Aggregate and mapReduce commands sent to mongos break when setting read preference,0,1,Yes,5941ed94d2eb1ad4,qwen2.5:14b,0,2026-06-17T19:16:40.373823,project_05,title_desc,incompleteness,few_shot
+ISSUE-253919,DBCollection.distinct() fails when a null value is in the result,1,1,Yes,2917e2600aaff37d,qwen2.5:14b,0,2026-06-17T19:16:41.363930,project_05,title_desc,incompleteness,few_shot
+ISSUE-254628,Force slaveOK on a direct connection to a replica set membe,0,1,Yes,5786ec8db8f4e484,qwen2.5:14b,0,2026-06-17T19:16:42.385397,project_05,title_desc,incompleteness,few_shot
+ISSUE-255956,Use weakrefs for static list of Mongo instances,0,1,Yes,444945592699907d,qwen2.5:14b,0,2026-06-17T19:16:43.402982,project_05,title_desc,incompleteness,few_shot
+ISSUE-253509,Make Java driver spec compliant - FY2019Q2,0,1,Yes,56057276c41a7cda,qwen2.5:14b,0,2026-06-17T19:16:44.352642,project_05,title_desc,incompleteness,few_shot
+ISSUE-252673,GetMore not closing cursor after exception leading mongos to OOM,1,1,Yes,115a3d545b02ccec,qwen2.5:14b,0,2026-06-17T19:16:45.387061,project_05,title_desc,incompleteness,few_shot
+ISSUE-254365,Remove errant Javadoc for w = -1 in WriteConcern constructors.,0,1,Yes,d4c73879f38533ef,qwen2.5:14b,0,2026-06-17T19:16:46.376697,project_05,title_desc,incompleteness,few_shot
+ISSUE-253861,Add to Enum<JsonMode>,0,0,No,a7f8cfb42635a85d,qwen2.5:14b,0,2026-06-17T19:16:47.318566,project_05,title_desc,incompleteness,few_shot
+ISSUE-254940,Consider supporting writetimeout for sockets implementations that support it,0,1,Yes,f090d05678d0bf94,qwen2.5:14b,0,2026-06-17T19:16:48.382579,project_05,title_desc,incompleteness,few_shot
+ISSUE-252879,MongoClient.listCollectionNames() returns truncated names,0,1,Yes,32fc1a697b919413,qwen2.5:14b,0,2026-06-17T19:16:49.364059,project_05,title_desc,incompleteness,few_shot
+ISSUE-255508,Connection timeout is ignored in ConnectionStatus,0,1,Yes,6156692a7de25dad,qwen2.5:14b,0,2026-06-17T19:16:50.302678,project_05,title_desc,incompleteness,few_shot
+ISSUE-252730,Test that readPreferenceTags are always interpreted as an array,0,1,Yes,2e512218c7f0dc07,qwen2.5:14b,0,2026-06-17T19:16:51.517194,project_05,title_desc,incompleteness,few_shot
+ISSUE-255584,skip() throw exception with the source code version 2.7.2-141,0,1,Yes,4c2c708363a0fe7c,qwen2.5:14b,0,2026-06-17T19:16:52.369843,project_05,title_desc,incompleteness,few_shot
+ISSUE-253722,Add more host types to run on in Evergreen,0,1,Yes,655ac8dfa403b4e6,qwen2.5:14b,0,2026-06-17T19:16:53.387572,project_05,title_desc,incompleteness,few_shot
+ISSUE-255096,remove ensureIndex() methods,0,1,Yes,f2955226468441b0,qwen2.5:14b,0,2026-06-17T19:16:54.359986,project_05,title_desc,incompleteness,few_shot
+ISSUE-252635,Replace default signatory in Gradle signing plugin with notary service,0,1,Yes,3ccd9285c4ed58f2,qwen2.5:14b,0,2026-06-17T19:16:55.356097,project_05,title_desc,incompleteness,few_shot
+ISSUE-252884,Revert NPE error handling in Reactive Streams driver,0,1,Yes,4f70f1e4233b8eec,qwen2.5:14b,0,2026-06-17T19:16:56.363994,project_05,title_desc,incompleteness,few_shot
+ISSUE-252572,Median and Percentile Accumulators,0,1,Yes,f357f4aae7b03841,qwen2.5:14b,0,2026-06-17T19:16:57.574722,project_05,title_desc,incompleteness,few_shot
+ISSUE-254092,DBCollection aggregate methods that take AggregationOptions fail to set slaveOk bit when read preference demands it,0,1,Yes,c15583f4c340d38b,qwen2.5:14b,0,2026-06-17T19:16:58.397851,project_05,title_desc,incompleteness,few_shot
+ISSUE-252719,Add tests for allowed cases when authSource is given but username is not,0,1,Yes,6f67e9144f6a5dd2,qwen2.5:14b,0,2026-06-17T19:16:59.374714,project_05,title_desc,incompleteness,few_shot
+ISSUE-254567,Regression applying read preference with tag set,0,0,No,c82e114c3669bee0,qwen2.5:14b,0,2026-06-17T19:17:00.400202,project_05,title_desc,incompleteness,few_shot
+ISSUE-253271,"Remove QueryBatchCursorFunctionalSpecification """"should get more from a secondary"""" test",0,0,No,7a8eb9edd04921a8,qwen2.5:14b,0,2026-06-17T19:17:01.486103,project_05,title_desc,incompleteness,few_shot
+ISSUE-255652,Driver does not support field negation,0,1,Yes,5e3371ab1172a8a6,qwen2.5:14b,0,2026-06-17T19:17:02.458303,project_05,title_desc,incompleteness,few_shot
+ISSUE-252711,Support package scanning for Discriminators,0,1,Yes,d249ea1c4e647cce,qwen2.5:14b,0,2026-06-17T19:17:03.365832,project_05,title_desc,incompleteness,few_shot
+ISSUE-254972,Remove deprecated methods from MapReduceOutput,0,1,Yes,20b2a60ffd507272,qwen2.5:14b,0,2026-06-17T19:17:04.386601,project_05,title_desc,incompleteness,few_shot
+ISSUE-255595,Add getters/setters to MongoOptions class,0,1,Yes,0347f92e0d4eb24c,qwen2.5:14b,0,2026-06-17T19:17:05.365922,project_05,title_desc,incompleteness,few_shot
+ISSUE-254357,Add .save and .saveMany to MongoCollection,0,1,Yes,e7e1c001ebef93bb,qwen2.5:14b,0,2026-06-17T19:17:06.391504,project_05,title_desc,incompleteness,few_shot
+ISSUE-253658,Name driver modules using Automatic-Module-Name,0,1,Yes,5fb41d6046dcb570,qwen2.5:14b,0,2026-06-17T19:17:07.360868,project_05,title_desc,incompleteness,few_shot
+ISSUE-254032,GridFSDownloadStream - exception when destination buffer size != file chunk size,0,1,Yes,3352e4b7bd0752f3,qwen2.5:14b,0,2026-06-17T19:17:08.365839,project_05,title_desc,incompleteness,few_shot
+ISSUE-256021,JSON.parse() and serialize() do not preserve the _id field across serializations as expected,0,1,Yes,6630b20bf48f9b4b,qwen2.5:14b,0,2026-06-17T19:17:09.364052,project_05,title_desc,incompleteness,few_shot
+ISSUE-254447,Improve runCommand API documentation,0,1,Yes,3b15964058905531,qwen2.5:14b,0,2026-06-17T19:17:10.361242,project_05,title_desc,incompleteness,few_shot
+ISSUE-255432,Binary class should implements equals and hashCode,0,1,Yes,2db708a57152f707,qwen2.5:14b,0,2026-06-17T19:17:11.371476,project_05,title_desc,incompleteness,few_shot
+ISSUE-253042,Java driver 3.11 page still says 3.10,0,1,Yes,ee77eeeecb4a800e,qwen2.5:14b,0,2026-06-17T19:17:12.494188,project_05,title_desc,incompleteness,few_shot
+ISSUE-253390,Change Stream startAtOperationTime MongoCommandException,0,1,Yes,de36791226f54666,qwen2.5:14b,0,2026-06-17T19:17:13.324267,project_05,title_desc,incompleteness,few_shot

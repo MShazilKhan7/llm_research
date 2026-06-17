@@ -1,0 +1,918 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-38493,Review API Runtime Services Documentation,0,1,"Reasoning: The issue description provides a clear task of reviewing specific documentation pages and confirming if updates are necessary. However, it lacks several essential pieces of information:
+- Steps to reproduce or verify the need for updates.
+- Expected vs actual behavior.
+- Acceptance criteria for what constitutes an update being ""necessary.""
+- Affected components or environment details.
+
+Final Answer: Yes",02893047e0c4af7e,qwen2.5:14b,0,2026-06-17T16:21:11.995868,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38975,Tutorial Series: Customize for Android,0,1,"Reasoning: The description lacks essential details such as specific UI features to be customized, acceptance criteria for what constitutes an ""Android-specific"" customization, affected components or modules of the application, and any environment or platform requirements. Without these specifics, it's impossible to fully understand the scope and requirements of this task.
+
+Final Answer: Yes",a51156428a142c25,qwen2.5:14b,0,2026-06-17T16:21:14.041494,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40855,APIDoc: Window.modalStyle and modalTransitionStyle properties are undocumented,0,1,"Step-by-Step Reasoning:
+1. The issue title clearly identifies the problem: ""APIDoc: Window.modalStyle and modalTransitionStyle properties are undocumented.""
+2. The description provides context about where these properties are used (""KS (modal_windows.js)"") and mentioned in sample code within the documentation.
+3. It also points out that these properties are not listed in the properties section of the API documentation, which is a clear gap.
+
+However:
+1. Missing: Steps to reproduce the issue or verify its existence beyond noting it's missing from documentation.
+2. Missing: Expected vs actual behavior (though implied).
+3. Missing: Acceptance criteria for resolving this issue.
+4. Missing: Affected components and environment details.
+
+Despite providing some useful information, the description lacks critical elements needed to fully understand and resolve the issue.
+
+Final Answer: Yes",6bdb201cd2bc3379,qwen2.5:14b,0,2026-06-17T16:21:17.911588,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40336,APIDoc: Check all deprecated API members for appropriate message,0,1,"Reasoning: The issue description provides a clear set of tasks related to checking deprecated API members and ensuring appropriate deprecation messages are added or restored. However, it lacks several critical pieces of information:
+1. Steps to reproduce the issue or how to verify if these checks have been implemented correctly.
+2. Expected vs actual behavior is not clearly defined; there's no explicit mention of what should be observed after implementing the changes.
+3. Acceptance criteria are missing – there’s no clear definition of when this task can be considered complete.
+4. Affected components or environment details are not specified, such as which API versions or specific members need to be checked.
+
+Final Answer: Yes",3be26ae70e102aa1,qwen2.5:14b,0,2026-06-17T16:21:21.133298,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38324,Create Appcelerator Studio Guide page,0,1,"Reasoning: The description lacks essential details such as what specific content needs to be created or reorganized, how it should look like, which sections of the Guide page are affected, and any acceptance criteria for completion. Without these specifics, it's impossible to fully understand the scope and requirements of this task.
+
+Final Answer: Yes",bb7eb990cb7e5923,qwen2.5:14b,0,2026-06-17T16:21:23.108753,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39589,Update Android Menu docs re: overflow (...) menu on devices with hardware menu button,0,1,"Step-by-step reasoning:
+
+1. **Title and Description Analysis**:
+   - The title mentions updating Android Menu documentation regarding the overflow menu on devices with a hardware menu button.
+   - The description provides context from an Android developer guide about how actions are handled in the action bar, including references to both software and hardware buttons.
+
+2. **Missing Information Check**:
+   - Steps to reproduce: Not applicable for documentation updates.
+   - Expected vs actual behavior: This is not a bug report but a request for documentation update; hence, no expected vs actual behavior needs to be specified here.
+   - Acceptance criteria: The description does not provide specific acceptance criteria or requirements for the updated documentation.
+   - Affected components: Documentation only, which is clear from the context.
+   - Environment details: Not necessary as this pertains to general Android documentation.
+
+3. **Completeness Evaluation**:
+   - While the issue provides a clear request and some background information, it lacks specific acceptance criteria or detailed requirements for what needs to be updated in the documentation. This makes it difficult to assess whether the update is complete or meets all necessary standards.
+
+Final Answer: Yes",4ef8bf043f0b8fa3,qwen2.5:14b,0,2026-06-17T16:21:28.028616,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38275,Rename AMPLIFY Appcelerator Services to Axway Mobile Analytics,0,1,"Step-by-Step Reasoning:
+1. The title and description indicate a clear task: renaming certain elements within the API developer tile.
+2. The description specifies what needs to be renamed but does not include any acceptance criteria or expected behavior after the renaming is completed.
+3. There are no steps provided on how to reproduce this change, nor are there details about which components will be affected by this change.
+4. No environment details or specific conditions under which this task should be performed are mentioned.
+
+Given these points, while the description provides a clear action item, it lacks essential information such as acceptance criteria and detailed reproduction steps, making it incomplete for thorough analysis and implementation.
+
+Final Answer: Yes",8128d741d47c5b7e,qwen2.5:14b,0,2026-06-17T16:21:31.361646,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38193,Remove very outdated Ti.Map documentation,0,1,"Reasoning:
+- The title and description indicate that outdated documentation for Ti.Map should be removed.
+- A specific URL to the outdated documentation is provided: https://docs.appcelerator.com/platform/latest/#!/api/Titanium.Map.View
+- It mentions that this has been replaced by a standalone module since version 3.x, but does not specify which version or exact replacement details.
+- A PR link (https://github.com/appcelerator/titanium_mobile/pull/9970) is provided, indicating the change was proposed and likely implemented.
+
+However:
+- The description lacks clear acceptance criteria for what needs to be done with the documentation.
+- There are no specific steps or instructions on how to update or remove the outdated content.
+- No environment details or affected components are mentioned beyond a vague reference to version 3.x.
+
+Final Answer: Yes",878ed0d3389e1508,qwen2.5:14b,0,2026-06-17T16:21:35.217166,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40376,Docs: Code highlighting incorrectly applied to some example blocks,0,1,"Reasoning: The issue description mentions that code highlighting is incorrectly applied to some example blocks on a specific documentation page. However, the description lacks several critical pieces of information:
+1. Steps to reproduce the issue.
+2. Expected vs actual behavior.
+3. Affected components or modules.
+4. Environment details (e.g., browser version, operating system).
+5. Acceptance criteria for resolving the issue.
+
+While it provides a specific example and points out where the problem occurs, it does not provide enough information to fully understand or resolve the issue.
+
+Final Answer: Yes",45dd282ac32afb2e,qwen2.5:14b,0,2026-06-17T16:21:38.021976,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39190,Fix link to View.touchEnabled from View.enabled,0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions fixing a link issue from `View.touchEnabled` to `View.enabled`. However, the description is unclear and seems to be cut off or incorrectly formatted.
+2. **Reproduction Steps**: There are no clear steps provided on how to reproduce this issue.
+3. **Expected vs Actual Behaviour**:
+   - Expected: Links should point correctly to `http://docs.appcelerator.com/titanium/latest/#!/api/Titanium.UI.View-property-touchEnabled`.
+   - Actual: The link points to `View.enabled`, which is deprecated.
+4. **Acceptance Criteria**: There are no acceptance criteria specified for what constitutes a fix or how the issue should be resolved.
+5. **Affected Components and Environment Details**:
+   - Affected Component: Documentation links in Titanium UI View properties.
+   - Missing: Specific environment details (e.g., version of Titanium SDK, browser used).
+
+Given these points, the description is incomplete as it lacks clear reproduction steps, acceptance criteria, and detailed environment information.
+
+Final Answer: Yes",d91002b7319587e8,qwen2.5:14b,0,2026-06-17T16:21:42.784254,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38138,Create and publish release note for SDK 7.3.1.RC,0,1,"Reasoning: The description ""Create and publish SDK 7.3.1.RC release note"" is very brief and lacks essential details such as:
+- What information should be included in the release notes?
+- Where should the release notes be published?
+- Are there any specific guidelines or templates to follow for creating the release notes?
+- Is there a deadline for this task?
+
+Without these critical pieces of information, it's impossible to fully understand and act upon the request.
+
+Final Answer: Yes",67fa8235963633e2,qwen2.5:14b,0,2026-06-17T16:21:45.415586,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38570,Create and publish release note for Arrow 1.10.0,0,1,"Reasoning:
+- The title specifies the task to create and publish a release note for Arrow 1.10.0.
+- The description provides a link to the release board but lacks details on what information should be included in the release notes, how it should be formatted, who is responsible for reviewing/approving the release notes before publishing, or any acceptance criteria that would define when this task is complete.
+
+Missing essential information:
+1. Content guidelines or template for the release note.
+2. Acceptance criteria (e.g., review process, approval steps).
+3. Specific details on what changes are included in Arrow 1.10.0 and how they should be documented.
+
+Final Answer: Yes",73086a7890950d6d,qwen2.5:14b,0,2026-06-17T16:21:48.715948,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39606,APIDoc: Geolocation documentation - potential error add remove event listener,0,1,"Reasoning: The issue description provides a detailed analysis of the current documentation and suggests an improvement for the Titanium.Geolocation event listener removal process. It includes specific examples of how to add and remove listeners in the context of geolocation events. However, it lacks clear acceptance criteria or steps to reproduce any issues with the existing documentation. Additionally, there is no mention of affected components or environment details.
+
+Final Answer: Yes",bbafe4461bae1e97,qwen2.5:14b,0,2026-06-17T16:21:51.012302,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40579,Doc BUG: Titanium.UI.iPad.Popover explicitly requires a View as child but in fact requires a Window,0,1,"Step-by-Step Reasoning:
+1. The issue title clearly identifies the problem with documentation for Titanium.UI.iPad.Popover.
+2. The description provides specific details about what is wrong in the documentation: it states that a View must be used as a child, but actually, a Window or NavigationGroup can be used.
+3. It mentions an exact URL where incorrect information exists (http://developer.appcelerator.com/apidoc/mobile/latest/Titanium.UI.iPad.Popover.add-method.html).
+4. The issue provides additional context by mentioning that the add method documentation is also wrong and specifies that a Window or NavigationGroup can be used.
+5. However, there are no steps to reproduce the problem, expected vs actual behavior beyond what's described in terms of documentation accuracy, acceptance criteria for fixing this issue, affected components other than the documentation itself, or environment details.
+
+Given these points, while the description is detailed about the nature of the bug and where it exists, it lacks some essential information typically required to fully understand and resolve a software issue (like steps to reproduce, expected vs actual behavior in terms of functionality rather than just documentation).
+
+Final Answer: Yes",d990a3ec94be6f7c,qwen2.5:14b,0,2026-06-17T16:21:56.095831,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40465,APIDOC: Ti.UI.TableViewSection.borderRadius does not work,0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions a specific API issue with `Ti.UI.TableViewSection.borderRadius`. The description provides some context but lacks clarity on the exact steps to reproduce the problem.
+2. **Reproduction Steps**: There is a small test case provided, which helps in understanding how the code should be set up. However, it does not explicitly state what changes were made to `borderRadius` and what was expected as a result.
+3. **Expected vs Actual Behavior**: The description mentions that altering the value of `Ti.UI.TableViewSelection.borderRadius` doesn't seem to have any effect, but there is no clear statement about what the expected behavior should be or how it differs from the actual observed behavior.
+4. **Environment Details**: The issue states that this was tested in an iOS simulator only and not on other platforms. This provides some context but lacks details such as specific versions of Titanium SDK, OS version, etc.
+5. **Acceptance Criteria**: There are no acceptance criteria mentioned to determine when the issue would be considered resolved.
+
+Given these points, while there is a basic understanding of the problem, essential information like clear reproduction steps and expected vs actual behavior is missing.
+
+Final Answer: Yes",61ae545a866e0516,qwen2.5:14b,0,2026-06-17T16:22:01.577103,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38497,New documentation page needed for API Builder -> Swagger Specifications,0,1,"Reasoning:
+- The title and description indicate that a new documentation page is needed.
+- However, the description lacks specific details such as what information should be included on this new page, who will use it, how it fits into existing documentation, or any acceptance criteria for completion.
+- There's no mention of steps to reproduce an issue (though there isn't one here), expected vs actual behavior, affected components, or environment details.
+
+Final Answer: Yes",e7fb95f7eb39c7f2,qwen2.5:14b,0,2026-06-17T16:22:04.061103,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39864,ACS User - need to be able to delete user without logging in as that user,0,0,"Step-by-Step Reasoning:
+1. **Title**: The title ""ACS User - need to be able to delete user without logging in as that user"" is clear about the requirement but lacks detail.
+2. **Description**:
+   - It mentions a current limitation where deleting a user requires being logged in as that user.
+   - A reference to documentation indicating this behavior is provided (http://docs.appcelerator.com/titanium/latest/#/api/Users-method-delete).
+   - The issue highlights a business need from EMC to delete users without logging into their account, which implies an administrative feature request.
+   - It mentions the possibility that the current documentation might be incorrect and suggests support for this functionality.
+   - However, it lacks specific details on how to test or implement this change (e.g., syntax using curl commands is not provided).
+
+3. **Missing Information**:
+   - Steps to reproduce: Not explicitly stated but implied through the context of needing to log in as a user to delete them.
+   - Expected vs Actual Behaviour: The expected behavior is clear (delete users from an admin account), but actual current behavior and how it differs are not detailed enough for testing or implementation.
+   - Acceptance Criteria: Missing. There's no clear acceptance criteria defined,",4e865dc78890fdb9,qwen2.5:14b,0,2026-06-17T16:22:09.399481,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38249,Create and publish release note for API Builder 3.0.0,0,1,"Reasoning:
+- The title mentions creating and publishing a release note for API Builder 3.0.0.
+- The description states that an update needs to be made to include the entry for this release and publish the API Builder Zoomin bundle to production, which is already in sandbox as per Chuck's request.
+
+However, the issue lacks several critical details:
+1. What specific changes or updates are included in the release note?
+2. Are there any acceptance criteria defined for what constitutes a successful completion of this task?
+3. Is there a timeline or deadline mentioned for when these actions should be completed?
+4. Who is responsible for reviewing and approving the release notes before publishing them to production?
+
+Without these details, it's challenging to fully understand the scope and requirements of the issue.
+
+Final Answer: Yes",e046288c7e8ac5fe,qwen2.5:14b,0,2026-06-17T16:22:13.151719,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38348,Improve the doc navigation,0,1,"Step-by-Step Reasoning:
+1. The title ""Improve the doc navigation"" is vague and does not specify a particular issue or enhancement.
+2. The description mentions that it would be beneficial to have consistent navigation throughout the documentation site but lacks specific details on what needs improvement, how it should look after improvements, or any acceptance criteria.
+3. It lists products that need content arrangement but doesn't provide clear instructions or examples of how this should be done.
+4. A model for navigation is provided, but there are no steps to reproduce an issue, expected vs actual behavior, or environment details.
+5. The description does not specify who will implement the changes, what tools or technologies are involved, or any timelines.
+
+Final Answer: Yes",40503ccdf05c364d,qwen2.5:14b,0,2026-06-17T16:22:16.634376,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38714,incorrect link,0,1,"Step-by-Step Reasoning:
+1. The title ""incorrect link"" is vague and does not provide enough context.
+2. The description mentions that there's an incorrect link in a specific location (""Documents->View -> UI Composite Layout Specs"").
+3. It provides the URL of the incorrect content: http://docs.appcelerator.com/platform/latest/!/guide/UI_Composite_Layout_Behavior_Spec
+4. A screenshot is mentioned, but it’s not included in the description.
+5. The expected behavior or acceptance criteria are missing.
+6. Steps to reproduce the issue are not provided.
+7. Affected components and environment details (e.g., browser version, operating system) are not specified.
+
+Given these points, the issue lacks critical information such as steps to reproduce, expected vs actual behaviour, acceptance criteria, affected components, or environment details.
+
+Final Answer: Yes",e033ac01e91a5483,qwen2.5:14b,0,2026-06-17T16:22:20.509431,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38876,404 page is (unformatted) landing page,0,1,"Step-by-Step Reasoning:
+1. The issue title and description indicate that there is a problem with 404 pages for the documentation.
+2. It mentions two scenarios where invalid URLs are encountered: one under a specific path (`}`) and another in the root directory.
+3. For both cases, it describes what happens but does not specify what should happen (expected behavior).
+4. There are no steps provided to reproduce the issue.
+5. No acceptance criteria or affected components are mentioned.
+6. The environment details are vague; it mentions URLs but doesn't provide specific versions of software or browser requirements.
+
+Given these points, the description lacks essential information such as expected behavior and reproduction steps.
+
+Final Answer: Yes",07271d3cf3ee1dcf,qwen2.5:14b,0,2026-06-17T16:22:23.860295,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38300,Add a migration banner to all pages in the guides2 space,0,1,"Reasoning:
+- The title and description mention adding a banner to all pages in the guides2 space.
+- The text for the banner is provided: ""All Appcelerator documentation, with the exception of API documentation, has moved to docs.axway.com. This site will eventually be retired.""
+- However, there are no details about:
+  - How the script should work (technical implementation).
+  - Which specific pages or conditions trigger the banner.
+  - Acceptance criteria for when the task is complete.
+  - Affected components or environment details.
+
+Final Answer: Yes",c68d15bda35a9be9,qwen2.5:14b,0,2026-06-17T16:22:26.702937,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38460,web site link doesn't exist,0,1,"Reasoning: The issue description mentions that a webex link does not exist when clicking the 'View Webinar' button on a specific webpage. However, it lacks several critical details:
+1. Steps to reproduce the issue.
+2. Expected vs actual behavior.
+3. Affected components or environment details (e.g., browser type and version).
+4. Acceptance criteria for resolving the issue.
+
+Final Answer: Yes",a507135c125b326f,qwen2.5:14b,0,2026-06-17T16:22:28.929810,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40544,Android: documentation about how to handle Android app first run is missing,0,0,"Step-by-step reasoning:
+
+1. **Title and Description Analysis**:
+   - The title mentions that documentation about handling Android app first run is missing.
+   - The description provides context about a specific issue related to restarting the app after installation from the market, links to Google bugs, and references an existing workaround.
+
+2. **Missing Information Check**:
+   - Steps to reproduce: Not explicitly provided but implied by the need for documentation on handling the restart behavior.
+   - Expected vs Actual Behavior: The actual behavior is that apps need to be restarted; expected behavior isn't clearly stated beyond graceful handling of this issue.
+   - Acceptance Criteria: No acceptance criteria are mentioned (e.g., what should happen after implementing the solution).
+   - Affected Components: Not specified, but it's related to Android app installation and first run.
+   - Environment Details: The environment is implied as Android devices from a market download context.
+
+3. **Completeness Evaluation**:
+   - While the issue provides some background information and links to relevant bugs, it lacks clear acceptance criteria, expected behavior, and detailed steps for developers on how to handle this situation effectively.
+   - There's no specific guidance or documentation provided within the description itself that would help developers understand what needs to be done.
+
+Final",bcd062fc70a0b8d8,qwen2.5:14b,0,2026-06-17T16:22:34.196987,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39279,iOS: createEmailDialog method doesn't work on some devices,0,-1,"Step-by-Step Reasoning:
+1. **Title and Description**: The title mentions that the `createEmailDialog` method doesn't work on some devices but does not specify which ones or why.
+2. **Reproduction Steps**: The description provides specific scenarios where it works and doesn’t work, including different simulators and actual devices with their respective iOS versions.
+3. **Expected vs Actual Behaviour**:
+   - Expected: Email dialog should appear when `emailDialog.open()` is called.
+   - Actual: On some devices/simulators, the email dialog does not appear or shows a message indicating that sending emails isn't supported.
+4. **Acceptance Criteria**: Not explicitly stated but implied by the scenarios provided.
+5. **Affected Components**:
+   - Affected component: `Ti.UI.createEmailDialog()`
+6. **Environment Details**:
+   - Devices and simulators mentioned (iOS 7 simulator, iOS 8 simulator, iPad 2 with iOS 7, iPad mini retina with iOS 8, iPad air with iOS 7).
+
+The issue description provides detailed information about the scenarios where the method works or doesn’t work, including specific device models and their respective iOS versions. This gives a clear picture of the problem and helps in reproducing it",55aef1a1f933883c,qwen2.5:14b,0,2026-06-17T16:22:39.660871,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38926,Update iOS Interactive Notifications guide for Apple Watch,0,1,"Step-by-step reasoning:
+1. **Title**: The title is clear about what needs to be done: updating a guide for iOS Interactive Notifications on Apple Watch.
+2. **Description**:
+   - Mentions that the current guide does not cover Apple Watch.
+   - Provides a link to an existing sample project (https://github.com/appcelerator-developer-relations/appc-sample-notifywatch) which could be used as reference material.
+3. **Missing Information**:
+   - No specific acceptance criteria are provided (e.g., what should the updated guide include?).
+   - No details on how to test or verify if the update is correct.
+   - No information about affected components or environment details.
+
+Given these points, while there is a clear task and some guidance on where to find relevant material, essential elements like acceptance criteria and testing instructions are missing. This makes it difficult for someone to fully understand what needs to be done beyond updating the guide with Apple Watch content.
+
+Final Answer: Yes",5f567f5a429e3056,qwen2.5:14b,0,2026-06-17T16:22:44.138575,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40983,APIDoc: Remove click type events for mapview,0,0,"Step-by-Step Reasoning:
+1. The issue title is clear: ""APIDoc: Remove click type events for mapview"".
+2. The description provides a reference to an existing JIRA ticket (http://jira.appcelerator.org/browse/TIMOB-1104) which indicates that certain types of click events are not supported on mapviews.
+3. It specifies the exact nature of the problem: ""These events are still listed in the API docs and should be removed.""
+4. The description includes a clear action item (removing unsupported event types from the documentation).
+5. There is no missing information such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details because this issue pertains to updating documentation rather than fixing a software bug.
+
+Final Answer: No",2aabae8dc4f51a9d,qwen2.5:14b,0,2026-06-17T16:22:47.830698,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40873,APIDoc: ImageView Documentation clarification,0,0,"Step-by-Step Reasoning:
+1. The issue title is clear: ""APIDoc: ImageView Documentation clarification"".
+2. The description provides specific details about a discrepancy in the documentation for Titanium's `createImageView()` method.
+3. It includes examples demonstrating how specifying width and height does not scale the image on both axes as expected, which contradicts the current documentation notes.
+4. Suggestions are given to improve the accuracy of the documentation by providing more precise information regarding scaling behavior based on aspect ratio maintenance.
+5. The issue provides context about the discrepancy between the documented behavior and actual observed behavior across different platforms (iPhone and Android).
+6. It includes code snippets for reproduction, which helps in understanding the problem better.
+
+Given these points, the description is detailed enough to understand the issue, provide examples, and suggest improvements. Therefore, it does not lack essential information such as steps to reproduce, expected vs actual behaviour, acceptance criteria, affected components, or environment details.
+
+Final Answer: No",f9d9735979217ee0,qwen2.5:14b,0,2026-06-17T16:22:52.305926,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38583,Nodejs reset password token,0,0,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title ""Nodejs reset password token"" is vague but the description provides more context about a specific issue with the password reset process.
+2. **Reproduction Steps**: The user mentions that they are using their own email template for password resets, and when clicking on the link in the email, the `reset_password_token` does not seem to be passed correctly.
+3. **Expected vs Actual Behaviour**:
+   - Expected: When a user clicks on the reset password link from an email, it should include the `reset_password_token`.
+   - Actual: The token is missing or incorrectly handled when clicking the link in the email.
+4. **Acceptance Criteria**: Not explicitly stated but implied by the expected behavior and the issue encountered.
+5. **Affected Components**:
+   - Email template
+   - Password reset endpoint (URL)
+6. **Environment Details**: No specific environment details are provided, such as Node.js version or any other relevant configurations.
+
+While the description provides some context about the problem, it lacks clear reproduction steps that can be followed by others to reproduce the issue and does not specify acceptance criteria clearly. Additionally, there is no mention of the exact URL structure expected for the password reset",39b45fb337a5cccd,qwen2.5:14b,0,2026-06-17T16:22:57.778190,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38547,Create and publish release note for Alloy 1.9.2,0,1,"Reasoning: The title mentions ""Alloy 1.9.2"" but the description refers to ""Alloy 5.5.0"". There is a discrepancy between the version numbers in the title and the description. Additionally, there are no details about what should be included in the release note, how it should be published, or any acceptance criteria.
+
+Final Answer: Yes",3dd99079418af676,qwen2.5:14b,0,2026-06-17T16:23:00.019897,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39410,"Doctools: hide ACS REST API """"pseudo types"""" in API reference TOC",0,0,"Step-by-Step Reasoning:
+1. **Title**: The title is clear about the issue: hiding certain ""pseudo types"" from the API reference table of contents.
+2. **Description**:
+   - It explains that PushLogs and PushLogDetails are not actual REST API types but rather results returned by specific methods (`logs/querypushlogs` and `logs/querypushlogdetails`).
+   - The description states that these should be hidden in the TOC because they aren't real REST endpoints.
+3. **Missing Information**:
+   - Steps to reproduce: Not explicitly mentioned, but implied through understanding of the API documentation structure.
+   - Expected vs Actual Behaviour: Clearly stated (expected: hide pseudo types; actual: currently visible).
+   - Acceptance Criteria: Not provided in detail, but the goal is clear from the description.
+   - Affected Components: The TOC and possibly related documentation sections are affected.
+   - Environment Details: No specific environment details are required to understand or reproduce this issue.
+
+The description provides enough context for understanding the problem and what needs to be done. While acceptance criteria could be more detailed, the core requirement is clear from the given information.
+
+Final Answer: No",c8be7c3664bd2a65,qwen2.5:14b,0,2026-06-17T16:23:05.044319,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38316,Remove Mobile Web Support Reference from documentation,0,0,"Reasoning: The issue description provides clear information about the task to be performed and includes specific URLs where changes need to be made. It mentions that with the release of SDK 7.0, Mobile Web Support will be discontinued, and any references to it in the documentation should be removed. While there is no explicit mention of acceptance criteria or detailed steps for reproduction, the description is sufficiently clear about what needs to be done.
+
+Final Answer: No",ccf934708a35adf9,qwen2.5:14b,0,2026-06-17T16:23:07.532976,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40070,DocTools: Allow linking to guides sections by name in Cloud docs,0,1,"Reasoning:
+- The title mentions ""DocTools"" and a feature request for linking to guide sections by name.
+- The description states that currently, JSDuck only creates anchors with numbered sections.
+- It specifies the relevance of this issue to cloud docs which use the JSDuck guides format.
+- However, it lacks several critical pieces of information:
+  - Steps to reproduce or demonstrate the current behavior.
+  - Expected behavior after implementing the feature.
+  - Acceptance criteria for when the feature is complete.
+  - Affected components and environment details.
+
+Final Answer: Yes",a59b3b640f580a69,qwen2.5:14b,0,2026-06-17T16:23:10.366824,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38806,Alloy Map sample code needs to be updated,0,1,"Reasoning:
+- Title: ""Alloy Map sample code needs to be updated""
+- Description: Provides a link and mentions that the Alloy map sample should be updated but does not specify what exactly needs updating or how.
+  - Missing: Specific details about what part of the sample code needs updating, why it needs updating (e.g., deprecated syntax), steps to reproduce if there's an issue, acceptance criteria for when it is considered fixed, and affected components/screens.
+
+Final Answer: Yes",9cd669b61d236b06,qwen2.5:14b,0,2026-06-17T16:23:12.917061,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40752,As a Titanium developer,0,1,"Reasoning:
+- The title ""As a Titanium developer"" is incomplete and does not specify the user's role or context clearly.
+- The description mentions wanting access to complete and accurate APIDoc for specific APIs but lacks clarity on what exactly needs to be done, expected outcomes, acceptance criteria, affected components, or environment details.
+- It lists file names (Titanium/Database/Database.yml, Titanium/Database/DB.yml, Titanium/Database/ResultSet.yml) without explaining how these files should be used or modified.
+
+Final Answer: Yes",e28e8bef771af4f1,qwen2.5:14b,0,2026-06-17T16:23:15.598831,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38413,Update API Builder Doc landing page on Axway Doc Portal,0,1,"Step-by-Step Reasoning:
+1. The title mentions updating a specific landing page on the Axway Doc Portal.
+2. The description states that the current landing page for API Builder needs to be updated to reflect the latest release of the product.
+3. An attachment is mentioned, which presumably contains an outline of how the documentation should be structured.
+
+However:
+1. There are no clear steps provided to reproduce or implement this update.
+2. Expected vs actual behavior is not clearly defined; it's unclear what exactly needs to change on the landing page.
+3. Acceptance criteria for when the task is considered complete are missing.
+4. Affected components and environment details (such as which version of API Builder, specific URLs, etc.) are not provided.
+
+Final Answer: Yes",fa2ea41a32d0feb6,qwen2.5:14b,0,2026-06-17T16:23:19.167969,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40079,APIDoc: iOS: Sound player volume -- setting device volume,0,-1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title mentions ""APIDoc: iOS: Sound player volume -- setting device volume"" which indicates a documentation issue related to sound player volume settings on iOS.
+2. **Issue Context**: The description starts with documenting handling of device volume but then shifts to describing an actual problem with the sound player's volume being too low, especially on devices compared to simulators.
+3. **Problem Description**:
+   - Volume is described as being very low when playing sounds on a real device.
+   - Setting the volume to 1.0 does not make it very high.
+   - The volume does not depend on the device's overall volume settings.
+4. **Steps to Reproduce**: Provided steps are given for reproducing the issue:
+   - Create a sound player object using `Ti.Media.createSound()`.
+   - Play the sound and observe the low volume on an actual device.
+5. **Expected vs Actual Behaviour**:
+   - Expected: The sound should play at a reasonable volume, especially when set to maximum (1.0).
+   - Actual: Volume is very low even when set to 1.0.
+6. **Missing Information**: 
+   - Acceptance criteria are not provided",1feb6351305c029b,qwen2.5:14b,0,2026-06-17T16:23:24.471860,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39208,Clarify 'autoStyle' docs,0,0,"Reasoning:
+- Title and Description are clear about the issue being related to documentation clarification.
+- The description mentions specific areas that require improvement: ""clarification"" and ""more examples"".
+- It specifies which part of the documentation needs work: [autoStyle|https://wiki.appcelerator.org/display/guides2/Dynamic+Styles#DynamicStyles-Autostyle].
+- Provides context about what 'autostyle' is supposed to do but notes that it's not clear.
+- Suggests adding before/after examples of styling components with and without autoStyle, which would help clarify the usage.
+
+The issue provides enough information for someone to understand what needs to be done. It specifies the exact section in the documentation that requires clarification and even suggests a way to improve it by providing examples. Therefore, this issue is not missing essential details such as steps to reproduce or acceptance criteria since it's about improving documentation clarity rather than reporting a bug.
+
+Final Answer: No",d8d2aa7c441b2a8a,qwen2.5:14b,0,2026-06-17T16:23:28.860522,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38600,Confirm and/or update Migrating Node.ACS Applications to Arrow page,0,1,"Reasoning: The issue description provides a list of tasks to confirm or update various components related to migrating Node.ACS applications to Arrow. However, it lacks essential details such as:
+- Specific steps to reproduce the task.
+- Expected vs actual behavior for each component.
+- Acceptance criteria for confirming and updating each section.
+- Affected components and their current state.
+- Environment details (e.g., operating system, version of tools).
+
+While there is a clear list of items to address, the description does not provide enough information to understand what needs to be done or how success will be measured.
+
+Final Answer: Yes",bca8a3e85540d644,qwen2.5:14b,0,2026-06-17T16:23:31.967360,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40801,APIDoc: Background Gradient options not documented,0,1,"Reasoning: The description mentions that background gradient options are not currently documented and suggests adding a pseudotype for the background gradient object. However, it lacks essential details such as:
+- What specific components or endpoints need documentation?
+- How should the pseudotype be structured?
+- Are there any acceptance criteria to verify if the documentation is complete?
+- Is there an expected timeline or priority level?
+
+Final Answer: Yes",3483da2edabb4da3,qwen2.5:14b,0,2026-06-17T16:23:34.160360,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40937,APIDoc: Facebook code snippet not being rendered,0,1,"Reasoning:
+- The issue title and description indicate that a code snippet on the APIDoc page for Titanium.Facebook is not rendering properly.
+- It specifies what should be rendered: `<property name=""ti.facebook.appid"">your_app_id_here</property>`.
+- However, it lacks details such as steps to reproduce the issue, expected vs actual behavior, acceptance criteria, affected components, and environment details.
+
+Final Answer: Yes",48db5be4ce053a53,qwen2.5:14b,0,2026-06-17T16:23:36.477822,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38132,Create and publish release note for CLI 7.0.6.RC,0,1,"Reasoning: The description ""Create and publish release note for CLI 7.0.6.RC"" is very brief and lacks essential details such as:
+- What information should be included in the release notes?
+- Where should the release notes be published?
+- Are there any specific guidelines or templates to follow?
+- Is there a deadline for this task?
+
+Without these critical pieces of information, it's impossible to fully understand what needs to be done and how to verify if the requirement has been met.
+
+Final Answer: Yes",b9482eb1c5d57252,qwen2.5:14b,0,2026-06-17T16:23:39.084680,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38986,Android Themes guide needs serious updating,0,1,"Reasoning: The issue description provides detailed suggestions for updating the Android Themes guide, including specific changes to content organization and structure. However, it lacks several critical pieces of information:
+1. **Steps to Reproduce**: There are no steps provided to reproduce or demonstrate the current state of the guide.
+2. **Expected vs Actual Behaviour**: While there is a description of what needs updating, there's no clear distinction between expected behavior after updates and the actual current state.
+3. **Acceptance Criteria**: The issue does not specify acceptance criteria for when the update can be considered complete or successful.
+4. **Affected Components**: Although it mentions the Android Themes guide, there’s no detailed breakdown of which specific sections or components need updating.
+5. **Environment Details**: No environment details are provided to understand where and how this guide is used.
+
+Given these missing elements, the issue description is incomplete for a software requirements perspective.
+
+Final Answer: Yes",4804aba5b3e694dd,qwen2.5:14b,0,2026-06-17T16:23:43.276934,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38790,Update and extend guide on Transitions,0,1,"Reasoning:
+- Title and Description are somewhat vague.
+- The description mentions that the guide needs an update but does not specify what changes or additions need to be made.
+- There is no mention of expected vs actual behavior, acceptance criteria, affected components, or environment details.
+- No clear steps for reproduction or verification are provided.
+
+Final Answer: Yes",212ff1f5df08dce8,qwen2.5:14b,0,2026-06-17T16:23:45.419646,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38051,Ti.Platform.id documentation needs clarification,0,0,"Step-by-step reasoning:
+
+1. **Title**: The title ""Ti.Platform.id documentation needs clarification"" is clear about the issue but does not specify all necessary details.
+   
+2. **Description**:
+   - **Current State of Documentation**: Describes that the current documentation for `Ti.Platform.id` is vague and unclear, especially regarding its uniqueness across different platforms (Android vs iOS).
+   - **Expected Clarification**: The description requests a more accurate definition of what `Ti.Platform.id` represents, including details about its uniqueness and stability over time.
+   - **Usage Warning**: It suggests adding a note that this ID should not be used for user authentication due to potential changes in the future.
+
+3. **Missing Information**:
+   - **Steps to Reproduce**: Not provided; however, since it's documentation clarification, steps are less relevant here but context is needed.
+   - **Expected vs Actual Behavior**: The description outlines what needs to be clarified (expected) versus the current vague state (actual).
+   - **Acceptance Criteria**: Missing specific criteria for when the issue will be considered resolved.
+   - **Affected Components**: Not explicitly mentioned, but it's about `Ti.Platform.id` documentation.
+   - **Environment Details**: No environment details are provided. The description",095eea76e3144297,qwen2.5:14b,0,2026-06-17T16:23:50.712782,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38667,Create and publish Studio 4.7.1.GA release note,0,1,"Reasoning: The description ""Create and publish release note for Studio 4.7.1.GA"" is very brief and lacks essential details such as:
+- What information should be included in the release notes?
+- Who will review or approve the release notes before publishing?
+- Where should the release notes be published (e.g., website, internal system)?
+- Are there any specific formatting guidelines for the release note?
+
+Without these critical pieces of information, it's impossible to fully understand and execute the task.
+
+Final Answer: Yes",0be3092454404f1e,qwen2.5:14b,0,2026-06-17T16:23:53.466836,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38004,Link for 'Titanium.UI.iOS.SystemButton' seems to be broken,0,0,"Reasoning: The issue description provides specific details about a broken link on a documentation page. It mentions:
+- The exact link that is broken ('Titanium.UI.iOS.SystemButton')
+- Where the link appears (under removal/deprecation notice)
+- Which page it occurs on (https://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.iPhone.SystemButton)
+- What happens when clicking the link (redirects to main docs page)
+
+While this issue lacks acceptance criteria and expected behavior, it provides enough information for a developer or documentation maintainer to understand and reproduce the problem. The essential details are present.
+
+Final Answer: No",1a312e8e0674b10c,qwen2.5:14b,0,2026-06-17T16:23:56.531081,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38293,Create and publish release note for SDK 6.3.0.GA,0,1,"Reasoning: The title mentions ""SDK 6.3.0.GA"" but the description talks about ""SDK 6.2.3.GA"". There is a discrepancy between the version numbers in the title and the description. Additionally, there are no details provided on what information should be included in the release notes or how they should be published. The steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, and environment details are all missing.
+
+Final Answer: Yes",e99655039519682c,qwen2.5:14b,0,2026-06-17T16:23:59.061536,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39823,Guides: Update Launch options,0,1,"Reasoning:
+- The title mentions ""Update Launch options"" but does not specify what exactly needs to be updated or why.
+- The description provides some context about updating instances of certain terms due to changes in target names and options. However, it lacks several critical pieces of information:
+  - Specific details on which parts of the software need updates (e.g., documentation, UI elements).
+  - Acceptance criteria for what constitutes a successful update.
+  - Steps to reproduce or verify the issue if this is related to an existing problem rather than just a feature request.
+  - Affected components and environment details.
+
+Final Answer: Yes",d029f360f03f0d23,qwen2.5:14b,0,2026-06-17T16:24:02.069659,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38256,Document required Android modules changes due to V8 changes,0,1,"Step-by-Step Reasoning:
+1. The title mentions ""Document required Android modules changes due to V8 changes,"" which indicates a need for documentation.
+2. The description states that developers must recompile their Android modules in version 7.0.0 because of breaking changes in V8, implying there are specific changes or requirements related to these updates.
+3. It suggests the creation of a guide for developers to update their modules but does not provide detailed steps on how to create this guide or what should be included in it.
+4. The description mentions possibly providing an automatic migration hook within the module-build process but lacks specifics about how this would work or what acceptance criteria are needed.
+5. There is no mention of expected vs actual behavior, reproduction steps, affected components, environment details, or clear acceptance criteria.
+
+Given these points, while there's a general idea and need for action (creating documentation), it lacks the necessary detail to proceed effectively as a software requirement.
+
+Final Answer: Yes",b01aff33462c6f78,qwen2.5:14b,0,2026-06-17T16:24:06.452131,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39381,Node.ACS cannot catch stdout & stderr from child processes forked by app,0,1,"Step-by-Step Reasoning:
+1. The title and description indicate a specific issue with Node.ACS's ability to capture stdout & stderr from child processes.
+2. It mentions that the 'acs loglist' and 'acs logcat' commands work for the root process but not for child processes.
+3. However, it lacks details on how to reproduce this issue (e.g., steps or code snippet).
+4. There is no clear description of expected vs actual behavior beyond what's mentioned in point 2.
+5. No acceptance criteria are provided to define when the issue would be considered resolved.
+6. The environment details and affected components are not specified.
+
+Based on these points, the issue lacks essential information such as reproduction steps, detailed expected vs actual behavior, acceptance criteria, and environmental context.
+
+Final Answer: Yes",f07fa3c3c7c9fbfb,qwen2.5:14b,0,2026-06-17T16:24:10.181071,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40888,APIDoc: remove from docs advice about passing functions cross-context,0,0,"Step-by-step reasoning:
+
+1. **Title and Description Analysis**:
+   - The title is clear about the task: ""remove from docs advice about passing functions cross-context"".
+   - The description provides context for why this change is necessary (""changes brought about in iOS memory management"").
+   - It mentions specific individuals involved (Don, Blain, Steven, Fred).
+   - A link to a Q&A question that prompted this discussion is provided.
+
+2. **Missing Information**:
+   - Steps to reproduce: Not applicable since it's an update to documentation.
+   - Expected vs Actual Behaviour: The description clearly states the expected change in documentation (""remove the section"").
+   - Acceptance Criteria: While not explicitly stated, the task is clear and straightforward (removing a specific part of the documentation).
+   - Affected Components: The affected component is specified as ""Titanium.UI.Window-object > Passing Data"".
+   - Environment Details: Not necessary for this type of issue.
+
+3. **Completeness**:
+   - The description provides sufficient context, rationale, and specifics about what needs to be done.
+   - There are no critical pieces of information missing that would prevent someone from understanding the task or executing it.
+
+Final Answer: No",6c1fbd58564fbe35,qwen2.5:14b,0,2026-06-17T16:24:15.414782,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39024,Migration: Node.ACS instructions should link new guide,0,1,"Reasoning: The issue description mentions that the migration page should link to a new guide for migrating Node.ACS applications to Arrow. However, it lacks several critical details:
+1. Specific steps or criteria for linking the new guide.
+2. Expected behavior after implementing the change.
+3. Affected components and environment details.
+4. Acceptance criteria to verify if the issue is resolved.
+
+Final Answer: Yes",27b41190d7ae21cb,qwen2.5:14b,0,2026-06-17T16:24:17.759850,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38189,Update Pull Request Guide and Building SDK From source,0,1,"Reasoning: The issue description mentions that the Pull Request Guide is outdated and references an old method. It suggests updating the guide to avoid duplicating content between different documentation sources. However, it lacks specific details such as:
+- Clear acceptance criteria for what needs to be updated.
+- Steps to reproduce or verify the current state of the document.
+- Affected components or files that need modification.
+- Environment details where this issue is observed.
+
+Final Answer: Yes",ffa44768fabcbc01,qwen2.5:14b,0,2026-06-17T16:24:20.194300,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38180,Ti.UI.WebView documentation broken/missing,0,1,"Step-by-Step Reasoning:
+1. The title indicates that the documentation for Ti.UI.WebView is broken or missing.
+2. The description provides a link to the problematic documentation page and mentions that it says ""it is just an abstract type.""
+3. It states that the expected result is for the docs to be visible again.
+
+However, the issue lacks several critical pieces of information:
+- Steps to reproduce: There are no specific steps provided on how one can encounter this issue.
+- Affected components: While Ti.UI.WebView is mentioned as being affected, there's no detail about other potential impacted areas or related functionalities.
+- Environment details: No environment specifics (e.g., operating system, browser version) are given to understand where the problem occurs.
+- Acceptance criteria: There’s no clear definition of what constitutes a successful resolution beyond ""the docs should be visible again.""
+- Expected vs Actual Behaviour: While there is an expected result mentioned (""Docs should be visible again""), it lacks clarity on what exactly should be visible and how it differs from the current state.
+
+Final Answer: Yes",93f498bd0cdfbd73,qwen2.5:14b,0,2026-06-17T16:24:24.830109,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40251,"JDT install directions reference """"Helios"""" not """"Indigo"""" Eclipse platform",0,1,"Reasoning: The issue description mentions that documentation references for installing JDT in Titanium Studio are outdated and still refer to the ""Helios"" version of Eclipse instead of the updated ""Indigo"" version. However, it lacks several critical pieces of information:
+1. Steps to reproduce the problem (though this might be implicit given the nature of the issue).
+2. Expected vs actual behavior: It does not clearly state what should happen versus what is happening.
+3. Acceptance criteria for resolving the issue are missing.
+4. Affected components or environment details are not provided.
+
+Final Answer: Yes",b3233340ea364023,qwen2.5:14b,0,2026-06-17T16:24:27.688332,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38133,Create and publish release note for CLI 7.0.5.GA,0,1,"Reasoning: The description ""Create and publish release note for CLI 7.0.5.GA"" is very brief and lacks essential details such as:
+- What information should be included in the release notes?
+- Where should the release notes be published?
+- Are there any specific formats or templates to follow?
+- Is there a deadline for this task?
+
+Without these critical pieces of information, it's impossible to fully understand what needs to be done and how success will be measured.
+
+Final Answer: Yes",cdf068d2418bfc64,qwen2.5:14b,0,2026-06-17T16:24:30.263308,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40671,APIDoc: Filesystem.File.createTimestamp returns 0 on Android for resource files,0,1,"Step-by-Step Reasoning:
+1. **Title and Description Analysis**: The title and description indicate an issue with the `createTimestamp` method returning 0 for resource files on Android.
+2. **Expected vs Actual Behaviour**:
+   - Expected: The method should return a valid timestamp or some useful data.
+   - Actual: Returns 0, which is not informative.
+3. **Steps to Reproduce**: Missing clear steps to reproduce the issue. While it mentions ""resource files,"" there are no specific instructions on how to create such files and test this scenario.
+4. **Acceptance Criteria**: Not specified what would constitute a successful fix or criteria for acceptance.
+5. **Affected Components**: The affected component is mentioned (APIDoc, `Filesystem.File.createTimestamp` method), but the broader impact isn't detailed.
+6. **Environment Details**: Missing details about the environment where this issue occurs (e.g., Android version, specific file types).
+
+Given these points, the description lacks clear reproduction steps and acceptance criteria, which are essential for a complete issue report.
+
+Final Answer: Yes",50ad1b73ec435445,qwen2.5:14b,0,2026-06-17T16:24:34.975184,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40346,APIDoc: Analytics doc should mention raw data export,0,1,"Reasoning:
+- The title mentions a requirement for documentation about raw data export.
+- The description states that some analytics data isn't available in the UI and should be mentioned as being available through raw data export.
+- It also asks to update Ti Analytics guides doc & link API docs to relevant docs.
+
+However, the issue lacks several critical pieces of information:
+1. Specific details on which analytics data is missing from the UI.
+2. Steps to reproduce or verify the issue.
+3. Acceptance criteria for what constitutes a complete fix or documentation update.
+4. Affected components and environment details (e.g., version numbers).
+
+Final Answer: Yes",1ca34dd0a6f92384,qwen2.5:14b,0,2026-06-17T16:24:38.031666,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39667,ACS Custom Object Documentation Needs Corrected,0,1,"Reasoning: The issue description mentions that there is incorrect verbiage in the documentation for a specific method ('show') on custom objects. However, it lacks several critical pieces of information:
+1. Specific details about what needs to be corrected or updated.
+2. Steps to reproduce or verify the issue (though this might not always apply to documentation issues).
+3. Expected vs actual behavior is not clearly defined.
+4. Acceptance criteria for resolving the issue are missing.
+
+Final Answer: Yes",0d2f779742b9f136,qwen2.5:14b,0,2026-06-17T16:24:40.529832,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38873,Ti.UI.Android.openPreferences: Does not explain how to get a preference value,0,0,"Reasoning:
+- The issue title and description indicate that there is a lack of documentation on how to retrieve preference values using Ti.UI.Android.openPreferences.
+- It mentions that the PR did not include this information as requested by a user in another ticket (TIDOC-11).
+- However, it does provide some context about where the documentation should be added: http://docs.appcelerator.com/platform/latest/#!/api/Titanium.UI.Android-method-openPreferences
+- The issue provides enough detail to understand what needs to be done and where it should be documented.
+- It is clear that the missing piece is the documentation on how to retrieve preference values, which is a specific task.
+
+Final Answer: No",3d22194f776e4255,qwen2.5:14b,0,2026-06-17T16:24:43.995182,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39183,Please help review the error messages of on-demand-pricing node.ACS part,0,1,"Step-by-Step Reasoning:
+1. **Title and Description**: The title is vague but the description provides some context about reviewing error messages for a specific feature.
+2. **Scope of Issue**: It mentions adding new messages for the on-demand-pricing feature in node.ACS, which indicates there's work to be done regarding these messages.
+3. **Expected vs Actual Behavior**: There’s no clear indication of what is expected versus actual behavior or any issues that need fixing.
+4. **Reproduction Steps**: No steps are provided to reproduce the issue or test the error messages.
+5. **Acceptance Criteria**: The description does not specify acceptance criteria for these new messages, such as how they should be displayed or under what conditions.
+6. **Affected Components**: While it mentions on-demand-pricing and node.ACS, there’s no detailed breakdown of which components are affected.
+7. **Environment Details**: No environment details (e.g., OS, browser, version numbers) are provided.
+
+Given the lack of specific acceptance criteria, reproduction steps, expected vs actual behavior, and detailed scope, this issue is missing essential information to be actionable or testable.
+
+Final Answer: Yes",3df74b6cbdb930fe,qwen2.5:14b,0,2026-06-17T16:24:49.159726,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38123,Create and publish release note for SDK 7.4.0.GA,0,1,"Reasoning: The description ""Create and publish SDK 7.4.0.GA release note"" is very brief and lacks essential details such as:
+- What information should be included in the release notes?
+- Where should the release notes be published?
+- Are there any specific formats or templates to follow for the release notes?
+- Is there a deadline for this task?
+
+Without these critical pieces of information, it's impossible to fully understand what needs to be done and how to verify if the task is completed successfully.
+
+Final Answer: Yes",b365a39ba705d9d5,qwen2.5:14b,0,2026-06-17T16:24:51.970689,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40183,Guides: Enhance doc for installing/using modules,0,1,"Step-by-Step Reasoning:
+1. The issue title is clear and concise: ""Guides: Enhance doc for installing/using modules"".
+2. The description provides specific details about the current documentation issues related to module installation and usage.
+3. It mentions that the ~/Library directory is used for new Studio and CLI installs, which contradicts the existing documentation stating it's only for Lion.
+4. Instructions are provided on how to make the ~/Library directory visible in Finder.
+5. The description notes an issue with modules not being unzipped when placed in the SDK directory.
+6. Troubleshooting is mentioned, particularly addressing a vague error message related to version issues and suggesting users remove the version tag from tiapp.xml.
+7. It also points out that current instructions call for editing tiapp.xml directly instead of using the Studio Modules section.
+
+However:
+- The description lacks clear acceptance criteria or specific steps to reproduce any issues.
+- There is no mention of affected components or environment details (e.g., OS versions, software versions).
+- While it provides a lot of information about what needs fixing in the documentation, there's no explicit expected behavior for each issue mentioned.
+
+Final Answer: Yes",38246422c409e2a2,qwen2.5:14b,0,2026-06-17T16:24:57.194871,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38293,Create and publish release note for SDK 6.3.0.GA,0,1,"Reasoning: The description ""Create and publish release note for SDK 6.3.0.GA"" is very brief and lacks essential details such as:
+- What information should be included in the release notes?
+- Who are the target audiences for this release note?
+- Where should the release note be published (e.g., GitHub, website)?
+- Are there any specific formatting or style guidelines to follow?
+
+Without these critical pieces of information, it's impossible to fully understand and execute the task.
+
+Final Answer: Yes",c2b079e3799faf87,qwen2.5:14b,0,2026-06-17T16:24:59.902117,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38201,Fix/Replace links to /cloud in the wiki docs,0,1,"Reasoning: The issue description mentions that certain links in the wiki documentation need to be updated from HTTP to HTTPS. However, it lacks several critical pieces of information:
+1. Specific steps to reproduce or verify the issue.
+2. Expected behavior after fixing the issue.
+3. Affected components and their current state.
+4. Environment details where this issue occurs.
+
+Final Answer: Yes",25f6f0e822c02f82,qwen2.5:14b,0,2026-06-17T16:25:02.016224,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39132,Update docs template to better match new Dashboard look and feel,0,1,"Reasoning: 
+- The title and description mention an update to the docs template to match a new Dashboard look and feel.
+- It references APPTS-6972 for context but does not specify what changes are needed or how they should be implemented.
+- There is no clear acceptance criteria, steps to reproduce, expected vs actual behavior, affected components, or environment details provided.
+
+Final Answer: Yes",fd3276bc595799e0,qwen2.5:14b,0,2026-06-17T16:25:04.214346,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39524,Create a new method likes/query.json,0,0,"Step-by-Step Reasoning:
+1. **Title and Description**: The title ""Create a new method likes/query.json"" is vague but the description provides detailed information about what needs to be implemented.
+2. **Expected Behavior**: The description outlines that the GET request should perform custom queries of likes with sorting, pagination, and filtering options based on various parameters (post_id, photo_id, user_id, etc.). It also specifies response parameters like ""likes"" which is a list of likes matching the query parameters.
+3. **Reproduction Steps**: While there are no explicit reproduction steps provided in the description, it does include an example curl command to test the endpoint: `curl -c cookies.txt -b cookies.txt -X GET ""http://localhost:8082/v1/likes/query.json?key=18jewMLaoZOCuNUjoHZi6OpLFsqMLhx1&user_id=536cddefdda0950cc8000001""`. This can be considered as a form of reproduction step.
+4. **Acceptance Criteria**: The description provides detailed parameters and their usage, which serves as implicit acceptance criteria for the implementation.
+5. **Affected Components**: It is clear that this",cfeabb44961a25bd,qwen2.5:14b,0,2026-06-17T16:25:09.786060,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39749,Localization of app name for Android is out-of-date,0,1,"Step-by-Step Reasoning:
+1. The issue title indicates that the localization of the app name for Android is out-of-date.
+2. In the description, it mentions realizing this while writing a blog post and provides a link to an outdated document on how to localize the app name.
+3. It states that tests were run using 3.2 on Classic and Alloy, showing that simply creating /i18n/en/strings.xml and /i18n/en/app.xml works for both iOS and Android.
+4. However, the description lacks specific steps to reproduce the issue, expected vs actual behavior, acceptance criteria, affected components, or environment details.
+
+The missing elements are:
+- Steps to reproduce
+- Expected vs Actual Behavior
+- Acceptance Criteria
+- Affected Components (specific versions of software)
+- Environment Details
+
+Final Answer: Yes",1d002b0115378002,qwen2.5:14b,0,2026-06-17T16:25:13.912749,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39943,BlackBerry : Path for getting the logs from simulator is incorrect,0,0,"Step-by-Step Reasoning:
+1. **Title and Description**: The title clearly states the issue is about an incorrect path for getting logs from a BlackBerry simulator.
+2. **Steps to Reproduce**:
+   - Go to the documentation page: http://docs.appcelerator.com/titanium/latest/#!/guide/Installing_the_BlackBerry_NDK
+   - Scroll down and look at the topic 'Accessing Simulator Log Messages'
+3. **Actual vs Expected Behaviour**:
+   - Actual Result: The path is incorrect and missing an 'appdata' folder.
+   - Expected Result: The correct path should be '/accounts/1000/appdata/<app_id>/log'.
+4. **Affected Components**: The issue affects the documentation for accessing simulator log messages on BlackBerry devices.
+5. **Environment Details**: While not explicitly stated, it can be inferred that this is related to a specific version of Titanium and its documentation.
+
+The description provides clear steps to reproduce the issue, describes both actual and expected results, and specifies which part of the documentation is incorrect. There are no missing critical details such as acceptance criteria or additional affected components beyond what's necessary for understanding the issue.
+
+Final Answer: No",5dbb16552162d6a1,qwen2.5:14b,0,2026-06-17T16:25:19.141634,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40067,DocTools: validate script is broken due to docgen changes,0,0,"Step-by-Step Reasoning:
+1. The issue title indicates that the validate script is broken due to changes in docgen.
+2. The description provides a specific PR reference: https://github.com/appcelerator/titanium_mobile/pull/3922/files, which gives context about where the change originated.
+3. It mentions that the process_yaml method now takes an argument it previously did not take, leading to a failure in validate.py with an error message indicating incorrect arguments.
+4. The description also provides steps to reproduce: changing the call to docgen.process_yaml(apiDocDir) results in another specific error related to YAML parsing.
+
+The issue includes:
+- Affected component (validate script)
+- Environment details (Titanium Studio, file paths involved)
+- Expected vs actual behavior (expected no errors with correct arguments; got process_yaml() takes exactly 1 argument (0 given))
+- Steps to reproduce the issue
+- Error messages and their context
+
+Given these points, the information provided is sufficient for understanding the problem and reproducing it.
+
+Final Answer: No",2907e5a318dec7ce,qwen2.5:14b,0,2026-06-17T16:25:24.081387,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39723,Support new Node.ACS command : download,0,1,"Step-by-Step Reasoning:
+1. **Title**: The title ""Support new Node.ACS command : download"" is clear but lacks detail.
+2. **Description**:
+   - A new command named `download` needs to be implemented.
+   - It should allow downloading the app source file of Node.ACS with a specified version.
+   - If no app name is provided, it can run in the current directory or use `-d` to specify an app directory.
+   - The currently active app version will be downloaded if no version option is provided.
+
+3. **Missing Information**:
+   - No acceptance criteria are mentioned (what should happen when the command runs successfully?).
+   - No expected behavior details beyond basic functionality.
+   - No environment or component information is given (e.g., which API endpoints, UI elements, etc.).
+   - No steps to reproduce or test cases provided.
+
+Given these points, while there's a clear description of what needs to be done, the lack of acceptance criteria and detailed expected behavior makes it incomplete for thorough development and testing purposes.
+
+Final Answer: Yes",6056377cda2f86b3,qwen2.5:14b,0,2026-06-17T16:25:28.941043,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38628,Specify supported Arrow Model Field data types,0,1,"Reasoning: The issue description mentions that there is a discrepancy between what the online documentation claims about supported data types for Arrow Model Fields and what is actually supported based on some screenshot evidence. However, it lacks several critical pieces of information:
+1. Specific details about which data types are currently supported.
+2. Steps to reproduce or verify the claim.
+3. Expected vs actual behavior regarding unsupported data types.
+4. Acceptance criteria for resolving this issue.
+5. Affected components and environment details.
+
+Final Answer: Yes",5964fe6ace551ddd,qwen2.5:14b,0,2026-06-17T16:25:31.708759,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38181,Review and revise the APS documentation,0,1,"Reasoning:
+- The issue title and description are clear about the task of reviewing and revising documentation.
+- It provides specific URLs for the documents to be reviewed.
+- However, it lacks details on what constitutes ""necessary revisions,"" how to test samples, acceptance criteria, affected components, or environment details.
+
+Final Answer: Yes",4b4e9151a98552ef,qwen2.5:14b,0,2026-06-17T16:25:33.652329,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39239,"Android: TableView: SearchBar not working if """"filterAttribute"""" is an arbitrary property",0,-1,"Step-by-Step Reasoning:
+1. **Title**: The title mentions ""SearchBar not working"" with specific conditions (""if """"filterAttribute"""" is an arbitrary property""), which provides some context.
+2. **Description**:
+   - Provides a clear description of the issue: SearchBar does not work when `filterAttribute` is set after TableViewRow creation on Android, but works fine on iOS.
+   - Includes sample code demonstrating how to reproduce the issue.
+   - Mentions that the problem is clearer in Alloy framework context and provides an example with Alloy.
+
+3. **Reproduction Steps**: The description includes a detailed sample code snippet for both plain Titanium and Alloy frameworks, which helps in reproducing the issue.
+4. **Expected vs Actual Behaviour**:
+   - Expected: SearchBar should work regardless of when `filterAttribute` is set.
+   - Actual: SearchBar does not work if `filterAttribute` is set after TableViewRow creation on Android but works fine on iOS.
+
+5. **Acceptance Criteria**: Not explicitly stated, but the issue description clearly outlines what needs to be fixed (SearchBar working correctly regardless of when `filterAttribute` is set).
+
+6. **Affected Components**:
+   - SearchBar
+   - TableView
+   - TableViewRow",7da73e73d8e5013d,qwen2.5:14b,0,2026-06-17T16:25:39.027572,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38938,Docs: Ti.UI.View.add supports an array of views as well as single Ti.Ui.View,0,1,"Step-by-step reasoning:
+
+1. **Title Analysis**: The title mentions that `Ti.UI.View.add` supports an array of views on iOS but not on Android and Windows.
+2. **Description Content**:
+   - Provides links to the relevant code for iOS and Android implementations.
+   - Mentions JIRA tickets (TIMOB-19394, TIMOB-19482) that will fix parity issues between platforms.
+   - States that documentation needs updating due to these changes.
+
+3. **Missing Information**:
+   - No clear acceptance criteria are provided for what the updated documentation should include or how it should differ from current versions.
+   - The description does not specify which parts of the documentation need updating, nor does it provide examples or specific instructions on how to update them.
+   - There is no mention of expected behavior after the JIRA tickets are resolved.
+
+4. **Conclusion**:
+   - While the issue provides context and links to relevant code changes, it lacks clear acceptance criteria for the documentation updates and detailed steps on what needs to be changed in the documentation itself.
+
+Final Answer: Yes",9df4edcaca509c95,qwen2.5:14b,0,2026-06-17T16:25:43.986049,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40941,APIDoc: remove period from platform list,0,0,"Reasoning:
+- The issue title and description clearly state that there is a period in the platform list that needs to be removed.
+- It specifies which file contains this issue: [member_list.html|https://github.com/appcelerator/titanium_mobile/blob/master/apidoc/templates/html/member_list.html].
+- There are no missing details such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details.
+
+Since all necessary information is provided and there's clarity on what needs to be done (remove a period from the platform list in a specific file), this issue does not lack essential information.
+
+Final Answer: No",aa74d86f94157479,qwen2.5:14b,0,2026-06-17T16:25:47.175962,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40635,APIDoc: Update docs for medium-priority iPad modules,0,1,"Reasoning: The description mentions the need to update documentation for specific modules but lacks essential details such as:
+- What changes or updates are required in the documentation?
+- Which parts of the existing documentation need modification?
+- Are there any new features or deprecated functionalities that require updating?
+- Is there a timeline or priority level specified beyond ""medium-priority""?
+- Any acceptance criteria to verify if the update is complete and correct?
+
+Final Answer: Yes",a7b433d7841b2744,qwen2.5:14b,0,2026-06-17T16:25:49.501925,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39299,Updates guides to show how to localise NSLocationAlwaysUsageDescription,0,1,"Step-by-Step Reasoning:
+1. The title mentions updating guides related to localizing NSLocationAlwaysUsageDescription.
+2. The description refers to internationalization of app's name and linking to updated guides but does not clearly state the specific steps or requirements for localizing NSLocationAlwaysUsageDescription.
+3. There is no mention of expected vs actual behavior, acceptance criteria, affected components, or environment details.
+4. The description lacks clear instructions on how to reproduce the issue or what needs to be done to resolve it.
+
+Final Answer: Yes",19ec8a0ccd12cbcb,qwen2.5:14b,0,2026-06-17T16:25:52.263961,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40438,Poor grammar in Ti.UI.TabGroup,0,1,"Reasoning: The issue description mentions poor grammar but does not specify which grammatical errors need correction or how they affect functionality. It also includes a question about whether ""they may be opened"" is correct and another query regarding the documentation of a built-in Nav group on iOS, without providing clear acceptance criteria or steps to reproduce any issues.
+
+- Missing: Specific details about what needs fixing (grammatical errors).
+- Missing: Steps to reproduce the issue.
+- Missing: Expected vs actual behavior.
+- Missing: Acceptance criteria for resolving the grammar issue and documenting the Nav group.
+- Missing: Affected components and environment details.
+
+Final Answer: Yes",e0e119b1d942950e,qwen2.5:14b,0,2026-06-17T16:25:55.479546,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38738,There is an error in Positioning and dimensions of elements section of the documentation,0,0,"Step-by-Step Reasoning:
+1. The issue title clearly states the problem: an error in the documentation.
+2. The description provides a specific URL to the affected page and section of the documentation.
+3. It specifies what the current incorrect statement is and what it should be corrected to.
+
+The provided information includes all necessary details for identifying and correcting the error:
+- Affected component (documentation)
+- Specific location within the documentation
+- Current erroneous content
+- Corrected content
+
+Final Answer: No",3b5cbf393f61c990,qwen2.5:14b,0,2026-06-17T16:25:58.046676,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39253,we will no longer show the listed information,0,1,"Reasoning:
+- The title is vague and does not clearly describe the issue or feature.
+- The description mentions changes to be made starting from version 1.1.8 but lacks clarity on what exactly needs to change.
+- It lists fields that will no longer be shown when they are empty, which seems like a functional requirement, but it's unclear if this is an enhancement request or a bug report.
+- There’s no mention of expected vs actual behavior, acceptance criteria, affected components, environment details, or steps to reproduce (if applicable).
+- The description lacks context and specific requirements for implementation.
+
+Final Answer: Yes",3fbe08f0c7d19bba,qwen2.5:14b,0,2026-06-17T16:26:01.062454,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39534,Alloy: missing Style in the Style priorities description,0,1,"Step-by-step reasoning:
+
+1. **Title and Description Analysis**:
+   - The title mentions ""missing Style in the Style priorities description.""
+   - The description provides a specific section of documentation where a case is missing.
+
+2. **Missing Information Check**:
+   - Steps to reproduce: Not explicitly provided, but implied by mentioning a specific section.
+   - Expected vs Actual Behaviour: Missing explicit comparison between expected and actual behavior.
+   - Acceptance Criteria: No acceptance criteria are mentioned.
+   - Affected Components: The affected component is the documentation itself (Alloy Styles and Themes).
+   - Environment Details: Not specified.
+
+3. **Completeness Evaluation**:
+   - While the issue describes a missing case in the documentation, it lacks clear steps to reproduce the problem beyond pointing out the section.
+   - There's no explicit comparison of expected vs actual behavior or acceptance criteria for resolving this issue.
+   - The environment details are not provided (e.g., specific version of Alloy).
+
+Given these points, the issue is lacking essential information such as detailed reproduction steps and clear acceptance criteria.
+
+Final Answer: Yes",e0304c01af7d49c3,qwen2.5:14b,0,2026-06-17T16:26:05.882265,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39218,Move Cloud and CloudPush to Modules namespace,0,1,"Step-by-Step Reasoning:
+1. The title of the issue is clear about what needs to be done: move Cloud and CloudPush API docs from one namespace to another.
+2. The description provides specific details on how this should be accomplished, including updating links and adding forward references.
+3. However, there are no acceptance criteria mentioned (what defines completion).
+4. There's also a lack of information about the environment or components affected by this change.
+5. Steps to reproduce or verify the changes post-implementation are not provided.
+
+Final Answer: Yes",800b38919c70de78,qwen2.5:14b,0,2026-06-17T16:26:08.728071,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39395,Provides detailed steps to import/run ti.cloud example,0,1,"Reasoning: The issue description provides context about importing and running an example application from the Titanium.Cloud module but lacks specific details such as:
+- Clear steps to reproduce or follow.
+- Expected vs actual behavior.
+- Acceptance criteria for what constitutes a successful import/run.
+- Affected components or environment details.
+
+While it mentions that there should be steps added, these are not detailed enough to proceed with implementation. The description also notes the complexity of sharing ACS-enabled projects due to key generation requirements but does not provide concrete instructions on how users can achieve this themselves.
+
+Final Answer: Yes",5ee297d297c4bd7e,qwen2.5:14b,0,2026-06-17T16:26:11.553112,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39480,Guides: Document offline installation of Appcelerator Platform,0,1,"Reasoning: The issue description mentions that customers want the ability to install the Appcelerator Platform on an internet-disconnected machine and lists components that should be included in such an installation. However, it lacks several critical pieces of information:
+- Specific steps or requirements for installing each component offline.
+- Expected behavior after installation (e.g., whether all features work as expected).
+- Acceptance criteria to define when the issue is resolved.
+- Environment details where this needs to be implemented (operating system, version numbers, etc.).
+- Any constraints or limitations that might affect the feasibility of an offline installation.
+
+Final Answer: Yes",cce1b55479e5ac83,qwen2.5:14b,0,2026-06-17T16:26:14.566333,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-39599,Node.ACS organization support,0,1,"Reasoning:
+- The title mentions ""adding support for organizations"" but does not specify what this entails.
+- The description is vague and states that more details will be added later.
+- It refers to an external link for further information, which means the actual requirements are not present in the issue itself.
+- Missing: specific feature details, acceptance criteria, affected components, environment details.
+
+Final Answer: Yes",0275c663a26b3d27,qwen2.5:14b,0,2026-06-17T16:26:16.781722,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38337,Create Alloy Framework How-tos page,0,1,"Reasoning: The description lacks essential details such as what specific content needs to be created or reorganized, how it should look like, and any acceptance criteria. It does not specify which parts of the Alloy Framework will be covered in these ""How-tos"" nor provides steps on how to achieve this task.
+
+Final Answer: Yes",a43662ba8f513bed,qwen2.5:14b,0,2026-06-17T16:26:18.708538,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-38517,Create and publish release note for SDK 6.0.2.RC,0,1,"Reasoning: The description ""Create and publish the SDK 6.0.2.RC release note"" is very brief and lacks essential details such as:
+- What information should be included in the release note?
+- Who will review and approve the release note before publishing?
+- Where should the release note be published (e.g., GitHub, website)?
+- Are there any specific formatting or content guidelines for the release note?
+
+Without these critical pieces of information, it's impossible to fully understand what needs to be done and how success will be measured.
+
+Final Answer: Yes",f229447ee46fb749,qwen2.5:14b,0,2026-06-17T16:26:21.484612,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40653,APIDoc: Ti.UI.orientationModes property should mention Ti.Gesture.orientation,0,1,"Step-by-Step Reasoning:
+1. The issue title mentions ""APIDoc"" indicating it's related to documentation.
+2. The description states that the new property `Ti.UI.orientationModes` should include a reference to `Ti.Gesture.orientation`.
+3. However, there is no clear indication of what specific changes need to be made in the APIDoc.
+4. There are no steps provided on how to reproduce or verify this issue.
+5. The description lacks acceptance criteria that would define when the issue is resolved.
+6. No environment details or affected components are mentioned.
+
+Final Answer: Yes",bb7dba5750ff03c8,qwen2.5:14b,0,2026-06-17T16:26:24.367694,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40413,Link takes you to the wiki creation page,0,0,"Reasoning:
+- The issue provides a clear title that indicates an unexpected behavior.
+- Steps to reproduce are provided: ""Go to http://docs.appcelerator.com/titanium/2.0/index.html#!/guide/Application_Structures_and_Core_Building_Blocks"" and ""Click on the """"Execution Context"""" link.""
+- Expected vs actual behavior is clearly stated:
+  - EXPECTED RESULT: jump to somewhere in the documentation.
+  - ACTUAL RESULT: jumps to wiki and has you in edit page mode for """"Coding Patterns"""".
+- The issue asks if there are other links like this in the docs, which implies that more information might be needed about similar occurrences.
+
+However, the provided description includes all necessary details such as steps to reproduce, expected vs actual behavior. It does not lack essential information but rather seeks additional context on whether similar issues exist elsewhere.
+
+Final Answer: No",1d2fa83195a644f9,qwen2.5:14b,0,2026-06-17T16:26:28.356460,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40608,Guides: MW overview should reference MW limitations page,0,1,"Reasoning: The issue description mentions that a specific page should reference another page. However, it lacks essential details such as:
+- Steps to reproduce or verify the absence of the referenced link.
+- Expected behavior (what exactly should be added or changed).
+- Affected components or environment details.
+
+Final Answer: Yes",9312a30bc6271d07,qwen2.5:14b,0,2026-06-17T16:26:30.234629,project_02,title_desc,incompleteness,few_shot_cot
+ISSUE-40894,APIDoc: Documentation missing for MaskedImage,0,1,"Reasoning:
+- The issue mentions that the documentation for `Titanium.UI.createMaskedImage()` is missing.
+- It also states that the KitchenSink example does not help in understanding how to use this feature.
+- There are no specific steps provided on how to reproduce the problem or what exactly needs to be done to improve the situation.
+- No acceptance criteria, expected behavior, affected components, or environment details are given.
+
+Final Answer: Yes",a0d7d391655a584e,qwen2.5:14b,0,2026-06-17T16:26:32.589471,project_02,title_desc,incompleteness,few_shot_cot

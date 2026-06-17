@@ -1,0 +1,723 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-251590,Test with latest versions of Boost,1,1,"Reasoning: The title ""Test with latest versions of Boost"" is vague and lacks essential details. It does not specify what exactly needs to be tested, the expected outcome, or any steps to reproduce the test scenario. There are no acceptance criteria mentioned, nor are there any affected components or environment details provided.
+
+Final Answer: Yes",2d045043235449ea,qwen2.5:14b,0,2026-06-17T17:50:55.961887,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252462,Determine C++ Driver version from examining the headers,0,1,"Reasoning: The title ""Determine C++ Driver version from examining the headers"" lacks essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details. It does not specify what needs to be done beyond determining the version and does not provide any context on how this should be achieved or what the outcome should look like.
+
+Final Answer: Yes",a6803bf532bef0a9,qwen2.5:14b,0,2026-06-17T17:50:58.116752,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250680,Use cmake,1,1,"Reasoning: The title ""Use cmake"" is very vague. It does not specify what needs to be done with CMake, whether it's an enhancement request, a bug report, or a feature request. There are no details about the expected outcome, steps to reproduce any issue, affected components, environment details, or acceptance criteria.
+
+Final Answer: Yes",2dbbbe1e0546afc0,qwen2.5:14b,0,2026-06-17T17:51:00.115242,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252307,Include regex elements in BSONArrayBuilder,0,1,"Reasoning: The title ""Include regex elements in BSONArrayBuilder"" suggests that there is a request to include regular expression elements within the BSONArrayBuilder functionality. However, it lacks essential details such as:
+- Steps to reproduce or implement this feature.
+- Expected behavior after implementing this feature.
+- Acceptance criteria for what qualifies as successful implementation.
+- Affected components and their interactions.
+- Environment details where this issue is observed.
+
+Final Answer: Yes",37efb8ef3e43767d,qwen2.5:14b,0,2026-06-17T17:51:02.662091,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250777,Defer checking if a deployment supports sessions until the session's first operation,0,1,"Reasoning: The title ""Defer checking if a deployment supports sessions until the session's first operation"" provides some context about what needs to be done but lacks essential details. It does not specify:
+- Steps to reproduce any issue or scenario.
+- Expected vs actual behavior.
+- Acceptance criteria for when this change is considered complete.
+- Affected components or systems.
+- Environment details where this applies.
+
+Given the lack of these critical pieces of information, it's challenging to fully understand and address the requirement effectively. Therefore, based on the provided title alone, the issue appears INCOMPLETE.
+
+Final Answer: Yes",373fd286a6938769,qwen2.5:14b,0,2026-06-17T17:51:05.607174,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252448,Static archive fails to force inclusion of global initializers,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Static archive"" which indicates a specific type of build artifact.
+2. It states that there is an issue with ""force inclusion of global initializers"".
+3. However, the title does not provide:
+   - Steps to reproduce the problem.
+   - Expected vs actual behavior.
+   - Affected components or environment details.
+   - Acceptance criteria.
+
+Given these points, while the title gives a hint about what might be going wrong, it lacks essential information needed for proper analysis and resolution of the issue. 
+
+Final Answer: Yes",32b100cfc591422d,qwen2.5:14b,0,2026-06-17T17:51:08.625262,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251874,Add ordered option to insert_many,1,1,"Reasoning: The title ""Add ordered option to insert_many"" suggests that there is a request to add an 'ordered' feature to an existing function called `insert_many`. However, it lacks essential details such as:
+- What the 'ordered' option means and how it should behave.
+- Steps to reproduce or test this new functionality.
+- Expected behavior when using the 'ordered' option.
+- Acceptance criteria for what qualifies as a successful implementation.
+- Affected components or modules in the software.
+
+Final Answer: Yes",013de8f8c5a22523,qwen2.5:14b,0,2026-06-17T17:51:11.249701,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251692,Bug When Trying to 'Make',1,1,"Reasoning: The title ""Bug When Trying to 'Make'"" is very vague. It does not specify what action or feature is being referred to by ""'Make'"", nor does it provide any details about the expected behavior, actual behavior, steps to reproduce, affected components, environment details, or acceptance criteria.
+
+Final Answer: Yes",af675dea9caab873,qwen2.5:14b,0,2026-06-17T17:51:13.211174,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251622,Can't construct operation_exception without a server error,0,1,"Reasoning: The title ""Can't construct operation_exception without a server error"" indicates an issue with constructing an exception object but lacks essential details such as steps to reproduce the problem, expected behavior versus actual behavior, affected components or environment details. It does not provide enough information for developers to understand and resolve the issue effectively.
+
+Final Answer: Yes",b29ba57ca722610c,qwen2.5:14b,0,2026-06-17T17:51:15.119278,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252149,Polyfill stdx::string_view,1,1,"Reasoning: The title ""Polyfill stdx::string_view"" does not provide enough information to determine if it is a complete issue. It lacks details such as the context in which this polyfill is needed, the specific problem or feature it addresses, expected behavior, acceptance criteria, affected components, and environment details.
+
+Final Answer: Yes",55b31c960e2894b4,qwen2.5:14b,0,2026-06-17T17:51:17.100291,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252321,Files dependent on make_shared should include make_shared.hpp,0,1,"Reasoning: The title ""Files dependent on make_shared should include make_shared.hpp"" suggests that there is a dependency issue with including the correct header file in C++ code. However, it lacks essential information such as:
+- Steps to reproduce the problem.
+- Expected vs actual behavior.
+- Affected components or files.
+- Environment details (e.g., compiler version, operating system).
+Without these details, it's difficult for developers to understand and resolve the issue effectively.
+
+Final Answer: Yes",9c2942be9633d150,qwen2.5:14b,0,2026-06-17T17:51:19.567428,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252438,Update travis configuration to run the client examples,0,1,"Reasoning: The title ""Update travis configuration to run the client examples"" lacks essential details such as what changes need to be made in the Travis configuration, which client examples are involved, expected outcomes after the update, and any acceptance criteria. It does not provide enough information for a developer to understand the full scope of the task or how to verify its completion.
+
+Final Answer: Yes",8e998e5bb92e53a9,qwen2.5:14b,0,2026-06-17T17:51:21.712883,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251649,Add support for MongoDB 3.4 to the legacy C++ driver.,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions adding support for a specific version of MongoDB (MongoDB 3.4) to an existing C++ driver.
+2. It specifies the target component (legacy C++ driver).
+3. However, it lacks details on what exactly needs to be supported in terms of features or functionalities within MongoDB 3.4.
+4. There is no mention of expected behavior after adding support.
+5. No acceptance criteria are provided to define when this task can be considered complete.
+6. The environment and steps to reproduce the issue (if any) are not mentioned.
+
+Given these points, while the title provides some context about what needs to be done, it lacks critical details necessary for a full understanding of the requirements or how to verify completion.
+
+Final Answer: Yes",d2d729385557977e,qwen2.5:14b,0,2026-06-17T17:51:25.364910,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251049,Resync SDAM tests,1,1,"Reasoning: The title ""Resync SDAM tests"" is very vague. It does not specify what exactly needs to be resynchronized, which components or modules are affected, the expected outcome of the resynchronization process, or any steps required to reproduce the issue if it's a problem. There is no mention of environment details, acceptance criteria, or any specific error messages or symptoms.
+
+Final Answer: Yes",1d79e78accbd99b6,qwen2.5:14b,0,2026-06-17T17:51:27.561188,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252416,rotatable_file_writer_test does not compile in C++11 mode with libc++,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific test case (""rotatable_file_writer_test"").
+2. It specifies the programming language and environment (""C++11 mode with libc++"").
+3. However, it does not provide any information about what exactly is failing or how to reproduce the issue.
+4. There's no mention of expected behavior versus actual behavior.
+5. No acceptance criteria are provided.
+6. The title lacks details on which components are affected and under what conditions.
+
+Given these points, while some essential elements like environment details are present, critical information such as reproduction steps, expected vs actual behavior, and acceptance criteria is missing.
+
+Final Answer: Yes",8967cf57d8a0b414,qwen2.5:14b,0,2026-06-17T17:51:30.819474,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251115,Implement SASLPrep,1,1,"Reasoning: The title ""Implement SASLPrep"" is very brief and lacks essential details. It does not specify what exactly needs to be implemented, the context in which it will be used, expected behavior, acceptance criteria, or any other necessary information for a requirements analyst to understand the scope of work.
+
+Final Answer: Yes",39309ae6acdb444e,qwen2.5:14b,0,2026-06-17T17:51:32.741650,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250886,Investigate alternatives to Catch2,1,1,"Reasoning: The title ""Investigate alternatives to Catch2"" does not provide any specific information about what needs to be done beyond suggesting an investigation. It lacks details such as why the investigation is needed, which components or features are affected, expected outcomes, and acceptance criteria. This makes it difficult to understand the full scope of the issue.
+
+Final Answer: Yes",f5c9c9c7bac89be3,qwen2.5:14b,0,2026-06-17T17:51:34.769959,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251990,missing bsoncxx::document::view::empty,1,1,"Reasoning: The title ""missing bsoncxx::document::view::empty"" does not provide enough information to understand what is being reported or how to reproduce the issue. It lacks details such as steps to reproduce, expected behavior, actual behavior, affected components, and environment details.
+
+Final Answer: Yes",45ff1dafae37e620,qwen2.5:14b,0,2026-06-17T17:51:36.646705,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252201,Create buildvariant for Ubuntu 12.04,0,1,"Step-by-Step Reasoning:
+
+Title: Create buildvariant for Ubuntu 12.04
+
+Reasoning:
+- The title specifies the creation of a build variant for a specific version of Ubuntu.
+- However, it lacks essential details such as what exactly needs to be built (e.g., software components, libraries), how it should behave, acceptance criteria, and any environment or configuration requirements.
+
+Given these considerations:
+
+Final Answer: Yes",0648adb5fe33279a,qwen2.5:14b,0,2026-06-17T17:51:38.971507,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251862,Backport server r3.0.7..r3.0.8 changes,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Backport server r3.0.7..r3.0.8 changes"" indicates an intention to backport changes from one version of the server software (r3.0.8) to another (r3.0.7).
+2. However, it lacks essential details such as:
+   - What specific changes are being backported.
+   - Why these changes need to be backported.
+   - The expected outcome or acceptance criteria for this task.
+   - Any potential risks or impacts of the backporting process.
+   - Affected components and environment details.
+
+Given that there is no information about what needs to be done, why it's necessary, or how success will be measured, the issue title does not provide enough detail to proceed with development or testing effectively.
+
+Final Answer: Yes",2d7cb385a9bca693,qwen2.5:14b,0,2026-06-17T17:51:42.831731,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251902,Make special commands (inprog,1,1,"Reasoning: The title ""Make special commands (inprog"" is incomplete. It lacks clarity on what specific commands are needed, where these commands should be implemented, the expected behavior of these commands, and any other relevant details such as acceptance criteria or affected components.
+
+Final Answer: Yes",08bc2468ed410bb6,qwen2.5:14b,0,2026-06-17T17:51:44.607192,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250935,Create C++17 variants,1,1,"Reasoning: The title ""Create C++17 variants"" is very vague. It does not specify what exactly needs to be created or why it's necessary. There are no details about the expected behavior, acceptance criteria, affected components, or environment requirements. Without these essential pieces of information, it’s impossible to understand the full scope and requirements of this issue.
+
+Final Answer: Yes",2c745067787a72c2,qwen2.5:14b,0,2026-06-17T17:51:46.733243,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251484,collection::distinct return should allow iteration over results,0,1,"Reasoning: The title ""collection::distinct return should allow iteration over results"" suggests that there is a request or an enhancement related to the ability to iterate over distinct results returned by a collection operation. However, it lacks essential details such as:
+- Steps to reproduce the issue (if this is about fixing a bug)
+- Expected vs actual behavior
+- Affected components and environment details
+- Acceptance criteria
+
+Without these critical pieces of information, it's challenging for developers or analysts to understand the full scope of the problem or enhancement request.
+
+Final Answer: Yes",48d26550f5bbda91,qwen2.5:14b,0,2026-06-17T17:51:49.478369,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251767,Fix TODO comments about linking to documentation when available,0,1,"Reasoning: The title ""Fix TODO comments about linking to documentation when available"" does not provide enough information. It lacks details such as where these TODO comments are located, what specific changes need to be made, the expected outcome after fixing them, and any acceptance criteria or environment details that might be necessary.
+
+Final Answer: Yes",c17053dffc62e488,qwen2.5:14b,0,2026-06-17T17:51:51.459784,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252082,Reparent OperationException below DBException,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Reparent OperationException below DBException"" suggests a change in the hierarchy or relationship of exception classes within an application's codebase.
+2. It mentions specific technical terms like ""OperationException"", ""DBException"", and implies a restructuring of these exceptions.
+3. However, it lacks essential details such as:
+   - Why this reparenting is necessary (rationale).
+   - Steps to reproduce the issue or scenario where this change is needed.
+   - Expected behavior after making this change.
+   - Affected components or modules in the application.
+   - Environment details like version numbers, operating systems, etc.
+
+Given these points, the title does not provide enough information for a requirements analyst to understand and act upon it effectively. It lacks critical context and steps necessary for implementation or verification.
+
+Final Answer: Yes",e723b76048d3107f,qwen2.5:14b,0,2026-06-17T17:51:55.209645,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251826,Stream builder error for invalid context is unfriendly,0,1,"Reasoning: The title ""Stream builder error for invalid context is unfriendly"" suggests that there is an error message related to a Stream Builder widget in Flutter when it encounters an invalid context. However, the title lacks essential information such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior (what should happen versus what actually happens).
+- Affected components or specific code snippets.
+- Environment details like operating system, device type, and software versions.
+
+Final Answer: Yes",251cdeea5e6a980b,qwen2.5:14b,0,2026-06-17T17:51:57.649352,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252418,Remove dependency on boost program_options,0,1,"Reasoning: The title ""Remove dependency on boost program_options"" lacks essential information such as why this removal is necessary, what impact it will have on the system or other components, and how to verify that the change has been successfully implemented. It does not provide steps to reproduce an issue, expected vs actual behavior, acceptance criteria, affected components, or environment details.
+
+Final Answer: Yes",3c43d46f7c3e8f7c,qwen2.5:14b,0,2026-06-17T17:51:59.751983,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250681,WINDOWS | Release build,1,1,"Step-by-Step Reasoning:
+
+1. The title ""WINDOWS | Release build"" is very brief and lacks specific details.
+2. It does not mention any particular problem or feature request.
+3. There are no steps to reproduce an issue provided, nor any description of expected vs actual behavior.
+4. No acceptance criteria, affected components, or environment details are given.
+
+Given the lack of essential information, this title is INCOMPLETE.
+
+Final Answer: Yes",f6a266985b0beecb,qwen2.5:14b,0,2026-06-17T17:52:02.079859,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251940,auto_reconnect using ConnectionString API,1,1,"Step-by-Step Reasoning:
+
+1. The title ""auto_reconnect using ConnectionString API"" provides a brief description of an action or feature (""auto_reconnect"") and the context in which it operates (""ConnectionString API"").
+2. However, this title lacks essential details such as:
+   - Steps to reproduce any issue.
+   - Expected vs actual behavior.
+   - Acceptance criteria for what constitutes successful auto-reconnection.
+   - Affected components or modules.
+   - Environment details (e.g., operating system, version numbers).
+3. The absence of these critical pieces of information makes it difficult to understand the full scope and requirements of the issue.
+
+Final Answer: Yes",ba433cd6851442ae,qwen2.5:14b,0,2026-06-17T17:52:05.445283,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252206,libmongoclient.so not generated when compling lateset c++ driver,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific file (`libmongoclient.so`) that is not being generated.
+2. It specifies an action (""when compiling latest C++ driver"").
+3. However, the title lacks details on:
+   - Steps to reproduce the issue.
+   - Expected behavior (what should happen during compilation).
+   - Actual observed behavior (error messages or logs).
+   - Affected components beyond mentioning a file and a driver.
+   - Environment details such as OS version, compiler version, etc.
+
+Given these points, while there is some information provided, it lacks critical details to fully understand the issue and how to reproduce or fix it.
+
+Final Answer: Yes",e1583ed1397c4038,qwen2.5:14b,0,2026-06-17T17:52:08.652701,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252474,Enforce /MD with Windows C++ DLL driver,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Enforce /MD with Windows C++ DLL driver"" suggests an action to enforce a specific compiler flag (/MD) for a Windows C++ DLL driver.
+2. However, the title lacks essential details such as:
+   - Steps to reproduce the issue or scenario where this enforcement is necessary.
+   - Expected behavior after enforcing /MD.
+   - Actual observed behavior if there's any discrepancy.
+   - Affected components and their interactions.
+   - Environment details (e.g., specific versions of Windows, C++ compiler).
+3. Without these critical pieces of information, it’s impossible to fully understand the issue or how to address it.
+
+Final Answer: Yes",9e8b6641bd345c98,qwen2.5:14b,0,2026-06-17T17:52:11.975586,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251467,Mutator methods which return non-void should document their return value,0,1,"Reasoning: The title ""Mutator methods which return non-void should document their return value"" suggests a need for documentation improvement. However, it lacks essential details such as:
+1. Which specific mutator methods are involved?
+2. What is the current state of these methods (are they undocumented or incorrectly documented)?
+3. Where and how should this documentation be added (e.g., in code comments, API documentation, etc.)?
+4. Are there any acceptance criteria for verifying that the documentation has been correctly updated?
+
+Without these details, it's difficult to understand the full scope of the issue and how to address it properly.
+
+Final Answer: Yes",1f2ae7cac4682b2d,qwen2.5:14b,0,2026-06-17T17:52:15.082554,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250928,Test with gcc 4.9?,1,1,"Reasoning: The title ""Test with gcc 4.9?"" is very vague and lacks essential details such as what needs to be tested, expected outcomes, steps to reproduce, or any acceptance criteria. It does not specify the context of why testing with a specific version of gcc (GNU Compiler Collection) is necessary nor does it provide information about which components are affected.
+
+Final Answer: Yes",61d35ad807e9bbe2,qwen2.5:14b,0,2026-06-17T17:52:17.233720,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250906,Regenerate test certificates with SHA256 signatures,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Regenerate test certificates with SHA256 signatures"" specifies an action to be taken (""regenerate"") and a specific type of certificate (""test certificates"").
+2. It also mentions the use of SHA256 for signing, which is a technical detail.
+3. However, it lacks essential information such as:
+   - Steps to reproduce or how to trigger this regeneration process.
+   - Expected behavior after regenerating the test certificates.
+   - Acceptance criteria to verify if the task is completed successfully.
+   - Affected components or systems that will use these regenerated certificates.
+   - Environment details where this issue applies (e.g., specific version of software, operating system).
+
+Given the missing critical information, the title alone does not provide enough context for a developer to understand and resolve the issue.
+
+Final Answer: Yes",cfc167736f6fff63,qwen2.5:14b,0,2026-06-17T17:52:21.129640,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251809,Allow configuration of SSL independently of the C driver,0,1,"Reasoning: The title ""Allow configuration of SSL independently of the C driver"" suggests a feature request or enhancement. However, it lacks essential details such as:
+- How to configure SSL independently.
+- What specific changes are required in the system.
+- Expected behavior after implementing this change.
+- Affected components and their interactions.
+- Acceptance criteria for verifying if the requirement is met.
+
+Final Answer: Yes",e60b66cb98af924a,qwen2.5:14b,0,2026-06-17T17:52:23.305535,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251443,Update release documentation to discuss moving releases/stable branch,0,1,"Reasoning: The title ""Update release documentation to discuss moving releases/stable branch"" suggests an action item for updating documentation. However, it lacks essential details such as what specific changes need to be made in the documentation, who is responsible for making these updates, and any acceptance criteria or expected outcomes of this update.
+
+Final Answer: Yes",47bc91474a13c2a4,qwen2.5:14b,0,2026-06-17T17:52:25.229087,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252069,Use of TARGET_OBJECTS in CMake build produces incorrect shared library,0,1,"Reasoning: The title mentions ""TARGET_OBJECTS"" and that it produces an incorrect shared library. However, it lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or environment details.
+- Acceptance criteria.
+
+Final Answer: Yes",cab124f82f09afdc,qwen2.5:14b,0,2026-06-17T17:52:27.109245,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251960,clang-format the legacy driver,1,1,"Reasoning: The title ""clang-format the legacy driver"" does not provide enough information to determine if it is a complete issue. It lacks details such as what exactly needs to be done with clang-format (e.g., formatting specific files or directories), expected outcomes, acceptance criteria, affected components, and environment details.
+
+Final Answer: Yes",4ce2b4fe35606652,qwen2.5:14b,0,2026-06-17T17:52:29.234317,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252104,"improve handling of """"node is recovering"""" errors",0,1,"Step-by-Step Reasoning:
+
+1. The title ""improve handling of 'node is recovering' errors"" suggests there is an existing error related to nodes that are in a recovery state.
+2. However, the title does not specify what needs to be improved or how these errors should be handled differently.
+3. It lacks details on steps to reproduce the issue, expected vs actual behavior, acceptance criteria, affected components, and environment details.
+4. Without knowing the specific improvements needed or the context in which this error occurs, it is difficult to understand the full scope of the problem.
+
+Final Answer: Yes",61549449a04d0bd4,qwen2.5:14b,0,2026-06-17T17:52:32.132467,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250562,BSON UDL for from_json,1,1,"Reasoning: The title ""BSON UDL for from_json"" is quite vague. It mentions a specific technical term and functionality (""from_json""), but it lacks essential details such as:
+- What exactly needs to be done or implemented.
+- Expected behavior after implementation.
+- Steps to reproduce any issue (if there is one).
+- Affected components or modules.
+- Environment details where the problem occurs.
+
+Given these missing elements, the title does not provide enough information for a requirements analyst to understand and address the issue effectively.
+
+Final Answer: Yes",9541263b95f68cab,qwen2.5:14b,0,2026-06-17T17:52:34.840893,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251355,Move mongocxx::libbson code somewhere where bsoncxx can access it,0,1,"Reasoning: The title ""Move mongocxx::libbson code somewhere where bsoncxx can access it"" lacks essential details such as:
+- Specific steps to reproduce the issue or implement the change.
+- Expected behavior after moving the code.
+- Acceptance criteria for what constitutes a successful resolution.
+- Affected components and their interactions.
+- Environment details, like which version of mongocxx and bsoncxx are involved.
+
+Final Answer: Yes",db7df753702aaa8b,qwen2.5:14b,0,2026-06-17T17:52:37.191801,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251652,Compile error with clang/libc++ on Linux due to ambiguous call to 'append' member function,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a ""Compile error,"" which indicates the nature of the issue.
+2. It specifies that this occurs with ""clang/libc++ on Linux,"" providing details about the environment and compiler.
+3. The title also describes the specific cause: an ""ambiguous call to 'append' member function.""
+
+However, let's consider what is missing:
+1. Steps to reproduce the error are not provided.
+2. Expected vs actual behavior is not detailed (e.g., what should happen versus what happens).
+3. Acceptance criteria for resolving this issue are absent.
+4. Affected components or files are not mentioned.
+
+While the title provides some useful information, it lacks critical details necessary for a complete issue report.
+
+Final Answer: Yes",e17de07156015fff,qwen2.5:14b,0,2026-06-17T17:52:40.698539,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251739,Backport server r3.0.8..r3.0.12 changes,1,1,"Reasoning: The title ""Backport server r3.0.8..r3.0.12 changes"" suggests that there is a need to backport certain changes from one version range of the server software to another. However, it lacks essential details such as:
+- What specific changes are being referred to?
+- Why these changes need to be backported (rationale)?
+- Which components or modules are affected by these changes?
+- Acceptance criteria for verifying that the backport was successful.
+- Environment and version information where this needs to happen.
+
+Without these critical pieces of information, it is difficult to understand the full scope and requirements of the issue. Therefore, based on the provided title alone, the issue appears INCOMPLETE.
+
+Final Answer: Yes",e99c6a6f0ec91c6e,qwen2.5:14b,0,2026-06-17T17:52:44.155377,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250612,"Windows tasks failing with """"insufficient disk space"""" on Evergreen",0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Windows tasks failing"", which indicates a specific problem.
+2. It specifies the error message: ""insufficient disk space"".
+3. It provides context by mentioning ""Evergreen"" — likely referring to an environment or version.
+
+However, the issue title lacks:
+- Steps to reproduce the issue
+- Expected vs actual behavior details
+- Affected components or modules
+- Environment setup and configuration specifics
+
+Given these missing elements, it's challenging for a developer to understand the full scope of the problem without additional information.
+
+Final Answer: Yes",c9d15f2e361691d1,qwen2.5:14b,0,2026-06-17T17:52:47.011966,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252465,libmongoclient should not link db/commands.cpp,0,1,"Reasoning: The title ""libmongoclient should not link db/commands.cpp"" suggests a technical opinion or requirement about the linking of a specific file in a library. However, it lacks essential details such as why this change is necessary, what issues arise from the current state, steps to reproduce any problems, expected behavior after the change, acceptance criteria, and affected components or environment details.
+
+Final Answer: Yes",067b0fb0bf9b809e,qwen2.5:14b,0,2026-06-17T17:52:49.249700,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251807,Add VS2015 builders for legacy C++ driver,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Add VS2015 builders for legacy C++ driver"" suggests that the task is to add build configurations or scripts for Visual Studio 2015 specifically for a legacy C++ driver.
+2. However, it lacks essential details such as:
+   - What exactly needs to be added (specific configuration settings, new files, etc.)
+   - Steps to reproduce or verify the addition
+   - Expected behavior after adding these builders
+   - Acceptance criteria to confirm completion
+   - Affected components and their interactions
+3. The title does not provide enough information for a developer to understand fully what needs to be done or how to test it.
+
+Final Answer: Yes",dfb13dc995cae149,qwen2.5:14b,0,2026-06-17T17:52:52.679370,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250752,Update FLE documentation for community version demonstrating explicit encryption/decryption,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Update FLE documentation"" which indicates a task related to updating documentation.
+2. It specifies the context as ""community version,"" indicating which specific version of the software is involved.
+3. However, it lacks details on what exactly needs to be updated in the documentation (e.g., file names, sections, or specific content).
+4. The title mentions demonstrating ""explicit encryption/decryption"" but does not provide clear steps or criteria for how this should be done within the documentation.
+5. There is no mention of expected outcomes, acceptance criteria, affected components, or environment details.
+
+Given these points, the issue title lacks sufficient detail to understand what needs to be accomplished and how it should be verified as complete.
+
+Final Answer: Yes",e27c57d350747bf5,qwen2.5:14b,0,2026-06-17T17:52:56.309192,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251483,Create C++ driver benchmark suite,0,1,"Reasoning: The title ""Create C++ driver benchmark suite"" lacks essential details such as what specific benchmarks are required, which components of the driver will be tested, expected performance metrics, and how to verify that the benchmarks have been successfully implemented. Without these critical pieces of information, it is difficult to understand the full scope and requirements of this task.
+
+Final Answer: Yes",254b3e733219a164,qwen2.5:14b,0,2026-06-17T17:52:58.402987,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250688,Ubuntu 16.04's compressed debug symbols confuse Valgrind,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific operating system version (""Ubuntu 16.04"").
+2. It specifies an issue with ""compressed debug symbols"".
+3. It indicates that the problem affects Valgrind, a memory debugging tool.
+
+However:
+- There is no mention of steps to reproduce the issue.
+- No expected vs actual behavior is described.
+- Acceptance criteria are not provided.
+- Environment details beyond OS version and software names are missing (e.g., specific versions of Valgrind or other dependencies).
+- The title does not provide any information about affected components or modules.
+
+Given these points, while some basic context is provided, the issue lacks critical details necessary for a proper analysis and resolution.
+
+Final Answer: Yes",16fbe4f83dc3e108,qwen2.5:14b,0,2026-06-17T17:53:01.893073,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250556,Remove unused and add missing includes,1,1,"Reasoning: The title ""Remove unused and add missing includes"" does not specify which files or components are involved. It lacks details about where these changes should be made, what the expected outcome is after making these changes, and whether there are any acceptance criteria to verify that the issue has been resolved properly.
+
+Final Answer: Yes",886a666d401346b5,qwen2.5:14b,0,2026-06-17T17:53:03.798369,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251543,Audit all libmongoc and libbson calls for error handling,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Audit all libmongoc and libbson calls for error handling"" specifies the task of auditing certain library function calls.
+2. However, it lacks critical details such as:
+   - What exactly needs to be checked or verified during the audit (e.g., specific types of errors, logging requirements).
+   - Expected outcomes or criteria that need to be met after the audit.
+   - Steps on how to reproduce or verify the issue if there is one.
+   - Affected components or modules beyond just mentioning libmongoc and libbson.
+3. Without these details, it's impossible for developers to understand fully what needs to be done or how to validate that the task has been completed successfully.
+
+Final Answer: Yes",73096a40150c2328,qwen2.5:14b,0,2026-06-17T17:53:07.241843,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250593,Update Travis tests from Ubuntu 14.04 and test against latest server,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Update Travis tests"" which indicates an action to be taken.
+2. It specifies the current environment (""Ubuntu 14.04"") and implies a need for change.
+3. However, it only suggests testing against the latest server but does not provide clear acceptance criteria or expected outcomes after the update.
+4. The title lacks details on what exactly needs to be updated in Travis tests (e.g., specific configurations, dependencies).
+5. There is no mention of steps to reproduce issues if any arise post-update, nor are there any environment details beyond mentioning ""latest server"".
+6. Given these points, while it hints at an action and a target environment, the title lacks sufficient detail for someone to understand fully what needs to be done or how success will be measured.
+
+Final Answer: Yes",9edac72bfae02e2d,qwen2.5:14b,0,2026-06-17T17:53:11.104571,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250638,Resync SDAM error handling spec tests,0,1,"Reasoning: The title ""Resync SDAM error handling spec tests"" does not provide enough information to determine if it is a complete issue. It mentions resynchronizing something related to SDAM (Server Discovery and Monitoring) error handling specification tests, but lacks details such as the specific errors being handled, steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details.
+
+Final Answer: Yes",c7cdfcc9a097132c,qwen2.5:14b,0,2026-06-17T17:53:13.376248,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251626,Misunderstanding about bsoncxx::document::element,1,1,"Reasoning: The title ""Misunderstanding about bsoncxx::document::element"" does not provide any specific information about what the misunderstanding is, how it affects functionality, or steps to reproduce. It lacks details on expected vs actual behavior, acceptance criteria, affected components, and environment details.
+
+Final Answer: Yes",60f44b990e4ba6f9,qwen2.5:14b,0,2026-06-17T17:53:15.244492,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252399,on linux systems it is customary to use sonames when creating shared libraries,0,1,"Reasoning: The title ""on linux systems it is customary to use sonames when creating shared libraries"" does not specify a problem or requirement clearly. It mentions a custom practice on Linux but lacks details such as the issue being reported, steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details.
+
+Final Answer: Yes",a7709de8c4eaac24,qwen2.5:14b,0,2026-06-17T17:53:17.229241,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252510,Default Windows builds of the C++ client driver to use /MD,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Default Windows builds"" which indicates an environment detail.
+2. It specifies ""C++ client driver"", indicating a specific component or module affected.
+3. However, the title does not provide any information about what needs to change (current state vs desired state).
+4. There are no steps provided on how to reproduce the issue or verify if it's working as expected after implementation.
+5. No acceptance criteria or expected behavior is mentioned.
+6. The title lacks context regarding why this change is necessary and its impact.
+
+Given these points, the title does not provide enough information for a developer to understand the full scope of the task or how to validate that the requirement has been met.
+
+Final Answer: Yes",328e5dc43d427489,qwen2.5:14b,0,2026-06-17T17:53:20.659996,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251377,Implement unit tests for GridFS options and result classes,0,1,"Reasoning: The title ""Implement unit tests for GridFS options and result classes"" specifies a task to implement unit tests but lacks essential details such as:
+- What specific functionalities or components of the GridFS options and result classes need testing.
+- Expected outcomes or criteria that these unit tests should meet.
+- Steps to reproduce or verify the implementation.
+- Affected components or modules.
+
+Final Answer: Yes",622f778aec9a5f21,qwen2.5:14b,0,2026-06-17T17:53:22.840555,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252499,ScopedDbConnection not being returned to the pool,0,1,"Reasoning: The title ""ScopedDbConnection not being returned to the pool"" indicates a problem with how connections are managed in a database connection pooling system. However, it lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment details (e.g., programming language, framework version).
+- Acceptance criteria.
+
+Without these critical pieces of information, it is difficult for developers and testers to understand the full scope of the problem and how to resolve it effectively. Therefore, this issue title is missing essential information.
+
+Final Answer: Yes",8cc7cb2fc80360fa,qwen2.5:14b,0,2026-06-17T17:53:25.783351,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252183,DBClientWithCommands::reIndex should not use getSystemIndexesCollection,0,1,"Step-by-Step Reasoning:
+
+1. The title ""DBClientWithCommands::reIndex should not use getSystemIndexesCollection"" suggests a specific method or function within the software that is being discussed.
+2. It implies there might be an issue with how the reIndex operation uses the getSystemIndexesCollection, but it does not provide clear steps to reproduce the problem.
+3. The title lacks details about expected vs actual behavior, acceptance criteria, affected components beyond the mentioned method, and environment details.
+4. There is no indication of what should happen instead or why this change is necessary.
+
+Final Answer: Yes",3085085c72fd28c6,qwen2.5:14b,0,2026-06-17T17:53:28.663795,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251644,C++11 driver 3.0.1 so much slower than legacy C++ driver 2.6.11?,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a comparison between two drivers: ""C++11 driver 3.0.1"" and ""legacy C++ driver 2.6.11"".
+2. It states that the newer version is slower, but it does not provide specific performance metrics or benchmarks.
+3. There are no details about the environment in which this comparison was made (e.g., hardware specifications, software dependencies).
+4. The title lacks information on how to reproduce the issue or steps to verify the claim.
+5. It doesn't specify what kind of operations were slower or under what conditions.
+6. No acceptance criteria or expected behavior is mentioned.
+
+Given these points, the issue title does not provide enough details for a developer to understand and address the problem effectively.
+
+Final Answer: Yes",77311299f98fbe1e,qwen2.5:14b,0,2026-06-17T17:53:32.359206,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251455,Provide more user-friendly constructor or factory function for builder::core,0,1,"Reasoning: The title ""Provide more user-friendly constructor or factory function for builder::core"" suggests a request to improve the usability of certain functions in the code. However, it lacks essential details such as:
+- Specific steps to reproduce any issues.
+- Expected vs actual behavior.
+- Acceptance criteria (what would make this issue resolved).
+- Affected components and environment details.
+
+Without these critical pieces of information, the title is incomplete for a proper analysis or resolution process.
+
+Final Answer: Yes",9bf2c1da15c27ad8,qwen2.5:14b,0,2026-06-17T17:53:34.904417,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251387,Configurable connect timeout in C++ driver. Currently fixed at 5 secs.,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""Configurable connect timeout"" which indicates a feature request or enhancement.
+2. It specifies that the current setting is fixed at 5 seconds but does not provide details on how it should be configurable (e.g., through configuration files, environment variables).
+3. There are no steps to reproduce an issue, expected vs actual behavior, acceptance criteria, affected components, or environment details provided.
+
+Based on these points, the title lacks essential information such as how the timeout will be configured and what changes need to happen in the current implementation. Therefore, it is missing critical details for a complete issue description.
+
+Final Answer: Yes",379a289faa9982fe,qwen2.5:14b,0,2026-06-17T17:53:38.047405,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251857,string_view.data() is unsafe,1,1,"Reasoning: The title ""string_view.data() is unsafe"" suggests that there might be an issue with the `data()` function of the `std::string_view` class being considered unsafe. However, this title lacks essential information such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or environment details.
+- Acceptance criteria.
+
+Without these details, it is difficult for a developer to understand and address the problem effectively.
+
+Final Answer: Yes",9b6c580c2c44c340,qwen2.5:14b,0,2026-06-17T17:53:40.568645,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251284,Add RHEL 7 Evergreen builder,1,1,"Reasoning: The title ""Add RHEL 7 Evergreen builder"" is quite vague. It does not specify what exactly needs to be added or how it should function. There are no details about the steps required to implement this feature, expected behavior, acceptance criteria, affected components, or environment details. Without these essential pieces of information, it's difficult to understand the full scope and requirements of the issue.
+
+Final Answer: Yes",d5b6ec0c27144087,qwen2.5:14b,0,2026-06-17T17:53:42.869969,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250698,Properly deprecate create_collection methods,0,1,"Reasoning: The title ""Properly deprecate create_collection methods"" lacks essential details such as what exactly needs to be deprecated, the context in which these methods are used, steps to reproduce any issues related to this deprecation, expected behavior after deprecation, and acceptance criteria. It does not provide enough information for a developer or analyst to understand fully what is required.
+
+Final Answer: Yes",622b73455f491208,qwen2.5:14b,0,2026-06-17T17:53:45.076666,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250784,Allow authentication to all server types except arbiters,0,1,"Reasoning: The title ""Allow authentication to all server types except arbiters"" provides some information about a feature request but lacks essential details. It does not specify:
+- How the authentication should be implemented.
+- What specific changes are required in the code or configuration.
+- Expected behavior after implementing this change.
+- Acceptance criteria for testing and validation.
+- Affected components or modules within the software system.
+
+Given these missing elements, it is difficult to fully understand and address the issue without additional context and details. Therefore, the title suggests that the issue is incomplete.
+
+Final Answer: Yes",cde332b85509cd12,qwen2.5:14b,0,2026-06-17T17:53:47.912584,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252291,MongoDB exception 17234,1,1,"Reasoning: The title ""MongoDB exception 17234"" only mentions an error code and does not provide any context about the steps to reproduce the issue, expected vs actual behavior, acceptance criteria, affected components, or environment details. This lack of information makes it difficult to understand the nature of the problem or how to address it.
+
+Final Answer: Yes",a60fbc902c9f9df9,qwen2.5:14b,0,2026-06-17T17:53:49.970510,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250878,bsoncxx:to_json causes double value to truncate,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""bsoncxx:to_json"", which indicates a specific function or method causing an issue.
+2. It specifies that the problem is related to double values being truncated when using this function.
+3. However, it lacks details such as:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior (what should happen versus what actually happens)
+   - Affected components beyond mentioning ""bsoncxx:to_json""
+   - Environment details where the problem occurs
+4. Without these critical pieces of information, it's challenging for developers to understand and resolve the issue effectively.
+
+Final Answer: Yes",f62a77d8e1929e2a,qwen2.5:14b,0,2026-06-17T17:53:53.261673,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252519,Apply endian conversions where necessary in the C++ driver bson library,0,1,"Reasoning: The title ""Apply endian conversions where necessary in the C++ driver bson library"" provides some context about what needs to be done but lacks essential details. It does not specify:
+- Where exactly these conversions are needed.
+- What the expected behavior should be after applying the conversions.
+- Steps to reproduce any issues or verify if the issue is resolved.
+- Affected components within the C++ driver bson library.
+- Environment details where this needs to be implemented.
+
+Final Answer: Yes",f4085ff06872ccc2,qwen2.5:14b,0,2026-06-17T17:53:55.780878,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250634,Use sort when verifying contents of outcome collections,0,1,"Reasoning: The title ""Use sort when verifying contents of outcome collections"" lacks essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, or environment details. It does not specify what needs to be sorted, how it should be done, under which conditions, or what the desired outcome is.
+
+Final Answer: Yes",0f516acb5601328d,qwen2.5:14b,0,2026-06-17T17:53:57.788279,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251786,coll.drop() throws if collection doesn't exist,0,1,"Step-by-Step Reasoning:
+
+1. The title ""coll.drop() throws if collection doesn't exist"" provides information about a specific function and its behavior under certain conditions.
+2. It mentions the exact operation (""coll.drop()"") that causes an issue, which is good for identifying the affected component (the database or storage system).
+3. However, it does not provide details on what exactly ""throws"" means in this context (e.g., error message, exception type), making it unclear about the nature of the failure.
+4. The title lacks information on how to reproduce the issue, expected behavior when a collection doesn't exist, or acceptance criteria for resolving the problem.
+5. There is no mention of environment details such as database version, programming language used, or specific application context.
+
+Given these points, while the title provides some basic information about an error condition, it lacks sufficient detail to fully understand and resolve the issue effectively.
+
+Final Answer: Yes",0c52e939296ecaab,qwen2.5:14b,0,2026-06-17T17:54:01.931075,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251038,Provide Transactions example for Docs,1,1,"Reasoning: The title ""Provide Transactions example for Docs"" is missing essential information such as what specific transactions are needed in the documentation, where these examples should be placed within the existing documentation structure, and any acceptance criteria or expected outcomes. It does not specify which part of the documentation needs updating or creating, nor does it provide details on how to verify if the task has been completed successfully.
+
+Final Answer: Yes",393aba2624e9e0b0,qwen2.5:14b,0,2026-06-17T17:54:04.172802,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250701,spec tests that run count should not use estimated count helper,0,1,"Reasoning: The title ""spec tests that run count should not use estimated count helper"" suggests a specific requirement or observation about the behavior of some test-related functionality. However, it lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment details where this occurs.
+- Acceptance criteria for resolving the issue.
+
+Without these critical pieces of information, it is difficult to fully understand and address the problem effectively.
+
+Final Answer: Yes",ad5fcc98af46ad8c,qwen2.5:14b,0,2026-06-17T17:54:06.733066,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250622,Remove the compatibility matrixes from documentation,0,1,"Reasoning: The title ""Remove the compatibility matrixes from documentation"" lacks essential information such as why these matrices should be removed, which specific documents or sections are affected, and what the expected outcome is after removal. It does not provide any steps to reproduce an issue, acceptance criteria, or environment details.
+
+Final Answer: Yes",00417fe0b689440c,qwen2.5:14b,0,2026-06-17T17:54:08.597939,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251804,Add ability to use document::view with stream builder,0,1,"Reasoning: The title ""Add ability to use document::view with stream builder"" suggests that there is a request to add functionality in the software. However, it lacks essential details such as:
+- What specific changes or additions are required?
+- How should this feature be implemented?
+- Expected behavior when using `document::view` with `stream builder`.
+- Steps to reproduce if there's an issue.
+- Affected components and environment details.
+
+Without these critical pieces of information, the title is incomplete for a proper analysis and development process.
+
+Final Answer: Yes",dddbfbe56fca8ce3,qwen2.5:14b,0,2026-06-17T17:54:11.436614,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252468,10gen repo for ubuntu does not provide mongodb-10gen-devel package,0,1,"Step-by-step reasoning:
+
+Title: ""10gen repo for ubuntu does not provide mongodb-10gen-devel package""
+
+Reasoning:
+- The title mentions a specific issue with the 10gen repository on Ubuntu.
+- It states that a particular package, ""mongodb-10gen-devel"", is missing from this repository.
+- However, it lacks details such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components beyond mentioning the package and OS, or environment details.
+
+Given these points:
+- The title does not provide enough information for someone to understand fully what needs to be done to resolve the issue.
+- It is missing critical elements like reproduction steps, expected outcome, and detailed environment setup.
+
+Final Answer: Yes",231cf2da9719a6ec,qwen2.5:14b,0,2026-06-17T17:54:14.838016,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251978,Unable to compile new CXX driver,0,1,"Reasoning: The title ""Unable to compile new CXX driver"" indicates a problem with compiling a specific type of driver. However, it lacks essential details such as:
+- Steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or environment details.
+- Acceptance criteria.
+
+Without these critical pieces of information, the issue is incomplete and cannot be properly addressed by developers.
+
+Final Answer: Yes",0a4163292a24c2e4,qwen2.5:14b,0,2026-06-17T17:54:17.049040,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252023,Backport server r3.0.0-rc6..r3.0.1 changes,0,1,"Step-by-step reasoning:
+
+1. The title ""Backport server r3.0.0-rc6..r3.0.1 changes"" indicates an intention to backport changes from one version of the software (r3.0.1) to another (r3.0.0-rc6).
+2. However, it lacks essential details such as:
+   - What specific changes are being backported.
+   - Why these changes need to be backported.
+   - The expected outcome or acceptance criteria for this task.
+   - Any potential risks or impacts of the backporting process.
+3. Without knowing what exactly needs to be done and why, it's difficult to assess whether all necessary steps have been considered.
+
+Final Answer: Yes",3a6ce2ef50428350,qwen2.5:14b,0,2026-06-17T17:54:20.578770,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252444,OID::init and mongo::jsTime unresolved in shared client (.so),0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""OID::init"" and ""mongo::jsTime"", which are specific function names or symbols.
+2. It states these are ""unresolved in shared client (.so)"", indicating a linking issue with a shared object file.
+3. However, the title lacks details on:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Affected components beyond mentioning "".so""
+   - Environment details (e.g., OS version, compiler version)
+   - Acceptance criteria
+
+Given these points, while the title provides some technical context about unresolved symbols in a shared object file, it lacks essential information to fully understand and address the issue.
+
+Final Answer: Yes",7acd955d78482b2e,qwen2.5:14b,0,2026-06-17T17:54:23.986999,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250789,mongocxx::uri call works with c char* parameter but not with c++ string parameter,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific function (`mongocxx::uri`) and its behavior with different types of parameters.
+2. It indicates that the call works with `c char*` but not with `c++ string`.
+3. However, it does not provide:
+   - Steps to reproduce the issue
+   - Expected vs actual behavior
+   - Affected components or environment details
+4. The title lacks information on why this discrepancy exists and how to resolve it.
+
+Final Answer: Yes",3024d7f0cb1dec0b,qwen2.5:14b,0,2026-06-17T17:54:26.649308,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251675,legacy driver fails to build on FreeBSD,0,1,"Reasoning: The title ""legacy driver fails to build on FreeBSD"" provides some information but lacks essential details. It mentions that a legacy driver fails to build on the FreeBSD operating system, which indicates an issue with building or compiling code in a specific environment. However, it does not provide:
+
+1. Steps to reproduce the problem.
+2. Expected vs actual behavior (what should happen versus what actually happens).
+3. Affected components within the driver or system.
+4. Environment details beyond mentioning FreeBSD (e.g., version of FreeBSD, compiler used, etc.).
+
+Given these missing elements, the issue title is incomplete.
+
+Final Answer: Yes",dff9733c2c11623e,qwen2.5:14b,0,2026-06-17T17:54:29.712575,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252109,Expose the ability to explicitly refresh the state of a replica set member,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions ""refresh the state"" but does not specify what exactly needs to be refreshed or how.
+2. It refers to a ""replica set member,"" which implies it's related to database replication, but there is no mention of the specific environment or technology (e.g., MongoDB).
+3. There are no steps provided on how to reproduce this feature request or any expected behavior after implementing it.
+4. The title does not include acceptance criteria that would define when the issue can be considered resolved.
+5. No details about affected components, such as APIs, UI elements, or specific database configurations, are mentioned.
+
+Given these points, the title lacks essential information to fully understand and address the request.
+
+Final Answer: Yes",62b95b58ec152e94,qwen2.5:14b,0,2026-06-17T17:54:33.176622,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252006,Creating BSON from JSON,0,1,"Reasoning: The title ""Creating BSON from JSON"" does not provide any specific details about the problem or feature request. It lacks information such as steps to reproduce an error, expected vs actual behavior, acceptance criteria, affected components, environment details, or any other necessary context that would allow a developer to understand and address the issue effectively.
+
+Final Answer: Yes",867d319864f33827,qwen2.5:14b,0,2026-06-17T17:54:35.190417,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250966,cursor::begin() is invalid after using std::distance,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific function call (`cursor::begin()`) and its behavior under certain conditions.
+2. It indicates that the issue arises ""after using `std::distance`"", suggesting there is an interaction between two functions or components.
+3. However, the title does not provide:
+   - Steps to reproduce the problem
+   - Expected vs actual behavior
+   - Affected components beyond mentioning `cursor::begin()` and `std::distance`
+   - Environment details (e.g., programming language version, compiler used)
+4. The issue lacks clarity on what exactly is invalid or how it affects the system.
+
+Final Answer: Yes",c762bb1f435bea5f,qwen2.5:14b,0,2026-06-17T17:54:38.349171,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250973,bsoncxx::to_json() do not support GBK,0,1,"Step-by-Step Reasoning:
+
+1. The title mentions a specific function `bsoncxx::to_json()` and indicates that it does not support the GBK character encoding.
+2. However, the issue lacks details such as:
+   - Steps to reproduce the problem.
+   - Expected behavior versus actual observed behavior.
+   - Affected components or modules.
+   - Environment details (e.g., operating system, version of libraries).
+3. Without these critical pieces of information, it is difficult for developers to understand and resolve the issue effectively.
+
+Final Answer: Yes",778d3de69b5f8529,qwen2.5:14b,0,2026-06-17T17:54:41.071830,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251233,Investigate issues with load path for macos-1012 variant,0,1,"Reasoning: The title ""Investigate issues with load path for macos-1012 variant"" suggests that there are problems related to the load path on a specific macOS version. However, it lacks essential details such as:
+- Specific steps to reproduce the issue.
+- Expected vs actual behavior.
+- Affected components or modules.
+- Environment setup and configuration requirements.
+- Acceptance criteria for resolving the issue.
+
+Final Answer: Yes",545a7b4332376a32,qwen2.5:14b,0,2026-06-17T17:54:43.392840,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252108,ReplicaSetMonitor should monitor arbiters,0,1,"Step-by-Step Reasoning:
+
+1. The title ""ReplicaSetMonitor should monitor arbiters"" suggests a feature request or enhancement for an existing system.
+2. It specifies the component involved: ReplicaSetMonitor.
+3. It mentions what this component should do: monitor arbiters.
+
+However, the title lacks several critical pieces of information:
+- No details on how to reproduce the issue (if it's a bug).
+- No description of expected vs actual behavior.
+- No acceptance criteria or success conditions for the feature request.
+- No environment details where this applies.
+- No steps to verify if the problem is fixed or the enhancement implemented.
+
+Given these missing elements, the title does not provide enough information to fully understand and address the issue effectively.
+
+Final Answer: Yes",96d959d7d399da0c,qwen2.5:14b,0,2026-06-17T17:54:46.951717,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-250839,Add mongodb+srv URIs to Atlas Connectivity tests,0,1,"Reasoning: The title ""Add mongodb+srv URIs to Atlas Connectivity tests"" suggests that there is a task or feature request related to adding specific MongoDB connection strings to connectivity tests. However, it lacks essential details such as:
+- What exactly needs to be done beyond just adding the URIs (e.g., modifying existing tests, creating new tests).
+- Expected behavior after adding these URIs.
+- Acceptance criteria for completing this task.
+- Affected components or systems.
+- Environment details where this change is needed.
+
+Final Answer: Yes",e8ca16bb029da3a2,qwen2.5:14b,0,2026-06-17T17:54:49.688566,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252397,Add sparse option to ensureIndex,0,1,"Step-by-Step Reasoning:
+
+1. The title ""Add sparse option to ensureIndex"" suggests a feature request or enhancement.
+2. It mentions adding an option called 'sparse' to the 'ensureIndex' function.
+3. However, it lacks details such as:
+   - What is the expected behavior of this new 'sparse' option?
+   - How should it interact with existing functionalities?
+   - Are there any specific acceptance criteria or test cases mentioned?
+   - Which components or modules are affected by this change?
+   - Is there a description of the environment where this issue applies?
+
+Given these points, the title does not provide enough information to understand fully what needs to be done and how it should work.
+
+Final Answer: Yes",276b0ddd42400072,qwen2.5:14b,0,2026-06-17T17:54:53.121041,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-251366,Document that Windows users should build libbson without extra alignment,0,1,"Reasoning: The title ""Document that Windows users should build libbson without extra alignment"" suggests a need for documentation but lacks essential details such as the specific steps required to build libbson, what constitutes ""extra alignment,"" and why it is necessary or beneficial. It does not provide enough information about the expected outcome or acceptance criteria.
+
+Final Answer: Yes",3859ceb7533dc2bb,qwen2.5:14b,0,2026-06-17T17:54:55.149916,project_04,title_only,incompleteness,few_shot_cot
+ISSUE-252042,Quickstart Wiki Page,1,1,"Reasoning: The title ""Quickstart Wiki Page"" does not provide any specific information about what needs to be done or fixed. It lacks details such as acceptance criteria, expected behavior, steps to reproduce an issue, affected components, environment details, etc. This title alone is insufficient for understanding the requirements or issues related to a quickstart wiki page.
+
+Final Answer: Yes",99cbbd99e68e0b7b,qwen2.5:14b,0,2026-06-17T17:54:57.200344,project_04,title_only,incompleteness,few_shot_cot
