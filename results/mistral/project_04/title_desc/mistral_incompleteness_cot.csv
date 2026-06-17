@@ -1,0 +1,198 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-251590,Test with latest versions of Boost,0,1,Final Answer: Yes,c1d809397a66da98,mistral:7b,0,2026-06-17T20:48:48.558399,project_04,title_desc,incompleteness,cot
+ISSUE-252462,Determine C++ Driver version from examining the headers,0,1,Final Answer: Yes,2aed66061fee1206,mistral:7b,0,2026-06-17T20:48:49.108405,project_04,title_desc,incompleteness,cot
+ISSUE-250680,Use cmake,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides information about the change in build instructions from using 'make' or 'msbuild' to 'cmake', and the potential benefits of this change, such as simplifying build instructions and preventing users from accidentally mixing release/debug runtimes. It also mentions that this ticket is associated with the compilation script update.
+2. The essential information missing in this issue includes:
+   - Steps to reproduce the current problem or the need for a reproduction (since it's not clear what the current problem is)
+   - Expected behavior after implementing the change
+   - Acceptance criteria for determining when the issue is resolved
+   - Affected components beyond just the compilation scripts
+   - Environment details, such as specific versions of CMake, operating systems, or dependencies that might be affected by this change.
+3. Without additional information, a developer cannot act on this issue effectively since it's not clear what the current problem is and what the expected outcome should be after implementing the suggested changes.",79e6937754151063,mistral:7b,0,2026-06-17T20:48:51.520927,project_04,title_desc,incompleteness,cot
+ISSUE-252307,Include regex elements in BSONArrayBuilder,0,1,Final Answer: Yes,36b41dc7327fc2bc,mistral:7b,0,2026-06-17T20:48:51.937732,project_04,title_desc,incompleteness,cot
+ISSUE-250777,Defer checking if a deployment supports sessions until the session's first operation,0,1,Final Answer: Yes,9ab0b108e5f2c5eb,mistral:7b,0,2026-06-17T20:48:52.389692,project_04,title_desc,incompleteness,cot
+ISSUE-252448,Static archive fails to force inclusion of global initializers,0,1,Final Answer: Yes,24eaaeb6adc2ec59,mistral:7b,0,2026-06-17T20:48:52.844689,project_04,title_desc,incompleteness,cot
+ISSUE-251874,Add ordered option to insert_many,0,1,Final Answer: Yes,344677d2a2261f6e,mistral:7b,0,2026-06-17T20:48:53.332737,project_04,title_desc,incompleteness,cot
+ISSUE-251692,Bug When Trying to 'Make',0,1,Final Answer: Yes,ea4eb31ee0ee8231,mistral:7b,0,2026-06-17T20:48:53.885552,project_04,title_desc,incompleteness,cot
+ISSUE-251622,Can't construct operation_exception without a server error,0,1,Final Answer: Yes,38ecb391a1414adb,mistral:7b,0,2026-06-17T20:48:54.392812,project_04,title_desc,incompleteness,cot
+ISSUE-252149,Polyfill stdx::string_view,0,1,Final Answer: Yes,182ba147ee5488c7,mistral:7b,0,2026-06-17T20:48:54.843683,project_04,title_desc,incompleteness,cot
+ISSUE-252321,Files dependent on make_shared should include make_shared.hpp,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides context about the difference in header file inclusion between older and current versions of Boost, specifically regarding make_shared.hpp and smart_ptr.hpp. It also mentions a branch (26compat) and some impact on the codebase.
+2. Missing essential information includes:
+   - Steps to reproduce the issue (how to identify files dependent on make_shared that do not include make_shared.hpp)
+   - Expected behavior (what should be the correct behavior for these files)
+   - Acceptance criteria (how will we know when the issue is resolved)
+   - Affected components (which specific files or modules are affected)
+   - Environment details (which platforms, compilers, or configurations this applies to)
+3. Without additional information, a developer cannot act on this issue effectively as they would not have clear guidance on what needs to be done and how to verify the resolution.",dc1be1bc3a2004ab,mistral:7b,0,2026-06-17T20:48:57.078362,project_04,title_desc,incompleteness,cot
+ISSUE-252438,Update travis configuration to run the client examples,0,1,Final Answer: Yes,c5966652abfcbb24,mistral:7b,0,2026-06-17T20:48:57.434641,project_04,title_desc,incompleteness,cot
+ISSUE-251649,Add support for MongoDB 3.4 to the legacy C++ driver.,0,1,Final Answer: Yes,e21dedc3af4febcd,mistral:7b,0,2026-06-17T20:48:57.911923,project_04,title_desc,incompleteness,cot
+ISSUE-251049,Resync SDAM tests,0,1,"Final Answer: Yes [The issue provides some information about the change made but lacks details such as reproduction steps, expected behavior, and potential impact or acceptance criteria, making it difficult for a developer to act on it without further clarification.]",9885b51b46f5183e,mistral:7b,0,2026-06-17T20:48:58.782210,project_04,title_desc,incompleteness,cot
+ISSUE-252416,rotatable_file_writer_test does not compile in C++11 mode with libc++,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides the following key information: the title of the issue, the build line used, the error message received when trying to compile the code, and the specific lines in the source code causing the error.
+2. Missing essential information includes: steps to reproduce the issue (i.e., how to set up the environment and run the build command), expected behavior (what should happen when the code compiles correctly), and possibly acceptance criteria or affected components (although these might be implied based on the file names involved).
+3. A developer may not be able to act on this issue without asking for more information, as they would need to know how to reproduce the error and what the expected behavior should be in order to troubleshoot and fix the issue effectively.",da48322df2334b97,mistral:7b,0,2026-06-17T20:49:00.686442,project_04,title_desc,incompleteness,cot
+ISSUE-251115,Implement SASLPrep,0,1,Final Answer: Yes,fa7ec7b4b17a9414,mistral:7b,0,2026-06-17T20:49:01.071343,project_04,title_desc,incompleteness,cot
+ISSUE-250886,Investigate alternatives to Catch2,0,1,Final Answer: Yes,230ae03cbe1a4b21,mistral:7b,0,2026-06-17T20:49:01.531098,project_04,title_desc,incompleteness,cot
+ISSUE-251990,missing bsoncxx::document::view::empty,0,0,Final Answer: No,1f8144932d97cf6f,mistral:7b,0,2026-06-17T20:49:02.004506,project_04,title_desc,incompleteness,cot
+ISSUE-252201,Create buildvariant for Ubuntu 12.04,0,1,Final Answer: Yes,4253f60aee4291e5,mistral:7b,0,2026-06-17T20:49:02.516887,project_04,title_desc,incompleteness,cot
+ISSUE-251862,Backport server r3.0.7..r3.0.8 changes,0,1,Final Answer: Yes,a2453f25e96cfa9f,mistral:7b,0,2026-06-17T20:49:03.021596,project_04,title_desc,incompleteness,cot
+ISSUE-251902,Make special commands (inprog,1,1,Final Answer: Yes,392bbe6720025ffe,mistral:7b,0,2026-06-17T20:49:03.521498,project_04,title_desc,incompleteness,cot
+ISSUE-250935,Create C++17 variants,0,1,Final Answer: Yes,56a726e1c9db7eab,mistral:7b,0,2026-06-17T20:49:03.977015,project_04,title_desc,incompleteness,cot
+ISSUE-251484,collection::distinct return should allow iteration over results,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a problem description and potential solutions to the problem. It also refers to an existing issue SERVER-3141, which suggests that there might be some context or background information related to this issue. However, it does not explicitly state the current behaviour, expected behaviour, or any specific environment details.
+2. Missing essential information includes:
+   - Current behaviour (how exactly is 'mongocxx::collection::distinct' currently behaving that is causing this problem?)
+   - Expected behaviour (what should be the ideal behavior of 'mongocxx::collection::distinct' according to the CRUD spec and the issue description?)
+   - Reproduction steps (a clear set of instructions on how to reproduce the problem)
+   - Environment details (operating system, programming language version, database version, etc.)
+3. A developer might not be able to act on this issue without asking for more information or clarification about the current and expected behavior, as well as the environment in which the issue occurs.",5fd1df2795d05f9f,mistral:7b,0,2026-06-17T20:49:06.477008,project_04,title_desc,incompleteness,cot
+ISSUE-251767,Fix TODO comments about linking to documentation when available,0,0,Final Answer: No,670cd0b33fb7e8e9,mistral:7b,0,2026-06-17T20:49:06.838664,project_04,title_desc,incompleteness,cot
+ISSUE-252082,Reparent OperationException below DBException,0,1,Final Answer: Yes,fa9a0d55ca5af3d0,mistral:7b,0,2026-06-17T20:49:07.383450,project_04,title_desc,incompleteness,cot
+ISSUE-251826,Stream builder error for invalid context is unfriendly,0,1,Final Answer: Yes,2c114cb235875297,mistral:7b,0,2026-06-17T20:49:07.849697,project_04,title_desc,incompleteness,cot
+ISSUE-252418,Remove dependency on boost program_options,0,1,Final Answer: Yes,27a4f5259676e732,mistral:7b,0,2026-06-17T20:49:08.293511,project_04,title_desc,incompleteness,cot
+ISSUE-250681,WINDOWS | Release build,0,1,Final Answer: Yes,3c38f2c3b76a1676,mistral:7b,0,2026-06-17T20:49:08.862928,project_04,title_desc,incompleteness,cot
+ISSUE-251940,auto_reconnect using ConnectionString API,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides the API being used (mongo::ConnectionString and mongoDB host and port), the function to connect (connect()), and the error string variable.
+2. Missing essential information includes steps to reproduce the issue, expected behavior when _autoReconnect is true, and whether there's a connection failure or any specific error encountered.
+3. A developer might be able to act on this issue by trying to implement auto_reconnect manually based on their understanding of the API and mongoDB, but they would need more information about the actual problem to do so effectively.",1f60b8947d211b87,mistral:7b,0,2026-06-17T20:49:10.488701,project_04,title_desc,incompleteness,cot
+ISSUE-252206,libmongoclient.so not generated when compling lateset c++ driver,0,1,Yes,1dc17c0f0179c49b,mistral:7b,0,2026-06-17T20:49:12.778298,project_04,title_desc,incompleteness,cot
+ISSUE-252474,Enforce /MD with Windows C++ DLL driver,0,1,Final Answer: Yes,c0eaa32d9998bf45,mistral:7b,0,2026-06-17T20:49:13.862051,project_04,title_desc,incompleteness,cot
+ISSUE-251467,Mutator methods which return non-void should document their return value,0,0,"Final Answer: No
+
+The issue provides a list of methods that need to be documented with their return values. However, it lacks essential information such as the reproduction steps, expected behavior, and environment details. A developer would need additional context to understand why these specific methods require documentation and how they should be documented. Therefore, more information is needed for this issue to be actionable.",fea530a6fc8be0c9,mistral:7b,0,2026-06-17T20:49:15.769354,project_04,title_desc,incompleteness,cot
+ISSUE-250928,Test with gcc 4.9?,0,1,Final Answer: Yes,f0e523d83ec822d3,mistral:7b,0,2026-06-17T20:49:16.529262,project_04,title_desc,incompleteness,cot
+ISSUE-250906,Regenerate test certificates with SHA256 signatures,0,1,Final Answer: Yes,afc2406637eb4de0,mistral:7b,0,2026-06-17T20:49:16.867406,project_04,title_desc,incompleteness,cot
+ISSUE-251809,Allow configuration of SSL independently of the C driver,0,0,"Final Answer: No
+
+Explanation: While the issue provides a clear description of the desired functionality and motivation, it lacks essential details such as:
+1. Steps to reproduce the current behavior where SSL support depends on the C driver.
+2. Expected behavior after implementing the proposed changes (i.e., how the C++11 driver users should configure SSL support at runtime).
+3. Acceptance criteria for the issue, i.e., what constitutes a successful resolution of this issue.
+4. Affected components or environment details are also missing. Therefore, it is not possible for a developer to act on this issue without asking for more information.",b5ce231d00751dbb,mistral:7b,0,2026-06-17T20:49:18.529334,project_04,title_desc,incompleteness,cot
+ISSUE-251443,Update release documentation to discuss moving releases/stable branch,0,1,Final Answer: Yes,8afcaf045e3c000f,mistral:7b,0,2026-06-17T20:49:18.865449,project_04,title_desc,incompleteness,cot
+ISSUE-252069,Use of TARGET_OBJECTS in CMake build produces incorrect shared library,0,1,Final Answer: Yes,b2a824d4f7b29199,mistral:7b,0,2026-06-17T20:49:19.380642,project_04,title_desc,incompleteness,cot
+ISSUE-251960,clang-format the legacy driver,0,1,Final Answer: Yes,3b981470a9b7d19f,mistral:7b,0,2026-06-17T20:49:19.855615,project_04,title_desc,incompleteness,cot
+ISSUE-252104,"improve handling of """"node is recovering"""" errors",0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides the current behavior and the desired behavior, as well as some context about the SDAM system and the specific error messages involved. However, it does not provide clear reproduction steps or specific acceptance criteria for what constitutes a successful resolution of the issue.
+2. Missing essential information includes:
+   - Reproduction steps to consistently trigger the ""node is recovering"" error
+   - Expected behavior when handling this error (beyond replacing the server's description and requesting a check or scan)
+   - Acceptance criteria for determining when the issue has been resolved
+   - Environment details such as programming language, libraries, or specific system configurations
+3. A developer may be able to start working on the issue based on the provided context and requirements, but they would likely need additional information to fully understand the problem and determine a successful resolution.",85771115a31e4034,mistral:7b,0,2026-06-17T20:49:21.992509,project_04,title_desc,incompleteness,cot
+ISSUE-250562,BSON UDL for from_json,0,1,Final Answer: Yes,2b4e95c3b312b8d9,mistral:7b,0,2026-06-17T20:49:22.317250,project_04,title_desc,incompleteness,cot
+ISSUE-251355,Move mongocxx::libbson code somewhere where bsoncxx can access it,0,1,Final Answer: Yes,5b6340252abc6e6f,mistral:7b,0,2026-06-17T20:49:22.819280,project_04,title_desc,incompleteness,cot
+ISSUE-251652,Compile error with clang/libc++ on Linux due to ambiguous call to 'append' member function,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides detailed information about the error encountered during compilation with clang and libc++ on Linux, the specific line causing the error, the relevant files and lines where the function is used, and a workaround that resolves the issue.
+2. However, the issue is missing essential information such as the expected behavior of the code (what should happen when the code compiles without the static cast), the actual behavior observed with the static cast, and any specific environment details like the exact version of clang, libc++, or the operating system being used.
+3. Without this additional information, a developer may not be able to fully understand the root cause of the issue or determine if the workaround is always necessary or applicable in different environments.",f94c52c8739b55ee,mistral:7b,0,2026-06-17T20:49:24.876605,project_04,title_desc,incompleteness,cot
+ISSUE-251739,Backport server r3.0.8..r3.0.12 changes,0,1,Final Answer: Yes,4fa0f7ac9af32480,mistral:7b,0,2026-06-17T20:49:25.279203,project_04,title_desc,incompleteness,cot
+ISSUE-250612,"Windows tasks failing with """"insufficient disk space"""" on Evergreen",0,1,Final Answer: Yes,522eb7e982955571,mistral:7b,0,2026-06-17T20:49:25.688743,project_04,title_desc,incompleteness,cot
+ISSUE-252465,libmongoclient should not link db/commands.cpp,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides detailed technical information about the problem in libmongoclient, specifically mentioning memory leaks and suggesting a solution to move two commands from client/connpool.cpp to db/commands.cpp and removing db/commands.o from the link list for libmongoclient.
+2. Missing essential information includes:
+   - Steps to reproduce the issue (how to verify that there is indeed a memory leak)
+   - Expected behavior after implementing the suggested solution
+   - Acceptance criteria or testing instructions
+   - Affected components beyond just libmongoclient (e.g., which client code shows memory leaks when linked with the updated library)
+   - Environment details such as specific versions, operating systems, or tools used (Purify, valgrind)
+3. Without the missing information, a developer may not be able to fully understand the issue, verify its impact, or confirm that the suggested solution resolves it.",c1db3179528dbffb,mistral:7b,0,2026-06-17T20:49:28.053543,project_04,title_desc,incompleteness,cot
+ISSUE-251807,Add VS2015 builders for legacy C++ driver,0,1,Final Answer: Yes,41965daf2d60507f,mistral:7b,0,2026-06-17T20:49:28.381190,project_04,title_desc,incompleteness,cot
+ISSUE-250752,Update FLE documentation for community version demonstrating explicit encryption/decryption,0,1,Final Answer: Yes,bc9dc2ba1c2e3987,mistral:7b,0,2026-06-17T20:49:28.906236,project_04,title_desc,incompleteness,cot
+ISSUE-251483,Create C++ driver benchmark suite,0,1,Final Answer: Yes,bb272a2a398143d0,mistral:7b,0,2026-06-17T20:49:29.586369,project_04,title_desc,incompleteness,cot
+ISSUE-250688,Ubuntu 16.04's compressed debug symbols confuse Valgrind,0,1,Final Answer: Yes,66f77c3aade068f7,mistral:7b,0,2026-06-17T20:49:29.913191,project_04,title_desc,incompleteness,cot
+ISSUE-250556,Remove unused and add missing includes,0,1,Final Answer: Yes,caa1b37b35a57098,mistral:7b,0,2026-06-17T20:49:30.481113,project_04,title_desc,incompleteness,cot
+ISSUE-251543,Audit all libmongoc and libbson calls for error handling,0,1,Final Answer: Yes,07d82658ac1eb1ab,mistral:7b,0,2026-06-17T20:49:30.937672,project_04,title_desc,incompleteness,cot
+ISSUE-250593,Update Travis tests from Ubuntu 14.04 and test against latest server,0,1,Final Answer: Yes,7927fe76cb91a461,mistral:7b,0,2026-06-17T20:49:31.419079,project_04,title_desc,incompleteness,cot
+ISSUE-250638,Resync SDAM error handling spec tests,0,1,Final Answer: Yes,c832e848446a84ec,mistral:7b,0,2026-06-17T20:49:31.939863,project_04,title_desc,incompleteness,cot
+ISSUE-251626,Misunderstanding about bsoncxx::document::element,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides information about the use of `bsoncxx::document::element` in containers and the error encountered when trying to check its type.
+2. Missing essential information includes reproduction steps, expected behavior, and environment details (such as the specific version of the library being used, the operating system, and any relevant code context).
+3. Without additional information, it is difficult for a developer to act on this issue effectively or determine the root cause of the error.",e2c99b6892174cec,mistral:7b,0,2026-06-17T20:49:33.361026,project_04,title_desc,incompleteness,cot
+ISSUE-252399,on linux systems it is customary to use sonames when creating shared libraries,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides the title and a link to a commit that adds soname support when making shared libraries on Linux. However, it does not explicitly state the problem or the expected behavior before applying the patch.
+2. Missing essential information includes steps to reproduce the issue (if any), expected behavior after applying the patch, and possibly affected components or environment details.
+3. Without additional context, a developer may struggle to understand if the provided patch is necessary, how it should be tested, or what the desired outcome should be. Therefore, more information is required for this issue to be actionable.",158e949f258e0658,mistral:7b,0,2026-06-17T20:49:34.836584,project_04,title_desc,incompleteness,cot
+ISSUE-252510,Default Windows builds of the C++ client driver to use /MD,0,1,Final Answer: Yes,07f45cc10460869f,mistral:7b,0,2026-06-17T20:49:35.185797,project_04,title_desc,incompleteness,cot
+ISSUE-251377,Implement unit tests for GridFS options and result classes,0,1,Final Answer: Yes,ea553d92570f51d8,mistral:7b,0,2026-06-17T20:49:35.665374,project_04,title_desc,incompleteness,cot
+ISSUE-252499,ScopedDbConnection not being returned to the pool,0,1,Final Answer: Yes,27241159bfdca847,mistral:7b,0,2026-06-17T20:49:36.192989,project_04,title_desc,incompleteness,cot
+ISSUE-252183,DBClientWithCommands::reIndex should not use getSystemIndexesCollection,0,1,Final Answer: Yes,84d377272463d542,mistral:7b,0,2026-06-17T20:49:36.688016,project_04,title_desc,incompleteness,cot
+ISSUE-251644,C++11 driver 3.0.1 so much slower than legacy C++ driver 2.6.11?,0,1,Final Answer: Yes,e7edc4790419cbf7,mistral:7b,0,2026-06-17T20:49:37.160584,project_04,title_desc,incompleteness,cot
+ISSUE-251455,Provide more user-friendly constructor or factory function for builder::core,0,1,Final Answer: Yes,af83580c49fac516,mistral:7b,0,2026-06-17T20:49:37.678593,project_04,title_desc,incompleteness,cot
+ISSUE-251387,Configurable connect timeout in C++ driver. Currently fixed at 5 secs.,0,1,Final Answer: Yes,5f8a910258bdf47a,mistral:7b,0,2026-06-17T20:49:38.165507,project_04,title_desc,incompleteness,cot
+ISSUE-251857,string_view.data() is unsafe,0,1,Final Answer: Yes,9a7cd2ca627f5d77,mistral:7b,0,2026-06-17T20:49:38.675450,project_04,title_desc,incompleteness,cot
+ISSUE-251284,Add RHEL 7 Evergreen builder,0,1,Final Answer: Yes,797b143e910ecde6,mistral:7b,0,2026-06-17T20:49:39.533793,project_04,title_desc,incompleteness,cot
+ISSUE-250698,Properly deprecate create_collection methods,0,1,Final Answer: Yes,2ae4784c1ee9938f,mistral:7b,0,2026-06-17T20:49:39.818937,project_04,title_desc,incompleteness,cot
+ISSUE-250784,Allow authentication to all server types except arbiters,0,1,Final Answer: Yes,7de17db310cd3e69,mistral:7b,0,2026-06-17T20:49:40.390844,project_04,title_desc,incompleteness,cot
+ISSUE-252291,MongoDB exception 17234,0,1,Final Answer: Yes,ec3f020b7e73326c,mistral:7b,0,2026-06-17T20:49:40.881867,project_04,title_desc,incompleteness,cot
+ISSUE-250878,bsoncxx:to_json causes double value to truncate,0,1,Final Answer: Yes,56c369e02084c31e,mistral:7b,0,2026-06-17T20:49:41.427510,project_04,title_desc,incompleteness,cot
+ISSUE-252519,Apply endian conversions where necessary in the C++ driver bson library,0,1,Final Answer: Yes,536e57b9a9a0d9d8,mistral:7b,0,2026-06-17T20:49:41.886422,project_04,title_desc,incompleteness,cot
+ISSUE-250634,Use sort when verifying contents of outcome collections,0,0,Final Answer: No,2d2eead1cd1d83ee,mistral:7b,0,2026-06-17T20:49:42.362247,project_04,title_desc,incompleteness,cot
+ISSUE-251786,coll.drop() throws if collection doesn't exist,0,1,Final Answer: Yes,1575b1a48f352a5d,mistral:7b,0,2026-06-17T20:49:42.850472,project_04,title_desc,incompleteness,cot
+ISSUE-251038,Provide Transactions example for Docs,0,1,Final Answer: Yes,c431584221ba0959,mistral:7b,0,2026-06-17T20:49:43.446943,project_04,title_desc,incompleteness,cot
+ISSUE-250701,spec tests that run count should not use estimated count helper,0,1,Final Answer: Yes,4b99e225dd3e945b,mistral:7b,0,2026-06-17T20:49:43.861303,project_04,title_desc,incompleteness,cot
+ISSUE-250622,Remove the compatibility matrixes from documentation,0,0,Final Answer: No,23417607a4f954c5,mistral:7b,0,2026-06-17T20:49:44.360769,project_04,title_desc,incompleteness,cot
+ISSUE-251804,Add ability to use document::view with stream builder,0,1,Final Answer: Yes,58146d3dbee6c6e5,mistral:7b,0,2026-06-17T20:49:44.878576,project_04,title_desc,incompleteness,cot
+ISSUE-252468,10gen repo for ubuntu does not provide mongodb-10gen-devel package,0,1,Final Answer: Yes,55eafca4b7071626,mistral:7b,0,2026-06-17T20:49:45.391244,project_04,title_desc,incompleteness,cot
+ISSUE-251978,Unable to compile new CXX driver,0,1,Final Answer: Yes,adfc578895df2636,mistral:7b,0,2026-06-17T20:49:45.917620,project_04,title_desc,incompleteness,cot
+ISSUE-252023,Backport server r3.0.0-rc6..r3.0.1 changes,0,1,Final Answer: Yes,d44cd512d1ce8afc,mistral:7b,0,2026-06-17T20:49:46.407613,project_04,title_desc,incompleteness,cot
+ISSUE-252444,OID::init and mongo::jsTime unresolved in shared client (.so),0,1,Final Answer: Yes,f626bc884dabf0e5,mistral:7b,0,2026-06-17T20:49:46.868193,project_04,title_desc,incompleteness,cot
+ISSUE-250789,mongocxx::uri call works with c char* parameter but not with c++ string parameter,0,1,Final Answer: Yes,03592854224fd62a,mistral:7b,0,2026-06-17T20:49:47.425017,project_04,title_desc,incompleteness,cot
+ISSUE-251675,legacy driver fails to build on FreeBSD,0,1,Final Answer: Yes,ce4094387fb6c6c3,mistral:7b,0,2026-06-17T20:49:47.912342,project_04,title_desc,incompleteness,cot
+ISSUE-252109,Expose the ability to explicitly refresh the state of a replica set member,0,1,Final Answer: Yes,77bddb0020de95d4,mistral:7b,0,2026-06-17T20:49:48.356115,project_04,title_desc,incompleteness,cot
+ISSUE-252006,Creating BSON from JSON,0,1,Final Answer: Yes,e74f0c82a1875962,mistral:7b,0,2026-06-17T20:49:48.839530,project_04,title_desc,incompleteness,cot
+ISSUE-250966,cursor::begin() is invalid after using std::distance,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides the code snippet and describes the problem encountered when using the Mongo-C++ driver with the std::distance function on a cursor object.
+2. Missing essential information includes:
+   - Reproduction steps: A clear set of instructions to reproduce the issue, such as the exact version of the Mongo-C++ driver being used and any specific environment details (OS, compiler, etc.)
+   - Expected behavior: What the expected outcome should be when using std::distance on a cursor object in this context.
+3. Without the missing information, it is difficult for a developer to determine whether this is a bug or incorrect usage of the cursor object. More information is needed to diagnose and resolve the issue effectively.",61e703a2e6307670,mistral:7b,0,2026-06-17T20:49:50.793334,project_04,title_desc,incompleteness,cot
+ISSUE-250973,bsoncxx::to_json() do not support GBK,0,1,"Final Answer: Yes (with some assumptions)
+
+1. The issue provides the following key information:
+   - The user has installed MongoDB's C++ driver version 3.2.0 successfully on their PC.
+   - They are encountering an error when running a specific code snippet using `bsoncxx::to_json()`.
+   - The error results in an invalid BSON output.
+
+2. Missing essential information:
+   - Reproduction steps: The issue does not provide the actual code causing the problem, making it difficult to reproduce and diagnose the issue accurately.
+   - Expected behavior: It is unclear what the expected behavior of `bsoncxx::to_json()` should be in this context or how it relates to GBK encoding.
+   - Environment details: The operating system, compiler, and other relevant environment variables are not specified.
+   - Acceptance criteria: There is no clear indication of what constitutes a solution or how the issue can be considered resolved.
+
+3. A developer might still be able to act on this issue by making assumptions about the code and environment based on their experience with MongoDB's C++ driver,",a115615b0d02340e,mistral:7b,0,2026-06-17T20:49:53.306004,project_04,title_desc,incompleteness,cot
+ISSUE-251233,Investigate issues with load path for macos-1012 variant,0,1,Final Answer: Yes,3632d27b2a669166,mistral:7b,0,2026-06-17T20:49:53.662097,project_04,title_desc,incompleteness,cot
+ISSUE-252108,ReplicaSetMonitor should monitor arbiters,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a reference to an external link that explains the requirement for Mongos 2.6 to monitor arbiters, but it does not explicitly state the current behaviour or expected behaviour of the ReplicaSetMonitor in relation to arbiters.
+2. Missing essential information includes steps to reproduce any issues with the current implementation, expected behaviour when monitoring arbiters, and specific environment details such as the operating system, version, and configuration of the Mongos instance.
+3. Without additional information, a developer may not be able to act on this issue effectively or determine if it is a valid concern or a duplicate of an existing issue.",3c43190a56e277db,mistral:7b,0,2026-06-17T20:49:55.370123,project_04,title_desc,incompleteness,cot
+ISSUE-250839,Add mongodb+srv URIs to Atlas Connectivity tests,0,1,Final Answer: Yes,f3359a152b1c2112,mistral:7b,0,2026-06-17T20:49:55.709788,project_04,title_desc,incompleteness,cot
+ISSUE-252397,Add sparse option to ensureIndex,0,1,Final Answer: Yes,fad28d2c31f958a2,mistral:7b,0,2026-06-17T20:49:56.197701,project_04,title_desc,incompleteness,cot
+ISSUE-251366,Document that Windows users should build libbson without extra alignment,0,1,Final Answer: Yes,6b113a0f3cef73da,mistral:7b,0,2026-06-17T20:49:56.700923,project_04,title_desc,incompleteness,cot
+ISSUE-252042,Quickstart Wiki Page,0,1,Final Answer: Yes,42b6027c8ad553cf,mistral:7b,0,2026-06-17T20:49:57.192576,project_04,title_desc,incompleteness,cot

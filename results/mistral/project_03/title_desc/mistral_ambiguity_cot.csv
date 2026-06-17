@@ -1,0 +1,331 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-207056,Build badges in several github repos have stopped working,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides information about build badges not working on several GitHub repos after migration to ci.evernym.com, and the need for updating readme.md files with the new CI URL. It also mentions that build badges for master have been implemented but those for stable need to be added.
+2. The language used in this issue is not vague, it is clear and specific about the problem and the required solution.
+3. However, the ambiguity lies in the scope of the issue. It's unclear which repos are affected, what exactly needs to be updated in the readme.md files, and how the build badges for stable will be added. These details need further clarification to avoid any misinterpretation or confusion during resolution.",e1ffedd13a07bdaa,mistral:7b,0,2026-06-17T20:23:32.797188,project_03,title_desc,ambiguity,cot
+ISSUE-206571,Indy-sdk integration,0,1,Final Answer: Yes,13e1bb1a3acf4d3c,mistral:7b,0,2026-06-17T20:23:33.114198,project_03,title_desc,ambiguity,cot
+ISSUE-205754,Assist EV QA,0,0,Final Answer: No,eefc4af1f7253753,mistral:7b,0,2026-06-17T20:23:33.624005,project_03,title_desc,ambiguity,cot
+ISSUE-206786,I should be able to load a .sovrin file from a URL directly into the CLI,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a specific file type (.sovrin) and mentions loading it from a URL directly into the CLI, but it does not specify the exact functionality or behavior that should be implemented when loading the file.
+2. While the language is relatively clear about the action of loading a .sovrin file from a URL, it lacks clarity on how the CLI should handle errors, edge cases, and potential security concerns related to loading files from URLs.
+3. The issue can be interpreted in multiple ways, such as whether the CLI should support only HTTP/HTTPS protocols for URLs or if other protocols are also acceptable, what happens when a file with the same name already exists, how to handle authentication and authorization for loading files from URLs, etc.",d65f5734914f3212,mistral:7b,0,2026-06-17T20:23:35.647218,project_03,title_desc,ambiguity,cot
+ISSUE-206184,Configurations should contain certain version of pip,0,0,"1. The issue provides a detailed error log from a Node service that cannot start after the release of pip 10, with specific timestamps and systemd messages. It also mentions several Python files and packages involved in the service.
+2. The language used in this issue is not vague; it is clear and specific.
+3. While the error message itself does not seem ambiguous, the requirement for ""certain version of pip"" could potentially be interpreted as unclear if there isn't a specified version number or range. However, given the context of the error, it can be inferred that the issue is related to pip 10.
+
+Final Answer: No (The issue is not ambiguous)",4f92490b5029cd7e,mistral:7b,0,2026-06-17T20:23:37.501915,project_03,title_desc,ambiguity,cot
+ISSUE-205916,read_ledger tool is not able to read the sovrin plugin ledger,0,0,"1. The issue provides a description of a problem with the read_ledger tool and suggests a solution, which involves adding code to the read_ledger script and modifying indy_config.py file.
+2. The language used in this issue is relatively clear, as it describes a specific problem and proposes a specific solution.
+3. While the solution provided has a clear intent, there might be some ambiguity about the exact cause of the problem (why the read_ledger tool can't find the sovrin payment plugin ledgers) or potential edge cases that were not considered in the proposed fix. However, the main issue seems to be focused on adding specific lines of code and configuring a file, which reduces the overall ambiguity.
+
+Final Answer: No (The issue is not ambiguous)",9d04fe9ae72a655e,mistral:7b,0,2026-06-17T20:23:39.617922,project_03,title_desc,ambiguity,cot
+ISSUE-206000,AttributeError: 'NoneType' object has no attribute 'request' during load,0,1,"1. The issue provides a title, steps to reproduce the problem, actual results, and additional info about logs. However, it lacks specific details about the software system, the function `perf_processes.py`, and the context of the error message ""AttributeError: 'NoneType' object has no attribute 'request'"".
+2. The language used in the issue description is not vague, but the error message itself might be ambiguous due to its technical nature.
+3. Yes, the issue can be interpreted in multiple ways because the context of the software system and the function `perf_processes.py` are not clearly defined.
+
+Final Answer: Yes",fa317d217c630ff6,mistral:7b,0,2026-06-17T20:23:41.071669,project_03,title_desc,ambiguity,cot
+ISSUE-207179,Make sure Nodes upgrade eagerly,0,1,Final Answer: Yes,0916293098a900ec,mistral:7b,0,2026-06-17T20:23:41.391050,project_03,title_desc,ambiguity,cot
+ISSUE-207175,Testing: do a lot of concurrent writes and reads to same values,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a scenario for testing concurrent writes and reads to the same values, but it does not specify what 'a lot' means or what constitutes 'same values'.
+2. The language used in the issue is somewhat vague, particularly with regards to the quantity of concurrent operations and the definition of 'same values'.
+3. The scenario can be interpreted in multiple ways depending on how 'a lot' and 'same values' are defined, leading to potential ambiguity in the testing process.",6f6d2048d88bf73b,mistral:7b,0,2026-06-17T20:23:43.299367,project_03,title_desc,ambiguity,cot
+ISSUE-205301,Responses to client validator info requests very slow on a StagingNet node,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides details about a slow response time on a specific node (sovrin.sicpa.com) for validator-info commands from clients, comparing it to other nodes and providing some diagnostic information. However, the scope of the problem is not clearly defined, as it's unclear whether this slow response extends to other client requests or just validator-info requests.
+2. The language used in the issue description is generally clear, but the lack of a definitive scope makes it somewhat ambiguous.
+3. The issue can be interpreted in multiple ways, depending on whether the slow response time is specific to validator-info commands or if it affects other client queries as well.",48c106d2f0326507,mistral:7b,0,2026-06-17T20:23:45.417592,project_03,title_desc,ambiguity,cot
+ISSUE-206412,Create Entity Relationship Diagram of current ledger objects including primary and secondary keys used to link each object together.,0,1,Final Answer: Yes,984df0bad767636d,mistral:7b,0,2026-06-17T20:23:45.958059,project_03,title_desc,ambiguity,cot
+ISSUE-206580,Explore: Can doing a ping in the Getting Started Tutorial delete the active wallet,0,1,Final Answer: Yes,66f4175818ad9222,mistral:7b,0,2026-06-17T20:23:46.276537,project_03,title_desc,ambiguity,cot
+ISSUE-206497,Unclear messages appear during reading transactions,0,1,Final Answer: Yes,de8389517ba21b05,mistral:7b,0,2026-06-17T20:23:47.417872,project_03,title_desc,ambiguity,cot
+ISSUE-205266,1.10.0 Release,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a clear title and description, including specific features to be included in the release (improved view change algorithm), acceptance criteria, and steps for preparing documentation, releasing, and notifying stakeholders.
+2. The language used is generally clear and specific, with few vague terms or phrases.
+3. While there may be some room for interpretation regarding what constitutes a ""ready"" feature or what should be included in the release based on upstream releases, these are not significant enough to classify the issue as ambiguous overall.",824790d2a72b53ac,mistral:7b,0,2026-06-17T20:23:49.081524,project_03,title_desc,ambiguity,cot
+ISSUE-206591,Incubation: Remove all non-Indy branding from indy-anoncreds repo,0,1,Final Answer: Yes,df337a75171e5c51,mistral:7b,0,2026-06-17T20:23:49.792113,project_03,title_desc,ambiguity,cot
+ISSUE-207055,Make the tests working using pure pytest,0,1,Final Answer: Yes,3e3df6eda11844a0,mistral:7b,0,2026-06-17T20:23:50.330305,project_03,title_desc,ambiguity,cot
+ISSUE-206198,The node blacklisted the remaining nodes during network problems,0,1,"1. The issue provides a set of steps to reproduce, actual results, and links to logs and a suppressor script. It describes a problem with a pool of nodes during a load test, where certain nodes failed to catch up with the pool after network problems.
+2. While some parts are clear (e.g., steps to reproduce, actual results), other aspects such as the nature of the network problems and the exact behavior of the ""suppressor.sh"" script could be considered somewhat vague.
+3. Yes, the issue can be interpreted in multiple ways due to the vagueness around the network problems and the suppressor script's behavior.
+
+Final Answer: Yes",2482729fc0e67128,mistral:7b,0,2026-06-17T20:23:51.884484,project_03,title_desc,ambiguity,cot
+ISSUE-205670,Tests using the sdk fail on the master branch,0,1,"1. The issue provides specific details about failing tests on the master branch that use indy-sdk, mentions a particular function `open_pool_ledger` and error message related to loading libindy.so. It also includes information about the genesis file format difference between the master and older branches, and the error encountered while running plenum tests with installed libsodium18 and libsodium18-dev.
+2. The language used in this issue is relatively clear, as it provides specific details about the problem, the functions involved, and the error message.
+3. While the issue does not explicitly state multiple interpretations, there might be some ambiguity regarding whether the problem lies with the indy-sdk itself or with the genesis file format change on the master branch. Additionally, there is a question about whether a newer version of libsodium is needed for crypto_pwhash.
+Final Answer: Yes (The issue has some ambiguity)",7a1e52e9f841fd84,mistral:7b,0,2026-06-17T20:23:54.118685,project_03,title_desc,ambiguity,cot
+ISSUE-205185,Write a script to upgrade audit ledger for the new state recovered from ledger,0,1,Final Answer: Yes,2f8b4fead81f6eae,mistral:7b,0,2026-06-17T20:23:55.253102,project_03,title_desc,ambiguity,cot
+ISSUE-205803,Find out maximal pool performance numbers for mixed mode (read and write),0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides some details about the mixture mode and the run strategy, but it lacks specificity regarding the software system being referred to as INDY-1343 and the FEEs for transactions. It also does not specify the exact nature of the pool performance metrics or the load script.
+2. While the language is not overly vague, there are some unclear aspects that could lead to confusion, such as the lack of specificity about the software system and the load script.
+3. The issue can be interpreted in multiple ways due to the ambiguity surrounding the software system, FEEs, pool performance metrics, and load script.",246d1f7ef48dd70b,mistral:7b,0,2026-06-17T20:23:57.034311,project_03,title_desc,ambiguity,cot
+ISSUE-206213,Read-ledger without storage copy in case of RocksDB (RocksDB read-only mode support),0,1,Final Answer: Yes,c4349014451b12e2,mistral:7b,0,2026-06-17T20:23:57.386074,project_03,title_desc,ambiguity,cot
+ISSUE-205553,Node that does not upgrade spams the config ledger,0,1,Final Answer: Yes,89daeb1aa1387a88,mistral:7b,0,2026-06-17T20:23:57.875775,project_03,title_desc,ambiguity,cot
+ISSUE-206193,[QA] Script for filling the ledger doesn't work,0,0,"1. The issue provides a title, steps to reproduce, actual results, and expected results for a script that is supposed to fill a ledger. It also includes some logs from the execution of the script.
+2. The language used in this issue is not vague. It is clear and specific about the problem (the script doesn't work) and the steps to reproduce it.
+3. Based on the provided information, it seems that there is only one interpretation of the issue: the script for filling the ledger did not generate the expected results. However, the error message suggests that a verkey (verification key) was not provided when creating a DidVerifier object, which might be related to the failure of the script but is not explicitly mentioned in the issue title or description.
+
+Final Answer: No",2cecb0efbe61853f,mistral:7b,0,2026-06-17T20:24:00.397358,project_03,title_desc,ambiguity,cot
+ISSUE-207334,Send NYM command is not executed on Shakedown Pool 1,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides some context about the build version, steps to reproduce, actual results, and expected results. However, it lacks crucial information such as what ""NYM"" stands for, what is the destination parameter, and what exactly is meant by ""Shakedown Pool 1"".
+2. While the language used in the issue description is not vague per se, the absence of necessary details makes it unclear.
+3. The ambiguity arises from the undefined terms like ""NYM"", ""destination parameter"", and ""Shakedown Pool 1"". Without a clear understanding of these terms, the issue can be interpreted differently by different people.",7c067e3bbe85c2ec,mistral:7b,0,2026-06-17T20:24:02.168172,project_03,title_desc,ambiguity,cot
+ISSUE-206998,roll back default where zmq high water mark = 0,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a description of work to be done, which includes specific changes to the ZMQ FIFO queue, detection and reporting of high water mark conditions, implementation of message discard logic, and graceful exit in case of exceeding the high water mark.
+2. While the language is generally clear, there are some ambiguities such as ""nearing the high water mark"" and ""graceful error"". These terms could be interpreted differently by different developers.
+3. The issue can be interpreted in multiple ways due to the vague language mentioned above, as well as the lack of specific details about how the detection of nearing the high water mark should be implemented or what constitutes a graceful error.",cec8ad46239842f4,mistral:7b,0,2026-06-17T20:24:04.323087,project_03,title_desc,ambiguity,cot
+ISSUE-206222,Errors with configs during installation,0,1,Final Answer: Yes,b5c94a8fb9a1b53d,mistral:7b,0,2026-06-17T20:24:05.337062,project_03,title_desc,ambiguity,cot
+ISSUE-207211,Node crashes if out of disk space,0,1,Final Answer: Yes,8080fe4b2d20550c,mistral:7b,0,2026-06-17T20:24:06.061659,project_03,title_desc,ambiguity,cot
+ISSUE-205565,Unable to choose volume type using pool automation scripts,0,1,Final Answer: Yes,c9bf082247d8a940,mistral:7b,0,2026-06-17T20:24:06.355270,project_03,title_desc,ambiguity,cot
+ISSUE-205746,1.6.74 Release,0,0,Final Answer: No,c8e3f4a5cd6f021f,mistral:7b,0,2026-06-17T20:24:07.293606,project_03,title_desc,ambiguity,cot
+ISSUE-207177,"Ledgers """"stall"""" gracefully",0,1,Final Answer: Yes,e194d4eaebf210a6,mistral:7b,0,2026-06-17T20:24:07.620202,project_03,title_desc,ambiguity,cot
+ISSUE-207246,Sovrin-Client: Show command cannot show files with space in the name,0,1,Final Answer: Yes,96b04fc77433c616,mistral:7b,0,2026-06-17T20:24:08.109287,project_03,title_desc,ambiguity,cot
+ISSUE-207346,Unexpected behavior of the testSendNodeSucceedsIfServicesIsMissed test,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a title and description of an unexpected behavior of a test, but it does not specify the context or the exact nature of the problem.
+2. The language used is somewhat clear in terms of describing the issue, but it lacks specific details about the cause or the expected behavior of the test.
+3. The issue can be interpreted in multiple ways as it does not provide enough information to determine if the test is failing due to a missing service, a bug, or some other unforeseen circumstance.",3db9ca972de13778,mistral:7b,0,2026-06-17T20:24:09.837173,project_03,title_desc,ambiguity,cot
+ISSUE-207079,Node with malformed ldb files has inconsistent behavior,0,1,Final Answer: Yes,2f0de419a53834e0,mistral:7b,0,2026-06-17T20:24:10.153205,project_03,title_desc,ambiguity,cot
+ISSUE-205870,Node can't catch up large ledger,0,1,"1. The issue provides details about the environment, steps to reproduce, actual and expected results, additional information, and logs for reference. However, it lacks clarity on some aspects such as the specific problem with the catch-up process and the role of nodes in the Indy network.
+2. While the language is not entirely vague, there are certain unclear aspects like the nature of the problem preventing the clear node from completing the catch-up process and the meaning of ""Too many split steps were done"" messages.
+3. Yes, the issue can be interpreted in multiple ways due to the unclear aspects mentioned above. For instance, the cause of the problem could be related to the network configuration, the size of the ledger, or an issue with the catch-up process itself.
+
+Final Answer: Yes",70cb33fc3c5d4be4,mistral:7b,0,2026-06-17T20:24:12.241684,project_03,title_desc,ambiguity,cot
+ISSUE-207163,F-value tests: How many nodes can I lose before the network stops? Is it 2f+1? Is it n-f?,0,1,Final Answer: Yes,9b78be86e43c5ec8,mistral:7b,0,2026-06-17T20:24:12.653069,project_03,title_desc,ambiguity,cot
+ISSUE-205602,Write and Read request flow,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a general request to create Activity diagrams for write and read request flows, but it does not specify the context or system details.
+2. While the language is not overtly vague, it lacks clarity regarding the specific system, data structures, and constraints involved.
+3. The issue can be interpreted in multiple ways depending on the assumptions made about the system being developed, making it ambiguous.",162d8e8156a82f20,mistral:7b,0,2026-06-17T20:24:13.832839,project_03,title_desc,ambiguity,cot
+ISSUE-207255,Sovrin-Client: Show file command of not much use,0,1,Final Answer: Yes,0b3a16e4b34724c5,mistral:7b,0,2026-06-17T20:24:14.146661,project_03,title_desc,ambiguity,cot
+ISSUE-205400,Update docs for Transaction Author agreement,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides specific documents to be updated, mentions adding and updating information about new TAA fields, new transactions, requests for TAA and AML, and the `owner` field in `auth_map.md`.
+2. The language used is clear and specific.
+3. There is a single interpretation of the issue as it provides detailed instructions on what needs to be done.",ca99d2e563c8d417,mistral:7b,0,2026-06-17T20:24:15.410630,project_03,title_desc,ambiguity,cot
+ISSUE-205519,Incorrect pool upgrade txn validation,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a build information, steps to reproduce, actual results, and expected results. However, it lacks specific details about the context of the pool upgrade transaction, the configuration settings that are causing the issue, and the exact nature of the validation failure.
+2. While the language is not overtly vague, it does not provide a clear definition or explanation of terms such as ""pool upgrade txn"", ""time span"", and ""config"".
+3. The issue can be interpreted in multiple ways due to the lack of specific details about the context and configuration settings involved. For example, without knowing the exact format of the time span specified in the config, it's unclear if the issue is with the format of the time span provided or the validation logic itself.",27e9d1f960c9fbd1,mistral:7b,0,2026-06-17T20:24:17.170124,project_03,title_desc,ambiguity,cot
+ISSUE-205808,Performance of monitor should be improved,0,1,Final Answer: Yes,783ea345fe8c810c,mistral:7b,0,2026-06-17T20:24:17.517439,project_03,title_desc,ambiguity,cot
+ISSUE-205232,PBFT View Change Debug: Part 2,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a title and description that outline several tasks related to PBFT View Change Debug, Part 2. However, it lacks specific details about the 'primaryChanged' issue, which is marked as TBD (To Be Determined).
+2. The language used in the issue description is generally clear, but the ambiguity lies in the 'primaryChanged' part due to its unclear context and scope.
+3. The 'primaryChanged' issue can indeed be interpreted in multiple ways without further clarification or context provided.",97643a40a7d55a94,mistral:7b,0,2026-06-17T20:24:19.061224,project_03,title_desc,ambiguity,cot
+ISSUE-206367,Knowledge transfer on Indy build processes,0,1,Final Answer: Yes,6715d3f3be8273f8,mistral:7b,0,2026-06-17T20:24:19.404738,project_03,title_desc,ambiguity,cot
+ISSUE-205283,Support ubuntu 20.04 in system tests,0,0,Final Answer: No,0d1116cb4e652240,mistral:7b,0,2026-06-17T20:24:19.873972,project_03,title_desc,ambiguity,cot
+ISSUE-206407,generate_indy_pool_transactions can be run only by indy user,0,0,"1. The issue provides a title, steps to reproduce, actual results, expected results, and additional information. It describes a problem with the `generate_indy_pool_transactions` command that only allows the indy user to run it, causing a permission denied error when attempted by another user. The problem occurs in an agent installation script for Vagrant, affecting GST performance on the master version of the scripts but not on the stable version or non-Vagrant setups.
+
+2. The language used in this issue is relatively clear, as it describes a specific command and error message, and provides steps to reproduce the problem.
+
+3. While the issue does not seem to be ambiguous at first glance, there are some uncertainties regarding the scope of the problem (e.g., why the stable version of the scripts works but the master version doesn't) and potential underlying causes that could lead to multiple interpretations.
+
+Final Answer: No (The issue is not ambiguous, but it does have some uncertainties and unclear aspects.)",6e235a314c492c6e,mistral:7b,0,2026-06-17T20:24:22.357172,project_03,title_desc,ambiguity,cot
+ISSUE-206381,ATTRIB transaction with ENC and HASH doesn't work,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a title and description, but it lacks specific details about what exactly 'ATTRIB transaction with ENC and HASH' refers to, which could lead to confusion.
+2. The language used in the issue is not entirely clear as it uses technical terms like 'ATTRIB', 'ENC', and 'HASH' without defining them or providing context.
+3. Due to the lack of specific details and unclear terminology, this issue can be interpreted in multiple ways by different developers, making it ambiguous.",477b23a1cf5168fb,mistral:7b,0,2026-06-17T20:24:23.687347,project_03,title_desc,ambiguity,cot
+ISSUE-205817,Research performance of static validation against message schema,0,1,Final Answer: Yes,73b69433cc9de8a1,mistral:7b,0,2026-06-17T20:24:24.013013,project_03,title_desc,ambiguity,cot
+ISSUE-207214,The CLI initialization becomes too slow,0,0,"1. The issue title and description provide information about a slow CLI initialization, specifically referring to the command `cmd: _*sovrin)*_ and including a profiling result from running the command with cProfile.
+2. The language used in this issue is relatively clear as it describes a specific problem (slow CLI initialization) and includes relevant details such as the command causing the issue and a profiling result.
+3. While there might be multiple reasons for the slow CLI initialization, the issue itself is not ambiguous because it clearly states the problem and provides some context about the command causing the issue.
+
+Final Answer: No",6ce46ad1feb1df79,mistral:7b,0,2026-06-17T20:24:25.630962,project_03,title_desc,ambiguity,cot
+ISSUE-205760,POA: Delegate issuance to a processor,0,0,Final Answer: No,4f6701891db9b980,mistral:7b,0,2026-06-17T20:24:25.986106,project_03,title_desc,ambiguity,cot
+ISSUE-205269,Implement helper script for AWS pool operations with snapshots,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a title and description, but it lacks specific details about what exactly is meant by ""helper script"", ""AWS pool operations"", ""snapshots"", ""volumes"", and ""instances"". It also does not specify the programming language to be used for the script or the exact AWS services involved (e.g., EC2, EBS, RDS).
+2. The language in the issue description is somewhat vague, as it does not provide clear definitions for key terms such as ""helper script"", ""AWS pool operations"", and ""upgrade"".
+3. Due to the lack of specific details and unclear terminology, this issue can be interpreted in multiple ways by different developers, making it ambiguous.",90dc3ad33acf6637,mistral:7b,0,2026-06-17T20:24:27.886560,project_03,title_desc,ambiguity,cot
+ISSUE-207178,An upgrade should be idempotent,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue states that an upgrade should be idempotent, and provides a description of how the upgrade process works. However, it does not specify what ""idempotent"" means in this context or what the implications are for the software system.
+2. The language used in the issue is somewhat clear, but it lacks specific details about the requirements for idempotency and the expected behavior of the software system when an upgrade is attempted on a node that is already at the desired version.
+3. The issue can be interpreted in multiple ways, as the term ""idempotent"" has different meanings in various contexts, and without additional information it is not clear what specific requirements are being imposed on the software system. Additionally, the allowance for an additional script to run on each node during the upgrade process adds complexity and potential ambiguity to the issue.",04b59fa944bea41e,mistral:7b,0,2026-06-17T20:24:29.864715,project_03,title_desc,ambiguity,cot
+ISSUE-205965,Ledger upgrade transaction should specify a package name,0,0,"1. The issue provides a story, acceptance criteria, and notes that help define the requirement for an upgrade transaction to specify a package name. It also mentions the need for compatibility with different network-specific packages like Indy Node and Sovrin Network.
+2. The language used in this issue is relatively clear as it defines the problem, the desired outcome, and provides references to relevant documentation.
+3. While there are multiple network-specific packages mentioned (Indy Node and Sovrin Network), the context provided makes it less likely that the issue can be interpreted in multiple ways. However, potential ambiguity could arise if there is a lack of clarity on how the upgrade transaction will handle multiple package names or situations where both Indy Node and Sovrin Network need to be upgraded simultaneously.
+
+Final Answer: No (The issue does not appear to be ambiguous based on the provided information.)",0e690517073b3883,mistral:7b,0,2026-06-17T20:24:31.751645,project_03,title_desc,ambiguity,cot
+ISSUE-207326,Prove the pool upgrade mechanism by performing a noticeable upgrade test,0,1,Final Answer: Yes,27f7e2086824dcbb,mistral:7b,0,2026-06-17T20:24:32.107417,project_03,title_desc,ambiguity,cot
+ISSUE-206117,Simple Timeout fixes of the current View Change protocol,0,1,Final Answer: Yes,fedaf94dc203adb4,mistral:7b,0,2026-06-17T20:24:32.629613,project_03,title_desc,ambiguity,cot
+ISSUE-206655,As I Validator or Observer Node,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a link to a GitHub pull request and a Google Document, but it does not explicitly state the context or scope of the software requirement within the issue itself.
+2. While the links provided may contain clearer information, the language used in the issue title and description is somewhat vague and lacks specific details about what exactly needs to be presented as a Signed State Proof for client requests.
+3. The ambiguity arises from the lack of context and specificity in the issue description, which can potentially lead to different interpretations of what is required.",362e9532fa8b58c0,mistral:7b,0,2026-06-17T20:24:34.211286,project_03,title_desc,ambiguity,cot
+ISSUE-207231,eliminate runtime warnings that show during tests,0,0,Final Answer: No,84fb554e1be3d71e,mistral:7b,0,2026-06-17T20:24:34.514617,project_03,title_desc,ambiguity,cot
+ISSUE-206217,Clarify current permissible actions with DID's roles,0,1,Final Answer: Yes,9f816b52858c6a45,mistral:7b,0,2026-06-17T20:24:35.022833,project_03,title_desc,ambiguity,cot
+ISSUE-205635,Enable PreViewChange Strategy,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a title, description, and acceptance criteria. However, it lacks specific details about what exactly ""PreViewChange strategy"" is, how it works, and its potential impact on the system.
+2. While the language in the acceptance criteria seems clear, the ambiguity lies in the definition of ""PreViewChange strategy."" Without a clear understanding of this term, it's difficult to determine if the criteria can be met.
+3. The issue can indeed be interpreted in multiple ways due to the lack of specific details about the ""PreViewChange strategy"" and its potential side-effects on the system.",b2210da5d06ec700,mistral:7b,0,2026-06-17T20:24:36.693596,project_03,title_desc,ambiguity,cot
+ISSUE-205719,Validator info tool should show windowed throughput statistics,0,1,Final Answer: Yes,7b9ad7682f3bfb74,mistral:7b,0,2026-06-17T20:24:37.008948,project_03,title_desc,ambiguity,cot
+ISSUE-205358,indy-node upgrade problem - No such directory,0,1,"1. The issue provides details about the environment, steps to reproduce, expected behavior, observed behavior, and notes. It also includes a link to the manual upgrade guide.
+2. The language used in the issue is generally clear, but the error message (""No such file or directory"") could be considered vague as it doesn't specify which file is missing.
+3. Yes, the ambiguity lies in the error message ""No such file or directory"". It's unclear whether the missing file is a critical component for the upgrade process or if it's an ancillary file that can be safely ignored.
+
+Final Answer: Yes",fa68f5471208237b,mistral:7b,0,2026-06-17T20:24:38.860762,project_03,title_desc,ambiguity,cot
+ISSUE-206471,Validator-info tool is not working with build 1.2.49,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides information about a tool named ""validator-info"" that is not working with build 1.2.49, and an error message encountered during its execution. It also mentions the absence of certain files in a specific directory and the presence of an empty log file.
+2. While the language used to describe the problem is clear, the root cause of the issue remains ambiguous due to lack of context about the expected behavior of the tool, the installation process, or any dependencies it might have.
+3. The issue can be interpreted in multiple ways as there could be various reasons for the absence of ""info files"" and an empty log file, such as improper installation, missing dependencies, incorrect configuration, or a bug in the tool itself.",8cf16aee40b4ed0d,mistral:7b,0,2026-06-17T20:24:40.710446,project_03,title_desc,ambiguity,cot
+ISSUE-207259,[send NYM] Add verkey and update verkey commands don't work,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides details about a software problem related to adding and updating verkeys, but it lacks specific information about the context of the software being used (INDY-110), the exact error messages, and the expected behavior of these commands in this context.
+2. While some parts of the language are clear, such as the steps to reproduce the issue and the actual results, other parts like ""not user-friendly error"" and ""complex confirmation of INDY-110"" are vague and could be interpreted differently by different people.
+3. The issue can indeed be interpreted in multiple ways due to its ambiguous language and lack of clear context. For example, the term ""not user-friendly error"" is subjective and open to interpretation, and the reference to INDY-110 without further explanation makes it unclear what specific functionality this issue is blocking.",8b42b1f87d82d1ae,mistral:7b,0,2026-06-17T20:24:42.744388,project_03,title_desc,ambiguity,cot
+ISSUE-206618,Allow a steward to update his node entry in the ledger - including the verkey,0,0,"1. The issue provides a detailed description of the current state, the problem encountered, and the desired solution. It also includes an example of the issue happening in the ledger.
+2. The language used in the issue is clear and specific.
+3. While the solution suggests a change in the validation process, it does not seem to be ambiguous as it provides a clear explanation of what needs to be done (allow multiple node entries but only one validator at a time). However, the interpretation of how this should be implemented might require further discussion or clarification.
+
+Final Answer: No",0198b4322a64450f,mistral:7b,0,2026-06-17T20:24:44.507845,project_03,title_desc,ambiguity,cot
+ISSUE-205847,Fail to update pool ledger if no connection to a node in the genesis file in old cli,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a description of a problem with the software, specifically related to updating a pool ledger and connecting to nodes in the genesis file in different versions of indy-node. It also includes error messages and mentions that logs are attached.
+2. While the language is not overly vague, it does use technical terms like ""pool ledger,"" ""genesis file,"" ""cli,"" and ""indy-node"" which may not be immediately clear to everyone.
+3. The issue can be interpreted in multiple ways as it refers to a failure that occurs in newer versions of indy-node but was handled correctly in older versions. This suggests that there might be differences in how the software behaves between these versions, and understanding those differences could lead to different interpretations or solutions for the problem.",ca15725c6f3dd36f,mistral:7b,0,2026-06-17T20:24:46.564896,project_03,title_desc,ambiguity,cot
+ISSUE-205621,Expected object or value error during batch handling,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a problem description, error message, and some context about the logs from INDY-1835 and the batch handling process. However, it lacks specific details about the exact location of the error in the code, the nature of the 'batch', or the specific functions/methods involved in 'batch creation'.
+2. While the language is not overly vague, it does lack clarity regarding the specific objects, values, and functions related to the error.
+3. The issue can be interpreted in multiple ways due to the lack of clear context and specific details about the batch handling process and the associated code. For example, without knowing the exact nature of the 'batch', it's unclear what 'discarding' means or how the 'pi' or 'po' serialization is related to the error.",ea506a3ee99d5903,mistral:7b,0,2026-06-17T20:24:48.466724,project_03,title_desc,ambiguity,cot
+ISSUE-206100,Support Payment API txns in load script,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a specific task to support Payment API transactions in a load script, but it does not specify what is meant by ""load script"" or provide any context about the system where this script will be used.
+2. While the language is not overly vague, it lacks clarity regarding the specifics of the implementation and the environment in which it will be executed.
+3. The issue can be interpreted in multiple ways as there could be different interpretations of ""load script"" depending on the context of the system or project.",cd3ef57b8b1d6b15,mistral:7b,0,2026-06-17T20:24:49.786640,project_03,title_desc,ambiguity,cot
+ISSUE-206303,Ordering of 3PC-batches on a backup replica may stop after a catch-up,0,1,Final Answer: Yes,15f36812511cd24e,mistral:7b,0,2026-06-17T20:24:50.192632,project_03,title_desc,ambiguity,cot
+ISSUE-206249,Add Docker getting started configuration,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a clear title and description, outlining the need to create a Docker-based sandbox for Hyperledger Indy with a reference to a specific repository.
+2. The language used in this issue is not vague; it is precise and specific.
+3. While there might be some interpretation required regarding the implementation details, the overall intent of the issue is clear and unambiguous.",686f9c0fee84c226,mistral:7b,0,2026-06-17T20:24:51.421755,project_03,title_desc,ambiguity,cot
+ISSUE-207080,Valid write transactions may be rejected as having invalid signatures (case 2),0,1,"1. The issue provides details about a bug that occurred during a test run with specific software versions and configurations, along with attached logs for reference. It also mentions some files that were manually added to the VM due to Jenkins being off.
+2. While the issue does provide specific details about the software versions, configuration, and files involved, the actual nature of the bug (what constitutes an invalid signature) is not explicitly defined, making the language somewhat vague.
+3. Yes, the ambiguity arises from the lack of a clear definition for what constitutes an ""invalid signature"" in this context. This could potentially be interpreted differently by different developers or engineers working on the issue.
+
+Final Answer: Yes",296191e29cff458b,mistral:7b,0,2026-06-17T20:24:52.998706,project_03,title_desc,ambiguity,cot
+ISSUE-206714,Primary fails to send pre-prepare,0,0,"1. The issue provides detailed information about an error observed during a low-volume load test, the affected node ('metis'), the time of occurrence, logs involved, and troubleshooting steps taken. It also mentions specific transaction IDs and the role of nodes in the system.
+
+2. The language used in this issue is not vague; it is clear and precise.
+
+3. While there are several details provided, the issue seems to be focused on the problem with the 'metis' node not accepting new transactions and the observation of PREPREPAREs going to only two of eight nodes. It can be interpreted as a network or node-specific issue related to transaction propagation in the system.
+
+Final Answer: No",0983f5e8b6dd21ab,mistral:7b,0,2026-06-17T20:24:54.721759,project_03,title_desc,ambiguity,cot
+ISSUE-207130,Node with multiple NICs:,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue describes a node with multiple Network Interface Controllers (NICs). However, it does not specify the context of the node or the software running on it.
+2. While the language is not overtly vague, it lacks clarity regarding the specific requirements and expectations for the node's behavior with multiple NICs.
+3. The issue can be interpreted in multiple ways depending on the intended use case, operating system, network configuration, and software requirements of the node. For example, the issue might refer to a physical server, a virtual machine, or a container, each of which could have different implications for handling multiple NICs. Therefore, it is ambiguous and requires further clarification.",e9d84d61426bbb8d,mistral:7b,0,2026-06-17T20:24:56.392723,project_03,title_desc,ambiguity,cot
+ISSUE-206872,As a Steward,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a list of events that need notifications, but it does not specify what is meant by ""Steward"", ""Node"", or the context in which these events occur.
+2. The language used in the issue description is somewhat clear, but it lacks specific details about the system and the roles involved.
+3. The issue can be interpreted in multiple ways due to the ambiguity around the terms ""Steward"", ""Node"", and the context of the events listed.",b79fd1b6574e4561,mistral:7b,0,2026-06-17T20:24:57.639652,project_03,title_desc,ambiguity,cot
+ISSUE-206649,DOC: Request for release notes on Indy-node 1.1.31,0,0,"1. The issue provides version information, major fixes, changes and additions, new serialization details, tool creation, command additions, terminology changes, improvements to log messages, and repository information.
+2. The language used in this issue is generally clear, with the exception of a few terms like ""optimized mode"" and ""CLI Changes"" which could potentially be vague without additional context.
+3. While there are several changes and additions listed, they all seem to be related to the software update and can be understood within that context. However, the term ""CLI Changes"" could potentially be interpreted in multiple ways if more specific details about the changes were not provided.
+
+Final Answer: No (The issue is not ambiguous)",54ae5626a747be65,mistral:7b,0,2026-06-17T20:24:59.415795,project_03,title_desc,ambiguity,cot
+ISSUE-207129,Some nodes are slow to process network data,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides information about some nodes being slow to process network data and keeping senders busy. However, it does not specify the exact nature of the nodes, the type of network, the expected processing speed, or the definition of 'busy'.
+2. The language used in this issue is somewhat vague as it does not provide clear definitions for terms like 'slow', 'busy', and 'nodes'.
+3. This issue can be interpreted in multiple ways since it does not specify the context or scope of the nodes, network, processing speed, or what being 'busy' means for senders. For example, 'busy' could mean that the senders are waiting for a response from the nodes, or it could mean that the senders are continuously sending data to the nodes without receiving any responses. Without more context, it is difficult to determine the exact meaning of these terms and how they relate to each other.",4c9be343cafe6efa,mistral:7b,0,2026-06-17T20:25:01.476846,project_03,title_desc,ambiguity,cot
+ISSUE-206996,improve timestamp mechanism to use fuzzy,0,1,Final Answer: Yes,a05e558f75dcffb4,mistral:7b,0,2026-06-17T20:25:01.861013,project_03,title_desc,ambiguity,cot
+ISSUE-205942,"How-to """"Add new node to existing pool",0,1,Final Answer: Yes,3013e2e1c66047c9,mistral:7b,0,2026-06-17T20:25:02.272407,project_03,title_desc,ambiguity,cot
+ISSUE-207319,REF validator,0,1,Final Answer: Yes,8391dcf2510a15f3,mistral:7b,0,2026-06-17T20:25:02.769009,project_03,title_desc,ambiguity,cot
+ISSUE-205527,Implementation: Improve catch-up to use audit ledger for consistency,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides a description of an improvement to the catch-up process, including acceptance criteria and potential design decisions. It also mentions a link to a proposal for reference.
+2. While the language is generally clear, there are some ambiguous parts such as ""roughly as described"", ""might make sense"", ""potentially lead to some unexpected edge cases"", and ""requires some additional analysis"".
+3. The issue can be interpreted in multiple ways due to the aforementioned vague language and potential design decisions that may not have been fully fleshed out.",4267588fbf2c660a,mistral:7b,0,2026-06-17T20:25:04.463129,project_03,title_desc,ambiguity,cot
+ISSUE-206160,Analyse the current View Change protocol issues,0,1,Final Answer: Yes,97390dac64b27b84,mistral:7b,0,2026-06-17T20:25:04.844394,project_03,title_desc,ambiguity,cot
+ISSUE-206183,Date in log name doesn't accord to the day when the log was rotated,0,1,Final Answer: Yes,801866ab386c4bdd,mistral:7b,0,2026-06-17T20:25:05.991683,project_03,title_desc,ambiguity,cot
+ISSUE-206911,list keyrings showing results twice,0,1,Final Answer: Yes,7f1c74d2406ed4b3,mistral:7b,0,2026-06-17T20:25:06.618643,project_03,title_desc,ambiguity,cot
+ISSUE-205543,As a user of Valdiator Info script,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides specific details about the software (Valdiator Info script) and the required functionality (knowing whether the pool has write consensus and when the state was updated last time).
+2. The language used in this issue is clear and specific, not vague.
+3. The issue does not seem to be ambiguous as it provides a clear requirement for adding the time when the state was updated for every ledger into the validator info output.",85f22e20f4292ba0,mistral:7b,0,2026-06-17T20:25:07.827584,project_03,title_desc,ambiguity,cot
+ISSUE-206727,Accidental tests of indy-node intermittently fail on Jenkins,0,1,"1. The issue provides a title and several links to Jenkins pipeline builds where tests have failed intermittently due to accidental triggers. However, it does not specify what is meant by ""indy-node"" or provide any context about the software, its purpose, or the expected behavior of the tests.
+2. The language used in the issue title is clear, but the lack of context and definition for terms like ""indy-node"" makes the overall description somewhat vague.
+3. Yes, without additional information, it's possible to interpret this issue in multiple ways, as it's unclear what exactly constitutes an ""accidental test fail,"" what the normal behavior should be, and how these failures are related to the ""indy-node.""
+
+Final Answer: Yes",d8c5dd7d47e25002,mistral:7b,0,2026-06-17T20:25:09.589883,project_03,title_desc,ambiguity,cot
+ISSUE-205664,Is there any replacement for leveldb?,0,1,Final Answer: Yes,982d62b936d5e1b7,mistral:7b,0,2026-06-17T20:25:09.934258,project_03,title_desc,ambiguity,cot
+ISSUE-205912,As a Sovrin Foundation,0,0,"1. The issue provides a specific task for testing and checking the configuration of nodes on the live pool, ensuring they participate in consensus, and lists some requirements for each node such as hardware, configuration, networking, BLS keys, etc. It also mentions acceptance criteria for each node and steward in the live pool.
+2. The language used in this issue is relatively clear, with specific details about what needs to be tested and checked.
+3. While there are multiple components to test (hardware, configuration, networking, BLS keys, consensus participation), the task itself is not ambiguous as it provides a clear objective and acceptance criteria. However, the interpretation of some requirements might require further clarification or context from the Sovrin Foundation.
+
+Final Answer: No",893c96a3e4ee3bc1,mistral:7b,0,2026-06-17T20:25:11.766080,project_03,title_desc,ambiguity,cot
+ISSUE-206478,The pool state should be updated after any node BLS key changing,0,1,Final Answer: Yes,91c14541d704ce00,mistral:7b,0,2026-06-17T20:25:12.126202,project_03,title_desc,ambiguity,cot
+ISSUE-207005,"Nodes not receiving new transaction if its """"View"""" list is different from other nodes in the pool",0,1,"1. The issue provides details about a problem with nodes not receiving new transactions, mentions a script used for adding trust anchors and another for load testing, and shows a discrepancy in ledger counts between nodes. It also includes log file excerpts showing the master nodes of each node.
+2. The language is relatively clear as it describes the problem, the actions taken to reproduce it, and provides relevant data from the logs.
+3. Yes, the issue can be interpreted in multiple ways. For example, it's unclear what exactly causes the nodes to have different lists of primary nodes, or why only certain nodes are processing new transactions. Additionally, the scope of the problem (e.g., whether this is a consistent issue or occurs under specific conditions) is not clearly defined.
+
+Final Answer: Yes",1a78fa985dec2208,mistral:7b,0,2026-06-17T20:25:14.105456,project_03,title_desc,ambiguity,cot
+ISSUE-205432,Auto trigger CD pipeline for release-* branches,0,1,Final Answer: Yes,e3e80cc9972e456a,mistral:7b,0,2026-06-17T20:25:14.461071,project_03,title_desc,ambiguity,cot
+ISSUE-207212,Node memory leak,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides some details about the problem, such as the command run (""load_test.py on local pool with 4 nodes for 90000 transactions"") and the observed symptom (""output of ps command shows continues growth of memory used by the node""). However, it lacks specific information about the context (e.g., the software being used, the programming language, or the environment).
+2. While some parts of the issue description are clear, the overall problem statement is not precise enough to unambiguously identify the cause and solution. For example, ""master repo"" and ""local pool"" may have specific meanings within a certain context but could be vague for others.
+3. The issue can indeed be interpreted in multiple ways due to its lack of clarity and missing contextual information. For instance, the memory leak could be caused by various factors such as poor memory management, resource leaks, or even hardware issues. Without more specific details, it's challenging to pinpoint the exact cause and propose an effective solution.",064b3577fbbbbb17,mistral:7b,0,2026-06-17T20:25:16.847335,project_03,title_desc,ambiguity,cot
+ISSUE-206218,Node is restarted because of Out of memory error,0,1,Final Answer: Yes,7289b7a5bceedf02,mistral:7b,0,2026-06-17T20:25:17.180889,project_03,title_desc,ambiguity,cot
+ISSUE-206980,A primary may not be able to send checkpoints after re-start,0,0,"1. The issue provides a title, description, and steps to reproduce a problem with a Primary node in a distributed system after it has been restarted. It also mentions a fix for INDY-334 and the need to adjust h and H values.
+2. The language used in this issue is relatively clear, as it describes specific actions and conditions related to the software.
+3. While there are technical details involved, the issue does not seem to be ambiguous because it focuses on a specific problem with a Primary node after restarting and provides steps to reproduce the issue. However, the interpretation of the checkpoint logic may require further clarification or discussion among team members.
+
+Final Answer: No",bbb4a9369fd42ab5,mistral:7b,0,2026-06-17T20:25:18.938660,project_03,title_desc,ambiguity,cot
+ISSUE-206016,Upgrade failed on pool from 1.3.62 to 1.4.66,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides details about an upgrade process from version 1.3.62 to 1.4.66, the number of nodes involved globally, their locations in AWS, and the fact that some nodes were successfully upgraded while others were not. It also mentions logs and a spreadsheet for further information.
+2. While the issue provides specific details about the versions and actions taken, it uses terms like ""most"" and ""some"" which can be vague when dealing with multiple entities. The lack of clear error messages or specific log entries also contributes to some ambiguity.
+3. The issue can indeed be interpreted in multiple ways due to the absence of clear error messages, unclear reasons for the failed upgrades, and the need for additional information from external sources (logs, spreadsheet, and contacting specific users for access).",dbcaaec44a6cd129,mistral:7b,0,2026-06-17T20:25:20.964794,project_03,title_desc,ambiguity,cot
+ISSUE-205350,Use more trusted docker image for system tests client docker container,0,0,"1. The issue provides a description of the current situation, an issue with the base image used for system tests, and presents three options to address it: continue using the current image, switch to another trusted image, or build a custom image based on ubuntu:16.04. It also includes related links to relevant resources.
+2. The language in this issue is relatively clear, as it describes the problem and offers solutions with specific details.
+3. While there are multiple options presented, they are all clearly defined and do not seem to be open to interpretation in a way that would make the issue ambiguous.
+
+Final Answer: No",413965a823f6bc87,mistral:7b,0,2026-06-17T20:25:22.502802,project_03,title_desc,ambiguity,cot

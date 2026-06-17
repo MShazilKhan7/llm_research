@@ -1,0 +1,186 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-2087,CLI error when not specifying module type in module commands is cryptic an not helpful,0,1,Final Answer: Yes,457330ee65a6a031,mistral:7b,0,2026-06-17T19:52:57.186113,project_01,title_desc,incompleteness,cot
+ISSUE-2338,Error in correlation strategy in aggregator.xml,0,1,Final Answer: Yes,008ec865ab9f4410,mistral:7b,0,2026-06-17T19:52:57.611565,project_01,title_desc,incompleteness,cot
+ISSUE-0972,deploy-working-dir is set to to root directory when container is started as service,0,1,Final Answer: Yes,815a851466d131e3,mistral:7b,0,2026-06-17T19:52:58.553301,project_01,title_desc,incompleteness,cot
+ISSUE-2665,Spike to model the cluster nodes.,0,1,Final Answer: Yes,8b31ad3b4f65da3a,mistral:7b,0,2026-06-17T19:52:59.022727,project_01,title_desc,incompleteness,cot
+ISSUE-1414,Rename metrics repositories setValue(x,1,1,Final Answer: Yes,39d16ff3a2d9cd6a,mistral:7b,0,2026-06-17T19:52:59.376874,project_01,title_desc,incompleteness,cot
+ISSUE-0394,Tasks Launcher should be able to record status to a central repository,0,1,Final Answer: Yes,267b36ab33cd39fe,mistral:7b,0,2026-06-17T19:52:59.892412,project_01,title_desc,incompleteness,cot
+ISSUE-2850,Richer module options metadata,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a detailed description of the proposed change to the module options metadata, including benefits, examples, and potential solutions. It also mentions some technical considerations such as compatibility with the current approach, use of profiles, and different filename conventions.
+2. However, the issue is missing essential information such as:
+   - Reproduction steps: There are no specific instructions on how to reproduce the current problem or verify that the proposed solution works correctly.
+   - Expected behavior: It's not clear what the expected behavior of the current system is and how the proposed changes will improve it.
+   - Acceptance criteria: There are no explicit acceptance criteria defined for this issue, making it unclear when it can be considered complete.
+3. A developer might have a general understanding of the problem and the proposed solution but would need additional information to act on this issue effectively, such as reproduction steps, expected behavior, and acceptance criteria.",a4b2537764077766,mistral:7b,0,2026-06-17T19:53:02.241095,project_01,title_desc,incompleteness,cot
+ISSUE-0549,Port FTP as s-c-s source module,0,1,Final Answer: Yes,e3c5b707c78bb11e,mistral:7b,0,2026-06-17T19:53:02.618483,project_01,title_desc,incompleteness,cot
+ISSUE-2979,Change url to access UI from browser,0,1,Final Answer: Yes,1d9a771ebedd863a,mistral:7b,0,2026-06-17T19:53:03.087874,project_01,title_desc,incompleteness,cot
+ISSUE-0714,Add Logging to ZooKeeperContainerRepository,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides the title and description of the problem, which is occasional CI test build failures due to an IllegalStateException related to ZooKeeperContainerRepository's container cache not being initialized. It also suggests adding logging to specific methods in the repository class to help identify when the cache is closed.
+2. Missing essential information includes:
+   - Steps to reproduce the issue consistently, such as a specific sequence of actions or conditions that lead to the failure.
+   - Expected behavior, i.e., what should happen when the code runs without errors.
+   - Acceptance criteria, such as how the added logging should help identify and resolve the issue.
+   - Affected components beyond ZooKeeperContainerRepository, like other dependencies or services that might be involved in the failure.
+   - Environment details, such as the specific version of Spring XD, JDK, OS, or CI system being used.
+3. Without the missing information, a developer may struggle to fully understand and address the issue, requiring additional communication with the original reporter or further investigation.",fe59437176736a12,mistral:7b,0,2026-06-17T19:53:05.659122,project_01,title_desc,incompleteness,cot
+ISSUE-1907,DefaultContainerMatcher - Improve Logging and mention affected Module,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides the title, description, and an example log message.
+2. Missing essential information includes reproduction steps, expected behavior, and specific acceptance criteria.
+3. Without additional context or details about the problem, a developer may not be able to act on this issue effectively or identify the root cause.",b16afb5931a6caa3,mistral:7b,0,2026-06-17T19:53:06.651782,project_01,title_desc,incompleteness,cot
+ISSUE-1146,http-client Improvement (userDefinedHeaderPrefix),0,1,Final Answer: Yes,8937b8d97e8e0876,mistral:7b,0,2026-06-17T19:53:07.044523,project_01,title_desc,incompleteness,cot
+ISSUE-3079,Deploy a new job module *after* XD-singlenode container has started.,0,1,Final Answer: Yes,5afc5c2efe91b072,mistral:7b,0,2026-06-17T19:53:07.835949,project_01,title_desc,incompleteness,cot
+ISSUE-0367,Spike: Study scope to add support for hdfs commands in shell,0,1,Final Answer: Yes,d3eb57ffe4a8880d,mistral:7b,0,2026-06-17T19:53:08.176191,project_01,title_desc,incompleteness,cot
+ISSUE-3374,Documentation for AggregateCounter,0,1,Final Answer: Yes,701d07ce4327ed54,mistral:7b,0,2026-06-17T19:53:08.648878,project_01,title_desc,incompleteness,cot
+ISSUE-0460,First deploy/launch of Pig job that includes yarn-site.xml file fails,0,1,Final Answer: Yes,49b7231136b46b2d,mistral:7b,0,2026-06-17T19:53:09.177688,project_01,title_desc,incompleteness,cot
+ISSUE-0456,Refactor Task parsing,0,1,Final Answer: Yes,5a7273a280c70ddf,mistral:7b,0,2026-06-17T19:53:09.661700,project_01,title_desc,incompleteness,cot
+ISSUE-3038,Add Spring XD Build Plan for Java 8 to Bamboo,0,1,Final Answer: Yes,4268dd4c0d3bfd85,mistral:7b,0,2026-06-17T19:53:10.163301,project_01,title_desc,incompleteness,cot
+ISSUE-0976,Create a gpload batch job,0,1,Final Answer: Yes (with some assumptions),13e2a1a21b1cf1f3,mistral:7b,0,2026-06-17T19:53:10.705700,project_01,title_desc,incompleteness,cot
+ISSUE-1548,Document the configuration of the JobRepository,0,1,Final Answer: Yes,76695ad824a07e01,mistral:7b,0,2026-06-17T19:53:11.169295,project_01,title_desc,incompleteness,cot
+ISSUE-1672,Add Basic Auth support,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides the desired functionality, the technology to be used (Spring Boot 1.1.x), and a suggested implementation method (adding the spring boot security starter dependency).
+2. However, it is missing essential information such as reproduction steps for testing the current state of the system without Basic Auth support, expected behaviour after implementing Basic Auth support, and environment details like the specific project or application where this change should be applied.
+3. Without these missing pieces of information, a developer cannot act on this issue effectively and may need to ask for more clarification before starting work.",90b924da88156b68,mistral:7b,0,2026-06-17T19:53:12.799779,project_01,title_desc,incompleteness,cot
+ISSUE-1002,Remove Reactor Stream processor from ref docs to spring-xd-modules,0,1,Final Answer: Yes,db9ba3d8b195acff,mistral:7b,0,2026-06-17T19:53:13.139453,project_01,title_desc,incompleteness,cot
+ISSUE-0927,Add support to deploy stream in a single container,0,1,Final Answer: Yes,ba2ebf717e53bdcd,mistral:7b,0,2026-06-17T19:53:13.617397,project_01,title_desc,incompleteness,cot
+ISSUE-0336,[Int Tests] Enhance test coverage for Lattice SPI,0,1,Final Answer: Yes,d2ee3ad36a3614d4,mistral:7b,0,2026-06-17T19:53:14.125857,project_01,title_desc,incompleteness,cot
+ISSUE-2604,JobPlugin - Use containsKey when checking for Parameters,0,1,Final Answer: Yes,2eb117f1327eff09,mistral:7b,0,2026-06-17T19:53:14.620624,project_01,title_desc,incompleteness,cot
+ISSUE-1900,Enable FtpHdfsTest,0,1,Final Answer: Yes,e3a1dc10c74e3036,mistral:7b,0,2026-06-17T19:53:15.111811,project_01,title_desc,incompleteness,cot
+ISSUE-0514,Add PHD HDFS as s-c-s module,0,1,Final Answer: Yes,fa6b94ca0d194c66,mistral:7b,0,2026-06-17T19:53:15.635710,project_01,title_desc,incompleteness,cot
+ISSUE-1536,CompositeModuleDefinition should contain more than List<ModuleDefinition>,0,1,Final Answer: Yes,75ba5cd2b8725ea3,mistral:7b,0,2026-06-17T19:53:16.133044,project_01,title_desc,incompleteness,cot
+ISSUE-2545,Provide a clean way to get a reference to the MessageBus running in SingleNodeApplication,0,1,Final Answer: Yes,307c71436f55986a,mistral:7b,0,2026-06-17T19:53:16.662612,project_01,title_desc,incompleteness,cot
+ISSUE-3424,Final review of REST API structure document for streams,0,1,Final Answer: Yes,b247cf3c83241b01,mistral:7b,0,2026-06-17T19:53:17.131395,project_01,title_desc,incompleteness,cot
+ISSUE-2913,Change default admin port from 8080,0,1,Final Answer: Yes,6b86763a500309c1,mistral:7b,0,2026-06-17T19:53:17.626470,project_01,title_desc,incompleteness,cot
+ISSUE-2866,Find runtime modules by type and/or name,0,1,Final Answer: Yes,ed9ba36d4b3be38b,mistral:7b,0,2026-06-17T19:53:18.114841,project_01,title_desc,incompleteness,cot
+ISSUE-1470,User wants to package and deploy an XD application,0,1,"Final Answer: Yes (with some reservations)
+
+1. The issue provides the following key information:
+   - The user wants to package and deploy an XD application.
+   - The boot uberjar should contain custom modules, stream, and job definitions.
+   - Specific configuration might be required.
+   - Exporting and importing all deployable resources defined in an XD environment is mentioned.
+
+2. Essential information missing:
+   - Steps to reproduce the issue (how to create or access the XD application, what specific custom modules are involved, etc.)
+   - Expected behavior after packaging and deployment (what should happen when the uberjar is run)
+   - Affected components (which parts of the system will be affected by this change)
+   - Environment details (operating system, required dependencies, etc.)
+
+3. Although some information is provided, a developer might still need to ask for more details to fully understand and act on this issue. For example, they would need clarification on the specific custom modules, expected behavior after deployment, and the environment in which the application will run.",3bb8343f0ee80148,mistral:7b,0,2026-06-17T19:53:20.670328,project_01,title_desc,incompleteness,cot
+ISSUE-0697,Create a spark standalone cluster on CI to run spark streaming tests,0,1,Final Answer: Yes,ab7766266b6b7d8f,mistral:7b,0,2026-06-17T19:53:20.999999,project_01,title_desc,incompleteness,cot
+ISSUE-0518,Port Redis counter as s-c-s sink,0,1,Final Answer: Yes (with some assumptions),a80edf6e6462299c,mistral:7b,0,2026-06-17T19:53:21.542726,project_01,title_desc,incompleteness,cot
+ISSUE-1072,Large number of required options in jdbc sink definition,0,1,Final Answer: Yes,1a27bb633c51e437,mistral:7b,0,2026-06-17T19:53:22.046462,project_01,title_desc,incompleteness,cot
+ISSUE-1097,Temp files for stream create not being cleaned,0,1,Final Answer: Yes,4f6f5a716a712d47,mistral:7b,0,2026-06-17T19:53:22.585472,project_01,title_desc,incompleteness,cot
+ISSUE-2832,The HDFS Sink should support compressing files as they are copied,0,1,Final Answer: Yes,484117ac4f5984b7,mistral:7b,0,2026-06-17T19:53:23.032763,project_01,title_desc,incompleteness,cot
+ISSUE-1088,HDFS StoreMessageHandlers are not very resilient,0,1,Final Answer: Yes,227f278c9e2f4e37,mistral:7b,0,2026-06-17T19:53:23.564889,project_01,title_desc,incompleteness,cot
+ISSUE-0993,XD on Lattice POC,0,1,Final Answer: Yes,e3ca7e67741e66d7,mistral:7b,0,2026-06-17T19:53:24.051783,project_01,title_desc,incompleteness,cot
+ISSUE-3212,Parsing stream definition with parameter containing single quotes not working,0,1,Final Answer: Yes,343e0530ce5a9c94,mistral:7b,0,2026-06-17T19:53:24.529164,project_01,title_desc,incompleteness,cot
+ISSUE-0131,Support partitioning for Kafka even if count == 1,0,1,Final Answer: Yes,bd2d86e8a9de04e6,mistral:7b,0,2026-06-17T19:53:25.020866,project_01,title_desc,incompleteness,cot
+ISSUE-2806,User should be able to view the list of all the job definitions,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides the following key information: a) Title of the issue, b) Description of the desired functionality, c) Suggested UI structure, d) Mention of the REST API endpoint, e) Reference to the JobsController list() function, and f) Comparison with a shell command.
+2. However, it is missing essential information such as: a) Steps to reproduce the issue or verify the functionality, b) Expected behaviour after implementing the changes, c) Acceptance criteria for the implementation, d) Affected components (besides JobsController), e) Environment details (like OS, database, etc.), and f) Any specific requirements or constraints.
+3. Without the missing information, a developer might face difficulties in understanding the exact requirement and implementing it correctly. Therefore, additional information is required before a developer can act on this issue.",0b7e9ba4b84c61f2,mistral:7b,0,2026-06-17T19:53:27.180509,project_01,title_desc,incompleteness,cot
+ISSUE-3281,Create proper test coverage for Controllers,1,1,Final Answer: Yes,10a7c3fd7e8cee22,mistral:7b,0,2026-06-17T19:53:27.521541,project_01,title_desc,incompleteness,cot
+ISSUE-0114,Spring flo issue with unexpected char,0,1,"Final Answer: Yes (with conditions)
+
+Explanation:
+1. The issue provides the title ""Spring flo issue with unexpected char"" and describes an error occurring when creating a stream in Flo using an asterisk. It also mentions that an image is attached, which may contain additional information such as the exact error message or code snippet.
+2. Missing essential information includes:
+   - Steps to reproduce the issue (how to create a stream with an asterisk and get the error)
+   - Expected behavior (what should happen when creating a stream with an asterisk)
+   - Environment details (which version of Spring, Flo, or any other dependencies are being used)
+3. A developer might be able to act on this issue if they have prior knowledge about the context and can infer some missing information. However, without explicit reproduction steps, expected behavior, and environment details, it would be challenging for a developer to fully understand and resolve the issue efficiently.",d72663df97f81522,mistral:7b,0,2026-06-17T19:53:29.730939,project_01,title_desc,incompleteness,cot
+ISSUE-2819,Create OOTB batch job for export and processing multiple files from HDFS to MongoDB,0,1,Final Answer: Yes,5111f243c809cf98,mistral:7b,0,2026-06-17T19:53:30.080901,project_01,title_desc,incompleteness,cot
+ISSUE-3583,Creating a tap throws an exception,0,1,Final Answer: Yes,0aeb421968f5e780,mistral:7b,0,2026-06-17T19:53:30.579749,project_01,title_desc,incompleteness,cot
+ISSUE-1320,Upgrade CI Acceptance AMI to HVM,0,1,Final Answer: Yes,ec14a1613fd4db78,mistral:7b,0,2026-06-17T19:53:31.103200,project_01,title_desc,incompleteness,cot
+ISSUE-3683,Sonar build is failing,0,1,Final Answer: Yes,6c7c3bffcadc66fc,mistral:7b,0,2026-06-17T19:53:31.566064,project_01,title_desc,incompleteness,cot
+ISSUE-0297,Port Mail as s-c-s sink,0,1,Final Answer: Yes (with some assumptions),84ad6e979538f0bb,mistral:7b,0,2026-06-17T19:53:32.096069,project_01,title_desc,incompleteness,cot
+ISSUE-2837,User requires wiki page on how to use the XD EC2 Installer,0,1,Final Answer: Yes,a0f4aacae2cc6026,mistral:7b,0,2026-06-17T19:53:32.543093,project_01,title_desc,incompleteness,cot
+ISSUE-0692,Document the new analytics tab features,0,1,Final Answer: Yes,6fc05530e2da38b9,mistral:7b,0,2026-06-17T19:53:33.045853,project_01,title_desc,incompleteness,cot
+ISSUE-1393,Workaround latest boot snapshot issue,0,1,Final Answer: Yes,5ab73746d2851030,mistral:7b,0,2026-06-17T19:53:33.531563,project_01,title_desc,incompleteness,cot
+ISSUE-1213,Add test coverage for 'complex objects' as payload,0,1,Final Answer: Yes,adee6430aff84200,mistral:7b,0,2026-06-17T19:53:34.063280,project_01,title_desc,incompleteness,cot
+ISSUE-2096,Create documentation section for the shell,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a description of the required documentation section and its content, including topics such as shell usage, single and double quotes, basic commands to manipulate streams, jobs, list modules, passing in files for execution at startup, and linking to spring-shell reference docs for custom command extensibility.
+2. However, the issue is missing essential information such as:
+   - Reproduction steps or context on where this documentation should be placed (e.g., user manual, developer guide, etc.)
+   - Expected behavior of the final documentation
+   - Affected components or environment details (e.g., specific shell types, operating systems, versions)
+3. Without additional information, a developer may not be able to act on this issue effectively and create the requested documentation accurately.",5f245c5b30363462,mistral:7b,0,2026-06-17T19:53:36.056279,project_01,title_desc,incompleteness,cot
+ISSUE-0695,Example hashtag-count MR job fails when running XD on YARN with PHD 3.0,0,1,"Final Answer: Yes
+
+Explanation:
+1. The issue provides the title of the problem, the software components involved (XD, YARN, PHD 3.0), and the error message with a ClassNotFoundException for 'org.springframework.xd.examples.hadoop.HashtagCount$TokenizerMapper'.
+2. Missing essential information includes:
+   - Steps to reproduce the issue (how the custom job is uploaded and submitted)
+   - Expected behaviour (what should happen when the job is successfully submitted)
+   - Affected components (besides XD, YARN, PHD 3.0, is there a specific part of these components causing the problem?)
+   - Environment details (like OS, JVM version, etc.)
+3. Developers might be able to identify potential causes for the ClassNotFoundException but would need more information to fully diagnose and resolve the issue.",7c066e9e4df945e7,mistral:7b,0,2026-06-17T19:53:38.208328,project_01,title_desc,incompleteness,cot
+ISSUE-1859,Investigate deployed module context close upon container shutdown,0,1,Final Answer: Yes,60402f92ea5b1a48,mistral:7b,0,2026-06-17T19:53:38.589980,project_01,title_desc,incompleteness,cot
+ISSUE-2486,Add XD deployment for YARN,0,1,Final Answer: Yes,bccdcf285f963efe,mistral:7b,0,2026-06-17T19:53:39.038167,project_01,title_desc,incompleteness,cot
+ISSUE-1473,Document Kafka message bus,0,1,Final Answer: Yes,9e748a1a25b78779,mistral:7b,0,2026-06-17T19:53:39.531386,project_01,title_desc,incompleteness,cot
+ISSUE-1928,Module option validation not happening anymore,0,1,Final Answer: Yes,1e05be79113c55d3,mistral:7b,0,2026-06-17T19:53:40.024982,project_01,title_desc,incompleteness,cot
+ISSUE-2209,Validate existence of batch job at the admin side,0,1,Final Answer: Yes,e5a50b50c8036644,mistral:7b,0,2026-06-17T19:53:40.537858,project_01,title_desc,incompleteness,cot
+ISSUE-2118,Stream-lib - analytics operators,0,1,Final Answer: Yes,f4502ece57a18374,mistral:7b,0,2026-06-17T19:53:41.035531,project_01,title_desc,incompleteness,cot
+ISSUE-1678,Preserve partition state on container restarts,0,1,Final Answer: Yes,565a858468a9de5f,mistral:7b,0,2026-06-17T19:53:41.556543,project_01,title_desc,incompleteness,cot
+ISSUE-2005,Paging support for ModuleMetadata/Container repositories,0,1,Final Answer: Yes,243cf59d69da8c63,mistral:7b,0,2026-06-17T19:53:42.055179,project_01,title_desc,incompleteness,cot
+ISSUE-0138,Upgrade to SHDP 2.2.1.GA,0,1,Final Answer: Yes,e6ba74a506619b96,mistral:7b,0,2026-06-17T19:53:42.554264,project_01,title_desc,incompleteness,cot
+ISSUE-1267,Add in-memory based Aggregate Field Value Counters,0,1,Final Answer: Yes,d9a3ad18ddd3e1a3,mistral:7b,0,2026-06-17T19:53:43.067577,project_01,title_desc,incompleteness,cot
+ISSUE-2220,Support Groovy bean definitions as XD extensions,0,1,Final Answer: Yes,9943068736979600,mistral:7b,0,2026-06-17T19:53:43.529877,project_01,title_desc,incompleteness,cot
+ISSUE-0982,Harmonize poller configuration,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides information about the inconsistency in poller configuration across several modules of Spring XD and suggests using PeriodicTriggerMixin to harmonize the configuration. It also includes links to related pull requests for reference.
+2. Missing essential information includes reproduction steps (how to verify that the current configuration is inconsistent), expected behavior (what should be the consistent poller configuration), and acceptance criteria (how to determine when the issue is resolved).
+3. A developer might not be able to act on this issue without asking for more information or clarification, as they would need to understand the specific requirements and how to verify if the changes have been successfully implemented.",a42698e153d3ef20,mistral:7b,0,2026-06-17T19:53:45.343690,project_01,title_desc,incompleteness,cot
+ISSUE-3457,Retrieve information for an aggregate counter,0,1,Final Answer: Yes,90a81557bea833c9,mistral:7b,0,2026-06-17T19:53:45.707738,project_01,title_desc,incompleteness,cot
+ISSUE-0753,Spring XD admin fails to redeploy modules after Spring XD container successfully reconnectes to Zookeeper,0,1,"Final Answer: Yes
+
+Explanation:
+1. The key information provided in this issue includes the software versions, affected components, environment details, and steps to reproduce the issue to some extent. However, the reproduction steps are not fully detailed and lack specific instructions on how to deploy the modules and observe the failure.
+2. Essential information missing from this issue includes clear and concise reproduction steps, expected behavior, and acceptance criteria. The current description is somewhat vague and could benefit from more precise instructions for developers to reproduce the issue consistently.
+3. A developer may be able to act on this issue with the provided information but would likely need additional clarification or a more detailed explanation of the expected behavior and acceptance criteria to fully understand and resolve the problem.",3c4ffabfb7166b35,mistral:7b,0,2026-06-17T19:53:47.709021,project_01,title_desc,incompleteness,cot
+ISSUE-1005,"Composite Modules should inherit """"xd.*"""" properties",0,1,Final Answer: Yes,6936015e7386670f,mistral:7b,0,2026-06-17T19:53:48.125996,project_01,title_desc,incompleteness,cot
+ISSUE-0247,Move Kafka @Rule to a separate repo,0,1,Final Answer: Yes,9857539b344abfd5,mistral:7b,0,2026-06-17T19:53:48.510931,project_01,title_desc,incompleteness,cot
+ISSUE-2390,Create RPM for distribution,0,1,Final Answer: Yes,705c1c8b228976d2,mistral:7b,0,2026-06-17T19:53:49.045887,project_01,title_desc,incompleteness,cot
+ISSUE-3476,Add Spring/Integration MBean Exporters to Module ApplicationContexts,1,1,Final Answer: Yes,8e9469af67d8133c,mistral:7b,0,2026-06-17T19:53:49.554549,project_01,title_desc,incompleteness,cot
+ISSUE-2808,Add documentation for gemfire cache-listener source,0,1,Final Answer: Yes,c0badc941dd6bdaf,mistral:7b,0,2026-06-17T19:53:50.020754,project_01,title_desc,incompleteness,cot
+ISSUE-2171,Add a 'rank' expression to be used by the container matcher,0,0,"Final Answer: No
+
+Explanation:
+1. The issue provides a clear description of the desired feature - adding a 'rank' expression to be used by the container matcher, and examples of how the rank expression can be used in different scenarios.
+2. However, it is missing essential information such as:
+   - Steps to reproduce the current state or behavior of the system without the 'rank' expression feature.
+   - Expected behavior after implementing the 'rank' expression feature.
+   - Acceptance criteria for determining when the issue is resolved (e.g., all containers are being matched according to the rank expression).
+   - Affected components and environment details like the programming language, platform, or specific libraries involved in the implementation.
+3. Without this missing information, a developer may not be able to act on this issue effectively as they would need more context to understand the current state, implement the new feature, and verify that it meets the desired requirements.",72e3afb934d3c9c4,mistral:7b,0,2026-06-17T19:53:52.322431,project_01,title_desc,incompleteness,cot
+ISSUE-0332,[Unit Tests] Enhance test coverage for YARN SPI,0,1,Final Answer: Yes,845aa924a89acf06,mistral:7b,0,2026-06-17T19:53:52.661987,project_01,title_desc,incompleteness,cot
+ISSUE-0424,Prevent external libraries from overriding uber-jar dependencies,0,1,Final Answer: Yes,7ab4810a80d235b3,mistral:7b,0,2026-06-17T19:53:53.145372,project_01,title_desc,incompleteness,cot
+ISSUE-0373,Remove hardcoded yarn app version jars,0,1,Final Answer: Yes,61fbbb3a865888ec,mistral:7b,0,2026-06-17T19:53:53.640234,project_01,title_desc,incompleteness,cot
+ISSUE-0586,Replace spring-xd-messagebus-* dependencies with SCS,0,1,Final Answer: Yes,9f80f1d968b3af64,mistral:7b,0,2026-06-17T19:53:54.174445,project_01,title_desc,incompleteness,cot
+ISSUE-1621,Create CompositeModuleRegistry,0,1,Final Answer: Yes,f2cc16f6ca59f5cd,mistral:7b,0,2026-06-17T19:53:54.655458,project_01,title_desc,incompleteness,cot
+ISSUE-0407,"Add """"module list"""" command",0,1,Final Answer: Yes,9b2275358bf1b27a,mistral:7b,0,2026-06-17T19:53:55.146469,project_01,title_desc,incompleteness,cot
+ISSUE-0597,Remove XML REST Endpoints,0,1,Final Answer: Yes,efb269ed5826c22c,mistral:7b,0,2026-06-17T19:53:55.626451,project_01,title_desc,incompleteness,cot
+ISSUE-0814,RemoteFileToHadoopTests fails on 1.1.x,0,1,Final Answer: Yes,3ff3755c1e4eee5f,mistral:7b,0,2026-06-17T19:53:56.945162,project_01,title_desc,incompleteness,cot
+ISSUE-1955,Can't use webhdfs with hdfs sink,0,1,Final Answer: Yes,ab367eb920a2ac7b,mistral:7b,0,2026-06-17T19:53:57.601744,project_01,title_desc,incompleteness,cot
+ISSUE-2908,Create an easier short-cut for launching adhoc Batch Jobs,0,1,Final Answer: Yes,2161ac3b21488f8f,mistral:7b,0,2026-06-17T19:53:57.932827,project_01,title_desc,incompleteness,cot
+ISSUE-2746,Add support for Hortonworks Data Platform 2.0,0,1,Final Answer: Yes,edf0cb4e9c020c98,mistral:7b,0,2026-06-17T19:53:58.456732,project_01,title_desc,incompleteness,cot
+ISSUE-0945,Provide an option for hdfs sink to not use tmp extension,0,1,Final Answer: Yes,0523b1574c387e0c,mistral:7b,0,2026-06-17T19:53:58.958946,project_01,title_desc,incompleteness,cot
+ISSUE-3110,"Simplify """"instance"""" deployment code",0,1,Final Answer: Yes,f9ffb3bb260720c7,mistral:7b,0,2026-06-17T19:53:59.432647,project_01,title_desc,incompleteness,cot
+ISSUE-0623,Change in file source breaks backward compatibility,0,1,Final Answer: Yes,4f07289466fb8376,mistral:7b,0,2026-06-17T19:53:59.945023,project_01,title_desc,incompleteness,cot
+ISSUE-2217,Make transport configuration extensible.,0,1,Final Answer: Yes,8170c229d8af9f5d,mistral:7b,0,2026-06-17T19:54:00.431759,project_01,title_desc,incompleteness,cot
+ISSUE-2661,With Partitioned Jobs,1,1,Final Answer: Yes,14ffd830177b6a82,mistral:7b,0,2026-06-17T19:54:00.905760,project_01,title_desc,incompleteness,cot
+ISSUE-3656,Create TCP source module,0,1,Final Answer: Yes,0dda72ccf7eb87a1,mistral:7b,0,2026-06-17T19:54:01.403384,project_01,title_desc,incompleteness,cot
+ISSUE-1872,No main manifest attribute in xd-yarn-client jar,0,1,Final Answer: Yes,85b53df6cba7e722,mistral:7b,0,2026-06-17T19:54:01.937225,project_01,title_desc,incompleteness,cot

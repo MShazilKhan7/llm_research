@@ -1,0 +1,746 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-207056,Build badges in several github repos have stopped working,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific repositories affected by the problem. It mentions ""several"" but does not provide a list or clear criteria for which repos are impacted.
+2. The issue lacks clarity on what exactly has stopped working with the build badges, beyond the attached image. More context is needed to understand the nature of the problem.
+3. While it mentions updating readme.md files and adding build badges for stable, there's no clear scope or specific instructions provided for these tasks.
+4. The issue does not specify what the new CI URL is or how to update the readme.md files with this information.
+5. There's also a mention of build badges for master having been implemented, but it's unclear if this was part of the original problem or a separate issue. This ambiguity adds to the overall lack of clarity in the issue description.",4f6f09ee2a7a8f43,mistral:7b,0,2026-06-17T20:25:24.800091,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206571,Indy-sdk integration,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific requirements for integrating indy-sdk. It does not specify what changes are needed in the current CLI or any other components.
+2. There is no clear context provided on why the change is necessary, what benefits it will bring, or any potential challenges that might arise during the integration process.
+3. The scope of the work required for integrating indy-sdk into the current CLI is unclear. It could range from a simple modification to a significant overhaul.
+4. There are no specific success criteria or performance metrics mentioned, making it difficult to determine when the issue has been resolved.
+5. The issue does not provide any details about potential dependencies or compatibility issues that might need to be addressed during the integration process.",ca8cc5d9149117da,mistral:7b,0,2026-06-17T20:25:26.569708,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205754,Assist EV QA,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title provides a clear context about the task - assisting with QA tasks.
+2. The acceptance criteria are explicitly stated, including what each engineer should do and how to report results.
+3. Instructions on what to test and how to provide feedback are provided by a specific user.
+4. The description mentions both structured QA and exploratory testing, providing some level of clarity about the scope of the task.
+5. There is no ambiguity in the language used or lack of clear context in this issue.",20309e3aa58c5cfa,mistral:7b,0,2026-06-17T20:25:27.916061,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206786,I should be able to load a .sovrin file from a URL directly into the CLI,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses vague language as it does not specify the exact format of the file that can be loaded directly into the CLI or what happens when a .sovrin file is loaded from a URL.
+2. There is no clear context provided about how the loading process should work, such as error handling, progress indicators, or security measures.
+3. The scope of the issue is unclear, as it does not specify which parts of the CLI will be affected by this change or if there are any dependencies on other components.
+4. There is room for interpretation in terms of how the loading process should be implemented and what additional features might be required to support loading files from a URL directly into the CLI.
+5. The issue does not provide enough information about the expected behavior, performance requirements, or any potential constraints that may impact the implementation.",747674f09152e864,mistral:7b,0,2026-06-17T20:25:29.811236,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206184,Configurations should contain certain version of pip,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which version of pip should be contained in the configurations.
+2. There is no clear context provided about what component or service is affected by the incorrect pip version.
+3. The scope of the issue is unclear, as it does not mention whether this applies to all configurations or just a specific one.
+4. The error message suggests that there might be an issue with the 'pip' module, but it does not specify which version is causing the problem or how it should be resolved.
+5. The issue can be interpreted in multiple ways, such as whether the configuration file needs to be updated, or if a specific pip installation needs to be corrected, without more context and details.",5e6804fc8e233037,mistral:7b,0,2026-06-17T20:25:31.786447,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205916,read_ledger tool is not able to read the sovrin plugin ledger,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific problem with the read_ledger tool - it only mentions that it cannot read the sovrin plugin ledgers without specifying any error messages or symptoms.
+2. The solution provided in the description seems to be a fix, but it does not clearly explain what caused the problem or why this particular solution should resolve it.
+3. The issue lacks clear context - it doesn't specify which part of the read_ledger tool is affected, under what conditions the problem occurs, or any details about the environment in which the tool is running.
+4. The solution provided involves modifying two different files (read_ledger and indy_config.py), but there is no explanation as to why these changes are necessary or how they will resolve the issue.
+5. There is no clear scope defined for the issue, making it difficult to determine its impact on the overall system and whether other parts of the system may be affected.",bb2d16b125020121,mistral:7b,0,2026-06-17T20:25:34.098169,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206000,AttributeError: 'NoneType' object has no attribute 'request' during load,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is not descriptive enough, as it does not specify the exact component or module causing the AttributeError.
+2. The steps to reproduce the issue are provided but may not be sufficient for someone unfamiliar with the system to fully understand and replicate the problem.
+3. The actual results mention that the pool stopped writing after only 11k txns, but it is unclear what the expected behavior should have been under these conditions.
+4. Additional info about logs being available is given, but without knowing the exact log file or error message, it may still be ambiguous as to the root cause of the issue.
+5. No clear context or scope is provided for the problem, making it difficult to determine the full extent and impact of the AttributeError on the system.",8b212a6d416ad3c4,mistral:7b,0,2026-06-17T20:25:35.956468,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207179,Make sure Nodes upgrade eagerly,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses vague language such as ""Nodes upgrade eagerly"" without specifying what exactly is meant by ""Nodes"" and ""upgrade"".
+2. The context of the issue is not clear, as it does not specify which system or software component the issue pertains to.
+3. The scope of the issue is unclear, as it mentions a new story but does not provide any details about what that entails.
+4. The issue can be interpreted in multiple ways due to its ambiguous language and lack of clear context.
+5. Without more specific information, it's difficult to determine exactly what needs to be done to resolve the issue.",cfbb2ec84209dedd,mistral:7b,0,2026-06-17T20:25:37.783738,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207175,Testing: do a lot of concurrent writes and reads to same values,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague regarding the specific software component or system where these concurrent writes and reads are to be performed.
+2. It does not specify the number of concurrent operations, the expected behavior, or the conditions under which this testing should occur.
+3. There's no clear context provided about what 'verkey' is or how it relates to the system being tested.
+4. The issue does not provide a clear scope for the test scripts that need to be written.
+5. While the findings of bugs INDY-354 and INDY-355 are mentioned, they do not help in clarifying the ambiguity of the original issue.",cf82ba8d26dd4613,mistral:7b,0,2026-06-17T20:25:39.397460,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205301,Responses to client validator info requests very slow on a StagingNet node,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a performance problem but does not specify the baseline or target performance for the node on StagingNet.
+2. While the issue mentions that the steward has provided diagnostics and that there are no obvious problems, it does not provide those diagnostics in the issue description.
+3. The issue only mentions slow response times for validator-info commands, but it is unclear if this behavior extends to other client requests. If it is only slow for validator-info requests, it might be acceptable, but if it also affects other client queries, it could be a more significant problem.
+4. The issue does not provide enough context or scope to determine the root cause of the performance issue or potential solutions.
+5. Without additional information, it is difficult to determine whether this slow response behavior is due to network issues, resource constraints, or code-related problems.",bfba53f8a7f43336,mistral:7b,0,2026-06-17T20:25:41.835900,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206412,Create Entity Relationship Diagram of current ledger objects including primary and secondary keys used to link each object together.,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague as it clearly states the task - creating an Entity Relationship Diagram (ERD) of specific ledger objects.
+2. However, the lack of clear context and scope can lead to ambiguity. For instance, it's unclear what constitutes a ""properly formed"" ERD, what level of detail is expected, or which versions of libindy and other references are being referred to.
+3. The issue also does not specify the format for the diagram (e.g., UML, ER, etc.) or any constraints on the diagram creation process.
+4. Additionally, there's no mention of who is responsible for creating the ERD or any timeline for its completion.
+5. Therefore, while the task itself is not vague, the lack of clear context and scope makes it ambiguous to some extent.",5fdb0e16874f6be9,mistral:7b,0,2026-06-17T20:25:44.038858,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206580,Explore: Can doing a ping in the Getting Started Tutorial delete the active wallet,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses vague language as it does not specify the exact steps that led to the deletion of the active wallet or under what conditions this might happen.
+2. The scope of the issue is unclear, as it only mentions the Getting Started Tutorial but does not specify which part of the tutorial causes the problem.
+3. The issue can be interpreted in multiple ways since it's not clear whether the ping command deletes the active wallet under normal circumstances or if there was an error or unexpected behavior.
+4. There is no clear context provided about the environment, system configuration, or code involved.
+5. No baseline or target metric for performance improvement is mentioned.",3689c924a6a6bb4b,mistral:7b,0,2026-06-17T20:25:45.719019,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206497,Unclear messages appear during reading transactions,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify what exactly constitutes ""unclear messages"" or what the expected behavior should be for clear messages during reading transactions.
+2. There is no clear context provided about the software, its components, or the conditions under which these unclear messages appear.
+3. The scope of the issue is also unclear as it only mentions pool_transactions_genesis and domain_transactions_genesis files but does not explain their relationship with the problem at hand.
+4. The issue can be interpreted in multiple ways, for example, whether the problem lies within the software itself or in the configuration of the setup (docker pool, client version, etc.).
+5. Additional information provided suggests that the issue might be related to validation of blskeys on CLI side, but this is not explicitly stated in the original issue description.",d540e6aee2f083a0,mistral:7b,0,2026-06-17T20:25:48.526366,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205266,1.10.0 Release,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title provides a clear goal - ""Release 1.10.0"".
+2. The description includes specific instructions for the release process, such as testing code, reviewing upstream releases, producing the build with automated CI/CD, tagging the official build, preparing documentation on new features, and creating Release Notes.
+3. The description also specifies where the documentation should be stored (CHANGELOG.md in the root of the repo) and how the release should appear on GitHub (""Releases"" tab, with release notes in the ""Description"" field).
+4. The emailing of stakeholders with links to artifacts and release notes is also mentioned, indicating a clear context for who needs to be informed about the release.
+5. The scope of the issue is also clear - it involves releasing version 1.10.0 of the software, which includes new features and improvements in the view change algorithm.",db2e497f1bb5602d,mistral:7b,0,2026-06-17T20:25:50.951253,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206591,Incubation: Remove all non-Indy branding from indy-anoncreds repo,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is specific to a repository (indy-anoncreds) but does not specify the scope of non-Indy branding removal within other repositories or projects.
+2. It mentions removing names from package names, code primitive names, paths, and documentation, which could be interpreted in multiple ways depending on the context and naming conventions used.
+3. The desired outcome is clear: no occurrences of specific branding should remain, but the baseline for what constitutes ""non-Indy"" branding is not defined.
+4. The issue does not provide a clear metric or benchmark to measure success (e.g., full-text search for Sovrin and Evernym returning nothing).
+5. The lack of clarity around the scope, specific names to be removed, and success criteria makes this issue ambiguous.",b85decc42d708538,mistral:7b,0,2026-06-17T20:25:52.932925,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207055,Make the tests working using pure pytest,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about what exactly needs to be changed or improved in the tests. It only mentions using `pytest` commands instead of the runner.py script but does not specify the expected behavior or outcomes.
+2. The scope of the issue is unclear as it involves multiple repositories and different environments (CI, local testing, pycharm, terminal).
+3. There are multiple interpretations for the solution, such as refactoring the tests to work with `pytest` commands directly, or modifying the runner.py script to be compatible with `pytest`. However, the issue does not provide clear guidelines on what changes should be made.
+4. The issue lacks a clear context, as it does not specify which tests are affected, under what conditions they fail, or how the new solution will be tested and validated.
+5. The issue does not provide any baseline or target metric for performance improvement, making it difficult to measure the success of the proposed solution.",aa50ca3d100256ec,mistral:7b,0,2026-06-17T20:25:55.110892,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206198,The node blacklisted the remaining nodes during network problems,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague regarding the specific cause of the problem - it mentions ""network problems"" but does not specify the nature or source of these issues.
+2. The issue lacks clear context as it does not provide a baseline for expected performance or behavior, nor does it mention any specific component that might be causing the issue.
+3. The scope of the issue is unclear since it only mentions three nodes (node1, node2, node3) out of 15 in the pool, and it's not specified whether this problem occurs consistently or sporadically for these nodes.
+4. The issue can be interpreted in multiple ways, such as a configuration issue, a bug in the code, or an external network issue affecting these specific nodes.
+5. Additional information like logs are provided but do not necessarily clarify the ambiguity of the initial problem statement.",dd75f4b538dbfd61,mistral:7b,0,2026-06-17T20:25:57.149353,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205670,Tests using the sdk fail on the master branch,0,0,"Title: Tests using the sdk fail on the master branch
+
+Reasoning:
+1. The issue provides a clear context about the failure of tests that require indy-sdk on the master branch.
+2. It specifies the exact function `open_pool_ledger` which is causing the problem and mentions the error message encountered when running the test script `plenum/test/sdk/test_sdk_bindings.py`.
+3. The issue also provides a possible cause for the problem, stating that the libindy.so and libindy-crypto.so built from the master branch have an undefined symbol: crypto_pwhash.
+4. It mentions the installation of libsodium18 and libsodium18-dev but questions whether a newer version of libsodium is needed for crypto_pwhash.
+5. Although it does not explicitly state the scope of the problem, the issue seems to be focused on resolving the error with the specified function and potentially updating the required libraries.
+
+Final Answer: No",67b4482c96f9412f,mistral:7b,0,2026-06-17T20:25:59.623027,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205185,Write a script to upgrade audit ledger for the new state recovered from ledger,0,1,"Title: Write a script to upgrade audit ledger for the new state recovered from ledger
+
+1. The issue describes a specific task - writing a script to upgrade an audit ledger. However, it does not specify the programming language or the environment in which this script should be written.
+
+2. The issue mentions bugs (INDY-2283) that have caused incorrect merkle hash calculations in the audit history. This provides some context for why the script is needed but does not clarify the exact nature of the problem or how the script will address it.
+
+3. The issue states that the incorrect merkle hash calculations prevent new nodes from coming into consensus in certain pools, suggesting a large-scale impact. However, the scope of the script - whether it applies to all affected pools, specific pools, or just one - is not clearly defined.
+
+4. The issue does not provide any details about the expected output or behavior of the script once it's implemented.
+
+5. Given the lack of clarity on programming language, environment, scope, and expected outcome, the issue can be interpreted in multiple ways, making it ambiguous.
+
+Final Answer: Yes",4ae2fd38fec7c2ea,mistral:7b,0,2026-06-17T20:26:02.274278,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205803,Find out maximal pool performance numbers for mixed mode (read and write),0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue lacks clear context about what specific software or system this performance measurement applies to.
+2. It does not specify a baseline for the current performance or a target performance that needs to be achieved.
+3. The term ""maximal pool performance"" is vague and could refer to various performance metrics such as throughput, latency, or response time without further clarification.
+4. The mention of INDY-1343 and FEEs suggests external dependencies, but there's no explanation about their relevance to the issue at hand.
+5. The strategy for addressing the issue involves running tests with metrics enabled and increasing load, but it does not provide a clear scope or criteria for determining when the performance is ""fine"" or if further increases are necessary.",c9fd8fc1cc5c591d,mistral:7b,0,2026-06-17T20:26:04.080861,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206213,Read-ledger without storage copy in case of RocksDB (RocksDB read-only mode support),0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the problem - ""Read-ledger without storage copy in case of RocksDB (RocksDB read-only mode support)"". It specifies that the problem is related to RocksDB and its read-only mode, and mentions the specific action required (""Read-ledger without storage copy"").
+2. The description further clarifies the context by explaining how RocksDB supports read-only mode and why it's beneficial for multiple processes. It also states that the current code does not support this feature.
+3. Although the solution involves changing the code, the scope of the change is implied from the problem statement itself - modifying the read_ledger script to support RocksDB read-only mode.
+4. The issue does not seem to be open to multiple interpretations as it provides a clear understanding of the problem and the desired outcome.
+5. The use of technical terms like ""RocksDB"", ""read-only mode"", ""storage copy"", and ""read_ledger script"" may require some technical knowledge, but they are not vague or ambiguous in the context of the issue.",83806b67ce33052d,mistral:7b,0,2026-06-17T20:26:06.523947,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205553,Node that does not upgrade spams the config ledger,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague, but it lacks clear context and has unclear scope. It mentions a specific node (sovrin.sicpa.com) that did not upgrade properly, causing spamming of the config ledger. However, there is no information about what exactly needs to be fixed or how this issue should be remedied.
+2. The problem seems to be related to the indy-node service and possibly the indy-node-control service, but this is not explicitly stated in the issue title or description.
+3. There is a reference to debugging further with the steward, which suggests that more information about the cause of the failure may be needed before a solution can be determined.
+4. The issue mentions attaching logs and the config ledger from another node, but it does not specify what these attachments are or how they relate to the problem at hand.
+5. The issue states that the findings will be added as the investigation proceeds, which indicates that the current description may not fully capture the scope of the problem or the proposed solution.",5f144253d33c9376,mistral:7b,0,2026-06-17T20:26:08.976711,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206193,[QA] Script for filling the ledger doesn't work,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact error or failure that occurs when running the scripts.
+2. There is no clear context provided about the environment, dependencies, or expected behavior of the scripts.
+3. The scope of the problem is unclear, as it only mentions two specific scripts but does not indicate whether other related components are affected.
+4. The issue can be interpreted in multiple ways since it could involve problems with either the generate_txns.py script, add_json_txns_to_ledger.py script, or both.
+5. Additional information such as error messages, logs, or test cases would help clarify the issue and make it less ambiguous.",efd1900a7aa8f83e,mistral:7b,0,2026-06-17T20:26:11.369796,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207334,Send NYM command is not executed on Shakedown Pool 1,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the problem - ""Send NYM command is not executed on Shakedown Pool 1"". This specifies what action should be taken and where it should occur.
+2. The steps to reproduce provide a clear sequence of actions that lead to the issue, including connecting to the test environment and executing a specific command with a parameter.
+3. Both actual and expected results are provided, which helps in understanding the problem better.
+4. The build information is given, which can help in identifying potential causes or solutions.
+5. Overall, the issue is clear and specific, making it less ambiguous.",49bd4df836932e64,mistral:7b,0,2026-06-17T20:26:13.124236,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206998,roll back default where zmq high water mark = 0,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description are specific about the context (ZMQ high water mark) and what needs to be done (making the high water mark finite, detecting nearing the high water mark, implementing logic for discarding old messages, and exiting gracefully if exceeded).
+2. The scope of work is clearly defined in items 1-4, with item 3 being optional.
+3. There are no ambiguous terms or vague language used in the issue description.
+4. The problem and its solution are well-defined within the context of ZMQ.",acb2af9137486b03,mistral:7b,0,2026-06-17T20:26:14.569787,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206222,Errors with configs during installation,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the nature of the errors that occur during installation. It only mentions ""errors"" without specifying their type or severity.
+2. Although it provides steps to reproduce the issue, it does not clarify under what conditions these errors occur.
+3. The issue lacks clear context as it does not specify which part of the configuration is causing the problem.
+4. The scope of the issue is unclear since it only mentions indy-node but does not indicate if other components or configurations are affected.
+5. The issue can be interpreted in multiple ways, such as issues with the installation script, missing files, incorrect file paths, or configuration errors.",b4ffd186ca15bc7c,mistral:7b,0,2026-06-17T20:26:16.222845,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207211,Node crashes if out of disk space,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a symptom (""node crashes"") but does not specify the exact component or software that is affected.
+2. It mentions a possible cause (""out of disk space""), but it's unclear whether this is a temporary condition or a persistent problem.
+3. The solution suggested (""process such a case more gracefully"") is vague and could apply to various parts of the system without clear context.
+4. There is no specific error message or stack trace provided, which makes it harder to pinpoint the exact issue.
+5. No baseline performance or expected behavior is given, making it difficult to measure improvement in performance.",193aa4b50c38c300,mistral:7b,0,2026-06-17T20:26:17.742176,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205565,Unable to choose volume type using pool automation scripts,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague regarding the specific scripts causing the problem and the exact behavior that is expected when choosing a volume type using these scripts.
+2. The issue lacks clear context as it does not specify under what conditions the problem occurs or which pool automation scripts are being referred to.
+3. The scope of the issue is unclear, as it only mentions volume types but does not specify other components that might be involved in the problem.
+4. The issue can be interpreted in multiple ways, for example, whether the problem lies with the scripts themselves or with the pool configuration.
+5. Additionally, the expected results are not specific enough to provide a clear understanding of what the desired behavior should be when choosing volume types using the automation scripts.",36b94129ab468175,mistral:7b,0,2026-06-17T20:26:19.444782,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205746,1.6.74 Release,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the task - ""Release 1.6.74"". This indicates a specific version number, which provides some context and scope for the work to be done.
+2. The description outlines several clear steps that need to be completed for the release, including testing, tagging, drafting and reviewing of release notes, and the inclusion of a new release of Indy-Plenum. Each step is specific and actionable.
+3. Although not explicitly stated, it can be inferred that the work involves software development tasks related to the release process, which provides some clarity about the scope of the issue.
+4. The acceptance criteria are also provided, which further clarifies what needs to be done for the release to be considered complete.
+5. Overall, while there may still be room for interpretation or additional details in certain areas, the issue is generally clear and specific enough that it would not be considered ambiguous.",4571d55450075e49,mistral:7b,0,2026-06-17T20:26:21.534340,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207177,"Ledgers """"stall"""" gracefully",0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description are detailed and specific, providing clear context about the behavior (""Ledgers stall gracefully"") and the conditions under which it occurs (exception during deserialization, validation, or processing).
+2. The scope of the issue is defined by the failure handling mechanism for ledger transactions and the subsequent retry process.
+3. The issue does not seem to have multiple interpretations as it outlines a specific solution for handling exceptions in ledger transactions.
+4. The issue also mentions a potential impact on consensus protocol, which suggests that the problem's resolution could affect the overall system design. However, this is still within the context of the described issue.
+5. Overall, the issue provides enough detail to understand what needs to be addressed and how it should be handled, making it clear rather than ambiguous.",67c082d6c81b736e,mistral:7b,0,2026-06-17T20:26:23.446215,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207246,Sovrin-Client: Show command cannot show files with space in the name,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is specific to the Sovrin-Client and the 'show' command, but it lacks clarity on what exactly the expected behavior should be when dealing with file names containing spaces.
+2. It does not specify if this issue occurs only in certain scenarios or under specific conditions.
+3. There is no mention of a baseline performance or any target improvement for the 'show' command.
+4. The issue description does not provide enough context to determine the scope of the problem, such as whether it affects all files with spaces in their names or just some specific types of files.
+5. The issue can be interpreted in multiple ways, for example, whether the solution should involve modifying the 'show' command itself, changing how files are named, or both.",d0041ec6216ca5fa,mistral:7b,0,2026-06-17T20:26:25.197887,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207346,Unexpected behavior of the testSendNodeSucceedsIfServicesIsMissed test,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes an unexpected behavior but does not specify the exact test case or the context in which this behavior occurs.
+2. It mentions that downstream tests are affected and testing is hung, but it's unclear what tests are being referred to and why they are hanging.
+3. There is no clear indication of the expected behavior for the test or any details about the services involved.
+4. The issue lacks specificity regarding the scope of the problem and potential causes.
+5. Without more context, it can be interpreted in multiple ways, making it ambiguous.",14c41ffa949c584d,mistral:7b,0,2026-06-17T20:26:26.614038,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207079,Node with malformed ldb files has inconsistent behavior,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague regarding what specific behavior is considered inconsistent and under what conditions it occurs.
+2. The scope of the problem is not clearly defined as it only mentions certain ldb files but does not specify if other files could also be affected.
+3. The expected results state that clarification is needed, which suggests ambiguity in understanding the issue.
+4. The steps to reproduce the issue provide specific actions for two different sets of ldb files, but do not explain what constitutes a ""malformed"" ldb file or how it affects the node's behavior.
+5. The expected results also mention that nodes start successfully when all ldb files are absent and partially recreated during work with the node, which further adds to the ambiguity of the issue.",81ecdc6c34929350,mistral:7b,0,2026-06-17T20:26:28.472199,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205870,Node can't catch up large ledger,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is not specific about the nature of the problem or the software component involved.
+2. The steps to reproduce provide a detailed scenario but do not clearly define the problem's root cause or expected behavior for the clear node during catch-up.
+3. The actual results section shows error messages and warnings, but it is unclear whether these are symptoms of the issue or separate problems.
+4. The expected results state that the clear node should complete catch-up, but this expectation is not explicitly stated in the steps to reproduce.
+5. Additional information provides context about the pool restore process, but it does not help clarify the software issue itself.",c08c1848e94ff842,mistral:7b,0,2026-06-17T20:26:30.204672,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207163,F-value tests: How many nodes can I lose before the network stops? Is it 2f+1? Is it n-f?,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is ambiguous as it asks multiple questions without providing a clear context or scope for each question.
+2. It uses mathematical expressions (2f+1 and n-f) that may not be defined within the given context, making it unclear what specific problem they are addressing.
+3. The issue does not specify which network or system is being referred to, nor does it provide any details about the conditions under which nodes might be lost or how a network would ""stop.""
+4. There is no mention of any findings or attempts made to answer these questions, making it difficult to determine the exact problem or its cause.
+5. The issue lacks clarity and specificity, making it challenging for developers to understand and address the problem effectively.",ed293a0893b820a6,mistral:7b,0,2026-06-17T20:26:32.048930,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205602,Write and Read request flow,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue lacks clarity on the specific software system or component that the activity diagrams are intended for.
+2. It does not specify what constitutes an optimistic and negative scenario in this context, which could lead to different interpretations.
+3. There is no clear definition of what 'write' and 'read' request flows entail, as these terms can have various meanings depending on the system or application.
+4. The issue does not provide a baseline or target metric for performance improvement, making it unclear what constitutes an acceptable solution.
+5. Without more context, it is difficult to determine the exact scope of the activity diagrams and how they should be implemented.",9eccf72385302ecf,mistral:7b,0,2026-06-17T20:26:33.630772,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207255,Sovrin-Client: Show file command of not much use,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses vague language by stating that the ""show <file>"" command is ""not of much use"", but does not specify what constitutes ""much use"" or how this command is causing a problem for users.
+2. The issue lacks clear context as it refers to a related defect (INDY-179), but does not provide enough information about the defect itself or its impact on the software.
+3. The issue does not specify any clear scope, such as which part of the Sovrin-Client is affected by this command being redundant.
+4. The issue can be interpreted in multiple ways, for example, whether the command's lack of tabbing functionality is a significant enough problem to warrant its removal or if it is merely an inconvenience.
+5. Additionally, the suggestion to use Linux-based editors like VI or NANO could be seen as going beyond the scope of the issue at hand and introducing unnecessary complexity.",53834f57fcd1baae,mistral:7b,0,2026-06-17T20:26:35.756054,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205400,Update docs for Transaction Author agreement,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue lacks clarity on what specific changes need to be made in the documents. It mentions updating multiple files and adding information about new fields, transactions, requests, but does not specify the exact details or context for these changes.
+2. There is no clear scope defined for the update of the `auth_map.md` file, as it only mentions updating with information about the `owner` field without providing further context.
+3. The issue does not provide any guidelines on how to update the documents or what format the new information should be in.
+4. The issue does not specify who is responsible for making these updates or under what conditions they need to be completed.
+5. Overall, the issue uses vague language and lacks clear context, making it ambiguous.",7c56a407f56a150a,mistral:7b,0,2026-06-17T20:26:37.586764,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205519,Incorrect pool upgrade txn validation,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is not clear as it does not specify the exact component or service that is affected by the incorrect pool upgrade txn validation.
+2. The steps to reproduce are provided but they only describe sending a pool upgrade transaction with different time spans, without specifying the context or conditions under which the problem occurs.
+3. The actual results state that the time span between upgrades is 0 seconds, which is less than specified in the config, but it's unclear what the expected time span should be according to the configuration.
+4. The expected results mention that the pool upgrade command should be validated correctly, but there is no clear definition of what constitutes correct validation.
+5. Overall, the issue lacks clarity and specificity, making it ambiguous.",5c6b54b592469cb1,mistral:7b,0,2026-06-17T20:26:39.387716,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205808,Performance of monitor should be improved,0,1,"Title: Performance of monitor should be improved
+Issue Description: Under high load when requests are received faster than they are ordered _monitor.requestOrdered_ starts taking significant portion of time, which leads to even slower ordering. This should be fixed.
+
+Reasoning:
+1. The issue specifies the component (_monitor.requestOrdered_) and the problematic behavior (taking a significant portion of time under high load).
+2. It also provides context about the situation (high load, faster requests than they are ordered) that might cause the performance issue.
+3. However, it does not specify a target metric for improvement or any baseline to measure against.
+4. The solution is not clearly defined, only that it should be fixed.
+5. Although the issue provides more context and specifics compared to Example 1, it still lacks some clarity on the expected outcome and solution approach.
+
+Final Answer: Yes",8929a2fe33d15ef7,mistral:7b,0,2026-06-17T20:26:41.376793,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205232,PBFT View Change Debug: Part 2,0,0,"Final Answer: No
+
+Reasoning:
+1. The title and description provide a clear context of the issue being related to PBFT View Change Debug: Part 2, with specific tasks listed such as making sure that all tests are unskipped, finishing cleanup, removing certain functions, doing load testing, improving simulation tests, and fixing an issue with primary selection when Node transactions are in flight.
+2. The description also includes links to GitHub pull requests for completed tasks, providing clear evidence of progress made on the issue.
+3. Although there is a task marked as 'IN PROGRESS', it is specific (fixing an issue with primary selection when Node txns are in flight) and does not lack clarity or context.
+4. The use of bullet points makes it easier to understand the different tasks involved, reducing ambiguity.
+5. There is no vague language used in the description that could lead to multiple interpretations.",2d0087d7672cb4a6,mistral:7b,0,2026-06-17T20:26:43.384802,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206367,Knowledge transfer on Indy build processes,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague regarding specific details such as what exactly needs to be documented, who [~<USER> refers to, and the scope of the documentation required.
+2. There's no clear context provided about the current state of knowledge transfer or the specific parts of Indy node build processes that need improvement.
+3. The issue does not specify any target audience beyond [~<USER> and others as directed, which adds to its ambiguity.
+4. No timeline or deliverables are mentioned for the documentation and education process.
+5. There's no clear definition of what constitutes ""understanding"" or ""steward support"".",c4ec2e11733229c5,mistral:7b,0,2026-06-17T20:26:45.040637,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205283,Support ubuntu 20.04 in system tests,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state that the system tests need to be updated to support Ubuntu 20.04 as a testing environment.
+2. The acceptance criteria are provided, which includes running the test pool in the Ubuntu 20.04 environment on all nodes and ensuring no regression of tests.
+3. Although it does not specify the exact components that need to be updated or the scope of the changes, the context is clear about what needs to be done (updating system tests for a specific OS version).
+4. The client might run in any environment, but this does not affect the current issue as it only concerns the testing environment.
+5. Overall, while there are no explicit metrics or baselines mentioned, the issue is still clearer than the ambiguous examples given due to its specific focus on updating system tests for a particular OS version and providing acceptance criteria.",09cddb16ee93f8e7,mistral:7b,0,2026-06-17T20:26:47.064483,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206407,generate_indy_pool_transactions can be run only by indy user,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague regarding the specific cause of the permission denied error and the expected behavior when running as a non-indy user.
+2. It lacks clear context about what exactly generates the transactions, whether it's a script or a function, and under which conditions the error occurs.
+3. The scope of the issue is not clearly defined, as it only mentions the master version of vagrant scripts but not other potential environments or configurations.
+4. The problem seems to be specific to certain versions or setups, making it unclear whether the same issue would occur in all cases.
+5. The expected result is stated, but the actual results and additional information provided do not help clarify the ambiguity of the issue.",a7f0a4ee2d36c555,mistral:7b,0,2026-06-17T20:26:48.795135,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206381,ATTRIB transaction with ENC and HASH doesn't work,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title does not specify the exact problem or what needs to be fixed, only that an ATTRIB transaction with ENC and HASH doesn't work.
+2. The description mentions multiple tasks such as ensuring correctness of ATTRIB and GET_ATTRIB, enabling tests in indy-node, and updating documentation in requests.md. However, it does not provide clear context or scope for each task.
+3. It is unclear which component(s) are affected by the issue and what the expected behavior should be.
+4. The description does not specify any error messages, conditions under which the problem occurs, or any other relevant details that could help in understanding and resolving the issue.
+5. The issue lacks clarity and can potentially be interpreted in multiple ways, making it ambiguous.",055b719854f3438e,mistral:7b,0,2026-06-17T20:26:50.692907,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205817,Research performance of static validation against message schema,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue lacks clear context about the current performance level and what constitutes ""quite a lot of time"".
+2. It does not specify which part of the validation process is slow or where the potential issues might be located.
+3. The acceptance criteria mention multiple possible causes for the performance issue, but do not provide any specifics on how to identify or address them.
+4. The solution proposed is to create a ticket for implementation without providing details about the proposed plan (PoA) or the nature of the potential solutions.
+5. The scope of the issue is also unclear as it only mentions messages and validation, but does not specify if other components are affected or involved in the performance problem.",d3d5f41721723a62,mistral:7b,0,2026-06-17T20:26:52.345077,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207214,The CLI initialization becomes too slow,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a performance problem but does not specify the acceptable response time or the baseline for comparison.
+2. It mentions the CLI command (_*sovrin)*_ without providing context about what this command does or why it's important.
+3. The issue refers to ""tens of seconds"" becoming slow, but it is unclear whether this delay is significant in the overall workflow or not.
+4. The issue provides a profiling result (sovrin.prof) for further analysis, but without additional context, it's hard to determine the root cause of the performance issue.
+5. The issue does not specify which part of the CLI initialization is slow, making it difficult to prioritize and address the problem effectively.",314d42c5f1b72563,mistral:7b,0,2026-06-17T20:26:54.058213,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205760,POA: Delegate issuance to a processor,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly outline the requirement for delegating issuance to a third party (processor) in an Indy network, with specific details about the functionality, acceptance criteria, possible approaches, notes, and even mentioning key customers who need this capability.
+2. The requirements section specifies that the controller should be able to change processors by updating the credential definition, and the history of processors should be retained.
+3. The acceptance criteria are also clearly defined, including creating a plan, getting architectural review from stakeholders, creating necessary issues, etc.
+4. The possible approaches section provides a detailed explanation of how the additional field in the cred def can help show that the controller has delegated proof issuance to the processor who holds the private keys to the cred def.
+5. The notes section further clarifies that both the controller and the processor will need DIDs on the network, so that the verifier is able to see that the credential is from the controller, by means of the processor. This issue seems well-defined with clear context and scope.",31159e9f66ef42a7,mistral:7b,0,2026-06-17T20:26:56.533326,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205269,Implement helper script for AWS pool operations with snapshots,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue lacks clarity on the specific helper script requirements, such as its purpose, functionality, and expected output.
+2. It does not specify which AWS services (volumes or instances) are involved in the pool operations and snapshots.
+3. There is no clear context provided for when this script should be used or under what conditions it needs to reduce switching time between upgrade and load AWS setups.
+4. The issue does not provide a baseline or target metric for performance improvement, making it difficult to determine if the script has been successful in achieving its intended goal.
+5. The language used is somewhat vague, as it mentions ""reducing switching time"" but does not define what constitutes an acceptable reduction in time.",22463b3c7380c3da,mistral:7b,0,2026-06-17T20:26:58.304968,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207178,An upgrade should be idempotent,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue states that an upgrade should be idempotent, but it does not specify what exactly constitutes an ""upgrade"" or the context in which this idempotency is required.
+2. It mentions a script that can run during an upgrade, but there's no clear definition of what changes this script might make and how they should be idempotent.
+3. The issue also introduces a test for verifying idempotency after an upgrade, but it does not provide details about the test itself or how it will be implemented.
+4. The issue lacks clarity on the scope of the idempotency requirement, as it only mentions nodes and upgrades without specifying other components or systems that might be affected.
+5. The additional information provided by <USER> about running the script twice and verifying idempotency adds complexity to the issue, but it does not make the original requirement any clearer.",eec2537fd81f89c9,mistral:7b,0,2026-06-17T20:27:00.422776,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205965,Ledger upgrade transaction should specify a package name,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague as it clearly states the desired functionality and acceptance criteria for the upgrade transaction to specify a network-specific package.
+2. However, the issue lacks clear context regarding which specific packages are being referred to (Indy Node, Sovrin Network package) and how they relate to each other.
+3. The scope of the issue is not entirely clear as it mentions a new release for the Sovrin network package with each release of Indy Node, but it does not specify whether this applies to all networks or just the Sovrin network.
+4. There is some ambiguity in the notes section about how the node upgrade script should use the value to call the platform-specific package manager and install or update the package, as this work is tracked in INDY-1500 but not explicitly detailed here.
+5. The issue can be interpreted in multiple ways, such as whether it applies only to the Sovrin network or to all networks using Indy Node, and how the different packages interact with each other during the upgrade process.",be23183eb6c7312e,mistral:7b,0,2026-06-17T20:27:02.821362,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207326,Prove the pool upgrade mechanism by performing a noticeable upgrade test,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue lacks clarity on what constitutes a ""noticeable difference"" or ""additional file."" This could be interpreted differently by different developers.
+2. The issue does not specify the context of the upgrade, such as which system component is being upgraded, or under what conditions the upgrade should occur.
+3. There is no clear scope defined for the task, such as a deadline, priority level, or expected outcome.
+4. The requirement to ""give a demo"" when complete is subjective and could lead to ambiguity in terms of what exactly needs to be demonstrated.
+5. The issue does not provide enough detail about the new script migration process, which might cause confusion during implementation.",eff4e82586bb6dc4,mistral:7b,0,2026-06-17T20:27:04.531647,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206117,Simple Timeout fixes of the current View Change protocol,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague, but it lacks clear context and scope. It refers to the View Change protocol without specifying the system or application in which this protocol is implemented.
+2. The description mentions several potential fixes and options, but it does not provide any information about the current state of the View Change protocol, the expected behavior, or the conditions under which the problems occur.
+3. The issue does not specify any target performance improvement or success criteria for the proposed fixes.
+4. The issue mentions multiple possible solutions without providing any rationale or justification for each one.
+5. The issue uses technical terms like PBFT View Change, PrePrepares, Prepares, prepared_certificate, and catch-up, which may not be familiar to all readers, making it harder to understand the context and requirements.",ca27877bd99e02fa,mistral:7b,0,2026-06-17T20:27:06.482599,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206655,As I Validator or Observer Node,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title does not specify the exact role or component that needs to be implemented as an I Validator or Observer Node.
+2. The description mentions presenting Signed State Proof for client requests, but it lacks clarity on what specific actions should be taken and under what conditions.
+3. There is no clear context provided about the system or application where this implementation will take place.
+4. The links to external resources (GitHub pull request and Google document) do not provide enough information to understand the requirements without additional context.
+5. Without a more detailed understanding of the system's architecture, it is unclear how this issue fits into the overall design and functionality.",e2f35dc4add72a45,mistral:7b,0,2026-06-17T20:27:08.122383,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207231,eliminate runtime warnings that show during tests,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific nature of the runtime warnings - what type of warnings they are, where they occur, and under what conditions they appear.
+2. It does not specify a clear baseline or target for what constitutes an acceptable number of warnings during tests.
+3. The issue lacks clarity on whether updating the code to eliminate the warnings is preferred over disabling them if deemed irrelevant.
+4. There is no clear context provided about the tests, such as which test suite they belong to and what components are being tested.
+5. The issue can be interpreted in multiple ways, for example, whether the warnings should be completely eliminated or just minimized, and how to prove that the warnings are irrelevant if they cannot be removed.",c7089947c93d2140,mistral:7b,0,2026-06-17T20:27:09.814360,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206217,Clarify current permissible actions with DID's roles,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague, but it lacks clear context and scope. It does not specify which software or system the DID's roles are associated with.
+2. While the main assumptions and findings provide some information, they do not clearly define what constitutes a permissible action or the roles in question.
+3. The issue does not specify under what conditions these actions can be performed or who can perform them beyond the general statements about the person who did the operation and the trustee.
+4. There is no clear goal or target for clarification, making it unclear what a successful resolution would look like.
+5. Without this necessary information, the issue remains ambiguous.",de1da7f5543aa977,mistral:7b,0,2026-06-17T20:27:11.425567,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205635,Enable PreViewChange Strategy,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the requirement for enabling a specific feature (""PreViewChange Strategy"") and provide acceptance criteria for testing its functionality.
+2. The acceptance criteria include specific performance metrics (number of NYMs per second, view change speed, and ledger synchronization) as well as instructions to test the strategy with regular view changes.
+3. Although the scope is not explicitly defined in the issue description, it can be inferred from the context that the feature is related to the INDY-1687 project, which helps to clarify the intended implementation.
+4. The issue does not use vague language or lack clear context, making it less ambiguous compared to the examples provided.
+5. The issue provides a specific action (enabling the strategy by default) and acceptance criteria for testing its impact on the system, reducing the potential for multiple interpretations.",bb081f970c2d859e,mistral:7b,0,2026-06-17T20:27:13.388871,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205719,Validator info tool should show windowed throughput statistics,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague, but it does lack clear context and has unclear scope. The problem statement suggests reusing code for read throughput measurements in the validator_info tool, but it doesn't specify whether this is mandatory or just a suggestion.
+2. The issue mentions several things that need to be determined, such as whether to use the same window size for read and write request throughput measurements, and whether to use the same window size for monitor and validator info. These decisions could potentially lead to multiple interpretations of the issue.
+3. The issue does not provide a clear baseline or target metric for improving performance, making it unclear what constitutes an acceptable solution.
+4. The issue mentions that the output used window size in validator info can be configurable and different stewards can potentially set according to their preferences, which adds complexity to the implementation without providing specific guidance.
+5. The issue asks for input from a specific user, indicating that there may be room for subjective interpretation or negotiation of the solution, further contributing to ambiguity.",d5e1ae1f742386c9,mistral:7b,0,2026-06-17T20:27:16.026610,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205358,indy-node upgrade problem - No such directory,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue provides clear steps to reproduce and expected behavior, but the observed behavior includes an error message about a missing file (""/etc/supervisor/indy-node.conf: No such file or directory""). However, the scope of the problem is not entirely clear as it's unspecified whether this file should have existed before the upgrade or if its absence caused the issue.
+2. The issue mentions a workaround that allowed the system to be upgraded despite the failure, but it does not specify what the workaround was or how it resolved the problem. This lack of detail makes it difficult to understand the root cause of the issue and potential solutions.
+3. The issue does not provide any context about the environment beyond mentioning two networks (BuilderNet and StagingNet) and the version of indy-node being upgraded, but no information about the system architecture, dependencies, or other relevant details.
+4. The issue does not specify a target state or desired outcome after resolving the problem, making it unclear what success looks like in this context.
+5. The issue uses vague language in its notes section when it states that the workaround ""allowed us to",ebb4bb866ad9e503,mistral:7b,0,2026-06-17T20:27:18.839782,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206471,Validator-info tool is not working with build 1.2.49,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a problem with the ""validator-info"" tool not working with build 1.2.49, but it does not specify what is expected to happen when running the tool or under what conditions the problem occurs.
+2. It mentions an error message and an empty log file, but these do not provide enough context to determine the root cause of the issue.
+3. The issue does not specify which component(s) are affected by the problem or what steps should be taken to resolve it.
+4. The issue lacks clarity in its scope as it only mentions one build version (1.2.49), but it is unclear if this issue occurs with other versions as well.
+5. The issue could potentially be interpreted in multiple ways, such as a problem with the installation of the validator node, an issue with the ""validator-info"" tool itself, or a configuration problem within the ""/var/lib/indy"" directory.",049e8d5d1388e10b,mistral:7b,0,2026-06-17T20:27:21.145209,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207259,[send NYM] Add verkey and update verkey commands don't work,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is specific to a certain software version (sovrin-node 0.3.19 and sovrin-client 0.3.20). However, the problem description does not specify whether this issue occurs in all versions or only these versions.
+2. The issue involves multiple commands (""add verkey"", ""update verkey"", ""list ids with verkeys"", ""send GET_NYM"") but it's unclear if they are related or independent.
+3. The problem description mentions a complex confirmation of INDY-110, but the context and implications of this reference are not clear.
+4. The error message is described as not user-friendly, but the exact error message is not provided, making it difficult to understand the nature of the issue.
+5. The steps to reproduce the issue provide a sequence of actions, but they do not clarify under what conditions the problem occurs or if there are any specific inputs that trigger the issue.",d7ffc817b3a78fbb,mistral:7b,0,2026-06-17T20:27:23.338499,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206618,Allow a steward to update his node entry in the ledger - including the verkey,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague as it clearly states the problem and the desired solution. However, it lacks clear context about the system's current behavior and the specific steps to allow a steward to update his node entry in the ledger.
+2. There is no mention of unclear scope or multiple interpretations, but the issue does not provide enough details for a developer to start working on a solution directly.
+3. The example provided shows how a steward updated the ledger, but it does not specify whether this is the intended way to handle such situations or if there are any restrictions or guidelines in place.
+4. It's unclear what triggers the promotion of a node to a validator and under what conditions a steward can update his node entry in the ledger.
+5. The issue could benefit from more specific requirements, such as defining the process for updating a node entry, the conditions that allow a steward to update their node, and any restrictions or limitations on the number of nodes per steward or validators per steward.",a9ac0b86afb0d722,mistral:7b,0,2026-06-17T20:27:26.135730,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205847,Fail to update pool ledger if no connection to a node in the genesis file in old cli,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague regarding the specific component that fails to update the pool ledger and the exact behavior expected when a node in the genesis file is unreachable.
+2. While it mentions the versions where this issue was not present (1.3.X) and the version where it occurs (1.5.515), it does not provide a clear scope for other affected versions.
+3. The issue description refers to older cli, but it's unclear if this is the only affected platform or if there are others.
+4. The issue provides some context about the repeated reconnection attempts and logs attached, but it lacks specific details about what should happen during these reconnections and why they fail in newer versions.
+5. The issue seems to be related to a specific error message and node host/port, but without more information, it's unclear if this is the only scenario where the problem occurs or if there are other similar cases.",ff319e02849c8b8c,mistral:7b,0,2026-06-17T20:27:28.583587,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205621,Expected object or value error during batch handling,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific component causing the error. It mentions 'batch handling' but does not specify which part of the system is responsible for this functionality.
+2. The error message ""Expected object or value"" does not provide enough context to understand what exactly is expected and why it's not being met.
+3. The acceptance criteria mention investigating the source code related to 'batch creation', but it's unclear if that's the only relevant part of the system to investigate.
+4. The acceptance criteria also ask for unit and integration tests, but they do not specify what should be tested or how these tests should emulate the error.
+5. The acceptance criteria mention creating a fix for avoiding the error, but it's unclear what exactly this fix entails and how it will ensure normal batch handling in all cases.",51da4a53f873c999,mistral:7b,0,2026-06-17T20:27:30.595288,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206100,Support Payment API txns in load script,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact nature of the support required for Payment API transactions in the load script.
+2. It lacks clear context about what the load script is and how it interacts with the Payment API provided by libindy and its wrappers.
+3. There is no mention of any specific requirements or expectations for the integration, making it unclear what success would look like.
+4. The issue can be interpreted in multiple ways, such as modifying the existing load script to support the Payment API, creating a new script, or integrating with an external library.
+5. Without more context and details, it is difficult to determine the exact scope of the work required to resolve this issue.",c9106f3dd3e71cb3,mistral:7b,0,2026-06-17T20:27:32.290297,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206303,Ordering of 3PC-batches on a backup replica may stop after a catch-up,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses technical language that may not be immediately clear to all readers without prior knowledge of the 3PC protocol and its components (e.g., 3PC-batches, PREPREPARE, watermarks).
+2. The description lacks a clear context or scope, as it does not specify under what conditions this issue occurs or which part of the system is affected.
+3. The resolution proposed in the issue (""The range of messages being requested as missed must never include } of the out-of-order PREPREPARE. When after a catch-up a backup replica receives the next PREPREPARE, it must not request the previous messages."") is unclear and could be interpreted in multiple ways without additional context or clarification.
+4. The issue does not provide a clear baseline or target metric for performance improvement.
+5. The resolution also suggests changes to the backup replica's state after a catch-up, but it is not specified how this should be done or what the implications of these changes might be.",40f088948e9cbd7f,mistral:7b,0,2026-06-17T20:27:34.693042,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206249,Add Docker getting started configuration,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the requirement - ""Add Docker getting started configuration"". This is specific and clear.
+2. The description provides context by referring to Hyperledger Indy concepts, a guide, and a specific implementation in a placeholder.
+3. Although the scope might not be fully defined, it can be inferred that the scope includes setting up a Docker-based sandbox for exploring Indy basics as outlined in the provided guide.
+4. The issue does not seem to have multiple interpretations since it is specific about adding a configuration related to Docker and Hyperledger Indy.
+5. While there might be some ambiguity around details such as exact components, dependencies, or specific configurations, the overall requirement is clear enough for a developer to start working on it.",9b55c79917e6ea36,mistral:7b,0,2026-06-17T20:27:36.593019,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207080,Valid write transactions may be rejected as having invalid signatures (case 2),0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is not clear as it does not specify the exact nature of the problem or the software component involved.
+2. The description provides some context about the test script, parameters, configuration, and manually added files, but it lacks clarity on what exactly constitutes a 'valid write transaction' and an 'invalid signature'.
+3. There is no clear explanation of the expected behavior or the conditions under which the problem occurs.
+4. The issue does not specify any target or baseline for performance improvement.
+5. Overall, the issue uses vague language and lacks clear context, making it ambiguous.",bb0704311dad97bc,mistral:7b,0,2026-06-17T20:27:38.111940,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206714,Primary fails to send pre-prepare,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue description provides a detailed account of the problem but lacks clarity on what exactly is failing to send pre-prepare, whether it's a specific function or component within the ESN system.
+2. While the error was observed in the ESN and the time and affected node are mentioned, the context of the low-volume load test and manual transaction are not clearly defined, making it unclear under what normal operating conditions this issue would occur.
+3. The issue description mentions that the problem continued for several transactions but does not specify how many exactly or provide a clear scope for when the issue started and ended.
+4. The issue resolution steps, such as restarting nodes and forcing a view change, suggest that the problem might be complex and could have multiple possible causes.
+5. Although logs are attached, without knowing the exact component or function of interest within those logs, it remains ambiguous which part of the system is causing the issue.",fa46c20d8e02ec36,mistral:7b,0,2026-06-17T20:27:40.276008,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207130,Node with multiple NICs:,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact problem or error that occurred on a node with multiple NICs.
+2. It lacks clear context since it doesn't mention what the node is used for, what software or services are running on it, and under what conditions the issue was encountered.
+3. The scope of the issue is unclear as it does not specify which part of the system needs to be addressed (hardware configuration, network settings, software configuration, etc.).
+4. The findings section does not provide any concrete information about the problem or potential solutions.
+5. Without more context and specific details, it's difficult to determine the root cause or appropriate resolution for this issue.",e0c62f59470a661a,mistral:7b,0,2026-06-17T20:27:42.005223,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206872,As a Steward,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title ""As a Steward"" does not specify who the steward is or what their role is in the context of the software system.
+2. The description mentions several events and actions that need notifications, but it lacks clarity on the specific conditions under which these notifications should be sent, the format of the notifications, and the intended recipients beyond ""Stewards.""
+3. There are no clear boundaries or scope defined for what constitutes a ""Severe error"" or ""warning,"" making it ambiguous as to which events fall into those categories.
+4. The reference to INDY-1251 suggests that there is an existing feature related to notifications, but the relationship between this new request and the existing feature is unclear.
+5. There is no mention of any technical requirements or constraints for implementing these additional notification features.",bd1e9563b70b6ad9,mistral:7b,0,2026-06-17T20:27:43.979257,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206649,DOC: Request for release notes on Indy-node 1.1.31,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not a software bug or error that needs to be fixed, but rather a request for release notes and information about updates in Indy-node 1.1.31. This lacks clear context and specific requirements, making it ambiguous.
+2. There are no specific components mentioned that need improvement or changes, only general improvements like performance, stability, and log messages.
+3. The issue does not provide a clear scope or objective for the software development team to work on.
+4. The information provided is detailed about the changes made in the update, but it does not specify any particular problem or requirement that needs to be addressed.
+5. Without a specific problem or requirement, it's unclear what exactly needs to be done to fulfill this request, making it ambiguous.",262a1244a4d6f0b6,mistral:7b,0,2026-06-17T20:27:45.957874,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207129,Some nodes are slow to process network data,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which nodes exactly are slow and what constitutes ""slow"" in terms of processing network data.
+2. It lacks clear context about the nature of the network data, the expected processing time, or under what conditions the slowness occurs.
+3. There's no mention of the target performance improvement or any baseline for comparison.
+4. The issue does not provide details on the cause of the problem or any attempts made to resolve it.
+5. The statement ""thus keeping the senders busy"" is unclear and could be interpreted in multiple ways, adding to the ambiguity.",6b122c1e2c43668d,mistral:7b,0,2026-06-17T20:27:47.591957,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206996,improve timestamp mechanism to use fuzzy,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague regarding the specific software or system where this improvement needs to be implemented.
+2. It mentions ""state proof style consensus"" without providing context about what that means in the given software or system.
+3. The goal of improving the timestamp mechanism is stated, but it lacks clarity on what exactly constitutes a ""fuzzy"" timestamp and how it would improve the system's performance or functionality.
+4. There is no clear indication of the scope or impact of this change on the overall software or system.
+5. The description does not provide enough details to determine if there are multiple interpretations of what needs to be done, but the lack of specificity and context makes it ambiguous.",c4dc0eb9e37ec4e5,mistral:7b,0,2026-06-17T20:27:49.245902,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205942,"How-to """"Add new node to existing pool",0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue lacks clarity on what specific software or system the ""pool"" and ""node"" refer to.
+2. It does not specify the context of adding a new node, such as under which conditions, or the expected behavior after addition.
+3. The documentation being incomplete is vague and does not provide clear instructions for resolving the issue.
+4. The acceptance scenario mentioned as the current knowledge source may not be sufficient to understand the requirements without additional context.
+5. Without a clear understanding of the software system, it's difficult to determine the scope or potential interpretations of adding a new node to an existing pool.",5c2d7cf935c0fd16,mistral:7b,0,2026-06-17T20:27:50.733516,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207319,REF validator,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue lacks clarity on the specific software component that requires the validation (beyond mentioning ""plenum"").
+2. It does not specify what kind of validation is needed or under what conditions it should be applied.
+3. There's no clear context provided about why this validation is necessary, or how it will improve the overall system.
+4. The issue refers to a file (sovrin_common/types.py), but without more information, it's unclear if that's the only place where changes are needed or if related files also require modifications.
+5. There is no mention of any expected outcomes or performance metrics for this validation, making it difficult to measure its success or impact on the system.",a5b36d6fd9e578a8,mistral:7b,0,2026-06-17T20:27:52.424271,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205527,Implementation: Improve catch-up to use audit ledger for consistency,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague, but it lacks clear context and scope. It mentions an improvement for ""catch-up"" without specifying which part of the system this refers to.
+2. The description provides detailed acceptance criteria, but these are specific to a technical proposal (catch-up using audit ledger) rather than the issue itself.
+3. The issue suggests potential design decisions and edge cases, indicating that further analysis is required, which can lead to ambiguity in understanding the immediate requirements.
+4. The issue does not specify any success or failure criteria, making it unclear how progress or completion should be measured.
+5. The issue mentions a ""PoA"" (Proof of Authority) without defining what it stands for, adding to its ambiguity.",241d5d533e80a070,mistral:7b,0,2026-06-17T20:27:54.210524,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206160,Analyse the current View Change protocol issues,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact nature or scope of the issues with the current View Change protocol.
+2. It lacks clear context, such as what components are affected and under what conditions the problems occur.
+3. The description mentions a potential solution (implementing PBFT View Change protocol) but does not provide enough information about why this solution is being considered or how it would address the current issues.
+4. The issue also lacks clear deliverables, such as specific test cases to be covered or a detailed plan for the analysis of the existing protocol.
+5. Lastly, the description does not clearly define the expected output or outcome of the task, making it difficult to determine if the issue has been fully addressed upon completion.",7f5780a16ad2dfae,mistral:7b,0,2026-06-17T20:27:56.054669,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206183,Date in log name doesn't accord to the day when the log was rotated,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify what constitutes an ""accord"" between the date in the log name and the day when the log was rotated.
+2. There is no clear context provided about how the logs are being rotated, or what the expected behavior should be regarding the date format in the log names.
+3. The issue does not provide a specific component or system that is causing the problem, making it unclear where to focus the investigation.
+4. The issue lacks a clear scope, as it does not specify which logs are affected or under what conditions the discrepancy occurs.
+5. The issue can be interpreted in multiple ways, for example, whether the date should match exactly, or if a small difference is acceptable.",de0cd8b014a07f3b,mistral:7b,0,2026-06-17T20:27:58.634558,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206911,list keyrings showing results twice,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a behavior (duplicate results) but does not specify the expected outcome or under what conditions this occurs.
+2. There is no clear context provided about the software system or the command 'list keyrings' beyond its name and output.
+3. No baseline or target metric for performance improvement is mentioned.
+4. The issue lacks clarity on whether the duplicate results are a bug or a feature, and if it's a bug, what causes it.
+5. There is no information about the software environment (OS, programming language, libraries) where this issue occurs.",9c1151658d1a0603,mistral:7b,0,2026-06-17T20:28:00.432301,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205543,As a user of Valdiator Info script,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses specific language (""Valdiator Info script"") that may not be universally understood without additional context.
+2. The description is clear about the required functionality but lacks clarity on what constitutes ""pool has write consensus"" and how it should be determined.
+3. The acceptance criteria provide some clarity, but they still do not specify the exact conditions under which the pool has write consensus or when the state was updated last time.
+4. There is no clear scope defined for this issue, as it does not specify which parts of the Valdiator Info script should be modified or how the changes should be implemented.
+5. The issue can potentially be interpreted in multiple ways, depending on the specific implementation details and assumptions made about the Valdiator Info script and the consensus mechanism used by the pool.",4691c95d0ee99a60,mistral:7b,0,2026-06-17T20:28:02.314837,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206727,Accidental tests of indy-node intermittently fail on Jenkins,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title does not specify the cause of the accidental tests failing, which makes it vague.
+2. While the links to the builds with failed tests are provided, there is no clear context or explanation about what exactly is causing the failures.
+3. There is no mention of the specific component(s) involved in the issue.
+4. The scope of the problem (i.e., whether it affects all tests or only certain ones) remains unclear.
+5. Without more information, it's difficult to determine if the problem can be interpreted in multiple ways.",c3adeeabd0105bec,mistral:7b,0,2026-06-17T20:28:03.781623,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205664,Is there any replacement for leveldb?,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the context or purpose for which LevelDB is being used currently.
+2. It also lacks a clear requirement for what should replace LevelDB, such as specific features, performance requirements, or compatibility with existing systems.
+3. There is no mention of any constraints or criteria for selecting an alternative database system.
+4. The issue does not provide enough information to determine the scope of the replacement, whether it's a complete overhaul or just a part of the system.
+5. Lastly, the question asks for suggestions, which can be interpreted in multiple ways depending on the respondent's understanding of WandyLau's requirements.",74f3fd7d06bfc6ce,mistral:7b,0,2026-06-17T20:28:05.425594,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205912,As a Sovrin Foundation,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue provides a clear title and description, outlining the specific task of testing and checking the configuration of nodes on the live pool.
+2. It specifies the requirements for each node in the pool, including hardware, configuration, networking, and BLS keys.
+3. The acceptance criteria are also clearly defined, detailing what needs to be checked for every node and steward in the live pool.
+4. Although the term ""Steward"" might require some contextual understanding, it is not overly vague or ambiguous within this issue description.
+5. The issue does not seem to have multiple interpretations, as it lays out specific requirements and acceptance criteria for testing and checking node configurations.",aaf518bed9c1988e,mistral:7b,0,2026-06-17T20:28:07.090975,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206478,The pool state should be updated after any node BLS key changing,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses specific technical terms like ""pool state"", ""node BLS keys rotation"", and ""BLS signatures"" which may require a certain level of technical knowledge to fully understand without additional context or clarification.
+2. The description mentions several scenarios where the pool's signature of state needs to be updated, but it does not specify under what conditions this update should occur or how it should be implemented.
+3. The issue lacks clear scope as it does not define which parts of the system are affected by the change in node BLS keys and how they interact with the pool's signature of state.
+4. The description provides multiple examples of situations where the pool's signature of state needs to be updated, but it is unclear if these are exhaustive or if there might be other cases that were not mentioned.
+5. The issue does not provide a clear goal or expected outcome for updating the pool's signature of state after any node BLS key change, making it difficult to determine if the problem has been resolved when addressing this issue.",28cfc70e4e65f603,mistral:7b,0,2026-06-17T20:28:09.424422,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207005,"Nodes not receiving new transaction if its """"View"""" list is different from other nodes in the pool",0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific cause of the problem and does not specify what constitutes a ""different list of who is primary"" or how this difference affects transaction processing.
+2. It lacks clear context, as it only mentions one node (Node1) having an issue initially, but later in the description, multiple nodes are involved in the problem.
+3. The scope of the issue is unclear, as it's not specified whether this issue occurs under specific conditions or for all transactions.
+4. The issue can be interpreted in multiple ways, such as a configuration issue, a coding error, or a network communication problem.
+5. More information is needed to determine the exact cause and potential solutions for the issue.",7cca9a15b6cefd7b,mistral:7b,0,2026-06-17T20:28:11.208476,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205432,Auto trigger CD pipeline for release-* branches,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague, but it lacks clear context and scope. It mentions ""CD pipeline"" and ""release-* branches"", but without further explanation of what these terms mean in the specific project or system, it can be unclear to someone unfamiliar with the setup.
+2. The description provides a problem (suppression of automatic triggering) and potential solutions (Jenkins plugin configuration, GitHub notification management), but it does not specify the expected outcome or success criteria for these solutions.
+3. The issue seems to involve multiple components such as Jenkins, GitHub, and possibly others, but without more context, it's unclear which parts of these systems are affected and how they interact with each other.
+4. The options provided for solving the problem can be interpreted in multiple ways, especially since there is no clear definition of what a ""service commit"" is or why it causes issues.
+5. Overall, while the issue provides some information, it lacks clarity on key details that would make it easier to understand and address effectively.",47bfd6a05473c373,mistral:7b,0,2026-06-17T20:28:13.521534,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-207212,Node memory leak,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact software component or service that might be experiencing a memory leak.
+2. It lacks clear context since it only mentions running a script on local pool with 4 nodes for 90,000 transactions but doesn't provide information about the expected behavior or normal memory usage patterns.
+3. The issue does not have a clear scope as it does not specify which part of the node's memory is leaking or under what conditions the leak occurs.
+4. The issue can be interpreted in multiple ways, for example, whether the memory leak is due to the script, the nodes, or some interaction between them.
+5. Additional information such as error messages, logs, or baseline memory usage would help clarify the issue and make it less ambiguous.",75957abbff8e7777,mistral:7b,0,2026-06-17T20:28:15.417285,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206218,Node is restarted because of Out of memory error,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact cause of the out-of-memory error or which component is causing it.
+2. It lacks clear context since it only mentions that the issue occurs on a big pool with 25 nodes under load test, but not under what specific conditions or workloads.
+3. The scope of the issue is unclear as it does not specify how many nodes are affected consistently or if there's a pattern to the restarts.
+4. The issue can be interpreted in multiple ways since an out-of-memory error could be due to various reasons such as memory leaks, insufficient memory allocation, or excessive data processing.
+5. Without more detailed information about the system configuration, codebase, and error logs, it's difficult to pinpoint the exact cause of the issue.",735e53d6d034df90,mistral:7b,0,2026-06-17T20:28:17.300319,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206980,A primary may not be able to send checkpoints after re-start,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague, but the context could be unclear for someone unfamiliar with the system. Terms like ""Primary"", ""view"", ""InstanceChange for consensus"", and ""txns"" are specific to the system being discussed.
+2. The scope of the issue is not explicitly defined. It mentions that checkpoint logic may be broken, but it's unclear whether this affects all checkpoints or just certain types.
+3. While the steps to reproduce the issue are provided, they might still require some understanding of the system to fully grasp the problem.
+4. The solution proposed (fix in INDY-334 and setting h and H accordingly) suggests that there is a known related issue (INDY-334), but it's unclear how this relates to the current issue or what exactly needs to be done to set h and H.
+5. The issue could potentially be interpreted in multiple ways, as it's not immediately clear whether the problem lies with the checkpoint logic itself, the re-start process, or both.",52d0c285a30ae57f,mistral:7b,0,2026-06-17T20:28:19.635289,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-206016,Upgrade failed on pool from 1.3.62 to 1.4.66,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific software component that failed during the upgrade. It only mentions a ""pool"" but does not specify which pool or what it represents in the context of the software.
+2. The issue lacks clear context regarding the expected behavior after the upgrade and under what conditions the problem occurred.
+3. Although the issue provides details about the version numbers, transaction, and schedule of the upgrade, it does not provide a clear scope for the problem or potential causes.
+4. The issue mentions multiple nodes, but it is unclear if all nodes are affected or only some specific ones.
+5. The issue does not specify what logs to look at or where to find relevant information about the failed upgrades, making it difficult to diagnose and resolve the problem.",88ea650098e8f4eb,mistral:7b,0,2026-06-17T20:28:21.539950,project_03,title_desc,ambiguity,few_shot_cot
+ISSUE-205350,Use more trusted docker image for system tests client docker container,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague as it clearly states the current base image being used and suggests potential options for improvement. However, it lacks a clear requirement or specific context about what constitutes a ""more trusted"" docker image.
+2. The scope of the issue is not entirely clear. It mentions system tests client docker container but does not specify if this applies to all containers or just certain ones.
+3. There are multiple possible interpretations for the term ""more trusted"". This could refer to security, performance, compatibility, or other factors.
+4. The issue provides related links to resources that might help clarify the problem, but without additional context or specific requirements, it remains ambiguous.
+5. The options provided in the issue (continue to use it, switch to another more trusted base image, build out own image) do not have clear criteria for evaluation or selection.",e108905c75957185,mistral:7b,0,2026-06-17T20:28:23.634078,project_03,title_desc,ambiguity,few_shot_cot

@@ -1,0 +1,101 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-253177,Inconsistent output between java driver and mongo shell,0,1,Yes,1e8f7506e48b0e88,mistral:7b,0,2026-06-17T21:01:18.683719,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253467,size not accepting $numberlong argument,0,1,Yes,a6074be94ab8f9e3,mistral:7b,0,2026-06-17T21:01:19.139059,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253452,MongoCollection.insertOne throws NullPointerException with WriteConcern.UNACKNOWLEDGED & retryWrites=true,0,1,Yes,004f09a44215ead9,mistral:7b,0,2026-06-17T21:01:19.677781,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253505,Add an option to toggle SSL certificate validation,0,1,Yes,4635e87cbcb6dbea,mistral:7b,0,2026-06-17T21:01:20.160493,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255080,JSON parser parses braces incorrectly,0,1,Yes,80b16633f5fe1bcc,mistral:7b,0,2026-06-17T21:01:20.630904,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255534,Looking for performance tips loading results from a find() with the java driver.,0,1,Yes,0753582deaa1a656,mistral:7b,0,2026-06-17T21:01:21.163582,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255332,Binary field $type is represented in JSON as a number instead of a two-byte hex string,0,0,No,5361230bf46ec4f0,mistral:7b,0,2026-06-17T21:01:21.668627,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254781,Iterable Codec,0,0,No,7c49912c99e02f95,mistral:7b,0,2026-06-17T21:01:22.140017,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254021,NettyStream does not handle clean socket closures from the server,0,1,Yes,6155a259d22638dc,mistral:7b,0,2026-06-17T21:01:22.642404,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255615,Include cursor-id in CursorNotFound exception,0,1,Yes,ca44eb5c957433e5,mistral:7b,0,2026-06-17T21:01:23.145168,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254855,Discrimination in Jackson-Codec,0,1,Yes,8ec054c117eda273,mistral:7b,0,2026-06-17T21:01:23.639912,project_05,title_desc,ambiguity,zero_shot
+ISSUE-256012,Add w/wtimeout to WriteConcern (getLastError),0,0,No,a9703d2d688a3188,mistral:7b,0,2026-06-17T21:01:24.146945,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253265,Provide an option to use pooled NIO direct buffers to minimise impact on GC,0,1,"Yes (Ambiguous)
+
+The issue lacks clarity regarding the specific context, such as what exactly is meant by ""the driver,"" ""GridFS,"" and how the use of pooled NIO direct buffers minimizes the impact on GC. Additionally, it does not specify the expected behavior or requirements for this feature, making it unclear in scope and potentially open to multiple interpretations.",21fa75d51d2ded35,mistral:7b,0,2026-06-17T21:01:25.333742,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254440,DocumentCodec and DBObjectCodec treat nested Maps/Iterables differently,0,1,Yes (ambiguous),c1c7588dcf6a4b79,mistral:7b,0,2026-06-17T21:01:25.628315,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255480,Secondary reads on lists of mongos fail until first write,0,1,Yes (ambiguous),e6ffa512d571ec5c,mistral:7b,0,2026-06-17T21:01:26.253190,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255171,Saved extra fields for Gridfs does not go in metadata sub-document,0,1,Yes,763b874dd778a956,mistral:7b,0,2026-06-17T21:01:26.592111,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254446,Repeated connection with expected authentication errors is not deterministic,0,1,Yes,5558ae85d3b2f1b8,mistral:7b,0,2026-06-17T21:01:27.101753,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254233,Custom logging implementation,0,1,Yes,db9e5532d4313d13,mistral:7b,0,2026-06-17T21:01:27.612806,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252701,Update documentation for Text Search,0,1,Yes,ee8299f91d9ed1b4,mistral:7b,0,2026-06-17T21:01:28.087267,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255572,Morphia Integration in java driver,0,1,Yes,35fb5daec0a3e473,mistral:7b,0,2026-06-17T21:01:28.612321,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255511,Respect the QueryFailure response flag in OP_REPLY,0,0,No,26568a697dba1bd7,mistral:7b,0,2026-06-17T21:01:29.101234,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254614,2.12.x breaks compatibility with mongoDB v1.8,0,0,No,c58fd47b7437d47c,mistral:7b,0,2026-06-17T21:01:29.629950,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253354,Deprecate DBCursor#addSpecial,0,1,Yes,80a6cc93a4c6a4d0,mistral:7b,0,2026-06-17T21:01:30.110487,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255153,update description of fsync write concern flag,0,0,No,7575bac003fdd784,mistral:7b,0,2026-06-17T21:01:30.603298,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255938,DBCursor.copy() does not copy batch size,0,0,No,67ae7ae4d89b3958,mistral:7b,0,2026-06-17T21:01:31.103432,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253697,"upload mo artifacts"""" Evergreen post-task is failing",0,1,Yes,dd1c7e4322670195,mistral:7b,0,2026-06-17T21:01:31.735861,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253111,minWireVersion is 1 but it should be 2,0,0,No,2f8268e760b1d527,mistral:7b,0,2026-06-17T21:01:32.102319,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252640,Documentation links 404,0,0,No,5d24090bd2528c9b,mistral:7b,0,2026-06-17T21:01:32.621467,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255236,DBObject.equals can fail when binary data exists,0,0,No,dcb5325ad7d68113,mistral:7b,0,2026-06-17T21:01:33.115766,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255324,Increase GridFS max chunk size,0,1,Yes,e11efa9660a300bb,mistral:7b,0,2026-06-17T21:01:33.646070,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254743,Server selection exception should chain exceptions from server monitors,0,1,Yes,fbe4242e49f8d7c7,mistral:7b,0,2026-06-17T21:01:34.154538,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253069,Remove mongodb-driver-embedded-android package,0,1,Yes,fafdbe3d576ce450,mistral:7b,0,2026-06-17T21:01:34.657621,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254867,Add type-safe jsMode support in MapReduceCommand,0,1,Yes,1dce4e0ebe2a4ec3,mistral:7b,0,2026-06-17T21:01:35.136851,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252707,Storing unsigned integer to Mongodb from java,0,0,No,3833762017425d55,mistral:7b,0,2026-06-17T21:01:35.637483,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255700,Possible bug with JSON parser,0,1,Yes,6168c8a8d8e416c6,mistral:7b,0,2026-06-17T21:01:36.116513,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253917,$geoNear Aggregation pipeline in Mongo JAVA driver,0,0,No,884306a6890fbc89,mistral:7b,0,2026-06-17T21:01:36.633504,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254894,The aggregation method is inaccurately showing type,0,1,Yes,e5d161d250b1ff3a,mistral:7b,0,2026-06-17T21:01:37.106832,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253334,Deprecate MongoIterable#forEach,0,0,No,3aa4ea38bab6a680,mistral:7b,0,2026-06-17T21:01:37.657047,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255443,Errors when DBRef's $id is Object instead of simple value,0,1,Yes,3b8560563b1ab88c,mistral:7b,0,2026-06-17T21:01:38.127754,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253221,mongodb+srv schema can cause NullPointerException,0,1,Yes,1cce913f1e656f24,mistral:7b,0,2026-06-17T21:01:38.642245,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253502,Re-enable write concern tests for dropDatabase command,0,0,No,ffd67d60194d1e6f,mistral:7b,0,2026-06-17T21:01:39.126366,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255435,Thread Locals not being freed in thread pool,0,0,No,9206c271519e7044,mistral:7b,0,2026-06-17T21:01:39.615868,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255744,authentication for replica set fails frequently because 'getnonce' and 'authenticate' command is issued to different server,0,1,Yes,50a1d02296c0697f,mistral:7b,0,2026-06-17T21:01:40.160995,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255326,No Such Method Exception When Instantiating Mongo Client,0,1,Yes,430e7b5cae871d1d,mistral:7b,0,2026-06-17T21:01:40.672002,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255548,Stackoverflow when querying document with cycle reference using DBRef,0,0,"No, the issue is not ambiguous. It clearly states the problem (stack overflow when querying a document with cycle reference using DBRef), provides a link to the initial report, and includes test code for replication. However, it could benefit from more specific details about the exact circumstances that cause the stack overflow or any potential workarounds or solutions that have been attempted.",82b033c92dc56355,mistral:7b,0,2026-06-17T21:01:41.818188,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254528,Add MongoCollection.dropIndex(Bson keys),0,1,Yes,1d9531723b2e1fb9,mistral:7b,0,2026-06-17T21:01:42.085220,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254203,Add equals() and toString() to Updates,0,0,No,5c062109023d8eee,mistral:7b,0,2026-06-17T21:01:42.634787,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254082,Connection and thread leakage in DefaultServerMonitor,0,1,Yes,5d47bc1f39e71baf,mistral:7b,0,2026-06-17T21:01:43.104761,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253763,Reduce size of Evergreen matrix,0,1,Yes,54df03e2cacb89a7,mistral:7b,0,2026-06-17T21:01:43.640599,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254130,Ensure Loggers are past to ErrorHandlingCallbacks,0,1,Yes,2f9daa528f58c1ee,mistral:7b,0,2026-06-17T21:01:44.108926,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253459,how to implement nested query in java API,0,1,Yes,38cff0e3391556f1,mistral:7b,0,2026-06-17T21:01:44.593587,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255998,Tried to save too large of an object. max size: 2098176,0,0,No,95b15a88cfe47409,mistral:7b,0,2026-06-17T21:01:45.118886,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254903,REPLICA_ACKNOWLEDGED not working at the time of arbiter Node,0,1,Yes,77274ba3498eba7a,mistral:7b,0,2026-06-17T21:01:46.180767,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253040,mavenLocal should be first repository,0,1,Yes,e1b6e3265f4da0bb,mistral:7b,0,2026-06-17T21:01:46.451573,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255829,Publish maven SNAPSHOTs,0,1,Yes,6ab0e63b7222934a,mistral:7b,0,2026-06-17T21:01:47.002261,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253678,Document new Pojo updates,0,1,Yes,180563429d209928,mistral:7b,0,2026-06-17T21:01:47.499112,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255807,Allow bson decoder per operation (find/cusor),0,1,Yes,82e9ff86aab65976,mistral:7b,0,2026-06-17T21:01:47.978383,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252979,Remove CLIRR support from the build,0,1,Yes,2550bfdbbbc8dd80,mistral:7b,0,2026-06-17T21:01:48.460312,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252775,Multiple reads of BsonBinary UUID return different results,0,1,Yes,1fd4ab63501be5b5,mistral:7b,0,2026-06-17T21:01:48.984127,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254111,Allow setting of standard server selection and server monitoring options in the connection string,0,0,No,f41e2ec6894895fb,mistral:7b,0,2026-06-17T21:01:49.715495,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255459,Aggregate and mapReduce commands sent to mongos break when setting read preference,0,1,"Yes (Ambiguous)
+
+The issue description lacks clarity regarding the specific problem with the aggregate and mapReduce commands, the nature of the incompatibility between different mongos versions, and what is meant by ""break."" Additional context or details would be necessary to fully understand the issue.",a0374a6a689bfe76,mistral:7b,0,2026-06-17T21:01:50.527788,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253919,DBCollection.distinct() fails when a null value is in the result,0,1,"Yes (ambiguous)
+
+The issue description lacks clarity regarding the programming language, library, or framework being used. The term ""DBCollection"" and the command ""}"" are not standard in most common databases or programming languages. Therefore, it is unclear what specific implementation this issue refers to.",55ed2065b804216e,mistral:7b,0,2026-06-17T21:01:51.345429,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254628,Force slaveOK on a direct connection to a replica set membe,0,0,No,2e743f060dce8946,mistral:7b,0,2026-06-17T21:01:51.721779,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255956,Use weakrefs for static list of Mongo instances,0,0,No,ff710e616ad592c7,mistral:7b,0,2026-06-17T21:01:52.188910,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253509,Make Java driver spec compliant - FY2019Q2,0,0,No,5202aa5898c4550b,mistral:7b,0,2026-06-17T21:01:52.652251,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252673,GetMore not closing cursor after exception leading mongos to OOM,0,1,Yes,abfb70d72553a1b5,mistral:7b,0,2026-06-17T21:01:53.138039,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254365,Remove errant Javadoc for w = -1 in WriteConcern constructors.,0,0,No,e43ba0f46dd57f58,mistral:7b,0,2026-06-17T21:01:53.645299,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253861,Add to Enum<JsonMode>,0,1,Yes,60bc7e5d534c970c,mistral:7b,0,2026-06-17T21:01:54.182335,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254940,Consider supporting writetimeout for sockets implementations that support it,0,1,Yes,c76474526a374a53,mistral:7b,0,2026-06-17T21:01:54.676257,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252879,MongoClient.listCollectionNames() returns truncated names,0,1,Yes,48249347c8bef101,mistral:7b,0,2026-06-17T21:01:55.130314,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255508,Connection timeout is ignored in ConnectionStatus,0,1,Yes,350c5e30645a122c,mistral:7b,0,2026-06-17T21:01:55.678031,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252730,Test that readPreferenceTags are always interpreted as an array,0,1,Yes,f2780a3c4444227b,mistral:7b,0,2026-06-17T21:01:56.139215,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255584,skip() throw exception with the source code version 2.7.2-141,0,1,Yes,c932eb4ba58a701a,mistral:7b,0,2026-06-17T21:01:56.681461,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253722,Add more host types to run on in Evergreen,0,0,No,16cbb15086b95525,mistral:7b,0,2026-06-17T21:01:57.163867,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255096,remove ensureIndex() methods,0,1,Yes,456851cf3e68a859,mistral:7b,0,2026-06-17T21:01:57.641861,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252635,Replace default signatory in Gradle signing plugin with notary service,0,0,No,3b47db8bc30bc1f0,mistral:7b,0,2026-06-17T21:01:58.142117,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252884,Revert NPE error handling in Reactive Streams driver,0,0,No,2bdcbbef8bbbaf72,mistral:7b,0,2026-06-17T21:01:58.641187,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252572,Median and Percentile Accumulators,0,1,Yes,7275ec4f28042658,mistral:7b,0,2026-06-17T21:01:59.149586,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254092,DBCollection aggregate methods that take AggregationOptions fail to set slaveOk bit when read preference demands it,0,0,No,bd58f4f4e8cb415c,mistral:7b,0,2026-06-17T21:01:59.648479,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252719,Add tests for allowed cases when authSource is given but username is not,0,0,No,d59ff5e51da33ab6,mistral:7b,0,2026-06-17T21:02:00.230193,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254567,Regression applying read preference with tag set,0,1,Yes,75620bb8db527894,mistral:7b,0,2026-06-17T21:02:00.650615,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253271,"Remove QueryBatchCursorFunctionalSpecification """"should get more from a secondary"""" test",0,1,Yes,f52c97f9923bba6f,mistral:7b,0,2026-06-17T21:02:01.151206,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255652,Driver does not support field negation,0,0,No,d1c616445cf47db7,mistral:7b,0,2026-06-17T21:02:01.638346,project_05,title_desc,ambiguity,zero_shot
+ISSUE-252711,Support package scanning for Discriminators,0,1,Yes,8d98fa7d44754194,mistral:7b,0,2026-06-17T21:02:02.166700,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254972,Remove deprecated methods from MapReduceOutput,0,0,No,865741ebe4ca8a42,mistral:7b,0,2026-06-17T21:02:02.643689,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255595,Add getters/setters to MongoOptions class,0,0,No,c00dc26e871eacf0,mistral:7b,0,2026-06-17T21:02:03.118205,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254357,Add .save and .saveMany to MongoCollection,0,1,Yes,4349e2f1907b8bed,mistral:7b,0,2026-06-17T21:02:03.652698,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253658,Name driver modules using Automatic-Module-Name,0,1,Yes,d8a78f643c23f550,mistral:7b,0,2026-06-17T21:02:04.134610,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254032,GridFSDownloadStream - exception when destination buffer size != file chunk size,0,0,No,9464c05bc688d595,mistral:7b,0,2026-06-17T21:02:04.622858,project_05,title_desc,ambiguity,zero_shot
+ISSUE-256021,JSON.parse() and serialize() do not preserve the _id field across serializations as expected,0,1,Yes,e4a95357fdeb6ddb,mistral:7b,0,2026-06-17T21:02:05.135058,project_05,title_desc,ambiguity,zero_shot
+ISSUE-254447,Improve runCommand API documentation,0,0,No,1f5fb963c3997cce,mistral:7b,0,2026-06-17T21:02:05.653711,project_05,title_desc,ambiguity,zero_shot
+ISSUE-255432,Binary class should implements equals and hashCode,0,0,No,73359ca24e79049c,mistral:7b,0,2026-06-17T21:02:06.128567,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253042,Java driver 3.11 page still says 3.10,0,1,Yes,4776f67ce6e083b3,mistral:7b,0,2026-06-17T21:02:06.668296,project_05,title_desc,ambiguity,zero_shot
+ISSUE-253390,Change Stream startAtOperationTime MongoCommandException,0,1,Yes,425282b8a60b10ad,mistral:7b,0,2026-06-17T21:02:07.107792,project_05,title_desc,ambiguity,zero_shot

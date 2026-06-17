@@ -1,0 +1,722 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-251590,Test with latest versions of Boost,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue specifies the version of Boost to be tested (up to 1.63).
+2. It mentions testing on both Linux and Windows platforms.
+3. The task is clearly defined as testing for compatibility, which implies checking for any issues or conflicts that may arise when using different versions of Boost on these platforms.
+4. The outcome of the test (documenting compatibility) is also specified.
+5. There is no ambiguity in the language or context used in the issue description.",173e3a639c0163f2,mistral:7b,0,2026-06-17T20:44:24.228702,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252462,Determine C++ Driver version from examining the headers,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify what exact information needs to be extracted from the C++ Driver headers or how this extraction should be performed.
+2. There is no clear context provided about the purpose of determining the driver version, nor any details about the expected output format or usage in build systems.
+3. The issue lacks a specific scope, as it does not mention which parts of the C++ Driver headers are relevant or if there are any constraints on the versions to be considered.
+4. The issue can potentially be interpreted in multiple ways, such as whether the goal is to parse the header files programmatically, manually, or through some other means.
+5. Additionally, the reference to MongoDB raises questions about whether this applies only to the MongoDB C++ Driver or if it includes other C++ drivers as well, further adding to its ambiguity.",daffd11d53d46a48,mistral:7b,0,2026-06-17T20:44:26.220661,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250680,Use cmake,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title ""Use cmake"" clearly specifies the software requirement, which is to use CMake for building the project.
+2. The description provides context by mentioning the current method of using different build systems and the potential benefits of using CMake, such as simplifying build instructions and preventing mixing of release/debug runtimes.
+3. The issue also mentions associated bug reports and potential improvements, which provide a clear scope for the issue.
+4. There is no ambiguity in the language or interpretation as the requirement to use CMake is explicit.
+5. The potential benefits and associated bug reports further clarify the context and purpose of the issue.",ea5d9b044dd6dae0,mistral:7b,0,2026-06-17T20:44:27.913816,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252307,Include regex elements in BSONArrayBuilder,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is specific about adding regex elements to the BSONArrayBuilder class in the MongoDB C++ driver API. However, it lacks clarity on what exactly needs to be done or how this should be implemented.
+2. There's no clear context provided regarding the expected behavior of the updated BSONArrayBuilder class or under what conditions it should work differently.
+3. The issue mentions that a similar method exists in the BSONObjBuilder class, but it does not specify why this functionality is not included in the BSONArrayBuilder class or how it would be implemented differently.
+4. The issue also lacks a clear scope as it does not specify which parts of the BSONArrayBuilder class should be modified or if there are any potential side effects that need to be considered.
+5. Lastly, the issue can be interpreted in multiple ways, such as adding a new method for regex elements, modifying an existing method, or even redesigning the entire class structure.",f85edf2e9ef4ca9b,mistral:7b,0,2026-06-17T20:44:30.206019,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250777,Defer checking if a deployment supports sessions until the session's first operation,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is not clear as it uses technical terms without context or explanation.
+2. The description contains HTML and a script that auto-populates the Jira ticket description, which does not provide any useful information about the actual software issue.
+3. There is no clear context or scope provided for what deployment, session, or operation this issue pertains to.
+4. The issue can be interpreted in multiple ways without additional context or clarification.
+5. Without more specific details, it's difficult to determine exactly what needs to be done to address the issue.",46d3811c606d1e79,mistral:7b,0,2026-06-17T20:44:31.705574,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252448,Static archive fails to force inclusion of global initializers,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses technical language and lacks a clear context for developers who are not familiar with MONGO_INITIALIZERS or the specific build process of the library.
+2. It mentions a requirement for some MONGO_INITIALIZERS but does not specify what these initializers do, why they are necessary, or under what conditions they fail to force inclusion.
+3. The issue also mentions that clients must link with --whole-archive or cannot use the static archive at all, but it does not provide a clear explanation of why this is a problem or how it affects the overall functionality of the library.
+4. The issue does not specify the scope of the problem (e.g., which parts of the code are affected) or propose any potential solutions.
+5. Overall, the issue lacks clarity and specificity, making it difficult to understand the exact nature of the problem and how to address it.",eaccb956e0387aaf,mistral:7b,0,2026-06-17T20:44:33.776571,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251874,Add ordered option to insert_many,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the context in which ""insert_many"" is being used. It could be a function or method name within a specific software system, but without more information, it's unclear.
+2. The description mentions that all ""}s"" are currently unordered, but it doesn't specify what exactly these ""}s"" represent in the context of the issue.
+3. The requirement to allow users to pass an ordered option is clear, but without knowing the specific software system and how the ""insert_many"" function works, it's difficult to determine the exact implications and implementation details.
+4. There's no mention of any baseline performance or expected improvement in terms of order, which makes it unclear what constitutes a successful resolution of this issue.
+5. The issue could potentially be interpreted in multiple ways depending on the specific software system and the ""insert_many"" function's behavior, making it ambiguous.",f90bde8a42344ba5,mistral:7b,0,2026-06-17T20:44:35.949812,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251692,Bug When Trying to 'Make',0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title ""Bug When Trying to 'Make'"" is vague as it does not specify the exact component or software causing the error.
+2. The description mentions a command ('make') and an error, but it does not provide context about what the command is supposed to do or under what conditions the error occurs.
+3. The log output indicates that there's a missing header file ('core/string.hpp'), but without knowing more about the project structure and dependencies, it remains unclear why this file is expected and where it should come from.
+4. The issue lacks clear context and can be interpreted in multiple ways due to its vague nature.",8c877e18b7f45a97,mistral:7b,0,2026-06-17T20:44:37.586235,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251622,Can't construct operation_exception without a server error,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue mentions an incomplete implementation of `operation_exception`, but it does not specify what the expected behavior is or under what conditions the problem occurs.
+2. It also lacks clarity on how to construct `operation_exception` without a valid `bsoncxx::document::value`.
+3. The issue does not provide a clear context, as it only refers to CXX-986 and a comment within that ticket.
+4. Without more information about the codebase or the specific use case, it is unclear what components are involved or how this issue affects the overall system.
+5. The issue can be interpreted in multiple ways, such as whether the problem lies with the implementation of `operation_exception` itself or with the usage of this class in a certain context.",0d4f832b7ddcaa34,mistral:7b,0,2026-06-17T20:44:39.592361,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252149,Polyfill stdx::string_view,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify the context or software where this porting should be done. It could be for a specific project or library.
+2. There is no clear definition of what ""find a way"" means, as it lacks specific requirements or guidelines on how to achieve the goal.
+3. The issue does not provide any performance or functional expectations that need to be met after porting stdx::string_view.
+4. The issue does not specify whether the porting should be done for all platforms or just a few, which makes the scope unclear.
+5. Lastly, the issue does not mention any potential challenges or constraints that might affect the implementation of this porting, making it ambiguous.",0d48320749eca8a9,mistral:7b,0,2026-06-17T20:44:41.238994,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252321,Files dependent on make_shared should include make_shared.hpp,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly specifies the context - it refers to a specific branch (26compat) and mentions the files involved (smart_ptr.hpp and pch.h).
+2. It explains the historical problem with older versions of Boost and how that problem has been addressed in the current version for certain parts of the codebase (legacy-0.8+).
+3. The issue provides a clear solution - files dependent on make_shared should include make_shared.hpp instead of relying on an inclusion in pch.h.
+4. Although it does not specify a target metric for performance, the focus is on including a specific header file to resolve a known issue, which makes the problem less ambiguous compared to Example 3.
+5. The scope of the solution (files dependent on make_shared) is also clear and well-defined.",2e3209eb7147e6ae,mistral:7b,0,2026-06-17T20:44:43.207934,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252438,Update travis configuration to run the client examples,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states what needs to be done - updating Travis configuration.
+2. The description provides a clear context about what the updated configuration should achieve - running the client examples with a specific MongoDB setup.
+3. Although it doesn't specify the exact commands or steps, the required actions are still clear and specific.
+4. There is no ambiguity regarding the scope of the issue as it pertains to updating Travis configuration and running the client examples with a specified MongoDB setup.
+5. The issue can be interpreted in one way only - update Travis config to start a MongoDB instance with certain parameters and then run the smokeClient target.",9747850051cb2706,mistral:7b,0,2026-06-17T20:44:44.859879,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251649,Add support for MongoDB 3.4 to the legacy C++ driver.,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the requirement - ""Add support for MongoDB 3.4 to the legacy C++ driver."" This is a specific request with clear context and scope.
+2. The description further clarifies that this is a semi-official commitment, which implies there might be some discussions or decisions to be made regarding certain features or issues, but it does not make the requirement ambiguous.
+3. Although it mentions potential issues that may need to be addressed, these are likely related to the implementation rather than the requirement itself.
+4. The motivation and documentation sections provide additional context, but they do not contribute to making the requirement ambiguous.
+5. Overall, the issue is clear and specific, with no vague language or unclear scope.",94fa7abe837e733d,mistral:7b,0,2026-06-17T20:44:46.601562,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251049,Resync SDAM tests,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue is specific to SDAM tests and mentions a clear action (""Resync"") related to these tests.
+2. It specifies the problem (""added some mixed case hostnames"") with enough detail for developers to understand what needs to be corrected.
+3. Although not explicitly stated, it can be inferred that the issue is about the test corpus's content and format, which provides a clear context.
+4. The scope of the issue seems limited to SDAM tests and mixed case hostnames within them.
+5. There is no ambiguity in the language or interpretation as the issue is well-defined and specific.",dc79e30fa74add28,mistral:7b,0,2026-06-17T20:44:48.110121,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252416,rotatable_file_writer_test does not compile in C++11 mode with libc++,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue mentions a specific file (rotatable_file_writer_test.cpp) and error (compilation failure), but it does not specify the exact problem within the code that causes this error.
+2. It also refers to a build line, which includes various flags and options, but without knowing the context of these settings or how they relate to the error, the issue remains ambiguous.
+3. The error message points towards an issue with the gtest library (specifically in gtest.h), but it's unclear whether this is a problem with the version being used or if there are compatibility issues between the libraries involved.
+4. Without more context about the project, dependencies, and expected behavior, it's difficult to determine the exact cause of the issue and how to resolve it.
+5. The error message suggests that there might be an issue with functional-style cast from 'std::__1::basic_ostream<char>' to 'testing::AssertionResult', but without knowing the purpose and context of these objects, it remains ambiguous as to why this is causing a problem.",57e87a9f49a8b52a,mistral:7b,0,2026-06-17T20:44:50.645970,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251115,Implement SASLPrep,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title and description use technical language (""SASLPrep"", ""SCRAM-SHA-256"") that may not be immediately clear to all readers without additional context or explanation.
+2. The issue does not specify the software component(s) where SASLPrep needs to be implemented, nor does it provide any details about the expected outcome or conditions under which this implementation should occur.
+3. Without a clear scope and specific requirements, there is potential for ambiguity in understanding what exactly needs to be done.
+4. The provided link to RFC-4013 provides more context but does not necessarily make the issue less ambiguous as it still requires interpretation of how this standard applies to the specific software being developed or maintained.
+5. To clarify the requirements, additional information such as the affected components, expected behavior, and any relevant constraints should be provided.",f9dc8c832f898442,mistral:7b,0,2026-06-17T20:44:52.738706,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250886,Investigate alternatives to Catch2,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses vague language by not specifying the exact context in which Catch2 is being used and why it's a problem that its maintenance plans are uncertain.
+2. It lacks clear scope as it does not define what ""the next major release"" refers to, nor does it specify the impact of dropping support for VS2015/gcc 4.8 on the project.
+3. The issue mentions alternatives like Google Test but does not provide any criteria or requirements for evaluating these alternatives.
+4. It does not clearly state what the desired outcome is, whether it's to switch to an alternative testing framework or to continue using Catch2 despite its potential downsides.
+5. The article link provided does not contain enough information to fully understand the issue and its implications for the project.",dc134853d84f998f,mistral:7b,0,2026-06-17T20:44:54.603855,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251990,missing bsoncxx::document::view::empty,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly identifies the problem - missing a specific function for checking if a document is empty in BSONcxx::document::view.
+2. It provides a solution - the user has implemented it and will submit a PR soon.
+3. Although not explicitly stated, the context can be inferred from the mention of BSONcxx::document::view, suggesting that this issue pertains to a specific library or codebase.
+4. The scope is also clear as it relates to adding a function for checking if a document is empty within the specified library or codebase.
+5. The language used is precise and unambiguous.",e4c0f9f59faa30e8,mistral:7b,0,2026-06-17T20:44:56.131470,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252201,Create buildvariant for Ubuntu 12.04,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific software or application that requires the build variant for Ubuntu 12.04.
+2. It does not specify what changes are needed to create this build variant, nor does it provide any context on how this will be integrated with the existing system.
+3. There's no clear indication of the scope or impact of creating this build variant on other parts of the software or testing processes.
+4. The issue only mentions Ubuntu 12.04 for MongoDB testing, but it does not specify whether other versions or platforms are affected or need to be addressed as well.
+5. There's no clear goal or expected outcome stated in the issue description.",bbb9a9c57369e556,mistral:7b,0,2026-06-17T20:44:57.806696,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251862,Backport server r3.0.7..r3.0.8 changes,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify the context or purpose of backporting server r3.0.7..r3.0.8 changes.
+2. It lacks clear information about what changes need to be made, why they are being made, and how they will affect the system.
+3. The issue only provides SHA hashes for the changes but does not provide any details or context about those changes.
+4. There is no mention of the scope of the backport or which components it affects.
+5. Without more information, it can be interpreted in multiple ways and may require additional clarification before being addressed effectively.",d98505192b1f9d1a,mistral:7b,0,2026-06-17T20:44:59.305465,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251902,Make special commands (inprog,1,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is vague as it does not specify what software or system these special commands are for.
+2. The description mentions specific commands (""killop"", ""unlock"") but does not provide any context about their purpose, usage, or where they currently reside in the codepath.
+3. There is no clear indication of which part of the code needs to be modified or what changes should be made for these commands to go through the standard command codepath.
+4. The issue lacks a clear scope and can potentially apply to multiple components within the system, making it difficult to determine the exact requirements without further clarification.
+5. Without more context, it is unclear how these changes will improve the overall functionality or performance of the software.",ca0b07994ab90763,mistral:7b,0,2026-06-17T20:45:01.028794,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250935,Create C++17 variants,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue is specific - it mentions the exact C++ standard (C++17) and the required builders for specific compilers (Visual Studio 2017, latest clang, latest gcc).
+2. The context is clear - the purpose is to address bugs like CXX-1689, which implies that the issue pertains to compiler errors or issues.
+3. Although not explicitly stated, it can be inferred that the scope of the issue is related to the development and maintenance of the software's build system.
+4. The language used is precise and unambiguous.
+5. There are no multiple interpretations possible for this issue.",70c3ca6e97274736,mistral:7b,0,2026-06-17T20:45:02.631728,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251484,collection::distinct return should allow iteration over results,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses technical language and refers to specific functions (mongocxx::collection::distinct, bsoncxx::array::value) which may not be immediately clear to all readers without additional context or documentation.
+2. The problem description lacks a clear scope as it does not specify the exact component(s) affected by this issue.
+3. There are multiple possible solutions proposed in the issue description, which can lead to confusion about the intended solution or the expected outcome.
+4. The reference to SERVER-3141 suggests that this issue may be related to a larger set of changes or improvements, making it less clear what specific problem needs to be addressed.
+5. The issue does not provide any context or requirements for the expected behavior of the 'distinct' command or the CRUD spec, which makes it unclear how the proposed solutions would meet those requirements.",deba4f3b59dc5962,mistral:7b,0,2026-06-17T20:45:04.614552,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251767,Fix TODO comments about linking to documentation when available,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue is specific - it identifies the TODO comments and their content.
+2. The context is clear - the comments are related to linking to documentation.
+3. The scope is defined - all TODO comments of a certain form need to be addressed.
+4. There is no ambiguity in interpretation as the task is straightforward: find and add links to the already published documents.
+5. The issue does not use vague language, making it less ambiguous compared to some other examples.",3cf4284d71a561b8,mistral:7b,0,2026-06-17T20:45:05.906723,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252082,Reparent OperationException below DBException,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title ""Reparent OperationException below DBException"" is not clear as it does not specify the context or the software component where this operation should be performed.
+2. The description provides examples of failures, but it does not clearly state what the expected behavior is or under what conditions these exceptions occur.
+3. There is no mention of a baseline or target metric for performance improvement, making it unclear how to determine if the issue has been resolved.
+4. The lack of specific details and context makes it difficult to understand the scope of the issue and how it should be addressed.
+5. The multiple examples provided can be interpreted in different ways, adding to the ambiguity of the issue.",1ec7fa15a7d095ac,mistral:7b,0,2026-06-17T20:45:07.595603,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251826,Stream builder error for invalid context is unfriendly,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes an error message as being ""unfriendly"", but does not specify what constitutes a friendly error message or how the current one is unfriendly.
+2. It mentions an error occurring with the StreamBuilder, but it's not clear under which conditions this error occurs or what the expected behavior should be.
+3. The issue does not provide any context about the document being built or the specific use case that leads to the error.
+4. There is no indication of what needs to be done to fix the problem or improve the error message.
+5. The issue lacks clarity and can be interpreted in multiple ways, making it ambiguous.",69473d5eb2b8a5f5,mistral:7b,0,2026-06-17T20:45:09.251968,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252418,Remove dependency on boost program_options,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact component or module that has an unnecessary dependency on boost program_options.
+2. It lacks clear context about why this dependency needs to be removed, such as performance concerns, compatibility issues, or simplification of code structure.
+3. There is no mention of how the removal should be implemented or any potential impact it may have on other parts of the system.
+4. The issue does not provide a clear scope for what exactly constitutes ""the driver"" and where this dependency exists within the overall software architecture.
+5. Without more specific details, it can be interpreted in multiple ways, such as removing the library from the entire project or just from the driver module.",38264f5b6289a2e3,mistral:7b,0,2026-06-17T20:45:10.899533,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250681,WINDOWS | Release build,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title ""WINDOWS | Release build"" is not specific about the software or component causing the problem.
+2. The description mentions multiple components such as MongoDB cluster Atlas, mongoc driver versioned 1.16.2, mongocxx driver from the master branch, Visual Studio 16 2019, and CMake. However, it does not specify which component is causing the ""bad_alloc"" exception.
+3. The description lacks clear context about when and under what conditions the problem occurs.
+4. The solution attempts provided in the description are related to building and compiling the software, but it's unclear if these steps were necessary to reproduce the issue or if they could have caused the issue.
+5. The issue can be interpreted in multiple ways as it might be related to any of the mentioned components or their interactions, making it ambiguous.",f5f4f72aa3dbd733,mistral:7b,0,2026-06-17T20:45:13.246126,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251940,auto_reconnect using ConnectionString API,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague regarding the context and scope of the problem. It mentions using a specific API for MongoDB connection but does not specify what the actual problem is or under which conditions it occurs.
+2. The issue also lacks clarity on whether the recommended way of connecting is in question, or if there's an issue with the auto_reconnect feature when using this particular API.
+3. There is no clear expectation or goal stated for the solution, making it difficult to determine what constitutes a ""fix"" for this issue.
+4. The issue does not provide any information about the impact of the problem on the system or its users.
+5. The issue does not specify whether the auto_reconnect feature is working as intended when using the ConnectionString API, making it unclear if the problem lies with the API itself or the auto_reconnect feature's implementation.",75d448a3bb5131f0,mistral:7b,0,2026-06-17T20:45:15.309860,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252206,libmongoclient.so not generated when compling lateset c++ driver,0,1,"Final Answer: Yes
+The issue is ambiguous as it does not specify the exact error or what needs to be fixed in the given code snippet. It only mentions that libmongoclient.so is not generated when compiling the latest c++ driver, but it lacks clear context and specific details about the problem, making it difficult to determine the cause and solution without additional information.",19ec78743f200b19,mistral:7b,0,2026-06-17T20:45:18.435783,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252474,Enforce /MD with Windows C++ DLL driver,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly specifies the context - Windows C++ DLL driver and mentions the specific problem (_MD is not defined).
+2. It provides a solution for the problem by suggesting an error check code and a change in compiler flags (from /MDd to /MTd).
+3. Although it mentions that the code isn't hit by consumers, it still provides enough information about where the issue lies (version.cpp) and where it needs to be implemented (a header).
+4. The issue also discusses potential confusion related to compiler flags, which shows an understanding of the problem's implications.
+5. Overall, the issue is clear in terms of what needs to be done, why it needs to be done, and where changes should be made.",4821a51915677326,mistral:7b,0,2026-06-17T20:45:20.989037,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251467,Mutator methods which return non-void should document their return value,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description are clear and specific about the methods that need documentation for their return values.
+2. The list of methods provided in the description is exhaustive and detailed, naming multiple files and lines where these methods can be found.
+3. Although not explicitly stated, it can be inferred that the expected context is within the MongoDB C++ driver library.
+4. While the scope could potentially be ambiguous if the return values of all these methods are not defined or documented, the issue itself does not seem to be ambiguous as it clearly states the methods that need documentation.
+5. The suggested comment for method chaining also provides a clear context about what the returned object reference is used for.",493b2b8b63ed0862,mistral:7b,0,2026-06-17T20:45:23.696059,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250928,Test with gcc 4.9?,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify the software component or system where the change needs to be applied (e.g., which library, application, or operating system).
+2. It lacks a clear context about what issues are described in CXX-1595 and why testing with gcc 4.9 is necessary to address them.
+3. The issue does not provide any information about the scope of changes or potential impact on other components.
+4. There is no clear expectation or requirement stated for the outcome of this change, making it unclear what success would look like.
+5. The question ""Unsure if this is really necessary"" indicates ambiguity in the importance and urgency of the issue.",12702cc95589ffc9,mistral:7b,0,2026-06-17T20:45:25.740711,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250906,Regenerate test certificates with SHA256 signatures,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is clear but the description is not. It contains HTML and a script that auto-populates the ticket description, which does not provide any context or specifics about what needs to be regenerated, why it needs to be SHA256 signed, or under what conditions this should occur.
+2. There's no mention of the software component involved in the issue.
+3. The scope of the issue is unclear as there are no details provided about which certificates need to be regenerated and for what purpose.
+4. The description can be interpreted in multiple ways due to its ambiguous nature.
+5. Without more context or clarification, it's difficult to determine exactly what needs to be done to resolve the issue.",88b1136376e5a3fb,mistral:7b,0,2026-06-17T20:45:27.483712,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251809,Allow configuration of SSL independently of the C driver,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state the requirement to configure SSL independently of the C driver, providing a specific context (C++11 driver users).
+2. It also specifies three options for SSL support configuration (Yes, No, Auto), which helps in understanding the scope and possible interpretations.
+3. The provided link to a discussion on GitHub provides additional context and motivation for this requirement.
+4. The issue does not use vague language or lack clear context, making it less ambiguous compared to the examples given.
+5. The issue is specific about the C++11 driver users and offers three distinct options for SSL support configuration, which helps in understanding the expected behavior and conditions.",f330e17f7d1da400,mistral:7b,0,2026-06-17T20:45:29.143668,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251443,Update release documentation to discuss moving releases/stable branch,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific changes that need to be made in the release documentation.
+2. It lacks clear context as it does not specify what ""releases/stable"" refers to, or why and how it should be moved.
+3. There is no mention of who is responsible for making these changes or a timeline for when they should be completed.
+4. The issue seems to refer to multiple versions (r3.0.3, 3.1.0, 3.1.1), but it's unclear if this is a continuous series or separate instances where the same action was either taken or not taken.
+5. The issue does not provide enough information for someone to understand exactly what needs to be done and why, making it ambiguous.",be7b5e9f1662f71e,mistral:7b,0,2026-06-17T20:45:30.951580,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252069,Use of TARGET_OBJECTS in CMake build produces incorrect shared library,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses technical language (TARGET_OBJECTS, CMAKE_CXX_VISIBILITY_PRESET) which may not be immediately clear to all readers without additional context or documentation.
+2. The problem description lacks a specific example of the incorrect shared library and its symptoms, making it harder to understand the exact scope of the issue.
+3. The issue mentions a potential workaround but does not specify whether it is the desired solution, adding ambiguity about the intended outcome.
+4. The issue states that certain .o files should be built differently depending on their destination (archive or dynamic library), but it's unclear what those differences are and how they affect the overall system.
+5. The issue does not provide a clear definition of what ""doesn't work quite as intended"" means, leaving room for interpretation.",e8cfe57a9384bec3,mistral:7b,0,2026-06-17T20:45:32.889650,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251960,clang-format the legacy driver,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague as it specifies the action to be taken (clang-format) and the affected component (legacy driver).
+2. However, the scope of the change is not clearly defined. For example, it does not specify which files in the legacy branch need to be formatted or if there are any exceptions.
+3. The issue also lacks a clear context. It mentions that the server 3.0 branch will be clang-format'ed, but it does not explain why this needs to happen or what the implications might be for the legacy branch.
+4. Lastly, the issue suggests that backporting changes may be necessary, but it does not provide any details about how this would be accomplished or what challenges might arise during the process.
+5. Overall, while the issue provides some context and specifies an action to be taken, its scope is unclear, and it lacks a clear explanation of why the change is needed and what potential issues might arise during implementation.",0d7d3c4ff582e523,mistral:7b,0,2026-06-17T20:45:35.156870,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252104,"improve handling of """"node is recovering"""" errors",0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague as it clearly states the problem and the context - handling ""node is recovering"" errors. However, it lacks clarity on what specific part of the system needs to be improved or modified.
+2. The description provides some details about how the error should be handled (replacing server's description, storing useful information, requesting a check/scan), but it does not specify the exact components or functions that need to be updated.
+3. The issue can be interpreted in multiple ways, such as whether it refers to the client-side or server-side implementation, or if it involves changes in both.
+4. There is no clear scope defined for this issue, making it difficult to determine its boundaries and potential impact on other parts of the system.
+5. The issue does not provide a specific target or baseline for performance improvement, which makes it ambiguous regarding what constitutes an ""improvement"" in handling these errors.",ea416c1a33776c70,mistral:7b,0,2026-06-17T20:45:37.302088,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250562,BSON UDL for from_json,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the context or software component where this change should be implemented.
+2. It suggests a potential solution (providing a UDL) but does not clearly state the problem that needs to be solved, making it unclear what the expected outcome would be.
+3. There is no mention of any baseline performance or target improvement, so it's hard to determine if the proposed change will actually improve the performance as intended.
+4. The issue lacks clear scope, as it does not specify which parts of the codebase this change should apply to.
+5. The proposed solution can be interpreted in multiple ways, as there might be different ways to provide a UDL for the given context.",09a8a38eecc4317a,mistral:7b,0,2026-06-17T20:45:39.006603,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251355,Move mongocxx::libbson code somewhere where bsoncxx can access it,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific context and scope of where the mongocxx::libbson code should be moved and why it needs to be moved.
+2. It does not specify any negative impact or benefits of moving the code, making it unclear what the desired outcome is.
+3. There is no clear indication of how this change will affect other parts of the system or existing functionality.
+4. The issue lacks a clear definition of what ""nicer"" means in terms of functionality and performance.
+5. The issue does not provide any specific requirements or constraints for moving the code, making it difficult to determine the exact steps needed to resolve it.",fe1975bbc58aa24e,mistral:7b,0,2026-06-17T20:45:40.583711,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251652,Compile error with clang/libc++ on Linux due to ambiguous call to 'append' member function,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a compile error due to an ambiguous call to the 'append' member function, but it does not specify the exact component or file causing the issue.
+2. It provides context about the libraries involved (clang/libc++ on Linux) and mentions the specific line where the error occurs, but without knowing the relevant codebase, it is unclear which class or function 'append' belongs to.
+3. The issue also discusses the potential cause of the ambiguity related to the std::chrono::duration implementation differences between libc++ and stdlibc++, but this does not directly address the specific software component causing the error.
+4. The solution provided (applying a static cast) seems like a workaround rather than a resolution for the underlying issue.
+5. Without more information about the codebase and the exact components involved, it is difficult to determine the clear scope or potential interpretations of this issue.",77a5a198bdb14299,mistral:7b,0,2026-06-17T20:45:42.839212,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251739,Backport server r3.0.8..r3.0.12 changes,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue provides specific commit hashes for each version range to be backported, which gives a clear context of the changes that need to be applied.
+2. It specifies the server versions involved in the backport process, providing a clear scope of the work required.
+3. The issue does not use vague language; it lists specific commit hashes for each version range.
+4. There is no ambiguity about what needs to be done or how it should be done based on the provided information.
+5. The issue provides enough detail to understand the task at hand, making it clear rather than ambiguous.",f9f1b21566e836cc,mistral:7b,0,2026-06-17T20:45:44.440456,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250612,"Windows tasks failing with """"insufficient disk space"""" on Evergreen",0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify which tasks or processes are failing, nor does it mention the exact location where the insufficient disk space error occurs.
+2. There is no clear context provided about the environment, system configuration, or the expected behavior of these tasks.
+3. The scope of the issue is unclear since it doesn't indicate whether the problem affects all tasks or only certain ones.
+4. The issue can be interpreted in multiple ways, such as a lack of disk space on the system level, within specific applications, or related to a particular task configuration.
+5. Without more information about the error logs, the root cause and potential solutions remain ambiguous.",650215418ff6b305,mistral:7b,0,2026-06-17T20:45:46.017969,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252465,libmongoclient should not link db/commands.cpp,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly identifies the problematic library (libmongoclient) and the specific file causing the issue (db/commands.o).
+2. It explains the context of the issue by describing the linking process, the cause of the memory leaks, and the tools affected (Purify or valgrind).
+3. The solution proposed is also clear - moving two commands to db/commands.cpp and removing db/commands.o from the link list for libmongoclient.
+4. The scope of the issue is defined by the impact on client code that links libmongoclient, which is specified in the description.
+5. There is no ambiguity in the language used or the context provided.",2caf3b01e0cb946d,mistral:7b,0,2026-06-17T20:45:47.751814,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251807,Add VS2015 builders for legacy C++ driver,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses specific technical language (""VS2015 builders"", ""SCons"") which may not be immediately clear to all readers without additional context or explanation.
+2. It mentions that adding VS2015 builders might be tricky due to the lack of support in certain versions, which suggests there could be multiple interpretations of how this should be implemented.
+3. The issue also implies a workaround (""the --use-msvc-script flag""), but without further details it's unclear if this is an acceptable solution or if other factors need to be considered.
+4. There is no clear scope defined for what exactly needs to be built with VS2015, or what the expected outcome would be after implementation.
+5. The issue does not provide a clear goal or success criteria, making it difficult to determine when the task has been completed satisfactorily.",8923be0c97e30c99,mistral:7b,0,2026-06-17T20:45:49.787386,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250752,Update FLE documentation for community version demonstrating explicit encryption/decryption,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is clear and specific about updating the FLE documentation. However, the description is not related to the title and seems to be unrelated HTML code.
+2. There's no clear context or scope provided for what needs to be updated in the FLE documentation, what the expected outcome is, or which version of the community version it pertains to.
+3. The issue description does not provide any details about encryption/decryption that need to be demonstrated in the documentation.
+4. The script in the description appears to be unrelated to the software requirements and seems to be auto-generated HTML code.
+5. Without a clear understanding of what needs to be updated, how it should be updated, and for which version of the community version, the issue can be interpreted in multiple ways, making it ambiguous.",babacf5a374b77ca,mistral:7b,0,2026-06-17T20:45:51.656336,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251483,Create C++ driver benchmark suite,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly specifies the task - creating a C++ driver benchmark suite for mongocxx.
+2. It references an existing performance benchmarking suite used by the drivers team, providing some context.
+3. Although it does not specify exact requirements or metrics, the need to implement this suite for a specific library (mongocxx) provides a clear scope and focus.
+4. The language used is precise and unambiguous.
+5. There is no room for multiple interpretations of the issue.",0cb41454f437bb1a,mistral:7b,0,2026-06-17T20:45:53.005841,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250688,Ubuntu 16.04's compressed debug symbols confuse Valgrind,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify the exact problem that occurs when using Valgrind on Ubuntu 16.04.
+2. It lacks clear context since it doesn't mention what kind of application or system is being used, and under what conditions the error happens.
+3. The scope of the issue is unclear as it only mentions Valgrind and Ubuntu 16.04 without specifying other components that might be involved.
+4. The problem can be interpreted in multiple ways since the error message suggests a problem with parsing debug information from certain libraries, but it doesn't specify whether this is a general issue or specific to certain applications or configurations.
+5. The provided link to a Launchpad bug report indicates that the issue might have been reported elsewhere, but without more context and details, it remains ambiguous.",5f8bab4fc23f00f3,mistral:7b,0,2026-06-17T20:45:55.036038,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250556,Remove unused and add missing includes,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about what specific files or components are affected by the ""unused includes"".
+2. It lacks a clear context for why these unused includes cause slow compilation times and strange ""missing imports"" issues, as well as the exact nature of the ""unnecessarily complex includes hierarchy"".
+3. Although it mentions automating the cleanup process, there is no specified target metric or baseline for improvement in performance.
+4. The scope of the issue is not clearly defined, as it does not specify which files or directories should be targeted for this cleanup.
+5. Lastly, the solution proposed (automate the cleanup) does not provide a clear understanding of how this will solve the problem or what tools should be used for automation.",fc5718c9961cbc85,mistral:7b,0,2026-06-17T20:45:56.836815,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251543,Audit all libmongoc and libbson calls for error handling,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly specifies the components involved (libmongoc and libbson) and the problem (lack of error handling).
+2. It provides a clear context by mentioning several cases where errors aren't being handled.
+3. The scope is defined as auditing every single call to these libraries, which gives a clear understanding of what needs to be done.
+4. The issue can be interpreted in one way only - to check for errors in the return value and out parameters of all libmongoc and libbson calls.
+5. There's no ambiguity in the language or context used in the issue description.",61676251f73577fe,mistral:7b,0,2026-06-17T20:45:58.349283,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250593,Update Travis tests from Ubuntu 14.04 and test against latest server,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague, but it lacks clear context and scope. It mentions updating Travis tests from Ubuntu 14.04, but it does not specify which tests exactly need to be updated or what changes are required for the update.
+2. The issue also mentions testing against the latest MongoDB server, but it does not clarify how this should be done or what impact it will have on the existing system.
+3. There is no clear goal or target metric mentioned in the description, making it difficult to determine if the issue has been successfully resolved.
+4. The reference to CXX-2060 suggests that there might be other related issues or context, but this information is not provided in the given description.
+5. Overall, the issue could be interpreted in multiple ways due to its lack of specificity and clear scope, making it ambiguous.",227cbdffc93ecb5b,mistral:7b,0,2026-06-17T20:46:00.369122,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250638,Resync SDAM error handling spec tests,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the task to be performed - ""Resync SDAM error handling spec tests"". This provides a clear context of what needs to be done.
+2. The description further clarifies the specific location where the resynchronization is required - ""in the """"errors"""" directory"" and refers to a previous ticket (DRIVERS-1187) for context.
+3. Although it does not specify the exact steps or methods for resyncing, the reference to DRIVERS-1234 suggests that updated details are available, which can help in understanding the task better.
+4. The issue seems to be related to a specific directory and error handling tests within SDAM, limiting potential ambiguity.
+5. There is no vague language or unclear scope in this issue description.",26e71e1f61c009d1,mistral:7b,0,2026-06-17T20:46:02.228125,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251626,Misunderstanding about bsoncxx::document::element,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses vague language as it does not specify the exact context or purpose of storing `bsoncxx::document::element` without its parental document `bsoncxx::document::value`.
+2. It is unclear what transformation process is being referred to and under which conditions the SIGABRT error occurs.
+3. The scope of the issue is not clearly defined, as it does not specify which documents or fields are affected.
+4. The issue can be interpreted in multiple ways, such as whether storing `bsoncxx::document::element` without its parental document is acceptable or not, and why the SIGABRT error occurs when accessing certain types of data.
+5. Without more context or clarification, it is difficult to determine if the issue can be resolved or requires further investigation.",5821fcda4e57789a,mistral:7b,0,2026-06-17T20:46:04.124047,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252399,on linux systems it is customary to use sonames when creating shared libraries,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly specifies the action taken (""added soname support"") and the context where it was applied (""when making shared libraries on linux"").
+2. It provides a link to the commit in GitHub, which can be used for further investigation if needed.
+3. Although not explicitly stated, the issue seems to address a specific software development task related to creating shared libraries on Linux systems.
+4. The language used is clear and specific, reducing ambiguity.
+5. There's no unclear scope or multiple interpretations of the issue at hand.",977a1ce4a36a0a77,mistral:7b,0,2026-06-17T20:46:05.564177,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252510,Default Windows builds of the C++ client driver to use /MD,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue is specific - it mentions the platform (Windows), the type of build (DLL), and the current linking method (static runtime) that needs to be changed to dynamic runtime.
+2. The context is clear - the issue refers to a C++ client driver build system, which implies a technical background in software development.
+3. The scope is defined - it applies only to Windows builds of the C++ client driver.
+4. There is no room for multiple interpretations as the change from static to dynamic runtime is well-defined.
+5. The issue provides a reason for the change, making it less ambiguous than some other examples.",3c61ac6169cc31c1,mistral:7b,0,2026-06-17T20:46:07.113317,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251377,Implement unit tests for GridFS options and result classes,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue specifies exactly what needs to be done - ""Implement unit tests"" for specific components (""options and result classes for GridFS"").
+2. The context is clear as it refers to the GridFS system, which is a part of MongoDB used for storing large amounts of data.
+3. Although not explicitly stated, it can be inferred that the purpose is to ensure the functionality of these components by writing tests.
+4. There are no ambiguities regarding what should be tested or how extensive the testing should be.
+5. The issue provides a clear and specific task with a well-defined scope.",fe281775273a9446,mistral:7b,0,2026-06-17T20:46:08.591027,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252499,ScopedDbConnection not being returned to the pool,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a problem with the MongoDB connection pool but lacks specific details about the context in which this issue occurs. For example, it's unclear whether the issue is related to a specific function or module within the application.
+2. The issue mentions that the warning appears when using a certain snippet, but it does not specify what exactly the snippet is or where it is located in the codebase.
+3. The issue also mentions testing with different connection strings, but it's unclear whether these tests were conducted as part of the application development process or as an attempt to isolate and reproduce the problem.
+4. The issue does not provide a clear scope for what needs to be fixed or improved, making it difficult to determine the specific steps required to resolve the issue.
+5. The issue contains vague language, such as ""I initially thought"" and ""What makes this more strange,"" which further contributes to its ambiguity.",ee68d9857094f335,mistral:7b,0,2026-06-17T20:46:10.753516,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252183,DBClientWithCommands::reIndex should not use getSystemIndexesCollection,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the problem - DBClientWithCommands::reIndex should not use getSystemIndexesCollection. This specifies what component is involved and what behavior is expected.
+2. The description provides a clear context about the current implementation of reIndex and suggests an alternative solution using the reIndex command in the database.
+3. Although it does not specify the exact reason why we should avoid using the system index collection, the issue is still less ambiguous as it proposes a specific change to address the problem.
+4. The issue provides enough information for developers to understand and start working on a solution without needing additional clarification.
+5. There is no confusion about the scope of the issue or multiple interpretations of the problem statement.",d73f256c0a999e49,mistral:7b,0,2026-06-17T20:46:12.543214,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251644,C++11 driver 3.0.1 so much slower than legacy C++ driver 2.6.11?,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue mentions a performance difference between two versions of drivers (C++11 driver 3.0.1 and legacy C++ driver 2.6.11), but it does not specify the exact component causing the slowdown or any other relevant details about the system setup, environment, or test conditions.
+2. While the performance difference is quantified in terms of time taken to write documents to MongoDB, there's no information on whether this is a consistent pattern across different operations or scenarios.
+3. The issue does not provide any context regarding the expected performance or any baseline for comparison.
+4. There are no details about the system configuration, such as hardware specifications, network conditions, or database settings that could impact the performance difference.
+5. Without further information, it is unclear whether the slowdown is due to a bug in the C++11 driver, an issue with MongoDB, or other factors like differences in implementation between the two drivers.",cc299c2196c9b068,mistral:7b,0,2026-06-17T20:46:14.711337,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251455,Provide more user-friendly constructor or factory function for builder::core,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the problem - providing a more user-friendly constructor or factory function for builder::core.
+2. The description provides specific solutions to address the problem by either deprecating the existing constructor and introducing a new one with an enumerated type parameter, or by creating static factory methods.
+3. The scope of the issue is defined as improving readability of code which constructs builder::core objects.
+4. There are no ambiguities in the language used or lack of clear context.
+5. The issue can be interpreted in one way only - to improve the user-friendliness of the constructor for builder::core.",fb1c1d5c93b9807c,mistral:7b,0,2026-06-17T20:46:16.295372,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251387,Configurable connect timeout in C++ driver. Currently fixed at 5 secs.,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly identifies the problem - the lack of configurability for the connect timeout in C++ driver's DBClientConnection and DBClientReplicaSet.
+2. It provides a specific context by mentioning the current fixed value of 5 seconds for the connect timeout.
+3. The issue also specifies where the problem lies, which is within the DBClientConnection constructor comment.
+4. There is no ambiguity about what needs to be done - make the connect timeout configurable in the mentioned classes.
+5. The scope of the change is also clear from the description.",e51a63591609d960,mistral:7b,0,2026-06-17T20:46:17.738785,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251857,string_view.data() is unsafe,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific places where strings from string_view are passed to the C driver.
+2. It lacks clear context as it does not specify which parts of the code need to be checked or modified.
+3. The scope of the issue is unclear, as it might involve multiple functions or modules within the codebase.
+4. The issue can be interpreted in multiple ways depending on how the codebase is structured and organized.
+5. Although a reference to the discussion about the issue is provided, the actual problem description itself remains ambiguous without more specific details.",98eaa3bf0b1965f9,mistral:7b,0,2026-06-17T20:46:19.187931,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251284,Add RHEL 7 Evergreen builder,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue clearly specifies the problem - a gap in coverage against RHEL due to the removal of the RHEL 5.5 builder.
+2. It also provides a solution - adding an RHEL 7 builder.
+3. The context is clear as it refers to the removal of the RHEL 5.5 builder (CXX-1330) and the need for an RHEL 7 builder.
+4. There is no ambiguity in the scope or interpretation of the issue.
+5. The issue is specific, actionable, and unambiguous.",8d4af134e36aa1f9,mistral:7b,0,2026-06-17T20:46:20.646632,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250698,Properly deprecate create_collection methods,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses specific language (""deprecated"") but does not clearly define what ""properly"" means in this context.
+2. It lacks a clear scope as it doesn't specify which methods or parts of the system are affected.
+3. The issue does not provide a clear baseline or target state for what ""properly deprecated"" should look like.
+4. Although it mentions that users who used the methods in their code might be affected, it does not specify how widespread this issue is or what impact it has on the system as a whole.
+5. The solution could potentially involve multiple steps such as adding deprecation warnings, updating documentation, and refactoring code, but the issue does not provide enough detail to determine the exact steps required for resolution.",d90a82c04b9f9601,mistral:7b,0,2026-06-17T20:46:22.414515,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250784,Allow authentication to all server types except arbiters,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is not clear as it does not specify the software or system that requires authentication changes.
+2. The issue description contains HTML code and a script, which is not related to the software requirements.
+3. The scope of the change (which server types exactly) is unclear.
+4. There is no context provided about why this change is needed or under what conditions it should be implemented.
+5. The issue can be interpreted in multiple ways, as it does not provide enough information to understand the exact requirements for authentication changes.",42ddc4fce0dd068a,mistral:7b,0,2026-06-17T20:46:23.762480,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252291,MongoDB exception 17234,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific cause of the MongoDB exception 17234. It mentions that the problem occurs on a few systems but not all, and it's unclear what triggers this error.
+2. The issue lacks clear context as it does not specify which part of the code or process is causing the problem.
+3. Although the error message is provided, without knowing the exact system configuration, environment variables, or other relevant details, it remains ambiguous as to why this exception occurs only on certain systems.
+4. The issue does not have a clear scope since it doesn't specify which components are affected by the MongoDB exception.
+5. The problem cannot be easily reproduced on development systems, making it difficult to diagnose and resolve without further investigation.",ce83d5291814ebd8,mistral:7b,0,2026-06-17T20:46:25.615097,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250878,bsoncxx:to_json causes double value to truncate,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a problem with the bsoncxx::to_json function truncating double values to 5 digits precision, but it does not specify what the expected behavior should be or under what conditions this occurs.
+2. The provided code snippet demonstrates the issue, but it doesn't provide enough context for understanding the root cause of the problem or how to fix it.
+3. There is no mention of a baseline or target precision for the double values in the JSON output.
+4. The issue does not specify which version of the libraries are being used, making it difficult to determine if this is a known issue or if there's a workaround available.
+5. The question asks how to fix the issue, but without more information about the cause and potential solutions, it remains ambiguous.",1dcc1ac1f2bfc8f8,mistral:7b,0,2026-06-17T20:46:27.534881,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252519,Apply endian conversions where necessary in the C++ driver bson library,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is not vague as it clearly states the problem - the C++ driver sources assume a little endian system when encoding integers and doubles, making it incompatible with big endian systems for communication with MongoDB.
+2. However, the scope of the issue is unclear. It does not specify where exactly the endian conversions should be applied or provide any context about how this will affect other parts of the codebase.
+3. The issue can also be interpreted in multiple ways - it might require changes throughout the entire C++ driver library or just specific functions that deal with encoding integers and doubles.
+4. There is no clear baseline or target metric for measuring the success of the fix, making it difficult to determine if the problem has been fully addressed.
+5. The issue does not provide a clear context or conditions under which the endian conversions are necessary, potentially leading to ambiguity in implementation.",8768596b30e90552,mistral:7b,0,2026-06-17T20:46:29.753183,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250634,Use sort when verifying contents of outcome collections,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific software component that needs to be sorted and where this sorting should take place.
+2. It lacks clear context as it does not specify under what conditions the sorting should occur or how it will affect the overall functionality of the system.
+3. The scope of the issue is unclear, as it only mentions ""outcome collections"" without defining them or providing examples.
+4. There are multiple ways to interpret this issue, such as whether the sorting should be done before or after verifying the contents of the collection, and what sorting algorithm to use.
+5. The issue does not provide a clear goal or expected outcome, making it difficult to determine if the problem has been effectively addressed once resolved.",bafc293f41bc25f4,mistral:7b,0,2026-06-17T20:46:31.487404,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251786,coll.drop() throws if collection doesn't exist,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses vague language by not specifying which 'coll' refers to - the name of a collection is missing.
+2. It lacks clear context as it does not mention under what conditions or in which part of the code this problem occurs.
+3. Although the problem itself (throwing an error when dropping a non-existent collection) is clear, the solution proposed ('this shouldn't be necessary') is subjective and unclear.
+4. The scope of the issue is not defined - it could affect multiple collections or just one specific one.
+5. The issue can be interpreted in multiple ways, for example, whether the error should be handled differently, or if there's a bug in the code that causes the collection to not exist when it shouldn't.",b7716af6580a21cd,mistral:7b,0,2026-06-17T20:46:33.267816,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251038,Provide Transactions example for Docs,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is vague as it does not specify the exact document or manual where the example should be added.
+2. The description lacks clear context about what kind of transactions examples are needed and for which programming language or MongoDB driver.
+3. The provided code snippets do not provide enough information to understand the scope of the issue, as they seem to be examples rather than a solution to an existing problem.
+4. The examples could potentially be interpreted in multiple ways depending on the intended audience and purpose.
+5. There is no clear indication of what constitutes a successful resolution of this issue.",04eb68c2a575805b,mistral:7b,0,2026-06-17T20:46:34.852104,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250701,spec tests that run count should not use estimated count helper,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue is specific - it mentions a method and its intended use in testing the count command.
+2. It also provides context about the C++ driver's spec test runner and the problem with the helper method not being able to take a filter or a session.
+3. Although it doesn't specify an exact solution, the issue clearly states what needs to be changed (the C++ driver's spec test runner) and what the change should achieve (running the count command directly for spec tests instead of through the helper method).
+4. The problem is not vague or open to multiple interpretations.
+5. The issue provides enough information for a developer to understand the problem and start working on a solution.",835eb04ef2d64536,mistral:7b,0,2026-06-17T20:46:36.590448,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250622,Remove the compatibility matrixes from documentation,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue is clear - it specifies the exact items in question (the compatibility matrixes) and provides links to them.
+2. It also suggests a specific action to be taken (removing them and linking directly to another URL).
+3. There is no ambiguity about the context or scope as it pertains to the documentation.
+4. The language used is not vague, and there are no multiple interpretations possible.
+5. Therefore, the issue is not ambiguous.",803612785052dea9,mistral:7b,0,2026-06-17T20:46:37.832668,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251804,Add ability to use document::view with stream builder,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue uses vague language by not specifying the exact component or library where the `document::view` is used and what behavior is expected when using it with a stream builder.
+2. It lacks clear context as it does not provide information about the current implementation, errors encountered, or use cases that require this functionality.
+3. The scope of the issue is unclear since it only mentions one specific scenario (using `document::view` with a stream builder) without considering other potential uses or implications.
+4. The issue can be interpreted in multiple ways as there might be different interpretations of what ""ideal"" functionality means for this particular use case.
+5. No baseline or target metric is mentioned to measure the improvement in performance or efficiency that the proposed change aims to achieve.",e5f0113c2b59d582,mistral:7b,0,2026-06-17T20:46:39.660309,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252468,10gen repo for ubuntu does not provide mongodb-10gen-devel package,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific problem - it mentions discomfort and trouble but doesn't clearly state what the exact issue is.
+2. It lacks clear context as it does not specify the nature of the C++ application or its dependencies on MongoDB headers and libraries.
+3. The scope of the issue is unclear, as it only focuses on Ubuntu and the 10gen repo but doesn't mention other potential solutions or platforms.
+4. The issue can be interpreted in multiple ways - for example, it could mean that the user needs help finding the correct MongoDB package for their C++ application, or it could mean they need assistance with compiling MongoDB on Ubuntu.
+5. The issue does not provide a clear and concise title that accurately reflects the problem, making it harder to understand and prioritize.",e0044b9f3225cbdd,mistral:7b,0,2026-06-17T20:46:41.770260,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251978,Unable to compile new CXX driver,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title ""Unable to compile new CXX driver"" is vague as it does not specify the exact nature of the problem or what part of the driver is causing the issue.
+2. The description provides error messages and file paths, but without context about the project setup, dependencies, or previous attempts to resolve the issue, it remains unclear what caused the compilation errors.
+3. The scope of the issue is not defined, as it does not specify whether the problem affects the entire driver or only certain components within it.
+4. The error messages suggest that there might be a missing or incorrectly implemented function 'mongoc_bulk_operation_get_write_concern', but without more information about the codebase and its intended behavior, it is difficult to determine if this is the root cause of the problem.
+5. Multiple interpretations are possible for this issue, as the error messages could be due to various reasons such as incorrect dependencies, missing header files, or coding errors. Without further context, it remains ambiguous.",266e96931de94a7d,mistral:7b,0,2026-06-17T20:46:44.146586,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252023,Backport server r3.0.0-rc6..r3.0.1 changes,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify what changes exactly need to be backported from r3.0.0-rc6..r3.0.1.
+2. It lacks clear context about the impact of these changes on the legacy driver and other parts of the system.
+3. There's no mention of a baseline or target state for the driver after the backporting process.
+4. The scope of the work is unclear, as it does not specify which bugfixes should be prioritized or how they will be tested in the legacy driver.
+5. The issue can be interpreted in multiple ways, such as whether all changes from r3.0.0-rc6 to r3.0.1 need to be backported, or just specific ones that affect the driver.",32ab18555f91403c,mistral:7b,0,2026-06-17T20:46:46.077744,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252444,OID::init and mongo::jsTime unresolved in shared client (.so),0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue mentions symbols from OID.cpp being unresolved in a shared client (.so), but it does not specify the exact component or library causing the problem.
+2. It also mentions mongo::jsTime() as another unresolved symbol, but there is no clear context about where this function is defined or how it relates to the issue at hand.
+3. The issue provides details about the version of the codebase being used (git tag for legacy-0.0=26compat-2.6.0-rc1 and the legacy branch), but these versions do not necessarily provide a clear context for understanding the problem or potential solutions.
+4. The issue states that the same behavior is observed with different versions, which suggests that there might be multiple possible causes for the issue.
+5. Lastly, the issue mentions that the problem does not occur when linking with the static library, but it does not explain why this difference exists or how it helps in resolving the issue with the shared client (.so).",4e1be01e4cddd018,mistral:7b,0,2026-06-17T20:46:48.368209,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250789,mongocxx::uri call works with c char* parameter but not with c++ string parameter,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a problem but does not specify the exact error message or stack trace that was encountered when using a C++ string parameter instead of a c_str() method.
+2. The code snippet provided shows the usage of both methods, but it lacks context about where and how the function is called, which could help determine if there's an issue with the code or the library itself.
+3. The issue mentions that using a non-static string works when converted to c_str(), but it does not provide information on whether this is expected behavior or a workaround for the actual problem.
+4. The issue does not clearly state what the expected outcome should be, making it difficult to determine if the current implementation meets the requirements.
+5. The issue could potentially be interpreted in multiple ways, as it might involve issues with the code, library, or even the user's understanding of the API.",48b32948c73ff32c,mistral:7b,0,2026-06-17T20:46:50.516328,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251675,legacy driver fails to build on FreeBSD,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is specific to a platform (FreeBSD), but it mentions that an OpenBSD implementation for SecureRandom should work on FreeBSD as well, which introduces ambiguity about the expected solution.
+2. The error message and log are provided, but without knowing the exact codebase or context in which the error occurs, it's unclear what needs to be fixed or how.
+3. There is no clear scope defined for the issue, such as specific components that need improvement or a performance baseline to meet.
+4. The issue does not specify whether the problem occurs under certain conditions or when building with specific tools.
+5. The solution proposed (using the OpenBSD implementation) may not be the best approach for solving the issue on FreeBSD, adding to the ambiguity of the issue description.",85e985c0ea90944b,mistral:7b,0,2026-06-17T20:46:52.491493,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252109,Expose the ability to explicitly refresh the state of a replica set member,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title does not specify the context or scope of the replica set member in question.
+2. The description refers to a specification from SDAM but does not provide enough detail about how this should be implemented or under what conditions it should be used.
+3. There is no mention of any baseline performance, target metrics, or expected behavior after refreshing the state.
+4. While the description includes a reference to a specification, without additional context or details, it remains ambiguous as to what exactly needs to be done.
+5. The issue lacks clarity on who will be using this feature and how they will interact with it, making it difficult to determine its full scope and requirements.",ebd3f12fbcdd9dfe,mistral:7b,0,2026-06-17T20:46:54.184763,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252006,Creating BSON from JSON,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific programming language or library being used.
+2. It lacks clear context on what exactly needs to be done with the BSON object after creation.
+3. There's no mention of any constraints, error handling, or performance requirements related to the conversion from JSON to BSON.
+4. The issue does not specify whether it applies to a particular part of the software or the entire system.
+5. While the desired functionality is clear, the lack of specific details makes the issue ambiguous.",84099f0eb2dfee01,mistral:7b,0,2026-06-17T20:46:55.511937,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250966,cursor::begin() is invalid after using std::distance,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about what specific problem needs to be addressed - it only mentions that the begin iterator changes after calling std::distance, but does not specify whether this causes any errors or unexpected behavior.
+2. The context of the issue is unclear as it lacks information about how the cursor is used after the call to std::distance and what the expected outcome should be.
+3. The scope of the problem is also unclear - it's not specified if this issue only occurs in a specific situation or with certain types of data.
+4. The issue can potentially be interpreted in multiple ways, as the behavior of iterators after calling std::distance may depend on the iterator type and container implementation.
+5. To clarify the issue, more context about how the cursor is used after the call to std::distance, what the expected outcome should be, and any error messages or unexpected behavior observed would be helpful.",79a95b53410eed1c,mistral:7b,0,2026-06-17T20:46:57.609689,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250973,bsoncxx::to_json() do not support GBK,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific problem and its context. It mentions an error but does not specify the exact nature of the error or what part of the code is causing it.
+2. The issue lacks clear information on how to solve the problem, such as potential solutions or debugging steps.
+3. The issue does not provide a clear scope, as it only refers to the bsoncxx::to_json() function without specifying other relevant components or dependencies.
+4. The issue is specific to MongoDB and mongocxx-driver-3.2.0, which may limit its applicability to others facing similar issues.
+5. The issue does not provide enough context for a developer to easily reproduce the problem or understand the expected behavior of the bsoncxx::to_json() function with GBK encoding.",2e59035b743e4fee,mistral:7b,0,2026-06-17T20:46:59.587075,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251233,Investigate issues with load path for macos-1012 variant,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue describes a problem with the load path for a specific variant (macos-1012), but does not specify what exactly is causing the issue or which component is affected.
+2. It mentions a workaround (manually adding the path to the library to DYLD_LIBRARY_PATH variable) but does not provide enough context about why this workaround was necessary in the first place.
+3. The goal of the issue (""figure out why this is necessary and see if we can find a way to get it to work without it"") is clear, but the scope of the problem remains unclear due to lack of specific details.
+4. The solution could potentially be interpreted in multiple ways, as it suggests finding an alternative to the current workaround rather than addressing the root cause of the issue.
+5. Overall, the issue uses vague language and lacks clear context, making it ambiguous.",661584874302fa49,mistral:7b,0,2026-06-17T20:47:01.647452,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252108,ReplicaSetMonitor should monitor arbiters,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly states the specific component that needs to be modified - ReplicaSetMonitor.
+2. The description provides a clear context by referencing SDAM and explaining why monitoring arbiters is important.
+3. Although not explicitly stated, it can be inferred that the scope of the issue involves modifying or updating the ReplicaSetMonitor to include monitoring arbiters.
+4. The provided link to the server-discovery-and-monitoring documentation further clarifies the context and expected behavior.
+5. There is no ambiguity as the issue can be understood and addressed with the given information.",48cf6b28e4303c5b,mistral:7b,0,2026-06-17T20:47:03.182517,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-250839,Add mongodb+srv URIs to Atlas Connectivity tests,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title is clear and specific about the task to be performed - adding MongoDB+SRV URIs to Atlas Connectivity tests. However, the description does not provide any context or details about how this should be done, what the expected outcome is, or under what conditions it needs to be implemented.
+2. The description contains HTML and a script that auto-populates a Jira ticket description, but it does not provide any useful information regarding the software issue at hand.
+3. There is no mention of the specific components involved, the environment where these changes need to be made, or any success criteria for this task.
+4. The lack of clear context and details makes it difficult to understand the scope and requirements of the issue.
+5. Without more information, it's unclear how this issue can be effectively addressed or resolved.",5c624175cc8d41c3,mistral:7b,0,2026-06-17T20:47:05.117122,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252397,Add sparse option to ensureIndex,0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title and description clearly state that the functionality of DBClientWithCommands::ensureIndex() is missing a specific feature - the option to create a sparse index.
+2. It specifies the component (DBClientWithCommands) and the function (ensureIndex()) where this change needs to be implemented.
+3. The context is provided as well, as it mentions that the current implementation doesn't include the option for creating a sparse index.
+4. There is no ambiguity in the language used or scope of the issue.
+5. The problem can only be interpreted in one way - adding the 'sparse' option to the existing ensureIndex() function.",cbdc7d250686847b,mistral:7b,0,2026-06-17T20:47:06.775769,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-251366,Document that Windows users should build libbson without extra alignment,0,-1,"Title: Document that Windows users should build libbson without extra alignment
+Description: Compiling the driver under Windows with Visual Studio 14 2015 produces the following warning mongo-cxx-driver-r3.1.1\src\bsoncxx\builder\core.cpp(199): warning C4316: 'bsoncxx::v_noabi::builder::core::impl': object allocated on the heap may not be aligned 128
+
+Reasoning:
+1. The issue is specific to Windows users and Visual Studio 14 2015, which provides a clear context.
+2. It mentions the file (mongo-cxx-driver-r3.1.1\src\bsoncxx\builder\core.cpp) and line number (199), making it clear where the problem occurs.
+3. The issue describes the warning message, which indicates a potential alignment issue with 'bsoncxx::v_noabi::builder::core::impl'.
+4. However, the scope of the solution is not explicitly stated - it's unclear whether the solution involves only documenting the issue",b535cee0355f8a59,mistral:7b,0,2026-06-17T20:47:09.298953,project_04,title_desc,ambiguity,few_shot_cot
+ISSUE-252042,Quickstart Wiki Page,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague about the specific software or system that requires a quickstart wiki page.
+2. It lacks clear context as it does not specify who should create this guide, for which audience, and under what conditions it needs to be updated.
+3. Although it mentions the libraries and driver needed, there's no clarity on the software or system they belong to.
+4. The issue does not provide a clear scope of what the getting started guide should cover beyond installation and a simple example.
+5. There is room for interpretation regarding the format, depth, and organization of the guide.",23b480031d8d468e,mistral:7b,0,2026-06-17T20:47:10.883189,project_04,title_desc,ambiguity,few_shot_cot

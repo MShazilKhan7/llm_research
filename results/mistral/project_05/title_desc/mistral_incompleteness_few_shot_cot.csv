@@ -1,0 +1,279 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-253177,Inconsistent output between java driver and mongo shell,1,-1,"The given issue is INCOMPLETE.
+
+Reasoning: Missing essential information such as steps to reproduce the inconsistency between Java driver and Mongo shell, expected vs actual behaviour, and affected components or environment details.",956c9379d1d04e52,mistral:7b,0,2026-06-17T21:14:09.826985,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253467,size not accepting $numberlong argument,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected component (in this case, it seems to be MongoDB), the specific command or function causing the problem, the expected vs actual behaviour, and the environment details where the issue occurs. It would also be helpful to know what $numberlong argument is being referred to and under which programming language or driver this command is executed.",21e6c3ddcbcf619d,mistral:7b,0,2026-06-17T21:14:10.843969,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253452,MongoCollection.insertOne throws NullPointerException with WriteConcern.UNACKNOWLEDGED & retryWrites=true,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected application component (the code snippet provided seems to be a part of a Java driver for MongoDB, but it's not clear what the surrounding context is), and it doesn't specify acceptance criteria or environment details beyond the MongoDB connection string. It would be helpful to know under which conditions the NullPointerException occurs consistently, and whether there are any workarounds or expected behavior when retryWrites=true with WriteConcern.UNACKNOWLEDGED.",2823998d991e1dd1,mistral:7b,0,2026-06-17T21:14:12.170639,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253505,Add an option to toggle SSL certificate validation,1,1,Final Answer: Yes,8a7844a81760cd8c,mistral:7b,0,2026-06-17T21:14:12.538334,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255080,JSON parser parses braces incorrectly,0,1,Final Answer: Yes,db6eb5144e458bdd,mistral:7b,0,2026-06-17T21:14:12.982381,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255534,Looking for performance tips loading results from a find() with the java driver.,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the expected vs actual behaviour, the specific performance issues encountered, and any acceptance criteria for improved performance. Additionally, there are no details about the environment or affected components.",fcbe09090d89bbe2,mistral:7b,0,2026-06-17T21:14:13.886326,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255332,Binary field $type is represented in JSON as a number instead of a two-byte hex string,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the context of where this conversion happens, the specific binary field details, the expected behaviour when converted to JSON, and any acceptance criteria or affected components.",033ec0bdb52fe04e,mistral:7b,0,2026-06-17T21:14:14.547445,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254781,Iterable Codec,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions the need for a codec that supports decoding into an iterable, but it does not specify the programming language or library context, the expected behavior when decoding, any error handling requirements, or acceptance criteria. Therefore, additional information is needed to make this issue complete.",6cf09d613f99f51d,mistral:7b,0,2026-06-17T21:14:15.407315,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254021,NettyStream does not handle clean socket closures from the server,0,1,"Final Answer: Yes
+
+Reasoning: The issue description lacks essential information such as the expected behavior when a clean socket closure occurs from the server, the specific steps to reproduce the problem, and any acceptance criteria for a solution. Additionally, it does not specify which components are affected or provide details about the environment in which this issue was observed.",8e71bfdaf23cc77a,mistral:7b,0,2026-06-17T21:14:16.294583,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255615,Include cursor-id in CursorNotFound exception,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the context of where this change should be implemented (which class or method), how the cursor-id will be included in the CursorNotFound exception, and what specific testing and diagnostic benefits it provides.",c1ed5dcec2f62ace,mistral:7b,0,2026-06-17T21:14:17.033946,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254855,Discrimination in Jackson-Codec,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific context or software component where Jackson-Codec is being used, the expected behavior of this feature, and acceptance criteria for successful implementation. Additionally, it does not provide steps to reproduce any observed issues or affected components.",77d245e6928c4ee8,mistral:7b,0,2026-06-17T21:14:17.807866,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-256012,Add w/wtimeout to WriteConcern (getLastError),0,1,"The issue is missing some essential information such as the specific context within the application where this change needs to be implemented, and any acceptance criteria or expected behavior changes. Therefore, the issue can be considered INCOMPLETE.
+
+Final Answer: Yes",501acb2596b7d10d,mistral:7b,0,2026-06-17T21:14:18.479114,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253265,Provide an option to use pooled NIO direct buffers to minimise impact on GC,1,1,"Final Answer: Yes
+
+Reasoning: The issue lacks essential information such as specific steps to reproduce the problem, expected vs actual behavior, and acceptance criteria. It mentions using pooled NIO direct buffers but does not specify under what conditions this should be implemented or how it would minimize the impact on GC. Additionally, there is no mention of affected components or environment details.",2b184b1bf856c2f2,mistral:7b,0,2026-06-17T21:14:19.412335,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254440,DocumentCodec and DBObjectCodec treat nested Maps/Iterables differently,1,1,"Final Answer: Yes
+
+Reasoning: Missing essential information such as the affected components (specifically DocumentCodec and DBObjectCodec), the context or use case where this issue occurs, the expected vs actual behavior, and the reproduction steps to verify the problem.",b7d3271b78822f58,mistral:7b,0,2026-06-17T21:14:20.119523,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255480,Secondary reads on lists of mongos fail until first write,1,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions a regression caused by a fix for another issue (JAVA-656), but it does not provide details about the steps to reproduce the problem, expected vs actual behavior, affected components, or environment details. These are essential pieces of information needed to understand and address the issue effectively.",61b029718d2aad04,mistral:7b,0,2026-06-17T21:14:21.009414,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255171,Saved extra fields for Gridfs does not go in metadata sub-document,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific fields that are being saved as extra and not going into the metadata sub-document, the expected behavior of these fields in the metadata sub-document, and any relevant environment or component details.",03efb5ad3e69ab3d,mistral:7b,0,2026-06-17T21:14:21.743227,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254446,Repeated connection with expected authentication errors is not deterministic,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the steps to reproduce the problem, expected vs actual behaviour, and affected components. It would be helpful to know which specific operation or function triggers the repeated connection with authentication errors, what the expected outcome should be, and under which conditions this issue occurs. Additionally, specifying the environment details (like MongoDB version, driver version, operating system) could help in diagnosing and resolving the problem more effectively.",5aae64874bc2682d,mistral:7b,0,2026-06-17T21:14:22.884608,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254233,Custom logging implementation,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which specific Java driver), the requirements for the custom logging framework integration (acceptance criteria), and potential environment details (like the custom logging library to be used).",3f2511fe9f4552ac,mistral:7b,0,2026-06-17T21:14:23.604848,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252701,Update documentation for Text Search,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific documentation that needs to be updated, the scope of the update (e.g., what sections, what changes), and any acceptance criteria or environment details.",d79edd6ae11f4e1d,mistral:7b,0,2026-06-17T21:14:24.297611,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255572,Morphia Integration in java driver,0,1,"Final Answer: Yes
+
+Reasoning: This issue is missing essential information such as the specific requirements or use cases for the Morphia Integration in the Java driver, the expected behavior after integration, and any acceptance criteria. Additionally, there are no steps to reproduce the current state or the desired state after integration.",0d2b2d6c1fff040f,mistral:7b,0,2026-06-17T21:14:25.122047,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255511,Respect the QueryFailure response flag in OP_REPLY,0,1,"The issue is missing some essential information such as the context of where and how this flag is used, the expected behavior when the flag is respected, and any potential impact on the system or other components.
+Final Answer: Yes",1ddef7fa5221f86f,mistral:7b,0,2026-06-17T21:14:25.764604,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254614,2.12.x breaks compatibility with mongoDB v1.8,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps to reproduce the error, the expected behavior when using the Java driver with MongoDB v1.8, and any acceptance criteria or affected components beyond just mentioning the Java driver version and MongoDB version. It would be beneficial to include details like the exact code snippet causing the issue, the environment in which this was observed, and potential workarounds or solutions that have been attempted.",907029eb0d9010ca,mistral:7b,0,2026-06-17T21:14:26.905523,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253354,Deprecate DBCursor#addSpecial,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the current environment where DBCursor#addSpecial is being used, the impact of deprecation on existing applications, and any necessary migration steps or alternatives for replacing the deprecated function.",a560be593c37ce3e,mistral:7b,0,2026-06-17T21:14:27.638531,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255153,update description of fsync write concern flag,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which specific Java libraries or APIs), the current and proposed descriptions for fsync and j flags, and any acceptance criteria or environment details.",dd08956cd223d454,mistral:7b,0,2026-06-17T21:14:28.310439,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255938,DBCursor.copy() does not copy batch size,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions that a specific function (""DBCursor.copy()"") does not copy a specific field (batchSize), but it lacks essential information such as the context of this function's usage, the expected behavior when batchSize is copied, and any error messages or reproduction steps encountered. Therefore, the issue is incomplete.",a7b2c5e9dfad30c9,mistral:7b,0,2026-06-17T21:14:29.425624,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253697,"upload mo artifacts"""" Evergreen post-task is failing",0,1,Final Answer: Yes,fbfda86b47b50d6e,mistral:7b,0,2026-06-17T21:14:29.850044,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253111,minWireVersion is 1 but it should be 2,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions that the current minWireVersion is 1 and it should be 2. However, it lacks essential information such as the affected component (which driver), how to check or change the minWireVersion, and potential impact of this change on existing functionality or system behavior.",6a2f0547431c438d,mistral:7b,0,2026-06-17T21:14:31.104252,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252640,Documentation links 404,0,1,Final Answer: Yes,8a0ad0b8e8a43ebb,mistral:7b,0,2026-06-17T21:14:31.389275,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255236,DBObject.equals can fail when binary data exists,1,1,"Final Answer: Yes
+
+Reasoning: The issue description provides a possible cause but lacks essential information such as the specific context or class where DBObject.equals is used, the expected vs actual behaviour in different scenarios, and any acceptance criteria or test cases to verify the failure. Additionally, it does not specify which binary data types are involved or under what conditions the equals method fails.",f916243af3e11545,mistral:7b,0,2026-06-17T21:14:32.539950,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255324,Increase GridFS max chunk size,0,0,"Final Answer: No
+
+Reasoning: The issue provides the current value of MAX_CHUNKSIZE and suggests a new value. However, it lacks essential information such as the reason for increasing the max chunk size, any potential impact on system performance or other components, and acceptance criteria (e.g., what happens if the new limit is exceeded). Therefore, the issue is not complete.",be6f68522cbf7186,mistral:7b,0,2026-06-17T21:14:33.521040,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254743,Server selection exception should chain exceptions from server monitors,1,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions that the problem occurs when exceptions exist in the server monitors, but it does not specify what these exceptions are or how they should be handled. Additionally, there is no information about the expected behavior when such exceptions occur, nor any details about acceptance criteria or affected components. Therefore, this issue appears to be INCOMPLETE.",54a50c8978c87063,mistral:7b,0,2026-06-17T21:14:34.469269,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253069,Remove mongodb-driver-embedded-android package,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the reason for removing the package, potential impact on other components, and the steps required to remove it. It would be beneficial to have details about the alternative package or solution that will replace the removed one. Additionally, it's important to know if there are any dependencies that need to be updated or handled during this process.",bb125af01fca0224,mistral:7b,0,2026-06-17T21:14:35.443258,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254867,Add type-safe jsMode support in MapReduceCommand,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (MapReduceCommand specifically), the current implementation details (using addExtraOption method), the proposed type-safe methods, and acceptance criteria (how to verify that the type-safe support has been correctly implemented).",3e00483660f35d30,mistral:7b,0,2026-06-17T21:14:36.246104,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252707,Storing unsigned integer to Mongodb from java,0,1,"Final Answer: Yes
+
+Reasoning: The issue description provides a problem statement and its cause, but it lacks essential information such as the expected behavior after successful insertion, the affected components (specifically the MongoDB collection), and environment details like the MongoDB version being used. Additionally, there is no mention of acceptance criteria or any steps to reproduce the issue.",e3045a2125698938,mistral:7b,0,2026-06-17T21:14:37.201030,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255700,Possible bug with JSON parser,1,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions a possible bug but does not provide any details about the specific JSON parser being used, the context of its usage, the expected behavior, or the actual behavior that led to the suspicion of a bug. Additionally, there is no information about the test case that passed strangely, such as its purpose, input data, and output results. These missing details make it an incomplete issue report.",98f5b416bb1f1f25,mistral:7b,0,2026-06-17T21:14:38.259898,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253917,$geoNear Aggregation pipeline in Mongo JAVA driver,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions that the $geoNear aggregation pipeline operator is missing in the Mongo JAVA driver and a manual workaround is needed. However, it lacks essential information such as the specific context or use case where this operator is required, the expected behavior when using it directly in Java code, and any potential acceptance criteria or test cases to verify its functionality. Therefore, the issue is considered INCOMPLETE.",8eae43cdeab4400d,mistral:7b,0,2026-06-17T21:14:39.356289,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254894,The aggregation method is inaccurately showing type,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the expected vs actual behaviour of the aggregation method, steps to reproduce the problem, and affected components or environment details. It would be beneficial to have more context about the data structure, the specific aggregation operation being performed, and the desired output format for a complete software requirement.",99afc58912ca9d2d,mistral:7b,0,2026-06-17T21:14:40.212618,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253334,Deprecate MongoIterable#forEach,0,1,"Final Answer: Yes
+
+Reasoning: The issue description provides context about the conflict between MongoIterable's `forEach` method and Java 8's default forEach method. However, it is missing essential information such as affected components (which libraries or projects this change will impact), acceptance criteria (what should happen after deprecation), and any potential workarounds or alternatives during the transition period.",a006e339c75aea16,mistral:7b,0,2026-06-17T21:14:41.168643,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255443,Errors when DBRef's $id is Object instead of simple value,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions that MongoDB can store objects in the _id field but does not specify the context, affected components, error messages, expected behavior, or any acceptance criteria. Therefore, it is missing essential information and can be classified as INCOMPLETE.",c446022507340a76,mistral:7b,0,2026-06-17T21:14:41.959991,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253221,mongodb+srv schema can cause NullPointerException,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions a potential cause of a NullPointerException but does not provide details on the specific operation, the expected vs actual behavior, or the affected components. It would be beneficial to have more information such as the exact code causing the issue, the context in which it occurs, and the expected outcome for successful execution.",c37b51a9967e734a,mistral:7b,0,2026-06-17T21:14:42.891531,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253502,Re-enable write concern tests for dropDatabase command,0,1,"The issue is missing some essential information such as the expected vs actual behaviour, steps to reproduce, and affected components. It mentions a problem with write concern failures for dropDatabase on 4.1 server builds but does not specify what the expected behaviour should be when write concern tests are re-enabled or how to reproduce the current issue.
+Final Answer: Yes",699b7b155d7e23a6,mistral:7b,0,2026-06-17T21:14:43.795466,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255435,Thread Locals not being freed in thread pool,0,1,"Final Answer: Yes
+
+Reasoning: The issue description provides a problem statement but lacks essential information such as steps to reproduce the issue, affected components (besides mentioning Tomcat 7), and potential acceptance criteria. It would be beneficial to have more details about the specific code causing the memory leak, the exact symptoms of the issue, and any attempts at resolution or workarounds that have been tried.",f3988f79373c6904,mistral:7b,0,2026-06-17T21:14:44.816383,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255744,authentication for replica set fails frequently because 'getnonce' and 'authenticate' command is issued to different server,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the expected vs actual behaviour, the context of where and how this code is being used, and any error messages or details about the failure. Additionally, there are no steps to reproduce the problem, and it's unclear which components are affected by the issue.",794e465f1f12d4a2,mistral:7b,0,2026-06-17T21:14:45.684755,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255326,No Such Method Exception When Instantiating Mongo Client,0,0,"Final Answer: No
+
+Reasoning: The issue provides the following essential information:
+1. Steps to reproduce (code snippet and error message)
+2. Affected component (MongoClient)
+3. Environment details (Java Driver version, OS, Java Version)
+4. Reproduction steps (recreation of the issue on a specific version)
+5. Code snippet from the application
+
+Therefore, the issue is complete.",ed5ee09774444008,mistral:7b,0,2026-06-17T21:14:46.837900,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255548,Stackoverflow when querying document with cycle reference using DBRef,1,-1,"The given issue is INCOMPLETE.
+
+Reasoning: Missing essential information such as the specific steps to reproduce the stackoverflow error, expected vs actual behaviour, and the affected components or environment details like the version of MongoDB driver and Spring Data MongoDB being used.",c6655000ad967a47,mistral:7b,0,2026-06-17T21:14:47.649555,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254528,Add MongoCollection.dropIndex(Bson keys),0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions adding a new function `MongoCollection.dropIndex(Bson keys)`, but it does not specify the following essential details:
+1. Affected components: Which MongoCollections will this function apply to?
+2. Expected vs actual behaviour: How does the current implementation differ from the proposed one, and what are the expected outcomes of using `MongoCollection.dropIndex(Bson keys)`?
+3. Acceptance criteria: What tests or conditions need to be met for considering this issue resolved?
+4. Environment details: In which environments should this function be implemented (development, testing, production)?
+5. Reproduction steps: It is not clear how the proposed change can be tested or verified without additional information.",e04254a1ed730b2c,mistral:7b,0,2026-06-17T21:14:49.370254,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254203,Add equals() and toString() to Updates,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific implementation classes that need to be updated, the expected behavior of the toString() and equals() methods, and any acceptance criteria or environment details.",34f1bf4a1f0d9736,mistral:7b,0,2026-06-17T21:14:50.050288,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254082,Connection and thread leakage in DefaultServerMonitor,1,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions a problem related to network issues between mongos and the application server. However, it is missing essential information such as steps to reproduce the issue, expected vs actual behaviour, affected components beyond just DefaultServerMonitor, and environment details like error messages or symptoms observed during the leakage.",1d8a4d799df18f1a,mistral:7b,0,2026-06-17T21:14:50.916279,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253763,Reduce size of Evergreen matrix,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected component (Evergreen matrix), the specific changes required to reduce its size, and acceptance criteria for what constitutes a reduced size or acceptable testing combinations.",666670cbb62f3c24,mistral:7b,0,2026-06-17T21:14:51.595307,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254130,Ensure Loggers are past to ErrorHandlingCallbacks,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions ""Ensure Loggers are past to ErrorHandlingCallbacks"" but it lacks essential information such as which specific loggers need to be passed, under what conditions they should be passed, and the expected behavior when the loggers are passed or if they are null. Additionally, there is no mention of acceptance criteria, affected components, or environment details.",52df77a99bd80f2f,mistral:7b,0,2026-06-17T21:14:52.607961,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253459,how to implement nested query in java API,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected Java API, the specific database being used, the expected behavior of the nested query implementation, and any acceptance criteria or environment details.",f85dccaaf9151bde,mistral:7b,0,2026-06-17T21:14:53.251627,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255998,Tried to save too large of an object. max size: 2098176,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected component (in this case, it seems to be a MongoDB Java driver), the type of object being saved, and the acceptance criteria (what should happen when an object larger than 2098176 bytes is attempted to be saved). It would also be beneficial to have more context about the environment in which this issue occurs.",f1190c241a2649fd,mistral:7b,0,2026-06-17T21:14:54.284729,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254903,REPLICA_ACKNOWLEDGED not working at the time of arbiter Node,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as steps to reproduce the problem, expected vs actual behaviour, and affected components. It would be helpful to know more details about the setup, the specific operation that's causing the issue, and what the desired outcome should be when using REPLICA_ACKNOWLEDGED at the arbiter Node.",367509db0863f856,mistral:7b,0,2026-06-17T21:14:55.219257,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253040,mavenLocal should be first repository,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps to reproduce the confusion, the expected behavior of the repository order, and any acceptance criteria or affected components. It would be beneficial to have more details about the Maven configuration, dependencies, and how changing the repository order impacts the build process.",bdff26fe180d9e99,mistral:7b,0,2026-06-17T21:14:56.069795,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255829,Publish maven SNAPSHOTs,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific Maven repository to publish SNAPSHOTs, the steps required to set up and configure the publishing process, and acceptance criteria for successful publication. Additionally, there's no mention of affected components or environment details needed for a complete understanding of the issue.",4a400a32d283e5ec,mistral:7b,0,2026-06-17T21:14:56.946248,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253678,Document new Pojo updates,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as which specific Pojo (Plain Old Java Object) is being referred to, what changes have been made in the PojoCodec for version 3.6, and how these changes should be documented. It would also be beneficial to know if there are any acceptance criteria or affected components related to this change.",debb99bce142148d,mistral:7b,0,2026-06-17T21:14:57.851866,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255807,Allow bson decoder per operation (find/cusor),0,1,"Final Answer: Yes
+
+Reasoning: The issue description provides a general idea but lacks specific details such as the affected components (which frameworks or libraries), the exact problem with DBCallbacks, and the acceptance criteria for this change. It would be beneficial to have more information about the current behavior, the expected behavior after implementing this feature, and any potential impacts on existing functionality.",dd7f3023f36c429d,mistral:7b,0,2026-06-17T21:14:58.793367,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252979,Remove CLIRR support from the build,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps required to remove CLIRR support from the build, potential impact on other parts of the system, and acceptance criteria for verifying that CLIRR has been successfully removed.",f12ad3fbc6c74240,mistral:7b,0,2026-06-17T21:14:59.538808,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252775,Multiple reads of BsonBinary UUID return different results,0,1,"Final Answer: Yes
+
+Reasoning: Missing essential information such as the context of where and how this issue occurs, the expected behavior for multiple reads of BsonBinary UUID, and any relevant environment details or code snippets that could help reproduce and diagnose the problem.",1184cf8a65eceb9e,mistral:7b,0,2026-06-17T21:15:00.305226,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254111,Allow setting of standard server selection and server monitoring options in the connection string,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear description of the required functionality and references the specifications for each option. It also mentions the affected components (Java driver and server selection/discovery & monitoring specifications). Therefore, it appears to be complete.",d527d6e82fb61877,mistral:7b,0,2026-06-17T21:15:01.096899,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255459,Aggregate and mapReduce commands sent to mongos break when setting read preference,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions the incompatibility between MongoDB versions but lacks essential information such as steps to reproduce the problem, expected vs actual behaviour, affected components, and environment details. It would be helpful to know which specific operations are causing the error, what the expected outcome should be, and under what conditions this issue occurs (e.g., with a certain data structure or read preference configuration).",08ea1263ac327bd3,mistral:7b,0,2026-06-17T21:15:02.136080,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253919,DBCollection.distinct() fails when a null value is in the result,1,1,"Final Answer: Yes
+
+Reasoning: The issue description lacks essential information such as the affected collection name, the expected vs actual behavior when dealing with null values, and the environment details like the database type and version. It would be beneficial to have more context about the code snippet provided (e.g., programming language, library or framework used) and the steps required to reproduce the issue.",00f83b09a6495a15,mistral:7b,0,2026-06-17T21:15:03.085203,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254628,Force slaveOK on a direct connection to a replica set membe,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as steps to reproduce, expected vs actual behaviour, and affected components (which replica set members and applications are involved). It would be beneficial to have more details about the current behavior, how users connect directly, and what happens when they don't specify a secondary read preference or set the slave ok bit. Additionally, it is not clear whether there are any acceptance criteria for this change.",ebfb38de7fb63816,mistral:7b,0,2026-06-17T21:15:04.161724,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255956,Use weakrefs for static list of Mongo instances,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the context of where and how weakrefs should be used, the expected behavior after using weakrefs, and any acceptance criteria or environment details. It also does not specify which Mongo instances are being referred to or provide a link to the relevant codebase for better understanding.",eae4fcb86ad3f0ad,mistral:7b,0,2026-06-17T21:15:05.049981,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253509,Make Java driver spec compliant - FY2019Q2,0,1,"Final Answer: Yes
+
+Reasoning: The issue description lacks essential information such as specific Java tickets involved, the nature of non-compliance, expected outcomes after compliance, and any acceptance criteria or environment details. It would be beneficial to have more clarity on what constitutes ""driver spec compliant"" and how this will impact the system or users.",86ec7cf30dd7696b,mistral:7b,0,2026-06-17T21:15:05.942097,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252673,GetMore not closing cursor after exception leading mongos to OOM,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific error message or stack trace, steps to reproduce the problem, affected components (like the application or database), and environment details like the MongoDB version being used. Additionally, it would be helpful to know what the expected behavior should be when an exception occurs during getMore().",c2471f045e5e5b42,mistral:7b,0,2026-06-17T21:15:06.865061,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254365,Remove errant Javadoc for w = -1 in WriteConcern constructors.,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear problem (errant Javadoc for an unsupported value) and the solution (removing the documentation). It does not require additional information such as steps to reproduce, affected components, or environment details. Therefore, it is considered complete.",ac8e21a15c94e759,mistral:7b,0,2026-06-17T21:15:07.685109,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253861,Add to Enum<JsonMode>,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (where this Enum<JsonMode> is used), acceptance criteria (what constitutes success for the new 'SIMPLE' option), and environment details (whether it applies to all environments or specific ones).",4bf4e6a0e2b8a300,mistral:7b,0,2026-06-17T21:15:08.523467,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254940,Consider supporting writetimeout for sockets implementations that support it,0,1,"Final Answer: Yes
+
+Reasoning: The issue lacks essential information such as the affected components (apart from mentioning Socket, NIO, and Netty but not specifying which parts of these libraries are involved), the expected behavior after implementing write timeout support, and acceptance criteria for determining when the issue is resolved.",5914a90aae69dde3,mistral:7b,0,2026-06-17T21:15:09.350030,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252879,MongoClient.listCollectionNames() returns truncated names,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (specifically, which part of the software uses MongoClient and version 3.10.0), the expected vs actual behaviour (what should be the full length of collection names returned by MongoClient in different versions), and reproduction steps (how to reproduce the issue with version 3.10.0 on Azure CosmosDB).",2d18ac858ac30408,mistral:7b,0,2026-06-17T21:15:10.431652,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255508,Connection timeout is ignored in ConnectionStatus,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected component (in this case, it's MongoDB but not explicitly stated), the expected vs actual behaviour (it mentions that the connection timeout is ignored and should be 1s instead of 20s, but it doesn't specify what the current behaviour is), and reproduction steps (while there's a code snippet provided, it's unclear if this is enough to reproduce the issue). Additionally, there are no acceptance criteria or environment details given.",06278404ee60588d,mistral:7b,0,2026-06-17T21:15:11.733194,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252730,Test that readPreferenceTags are always interpreted as an array,0,1,Final Answer: Yes,c9064ed1cc93f179,mistral:7b,0,2026-06-17T21:15:12.042693,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255584,skip() throw exception with the source code version 2.7.2-141,0,1,"Final Answer: Yes
+
+Reasoning: Missing essential information such as the specific issue or error that occurs when using the skip() method with version 2.7.2-141 of the Java driver, and there is no mention of expected vs actual behaviour, affected components, or environment details.",d285ed7e61147ded,mistral:7b,0,2026-06-17T21:15:13.027214,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253722,Add more host types to run on in Evergreen,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear title and description of the required action (""Add more host types to run on in Evergreen""), as well as specific recommendations for additional host types. However, it lacks details about the expected behavior after adding these new host types, acceptance criteria, or any environment-specific requirements. Therefore, while the issue is not completely incomplete, it could benefit from further clarification to be considered fully complete.",b220031c4c1ef62c,mistral:7b,0,2026-06-17T21:15:14.148625,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255096,remove ensureIndex() methods,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which database library or system this refers to), the reason for removal (e.g., performance issues, deprecation, etc.), and any potential impact on existing functionality or data integrity.",431394b4936b0320,mistral:7b,0,2026-06-17T21:15:14.872101,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252635,Replace default signatory in Gradle signing plugin with notary service,0,1,"Final Answer: Yes
+
+Reasoning: Missing essential information such as which notary service to use, what are the acceptance criteria for successful replacement, and any specific environment details or steps required to implement this change.",2bc5043c2d9282cf,mistral:7b,0,2026-06-17T21:15:15.520776,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252884,Revert NPE error handling in Reactive Streams driver,0,-1,"The issue ""Revert NPE error handling in Reactive Streams driver"" is INCOMPLETE.
+
+Reasoning: Missing essential information such as the steps to reproduce the current behavior with JAVARS-209, the expected behavior after reversion, and any acceptance criteria or affected components.",d7a6b190d5b560ac,mistral:7b,0,2026-06-17T21:15:16.326284,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252572,Median and Percentile Accumulators,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific programming language or MongoDB driver being used, the expected vs actual behaviour of the median and percentile calculation in the $group stage of the aggregation pipeline, and any acceptance criteria or affected components.",7fe90602d9fc561f,mistral:7b,0,2026-06-17T21:15:17.110259,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254092,DBCollection aggregate methods that take AggregationOptions fail to set slaveOk bit when read preference demands it,0,1,"Final Answer: Yes
+
+Reasoning: Although the issue clearly states the problem and affected component (DBCollection aggregate methods), it lacks essential information such as steps to reproduce the issue, expected behavior, acceptance criteria, or specific environment details like the version of MongoDB or the exact read preference configuration causing the problem.",8405b7334c220472,mistral:7b,0,2026-06-17T21:15:17.922032,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252719,Add tests for allowed cases when authSource is given but username is not,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which part of the code needs testing), the specific tests to be added for allowed cases, and acceptance criteria (what constitutes a successful test). Additionally, there's no mention of the environment details or any steps to reproduce the issue.",a7ea4854d2c40845,mistral:7b,0,2026-06-17T21:15:18.769207,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254567,Regression applying read preference with tag set,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (in this case, it seems to be a MongoDB replica set and Java driver), acceptance criteria (what constitutes a successful resolution of the issue), and environment details (like the version of MongoDB and Java driver being used). It would also be helpful to know if there are any specific queries or aggregations that are causing the problem.",5c7379636b32a01e,mistral:7b,0,2026-06-17T21:15:19.841950,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253271,"Remove QueryBatchCursorFunctionalSpecification """"should get more from a secondary"""" test",0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which MongoDB version and driver are being used), environment details (like whether it's a local or remote setup with auth and ssl enabled), and steps to reproduce the error. It would be helpful to have more context about the test case, the query being executed, and the expected vs actual behaviour of the QueryBatchCursorFunctionalSpecification test.",66f50a745037f77d,mistral:7b,0,2026-06-17T21:15:21.020616,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255652,Driver does not support field negation,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps to reproduce the problem with the Java Driver, the expected behavior when field negation is supported, and any acceptance criteria or affected components beyond just the Java Driver.",06fc5ef353d40edc,mistral:7b,0,2026-06-17T21:15:21.783918,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-252711,Support package scanning for Discriminators,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specifics of how the package scanning should work, what constitutes a 'Discriminator', and what acceptance criteria would indicate that the issue has been resolved. Additionally, there are no details about the affected components or environment requirements.",2efc4db4d5e1a8e6,mistral:7b,0,2026-06-17T21:15:22.615567,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254972,Remove deprecated methods from MapReduceOutput,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which specific MapReduce implementation), environment details (development or production, version numbers), and acceptance criteria (what should happen after the deprecated methods are removed).",ca8be4c3a586a6c2,mistral:7b,0,2026-06-17T21:15:23.330593,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255595,Add getters/setters to MongoOptions class,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as which specific properties should have getters and setters added to the MongoOptions class, under what conditions these getters and setters should be used, and any acceptance criteria or test cases for verifying their functionality. Additionally, it does not specify whether there are any constraints or validations that need to be considered when adding these getters and setters.",e53cebf9403e4cf9,mistral:7b,0,2026-06-17T21:15:24.352234,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254357,Add .save and .saveMany to MongoCollection,0,1,"Final Answer: Yes
+
+Reasoning: Missing essential information such as the affected MongoCollection, the expected behavior after adding .save and .saveMany methods, and any acceptance criteria or environment details.",af517e9430f87cd0,mistral:7b,0,2026-06-17T21:15:24.945571,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253658,Name driver modules using Automatic-Module-Name,0,1,Final Answer: Yes,e8d966ce5cb1ec12,mistral:7b,0,2026-06-17T21:15:25.216027,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254032,GridFSDownloadStream - exception when destination buffer size != file chunk size,0,1,"The issue is missing some essential information. It mentions the use of GridFSDownloadStream and the problem of an exception when destination buffer size != file chunk size, but it does not specify the expected vs actual behaviour, the context or environment in which this occurs, or any acceptance criteria.
+
+Final Answer: Yes",c30f87efd7877684,mistral:7b,0,2026-06-17T21:15:26.252754,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-256021,JSON.parse() and serialize() do not preserve the _id field across serializations as expected,0,1,"Final Answer: Yes
+
+Reasoning: While the issue clearly states the problem, it lacks essential information such as the context or environment where this issue occurs, the expected behaviour of JSON.parse() and serialize(), and whether there are any acceptance criteria or affected components. Therefore, the issue is INCOMPLETE.",a648e7fe7330a45c,mistral:7b,0,2026-06-17T21:15:27.064420,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-254447,Improve runCommand API documentation,0,1,Final Answer: Yes,31bd8d47b7f0b81c,mistral:7b,0,2026-06-17T21:15:27.351679,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-255432,Binary class should implements equals and hashCode,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions that comparing Binary objects is difficult but does not specify the context or requirements for implementing equals and hashCode methods. It lacks details such as acceptance criteria, affected components, and any specific edge cases to consider during implementation. Therefore, it is considered INCOMPLETE.",61bb2df850539683,mistral:7b,0,2026-06-17T21:15:28.424297,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253042,Java driver 3.11 page still says 3.10,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the steps to reproduce the incorrect version display, expected behaviour (what should the page show instead), affected components (specifically, it's not clear if this is a problem with all pages or just one), and environment details (how was the page accessed?). Additionally, there are no acceptance criteria provided.",e1037438b9b20253,mistral:7b,0,2026-06-17T21:15:29.364568,project_05,title_desc,incompleteness,few_shot_cot
+ISSUE-253390,Change Stream startAtOperationTime MongoCommandException,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions the exception that occurs but lacks essential information such as the context or code snippet where this error happens, the expected behavior, and the affected components. It would be helpful to know which operation is being performed with ChangeStreamIterable.startAtOperationTime() and what the intended resume option should be for a complete understanding of the issue.",dcf5931a74d39472,mistral:7b,0,2026-06-17T21:15:30.335458,project_05,title_desc,incompleteness,few_shot_cot

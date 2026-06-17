@@ -1,0 +1,271 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-2087,CLI error when not specifying module type in module commands is cryptic an not helpful,0,1,Final Answer: Yes,2b328ecb902dfa13,mistral:7b,0,2026-06-17T19:54:02.457953,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2338,Error in correlation strategy in aggregator.xml,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected component (in this case, it seems to be 'aggregator.xml', but it would be more precise to specify the software or system), the context of the error (what happens when the incorrect expression is used and what should happen instead), and the acceptance criteria for the test that needs to be added (e.g., what are the expected results, and how will they be verified).",1b32b7ea38f05a95,mistral:7b,0,2026-06-17T19:54:03.658177,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0972,deploy-working-dir is set to to root directory when container is started as service,0,1,Final Answer: Yes,bef87e97ddbded95,mistral:7b,0,2026-06-17T19:54:04.314042,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2665,Spike to model the cluster nodes.,0,1,"Final Answer: Yes
+
+Reasoning: Although the issue provides a general idea about the functionality, it lacks essential details such as acceptance criteria, specific tasks to be performed, affected components, and environment details like the required software version or hardware configuration. For example, it would be helpful to know what constitutes a successful ""Spike"" for this project, what are the expected outcomes of creating groups out of nodes, and under which conditions jobs and stream processing should be deployed onto specific groups and nodes within them.",a9c96d1e74bf1315,mistral:7b,0,2026-06-17T19:54:05.662693,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1414,Rename metrics repositories setValue(x,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which repositories and methods specifically), the new naming convention for the methods, and any acceptance criteria or environment details.",114ef4906d26494f,mistral:7b,0,2026-06-17T19:54:06.314464,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0394,Tasks Launcher should be able to record status to a central repository,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear description of the required functionality, including the need for infrastructure to capture state from different environments, the ability for Task Launcher to map task states, and the requirement to record state information in a specific table. It also includes links to relevant documentation for the enumerated states and the task_execution table. Therefore, it appears to be complete.",0b0c96bbe4109f1c,mistral:7b,0,2026-06-17T19:54:07.346760,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2850,Richer module options metadata,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which modules or parts of the system this change will impact), environment details (whether it needs to be implemented in different environments or not), and acceptance criteria (what constitutes a successful implementation). Additionally, while the description provides a proposed solution, it does not specify any steps to reproduce the current problem or why the current approach is insufficient.",38470550395c91c6,mistral:7b,0,2026-06-17T19:54:08.481057,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0549,Port FTP as s-c-s source module,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as specific details about the FTP module being ported, the steps required for the porting process, acceptance criteria, and any potential issues or dependencies that may arise during the transition from Spring XD to s-c-s repo.",291e4d472e44130d,mistral:7b,0,2026-06-17T19:54:09.410925,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2979,Change url to access UI from browser,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as affected components (specifically, which part of the application needs a URL change), environment details (is it only for local development or also for production?), and any acceptance criteria (e.g., what happens if the user tries to access the UI without including index.html).",e4d50b62568df198,mistral:7b,0,2026-06-17T19:54:10.303098,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0714,Add Logging to ZooKeeperContainerRepository,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear problem description (CI test build failures due to ZooKeeper connection error), identifies the affected component (ZooKeeperContainerRepository), and suggests a solution (add logging). It also includes the relevant code snippet for implementation. Therefore, it is considered complete.",59d27998f280bb19,mistral:7b,0,2026-06-17T19:54:11.218793,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1907,DefaultContainerMatcher - Improve Logging and mention affected Module,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected component beyond just mentioning a module number (11:58:24,089 WARN DeploymentSupervisorCacheListener-0), and it does not specify the expected vs actual behaviour or acceptance criteria.",6f7a41f472a1212a,mistral:7b,0,2026-06-17T19:54:12.034044,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1146,http-client Improvement (userDefinedHeaderPrefix),0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which part of the system uses the http-client), the current behaviour (how user-defined headers are handled now), and acceptance criteria (what should be the new behaviour after adding the $\ property). It would also be beneficial to have details about the environment where this change will be implemented.",4a43abbb7f39c9af,mistral:7b,0,2026-06-17T19:54:12.997036,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3079,Deploy a new job module *after* XD-singlenode container has started.,0,0,"Final Answer: No
+
+Reasoning: The issue provides details about the implementation suggestions, how to verify it works, and even mentions a specific GitHub link for reference. It contains enough information regarding steps to reproduce, expected vs actual behaviour, and affected components (new job module). Therefore, it is considered complete.",1c4df48f176df3d1,mistral:7b,0,2026-06-17T19:54:13.858305,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0367,Spike: Study scope to add support for hdfs commands in shell,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as acceptance criteria, specific commands to be supported, and potential impact on existing functionalities or environment setup. It would be beneficial to have more details about the expected behavior after adding support for HDFS commands in shell.",4d26c07637a8cac7,mistral:7b,0,2026-06-17T19:54:14.638678,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3374,Documentation for AggregateCounter,0,1,"Final Answer: Yes
+
+Reasoning: Missing essential information such as the specific details about the documentation content (what exactly should be included in the section), the expected format of the documentation, and whether there are any acceptance criteria or affected components.",ebfa6621ea10d753,mistral:7b,0,2026-06-17T19:54:15.302444,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0460,First deploy/launch of Pig job that includes yarn-site.xml file fails,0,1,"Final Answer: Yes
+
+Reasoning: The issue description provides a problem statement but lacks essential information such as steps to reproduce consistently, affected components (in this case, it's not clear if the issue is specific to Pig jobs or other components), and environment details like the version of Hadoop/YARN being used. Additionally, there is no mention of acceptance criteria or possible solutions, making it difficult to fully understand and address the issue effectively.",5ae5628a6b30fe0f,mistral:7b,0,2026-06-17T19:54:16.408563,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0456,Refactor Task parsing,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions the need for refactoring but does not specify the acceptance criteria, affected components, or any details about how the refactoring should be done. It would be beneficial to have more information such as what constitutes successful refactoring, which specific parts of the code are involved, and any potential impacts on existing functionality.",5c16dc803ff27ba5,mistral:7b,0,2026-06-17T19:54:17.355284,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3038,Add Spring XD Build Plan for Java 8 to Bamboo,0,1,"Final Answer: Yes
+
+Reasoning: The issue lacks essential information such as the specific steps to implement the Spring XD Build Plan for Java 8 on Bamboo, acceptance criteria, and affected components beyond referencing another issue (XD-761). It would be beneficial to have more details about the implementation process, testing requirements, and potential impacts on other parts of the system.",6e61527ce1db86cb,mistral:7b,0,2026-06-17T19:54:18.348950,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0976,Create a gpload batch job,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps to create the _gpload_ tasklet, the sources of data, the target GPDB database, acceptance criteria, and any environment details required for reproduction or implementation.",bef6bff2e0879824,mistral:7b,0,2026-06-17T19:54:19.088361,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1548,Document the configuration of the JobRepository,0,0,Final Answer: No,cd4c6f00a3f1baa4,mistral:7b,0,2026-06-17T19:54:19.379112,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1672,Add Basic Auth support,0,0,"The issue is not INCOMPLETE. It contains details about the functionality to be added (Basic Auth), the technical implementation (Spring Boot 1.1.x and specific dependencies), and how it will be controlled (using a Spring Boot property). However, it lacks information about the affected components or environment details, which are not always necessary for an issue to be considered complete.
+
+Final Answer: No",9b1a324e0b42e22c,mistral:7b,0,2026-06-17T19:54:20.607267,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1002,Remove Reactor Stream processor from ref docs to spring-xd-modules,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (apart from Reactor Stream processor), the reason for removal, and any acceptance criteria or environment details related to the removal process.",0a3067a3f90aaa62,mistral:7b,0,2026-06-17T19:54:21.269041,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0927,Add support to deploy stream in a single container,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific stream type, affected components, current deployment method, environment details, acceptance criteria for colocating modules within a container and leader election, and failure scenarios.",373551a4d55e6a8b,mistral:7b,0,2026-06-17T19:54:21.976483,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0336,[Int Tests] Enhance test coverage for Lattice SPI,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific areas or functions within Lattice SPI that need increased test coverage, the current level of test coverage, and the acceptance criteria for what constitutes sufficient test coverage. Additionally, it does not specify how the enhanced integration tests will be implemented or integrated into the CI pipeline.",a1f12acda1215525,mistral:7b,0,2026-06-17T19:54:22.877178,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2604,JobPlugin - Use containsKey when checking for Parameters,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the context or affected component (JobPlugin), the specific parameters to be checked using containsKey, and acceptance criteria (what constitutes a successful implementation). Additionally, there are no steps to reproduce or environment details provided.",e275c2fe22156767,mistral:7b,0,2026-06-17T19:54:23.659376,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1900,Enable FtpHdfsTest,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions that FtpHdfsTest was added but excluded due to changes required for running it on EC2. However, it lacks essential information such as the specific steps needed to set up an ftpServer on EC2 with appropriate security, acceptance criteria, and any other relevant details about the expected behavior or affected components.",224042173200a7fa,mistral:7b,0,2026-06-17T19:54:24.600721,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0514,Add PHD HDFS as s-c-s module,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as specific steps to reproduce the current situation or expected behavior after implementing the change, acceptance criteria, and affected components (in this case, the specific modules and dependencies involved).",3fed99f2451bd53c,mistral:7b,0,2026-06-17T19:54:25.302763,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1536,CompositeModuleDefinition should contain more than List<ModuleDefinition>,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (CompositeModuleDefinition and ModuleDefinition), the specific options that should be captured, how these options will be used in the composition, and any acceptance criteria or environment details.",cd883656a698d7f2,mistral:7b,0,2026-06-17T19:54:26.046000,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2545,Provide a clean way to get a reference to the MessageBus running in SingleNodeApplication,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as acceptance criteria and affected components. It suggests an improvement but does not specify what constitutes a 'clean way' or the expected behavior after the change. Additionally, it mentions the MessageBus implementation, but it's unclear which parts of the application are affected by this change (SingleNodeApplication, other modules, etc.).",a4e95458d2e2a55e,mistral:7b,0,2026-06-17T19:54:27.025792,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3424,Final review of REST API structure document for streams,0,1,Final Answer: Yes,87458fb3e8a31830,mistral:7b,0,2026-06-17T19:54:27.314664,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2913,Change default admin port from 8080,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (besides admin port), the current default port, and acceptance criteria for changing the port to 8088. It would be beneficial to know if there are any dependencies or services that use the original port, and what impact the change might have on them. Additionally, it's important to specify whether the change should apply only to the admin interface or other parts of the system as well.",66cdb03f19531bf3,mistral:7b,0,2026-06-17T19:54:28.661821,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2866,Find runtime modules by type and/or name,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (where this functionality should be implemented), environment details (is it for a specific runtime or platform?), and acceptance criteria (what constitutes success in finding the modules by type and/or name).",6ac4a847b9281341,mistral:7b,0,2026-06-17T19:54:29.432122,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1470,User wants to package and deploy an XD application,0,1,"Final Answer: Yes
+
+Reasoning: The issue description lacks essential information such as steps to reproduce, expected vs actual behaviour, acceptance criteria, affected components (specifically which modules and configurations), and environment details like the exact process for packaging, deploying, and exporting/importing resources in an XD environment.",3f7c333dffa9de93,mistral:7b,0,2026-06-17T19:54:30.279432,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0697,Create a spark standalone cluster on CI to run spark streaming tests,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as specific details about the CI environment (like which CI tool is being used and how to configure it for Spark standalone cluster), the steps to set up the Spark standalone cluster, acceptance criteria (what constitutes a successful setup), and any potential affected components or environment details.",9416ce46f29489df,mistral:7b,0,2026-06-17T19:54:31.198718,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0518,Port Redis counter as s-c-s sink,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps for adapting Redis from XD to s-c-s, the exact requirements for building streaming pipes and simple counters, and any acceptance criteria or environment details.",a5debec9aeb24979,mistral:7b,0,2026-06-17T19:54:31.962338,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1072,Large number of required options in jdbc sink definition,0,1,Final Answer: Yes,955f66da51019ca8,mistral:7b,0,2026-06-17T19:54:32.319129,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1097,Temp files for stream create not being cleaned,0,1,Final Answer: Yes,dd5388b015ea68e5,mistral:7b,0,2026-06-17T19:54:32.823874,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2832,The HDFS Sink should support compressing files as they are copied,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the steps to reproduce the current behavior, the expected behavior after implementing the compression feature, and any acceptance criteria or environment details. It mentions the files can be text or binary, but it's unclear how the copying process works, what triggers the compression, and under which conditions the compression should occur. Additionally, there is no information about affected components or any specific Hadoop configuration required for the third-party codecs mentioned (XD-277, XD-279).",b68d820390dbe56e,mistral:7b,0,2026-06-17T19:54:34.367076,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1088,HDFS StoreMessageHandlers are not very resilient,0,1,"Final Answer: Yes
+
+Reasoning: Although the issue describes the problem and provides some context about the underlying HDFS stream and the spring-xd-hadoop module, it is missing essential information such as steps to reproduce the issue, expected vs actual behaviour, acceptance criteria, or specific affected components. It would be beneficial to have more details on how to reproduce the issue, what the expected behaviour should be, and what constitutes a successful resolution (acceptance criteria). Additionally, specifying the affected components could help in identifying the scope of the problem and potential solutions.",1849e52b077dba45,mistral:7b,0,2026-06-17T19:54:35.637102,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0993,XD on Lattice POC,0,1,"Final Answer: Yes
+
+Reasoning: The issue description lacks essential information such as specific steps to reproduce, expected vs actual behavior, acceptance criteria, and affected components or environment details. It mentions a PoC (Proof of Concept) but does not provide any context about the current state of the project, potential issues encountered, or desired outcomes. Additionally, it only discusses the design of a pluggable SPI without specifying how this will be integrated into the existing system or what the acceptance criteria are for success.",326bbb4bf97791a8,mistral:7b,0,2026-06-17T19:54:37.036797,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3212,Parsing stream definition with parameter containing single quotes not working,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected component (in this case, it seems to be related to a specific gemfire-cq example and Spring XD), the expected vs actual behaviour (the error message suggests that there's an unexpected data in the stream definition, but it doesn't specify what the expected behaviour should be), and acceptance criteria (what constitutes a resolved issue or a successful parsing of the stream definition).",abf9ebcee305604a,mistral:7b,0,2026-06-17T19:54:38.201361,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0131,Support partitioning for Kafka even if count == 1,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear problem statement, the desired functionality, and even mentions the affected component (Kafka). However, it lacks specific details such as the steps to reproduce the current behavior, acceptance criteria for when the feature is considered complete, or any environment-specific requirements. Therefore, while the issue is more complete than some examples where only a high-level requirement was stated, it still requires additional information to be considered fully complete.",73b0ba74e7987de2,mistral:7b,0,2026-06-17T19:54:39.385798,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2806,User should be able to view the list of all the job definitions,0,0,"Final Answer: No
+
+Reasoning: The issue provides a detailed description of how to implement the feature, including the structure of the tabs, the table layout, and the REST API endpoint. It also mentions the expansion of the JobsController list()'s QueryOptions and the shell command ""job list"". However, it is missing essential information such as the expected vs actual behaviour, acceptance criteria, and any specific issues or errors that need to be addressed, making it somewhat incomplete.",9edc771424270d25,mistral:7b,0,2026-06-17T19:54:40.526915,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3281,Create proper test coverage for Controllers,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific controllers to be covered, the testing framework or methodology to use, the acceptance criteria for proper test coverage, and any environment details needed for testing.",782bc0e5fc58d68f,mistral:7b,0,2026-06-17T19:54:41.213534,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0114,Spring flo issue with unexpected char,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions a problem with using an asterisk in Spring Flo, but it lacks essential information such as the expected vs actual behavior, the specific error message, the context or code snippet where this issue occurs, and the affected components. Providing these details would help to better understand and address the issue.",34d5e20529ab6010,mistral:7b,0,2026-06-17T19:54:42.121894,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2819,Create OOTB batch job for export and processing multiple files from HDFS to MongoDB,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific details about the batch job configuration, acceptance criteria, and any error handling or logging requirements. Additionally, it does not specify which MongoDB collection to write the data to, nor does it provide steps for reproducing the issue or testing the solution.",d97f72bdf0eb7233,mistral:7b,0,2026-06-17T19:54:42.997307,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3583,Creating a tap throws an exception,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions that creating a tap throws an exception and provides the error message related to Spring Bean 'redisConnectionFactory'. However, it lacks essential information such as the context of creating a tap, what is expected behaviour when creating a tap, and which components are affected by this issue. Therefore, the issue is incomplete.",a7c93a6546ef0ab2,mistral:7b,0,2026-06-17T19:54:43.974830,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1320,Upgrade CI Acceptance AMI to HVM,0,1,"Final Answer: Yes
+
+Reasoning: The issue lacks essential information such as the specific steps to upgrade the CI Acceptance AMI, the current AMI details for reference, and acceptance criteria for verifying the successful upgrade. Additionally, it does not specify the environment details or any potential impacts of the upgrade on existing functionalities.",19a1532b48a7685d,mistral:7b,0,2026-06-17T19:54:44.845000,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3683,Sonar build is failing,0,1,Final Answer: Yes,235c036fe97628b8,mistral:7b,0,2026-06-17T19:54:45.171486,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0297,Port Mail as s-c-s sink,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps for moving the module from Spring XD to s-c-s repo, the expected behavior after the move, and any acceptance criteria or affected components. It would be beneficial to have more details about the environment, dependencies, and potential impacts of this change.",45fee583b33a60d7,mistral:7b,0,2026-06-17T19:54:46.240572,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2837,User requires wiki page on how to use the XD EC2 Installer,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear title and description about adding instructions to the GitHub wiki for using the XD EC2 Installer. It specifies what needs to be done (add instructions) and where they should be added (GitHub wiki). However, it lacks details on the steps to reproduce the current problem or any acceptance criteria, which are not essential for this type of issue but still good practices to include when possible.",06dd6d153de0a627,mistral:7b,0,2026-06-17T19:54:47.349597,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0692,Document the new analytics tab features,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as which specific widgets are included in the analytics tab, what actions should be performed on these widgets, and any acceptance criteria or environment details. It would also be beneficial to know which streaming pipeline the widgets belong to for clarity.",728851abc418bc31,mistral:7b,0,2026-06-17T19:54:48.162665,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1393,Workaround latest boot snapshot issue,0,1,"Final Answer: Yes
+
+Reasoning: The issue description lacks essential information such as the steps to reproduce the problem, expected vs actual behavior, and affected components. It does not specify what the ""latest boot snapshot issue"" is or how the workaround resolves it. Additionally, there are no details about the environment in which this issue occurs or any acceptance criteria for the workaround.",cbf97dd4c1d8ee97,mistral:7b,0,2026-06-17T19:54:49.139041,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1213,Add test coverage for 'complex objects' as payload,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific complex objects to be covered, the scope of testing (unit tests, integration tests, etc.), and acceptance criteria for what constitutes adequate test coverage. Additionally, it does not specify which part of the system these complex objects are found in or any environment details that might be necessary for reproducing and testing the issue.",6fcf05fd01be99dc,mistral:7b,0,2026-06-17T19:54:50.119085,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2096,Create documentation section for the shell,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear title and description that outlines the required documentation section, including specific topics such as single and double quotes, basic commands to manipulate streams, jobs, list modules, passing in files for execution upon shell startup, and extending custom commands using spring-shell ref docs. It also seems to have a good scope with detailed content. Therefore, it appears to be complete.",e9fa7668de2d14a1,mistral:7b,0,2026-06-17T19:54:51.156735,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0695,Example hashtag-count MR job fails when running XD on YARN with PHD 3.0,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (specifically, which part of Apache Hadoop and Spring XD are involved), environment details (like the exact version of the jar file and the configuration of the cluster), and acceptance criteria (what should happen when the job runs successfully).",bca7f6b6efcf3e5a,mistral:7b,0,2026-06-17T19:54:52.116880,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1859,Investigate deployed module context close upon container shutdown,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions the problem but lacks essential information such as steps to reproduce, affected components (specifically which modules and containers), expected behavior, and any acceptance criteria or environment details.",84137fb54225fd84,mistral:7b,0,2026-06-17T19:54:52.898048,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2486,Add XD deployment for YARN,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear title, detailed description of the work to be done, and includes necessary information such as the specific code changes, deployment scripts, and environment details (Apache 2.2 distribution and command-line arguments or environment variables). It also mentions testing and potential for overriding configurations, which are important acceptance criteria. Therefore, this issue appears to be complete.",b47d8b382726d4fe,mistral:7b,0,2026-06-17T19:54:53.944576,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1473,Document Kafka message bus,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps for setting up and configuring Kafka as a message bus, any expected vs actual behaviour, acceptance criteria, or environment details. It only mentions referring to documentation in a wiki but does not provide details about what exactly needs to be done or what the desired outcome should be.",cb1e5e2f2af34b07,mistral:7b,0,2026-06-17T19:54:54.880834,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1928,Module option validation not happening anymore,0,1,"Final Answer: Yes
+
+Reasoning: The issue description mentions that option validation is not happening anymore, but it does not specify which options are affected, what the expected behavior should be, or under which conditions this issue occurs. Additionally, there is no information about the environment, affected components, or the exact steps to reproduce the problem.",2fff6c76e64c76d5,mistral:7b,0,2026-06-17T19:54:55.741822,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2209,Validate existence of batch job at the admin side,0,1,"Final Answer: Yes
+
+Reasoning: The issue description lacks essential information such as steps to reproduce, expected vs actual behaviour, and acceptance criteria. It's not clear how the validation should be performed or what constitutes a successful validation. Additionally, there is no mention of affected components or environment details.",e7328e97b8980843,mistral:7b,0,2026-06-17T19:54:56.563885,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2118,Stream-lib - analytics operators,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific requirements for implementing the ""stream-lib"" in Spring XD's analytics feature-set, acceptance criteria, and any necessary environment details or dependencies. It would be beneficial to have more clarity on what exactly needs to be done, how it should be integrated, and what the expected outcomes are.",90dd1b9040f283aa,mistral:7b,0,2026-06-17T19:54:57.528176,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1678,Preserve partition state on container restarts,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the affected components (which containers specifically), the environment details (OS, container management system, etc.), and acceptance criteria (what constitutes a successful preservation of partition state). Additionally, while there is a design consideration mentioned, it does not provide enough detail about how this design change will be implemented or tested.",4686a728b434d298,mistral:7b,0,2026-06-17T19:54:58.495117,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2005,Paging support for ModuleMetadata/Container repositories,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific accessor methods that need paging support, the format of data to be paginated, the criteria for when and how paging should occur, and any potential impact on other components or functionality.",a8df77ffeed19b7d,mistral:7b,0,2026-06-17T19:54:59.264459,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0138,Upgrade to SHDP 2.2.1.GA,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear goal (upgrade to SHDP 2.2.1.GA), reasons for the upgrade, and mentions specific versions of Boot, HDP, CDH, Hive, Spring, and Hadoop that will be used. It also states the intention to avoid breaking changes, which implies some acceptance criteria. Therefore, it appears to contain sufficient information.",ee4c30d602684cb7,mistral:7b,0,2026-06-17T19:55:00.327752,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1267,Add in-memory based Aggregate Field Value Counters,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps to reproduce the current behavior, expected vs actual behavior, and acceptance criteria. While it mentions a scope and provides a reference to a previous implementation, it does not clearly define what constitutes an ""aggregate field-value counter"" or how this new feature will be tested for success.",10c94342943ae923,mistral:7b,0,2026-06-17T19:55:01.282575,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2220,Support Groovy bean definitions as XD extensions,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific context or components where this modification should be applied, any expected vs actual behavior changes, and acceptance criteria for successful implementation.",38491cdd2796cc4e,mistral:7b,0,2026-06-17T19:55:01.915446,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0982,Harmonize poller configuration,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as acceptance criteria and affected components beyond the modules listed in the description. It's not clear what constitutes harmonized poller configuration or how this change will be verified. Additionally, it would be beneficial to have a list of all modules that should be updated for better traceability and completeness.",0bc4ed7e3c028a96,mistral:7b,0,2026-06-17T19:55:02.894245,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3457,Retrieve information for an aggregate counter,0,-1,"The issue is INCOMPLETE.
+
+Reasoning: Missing essential information such as what specific aggregate counter is being referred to, how the data should be retrieved from the repository, what changes are expected in the 'Handler', and acceptance criteria for the changes made to the analytics project.",0ae08d05b13207b1,mistral:7b,0,2026-06-17T19:55:03.724463,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0753,Spring XD admin fails to redeploy modules after Spring XD container successfully reconnectes to Zookeeper,0,0,"Final Answer: No
+
+Reasoning: The issue provides a detailed description of the problem, including affected versions, environment details, steps to reproduce, logs, and even mentions related tickets. It contains all necessary information such as expected vs actual behaviour, affected components, and environment details. Therefore, it is considered complete.",b7821643706b0b2d,mistral:7b,0,2026-06-17T19:55:04.752832,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1005,"Composite Modules should inherit """"xd.*"""" properties",0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the expected behavior of composite modules when inheriting properties, the specific issues or errors encountered, and acceptance criteria for a successful resolution. Additionally, there are no steps provided to reproduce the problem or affected components mentioned explicitly.",b8ef801364bf36ce,mistral:7b,0,2026-06-17T19:55:05.684443,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0247,Move Kafka @Rule to a separate repo,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the current location of Kafka, the steps to move it, any potential impacts or dependencies that need to be considered, and acceptance criteria for a successful move.",85a33ee14edf0acc,mistral:7b,0,2026-06-17T19:55:06.388378,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2390,Create RPM for distribution,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the steps to create the RPM, expected vs actual behaviour, and acceptance criteria for the created RPM. While it provides details about the desired package format, version, installation path, user/group, hosting repository, and supported platforms and Java versions, it does not specify how these should be achieved or what success looks like (e.g., verification tests).",8afab9813a306ff6,mistral:7b,0,2026-06-17T19:55:07.473728,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3476,Add Spring/Integration MBean Exporters to Module ApplicationContexts,1,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific MBean Exporters to be added, the expected behavior after adding them, the affected components or modules, and any acceptance criteria. It also does not specify whether these exporters should be global or per-module by default, or how to override for individual modules. Additionally, there is no mention of the environment details or any steps to reproduce the issue or verify the solution.",f631abd15d9614cd,mistral:7b,0,2026-06-17T19:55:08.571407,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2808,Add documentation for gemfire cache-listener source,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific documentation that needs to be added, the format of the documentation, and any acceptance criteria or examples for the sample usage. Additionally, there are no details about the affected components or environment requirements.",41801f709332e7cb,mistral:7b,0,2026-06-17T19:55:09.328045,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2171,Add a 'rank' expression to be used by the container matcher,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear description of the functionality to be added (a 'rank' expression for container matcher), as well as examples of how this rank expression can be used and evaluated. It also includes details about the HTCondor model, which provides context for the implementation. Therefore, it appears to contain all essential information needed for understanding and addressing the issue.",de30e2c62258ad95,mistral:7b,0,2026-06-17T19:55:10.445662,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0332,[Unit Tests] Enhance test coverage for YARN SPI,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific areas or functions within YARN SPI that need more test coverage, the current level of test coverage, and the acceptance criteria for what constitutes sufficient test coverage. Additionally, it does not specify how the enhanced test coverage will be integrated into the CI pipeline or any potential challenges that may arise during this process.",6476d0d57f805621,mistral:7b,0,2026-06-17T19:55:11.448934,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0424,Prevent external libraries from overriding uber-jar dependencies,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific steps or methods for preventing external libraries from overriding uber-jar dependencies, the affected components (which libraries and dependencies exactly), and potential acceptance criteria (e.g., what constitutes success in this scenario).",c0561edfa7bb9590,mistral:7b,0,2026-06-17T19:55:12.247842,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0373,Remove hardcoded yarn app version jars,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific files or configurations where the hardcoded paths are located, the format for defining the version during a build, and acceptance criteria like what should happen if the location of the files is overridden.",11a60a878dc46691,mistral:7b,0,2026-06-17T19:55:13.036445,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0586,Replace spring-xd-messagebus-* dependencies with SCS,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as steps to reproduce, expected vs actual behaviour, and acceptance criteria. It does not specify the exact problem encountered or how the replacement of dependencies affects the overall functionality of the software. Additionally, it mentions integration tests and Admin SPI but does not provide details about them.",7000823b34c137ae,mistral:7b,0,2026-06-17T19:55:13.931725,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1621,Create CompositeModuleRegistry,0,1,"Final Answer: Yes
+
+Reasoning: Although the issue describes the problem and proposed solution, it lacks essential information such as affected components, environment details, acceptance criteria, and potential impact on existing functionality. For example, it's unclear which modules are considered composite, how the conversion will be handled without affecting other parts of the system, and what the new ModuleRegistry should look like in terms of functionality and interface.",430b160ced7989f4,mistral:7b,0,2026-06-17T19:55:14.936131,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0407,"Add """"module list"""" command",0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific environment or software where the command should be implemented, the expected behavior of the command, and any acceptance criteria for its functionality. Additionally, there's no mention of how to reproduce the command or any affected components.",4454d9a75ac66110,mistral:7b,0,2026-06-17T19:55:15.727601,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0597,Remove XML REST Endpoints,0,1,"Final Answer: Yes
+
+Reasoning: Missing essential information such as the affected components (which specific XML REST endpoints), the nature of the issues they are having (what is not working correctly), and the steps to reproduce or verify the issues. Additionally, it lacks details about how removing these endpoints will impact other parts of the system or any potential replacement solutions.",b59bb7e4fd35e229,mistral:7b,0,2026-06-17T19:55:16.646471,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0814,RemoteFileToHadoopTests fails on 1.1.x,0,1,Final Answer: Yes,c4a038f005ecb9ab,mistral:7b,0,2026-06-17T19:55:17.735182,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1955,Can't use webhdfs with hdfs sink,0,0,"Final Answer: No
+
+Reasoning: The issue provides the following details:
+1. Problem description: Can't use webhdfs with hdfs sink and the error encountered.
+2. Solution: Adding specific jar files to resolve the NoClassDefFoundError.
+3. Affected component: spring.hadoop.fsUri (webhdfs)
+4. Environment details: xd/lib (presumably a library or dependencies directory)
+
+The issue is complete as it contains the problem, solution, affected component, and environment details. However, it lacks explicit acceptance criteria, such as verifying that after adding the specified jars, webhdfs can be successfully used with hdfs sink without encountering the NoClassDefFoundError. But for the given information, the issue is considered complete.",f6919303c5ebff39,mistral:7b,0,2026-06-17T19:55:19.856537,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2908,Create an easier short-cut for launching adhoc Batch Jobs,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as acceptance criteria for what constitutes an ""easier"" shortcut, and potential options or alternatives to the current method. Additionally, there are no specific details about the environment or affected components.",7de4f3adce8375bb,mistral:7b,0,2026-06-17T19:55:20.622888,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2746,Add support for Hortonworks Data Platform 2.0,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as acceptance criteria, specific changes required to add support for Hortonworks Data Platform 2.0, and any potential challenges or dependencies that might arise during the implementation process. It would be beneficial to have more details about the expected behavior after the integration, testing scenarios, and any necessary configuration changes.",fef70401bd4205c0,mistral:7b,0,2026-06-17T19:55:21.584767,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0945,Provide an option for hdfs sink to not use tmp extension,0,0,"Final Answer: No
+
+Reasoning: The issue provides a clear title, describes the desired functionality, and explains why it's useful. It also includes details about the specific component (hdfs sink) and the current behavior and proposed change regarding the file extension. Therefore, this issue appears to be complete.",debb5938f471d1ee,mistral:7b,0,2026-06-17T19:55:22.390751,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3110,"Simplify """"instance"""" deployment code",0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific details about the abstracted deployer classes, the exact boilerplate factorization that needs simplification, and the acceptance criteria for the proposed solution. It would be beneficial to have more context on the affected components, environment details, and any potential impact of this change on other parts of the system.",d71fe26da2f7aa6d,mistral:7b,0,2026-06-17T19:55:23.339020,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0623,Change in file source breaks backward compatibility,0,1,"Final Answer: Yes
+
+Reasoning: The issue lacks essential information such as steps to reproduce the problem, expected vs actual behavior, and acceptance criteria for the proposed solution. It would be helpful to know how the removal of the ref option affects the functionality, what kind of interruptions are being referred to, and what specific changes are needed to implement the suggested solution without causing interruptions during upgrades. Additionally, it's unclear whether there is a need for testing or any other acceptance criteria that should be met before implementing this change.",a396b14e5a8b5c37,mistral:7b,0,2026-06-17T19:55:24.594457,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2217,Make transport configuration extensible.,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific changes required for making transport configuration extensible, the expected behavior after the change, and any acceptance criteria or affected components. It would be beneficial to have more details about the new transports that will be configured in external jars, how they will interact with the existing system, and what the success criteria are for this change.",0bf32767cae5817b,mistral:7b,0,2026-06-17T19:55:25.595101,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2661,With Partitioned Jobs,1,1,"Final Answer: Yes
+
+Reasoning: The issue description lacks essential information such as the context of the partitioned jobs, the specific components involved (Partitioner, StepExecutionHandlers, and MessageBus), how they should be wired, and any acceptance criteria or expected vs actual behavior.",0ced1bcd352a724b,mistral:7b,0,2026-06-17T19:55:26.368510,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3656,Create TCP source module,0,1,"Final Answer: Yes
+
+Reasoning: The issue is missing essential information such as the specific requirements for the TCP source module (e.g., what are the expected functionalities, input and output formats, error handling mechanisms), the affected components (e.g., which parts of the system will be impacted by this change), and acceptance criteria (e.g., how to verify that the new module is working correctly). Additionally, it would be beneficial to have more details about the SI tcp inbound adapter for better understanding and context.",68800344c351ec3b,mistral:7b,0,2026-06-17T19:55:27.579083,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1872,No main manifest attribute in xd-yarn-client jar,0,1,Final Answer: Yes,1cf88e23bfdfb23a,mistral:7b,0,2026-06-17T19:55:27.889293,project_01,title_desc,incompleteness,few_shot_cot

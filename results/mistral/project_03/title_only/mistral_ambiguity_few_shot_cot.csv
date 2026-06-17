@@ -1,0 +1,734 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-207056,Build badges in several github repos have stopped working,0,1,"Reasoning:
+1. The issue mentions ""Build badges"" but does not specify what exactly is meant by ""badges"".
+2. It also mentions multiple GitHub repositories, but the scope of which repositories and how many are affected is unclear.
+3. There's no indication of why or when the badges stopped working, nor any details about the error messages or symptoms observed.
+4. No specific component or part of the build process is named.
+5. The issue does not provide a clear context or actionable steps to reproduce or diagnose the problem.
+
+Final Answer: Yes",08391d8f1f7a471b,mistral:7b,0,2026-06-17T20:15:48.242234,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206571,Indy-sdk integration,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify which software component or system is being referred to by ""Indy-sdk"".
+2. It also lacks clarity on the purpose of the integration, whether it's for fixing an existing problem, adding new functionality, or improving performance.
+3. Without more context, it's unclear what issues or requirements are associated with this integration.
+4. The title does not provide any details about the expected outcome or the scope of the work required.
+5. Given these points, the issue title is ambiguous and could be interpreted in multiple ways.",44b940282bd2798b,mistral:7b,0,2026-06-17T20:15:49.624735,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205754,Assist EV QA,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title does not specify what exactly needs to be assisted or improved in the context of an Electric Vehicle (EV) Quality Assurance (QA).
+2. It lacks clarity on the scope, such as which part of the EV system or QA process is involved.
+3. Without further information, it can be interpreted in multiple ways, for example, assistance could mean testing, documentation, coding, etc.
+4. There's no clear context provided about the nature of the issue or problem that needs to be addressed.
+5. The title does not specify any expected outcomes or performance metrics, making it difficult to understand what success would look like in this case.",16b0327b071ddb55,mistral:7b,0,2026-06-17T20:15:51.190354,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206786,I should be able to load a .sovrin file from a URL directly into the CLI,0,1,"Reasoning:
+1. The issue mentions loading a specific file format (.sovrin) but does not specify what the software is or what it's intended to do with the .sovrin file.
+2. It also mentions loading the file directly into the CLI, but without context about the CLI of which software, it remains unclear.
+3. There is no mention of any error or specific problem that needs fixing, only a requirement for a new functionality.
+4. The scope of the requirement is not clear, as it does not specify under what conditions this loading should occur or what happens if the file cannot be loaded.
+5. The title can be interpreted in multiple ways depending on the software context, making it ambiguous.
+
+Final Answer: Yes",385911a50ee4f20f,mistral:7b,0,2026-06-17T20:15:52.885221,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206184,Configurations should contain certain version of pip,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify which configurations are being referred to, such as project, environment, or system configurations.
+2. It is unclear what version of pip should be contained in the configurations and whether it's a minimum, maximum, or exact version requirement.
+3. There is no context provided about why these specific configurations need to have this version of pip, or under which conditions this issue occurs.
+4. The title does not mention any components or systems that are affected by this requirement.
+5. Without more information, it can be interpreted in multiple ways, making the title ambiguous.",001e59eea05575fb,mistral:7b,0,2026-06-17T20:15:54.323673,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205916,read_ledger tool is not able to read the sovrin plugin ledger,0,1,"Reasoning:
+1. The issue mentions a specific tool (""read_ledger"") and a specific task it's supposed to perform (""read the sovrin plugin ledger""). However, the problem itself is not clearly defined - whether it's an error message, unexpected behavior, or performance issue.
+2. There's no context provided about when or under what conditions the problem occurs.
+3. No specific component within the ""sovrin plugin ledger"" is mentioned as the potential source of the problem.
+4. The title does not specify whether the tool should be able to read all parts of the ledger, or just a certain part, and if there are any expected results or error messages.
+5. There's no indication of what steps have been taken to troubleshoot the issue or any attempts at resolution.
+
+Final Answer: Yes",17cf37fde2c661fb,mistral:7b,0,2026-06-17T20:15:56.158608,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206000,AttributeError: 'NoneType' object has no attribute 'request' during load,0,1,"Reasoning:
+1. The error message indicates a specific type of exception ('AttributeError') and the object causing it ('NoneType').
+2. It also mentions the operation that caused the error ('has no attribute 'request' during load').
+3. However, without additional context, it is unclear which module or function this error occurred in, what the expected behavior should be, or under what conditions the error occurs.
+4. The title does not specify whether this is a new issue or a recurring one, nor does it provide any information about the impact of the error.
+5. Given these points, the title can still be interpreted in multiple ways, making it ambiguous.
+
+Final Answer: Yes",f184b6995b3dc431,mistral:7b,0,2026-06-17T20:15:57.732629,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207179,Make sure Nodes upgrade eagerly,1,1,"Reasoning:
+1. The term ""Nodes"" is not specified, which could refer to various components in different software systems.
+2. The phrase ""upgrade eagerly"" does not clearly define the expected behavior or the context under which this upgrade should occur.
+3. There's no mention of what component or system these nodes belong to, nor any details about the current behavior and the desired change.
+4. No baseline or target metric is provided for performance evaluation after the upgrade.
+5. The title can be interpreted in multiple ways, such as an immediate update, a more aggressive approach, or even a change in the upgrade strategy.
+
+Final Answer: Yes",1dadddc7c4198d48,mistral:7b,0,2026-06-17T20:15:59.210401,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207175,Testing: do a lot of concurrent writes and reads to same values,1,1,"Reasoning:
+1. The issue title mentions ""concurrent writes and reads"" which implies multiple operations happening at the same time, but it does not specify the context or scope of these operations (e.g., which system components are involved, what data is being accessed).
+2. It also mentions ""same values"", but without additional information, it's unclear what these values represent and under what conditions they are being written to and read from.
+3. The title does not provide any details about the expected outcome or the problem that needs to be addressed.
+4. There is no clear indication of the system or application this issue pertains to.
+5. Given the lack of specificity, the issue can potentially be interpreted in multiple ways.
+
+Final Answer: Yes",c86837d7cd3df03f,mistral:7b,0,2026-06-17T20:16:00.890214,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205301,Responses to client validator info requests very slow on a StagingNet node,0,1,"Reasoning:
+1. The issue mentions ""responses to client validator info requests"" which suggests a specific action or operation but does not specify the exact component or system involved.
+2. It also mentions ""very slow"", but without providing any benchmark or reference point, it's unclear what is considered 'slow'.
+3. The location ""StagingNet node"" provides some context, but it doesn't clarify whether this refers to a specific server, network configuration, or environment.
+4. No information is given about the nature of the validator info requests or the expected response time under normal conditions.
+5. Without more details, it's difficult to determine if the issue can be interpreted in multiple ways.
+
+Final Answer: Yes",fa9dbb7f2f31cd66,mistral:7b,0,2026-06-17T20:16:02.552816,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206412,Create Entity Relationship Diagram of current ledger objects including primary and secondary keys used to link each object together.,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title mentions creating an Entity Relationship Diagram (ERD), but it does not specify the software or system for which this ERD is required.
+2. It also lacks clarity on what exactly are the ""current ledger objects"" and their context within the system.
+3. The use of terms like ""primary"" and ""secondary keys"" implies that there should be a clear understanding of the database schema, but it's not explicitly stated in the title.
+4. Without knowing the scope or the purpose of creating this ERD, it can be interpreted in multiple ways depending on the project requirements.
+5. The title does not provide enough context to determine the specific objects, their relationships, and the expected outcome of creating the ERD.",e263b50bfd4d9d28,mistral:7b,0,2026-06-17T20:16:04.300740,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206580,Explore: Can doing a ping in the Getting Started Tutorial delete the active wallet,0,1,"Reasoning:
+1. The issue title uses vague language (""Explore"") which suggests that it may not require an immediate fix but rather further investigation.
+2. It mentions a specific tutorial (""Getting Started Tutorial""), but the context of this tutorial is unclear, as is its relation to the active wallet.
+3. The action mentioned (""doing a ping"") does not specify what kind of ping or in which context it is being used.
+4. There is no clear indication of whether the issue affects all users, specific user roles, or only certain scenarios.
+5. The potential impact on the active wallet is unclear, as is the nature of this wallet (e.g., software wallet, hardware wallet).
+
+Final Answer: Yes",4e534c68fb9fe41c,mistral:7b,0,2026-06-17T20:16:05.952899,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206497,Unclear messages appear during reading transactions,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify what kind of messages are unclear or where they appear (e.g., in a specific UI component, log file, etc.).
+2. It also lacks context about the transactions being read and under which conditions these unclear messages occur.
+3. Without more information, it's difficult to determine if the issue is related to user interface, backend processing, or both.
+4. The scope of the problem isn't clearly defined, as it could involve multiple components or aspects of the system.
+5. Lastly, there's no indication of what constitutes an ""unclear"" message, making it subjective and potentially open to interpretation.",3cb1f8d55a299292,mistral:7b,0,2026-06-17T20:16:07.539229,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205266,1.10.0 Release,0,1,"Reasoning:
+1. The title does not specify any issues or problems that need to be addressed.
+2. It only mentions a release version (1.10.0), but there is no context about what changes, updates, or fixes are included in this release.
+3. There is no indication of whether the release is for a specific component or the entire software system.
+4. The title does not provide any information about the scope or impact of the release.
+5. It can be interpreted as either a development milestone or a deployment event, but without additional context, it remains ambiguous.
+
+Final Answer: Yes",d3b7489d9d15e905,mistral:7b,0,2026-06-17T20:16:08.967051,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206591,Incubation: Remove all non-Indy branding from indy-anoncreds repo,0,1,"Reasoning:
+1. The issue title mentions ""Incubation"", which suggests it might be related to a specific project or phase within the organization. However, without context, it's unclear what exactly this refers to.
+2. The title specifies removing all non-Indy branding from the ""indy-anoncreds"" repository. This implies that there is some branding in the repository that needs to be checked and possibly replaced.
+3. However, without further context or details, it's unclear what constitutes ""non-Indy branding"", how extensive the changes might be, or under what conditions this should be done.
+4. The title does not specify whether there are any dependencies or potential impacts that need to be considered before making these changes.
+5. Given the lack of clear context and specifics, the issue title can be interpreted in multiple ways, which makes it ambiguous.
+
+Final Answer: Yes",a060d49ed0220287,mistral:7b,0,2026-06-17T20:16:10.963993,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207055,Make the tests working using pure pytest,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify which tests are being referred to or what exactly is not working with them.
+2. It lacks clarity on the expected behavior of the tests and under what conditions they are failing.
+3. There's no context provided about the project, test suite, or environment where these tests are running.
+4. The term ""pure pytest"" suggests a change in testing framework, but it does not specify if this is a desired change or a problem with the current setup.
+5. Without more information, it's unclear what needs to be done to make the tests working using pure pytest.",8661040d2786e9cf,mistral:7b,0,2026-06-17T20:16:12.442315,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206198,The node blacklisted the remaining nodes during network problems,0,1,"Reasoning:
+1. The issue title mentions ""the node"" and ""remaining nodes,"" but it is unclear which specific nodes are being referred to in this context.
+2. It also mentions ""network problems,"" but the nature of these problems is not specified, such as whether they are hardware-related, software-related, or due to connectivity issues.
+3. The issue title does not provide any information about what behavior is expected from the nodes during network problems.
+4. There is no clear indication of the scope of the problem or which components are affected.
+5. The title can be interpreted in multiple ways, such as whether the blacklisting was intended or unintended, and under what conditions it occurred.
+
+Final Answer: Yes",f27f8da00bf20458,mistral:7b,0,2026-06-17T20:16:14.091187,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205670,Tests using the sdk fail on the master branch,0,1,"Reasoning:
+1. The issue mentions ""Tests"" but does not specify what kind of tests are being referred to (unit tests, integration tests, functional tests, etc.).
+2. It mentions that the tests fail, but there is no information about the nature of the failures (errors, timeouts, unexpected results, etc.).
+3. The issue specifies ""using the sdk,"" but it's unclear which SDK is being used and in what context it's being used.
+4. The issue mentions that the tests fail on the ""master branch,"" but there is no information about when or under what conditions the failures occur.
+5. There is no clear indication of what component or part of the system the issue affects.
+
+Final Answer: Yes",05de1e1c3d321f22,mistral:7b,0,2026-06-17T20:16:15.779084,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205185,Write a script to upgrade audit ledger for the new state recovered from ledger,0,1,"Reasoning:
+1. The issue title mentions writing a script, but it does not specify what programming language should be used.
+2. It refers to upgrading an audit ledger, but the current state of the ledger and the changes required for the new state are unclear.
+3. The recovery of the ledger from another source is mentioned, but there's no context provided about where this ledger was recovered from or what its previous state was.
+4. There's no indication of the expected outcome or under what conditions the script should run.
+5. The issue title does not provide clear context or scope, and it can be interpreted in multiple ways.
+
+Final Answer: Yes",6969136bd1180514,mistral:7b,0,2026-06-17T20:16:17.330703,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205803,Find out maximal pool performance numbers for mixed mode (read and write),0,1,"Reasoning:
+1. The issue does not specify which software or system the 'maximal pool performance numbers' are for, making it unclear in scope.
+2. It mentions 'mixed mode (read and write)', but without further context, it is ambiguous as to what exactly this refers to within the given system or software.
+3. No baseline or target metric for performance improvement is provided.
+4. The issue does not specify whether it concerns a particular component or function of the system.
+5. The title can be interpreted in multiple ways depending on the context, making it ambiguous.
+
+Final Answer: Yes",092675432fb1683c,mistral:7b,0,2026-06-17T20:16:18.748552,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206213,Read-ledger without storage copy in case of RocksDB (RocksDB read-only mode support),0,0,"Final Answer: No
+
+Reasoning:
+1. The issue title clearly specifies the software component involved (RocksDB).
+2. It mentions a specific feature to be implemented or improved (read-ledger without storage copy in case of RocksDB, also known as RocksDB read-only mode support).
+3. Although it does not provide details about the exact conditions or context, the title is still more specific than ambiguous because it clearly outlines the desired functionality and the software component it applies to.
+4. The title does not leave room for multiple interpretations since it directly refers to a well-known database system (RocksDB) and a specific feature within that system (read-only mode support).
+5. While there might be some ambiguity about the exact requirements or implementation details, the overall intent of the issue is clear enough to warrant further investigation and discussion.",430ab1cce4b4c821,mistral:7b,0,2026-06-17T20:16:20.615775,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205553,Node that does not upgrade spams the config ledger,0,1,"Reasoning:
+1. The issue title mentions a ""Node"" but does not specify which software or system it belongs to, making the context unclear.
+2. It refers to an action (""does not upgrade"") without specifying what needs to be upgraded or under what circumstances this occurs.
+3. The term ""spams the config ledger"" implies repeated actions causing a problem, but the nature of the problem and the impact on the system are unclear.
+4. There is no indication of what triggers the issue or how it can be resolved.
+5. The title does not provide enough information to determine the scope of the issue or potential solutions.
+
+Final Answer: Yes",32340eb3c4c1b1d9,mistral:7b,0,2026-06-17T20:16:22.126217,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206193,[QA] Script for filling the ledger doesn't work,1,1,"Reasoning:
+1. The issue title mentions a script for filling a ledger, but it does not specify what kind of ledger or script is being referred to.
+2. There's no context provided about the problem, such as when or under what conditions the script doesn't work.
+3. No details are given about the nature of the problem (e.g., errors, unexpected results, etc.).
+4. The issue does not specify which part of the script is causing the problem or if it's a general issue with the entire script.
+5. There's no indication of who created the script or when it was last updated.
+
+Final Answer: Yes",e378d11d9a0ca81a,mistral:7b,0,2026-06-17T20:16:23.655381,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207334,Send NYM command is not executed on Shakedown Pool 1,0,1,"Reasoning:
+1. The issue mentions a specific command (""NYM"") and action (""not executed""), but the context of this command is unclear as it might be related to various systems or software components.
+2. The issue also refers to a specific location (""Shakedown Pool 1""), but without additional information, it's not clear what this pool represents in terms of hardware, software, or infrastructure.
+3. There is no mention of any error messages, symptoms, or conditions under which the problem occurs, making it difficult to understand the root cause of the issue.
+4. No specific component or system is named that could help identify where the problem lies within the overall architecture.
+5. The title does not provide a clear goal or expected outcome after resolving the issue.
+
+Final Answer: Yes",a4ef0a2fd346a83f,mistral:7b,0,2026-06-17T20:16:25.380395,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206998,roll back default where zmq high water mark = 0,0,1,"Reasoning:
+1. The issue title mentions ""roll back"" which implies some sort of reversal or undo action, but it's not clear what exactly is being rolled back.
+2. It refers to a condition where ZMQ high water mark equals 0, but without context, it's unclear what the high water mark is in this context and what implications it has for the software.
+3. No specific component or functionality is named, making it difficult to determine the scope of the issue.
+4. There's no indication of what should happen after the roll back, or under what conditions this roll back should occur.
+5. The title does not provide enough context or clarity for a clear understanding of the issue.
+
+Final Answer: Yes",7d81cde44d66d8e6,mistral:7b,0,2026-06-17T20:16:27.029098,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206222,Errors with configs during installation,1,1,"Reasoning:
+1. The issue title mentions ""Errors"" but does not specify the type or nature of errors that occur.
+2. It refers to ""configs"", but it's unclear what specific configurations are involved in the error.
+3. The context is limited to ""during installation"", but without more details, it's hard to determine under which conditions these errors happen.
+4. There's no mention of the software or system where the issue occurs.
+5. No target for resolution or improvement is provided.
+
+Final Answer: Yes",102519988029f3ba,mistral:7b,0,2026-06-17T20:16:28.315855,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207211,Node crashes if out of disk space,0,1,"Reasoning:
+1. The issue mentions a 'Node' which could refer to various software or hardware components, but without further context it is unclear what specific Node is being referred to.
+2. It states that the Node crashes when out of disk space, but does not specify under what conditions this happens (e.g., during normal operation, during a certain action, etc.).
+3. The issue does not provide any details about the expected behavior or the scope of the problem (e.g., is it affecting all Nodes, only some, or just one?).
+4. Although it mentions 'disk space', it does not clarify whether this refers to local storage, network storage, or some other type of storage.
+5. The issue does not specify what actions should be taken to resolve the problem or any potential causes for the crash.
+
+Final Answer: Yes",089ebd3415b5ba8a,mistral:7b,0,2026-06-17T20:16:30.163059,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205565,Unable to choose volume type using pool automation scripts,0,1,"Reasoning:
+1. The issue mentions ""unable to choose volume type"" which suggests a problem with user interaction or selection, but the context is not clear (is it a GUI issue, CLI issue, or script issue?).
+2. It also mentions ""pool automation scripts,"" implying that this might be related to some specific automated process, but without more information, it's unclear what those scripts are and how they are supposed to work.
+3. The title does not specify the exact component where the problem occurs or under what conditions the problem happens.
+4. It is possible that the issue could be interpreted in multiple ways depending on the context of the project and the scripts being used.
+
+Final Answer: Yes",204e1a10f00b4c6f,mistral:7b,0,2026-06-17T20:16:31.769121,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205746,1.6.74 Release,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title does not specify any software issue or problem that needs to be addressed.
+2. It only mentions a release version number (1.6.74), but there is no context about what this release entails, whether it's a bug fix, new feature, or something else.
+3. Without additional information, it's unclear if this title refers to a development task, deployment, or some other action.
+4. The title lacks clarity on the scope of work involved in the 1.6.74 release.
+5. It can be interpreted in multiple ways, such as a request for testing, documentation, or even a communication about the release rather than a software issue to be fixed.",4695c9d0b91f643f,mistral:7b,0,2026-06-17T20:16:33.445235,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207177,"Ledgers """"stall"""" gracefully",1,1,"Reasoning:
+1. The term ""stall"" is vague and can refer to various software issues such as freezing, hanging, or unresponsiveness.
+2. The context of the issue is not specified; it could be related to any part of the Ledger system.
+3. There's no mention of what is meant by ""gracefully."" This term often implies a controlled shutdown or error handling, but its interpretation can vary.
+4. No baseline or target state for performance is provided.
+5. The scope of the issue is unclear; it could involve improving error handling, optimizing performance, or implementing a new feature.
+
+Final Answer: Yes",5e2f3155e9c98078,mistral:7b,0,2026-06-17T20:16:34.932797,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207246,Sovrin-Client: Show command cannot show files with space in the name,0,1,"Reasoning:
+1. The issue mentions a specific software component ""Sovrin-Client"" and a specific command ""Show"". This suggests that it is related to user interaction or data retrieval within the Sovrin-Client application.
+2. However, the problem seems to be limited to files with spaces in their names, which could indicate a naming convention issue or a bug in file handling.
+3. The context of the problem is somewhat clear, but it lacks specific details such as error messages, symptoms, or expected behavior.
+4. Although the scope appears to be related to file handling within the Sovrin-Client application, it's not entirely clear if this issue affects all files with spaces in their names or only certain types of files.
+5. The title does not specify whether there are any workarounds or known solutions for this problem.
+
+Final Answer: Yes",1dc465fe0bb20632,mistral:7b,0,2026-06-17T20:16:36.814808,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207346,Unexpected behavior of the testSendNodeSucceedsIfServicesIsMissed test,0,1,"Reasoning:
+1. The issue title mentions ""unexpected behavior,"" which suggests that something is not working as intended but does not specify what component or function is affected.
+2. It also refers to a test case (""testSendNodeSucceedsIfServicesIsMissed""), implying that the problem might be related to testing, but without more context, it's unclear if this is a unit test, integration test, or end-to-end test.
+3. The title does not provide any information about what the expected behavior should be or under what conditions the unexpected behavior occurs.
+4. There is no indication of which service or system the test belongs to, making it difficult to determine the scope of the issue.
+5. Given the lack of specific details and clear context, the issue title can potentially be interpreted in multiple ways.
+
+Final Answer: Yes",aa79a8fd7a84f99b,mistral:7b,0,2026-06-17T20:16:38.652020,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207079,Node with malformed ldb files has inconsistent behavior,1,1,"Reasoning:
+1. The issue mentions a ""Node"" and ""ldb files,"" but it does not specify the type of node or the context in which it is used.
+2. The term ""malformed"" suggests that there might be an error with the file structure, but without more information about what constitutes a ""malformed"" ldb file, it remains unclear.
+3. The issue also mentions ""inconsistent behavior,"" but without knowing the expected behavior or the specific context in which this inconsistency occurs, it is difficult to understand the problem fully.
+4. There is no indication of what component or system the issue pertains to.
+5. Given these points, the issue title appears to be ambiguous due to a lack of clear context and unclear scope.
+
+Final Answer: Yes",29d03bf485d6a573,mistral:7b,0,2026-06-17T20:16:40.404910,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205870,Node can't catch up large ledger,0,1,"Reasoning:
+1. The issue title mentions ""Node"" but does not specify which node or software component is being referred to.
+2. It also mentions a ""large ledger,"" but it's unclear what the ledger represents in this context, whether it's a database, a file, or some other data structure.
+3. The issue title does not provide any information about the symptoms, error messages, or conditions under which the problem occurs.
+4. There is no indication of what ""catch up"" means in this context, and how the node should be handling the ledger to avoid this issue.
+5. Without more context, it's difficult to determine if the node is a part of a distributed system, or if the ledger is being updated concurrently by multiple nodes.
+
+Final Answer: Yes",a6c8c567523cd1fa,mistral:7b,0,2026-06-17T20:16:42.175989,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207163,F-value tests: How many nodes can I lose before the network stops? Is it 2f+1? Is it n-f?,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title refers to ""F-value tests"" and ""nodes,"" but it does not specify the context or software component related to these terms.
+2. It also asks if a certain formula for determining the number of nodes that can be lost is correct, which suggests that multiple interpretations are possible.
+3. Without additional information about the specific network or algorithm being used, it's unclear what the expected behavior should be when nodes are removed.
+4. The title does not provide any clear scope or boundaries for the issue, making it difficult to understand the exact problem and potential solutions.
+5. The question ""Is it 2f+1? Is it n-f?"" further indicates that the title is ambiguous as it suggests multiple possible answers or interpretations of the issue.",2ca86ab740e9f798,mistral:7b,0,2026-06-17T20:16:43.942715,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205602,Write and Read request flow,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title does not specify what software or system this request flow belongs to.
+2. It is unclear whether the request flow refers to writing data, reading data, or both operations.
+3. There is no context provided about the conditions under which this request flow should be executed.
+4. The scope of the request flow (e.g., APIs, database interactions, file system) is not defined.
+5. Without more information, it can be interpreted in multiple ways, making it ambiguous.",5101af6e9dba8b2b,mistral:7b,0,2026-06-17T20:16:45.204737,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207255,Sovrin-Client: Show file command of not much use,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title does not specify what is meant by ""not much use"". This could refer to various aspects such as functionality, efficiency, or user experience.
+2. It also lacks clarity on which command within the Sovrin-Client is being referred to.
+3. There's no context provided about the problem or the expected outcome after fixing this issue.
+4. The title does not specify whether it's a software bug, feature request, or any other type of issue.
+5. Without more information, it's unclear what actions should be taken to resolve the issue.",992d085a6e8c1871,mistral:7b,0,2026-06-17T20:16:46.622670,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205400,Update docs for Transaction Author agreement,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify which documents need to be updated or what changes are required in the documents.
+2. It is unclear whether the documents refer to internal or external agreements, and if there are multiple agreements, which one(s) are affected.
+3. There is no indication of the scope or extent of the updates needed, such as whether they involve minor corrections or significant revisions.
+4. The issue does not provide any context about why the documents need to be updated or what triggered this request.
+5. Without more information, it's difficult to determine the exact nature and impact of the changes required, making the title ambiguous.",822769ee0e5bf36b,mistral:7b,0,2026-06-17T20:16:48.136352,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205519,Incorrect pool upgrade txn validation,0,1,"Reasoning:
+1. The issue title mentions ""pool upgrade"" and ""txn validation"", which suggests a specific context related to database transactions in a pool environment. However, the term ""incorrect"" is vague and does not specify what exactly is incorrect or under what conditions it occurs.
+2. There is no mention of any component or system that this issue pertains to, making the scope unclear.
+3. Without knowing the target system or database, it's difficult to determine if the validation process in question is a standard one or a custom implementation.
+4. The title does not provide any context about what should be validated correctly and what the expected outcome is when the transaction is validated.
+5. Given the lack of specificity and clarity, the issue title can be interpreted in multiple ways.
+
+Final Answer: Yes",9bd2a96a6b832993,mistral:7b,0,2026-06-17T20:16:50.113381,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205808,Performance of monitor should be improved,1,1,"Reasoning:
+1. The issue title mentions 'Performance', but it does not specify what performance metric is being referred to or the acceptable baseline for improvement.
+2. It also does not mention which specific component ('monitor') needs improvement in terms of performance.
+3. There is no context provided about the current performance level, the expected improvement, or under what conditions the issue occurs.
+4. The title can be interpreted in multiple ways, as 'monitor' could refer to various hardware or software components.
+5. Without more information, it is unclear whether the intended solution would involve hardware upgrades, software optimizations, or both.
+
+Final Answer: Yes",dfb7f5400240ed98,mistral:7b,0,2026-06-17T20:16:51.571563,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205232,PBFT View Change Debug: Part 2,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title mentions ""PBFT View Change Debug"", which suggests a specific topic related to the PBFT consensus algorithm and view changes. However, it does not specify what exactly needs debugging or what the issue is.
+2. It also includes ""Part 2"", implying that there might be more than one part, but without context, it's unclear if this is a continuation of another issue or a separate issue altogether.
+3. The title does not provide any details about the scope, such as which component(s) are affected, what the expected behavior is, or under what conditions the problem occurs.
+4. Without more context, it's difficult to determine if this issue can be interpreted in multiple ways.
+5. Therefore, the title appears ambiguous due to its lack of clarity and specificity.",b665aab72e7a6519,mistral:7b,0,2026-06-17T20:16:53.407453,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206367,Knowledge transfer on Indy build processes,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title does not specify what kind of knowledge transfer is required or who should be involved in the transfer.
+2. It lacks clarity on which build processes for Indy are being referred to.
+3. There's no mention of the context or purpose of this knowledge transfer, making it unclear if it's for training, documentation, or another reason.
+4. The scope of the issue is not defined, as it could involve a single process or multiple processes.
+5. Without more information, it can be interpreted in various ways, making it ambiguous.",e9bf559ed609afa3,mistral:7b,0,2026-06-17T20:16:54.769177,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205283,Support ubuntu 20.04 in system tests,0,1,"Reasoning:
+1. The issue specifies a specific operating system version (Ubuntu 20.04) that needs support for system tests. However, it does not clearly define what is meant by ""system tests"" or the scope of these tests.
+2. It also does not specify whether the current system tests already support Ubuntu 20.04 and if there are any issues to be addressed, or if this is a new requirement.
+3. The issue does not provide context about which software components or services are affected by this change in operating system version.
+4. It does not specify the expected outcome or success criteria for this support implementation.
+5. The title lacks clarity on whether this is an enhancement request, a bug fix, or a refactoring task.
+
+Final Answer: Yes",8b149dd250fdaa78,mistral:7b,0,2026-06-17T20:16:56.577541,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206407,generate_indy_pool_transactions can be run only by indy user,0,1,"Reasoning:
+1. The issue title mentions a specific function `generate_indy_pool_transactions`, but it does not specify what the function is supposed to do or under what conditions it should be run.
+2. It also states that the function can only be run by an 'indy user', but there's no context provided about who or what an 'indy user' is.
+3. There's no mention of any error, issue, or problem that needs to be fixed.
+4. The scope of the issue is unclear as it does not specify which part of the system this function belongs to or how its access restrictions affect other parts of the system.
+5. The title can be interpreted in multiple ways, such as a permission issue, a security concern, or a functional requirement, making it ambiguous.
+
+Final Answer: Yes",b0d7305ec455c9a0,mistral:7b,0,2026-06-17T20:16:58.423916,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206381,ATTRIB transaction with ENC and HASH doesn't work,0,1,"Reasoning:
+1. The title mentions an ""ATTRIB transaction"" but does not specify the context or system in which this transaction is used.
+2. It also mentions ""ENC and HASH"", suggesting some encryption and hashing operations are involved, but without further details it's unclear what these operations are for or how they relate to the transaction.
+3. The title does not provide any information about error messages, symptoms, or conditions under which the problem occurs.
+4. There is no indication of the scope of the issue (e.g., whether it affects all transactions or just certain types).
+5. Without more context, it's possible that this issue could be interpreted in multiple ways.
+
+Final Answer: Yes",403213a26eaf439b,mistral:7b,0,2026-06-17T20:17:00.000068,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205817,Research performance of static validation against message schema,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify which software component is being referred to.
+2. It does not mention any particular performance metric or baseline for comparison.
+3. The context of the research is unclear - whether it's for a new feature, existing functionality, or a general improvement.
+4. There is no indication of who should conduct the research or when it needs to be completed.
+5. The title can be interpreted in multiple ways, such as performance testing, optimizing code, or analyzing data related to static validation against message schema.",861128093a1211da,mistral:7b,0,2026-06-17T20:17:01.335394,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207214,The CLI initialization becomes too slow,0,1,"Reasoning:
+1. The issue mentions ""CLI initialization"" which specifies a component (Command Line Interface).
+2. It states that the initialization is becoming too slow, indicating a performance problem.
+3. However, there's no clear context provided about what constitutes 'too slow', under what conditions this occurs, or if any specific part of the CLI initialization process is affected.
+4. There's also no mention of a baseline for comparison or a target speed to aim for.
+5. Given these points, the issue title can be interpreted in multiple ways, making it ambiguous.
+
+Final Answer: Yes",0fd729c411948f76,mistral:7b,0,2026-06-17T20:17:02.769759,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205760,POA: Delegate issuance to a processor,0,1,"Reasoning:
+1. The title mentions ""POA"" which may refer to Plain Old Java Objects or Principle of Least Privilege, but without additional context it's unclear what it stands for in this case.
+2. It suggests delegating an action (""issuance"") to a processor, but the nature of the issuance and the specific processor are not specified.
+3. The scope of the issue is not clear; it could involve changes to the codebase, configuration, or even system architecture.
+4. Without knowing the context in which this delegation is happening, it's difficult to determine if there might be multiple interpretations of the title.
+5. Given the lack of specificity and clarity, the issue title appears ambiguous.
+
+Final Answer: Yes",5d3d5c0cd6f95139,mistral:7b,0,2026-06-17T20:17:04.501346,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205269,Implement helper script for AWS pool operations with snapshots,0,1,"Reasoning:
+1. The issue title mentions implementing a helper script, but it does not specify what the script is supposed to do or how it should interact with AWS pool operations and snapshots.
+2. There's no clear context about which specific AWS services are involved, nor any details about the expected functionality of the helper script.
+3. The scope of the issue is unclear as it does not specify whether the script should be implemented for a single operation or multiple ones, or if it should cover all pool operations or just some specific ones.
+4. The title can be interpreted in multiple ways, such as creating a new script, modifying an existing one, or even using an existing AWS service to perform the required tasks.
+
+Final Answer: Yes",6008e02c3e2ac6db,mistral:7b,0,2026-06-17T20:17:06.123779,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207178,An upgrade should be idempotent,0,1,"Reasoning:
+1. The term ""upgrade"" does not specify what software or system is being upgraded.
+2. The term ""idempotent"" refers to a property of operations that can be applied multiple times without changing the result beyond the initial application, but it doesn't provide context about what operation or function this applies to in the given upgrade scenario.
+3. There is no mention of any specific component or system where this idempotency should be ensured.
+4. No baseline or target state for idempotency is provided.
+5. The title can be interpreted in multiple ways, depending on the context of the software or system being upgraded.
+
+Final Answer: Yes",7521a76a790f71d3,mistral:7b,0,2026-06-17T20:17:07.653618,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205965,Ledger upgrade transaction should specify a package name,0,1,"Reasoning:
+1. The issue mentions ""Ledger upgrade transaction,"" which suggests an action related to a financial system or database. However, the context is not clear as to whether this refers to a software component, a specific function, or a process.
+2. The requirement for specifying a package name could apply to various components within the system, making it unclear what exactly needs to be upgraded or modified.
+3. There's no indication of why the package name needs to be specified or under what conditions this issue arises.
+4. No specific software or technology is mentioned, which may lead to ambiguity in understanding the scope and requirements.
+5. The title does not provide a clear goal or expected outcome, making it difficult to determine if the issue has been resolved.
+
+Final Answer: Yes",6ab5d4f17e044e9f,mistral:7b,0,2026-06-17T20:17:09.398314,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207326,Prove the pool upgrade mechanism by performing a noticeable upgrade test,0,1,"Reasoning:
+1. The issue title mentions ""prove"" and ""upgrade mechanism,"" which implies that some testing or validation is required after an upgrade. However, it does not specify what exactly needs to be upgraded (software component, version, etc.) or what constitutes a ""noticeable upgrade test.""
+2. There is no clear context provided about the current state of the system, the expected outcome of the upgrade, or the criteria for determining whether the upgrade was successful and noticeable.
+3. The title does not specify who is responsible for performing the upgrade test or what resources are needed to carry it out.
+4. The title uses vague language such as ""noticeable,"" which could be subjective and open to interpretation.
+5. Without more context, it's unclear whether the upgrade being tested is part of a larger project or a standalone task.
+
+Final Answer: Yes",b8bb2595f3c9ff64,mistral:7b,0,2026-06-17T20:17:11.316277,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206117,Simple Timeout fixes of the current View Change protocol,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title mentions ""Simple Timeout fixes"", but it does not specify what exactly needs to be fixed or why a timeout is occurring in the first place.
+2. It also refers to ""the current View Change protocol"", but without additional context, it's unclear which specific view change protocol is being referred to and what changes have been made to it previously.
+3. The title does not provide any details about the expected outcome or the scope of the fixes.
+4. Without more information, it can be interpreted in multiple ways, making it ambiguous.
+5. Therefore, the issue title ""Simple Timeout fixes of the current View Change protocol"" is ambiguous.",f13405b97e721783,mistral:7b,0,2026-06-17T20:17:12.913771,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206655,As I Validator or Observer Node,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title does not specify the context of the software component being referred to as an ""I Validator"" or ""Observer Node"". It could be a term from various domains such as blockchain, networking, or data validation.
+2. The title lacks clarity on the issue itself - whether it's a bug, performance problem, or a new feature request.
+3. Without more context, it is unclear if these terms are defined within the project or if they have specific meanings that need to be addressed.
+4. The title does not provide any information about the expected behavior or the conditions under which the issue occurs.
+5. Overall, the title uses vague language and lacks clear context, making it ambiguous.",a9c493320993c959,mistral:7b,0,2026-06-17T20:17:14.562711,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207231,eliminate runtime warnings that show during tests,0,1,"Reasoning:
+1. The issue mentions ""runtime warnings"" which suggests a specific type of error, but it does not specify the exact nature or cause of these warnings.
+2. It is unclear whether the warnings occur during development, production, or both.
+3. The scope of the issue is limited to tests, but it's not specified what kind of tests (unit tests, integration tests, etc.) are being referred to.
+4. There is no indication of which part of the code or system these warnings originate from.
+5. No target for elimination or resolution is provided.
+
+Final Answer: Yes",59bb35156c684de4,mistral:7b,0,2026-06-17T20:17:15.964069,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206217,Clarify current permissible actions with DID's roles,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify which software component or system the ""DIDs"" and their roles are associated with.
+2. It is unclear what constitutes a ""permissible action"" without context or a reference to existing rules or guidelines.
+3. Without knowing the current state of the permissions, it's difficult to determine what needs clarification.
+4. The title does not provide any information about the intended audience for this clarification.
+5. The title can be interpreted in multiple ways depending on the context and system in which ""DIDs"" and their roles exist.",7a56cbeec56ede50,mistral:7b,0,2026-06-17T20:17:17.358936,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205635,Enable PreViewChange Strategy,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title does not specify what software component or system this ""PreViewChange Strategy"" belongs to.
+2. It is unclear whether the strategy needs to be enabled for a new feature, an existing one, or in a specific environment.
+3. There's no context provided about the current state of the strategy (e.g., if it's already enabled but not functioning as expected).
+4. The title does not mention any performance metrics or user experience expectations that need to be improved with this change.
+5. Without more information, it is difficult to determine the exact scope and impact of enabling the ""PreViewChange Strategy.""",419a074d10ad058e,mistral:7b,0,2026-06-17T20:17:18.878637,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205719,Validator info tool should show windowed throughput statistics,0,1,"Reasoning:
+1. The issue title mentions a ""Validator info tool,"" but it does not specify which tool or where it is located in the software system.
+2. It requests that the tool should show ""windowed throughput statistics."" However, the term ""throughput"" can be interpreted in various ways (e.g., network throughput, CPU throughput, etc.), and the context of ""windowed"" is not clear without additional information.
+3. There is no mention of what specific changes or improvements are expected for this tool.
+4. The issue does not provide any details about the current behavior of the tool or under what conditions the change is needed.
+5. Without more context, it's unclear if the request applies to a single component or multiple components within the software system.
+
+Final Answer: Yes",d1015a4ceb4cbbff,mistral:7b,0,2026-06-17T20:17:20.656279,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205358,indy-node upgrade problem - No such directory,0,1,"Reasoning:
+1. The issue mentions an 'upgrade problem', but it does not specify which software or system is being upgraded.
+2. The error message 'No such directory' provides some context, but without knowing the exact location of the directory in question, the scope remains unclear.
+3. It is possible that this issue could arise from various causes during an upgrade process, making it potentially ambiguous.
+4. No specific component or system is named in the title.
+5. The title does not provide enough information to determine the exact nature of the problem or the expected behavior after the upgrade.
+
+Final Answer: Yes",f79a2585e1191d15,mistral:7b,0,2026-06-17T20:17:22.079008,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206471,Validator-info tool is not working with build 1.2.49,0,1,"Reasoning:
+1. The issue mentions a specific tool (""Validator-info"") and version (build 1.2.49), which suggests some clarity about the software component involved.
+2. However, it does not specify what ""not working"" means in this context - whether it's an error message, incorrect output, or something else.
+3. The issue title does not provide any information about the expected behavior or under what conditions the problem occurs.
+4. Although the tool and version are specified, there might be other factors involved that could cause the tool to malfunction, making the scope unclear.
+5. Given these points, it can still be interpreted in multiple ways, leading to ambiguity.
+
+Final Answer: Yes",42e8f2ed339ff16b,mistral:7b,0,2026-06-17T20:17:23.694615,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207259,[send NYM] Add verkey and update verkey commands don't work,0,1,"Reasoning:
+1. The issue title mentions ""NYM"" but does not specify what ""NYM"" stands for, creating ambiguity.
+2. It also mentions two commands (""add verkey"" and ""update verkey"") without specifying the context or system in which these commands are used.
+3. There is no indication of the problem that occurs with these commands (e.g., error messages, unexpected behavior).
+4. The issue does not provide any information about the environment or conditions under which the problem occurs.
+5. It's unclear whether ""verkey"" refers to a specific data type or function within the system.
+
+Final Answer: Yes",b477c27f8a030c51,mistral:7b,0,2026-06-17T20:17:25.193391,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206618,Allow a steward to update his node entry in the ledger - including the verkey,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title mentions ""a steward,"" but it is unclear who or what a steward is within the context of the software system.
+2. It also mentions ""his node entry in the ledger"" and ""the verkey,"" but without further information, it's not clear what these terms represent or how they relate to the software system.
+3. The issue title does not specify any conditions under which this update should occur or any constraints on the update process.
+4. There is no indication of whether this update should affect all nodes in the ledger, just specific ones, or if there are any dependencies that need to be considered.
+5. Without more context, it's difficult to determine exactly what needs to be done to ""improve"" or ""fix"" the issue, making it ambiguous.",bcbc04d1b176bf18,mistral:7b,0,2026-06-17T20:17:27.043308,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205847,Fail to update pool ledger if no connection to a node in the genesis file in old cli,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title mentions ""pool ledger"" but does not specify what exactly is meant by this term or how it relates to the overall system.
+2. It also refers to a ""genesis file in old cli,"" which suggests that there might be multiple versions of the genesis file and/or different CLI interfaces, making the issue less clear.
+3. The problem seems to occur when there is no connection to a specific node, but it's unclear what happens under normal circumstances or what the expected behavior should be in this situation.
+4. Without more context about the system, the components involved, and the expected outcome, it's difficult to fully understand the issue.
+5. The title does not provide a clear baseline for measuring improvement or success in resolving the issue.",393d3ed8ef3281a2,mistral:7b,0,2026-06-17T20:17:28.851458,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205621,Expected object or value error during batch handling,0,1,"Reasoning:
+1. The issue title mentions an ""expected object or value error,"" which suggests a specific type of error but does not specify the exact component or context where this error occurs.
+2. It also mentions ""during batch handling,"" indicating that the error might be related to a batch processing system, but without more details, it's unclear what exactly is being batched and how the error relates to the batching process.
+3. The scope of the issue is not clear; it could potentially affect multiple components or parts of the codebase if batch handling is used in various places.
+4. Without knowing the specific context, it's possible that the error could be interpreted in different ways depending on the implementation details of the batch handling system.
+5. The title does not provide a clear baseline for what constitutes an acceptable level of performance or expected behavior during batch handling.
+
+Final Answer: Yes",40027fbbb73c88bb,mistral:7b,0,2026-06-17T20:17:30.786558,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206100,Support Payment API txns in load script,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify what is meant by ""Support Payment API txns"" - it could refer to various transactions or functionalities within the Payment API.
+2. It's unclear whether the support is for creating, reading, updating, or deleting transactions in the script.
+3. The context of the load script is not defined - it could be a data migration script, an ETL process, or another type of script.
+4. There is no mention of any expected behavior or conditions under which the problem occurs.
+5. Without more information, it's difficult to determine the exact scope and requirements for this issue.",92718d9d0adaf5ab,mistral:7b,0,2026-06-17T20:17:32.276610,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206303,Ordering of 3PC-batches on a backup replica may stop after a catch-up,0,1,"Reasoning:
+1. The issue title refers to ""3PC-batches"" and ""backup replica,"" which suggests it is related to a specific database replication protocol and data structure. However, the context is not clear about what exactly constitutes an ""order"" or a ""catch-up.""
+2. There is no mention of any error condition or symptom that would help identify when this issue occurs.
+3. The scope of the issue is unclear as it does not specify which components are affected or under what circumstances the ordering stops.
+4. Without more context, it's difficult to determine if there might be multiple interpretations of the title.
+
+Final Answer: Yes",64d3a8daf3934ccc,mistral:7b,0,2026-06-17T20:17:33.793527,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206249,Add Docker getting started configuration,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify what exactly needs to be configured within the Docker getting started configuration.
+2. It lacks clarity on which components or services are involved in the configuration process.
+3. There is no mention of the target environment, version, or any specific requirements for the Docker setup.
+4. The issue does not provide a clear context or scope for what constitutes a ""getting started"" configuration.
+5. Without more information, it can be interpreted in multiple ways, making it ambiguous.",f076232791cd799b,mistral:7b,0,2026-06-17T20:17:35.089104,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207080,Valid write transactions may be rejected as having invalid signatures (case 2),0,1,"Reasoning:
+1. The issue title mentions ""Valid write transactions"" which implies some sort of database or financial transaction system, but the context is not clear.
+2. It also mentions that these transactions may be rejected as having invalid signatures, suggesting a security concern. However, it does not specify what constitutes an 'invalid signature' or under what conditions this occurs.
+3. The reference to ""case 2"" implies there might be multiple cases, but without knowing the details of other cases, it is unclear how this case differs from others.
+4. No specific component or system is named, and no information about the expected behavior or the impact of the issue is provided.
+5. Given these points, the title seems to lack clear context and can be interpreted in multiple ways, making it ambiguous.
+
+Final Answer: Yes",0c5e867846f12441,mistral:7b,0,2026-06-17T20:17:36.889011,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206714,Primary fails to send pre-prepare,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify which primary component is failing or what exactly ""pre-prepare"" refers to.
+2. There's no context provided about the failure conditions or the expected behavior of the primary component.
+3. Without knowing the system architecture, it's unclear where this failure occurs and what other components might be involved.
+4. The title does not mention any target performance metrics or desired outcomes, making it difficult to understand the scope of the issue.
+5. Overall, the title uses vague language and lacks clear context, making it ambiguous.",4d9b9dab70f8b142,mistral:7b,0,2026-06-17T20:17:38.256075,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207130,Node with multiple NICs:,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify the context or software component involved (e.g., operating system, network device driver, virtualization software, etc.).
+2. It is unclear whether the problem refers to a single node with multiple Network Interface Controllers (NICs) or multiple nodes in general.
+3. The issue does not provide any information about the nature of the problem or the expected behavior.
+4. There is no indication of what specific NIC configuration or functionality is causing the issue.
+5. Without more context, it can be interpreted in multiple ways, making it ambiguous.",aec731913fc9f412,mistral:7b,0,2026-06-17T20:17:39.706188,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206872,As a Steward,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title ""As a Steward"" does not specify the context or scope of the software issue.
+2. It is unclear whether this refers to a user role, a feature, a function, or some other aspect of the software.
+3. Without additional information, it is difficult to determine what problem needs to be addressed or fixed.
+4. The title does not provide any indication of the nature of the issue, such as a bug, performance problem, or usability issue.
+5. Therefore, the title ""As a Steward"" is ambiguous and lacks clear context.",246e5b962a5b4690,mistral:7b,0,2026-06-17T20:17:41.090530,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206649,DOC: Request for release notes on Indy-node 1.1.31,0,1,"Reasoning:
+1. The issue title refers to a document request, but it does not specify the type of document or its content.
+2. It mentions a specific version of Indy-node, but there is no context about what exactly needs to be included in the release notes for this version.
+3. There is no indication of who should prepare the release notes or by when they are expected.
+4. The title does not provide any information about the intended audience for the release notes.
+5. It lacks clarity on whether the request is for a new set of release notes or an update to existing ones.
+
+Final Answer: Yes",11022dd10d148630,mistral:7b,0,2026-06-17T20:17:42.515280,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207129,Some nodes are slow to process network data,1,1,"Reasoning:
+1. The issue mentions ""Some nodes"" but does not specify how many or which nodes exactly are affected.
+2. It refers to ""slow to process network data"", but it's unclear what kind of nodes and what specific processing tasks are involved.
+3. There is no context provided about the environment, system, or application where this issue occurs.
+4. No baseline or target performance metric is given for comparison.
+5. The issue can be interpreted in multiple ways depending on the context, making it ambiguous.
+
+Final Answer: Yes",9df51cf192f21842,mistral:7b,0,2026-06-17T20:17:43.817489,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206996,improve timestamp mechanism to use fuzzy,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify which part of the software or system the ""timestamp mechanism"" is located in.
+2. It does not clarify what is meant by ""improve,"" such as improving accuracy, efficiency, or user experience.
+3. The term ""fuzzy"" can have multiple interpretations, such as fuzzy logic, fuzzy matching, or a vague time range. Without additional context, it's unclear which interpretation applies.
+4. There is no mention of any target metrics or performance expectations for the improved timestamp mechanism.
+5. The title lacks clarity on the scope and potential impact of the improvement, making it ambiguous.",a710ad0f0421955d,mistral:7b,0,2026-06-17T20:17:45.368186,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205942,"How-to """"Add new node to existing pool",0,1,"Reasoning:
+1. The title does not specify the software or system in question, making it unclear where the ""existing pool"" and the ""new node"" belong.
+2. It is also ambiguous about what kind of node we are talking about, as well as the context and process for adding a new node to an existing pool.
+3. The title does not provide any information on the expected outcome or the conditions under which this operation should be performed.
+4. There is no mention of any specific software component or technology involved in the addition of a new node.
+5. Without more context, it's difficult to determine if there are multiple ways this title could be interpreted.
+
+Final Answer: Yes",275fa1f631d33ee8,mistral:7b,0,2026-06-17T20:17:46.943040,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207319,REF validator,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title ""REF validator"" does not specify what 'REF' stands for or in which context it is used.
+2. It does not mention the software component or system where this validator is implemented.
+3. There is no indication of what kind of validation is expected, nor any details about the problem or its symptoms.
+4. The title lacks clarity on whether this is a new requirement, an improvement, or a bug fix.
+5. Without more context, it's unclear if 'validator' refers to a single function, class, or module within the software system.",7967d1c86eefb419,mistral:7b,0,2026-06-17T20:17:48.347643,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205527,Implementation: Improve catch-up to use audit ledger for consistency,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title mentions ""Implementation"", but it is not clear if this refers to a new feature or an update of an existing one.
+2. It suggests improving something related to ""catch-up"", but the context and specifics about what ""catch-up"" refers to are unclear.
+3. The use of ""audit ledger for consistency"" implies that there is already an audit ledger in place, but it does not specify where or how it is currently being used.
+4. Without more information about the current state and expected outcome, it's difficult to determine the scope and requirements for this improvement.
+5. The title can be interpreted in multiple ways, making it ambiguous.",58f4809466cfb961,mistral:7b,0,2026-06-17T20:17:49.932069,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206160,Analyse the current View Change protocol issues,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue is vague as it does not specify what exactly constitutes a ""View Change protocol issue"".
+2. There is no clear context provided about the system or application where this protocol is being used.
+3. The scope of the issue is unclear, as it could encompass various aspects such as performance, security, usability, etc., without any specific focus.
+4. The title does not provide enough information to determine if it can be interpreted in multiple ways, but its ambiguity makes it open to interpretation and potential misinterpretation.
+5. Without more context or details, it is difficult to pinpoint the exact nature of the issues with the View Change protocol.",0bd9ee3ab06697c0,mistral:7b,0,2026-06-17T20:17:51.492694,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206183,Date in log name doesn't accord to the day when the log was rotated,0,1,"Reasoning:
+1. The issue mentions a discrepancy between the date in the log name and the day when the log was rotated. However, it does not specify what constitutes an ""accord"" or what kind of mismatch is expected.
+2. It also lacks clarity on which component (log rotation system, application, etc.) is involved.
+3. The issue does not provide any context about the scope of the logs in question or under what conditions this discrepancy occurs.
+4. There's no indication of how significant the impact of this issue might be.
+5. Without more information, it cannot be determined whether the log rotation process is failing, the date format is incorrect, or some other issue is at play.
+
+Final Answer: Yes",a5419a7c291be20b,mistral:7b,0,2026-06-17T20:17:53.162298,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206911,list keyrings showing results twice,0,1,"Reasoning:
+1. The issue mentions ""list keyrings"" but does not specify what software component or function this refers to.
+2. It states that the results are shown twice, but without context, it's unclear under what conditions or circumstances this happens.
+3. There is no mention of which list, keys, or ring objects are involved, making the scope of the issue unclear.
+4. The title does not provide any information about how to reproduce the issue or what the expected behavior should be.
+5. Given these points, the issue can be interpreted in multiple ways, making it ambiguous.
+
+Final Answer: Yes",5bec1ec4cf5334a1,mistral:7b,0,2026-06-17T20:17:54.602715,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205543,As a user of Valdiator Info script,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title does not specify what kind of issue or problem is being referred to in the ""Valdiator Info script"".
+2. It also does not mention who the user is or under what conditions the issue occurs.
+3. There's no clear context about the nature of the script, whether it's a web application, command-line tool, library, etc.
+4. The title lacks specificity regarding the expected behavior or desired outcome.
+5. Without more information, it is unclear what action should be taken to resolve the issue.",eb44b0da142fb22e,mistral:7b,0,2026-06-17T20:17:55.950455,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206727,Accidental tests of indy-node intermittently fail on Jenkins,0,1,"Reasoning:
+1. The issue mentions ""Accidental tests"" which suggests that the tests might not have been intended or designed properly, but it does not specify what these tests are exactly.
+2. It states that the tests ""of indy-node"" fail, but it is unclear whether this refers to a specific component, module, or functionality within the indy-node.
+3. The issue occurs ""on Jenkins,"" which implies that the continuous integration environment might be involved, but the nature of the failure (e.g., intermittent errors, consistent failures, etc.) is not specified.
+4. No clear context is provided about when or under what conditions these tests fail.
+5. The issue does not specify any actions to be taken or expected outcomes, making it unclear what a resolution would look like.
+
+Final Answer: Yes",ecce88e2b223b55a,mistral:7b,0,2026-06-17T20:17:57.773050,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205664,Is there any replacement for leveldb?,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue does not specify the context or purpose of replacing LevelDB. It could be due to performance issues, compatibility problems, or other reasons.
+2. There is no mention of the software component or system where LevelDB is currently being used.
+3. No criteria for evaluating a replacement are provided, such as required features, performance benchmarks, or compatibility requirements.
+4. The issue does not specify whether the replacement should be an exact equivalent or if it can be a different database solution altogether.
+5. Without more context, it is unclear what the expected outcome of this replacement would be and under what conditions it should occur.",5040a4cde4932e8a,mistral:7b,0,2026-06-17T20:17:59.272946,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205912,As a Sovrin Foundation,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title does not specify any software issue or requirement.
+2. It mentions the Sovrin Foundation, which could be a client, partner, or related entity, but it doesn't indicate a direct connection to the software in question.
+3. There is no mention of an issue, bug, feature request, or performance improvement that needs to be addressed.
+4. The title lacks clear context and specificity about what action should be taken or what the expected outcome is.
+5. Without more information, it's unclear how this title relates to software requirements analysis.",6e0bd035ed0da609,mistral:7b,0,2026-06-17T20:18:00.683211,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206478,The pool state should be updated after any node BLS key changing,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The title mentions ""pool state"" but does not specify what kind of pool it is or how the state should be updated.
+2. It refers to ""any node BLS key changing"", but without context, it's unclear which nodes, keys, and BLS (Boneh-Lynn-Shacham) are being referred to.
+3. The title does not provide any information about the expected behavior or under what conditions the change should occur.
+4. There is no indication of how the update should be implemented or what the impact might be on other parts of the system.
+5. Without more context, it's difficult to determine the exact scope and requirements for this issue.",02454a292a17bba0,mistral:7b,0,2026-06-17T20:18:02.327707,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207005,"Nodes not receiving new transaction if its """"View"""" list is different from other nodes in the pool",0,1,"Reasoning:
+1. The issue title mentions ""Nodes"" and ""transaction"", but it does not specify which software component or system these terms refer to.
+2. It also mentions a ""View"" list, but without context, it's unclear what this term means in the given context.
+3. The condition for the problem is that the transaction's View list is different from other nodes in the pool, but without more information, it's hard to determine what exactly constitutes a ""different"" View list and how this difference causes the issue.
+4. No specific component or system affected by the issue is named.
+5. The issue title does not provide clear instructions for resolving the problem.
+
+Final Answer: Yes",3cdf522a7f750ab2,mistral:7b,0,2026-06-17T20:18:03.947985,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205432,Auto trigger CD pipeline for release-* branches,0,1,"Reasoning:
+1. The issue title mentions ""CD pipeline"" which suggests it's related to Continuous Delivery, but without further context, it's unclear what specific pipeline is being referred to.
+2. It specifies that the pipeline should be triggered for branches with the prefix ""release-*"", but it doesn't clarify whether this applies to all branches starting with ""release-"" or only certain ones.
+3. The issue title does not specify what actions should be taken if the pipeline is triggered, making the scope of the task unclear.
+4. It's also not clear under what conditions the pipeline should be triggered, such as on a commit, merge, or pull request.
+5. Without more context, it's possible that this issue could be interpreted in multiple ways.
+
+Final Answer: Yes",d6caa9c172b4abb8,mistral:7b,0,2026-06-17T20:18:05.760418,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-207212,Node memory leak,0,1,"Final Answer: Yes
+
+Reasoning:
+1. The issue title mentions a ""memory leak"" in a node, but it does not specify the type of node (e.g., web server node, database node, etc.).
+2. It also does not provide any context or details about when or under what conditions the memory leak occurs.
+3. Without more information, it is unclear which part of the system or code is affected by the memory leak.
+4. The title does not specify whether the memory leak is causing performance issues or other problems.
+5. Since the issue lacks clear context and specific details, it can be interpreted in multiple ways, making it ambiguous.",67ba0f7ead48f74b,mistral:7b,0,2026-06-17T20:18:07.289726,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206218,Node is restarted because of Out of memory error,0,1,"Reasoning:
+1. The issue mentions an ""Out of Memory"" error, which specifies a particular type of problem related to the allocation and management of computer memory.
+2. However, it does not specify which node is being referred to or under what conditions the error occurs.
+3. It also lacks clarity on whether the error is recurring, how frequently it happens, or if there are any specific actions that trigger the issue.
+4. The title does not provide information about the scope of the problem (e.g., a single service, multiple services, or the entire system).
+5. Lastly, it does not specify whether the error is related to Java's OutOfMemoryError or if it pertains to another programming language or system.
+
+Final Answer: Yes",c0f68a5a4a38f9cc,mistral:7b,0,2026-06-17T20:18:08.976609,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206980,A primary may not be able to send checkpoints after re-start,0,1,"Reasoning:
+1. The issue title mentions ""A primary"" but does not specify what ""primary"" refers to in the context of the software system.
+2. It also mentions ""send checkpoints"", but without additional information, it's unclear what these checkpoints are and what their purpose is within the system.
+3. The issue title also mentions ""after re-start"", but it does not specify if this refers to a user re-starting the software or some other type of restart event.
+4. There is no indication of the scope of the problem, i.e., whether it affects all primaries or just one specific primary.
+5. The issue title does not provide any context about the expected behavior after a restart, making it difficult to determine what constitutes a successful resolution.
+
+Final Answer: Yes",7ebc4e43c5563bf2,mistral:7b,0,2026-06-17T20:18:10.792769,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-206016,Upgrade failed on pool from 1.3.62 to 1.4.66,0,1,"Reasoning:
+1. The issue title mentions an 'upgrade' and specifies the versions of a 'pool', but it does not specify which software or system this pool belongs to.
+2. It also does not mention any error messages, symptoms, or conditions that occurred during the upgrade process.
+3. There is no indication of what the expected outcome should be after the upgrade.
+4. The title does not provide enough context about the environment where the upgrade took place (e.g., development, staging, production).
+5. Without more information, it's unclear whether the upgrade failed completely or if there were specific issues during the process.
+
+Final Answer: Yes",bb129ca3f151c3f5,mistral:7b,0,2026-06-17T20:18:12.316675,project_03,title_only,ambiguity,few_shot_cot
+ISSUE-205350,Use more trusted docker image for system tests client docker container,0,1,"Reasoning:
+1. The issue mentions using a ""more trusted"" Docker image, but it does not specify what is meant by ""trusted."" This could refer to various security standards or certifications.
+2. It also mentions the use of this image for system tests, but it does not clarify which specific system tests are being referred to.
+3. The issue title also mentions a Docker container for the client, but it is unclear what exactly the ""client"" refers to in this context.
+4. There is no mention of the current Docker image being used or any issues with it.
+5. No specific requirements or criteria are provided for what constitutes a ""more trusted"" Docker image.
+
+Final Answer: Yes",9813e975d3b342b9,mistral:7b,0,2026-06-17T20:18:13.946774,project_03,title_only,ambiguity,few_shot_cot
