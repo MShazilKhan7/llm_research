@@ -73,9 +73,17 @@ def discover_projects(dataset_dir: str) -> list[str]:
 
 def load_dataset(path: str) -> list[dict]:
     issues = []
+    skipped = 0
     with open(path, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
+            issue_id = (row.get("Issue_ID") or row.get("Issue_Id") or "").strip()
+            title = (row.get("Title") or "").strip()
+            if not issue_id or not title:
+                skipped += 1
+                continue
             issues.append(row)
+    if skipped:
+        logger.warning("Skipped %d empty row(s) in '%s'", skipped, path)
     logger.info("Loaded %d issues from '%s'", len(issues), path)
     return issues
 

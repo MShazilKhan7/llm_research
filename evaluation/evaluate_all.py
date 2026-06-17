@@ -121,8 +121,16 @@ def load_predictions(path: str, pred_col: str = "prediction") -> tuple[list[int]
     y_true, y_pred = [], []
     with open(path, newline="", encoding="utf-8") as f:
         for row in csv.DictReader(f):
-            gt = int(row["ground_truth"])
-            pr = int(row[pred_col])
+            issue_id = (row.get("issue_id") or "").strip()
+            gt_raw = (row.get("ground_truth") or "").strip()
+            pr_raw = (row.get(pred_col) or "").strip()
+            if not issue_id or not gt_raw:
+                continue
+            try:
+                gt = int(gt_raw)
+                pr = int(pr_raw)
+            except ValueError:
+                continue
             if pr == -1:        # parse failure — skip
                 continue
             y_true.append(gt)
@@ -267,11 +275,11 @@ def _write_summary_csv(rows: list[dict], path: str):
 
 
 def _print_leaderboard(all_rows: dict):
-    print("\n" + "═" * 85)
+    print("\n" + "=" * 85)
     print("  LEADERBOARD  (ranked by F1-score, all projects combined)")
-    print("═" * 85)
+    print("=" * 85)
     for task, rows in all_rows.items():
-        print(f"\n  ── {task.upper()} ──")
+        print(f"\n  -- {task.upper()} --")
         valid = [r for r in rows if r.get("f1") is not None]
         for rank, r in enumerate(
             sorted(valid, key=lambda x: x["f1"], reverse=True), 1

@@ -1,0 +1,5 @@
+model,strategy,model_desc,project,input_mode,accuracy,precision,recall,f1,tp,fp,tn,fn,n_evaluated
+llama3.1,zero_shot,Llama 3.1 8B,project_01,title_only,0.3723,0.6667,0.0333,0.0635,2,1,33,58,94
+llama3.1,few_shot,Llama 3.1 8B,project_01,title_only,0.6596,0.6522,1.0,0.7895,60,32,2,0,94
+llama3.1,cot,Llama 3.1 8B,project_01,title_only,0.5275,0.6333,0.6441,0.6387,38,22,10,21,91
+llama3.1,few_shot_cot,Llama 3.1 8B,project_01,title_only,0.6559,0.6628,0.95,0.7808,57,29,4,3,93

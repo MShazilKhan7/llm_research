@@ -92,7 +92,7 @@ def make_result_row(
 ) -> dict:
     prompt_hash = hashlib.sha256(prompt_text.encode()).hexdigest()[:16]
     return {
-        "issue_id":      issue["Issue_ID"],
+        "issue_id":      issue.get("Issue_ID") or issue.get("Issue_Id") or "",
         "title":         issue["Title"],
         "ground_truth":  issue[label_col],
         "prediction":    prediction,

@@ -47,7 +47,7 @@ def format_metrics(m: dict, title: str = "") -> str:
     header = f"  {title}" if title else "  Metrics"
     return (
         f"\n{header}\n"
-        f"  {'─' * 50}\n"
+        f"  {'-' * 50}\n"
         f"  Accuracy  : {m['accuracy']:.4f}\n"
         f"  Precision : {m['precision']:.4f}\n"
         f"  Recall    : {m['recall']:.4f}\n"

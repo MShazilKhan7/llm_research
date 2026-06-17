@@ -219,6 +219,15 @@ def plot_confusion_matrices(all_metrics: dict, output_dir: str,
     all_models = models or _models_in_data(first_task_data)
     n_rows, n_cols = len(tasks), len(all_models)
 
+    # If there are no models to plot (n_cols == 0) or no tasks, skip gracefully
+    if n_cols <= 0 or n_rows <= 0:
+        logger.warning(
+            "No models/tasks available for confusion matrices (n_rows=%d, n_cols=%d). Skipping.",
+            n_rows,
+            n_cols,
+        )
+        return
+
     fig, axes = plt.subplots(n_rows, n_cols,
                               figsize=(4 * n_cols, 4 * n_rows),
                               squeeze=False)
