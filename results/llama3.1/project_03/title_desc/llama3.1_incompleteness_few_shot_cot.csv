@@ -1,0 +1,1166 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-207056,Build badges in several github repos have stopped working,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that the issue occurred after a migration to ci.evernym.com and provides an image as evidence. However, it does not explicitly state how to reproduce the issue or what specific actions to take.
+2. **Expected vs actual behavior**: The description states that build badges have stopped working, but it does not clearly define what is expected to happen in this scenario (e.g., what should be displayed on the badges).
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned for resolving this issue. What constitutes ""working"" build badges?
+4. **Affected components**: The description mentions that several GitHub repositories are affected, but it does not specify which specific components or services are impacted.
+5. **Environment details**: While the migration to ci.evernym.com is mentioned, there is no detailed information about the environment in which this issue occurs (e.g., what version of the CI tool is being used).
+
+Considering these points, I would conclude that the issue is missing essential information, specifically steps to reproduce and acceptance criteria.
+
+Final Answer: Yes",7f06373e78886cfd,llama3.1:8b,0,2026-06-17T11:12:16.801898,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206571,Indy-sdk integration,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description doesn't mention any specific steps to reproduce the problem or scenario.
+2. **Expected vs actual behaviour**: There is a clear statement of what needs to be done (""We need to use indy-sdk only""), but it's not explicitly stated as an ""expected"" behavior. However, we can infer that the expected behavior is to integrate indy-sdk and stop supporting the python client code.
+3. **Acceptance criteria**: The description doesn't provide any specific acceptance criteria for the integration of indy-sdk.
+4. **Affected components**: It's not clear which components will be affected by this change (e.g., CLI, other parts of the system).
+5. **Environment details**: There is no mention of any specific environment or configuration requirements.
+
+Based on these observations, I conclude that the issue is missing essential information such as steps to reproduce and acceptance criteria.
+
+Final Answer: Yes",a909bc2d8106f103,llama3.1:8b,0,2026-06-17T11:12:19.864029,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205754,Assist EV QA,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description does not mention any specific steps or scenarios that would trigger this assistance.
+2. **Expected vs actual behaviour**: Although there is a mention of acceptance criteria, it focuses on the process and activities rather than the expected outcome or behavior.
+3. **Acceptance Criteria**: While the issue mentions ""Acceptance Criteria"" in the description, it actually provides some specific requirements for what should be done during the QA assistance (e.g., each engineer spends one day running QA scripts). This is a good start!
+4. **Affected components**: The issue does not mention any specific components or systems that would be affected by this assistance.
+5. **Environment details**: There are no environment-specific details mentioned, such as which teams or engineers will be involved.
+
+Considering these points, I think the issue is missing some essential information, particularly steps to reproduce and expected vs actual behavior. While it does provide some acceptance criteria, it's not enough to make the issue complete on its own.
+
+Final Answer: Yes",ce1bf0c29fab4a20,llama3.1:8b,0,2026-06-17T11:12:22.938376,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206786,I should be able to load a .sovrin file from a URL directly into the CLI,0,-1,"Let's analyze the issue step-by-step:
+
+1. **Title**: The title clearly describes the desired functionality.
+2. **Description**: The description provides context and explains why this feature is needed.
+3. **Missing information**:
+	* **Steps to reproduce**: Not explicitly mentioned, but it can be inferred that the user should try to load a .sovrin file from a URL directly into the CLI.
+	* **Expected vs actual behaviour**: Expected: loading a .sovrin file from a URL directly into the CLI. Actual: currently, files need to be downloaded before they can be opened by the CLI.
+	* **Acceptance criteria**: Not explicitly mentioned, but it can be inferred that the feature is complete when a user can successfully load a .sovrin file from a URL directly into the CLI.
+	* **Affected components**: Not explicitly mentioned, but it's likely related to the CLI (Command-Line Interface) component.
+	* **Environment details**: Not explicitly mentioned, but it's likely related to the web environment where URLs are used.
+
+Considering these points, I would say that the issue is missing some essential information, such as steps to reproduce and acceptance criteria. However, the expected vs actual behaviour is clearly described, which is a crucial",10d4c6c2b4f276f2,llama3.1:8b,0,2026-06-17T11:12:26.451545,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206184,Configurations should contain certain version of pip,0,0,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step:
+
+1. **Title**: ""Configurations should contain certain version of pip"" - This title clearly states what the problem is about.
+2. **Description**: The description provides a detailed stack trace that indicates an error occurs when trying to start the Indy Node service due to an AttributeError in the `pip` module. However, it does not explicitly state what version of pip is required or expected behavior.
+3. **Reproduction Steps**: While the description includes a stack trace, which can be used as part of reproduction steps (though not explicitly stated), there's no clear indication of how to reproduce this issue in a controlled manner without running into the error described.
+4. **Expected vs Actual Behaviour**: The description implies that the actual behavior is an error when trying to start the service due to pip version issues, but it does not clearly state what the expected behavior should be regarding pip versions.
+5. **Acceptance Criteria**: There's no mention of specific acceptance criteria for this issue, such as ""the service must start successfully with a certain version of pip.""
+6. **Affected Components**: The description implies that the `pip` module and possibly other components related to the Indy Node service are",347d7c2ea0c3b29b,llama3.1:8b,0,2026-06-17T11:12:30.139240,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205916,read_ledger tool is not able to read the sovrin plugin ledger,0,-1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a specific scenario where the read_ledger tool is unable to find the sovrin payment plugin ledgers. This implies that the steps to reproduce are implicit in the description, but they can be extracted: ""run the read_ledger tool and observe it failing to find the sovrin payment plugin ledgers"".
+2. **Expected vs actual behavior**: The issue clearly states what is expected (the read_ledger tool should be able to read the sovrin plugin ledger) and what actually happens (it fails to do so).
+3. **Acceptance criteria**: While not explicitly stated, we can infer that the acceptance criteria are implicit in the proposed fix: ""after applying the fix, the read_ledger tool should be able to successfully read the sovrin payment plugin ledgers"".
+4. **Affected components**: The description mentions specific files and configurations (read_ledger tool, indy_config.py) that need to be modified.
+5. **Environment details**: Although not explicitly stated, we can assume that the environment is a node with an installed Indy system.
+
+Considering these points, I conclude that the issue is complete, as it provides essential information such as steps to reproduce",b38036ca1cbfad18,llama3.1:8b,0,2026-06-17T11:12:33.706034,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206000,AttributeError: 'NoneType' object has no attribute 'request' during load,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The issue provides detailed steps to reproduce the problem, including specific commands and parameters to run.
+2. **Expected vs actual behaviour**: Although it doesn't explicitly state ""expected"" behavior, we can infer that the expected behavior is for the pool to continue writing transactions without stopping. The actual behavior is that the pool stops writing after 11k txns.
+3. **Acceptance criteria**: Not explicitly stated, but based on the context, we can assume that the acceptance criteria would be related to the pool's ability to handle a large number of transactions without failing.
+4. **Affected components**: Although not explicitly mentioned, it appears that the issue is related to the load test and the pool's behavior during the test.
+5. **Environment details**: The issue mentions specific parameters used in the load test (e.g., 500 clients, 30 writes / sec) and provides a link to logs for further investigation.
+
+Considering these points, I would say that the issue is not missing any essential information. It provides clear steps to reproduce the problem, describes the actual behavior, and gives some context about the environment in which the issue occurs.
+
+Final Answer: No",6c03a4d24f4fd10e,llama3.1:8b,0,2026-06-17T11:12:37.159776,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207179,Make sure Nodes upgrade eagerly,0,1,"To determine whether this issue is INCOMPLETE, I will analyze each essential information category:
+
+1. **Steps to reproduce**: The description mentions that ""When a node is getting caught up"" but does not specify how to trigger this scenario or what specific actions to take.
+2. **Expected vs actual behaviour**: It's mentioned that the system should schedule an upgrade like it normally would, but if the date/time is in the past, it upgrades immediately. This implies there are two expected behaviors based on a condition (date/time), which is somewhat clear.
+3. **Acceptance criteria**: There is no explicit mention of acceptance criteria, such as what constitutes ""eager"" upgrading or how to measure success.
+4. **Affected components**: The description mentions nodes and upgrades, but it's not clear if this affects other parts of the system or just specific components.
+5. **Environment details**: No environment-specific information is provided.
+
+Given these observations, I conclude that the issue lacks essential information in several areas: steps to reproduce are unclear, acceptance criteria are missing, affected components are unspecified, and there's no mention of environment details.
+
+Final Answer: Yes",4a9314e93b2047e0,llama3.1:8b,0,2026-06-17T11:12:40.389984,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207175,Testing: do a lot of concurrent writes and reads to same values,0,-1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a specific scenario with steps to perform concurrent writes and reads to same values. This is an example of reproduction steps.
+2. **Expected vs actual behaviour**: Although not explicitly stated, the context implies that the expected behavior is for the system to handle concurrent writes and reads correctly, whereas the actual behavior (as found by the tests) has bugs INDY-354 and INDY-355.
+3. **Acceptance criteria**: While not explicitly listed, the description mentions writing test scripts for performing this scenario, which suggests that there are implicit acceptance criteria related to the system's ability to handle concurrent writes and reads correctly.
+4. **Affected components**: Although not mentioned explicitly, it can be inferred that the affected component is likely a database or storage system, given the context of concurrent writes and reads.
+5. **Environment details**: The description does not provide specific environment details, but it mentions ""clients"" which implies a distributed system with multiple nodes.
+
+Considering these points, I would conclude that this issue is **NOT** INCOMPLETE because:
+
+* It provides reproduction steps
+* Implicitly states the expected behavior (correct handling of concurrent writes and reads)
+* Implies acceptance criteria through the context",7e97574a28279095,llama3.1:8b,0,2026-06-17T11:12:43.834676,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205301,Responses to client validator info requests very slow on a StagingNet node,0,0,"To determine whether the given software issue is INCOMPLETE, let's examine it step-by-step:
+
+1. **Title**: The title of the issue clearly states the problem: ""Responses to client validator info requests very slow on a StagingNet node"".
+2. **Description**: The description provides more context and details about the issue:
+	* A specific node (sovrin.sicpa.com) is experiencing slow responses.
+	* The slow response time is only observed for validator-info commands from clients (indy-cli or other scripts).
+	* The steward has run diagnostics, but no obvious problems were found.
+	* Additional diagnostic information is provided in the form of system logs and output from various Linux commands (`top`, `free -m`, `lsof`).
+3. **Reproduction Steps**: While not explicitly stated as ""steps to reproduce"", the description implies that the issue can be observed by attempting to send validator-info commands to the affected node.
+4. **Expected vs Actual Behaviour**: The expected behavior is for the node to respond quickly (less than 2 seconds), but it takes about 34 seconds to do so.
+5. **Acceptance Criteria**: Not explicitly stated, but implied that the issue is resolved if the node responds within an acceptable time frame",a488755755308114,llama3.1:8b,0,2026-06-17T11:12:47.728188,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206412,Create Entity Relationship Diagram of current ledger objects including primary and secondary keys used to link each object together.,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions ""object retrieval calls"" but does not specify how to reproduce the issue or what specific steps are required to trigger it.
+2. **Expected vs actual behaviour**: The description mentions that the diagram should show all data objects and their relationships, but it does not explicitly state what the expected behavior is (e.g., what should be shown in the diagram) or what the actual behavior is (e.g., why the current diagram is insufficient).
+3. **Acceptance criteria**: While the description mentions ""main use cases"" and ""libindy"", it does not provide clear acceptance criteria for what constitutes a complete Entity Relationship Diagram.
+4. **Affected components**: The issue seems to be related to the ledger objects, but it's unclear which specific components or systems are affected by this issue.
+5. **Environment details**: There is no mention of any specific environment or configuration requirements.
+
+Based on these observations, I conclude that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and environment details.
+
+Final Answer: Yes",00d6e278d463226b,llama3.1:8b,0,2026-06-17T11:12:51.044102,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206580,Explore: Can doing a ping in the Getting Started Tutorial delete the active wallet,0,0,"Let's analyze the given issue step by step:
+
+1. **Steps to reproduce**: The description mentions that the document writer tried running 'ping Acme Corp' while following the Getting Started Tutorial, which resulted in her active wallet being deleted. This provides a clear reproduction scenario.
+2. **Expected vs actual behavior**: Although not explicitly stated, it can be inferred from the context that the expected behavior is for the ping command to only verify connection to the agents without deleting the active wallet.
+3. **Acceptance criteria**: While not explicitly mentioned, we can infer some acceptance criteria based on the description:
+	* The Getting Started Tutorial should not delete the active wallet when running the ping command.
+	* The ping command should only verify connection to the agents and not affect the active wallet.
+4. **Affected components**: Although not explicitly stated, it is likely that the affected component is the tutorial's instructions or the code responsible for executing the ping command.
+5. **Environment details**: The description mentions the Getting Started Tutorial, which implies a specific environment or context in which this issue occurs.
+
+Considering these points, I believe the issue is complete and provides sufficient information to understand the problem.
+
+Final Answer: No",93143fc042620e17,llama3.1:8b,0,2026-06-17T11:12:54.346137,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206497,Unclear messages appear during reading transactions,0,-1,"Let's analyze the given issue step by step:
+
+1. **Title**: Unclear messages appear during reading transactions - This is a clear description of the problem.
+2. **Description**: Version Info: indy-node=1.2.209 Steps to Reproduce: ... - The steps to reproduce the issue are provided, which includes setting up a docker pool, installing a client, copying files, and running the client.
+3. **Steps to Reproduce**: The description provides detailed steps to reproduce the issue, including specific actions to take on the client machine and node machines.
+4. **Actual Results**: The actual output of the CLI is provided, which shows unclear messages being displayed during reading transactions.
+5. **Expected Results**: The expected results are mentioned as ""Messages should not be shown or they should be informative for user.""
+6. **Additional Information**: Additional context is provided about the issue, including information about genesis files and docker clients.
+
+Considering these points, we can conclude that:
+
+* The issue has a clear title and description.
+* Steps to reproduce the issue are provided.
+* Actual results are given, which include unclear messages being displayed during reading transactions.
+* Expected results are mentioned, although they could be more specific.
+* Additional information is provided to help understand the",86290d009f937f17,llama3.1:8b,0,2026-06-17T11:12:58.395750,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205266,1.10.0 Release,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a ""Release Goal"" but doesn't specify any steps to reproduce or trigger the release process.
+2. **Expected vs actual behaviour**: There is no clear statement of expected behavior, only acceptance criteria.
+3. **Acceptance Criteria**: While there are some acceptance criteria mentioned (e.g., code tested, review upstream releases), they seem to be more like tasks than strict acceptance criteria.
+4. **Affected components**: The description mentions ""Release everything that is ready,"" but doesn't specify which components or features will be included in the release.
+5. **Environment details**: There are some environment-related details mentioned (e.g., GitHub, JIRA), but they seem to be more like context than essential information.
+
+Considering these points, I would say that the issue is missing essential information such as steps to reproduce and a clear description of expected behavior.
+
+Final Answer: Yes",869364c33e6f919e,llama3.1:8b,0,2026-06-17T11:13:01.481961,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206591,Incubation: Remove all non-Indy branding from indy-anoncreds repo,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a clear list of what needs to be removed from the indy-anoncreds repo, including specific items such as package names, code primitive names, paths, and documentation. This suggests that reproduction steps are implicit in the description.
+2. **Expected vs actual behaviour**: Although not explicitly stated, it's clear that the expected behavior is for all non-Indy branding to be removed from the repository, leaving only Indy-related content. The actual behavior (the current state of the repo) is also implied to be unacceptable.
+3. **Acceptance criteria**: While not explicitly listed as acceptance criteria, the description provides a clear set of requirements that can be used to verify if the issue has been resolved. For example, searching for ""Sovrin"" and ""Evernym"" in the repository should return no results.
+4. **Affected components**: The affected component is clearly identified as the indy-anoncreds repo.
+5. **Environment details**: Although not explicitly mentioned, it's likely that the environment details (e.g., operating system, version control system) are assumed to be standard for a software development project.
+
+Based on this analysis, I conclude that the issue is complete",e360d7f5a0b03e00,llama3.1:8b,0,2026-06-17T11:13:05.023095,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207055,Make the tests working using pure pytest,0,-1,"Let's analyze the issue step-by-step:
+
+1. **Steps to reproduce**: The description mentions two options for resolving the issue, but it doesn't explicitly state how to reproduce the problem or test the solution. However, it does mention that a solution should be checked on both CI and developer environments (pycharm and terminal), which implies that reproduction steps might not be necessary in this case.
+2. **Expected vs actual behaviour**: The description mentions two options for resolving the issue, but it doesn't explicitly state what the expected behavior is after implementing the solution. However, it does mention that a solution should ""make the tests working using just the `pytest` commands"", which implies that the expected behavior is to have tests running successfully with pytest.
+3. **Acceptance criteria**: The description mentions two options for resolving the issue, but it doesn't explicitly state what acceptance criteria would be used to determine if the solution is successful. However, it does mention that a solution should ""check on the CI and the developer environment"", which implies that some form of testing or validation will be necessary.
+4. **Affected components**: The description mentions that there are 4 repos affected by this issue, but it doesn't explicitly state what components (e.g., code files, scripts) would",9159ccfdf4a658d0,llama3.1:8b,0,2026-06-17T11:13:08.540372,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206198,The node blacklisted the remaining nodes during network problems,0,-1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The issue description includes detailed steps to reproduce the problem, including specific actions and conditions that lead to the issue.
+2. **Expected vs actual behaviour**: Although not explicitly stated as ""expected"" behavior, it is clear what the expected outcome should be: all nodes in the pool should be able to catch up with the pool after a network problem. The actual result is that some nodes (node1, node2, node3) are unable to catch up.
+3. **Acceptance criteria**: While not explicitly stated as acceptance criteria, it can be inferred that the system should be able to recover from network problems and all nodes should be able to participate in the pool.
+4. **Affected components**: The issue description mentions specific nodes (node1, node2, node3) and a script ([suppressor.sh](https://drive.google.com/open?id=1fSA-Z2HUXXe9N4vcPiHsjL1DLIzK28x2)) that is applied to these nodes. This suggests that the affected components are related to node management and network communication.
+5. **Environment details**: The issue description includes information about the environment, such as the number of nodes",07955fdab6e08dd6,llama3.1:8b,0,2026-06-17T11:13:12.050682,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205670,Tests using the sdk fail on the master branch,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a clear reproduction step: ""run plenum/test/sdk/test_sdk_bindings.py"". This is sufficient information for someone else to replicate the issue.
+2. **Expected vs actual behavior**: Although not explicitly stated, it can be inferred that the expected behavior is for the tests using the SDK to pass on the master branch, while the actual behavior is that they fail due to an error in parsing the new transaction format.
+3. **Acceptance criteria**: While not explicitly mentioned, we can infer that the acceptance criteria might include passing all tests on the master branch with the latest version of libsodium installed.
+4. **Affected components**: The issue mentions specific files and libraries (indy-sdk, libindy.so, libindy-crypto.so) that are affected by this problem.
+5. **Environment details**: Although not explicitly mentioned, we can infer that the environment is a development or testing setup with plenum tests running on the master branch.
+
+Considering these points, I believe the issue is complete and provides sufficient information for someone to understand and reproduce the problem.
+
+Final Answer: No",2a6fbf18cee9393d,llama3.1:8b,0,2026-06-17T11:13:15.526751,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205185,Write a script to upgrade audit ledger for the new state recovered from ledger,0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description mentions a specific bug (INDY-2283) and its consequences but does not provide clear steps on how to reproduce the issue or what actions should be taken to trigger the problem.
+
+2. **Expected vs actual behaviour**: It is mentioned that there are incorrect merkle hash calculations in the audit history, which prevents new nodes from coming into consensus. This implies an expected behavior (correct merkle hash calculations) and an actual behavior (incorrect calculations), so this aspect is covered.
+
+3. **Acceptance criteria**: While not explicitly stated as acceptance criteria, it can be inferred that the correct migration of the audit history to have accurate merkle hash calculations would be considered a success criterion. However, for clarity and completeness, specific acceptance criteria should ideally be listed.
+
+4. **Affected components**: The description mentions ""live Indy networks"" and ""audit history,"" which implies affected components are related to the network's consensus mechanism and its audit logging system. This aspect is somewhat covered but could benefit from explicit identification of the affected components for clarity.
+
+5. **Environment details**: There is no specific mention of environment details such as operating systems, versions of software,",4eb9cfb388283b54,llama3.1:8b,0,2026-06-17T11:13:19.077491,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205803,Find out maximal pool performance numbers for mixed mode (read and write),0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a clear plan for reproducing the issue:
+	* Mixture mode as in INDY-1343
+	* Mixture mode with FEEs (for the txns we support FEEs in the load script)
+	* Run strategy: Consider have metrics enabled and increase the load starting from a small number. If according to metrics everything is fine, increase the load further.
+	Therefore, this information is present.
+
+2. **Expected vs actual behaviour**: The description mentions ""maximal pool performance numbers"", implying that there's an expectation for certain performance metrics. However, it doesn't explicitly state what those expected numbers are or how they compare to the actual numbers. This might be considered incomplete, but let's continue analyzing.
+
+3. **Acceptance criteria**: There is no explicit mention of acceptance criteria in the description. Acceptance criteria typically define what constitutes a successful outcome for the issue. Without them, it's difficult to determine when the issue is resolved.
+
+4. **Affected components**: The description doesn't explicitly mention which components are affected by this issue. However, based on the context (pool performance numbers), it can be inferred that the pool component is likely involved",9dbf57da7128ba42,llama3.1:8b,0,2026-06-17T11:13:22.534396,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206213,Read-ledger without storage copy in case of RocksDB (RocksDB read-only mode support),0,-1,"Let's analyze the issue step-by-step:
+
+1. **Title**: The title clearly indicates what the issue is about: supporting RocksDB in read-only mode.
+2. **Description**: The description provides a good overview of the problem and its context, including the difference between LevelDB and RocksDB, and how it affects the `read_ledger` script.
+3. **Missing information**:
+	* **Steps to reproduce**: Not explicitly mentioned, but it's not strictly necessary in this case since the issue is more about understanding a specific behavior of RocksDB.
+	* **Expected vs actual behaviour**: The description clearly states what the expected behavior should be (supporting read-only mode) and what the current actual behavior is (not supporting it).
+	* **Acceptance criteria**: Not explicitly mentioned, but it's not strictly necessary in this case since the issue is more about understanding a specific requirement.
+	* **Affected components**: The description mentions that the `read_ledger` script is affected, which implies that the component is known.
+	* **Environment details**: Not explicitly mentioned, but it's likely that the environment details are implicit (e.g., the storage type is RocksDB).
+
+Considering these points, I would say that the issue is missing some essential information,",86bdd33e944a9e0b,llama3.1:8b,0,2026-06-17T11:13:26.154085,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205553,Node that does not upgrade spams the config ledger,0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description provides a specific scenario involving a trustee posting an upgrade transaction on the Sovrin TestNet and a node failing to upgrade properly. It also mentions logs from the node and journalctl entries that might be relevant for debugging.
+
+2. **Expected vs actual behavior**: The issue clearly states what happened (the node did not upgrade, leading to spamming of the config ledger) and what was expected to happen (proper upgrading).
+
+3. **Acceptance criteria**: While there's no explicit mention of acceptance criteria in terms of specific conditions or outcomes that must be met for this issue to be considered resolved, the description implies a functional requirement: the node should upgrade properly without spamming the ledger.
+
+4. **Affected components**: The affected component is identified as ""indy-node"" and possibly related services like ""indy-node-control,"" which suggests specificity about what needs to be addressed.
+
+5. **Environment details**: The issue specifies that it occurred on the Sovrin TestNet, providing context for the environment in which the problem was observed.
+
+Given this analysis, the issue seems to have all the necessary information: steps to reproduce, expected vs actual behavior, affected components (with",00f8d3fc72d8055a,llama3.1:8b,0,2026-06-17T11:13:29.703141,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206193,[QA] Script for filling the ledger doesn't work,0,1,"Let's analyze the given issue step by step:
+
+1. **Title**: The title is descriptive and clearly indicates that there is an issue with a script for filling the ledger.
+2. **Description**: The description provides detailed steps to reproduce the issue, which is essential information. It also includes actual results from running the script, including error messages and debug logs.
+3. **Expected Results**: Although not explicitly stated as ""Expected Results,"" we can infer that the expected outcome of running the script should be that generated transactions are written successfully.
+
+However, upon closer inspection, I notice that:
+
+* The issue description does not explicitly state what is expected to happen when the script runs correctly (i.e., what constitutes a successful execution).
+* There is no mention of acceptance criteria or specific requirements for the script's functionality.
+* While the actual results provide some insight into the error, they do not clearly indicate what went wrong or how it deviates from the expected behavior.
+
+Considering these points, I would conclude that the issue is missing essential information such as:
+
+* Clear expectations for the script's successful execution
+* Acceptance criteria for the script's functionality
+
+Therefore, based on the analysis, my final answer is:
+
+Final Answer: Yes",e70d85ba7f59b173,llama3.1:8b,0,2026-06-17T11:13:33.604087,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207334,Send NYM command is not executed on Shakedown Pool 1,0,0,"Let's analyze the given issue step by step:
+
+1. **Title**: The title clearly indicates what the problem is about - ""Send NYM command is not executed on Shakedown Pool 1"". This gives a good idea of the context and scope.
+
+2. **Description**: The description provides Build Info, which could be useful for debugging or reproducing the issue, but it's more about the environment than the specific steps to reproduce the problem itself.
+
+3. **Steps to Reproduce**: The issue includes detailed reproduction steps (1. Connect test environment. 2. Execute ""send NYM"" with some destination parameter), which is a crucial piece of information for understanding how to replicate the problem.
+
+4. **Actual Results vs Expected Results**: There's a clear description of what happens when the command is executed (no error/success message, NYM not added) and what should happen instead (error/success message, NYM should be added). This provides a good understanding of the expected behavior versus the actual outcome.
+
+5. **Acceptance Criteria**: While not explicitly stated as ""acceptance criteria,"" the expected results can be considered as part of the acceptance criteria for this feature or bug fix.
+
+6. **Affected Components**: The issue mentions Shakedown Pool 1",874a8df93ec6da81,llama3.1:8b,0,2026-06-17T11:13:37.251749,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206998,roll back default where zmq high water mark = 0,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a follow-up to another ticket (INDY-366), but it doesn't explicitly state how to reproduce the current issue or what specific conditions trigger it.
+2. **Expected vs actual behavior**: The description explains the desired outcome, which is to have a finite high water mark and additional features to handle nearing the limit. However, it's not clear what the exact expected behavior should be in terms of error handling, message discarding, or daemon process termination.
+3. **Acceptance criteria**: While the description outlines several desirable features (finite high water mark, detection near limit, reporting errors, discarding old messages, and graceful exit), it doesn't explicitly state the acceptance criteria for each feature. This makes it difficult to determine when the issue is fully addressed.
+4. **Affected components**: The description mentions ZMQ (ZeroMQ) and possibly STP (a component mentioned in the desirable but not necessarily required item 3). However, it's unclear if other components are affected or if there are any specific dependencies between these components.
+5. **Environment details**: There is no mention of specific environment requirements, such as operating system, version, or configuration settings that might impact the",eff8e2eea673234b,llama3.1:8b,0,2026-06-17T11:13:40.742365,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206222,Errors with configs during installation,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: ""Errors with configs during installation"" - This is a clear and concise title that describes the problem.
+2. **Description**: ""indy-node 1.3.412 Steps to Reproduce: 1. Install indy-node package."" - The description includes:
+	* A specific version of the software (indy-node 1.3.412)
+	* Steps to reproduce the issue (installing the package)
+3. **Steps to Reproduce**: ""1. Install indy-node package.""
+4. **Actual Result**: ""Errors appear at the end of installation: /var/lib/dpkg/info/indy-node.postinst: line 129: /etc/supervisor/indy-node.conf: No such file or directory grep: /etc/indy/node_control.conf: No such file or directory""
+5. **Expected Results**: ""Errors should not appear.""
+
+The issue includes:
+
+* A specific version of the software
+* Steps to reproduce the issue
+* Actual result (error messages)
+* Expected results
+
+However, I notice that the expected behavior is mentioned, but it's not explicitly stated as a comparison between actual and expected behavior. It would be more complete if it was phrased",7997d51568d5f925,llama3.1:8b,0,2026-06-17T11:13:44.185464,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207211,Node crashes if out of disk space,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: ""Node crashes if out of disk space"" - This is clear and concise.
+2. **Description**: ""During the test node crashed with leveldb exception """"no space left on device"""". Probably we should process such a case more gracefully"" - The description mentions the error that occurred, which is a good start.
+3. **Reasoning**:
+	* **Steps to reproduce**: Not explicitly mentioned, but it's implied that this happened during a test. However, it would be better if the steps were clearly outlined so others can replicate the issue.
+	* **Expected vs actual behaviour**: The description mentions the expected behavior (""process such a case more gracefully""), which is good. However, it would be helpful to have a clear statement of what the actual behavior was (i.e., the node crashing).
+	* **Acceptance criteria**: Not explicitly mentioned.
+	* **Affected components**: It's implied that this issue affects the test node and possibly the leveldb component, but it would be better if this were clearly stated.
+	* **Environment details**: The description mentions a ""test"" environment, which is good. However, it would be helpful to have more information about the specific environment",98d7f29c46fa41fe,llama3.1:8b,0,2026-06-17T11:13:47.663815,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205565,Unable to choose volume type using pool automation scripts,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that when using pool automation scripts, volumes have a standard (magnetic) type, but when creating instances manually, volumes have gp2 (ssd) type. This implies that there are specific steps to reproduce the issue, which is good.
+2. **Expected vs actual behaviour**: The description clearly states the expected and actual results:
+	* Expected: It would be nice to configure volume type the same as its size.
+	* Actual: Volumes have a standard (magnetic) type when using pool automation scripts.
+3. **Acceptance criteria**: While not explicitly stated, it can be inferred that the acceptance criteria is to allow configuring volume type based on instance size.
+4. **Affected components**: The issue mentions ""pool automation scripts"" and ""volume type"", which implies that the affected components are related to storage and automation.
+5. **Environment details**: There is no explicit mention of environment details, such as operating system, version, or configuration.
+
+Based on this analysis, I would say that the issue is missing some essential information, specifically:
+
+* A clear description of the expected behavior when using pool automation scripts
+* Acceptance criteria for configuring volume type based on instance",21005f305c84a650,llama3.1:8b,0,2026-06-17T11:13:51.073512,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205746,1.6.74 Release,0,1,"Let's analyze the issue step-by-step:
+
+1. **Title**: The title ""1.6.74 Release"" indicates that it's a specific task or milestone, but it doesn't give much context.
+2. **Description**: The description provides an overview of the tasks to be performed for the release, which is good. However, it's more of a high-level summary rather than detailed steps.
+3. **Acceptance Criteria**: The issue mentions acceptance criteria, which is excellent! It lists specific conditions that must be met for the release to be considered successful.
+
+However, upon closer inspection, I notice that:
+
+* There are no reproduction steps or scenarios provided, making it difficult to understand how to test or verify the completion of these tasks.
+* While there's a mention of acceptance criteria, they seem more like high-level requirements rather than specific, measurable conditions. For example, ""Code is tested"" is too vague; what does that mean in terms of testing?
+* There are no details about affected components, environment, or any other relevant context.
+
+Considering these points, I would say that the issue is missing essential information such as reproduction steps and more detailed acceptance criteria. Therefore:
+
+Final Answer: Yes",eff24ea5993e0167,llama3.1:8b,0,2026-06-17T11:13:54.532108,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207177,"Ledgers """"stall"""" gracefully",0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a specific scenario where a node is applying ledger txns to state and runs into an exception during deserialization or validation or processing. However, it does not explicitly provide steps to reproduce this situation.
+2. **Expected vs actual behaviour**: The description explains the expected behavior when a ledger ""stalls"" (i.e., it will be set to a ""STALLED"" state, and the node will reattempt to restart it). It also mentions that a nice error message will be put to the log. This provides some insight into the expected behavior.
+3. **Acceptance criteria**: The description does not explicitly mention acceptance criteria for this feature. However, it implies certain requirements (e.g., the node should handle the failure gracefully, provide an error message, and set the ledger to a ""STALLED"" state).
+4. **Affected components**: The description mentions that the node is affected by this issue, but it does not explicitly mention other affected components.
+5. **Environment details**: There are no specific environment details mentioned in the description.
+
+Based on these observations:
+
+* While the description provides some insight into the expected behavior and acceptance criteria, it lacks explicit steps to reproduce the situation",f5e30abaaaecc669,llama3.1:8b,0,2026-06-17T11:13:58.055802,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207246,Sovrin-Client: Show command cannot show files with space in the name,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title clearly indicates that it's about a specific feature/command (""Show command"") and its behavior with file names containing spaces.
+2. **Description**: The description provides:
+	* Setup details: This gives us information about the environment (Sovrin 0.3.20).
+	* Reproduction steps: It shows how to reproduce the issue by running a specific command.
+	* Expected vs actual behaviour: The expected behavior is that the ""show"" command should handle file names with spaces, but it doesn't.
+3. **Missing information**:
+	* Steps to reproduce are provided in the description.
+	* Expected vs actual behavior is clearly stated.
+	* Affected components (Sovrin-Client) and environment details (Sovrin 0.3.20) are mentioned.
+
+However, I notice that there's no explicit mention of **acceptance criteria** or any specific requirements for how the ""show"" command should behave with file names containing spaces. While we can infer some expectations from the description, it would be better to have them explicitly stated.
+
+Given this analysis, I conclude that the issue is missing essential information (acceptance criteria), making it INCOMPLETE.
+
+Final Answer",d43b373b71b2d04e,llama3.1:8b,0,2026-06-17T11:14:01.521705,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207346,Unexpected behavior of the testSendNodeSucceedsIfServicesIsMissed test,0,0,"To determine whether this software issue is INCOMPLETE, I will analyze it step by step:
+
+1. **Title**: ""Unexpected behavior of the testSendNodeSucceedsIfServicesIsMissed test"" - The title clearly identifies a specific test and its unexpected behavior.
+
+2. **Description**: ""The test makes downstream tests failed and hung testing."" - This description explains what happens when this particular test is run, indicating an issue with how it interacts with other tests or the system's overall testing process.
+
+3. **Analysis**:
+   - **Steps to reproduce**: The description does not explicitly provide steps to reproduce the issue but mentions a specific test case. However, reproducing the issue might involve running the mentioned test and observing its impact on downstream tests.
+   - **Expected vs actual behavior**: It's clear that the expected behavior of this test is different from what actually happens (it causes other tests to fail or hang), so there's no missing information here regarding expected vs. actual behavior.
+   - **Acceptance criteria**: There are no explicit acceptance criteria mentioned in the description, which could include specific conditions under which the test should pass or fail and how it affects downstream testing.
+   - **Affected components**: The issue is related to a specific test case within the system",17d0b481d1eb6856,llama3.1:8b,0,2026-06-17T11:14:04.973020,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207079,Node with malformed ldb files has inconsistent behavior,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title clearly describes the problem.
+2. **Description**: The description provides an overview of the issue and mentions the affected components (sovrin-node 0.3.161 and sovrin-client 0.3.150).
+3. **Steps to Reproduce**: The steps to reproduce are provided in detail, including two different cases with specific actions to take.
+4. **Actual Results**: The actual results of the reproduction steps are described, highlighting the inconsistent behavior of the node.
+5. **Expected Results**: Although the expected results are not explicitly stated, it is mentioned that clarification is needed due to a specific condition.
+
+Considering these points:
+
+* Essential information such as steps to reproduce and affected components are present.
+* However, the issue is missing explicit expected vs actual behaviour (the description of actual results is more like an observation than a clear statement of what was expected).
+* Acceptance criteria are not explicitly stated.
+* Environment details (Build Info) are provided.
+
+Based on this analysis, I would conclude that the issue is **INCOMPLETE** because it lacks explicit expected behavior and acceptance criteria.
+
+Final Answer: Yes",48da5bc08aba2fff,llama3.1:8b,0,2026-06-17T11:14:08.205290,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205870,Node can't catch up large ledger,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: ""Node can't catch up large ledger"" - This is a clear and concise title that describes the problem.
+2. **Description**:
+	* **Environment**: The description includes the environment details, including the version of indy-node (1.5.551).
+	* **Steps to Reproduce**: A detailed set of steps to reproduce the issue is provided, including specific actions to take and expected outcomes.
+	* **Actual Results**: The actual results are described in detail, including error messages and logs.
+	* **Expected Results**: The expected results are clearly stated, which helps to understand what should happen instead of the observed behavior.
+3. **Additional Information**: Some additional context is provided about the pool restore process and the nodes that were started later or not at all.
+
+Considering these points, I can conclude that:
+
+* All essential information is present: steps to reproduce, expected vs actual behaviour, acceptance criteria (not explicitly stated but implied), affected components (indy-node), and environment details.
+* The issue description is detailed and provides a clear understanding of the problem.
+
+Therefore, my final answer is:
+
+Final Answer: No",eb762140f78dad02,llama3.1:8b,0,2026-06-17T11:14:11.722132,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207163,F-value tests: How many nodes can I lose before the network stops? Is it 2f+1? Is it n-f?,0,1,"Let's analyze the issue step by step.
+
+The issue is titled ""F-value tests"" and asks about the number of nodes that can be lost before the network stops. It also mentions two possible formulas: 2f+1 and n-f.
+
+Here are my observations:
+
+* The issue clearly states what it's asking, which is a specific question about the behavior of the network.
+* There is no mention of steps to reproduce the issue or how to test it.
+* However, there is an indication that some research has been done on this topic, as the issue mentions ""Things tried: Findings:"", implying that someone has attempted to investigate this issue before.
+* The expected vs actual behavior is not explicitly stated, but based on the question, we can infer what the expected behavior should be (i.e., the network should continue functioning even after losing a certain number of nodes).
+* There are no acceptance criteria mentioned, which would typically define the conditions under which the issue is considered resolved.
+* The affected components or environment details are not specified.
+
+Based on this analysis, I conclude that the issue is missing essential information such as steps to reproduce and acceptance criteria. Therefore:
+
+Final Answer: Yes",647f1fe35eccdd75,llama3.1:8b,0,2026-06-17T11:14:15.093441,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205602,Write and Read request flow,0,1,"Let's analyze the given issue step by step:
+
+1. **Steps to reproduce**: The issue description does not mention any specific steps to reproduce the problem or scenario. It only mentions creating activity diagrams for write and read request flows.
+2. **Expected vs actual behaviour**: There is no clear statement of expected behavior versus actual behavior. We don't know what the desired outcome should be.
+3. **Acceptance criteria**: The issue description does not provide any acceptance criteria, which are essential to determine whether the requirement has been met.
+4. **Affected components**: Although it's not explicitly mentioned, we can infer that this issue is related to the system's architecture and possibly its API or database design. However, without further information, we cannot pinpoint the exact affected components.
+5. **Environment details**: There are no environment-specific requirements mentioned in the description.
+
+Considering these points, I conclude that the given issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and possibly affected components or environment details.
+
+Final Answer: Yes",8ff152833485f6b3,llama3.1:8b,0,2026-06-17T11:14:18.048891,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207255,Sovrin-Client: Show file command of not much use,0,1,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step:
+
+1. **Steps to reproduce**: The description mentions a related defect INDY-179, but it does not explicitly state how to reproduce the issue with the ""*show <file>*"" command.
+2. **Expected vs actual behaviour**: The description explains that the command is ""not of much use"" and implies that it should behave like a Linux shell, allowing tabbing for file navigation. However, this is more of an opinion than a clear expectation.
+3. **Acceptance criteria**: There are no explicit acceptance criteria mentioned in the description.
+4. **Affected components**: The issue mentions Sovrin-Client, but it does not specify which parts of the client are affected by this issue.
+5. **Environment details**: There is no mention of specific environment requirements or constraints.
+
+Based on these observations, I conclude that the issue is missing essential information such as steps to reproduce and acceptance criteria.
+
+Final Answer: Yes",d52040a902c31319,llama3.1:8b,0,2026-06-17T11:14:21.128212,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205400,Update docs for Transaction Author agreement,0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description does not mention any steps to reproduce the issue or how to verify that the update has been successfully implemented.
+
+2. **Expected vs actual behaviour**: While there's a mention of what should be updated (specific files and information), there's no clear indication of what the expected outcome is after these updates are made, beyond the fact that they need to happen.
+
+3. **Acceptance criteria**: The description outlines specific actions to take (update certain files with new information), but it doesn't specify how one would verify that these updates have been correctly implemented or if there's any specific behavior that should be observed as a result of these changes.
+
+4. **Affected components**: While the issue mentions specific files (`requests.md`, `transactions.md`, and `auth_map.md`) that need to be updated, it doesn't explicitly state which components (e.g., code modules, APIs) are affected by this update or if there's any impact on system functionality beyond just documentation.
+
+5. **Environment details**: There is no mention of the environment in which these updates should occur, such as a specific branch, deployment target, or testing conditions.
+
+Given that the issue",f08082ec52fd97a5,llama3.1:8b,0,2026-06-17T11:14:24.636679,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205519,Incorrect pool upgrade txn validation,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: ""Incorrect pool upgrade txn validation"" - This is a clear and concise title that indicates what the problem is.
+2. **Description**: The description provides some context and details about the issue, including:
+	* Build Info: indy-node 1.6.760 (this suggests that the issue is related to a specific version of the software)
+	* Steps to Reproduce: This section contains detailed steps on how to reproduce the issue.
+3. **Steps to Reproduce**: The steps are clear and concise, making it easy for someone else to replicate the issue.
+
+Now, let's check if there are any missing essential information:
+
+* **Expected vs Actual Behaviour**: Yes, this is present in the description.
+* **Acceptance Criteria**: Not explicitly stated, but based on the expected results, we can infer that the acceptance criteria might be related to the pool upgrade command being validated correctly.
+* **Affected Components**: Not explicitly mentioned, but based on the title and description, it seems that the issue is related to the ""indy-node"" component.
+* **Environment Details**: The build info provides some context about the environment (specifically, the version of indy-node), but it's not clear",52b19242dbfa67ea,llama3.1:8b,0,2026-06-17T11:14:27.987010,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205808,Performance of monitor should be improved,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a specific scenario: ""Under high load when requests are received faster than they are ordered"". This implies that there is a clear understanding of how to reproduce the problem.
+2. **Expected vs actual behaviour**: The description states what should happen (""_monitor.requestOrdered_ starts taking significant portion of time"") and what actually happens (leading to slower ordering). This indicates that the expected behavior is clearly defined.
+3. **Acceptance criteria**: While not explicitly stated, it can be inferred that the acceptance criterion is ""the performance of _monitor.requestOrdered_ should improve under high load"".
+4. **Affected components**: The description mentions ""_monitor.requestOrdered_"", which implies a specific component or module is affected.
+5. **Environment details**: Although not explicitly mentioned, the description assumes a certain level of understanding about the system's behavior under high load.
+
+Based on this analysis, I conclude that the issue is complete, as it provides essential information such as steps to reproduce, expected vs actual behavior, and affected components.
+
+Final Answer: No",20004f4edeea1d77,llama3.1:8b,0,2026-06-17T11:14:31.086573,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205232,PBFT View Change Debug: Part 2,0,1,"Let's analyze the given issue step by step:
+
+1. **Title**: The title is descriptive and indicates that it's related to debugging a specific feature called PBFT View Change.
+2. **Description**: The description provides a list of tasks with their status:
+	* All tests are unskipped ( DONE )
+	* Cleanup tasks ( DONE for some, TBD for one)
+	* Additional tasks: load testing, improving simulation tests, and fixing an issue with primary selection
+3. **Reproduction steps**: There are no explicit reproduction steps mentioned in the description.
+4. **Expected vs actual behavior**: The description does not explicitly state what the expected behavior is or how it differs from the actual behavior.
+5. **Acceptance criteria**: There are no clear acceptance criteria mentioned for this issue.
+6. **Affected components**: While the issue is related to a specific feature (PBFT View Change), the affected components are not clearly identified.
+7. **Environment details**: No environment-specific details are provided.
+
+Considering these points, I would say that the issue is missing essential information such as reproduction steps, expected vs actual behavior, acceptance criteria, and affected components. Therefore:
+
+Final Answer: Yes",785a1ef88287c079,llama3.1:8b,0,2026-06-17T11:14:34.403948,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206367,Knowledge transfer on Indy build processes,0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The issue doesn't mention any specific steps that can be taken to reproduce the problem or scenario. This is a key piece of information typically required for software issues.
+
+2. **Expected vs actual behaviour**: There's no clear description of what the expected outcome should be versus what actually happens when trying to disseminate understanding of Indy build processes. This comparison is crucial in defining the issue and its resolution.
+
+3. **Acceptance criteria**: The issue doesn't specify any acceptance criteria that would define whether the task has been successfully completed. Acceptance criteria are essential for ensuring that the solution meets the requirements.
+
+4. **Affected components**: While it mentions ""Indy node build processes,"" there's no clear indication of which specific components or systems will be affected by this knowledge transfer, making it hard to pinpoint exactly what needs to change.
+
+5. **Environment details**: The issue doesn't specify any environment-specific details that might affect the implementation or execution of the task, such as whether it should happen in a development, staging, or production environment.
+
+Given these observations, the issue lacks essential information for a software requirements analyst to fully understand and address the problem effectively.
+
+Final Answer",3b7b3cd7b1809fd1,llama3.1:8b,0,2026-06-17T11:14:37.859983,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205283,Support ubuntu 20.04 in system tests,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions ""update system tests"" but doesn't specify how to do it or what specific steps are required to support ubuntu 20.04 in system tests.
+2. **Expected vs actual behaviour**: The acceptance criteria mention that the test pool should be able to run in ubuntu 20.04 env, which implies an expected behavior. However, there's no explicit description of the actual behavior (i.e., what happens currently).
+3. **Acceptance criteria**: While the issue mentions ""acceptance criteria"", it only provides a brief summary of what needs to happen (e.g., ""# test pool can be run in ubuntu 20.04 env""). It would be helpful to have more detailed acceptance criteria, such as specific test cases or scenarios that need to pass.
+4. **Affected components**: The issue mentions ""system tests"", but it's not clear which specific components or modules are affected by this change.
+5. **Environment details**: The description mentions ""ubuntu 20.04 testing env"", which provides some context about the environment, but it would be helpful to have more information about the specific requirements for supporting ubuntu 20.04.
+
+Based on this analysis, I believe that the",e54b8f072a188797,llama3.1:8b,0,2026-06-17T11:14:41.368897,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206407,generate_indy_pool_transactions can be run only by indy user,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise.
+2. **Description**:
+	* **Steps to Reproduce**: Provided, which helps in reproducing the issue.
+	* **Actual Results**: Described what happens when trying to generate transactions as a non-indy user.
+	* **Expected Result**: Clearly stated what should happen instead.
+3. **Missing Information**:
+	* Acceptance criteria: Not explicitly mentioned, but implied through expected behavior.
+	* Affected components: Not specified, but can be inferred from the context (e.g., `generate_indy_pool_transactions` command).
+	* Environment details: Some environment details are provided (e.g., vagrant setup), but it's not clear if this is a specific requirement or just an example.
+
+Considering these points, I would say that while some essential information is missing, the issue is still relatively complete. The steps to reproduce and expected vs actual behavior are clearly described, which helps in understanding the problem.
+
+However, without explicit acceptance criteria, affected components, and environment details (beyond what's already mentioned), it's not entirely clear how this issue should be addressed or verified.
+
+**Final Answer: No**",585deab94d6bda5a,llama3.1:8b,0,2026-06-17T11:14:44.865665,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206381,ATTRIB transaction with ENC and HASH doesn't work,0,0,"Let's analyze the given issue step by step:
+
+1. **Steps to reproduce**: The issue description does not explicitly mention steps to reproduce the problem. However, it mentions enabling corresponding tests in indy-node, which might imply that reproducing the issue involves running these tests.
+
+2. **Expected vs actual behaviour**: The description mentions that ATTRIB and GET_ATTRIB should work correctly, implying an expected behavior. However, there's no explicit mention of what ""correctly"" means or how it differs from the current behavior.
+
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned in the issue description. It only talks about enabling tests and updating documentation without specifying what constitutes success or failure.
+
+4. **Affected components**: The issue mentions indy-node, which is a component affected by this problem. However, it does not specify if other components might be impacted as well.
+
+5. **Environment details**: There are no specific environment details mentioned in the description that would help reproduce or understand the context of the issue.
+
+Given these observations:
+
+- While there's an implication of steps to reproduce (enabling tests), they're not explicitly stated.
+- Expected vs actual behavior is somewhat implied but not clearly defined.
+- Acceptance criteria are missing.
+- Affected components are partially",4afea3cf13e44150,llama3.1:8b,0,2026-06-17T11:14:48.343573,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205817,Research performance of static validation against message schema,0,1,"Let's analyze the given issue step by step:
+
+1. **Title**: The title ""Research performance of static validation against message schema"" clearly indicates what the issue is about.
+2. **Description**: The description provides some context and explains that there are performance issues with validating messages against a schema in static validation. It also mentions acceptance criteria, which is a good sign.
+3. **Acceptance Criteria**: The description explicitly states the acceptance criteria: ""Come with a plan (PoA) on how to improve performance."" This means the issue has clear expectations for what needs to be achieved.
+
+However, upon closer inspection, I notice that:
+
+* There are no specific steps to reproduce the problem.
+* No expected vs actual behavior is described.
+* The affected components or environment details are not mentioned.
+* While there are acceptance criteria, they seem more focused on the outcome of the research rather than the specific requirements for the performance improvement.
+
+Considering these points, I would say that the issue is missing some essential information. It's clear what needs to be done (research and come up with a plan), but it's not entirely clear how to reproduce the problem or what the expected behavior should be.
+
+**Final Answer: Yes**",55b1e90a5257bb58,llama3.1:8b,0,2026-06-17T11:14:51.695350,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207214,The CLI initialization becomes too slow,0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: The CLI initialization becomes too slow
+	* This is a clear and concise title that describes the problem.
+2. **Description**: The call CLI (cmd: _*sovrin)*_ takes tens seconds after sometime of using. In the attachment there is a result of: python3 -m cProfile -o sovrin.prof `which sovrin`
+	* This description provides some context about the issue, but it's not entirely clear what ""tens seconds"" means (e.g., 10-20 seconds?).
+	* The mention of an attachment with a profiling result is interesting, as it suggests that there may be additional information available to help diagnose the issue.
+3. **Missing information**:
+	* Steps to reproduce: Not explicitly mentioned, but implied in the description.
+	* Expected vs actual behavior: Not clearly stated; we know something's slow, but not what should happen instead.
+	* Acceptance criteria: None mentioned.
+	* Affected components: Not specified (e.g., which part of the CLI is responsible for this slowdown?).
+	* Environment details: Not provided.
+
+Considering these points, I would say that the issue is missing essential information about",d31d7867d06c7b8d,llama3.1:8b,0,2026-06-17T11:14:55.229791,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205760,POA: Delegate issuance to a processor,0,0,"Let's analyze the given issue step-by-step:
+
+1. **Title and Description**: The title ""POA: Delegate issuance to a processor"" clearly indicates what the issue is about. The description provides more context and details about the requirement.
+
+2. **Steps to Reproduce**: While there are no explicit steps to reproduce provided, the description gives enough information for someone familiar with the system to understand how delegation works in the current setup and what changes are proposed.
+
+3. **Expected vs Actual Behaviour**: The issue clearly states the expected behavior (delegation of proof issuance from controller to processor) and contrasts it with the actual behavior (no such delegation capability exists).
+
+4. **Acceptance Criteria**: The acceptance criteria are provided, including creating a plan, getting architectural review, creating necessary issues, and implementing the solution.
+
+5. **Affected Components**: While not explicitly stated, it can be inferred that the affected components include the credential definition transactions, proof format, and possibly the ledger storage mechanism for cred def sequence numbers.
+
+6. **Environment Details**: There is no specific mention of environment details such as testing environments or deployment scenarios, but given the nature of the issue (a new feature request), this might not be considered essential information in all cases.
+
+Considering these points, it appears that",837b273d6d305580,llama3.1:8b,0,2026-06-17T11:14:58.933305,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205269,Implement helper script for AWS pool operations with snapshots,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions ""volumes and instances"", but it doesn't specify how to reproduce the scenario or what specific actions should be taken.
+2. **Expected vs actual behaviour**: There is no clear statement of expected behavior, only a vague mention of reducing switching time between upgrade and load AWS setups.
+3. **Acceptance criteria**: The description does not provide any specific acceptance criteria for the helper script.
+4. **Affected components**: It's unclear which components will be affected by this implementation (e.g., AWS services, code repositories).
+5. **Environment details**: There is no mention of the environment in which the helper script will operate.
+
+Based on these observations, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",b4f758be7434b871,llama3.1:8b,0,2026-06-17T11:15:01.559610,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207178,An upgrade should be idempotent,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title ""An upgrade should be idempotent"" clearly states what the requirement is about.
+2. **Description**: The description provides a good explanation of what an idempotent upgrade means and how it works in this specific context. It also mentions that there's a need to ensure changes done as part of an additional script are idempotent.
+3. **Reproduction steps**: Although not explicitly stated, the description implies that reproduction steps could be derived from the scenario described (e.g., having four nodes with different versions and testing the upgrade process).
+4. **Expected vs actual behavior**: The description clearly states what is expected to happen when an upgrade is idempotent (i.e., no changes are made if the node is already at version 5) and contrasts it with the current behavior.
+5. **Acceptance criteria**: While not explicitly stated, we can infer that acceptance criteria could be derived from the description, such as verifying that applying an upgrade twice on each node does not result in any changes.
+6. **Affected components**: Although not explicitly mentioned, we can assume that the affected components are related to the upgrade process and the additional script that runs during upgrades.
+7. **Environment details",74a2ce8567f4649d,llama3.1:8b,0,2026-06-17T11:15:04.967112,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205965,Ledger upgrade transaction should specify a package name,0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: ""Ledger upgrade transaction should specify a package name"" - This is clear and concise.
+2. **Description**: The description provides context and explains the problem from the perspective of an administrator on an Indy Network. It also mentions the desired outcome, which is to allow network-specific packages to perform configuration and customization functions.
+3. **Acceptance Criteria**: The acceptance criteria are clearly defined, specifying what should happen when the upgrade transaction includes a value containing the package that should be upgraded.
+4. **Reproduction Steps**: While not explicitly stated as ""reproduction steps,"" the description provides enough information for someone to understand how to reproduce the issue and test the proposed solution.
+5. **Expected vs Actual Behaviour**: The description clearly states what is expected (the upgrade transaction should include a value containing the package that should be upgraded) and implies what the actual behavior is (the generic Indy Node package is used by default).
+6. **Affected Components**: Although not explicitly stated, it can be inferred that the affected components are related to the ledger upgrade process, specifically the POOL_UPGRADE txn.
+7. **Environment Details**: The description mentions the Indy Network and provides a link to relevant documentation (https://github.com/h",efce11e46b9addb6,llama3.1:8b,0,2026-06-17T11:15:08.428782,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207326,Prove the pool upgrade mechanism by performing a noticeable upgrade test,0,1,"Let's analyze the issue step-by-step:
+
+1. **Steps to reproduce**: The description mentions performing an ""upgrade test"" and making some change driven by the new script migration process. This implies that there are specific steps to follow, but they are not explicitly stated.
+2. **Expected vs actual behaviour**: The description mentions a ""noticeable difference"", which suggests that there is an expected outcome or behavior after the upgrade test. However, it's not clear what this difference should be.
+3. **Acceptance criteria**: There is no explicit mention of acceptance criteria, such as specific requirements for the upgrade mechanism to be considered successful.
+4. **Affected components**: The description mentions ""the pool upgrade mechanism"", which implies that there are specific components or systems involved in the upgrade process. However, these components are not explicitly stated.
+5. **Environment details**: There is no mention of any specific environment or configuration requirements for the upgrade test.
+
+Based on this analysis, I would say that the issue is missing essential information such as steps to reproduce and acceptance criteria. While there are some hints about what needs to be done, the description is not clear enough to provide a complete understanding of the problem.
+
+Final Answer: Yes",37cf34c307c803eb,llama3.1:8b,0,2026-06-17T11:15:11.832215,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206117,Simple Timeout fixes of the current View Change protocol,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is descriptive and indicates that it's related to a specific protocol.
+2. **Description**: The description provides context about the existing problems in the View Change protocol (referencing two other issues, INDY-1296 and INDY-1303) and mentions possible fixes with options.
+3. **Reproduction steps**: There are no explicit reproduction steps mentioned, but it's not entirely necessary since this is a high-level issue description rather than a bug report.
+
+However, the issue is missing some essential information:
+
+* **Expected vs actual behavior**: The description only mentions ""problems"" and possible fixes without clearly stating what the expected behavior should be.
+* **Acceptance criteria**: There are no clear acceptance criteria mentioned for each of the proposed fixes.
+* **Affected components**: While it's implied that the View Change protocol is affected, it would be helpful to explicitly mention which components or modules will be impacted by these changes.
+
+Considering these points, I conclude that the issue is missing some essential information, making it INCOMPLETE.
+
+Final Answer: Yes",7ba336f6e4e3f38c,llama3.1:8b,0,2026-06-17T11:15:15.124868,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206655,As I Validator or Observer Node,0,0,"Let's analyze the issue step by step:
+
+* The title is ""As I Validator or Observer Node"", which seems to be a specific scenario or use case.
+* The description mentions two requirements:
+	+ Presenting Signed State Proof for client requests
+	+ Supporting generation of State Proofs creation for client requests
+* There are two links provided: one to a GitHub pull request and another to a Google Doc. These links might provide additional context, but they don't seem to be essential information about the issue itself.
+* Upon reviewing the description, I notice that it mentions specific requirements (presenting Signed State Proof and supporting generation of State Proofs creation), which implies some level of expected behavior.
+
+However, upon closer inspection, I realize that there are a few issues with this description:
+
+* There is no clear indication of what happens when these requirements are not met. What is the expected vs actual behavior?
+* The reproduction steps are not explicitly mentioned.
+* There is no mention of affected components or environment details.
+* While the links provided might give more context, they don't seem to be essential information about the issue itself.
+
+Considering these points, I would say that this issue is missing some essential information. Specifically:
+
+* Expected vs actual behavior
+* Reproduction steps
+*",13ca9789feaaf8e7,llama3.1:8b,0,2026-06-17T11:15:18.542730,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207231,eliminate runtime warnings that show during tests,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions ""When we are running unit and integration tests"", which implies that reproduction steps are implicit, but not explicitly stated.
+2. **Expected vs actual behaviour**: The description states that there are warnings during tests, and the goal is to either fix or disable them. This implies a clear understanding of the expected behavior (no warnings) and the actual behavior (warnings present).
+3. **Acceptance criteria**: While not explicitly stated, it can be inferred that the acceptance criteria would involve either removing the warnings or proving their irrelevance.
+4. **Affected components**: The description mentions ""unit and integration tests"", which implies that the affected component is likely a testing framework or a specific module responsible for test execution.
+5. **Environment details**: The description assumes a development environment where unit and integration tests are run, but does not specify any particular environment details.
+
+Based on this analysis, I would say that the issue is missing explicit reproduction steps, which makes it incomplete.
+
+Final Answer: Yes",7daa4fd84dab631d,llama3.1:8b,0,2026-06-17T11:15:21.612249,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206217,Clarify current permissible actions with DID's roles,0,0,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step.
+
+1. **Steps to reproduce**: The issue description does not explicitly mention steps to reproduce the problem or scenario. However, it provides some background information and assumptions about how roles are managed with DID's (Decentralized Identifiers).
+
+2. **Expected vs actual behavior**: The issue mentions ""Main assumptions"" which implies there is a discrepancy between expected and actual behavior regarding role management with DID's. It also references a Google spreadsheet for further details, but the description itself does not clearly articulate what the expected behavior should be.
+
+3. **Acceptance criteria**: There are no clear acceptance criteria provided in the issue description that outline what constitutes successful resolution of this issue.
+
+4. **Affected components**: The issue is related to DID's roles management, which suggests it affects specific components or modules within the system responsible for identity and access control. However, these components are not explicitly mentioned.
+
+5. **Environment details**: There is no mention of any environment-specific requirements or constraints that might affect how this issue is addressed.
+
+Given these observations:
+
+- The issue lacks explicit steps to reproduce.
+- It does not clearly articulate expected vs actual behavior in a concise manner.
+- Acceptance criteria are missing.
+-",4b88baf54d788f43,llama3.1:8b,0,2026-06-17T11:15:25.122851,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205635,Enable PreViewChange Strategy,0,0,"Let's analyze the issue step-by-step:
+
+1. **Title**: ""Enable PreViewChange Strategy"" - This is a clear and concise title that indicates what the issue is about.
+2. **Description**: The description provides some context about the PreViewChange strategy, its purpose, and its current state (disabled by default). It also mentions acceptance criteria, which is a good start.
+3. **Acceptance Criteria**: The description includes specific acceptance criteria, such as:
+	* No side-affects
+	* Load testing with regular view changes
+	* Most view changes should be fast
+	* View changes shouldn't lead to broken ledgers (all ledgers in sync eventually)
+	* Enable the strategy by default
+
+These acceptance criteria are detailed and specific, which is a good sign.
+
+However, upon closer inspection, I notice that:
+
+* The issue description doesn't explicitly mention **steps to reproduce** the problem or how to test the PreViewChange strategy.
+* While the acceptance criteria are provided, they don't fully cover all aspects of the expected behavior. For example, what happens if there are side-affects? How will they be handled?
+* There is no explicit mention of **affected components**, which could include specific code modules, services, or APIs",960dd591ebe59af7,llama3.1:8b,0,2026-06-17T11:15:28.601599,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205719,Validator info tool should show windowed throughput statistics,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that there is a related issue (INDY-930), but it doesn't provide specific steps to reproduce the problem or how to verify the expected behavior.
+2. **Expected vs actual behaviour**: The description mentions what would be nice to have, but it's not clear what the current behavior is and what the expected behavior should be.
+3. **Acceptance criteria**: There are some open questions (e.g., ""are we okay with windowed throughput measurements as implemented in monitor?"", ""should we use same window size for read and write request throughput measurements?"") that need to be addressed, but there is no clear acceptance criteria defined.
+4. **Affected components**: The description mentions the ""validator_info"" tool and the ""monitor"", which are likely affected components, but it's not explicitly stated.
+5. **Environment details**: There is no mention of specific environment details or constraints.
+
+Based on this analysis, I would say that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and affected components.
+
+Final Answer: Yes",d2a06d8f63eab012,llama3.1:8b,0,2026-06-17T11:15:31.913982,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205358,indy-node upgrade problem - No such directory,0,0,"Let's analyze the given issue step by step:
+
+1. **Title**: The title is descriptive and clearly indicates that it's an issue related to upgrading indy-node.
+2. **Description**:
+	* **Environment**: The environment details are provided, including the nodes in BuilderNet and StagingNet.
+	* **Steps to Reproduce**: A detailed set of steps is given, including links to external documentation for manual upgrade procedures.
+3. **Expected Behavior**: Clearly stated that there should be no errors during the upgrade process.
+4. **Observed Behavior**: The actual output after attempting the upgrade is provided in detail.
+5. **Notes**: Additional context is given, including a workaround that allowed the system to be upgraded despite the failure.
+
+Considering these points, I can conclude that:
+
+* Essential information such as steps to reproduce, expected vs actual behavior, and environment details are all present.
+* The issue description provides a clear understanding of what went wrong during the upgrade process.
+
+Therefore, based on the analysis, I would say that this issue is **not** INCOMPLETE.
+
+Final Answer: No",13c9724eb31e5d16,llama3.1:8b,0,2026-06-17T11:15:35.171318,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206471,Validator-info tool is not working with build 1.2.49,0,-1,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Title and Description**: The title clearly states the problem with a specific version of the build, and the description provides steps to reproduce the issue, including commands to run and expected behavior (the error message). This suggests that the essential information about what happens when you try to use the tool is provided.
+
+2. **Steps to Reproduce**: The description includes explicit instructions on how to reproduce the issue by running specific commands as a particular user. This meets one of the criteria for completeness.
+
+3. **Expected vs Actual Behaviour**: The description clearly states the expected behavior (the tool should work) and the actual behavior (it fails with an error message). This provides essential information about what is supposed to happen versus what actually happens, which is crucial for understanding the problem.
+
+4. **Acceptance Criteria**: While not explicitly stated as ""acceptance criteria,"" the description implies that the tool should be able to run successfully without errors when following the specified steps. However, it's a bit vague on what constitutes success beyond just running without error messages. This might be considered incomplete in terms of specifying clear acceptance criteria.
+
+5. **Affected Components**: The issue mentions specific files and directories related to the",e4f210f83d73dac5,llama3.1:8b,0,2026-06-17T11:15:38.707082,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207259,[send NYM] Add verkey and update verkey commands don't work,0,0,"Let's analyze the given issue step by step:
+
+1. **Title and Description**: The title is clear, but the description provides a brief overview without much detail.
+2. **Steps to Reproduce**: The steps are provided in detail, which is good. This helps in understanding how to reproduce the issue.
+3. **Actual Results**: The actual results are described, including specific details about the errors encountered.
+4. **Expected Results**: The expected behavior is clearly stated, which is essential for understanding what should happen when the commands are executed correctly.
+5. **Additional Info**: There's a mention of an additional piece of information that this issue blocks another one (INDY-110), but this doesn't seem directly related to the completeness of the current issue.
+
+Considering these points:
+
+- The steps to reproduce are provided, which is essential for understanding how to replicate the issue.
+- The actual and expected results are clearly stated, providing a good understanding of what's happening versus what should happen.
+- There's no mention of affected components or environment details that could be considered incomplete.
+
+However, upon closer inspection:
+
+- While there's a screenshot mentioned in the description, it's not actually included. This might be considered missing information if one were to strictly interpret ""screenshot"" as",9716a5798e7a9981,llama3.1:8b,0,2026-06-17T11:15:42.218328,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206618,Allow a steward to update his node entry in the ledger - including the verkey,0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description provides an example of how the current behavior fails when a steward tries to update their node entry in the ledger. This includes specific details about the actions taken and the expected outcome.
+
+2. **Expected vs actual behaviour**: The issue clearly states what is currently happening (a steward can only have one node entry, regardless of whether it's designated as a validator or not) versus what should happen (allowing multiple node entries but limiting one to be a validator at a time).
+
+3. **Acceptance criteria**: While the description does not explicitly list acceptance criteria in a formal manner, it outlines the desired behavior and how it differs from the current implementation. This can be considered implicit acceptance criteria.
+
+4. **Affected components**: The issue is related to ledger management and node entries, which suggests that the affected component is likely the part of the system responsible for managing these aspects.
+
+5. **Environment details**: There are no specific environment details mentioned in the description, but given the context, it's reasonable to assume this issue pertains to a specific implementation or version of the system being discussed.
+
+Given this analysis, the issue appears to be complete as it includes essential",f74690acfff870b6,llama3.1:8b,0,2026-06-17T11:15:46.279030,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205847,Fail to update pool ledger if no connection to a node in the genesis file in old cli,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: ""Fail to update pool ledger if no connection to a node in the genesis file in old cli"" - This title is descriptive and indicates the problem.
+2. **Description**: The description provides context, mentioning a related JIRA ticket (EN-755) and explaining how the issue manifests itself in older versions of indy-node. It also includes logs that are attached.
+3. **Reproduction steps**: Although not explicitly stated, it can be inferred from the description that reproducing this issue involves:
+	* Using an old version of indy-node (e.g., 1.5.515).
+	* Configuring a genesis file with unreachable nodes.
+	* Observing the behavior in the cli logs.
+4. **Expected vs actual behaviour**: The description clearly states what is expected to happen (pool catch-up) and what actually happens (no pool update, repeated reconnect messages).
+5. **Acceptance criteria**: While not explicitly stated, it can be inferred that the acceptance criteria would involve verifying that the pool ledger updates correctly even when a node in the genesis file is unreachable.
+6. **Affected components**: The description mentions indy-node and cli, so these are likely affected components.
+7.",a8ab275e67b6a74d,llama3.1:8b,0,2026-06-17T11:15:49.983122,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205621,Expected object or value error during batch handling,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that the bug was found during log analysis from another issue (INDY-1835), but it doesn't provide specific steps to reproduce the error.
+2. **Expected vs actual behavior**: The description mentions an ""error"" and a specific message, but it's not clear what the expected behavior is or how it differs from the actual behavior.
+3. **Acceptance criteria**: While there are some acceptance criteria mentioned (investigate source code, write unit and integration tests, create a fix), they seem to be focused on resolving the issue rather than defining the desired outcome.
+4. **Affected components**: The description mentions ""batch handling"" and specific error messages, but it's not clear which components or systems are affected by this issue.
+5. **Environment details**: There is no mention of any environment-specific details that might be relevant to reproducing or resolving the issue.
+
+Based on this analysis, I would say that the issue is missing essential information such as steps to reproduce and a clear description of the expected vs actual behavior.
+
+Final Answer: Yes",be94c82a834e7590,llama3.1:8b,0,2026-06-17T11:15:53.247918,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206100,Support Payment API txns in load script,0,1,"Let's analyze the given issue step-by-step:
+
+1. **Steps to reproduce**: The description does not mention any specific steps or scenarios that would trigger this support.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be when supporting Payment API txns in load script, nor is there a description of the current (actual) behavior.
+3. **Acceptance criteria**: The issue does not specify any acceptance criteria for determining whether the requirement has been met.
+4. **Affected components**: While it mentions ""load script"", it's unclear which specific components or modules would be affected by this change.
+5. **Environment details**: There is no mention of the environment in which this support should be implemented.
+
+Given that the issue lacks essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, and environment details, I conclude:
+
+Final Answer: Yes",bb906b5a7810a261,llama3.1:8b,0,2026-06-17T11:15:56.028012,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206303,Ordering of 3PC-batches on a backup replica may stop after a catch-up,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is descriptive and clearly indicates what the problem is.
+2. **Description**: The description provides a detailed explanation of the issue, including technical details about how the backup replica handles 3PC-batches after a catch-up. This suggests that the author has a good understanding of the system's behavior.
+3. **Reproduction steps**: While there are no explicit reproduction steps provided, the description is so detailed that it implies that the author has already identified the problem through experimentation or debugging.
+
+However, upon closer inspection, I notice that:
+
+* The issue description is extremely long and convoluted, making it difficult to understand without significant technical expertise.
+* There is no clear statement of **expected vs actual behavior**. While we can infer what's expected (i.e., the backup replica should be able to order 3PC-batches after a catch-up), this is not explicitly stated.
+* The description does not provide any **acceptance criteria**, which would help determine whether the fix is successful.
+
+Considering these points, I conclude that the issue is missing essential information, specifically expected vs actual behavior and acceptance criteria.
+
+**Final Answer: Yes**",af869b9d61e15bf8,llama3.1:8b,0,2026-06-17T11:15:59.426285,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206249,Add Docker getting started configuration,0,0,"Let's analyze the issue step-by-step:
+
+1. **Steps to reproduce**: The description mentions that this is a ""turnkey"" configuration, implying that it should be easy to set up and use. However, there are no specific steps provided on how to reproduce or test the Docker getting started configuration.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior is for this feature. What does it mean for the configuration to be ""turnkey"" and enable ""quick and easy exploration""?
+3. **Acceptance criteria**: While there are some references to external resources (e.g., Sovrin's Getting Started Guide), there are no specific acceptance criteria defined for what constitutes a successful implementation of this feature.
+4. **Affected components**: The description mentions that this is related to the ""devops repo"", but it does not specify which components or files will be affected by this change.
+5. **Environment details**: There is a reference to Docker, which implies that the environment details are relevant. However, there is no clear statement of what specific environment settings or configurations are required for this feature.
+
+Based on these observations, I conclude that the issue is missing essential information, specifically steps to reproduce, expected vs actual behavior, acceptance criteria, affected",9cd6637efb0e78cb,llama3.1:8b,0,2026-06-17T11:16:02.966039,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207080,Valid write transactions may be rejected as having invalid signatures (case 2),0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is descriptive and indicates a specific problem with write transactions.
+2. **Description**:
+	* The description mentions that the bug occurred when running a test script with specific parameters using a particular configuration.
+	* It also mentions attached logs for details, which suggests that there is additional information available to support the issue.
+	* Furthermore, it notes that certain files were added manually to the VM due to Jenkins being offline at the time. This provides context about the environment and setup used to reproduce the issue.
+3. **Reproduction steps**: Although not explicitly stated as ""steps to reproduce,"" the description provides enough information for someone else to replicate the issue using the specified test script, parameters, configuration, and attached logs.
+4. **Expected vs actual behavior**: The title implies that there is an unexpected rejection of valid write transactions due to invalid signatures (case 2). This suggests a clear understanding of the expected behavior (valid transactions should not be rejected) and the observed actual behavior (they are being rejected).
+5. **Acceptance criteria**: While not explicitly stated, it can be inferred that the acceptance criterion is for valid write transactions to be accepted without being rejected due to invalid signatures.
+6. **",c513596b097d8b91,llama3.1:8b,0,2026-06-17T11:16:06.470893,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206714,Primary fails to send pre-prepare,0,-1,"To determine whether this issue is INCOMPLETE, I will evaluate it against the essential information criteria:
+
+1. **Steps to reproduce**: The description provides a detailed scenario of what happened during the load test, including specific times and node names. It also describes the troubleshooting steps taken, which can be used as reproduction steps.
+2. **Expected vs actual behaviour**: The issue description clearly states that the primary node failed to send PREPREPAREs to all nodes, which is the expected behavior (i.e., it should have sent PREPREPAREs to all eight nodes). This indicates a deviation from the expected behavior.
+3. **Acceptance criteria**: While not explicitly stated as acceptance criteria, the description implies that the primary node should be able to send PREPREPAREs to all nodes in a load test scenario.
+4. **Affected components**: The issue description mentions specific nodes (metis and play) and processes (sovrin-node), which indicates the affected components.
+5. **Environment details**: The description provides information about the environment, including the load test setup and node names.
+
+Considering these points, I conclude that this issue is not missing any essential information. It provides a detailed scenario of what happened, describes the expected behavior, and identifies the affected components and environment",3fe58e6aaa3a3f2d,llama3.1:8b,0,2026-06-17T11:16:10.042158,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207130,Node with multiple NICs:,1,1,"Let's analyze the issue step by step.
+
+1. **Title**: The title is clear and concise.
+2. **Description**: The description mentions a specific scenario (""Node with multiple NICs"") but does not provide any further details about what exactly needs to be done or fixed.
+3. **Things tried**: This section suggests that some attempts have been made to resolve the issue, but it's unclear what those attempts were or what was learned from them.
+
+Considering these points, I notice that the issue is missing essential information such as:
+
+* Steps to reproduce the problem
+* Expected vs actual behavior
+* Acceptance criteria
+* Affected components (e.g., which part of the system needs to be modified)
+* Environment details (e.g., what specific configuration or setup is relevant)
+
+Given this analysis, I conclude that the issue is INCOMPLETE.
+
+Final Answer: Yes",cff8188224d4ede9,llama3.1:8b,0,2026-06-17T11:16:12.776411,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206872,As a Steward,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating that it's about notifications for Stewards.
+2. **Description**: The description provides context about the current notification system and explains what needs to be done. It also lists specific events that should trigger notifications.
+3. **Missing information**:
+	* Steps to reproduce: Not provided.
+	* Expected vs actual behavior: While it's mentioned that there are some ways and plugins for notification, it doesn't explicitly state the expected behavior for each event.
+	* Acceptance criteria: Not clearly stated.
+	* Affected components: It mentions ""Node"", but it's not clear which specific components or systems will be affected by this change.
+	* Environment details: Not provided.
+
+Based on the analysis, I would say that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and environment details. Therefore:
+
+Final Answer: Yes",42d1a9ced5897361,llama3.1:8b,0,2026-06-17T11:16:15.711409,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206649,DOC: Request for release notes on Indy-node 1.1.31,0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Title**: The title ""DOC: Request for release notes on Indy-node 1.1.31"" clearly indicates that the request is for documentation or a specific type of output (release notes) rather than a functional change.
+
+2. **Description**: The description provides detailed information about the changes made in version 1.1.31 of Indy-node, including:
+   - Version numbers of various components.
+   - A list of major fixes with their respective issue IDs and brief descriptions.
+   - Changes and additions to the system, including new features (like ledger serialization), directory structure changes, and tool updates.
+
+3. **Analysis**:
+   - The description does not mention any specific functionality that is missing or needs improvement in terms of user interaction or expected behavior.
+   - There are no steps to reproduce a problem or an error scenario.
+   - Expected vs actual behavior is not explicitly mentioned as there's no indication of what should be different after the changes.
+   - Acceptance criteria, affected components, and environment details are not specified.
+
+4. **Conclusion**: Given that the issue description focuses on documenting existing changes rather than requesting a new feature or fixing an existing problem with specific",20558ebbdd102518,llama3.1:8b,0,2026-06-17T11:16:19.331993,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207129,Some nodes are slow to process network data,0,1,"Let's analyze the issue step by step.
+
+1. **Title**: The title is clear and concise, indicating a specific problem.
+2. **Description**: The description provides some context about the issue, mentioning that some nodes are slow to process network data, which affects senders. However, it doesn't provide any specific details about what ""slow"" means (e.g., response time, throughput) or how this is impacting the system.
+3. **Steps tried/Findings**: The description mentions ""Things tried: Findings:"", but there are no actual findings or steps taken to troubleshoot the issue.
+
+Considering these points:
+
+* There's no clear definition of what constitutes a ""slow"" node (e.g., expected vs actual behavior).
+* No reproduction steps are provided.
+* No acceptance criteria are mentioned.
+* The affected components and environment details are not specified.
+
+Based on this analysis, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",c9fb656c5494d27d,llama3.1:8b,0,2026-06-17T11:16:22.303205,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206996,improve timestamp mechanism to use fuzzy,0,1,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: There are no specific steps provided on how to reproduce the current timestamp mechanism or what exactly needs to be done to observe its behavior.
+
+2. **Expected vs actual behaviour**: The description mentions a change (""improve"") but does not clearly articulate what the expected behavior of the new fuzzy timestamp mechanism should be compared to the existing one, nor is there an explicit mention of the actual observed behavior that prompted this improvement request.
+
+3. **Acceptance criteria**: There's no clear indication of what constitutes ""success"" for this feature. Are we looking at a specific performance metric (e.g., accuracy), user experience improvements, or something else?
+
+4. **Affected components**: The description does not specify which parts of the system will be impacted by this change.
+
+5. **Environment details**: There's no mention of any environmental factors that might influence how this feature is implemented or tested.
+
+Given these observations, it appears that the issue lacks essential information for a complete understanding and implementation plan.
+
+Final Answer: Yes",419b3dc6cc2a34e3,llama3.1:8b,0,2026-06-17T11:16:25.453007,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205942,"How-to """"Add new node to existing pool",0,1,"Let's analyze the given issue step-by-step:
+
+1. **Steps to reproduce**: The description mentions ""Adding new node to existing pool"", but it doesn't provide specific steps on how to do this. It only mentions that the documentation is lacking, which implies that reproducing the issue might be difficult without further guidance.
+2. **Expected vs actual behaviour**: There's no clear statement of what the expected behavior should be when adding a new node to an existing pool. The description only mentions that it's not covered by documentation yet.
+3. **Acceptance criteria**: Although the description mentions ""acceptance scenario"", it doesn't provide any specific acceptance criteria for this feature. This makes it difficult to determine whether the issue is complete or not.
+4. **Affected components**: There's no mention of which components are affected by this issue, making it hard to identify the scope of the problem.
+5. **Environment details**: The description doesn't specify any environment-related details that might be relevant for reproducing or resolving the issue.
+
+Considering these points, I would say that the given issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, and environment details.
+
+Final Answer: Yes",0e255bdb726c0943,llama3.1:8b,0,2026-06-17T11:16:28.743496,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207319,REF validator,0,1,"Let's analyze the issue step-by-step:
+
+1. **Title**: The title ""REF validator"" is clear and concise.
+2. **Description**: The description provides some context about what the REF validator should do: it needs to validate transaction sequence numbers in Plenum, which are references to transactions by sequence number (as defined in sovrin_common/types.py).
+3. **Missing information**:
+	* **Steps to reproduce**: There is no clear indication of how to reproduce this issue or test the validation.
+	* **Expected vs actual behaviour**: While we know what the REF validator should do, there's no explicit statement on what the expected behavior is (e.g., ""the system should reject invalid sequence numbers"").
+	* **Acceptance criteria**: There are no clear acceptance criteria for this feature. What constitutes a successful validation?
+	* **Affected components**: We know that Plenum is affected, but it would be helpful to have more information about other potentially impacted components.
+	* **Environment details**: No specific environment details are mentioned.
+
+Based on the analysis, I conclude that the issue is missing essential information, specifically steps to reproduce, expected vs actual behavior, acceptance criteria, and affected components.
+
+Final Answer: Yes",231376c684e8621a,llama3.1:8b,0,2026-06-17T11:16:32.206084,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205527,Implementation: Improve catch-up to use audit ledger for consistency,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating that it's related to improving the catch-up mechanism.
+2. **Description**: The description provides a detailed explanation of the proposed improvement, including:
+	* Acceptance criteria: The description explicitly mentions acceptance criteria, which are listed in the GitHub link provided.
+	* Expected behavior: The description outlines the expected behavior of the improved catch-up mechanism.
+	* Steps to reproduce: Although not explicitly stated as ""steps to reproduce,"" the description provides a clear explanation of how the current implementation works and how it should be modified.
+3. **Affected components**: While not explicitly mentioned, the description implies that the affected component is the catch-up mechanism itself.
+4. **Environment details**: There are no specific environment details mentioned in the description.
+
+Considering these points, I would say that the issue is complete because:
+
+* It provides clear acceptance criteria.
+* The expected behavior is well-defined.
+* Although not explicitly stated as ""steps to reproduce,"" the description provides a clear explanation of how the current implementation works and how it should be modified.
+* The affected component (catch-up mechanism) is implied.
+
+However, I would like to note that the issue could benefit from more explicit information about",898d9eb0f6f9ed21,llama3.1:8b,0,2026-06-17T11:16:35.748907,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206160,Analyse the current View Change protocol issues,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The issue description mentions ""see INDY-1259 for example"", which implies that there is a specific scenario or case that needs to be reproduced. However, it does not explicitly provide steps to reproduce the issue.
+2. **Expected vs actual behaviour**: The description mentions issues with the current View Change protocol and proposes implementing PBFT View Change protocol as an option. This suggests that there are expected benefits from analyzing the existing protocol (e.g., better understanding of issues, increased confidence in new implementation). However, it does not explicitly state what the actual behavior is.
+3. **Acceptance criteria**: The description mentions ""Result of analysis and a list of issues"" as output for this task, but it does not provide clear acceptance criteria for what constitutes a successful completion of the task (e.g., specific metrics or outcomes).
+4. **Affected components**: The issue description mentions the View Change protocol, which is likely a software component, but it does not explicitly state which other components are affected.
+5. **Environment details**: There is no mention of specific environment details that might be relevant to this analysis.
+
+Based on these observations, I conclude that the issue is missing essential information such as steps to reproduce",fadc7bbb4e0025c1,llama3.1:8b,0,2026-06-17T11:16:39.275363,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206183,Date in log name doesn't accord to the day when the log was rotated,0,-1,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to Reproduce**: The issue includes detailed steps to reproduce the problem, including specific commands and file paths. This information is present.
+2. **Expected vs Actual Behaviour**: The issue clearly states what is expected (dates in log names should accord to the date when the log was rotated) and what actually happens (the same date is specified in log name during the week). This information is also present.
+3. **Acceptance Criteria**: While not explicitly stated, it can be inferred that the acceptance criteria are implicit in the expected results: dates in logs names should accord to the date when the log was rotated, or dates should not be specified at all.
+4. **Affected Components**: The issue mentions specific file paths and nodes (e.g., `/var/log/indy/sandbox/*2018-04-09.gz`), which implies that the affected components are related to logging and rotation mechanisms.
+5. **Environment Details**: Although not explicitly stated, it can be inferred from the commands and file paths provided in the steps to reproduce that the environment is a Linux-based system.
+
+Considering these points, I conclude that this issue has sufficient information for analysis and resolution. Therefore:",389f073e5d50a588,llama3.1:8b,0,2026-06-17T11:16:43.274390,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206911,list keyrings showing results twice,0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: The title ""list keyrings showing results twice"" clearly indicates what the problem is.
+2. **Description**: The description provides some context and explains that the issue occurs when sending the command 'list keyrings' from the CLI.
+3. **Reproduction steps**: The description includes a specific example of how to reproduce the issue, including the exact commands to type in the CLI and the expected output.
+4. **Expected vs actual behavior**: Although not explicitly stated, it can be inferred that the expected behavior is for the command to return unique results, while the actual behavior is returning duplicate results.
+5. **Acceptance criteria**: Not explicitly mentioned, but based on the description, one could infer that the acceptance criterion might be that the command returns a list of keyrings without duplicates.
+6. **Affected components**: The issue seems to be related to the CLI and the keyring management functionality, so these components are likely affected.
+7. **Environment details**: Although not explicitly mentioned, it can be inferred that the environment is a Linux-based system (based on the file paths and commands used).
+
+Considering all these points, I would say that the issue is mostly complete, but there's one crucial",cceb106141a2a82b,llama3.1:8b,0,2026-06-17T11:16:47.136589,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205543,As a user of Valdiator Info script,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description doesn't mention any specific steps to reproduce the issue or scenario.
+2. **Expected vs actual behaviour**: The acceptance criteria clearly state what is expected: adding a new field to the validator info output with the time when the state was updated for every ledger.
+3. **Acceptance criteria**: The issue actually provides acceptance criteria, which is one of the essential information needed. It specifies what needs to be done and under what conditions (i.e., assuming INDY-933 is done).
+4. **Affected components**: Although not explicitly mentioned, it can be inferred that the affected component is the ""validator info script"" itself.
+5. **Environment details**: There are no specific environment details mentioned.
+
+Based on this analysis, I would say that the issue is missing essential information such as steps to reproduce and environment details. However, since acceptance criteria are provided, which is a crucial piece of information, I will lean towards saying it's not incomplete due to the presence of acceptance criteria.
+
+Final Answer: No",44bbc1154e0a8cb0,llama3.1:8b,0,2026-06-17T11:16:50.342099,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206727,Accidental tests of indy-node intermittently fail on Jenkins,0,0,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step.
+
+1. **Title**: The title of the issue clearly indicates a specific problem: ""Accidental tests of indy-node intermittently fail on Jenkins."" This suggests that the issue is well-defined and focused.
+2. **Description**: The description provides examples of builds with accidental test fails, which are links to specific pipeline runs in Jenkins. While this gives some context about where the failures occur, it does not explicitly state what the expected behavior should be or how these failures are impacting the system's functionality.
+3. **Missing Information**:
+   - **Steps to reproduce**: The description provides examples of failed builds but does not give a clear step-by-step guide on how to reproduce the issue.
+   - **Expected vs actual behaviour**: While it mentions that tests fail, it doesn't clearly state what the expected behavior should be in these scenarios or why the current behavior is incorrect.
+   - **Acceptance criteria**: There's no mention of specific conditions under which the system would be considered ""fixed"" or how the failure rate should change.
+   - **Affected components**: The issue seems to be related to a specific component (indy-node) and its interaction with Jenkins, but it could be",262b1c83c5c8cc65,llama3.1:8b,0,2026-06-17T11:16:53.847008,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205664,Is there any replacement for leveldb?,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: There are no specific steps provided on how to reproduce the issue or what behavior is expected.
+2. **Expected vs actual behaviour**: The description mentions a question about replacing leveldb, but it doesn't specify what the expected behavior should be if leveldb is replaced.
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned in the description.
+4. **Affected components**: It's not specified which components or systems would be affected by replacing leveldb.
+5. **Environment details**: The environment where this issue might occur is not described.
+
+Considering these points, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",8f4832665edc714e,llama3.1:8b,0,2026-06-17T11:16:56.253095,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205912,As a Sovrin Foundation,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise.
+2. **Description**: The description provides a good overview of what needs to be tested and checked.
+3. **Acceptance Criteria**: The acceptance criteria are clearly listed, which is great! This gives us a clear understanding of what constitutes ""done"".
+4. **Steps to reproduce**: Unfortunately, there are no explicit steps to reproduce the issue or test case. We don't know how to trigger the testing process.
+5. **Expected vs actual behaviour**: While we have some idea of what's expected (e.g., correct configuration and participation in consensus), it would be helpful to have a more detailed description of the expected behavior.
+6. **Affected components**: The issue mentions ""all nodes on the live pool"" and ""Steward"", but it's not entirely clear which specific components or systems are affected.
+7. **Environment details**: There is no mention of any specific environment requirements, such as network settings or hardware configurations.
+
+Based on this analysis, I would say that the issue is missing some essential information, specifically steps to reproduce and a more detailed description of expected behavior.
+
+Final Answer: Yes",5774a46fc97d64b8,llama3.1:8b,0,2026-06-17T11:16:59.503466,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206478,The pool state should be updated after any node BLS key changing,0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description provides specific scenarios where the pool state should be updated after a node BLS key change, including examples of what happens when these conditions are met or not. This suggests that reproduction steps are included.
+
+2. **Expected vs actual behaviour**: The issue clearly outlines the expected behavior (pool state update) and contrasts it with the observed behavior in specific scenarios where the pool state is not updated after a node BLS key change. This indicates that both expected and actual behaviors are described.
+
+3. **Acceptance criteria**: While the description does not explicitly list acceptance criteria, the detailed scenarios provided can be inferred as implicit acceptance criteria. They specify under what conditions the system should behave in a certain way, which aligns with typical acceptance criteria for software development.
+
+4. **Affected components**: The issue is related to updating the pool state after node BLS key changes, suggesting that it affects components or modules responsible for managing the pool and its nodes' keys. However, the description does not explicitly mention affected components by name.
+
+5. **Environment details**: There's no explicit mention of specific environment requirements or constraints beyond the scenarios described, which are more about the behavior",e09b4a1a2a0ae60b,llama3.1:8b,0,2026-06-17T11:17:03.058986,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207005,"Nodes not receiving new transaction if its """"View"""" list is different from other nodes in the pool",0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: The title clearly describes the problem, which is that nodes are not receiving new transactions if their ""View"" list is different from other nodes in the pool.
+2. **Description**: The description provides a detailed explanation of what happened during load testing. It includes:
+	* Steps to reproduce: The issue was observed during load testing using specific scripts (add_key.py and load_test.py).
+	* Expected vs actual behavior: The expected behavior is that all nodes should receive new transactions, but only nodes 2-10 processed the new transactions.
+	* Reproduction steps are not explicitly stated as a separate section, but they are embedded in the description. However, it's clear what actions were taken to reproduce the issue.
+3. **Acceptance criteria**: While not explicitly stated, we can infer that the acceptance criterion is that all nodes should receive new transactions regardless of their ""View"" list configuration.
+4. **Affected components**: The affected component is likely a distributed ledger system or a node in the pool.
+5. **Environment details**: The description mentions specific scripts (add_key.py and load_test.py) used during load testing, which implies that the environment is a test setup.
+
+Considering these points, I",bb5973d995ede64a,llama3.1:8b,0,2026-06-17T11:17:06.649013,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205432,Auto trigger CD pipeline for release-* branches,0,0,"Let's analyze the issue step-by-step:
+
+1. **Steps to reproduce**: The description provides a clear scenario of how the current behavior is triggered: ""new push """"service"""" commits happens that will trigger new CD pipelines builds"". This implies that the reproduction steps are implicit, but they can be inferred from the description.
+2. **Expected vs actual behaviour**: The issue clearly states what the expected behavior should be: ""Need to implement a better logic to allow auto triggering"" and provides examples of how it should work (e.g., allowing triggering for all commits with certain conditions).
+3. **Acceptance criteria**: While not explicitly stated, we can infer some acceptance criteria from the description:
+	* The CD pipeline should automatically trigger for release-* branches.
+	* The pipeline should skip commits that are tagged or come from a bot user.
+4. **Affected components**: Although not explicitly mentioned, it's likely that the Jenkins plugin and GitHub notification settings will be affected by this change.
+5. **Environment details**: There is no specific information about the environment (e.g., which version of Jenkins or GitHub is being used).
+
+Considering these points, I would say that the issue is missing some essential information, such as:
+
+* A clear description of how to reproduce the problem in a",743d150e47be27ef,llama3.1:8b,0,2026-06-17T11:17:10.193553,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-207212,Node memory leak,0,-1,"To determine whether this issue is INCOMPLETE, let's analyze it step-by-step:
+
+1. **Steps to reproduce**: The description mentions running a specific script (`load_test.py`) on a local pool with 4 nodes for 90000 transactions. This provides clear steps to reproduce the issue.
+2. **Expected vs actual behaviour**: Although not explicitly stated, we can infer that the expected behavior is for the node's memory usage to remain stable or decrease after running the load test, while the actual behavior is a continuous growth of memory used by the node.
+3. **Acceptance criteria**: Not explicitly mentioned in the description, but based on the context, it seems like the acceptance criterion would be that the node's memory usage does not exceed a certain threshold (e.g., 80% of available memory) after running the load test.
+4. **Affected components**: The issue mentions ""master repo"" and ""load_test.py"", which implies that the affected component is likely the code or configuration related to these items.
+5. **Environment details**: The description specifies the environment as a local pool with 4 nodes, which provides sufficient context.
+
+Considering these points, I would say that this issue is not missing any essential information. It provides clear steps to reproduce, implies expected",f8e6c338e8e82c3d,llama3.1:8b,0,2026-06-17T11:17:13.718785,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206218,Node is restarted because of Out of memory error,0,1,"Let's analyze the given issue step by step:
+
+1. **Steps to reproduce**: The description mentions that the issue is reproduced on a ""big pool"" under load test conditions, but it doesn't specify exactly how to replicate the issue or what specific actions lead to the Out of memory error.
+2. **Expected vs actual behaviour**: Although the issue mentions an expected outcome (the nodes should not restart due to out-of-memory errors), it does not explicitly state the expected behavior in this scenario.
+3. **Acceptance criteria**: There is no mention of acceptance criteria for resolving this issue, such as what constitutes a successful resolution or how the system should behave after fixing the problem.
+4. **Affected components**: The description mentions ""nodes"" and ""journalctl,"" which implies that specific components are affected by the Out of memory error. However, it does not explicitly state which components are involved.
+5. **Environment details**: While the issue mentions a ""big pool"" with 25 nodes under load test conditions, it does not provide detailed environment information such as operating system versions, JVM settings, or any other relevant configuration.
+
+Given these observations, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",3636a8f0d63719c1,llama3.1:8b,0,2026-06-17T11:17:17.164890,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206980,A primary may not be able to send checkpoints after re-start,0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: The title clearly describes the problem: ""A primary may not be able to send checkpoints after re-start"". This is a specific and concise description of the issue.
+2. **Description**: The description provides more context about the problem, including:
+	* The scenario where the Primary is restarted and the view is not changed.
+	* The expected behavior (the Primary should be able to send checkpoints correctly).
+	* A reference to another issue (INDY-334) that fixed a related problem.
+3. **Reproduction steps**: The description includes detailed reproduction steps, including:
+	* Specific hardware requirements (3 nodes).
+	* Step-by-step actions to reproduce the issue: stop the Primary, restart it, and then start sending transactions.
+4. **Expected vs actual behavior**: The description clearly states what is expected to happen (the Primary should be able to send checkpoints correctly) and what actually happens (the Primary may not be able to send checkpoints correctly).
+5. **Acceptance criteria**: While not explicitly stated, the description implies that the acceptance criteria would be related to the Primary's ability to send checkpoints correctly after a restart.
+6. **Affected components**: The issue is likely related to the consensus algorithm",bbf2c0565559316b,llama3.1:8b,0,2026-06-17T11:17:20.690836,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-206016,Upgrade failed on pool from 1.3.62 to 1.4.66,0,0,"To determine whether this issue is INCOMPLETE, I will evaluate it against the essential information criteria:
+
+1. **Steps to reproduce**: The description provides a detailed account of the upgrade process, including the version numbers, schedule, and logs. This suggests that the steps to reproduce are included.
+2. **Expected vs actual behavior**: Although not explicitly stated, we can infer the expected behavior from the context: successful upgrades should result in an updated version number and corresponding log files. The actual behavior is described as failed upgrades with missing or incomplete log files.
+3. **Acceptance criteria**: While not explicitly listed, we can deduce some acceptance criteria based on the description:
+	* Successful upgrade of all nodes to 1.4.66
+	* Presence of an `upgrade.log` file on each node
+	* No errors in logs
+	* Correct version number displayed after upgrade
+4. **Affected components**: The issue mentions specific versions (1.3.62 and 1.4.66) and nodes, which implies that the affected component is the pool's upgrade mechanism.
+5. **Environment details**: The description provides information about the environment:
+	* Node locations in AWS
+	* Machines listed in a spreadsheet
+	* Indy-node service shut off on",d967e56a51cec38f,llama3.1:8b,0,2026-06-17T11:17:24.227288,project_03,title_desc,incompleteness,few_shot_cot
+ISSUE-205350,Use more trusted docker image for system tests client docker container,0,-1,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step.
+
+1. **Steps to reproduce**: The description mentions a concern about using a specific docker image for system tests but does not explicitly state how to reproduce or test this scenario. However, based on the context, it seems that reproducing this issue involves setting up and running system tests with the current docker image.
+2. **Expected vs actual behavior**: The description highlights a potential security risk (""is it safe to use"") but doesn't clearly articulate what the expected behavior should be in terms of safety or security standards for the build pipelines. It suggests alternatives, which implies there's an expectation that these alternatives are safer or more secure.
+3. **Acceptance criteria**: While not explicitly stated as acceptance criteria, the description provides options for how to proceed (""continue to use it # switch to another more trusted base image # grab the idea of the dind client inside docker container and build out own image based on ubuntu:16.04""), which can be interpreted as implicit acceptance criteria.
+4. **Affected components**: The issue is related to system tests, specifically the docker container used for these tests, so it's clear that this component is affected.
+5. **Environment details**: The description mentions",dd96701227ad65f8,llama3.1:8b,0,2026-06-17T11:17:27.717441,project_03,title_desc,incompleteness,few_shot_cot

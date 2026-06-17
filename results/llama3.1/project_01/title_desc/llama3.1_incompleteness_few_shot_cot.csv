@@ -1,0 +1,1165 @@
+issue_id,title,ground_truth,prediction,raw_response,prompt_hash,model_version,temperature,timestamp_utc,project,input_mode,task,strategy
+ISSUE-2087,CLI error when not specifying module type in module commands is cryptic an not helpful,0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is descriptive and clearly indicates what the problem is.
+2. **Description**: The description provides a good overview of the issue, including:
+	* What happens when you forget to specify the module type (a cryptic exception).
+	* An example of the command that triggers this behavior ('module display mqtt').
+	* A quote from the exception message, which helps understand what's going on.
+3. **Reproduction steps**: Although not explicitly stated as ""steps to reproduce,"" we can infer that the description provides enough information for someone to replicate the issue:
+	* Run a CLI module command (e.g., 'module display mqtt').
+	* Observe the cryptic exception message.
+4. **Expected vs actual behavior**: The description clearly states what's expected (a helpful error message) and what actually happens (a cryptic exception).
+5. **Acceptance criteria**: While not explicitly stated, we can infer that the acceptance criteria might be:
+	* The CLI module commands should provide a clear error message when the user forgets to specify the module type.
+6. **Affected components**: Although not mentioned explicitly, it's likely that the affected component is the CLI module command implementation (e.g",2b328ecb902dfa13,llama3.1:8b,0,2026-06-17T09:42:38.850099,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2338,Error in correlation strategy in aggregator.xml,0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating that it's about an error in the aggregator.xml file.
+2. **Description**: The description provides some context:
+	* The specific correlation-strategy-expression value that should be changed.
+	* A suggested fix: changing the expression to """"$'}"""".
+	* A request to add a test to ensure correlation expressions work correctly.
+
+However, I notice that:
+
+3. **Steps to reproduce** are not explicitly mentioned in the description. While it's possible to infer some steps (e.g., editing aggregator.xml), it would be better if they were clearly stated.
+4. **Expected vs actual behavior** is partially described: the expected behavior is that correlation expressions should work correctly, but the actual behavior (i.e., what happens when the current expression is used) is not explicitly mentioned.
+5. **Acceptance criteria** are not provided. What does it mean for ""correlation expressions"" to work correctly? Are there specific conditions or scenarios that need to be met?
+6. **Affected components** are implied to be related to aggregator.xml, but this could be clarified.
+7. **Environment details** are not mentioned.
+
+Considering these points, I conclude that",1b32b7ea38f05a95,llama3.1:8b,0,2026-06-17T09:42:42.334652,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0972,deploy-working-dir is set to to root directory when container is started as service,0,-1,"To determine whether the given software issue is INCOMPLETE, let's analyze it step-by-step:
+
+1. **Title and Description**: The title clearly states a specific problem with Spring XD when started as a service, and the description provides detailed information about the error encountered.
+
+2. **Expected vs Actual Behaviour**: The description explicitly mentions the expected behavior (deploy-working-dir should be set to a directory writable by spring-xd user) and contrasts it with the actual behavior (the deploy-working-dir is resolved to the top-most directory which is not writable).
+
+3. **Steps to Reproduce**: Although the steps to reproduce are not explicitly listed, the description provides enough context for someone familiar with Spring XD to understand how to replicate the issue.
+
+4. **Acceptance Criteria**: The description implies that the acceptance criteria would be that the deploy-working-dir should be set correctly so as not to cause an IOException when deploying JAR files.
+
+5. **Affected Components**: The affected components are clearly identified as related to Spring XD, specifically in its configuration and deployment process.
+
+6. **Environment Details**: While the environment details (Linux) are mentioned, they could be more specific or detailed for a complete analysis.
+
+Given this step-by-step analysis, it appears that the issue is quite detailed but might benefit",bef87e97ddbded95,llama3.1:8b,0,2026-06-17T09:42:46.145558,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2665,Spike to model the cluster nodes.,0,0,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step:
+
+1. **Steps to reproduce**: The description does not explicitly mention steps to reproduce the issue or scenario. However, it mentions a ""Spike"" which implies an exploratory investigation into how something works rather than a specific reproducible test case.
+
+2. **Expected vs actual behaviour**: There's no clear statement of what is expected versus what actually happens in terms of functionality or behavior related to cluster nodes and job/stream processing deployment. The description focuses more on the concept and a reference project, not on a specific problem or discrepancy.
+
+3. **Acceptance criteria**: Acceptance criteria are missing. What constitutes ""success"" for this spike? Are there specific requirements that need to be met?
+
+4. **Affected components**: While it mentions cluster nodes and an admin node, it doesn't specify which components of the system will be affected by this change or how they interact with each other.
+
+5. **Environment details**: There's no mention of any environment-specific details such as operating systems, versions of software, etc., that might impact the outcome of the spike.
+
+Given these observations:
+
+- The issue lacks explicit steps to reproduce.
+- It doesn't clearly articulate expected vs actual behavior in terms",a9c96d1e74bf1315,llama3.1:8b,0,2026-06-17T09:42:49.765665,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1414,Rename metrics repositories setValue(x,1,0,"To determine whether this software issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Title and Description**: The title clearly states the action needed (""Rename metrics repositories setValue(x) to something less 'javabean'""), and the description provides a brief explanation of what needs to be changed.
+
+2. **Steps to Reproduce**: There are no specific steps provided on how to reproduce this issue, which could make it difficult for developers to understand exactly what they need to do to test or fix the problem.
+
+3. **Expected vs Actual Behaviour**: The description mentions changing something from ""javabean"" to something less so, but it doesn't explicitly state what the expected behavior is after the change. It's implied that the goal is to make a name change, but without specifying why this change is necessary or how it will affect the system, it's hard to assess its completeness.
+
+4. **Acceptance Criteria**: There are no clear acceptance criteria provided for when the task can be considered complete. What does ""something less 'javabean'"" mean in terms of functionality? How will we know if the rename has been successful?
+
+5. **Affected Components**: The description doesn't specify which components or parts of the system will be affected by this change,",114ef4906d26494f,llama3.1:8b,0,2026-06-17T09:42:53.168551,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0394,Tasks Launcher should be able to record status to a central repository,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title clearly indicates what needs to be done: ""Tasks Launcher should be able to record status to a central repository"". This is specific and relevant.
+2. **Description**: The description provides more context, explaining that the Task Launcher needs to capture the state from the environment (lattice, local) running the task and map it to an enumerated state as specified in a Google document. This gives us some idea of what's expected.
+3. **Reproduction steps**: Unfortunately, there are no explicit reproduction steps provided. We don't know how to trigger this functionality or reproduce the issue if it doesn't work as expected.
+4. **Expected vs actual behaviour**: The description mentions that the state information needs to be recorded in the task_execution table enumerated, but it's not clear what the expected behavior is compared to the current behavior (if any).
+5. **Acceptance criteria**: While there are some references to specific documents, we don't have explicit acceptance criteria defined for this feature.
+6. **Affected components**: We know that the Task Launcher and task_execution table are involved, but it's not clear if other components might be affected as well.
+7. **Environment details**: The description mentions ""l",0b0c96bbe4109f1c,llama3.1:8b,0,2026-06-17T09:42:56.655193,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2850,Richer module options metadata,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides an example XML representation of the richer model for module options, but it doesn't explicitly state how to reproduce the current behavior or the new behavior with the proposed changes.
+2. **Expected vs actual behaviour**: The description explains the benefits of the proposed change (e.g., providing help metadata, easy way to list available option names) and mentions some potential issues (e.g., AppContext refresh). However, it doesn't explicitly state what the expected behavior is or how it differs from the current behavior.
+3. **Acceptance criteria**: The description provides some high-level benefits of the proposed change, but it's not clear what specific acceptance criteria would be used to determine whether the change meets its goals.
+4. **Affected components**: The description mentions that plugins could benefit from a hook in the new construct and advertise the fact that they expect/provide new options. However, it doesn't explicitly state which components are affected by this change or how they will be impacted.
+5. **Environment details**: There is no mention of specific environment details (e.g., operating system, Java version) that might affect the implementation or behavior of the proposed change.
+
+Based on these observations, I would conclude",38470550395c91c6,llama3.1:8b,0,2026-06-17T09:43:00.260966,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0549,Port FTP as s-c-s source module,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description does not mention any specific steps to reproduce the issue or scenario.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be after porting the FTP module, nor is there a description of the current (actual) behavior.
+3. **Acceptance criteria**: While the description mentions using the modules as ""s-c-s"" modules to build streaming pipelines, it does not provide specific acceptance criteria for the ported module.
+4. **Affected components**: The issue mentions Spring XD and s-c-s repo, but it's unclear which specific components or modules are affected by this change.
+5. **Environment details**: There is no mention of any environment-specific requirements or constraints.
+
+Based on these observations, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",291e4d472e44130d,llama3.1:8b,0,2026-06-17T09:43:03.040556,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2979,Change url to access UI from browser,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a clear example of the current behavior and the desired behavior, making it easy to reproduce the issue.
+2. **Expected vs actual behaviour**: The description clearly states what is expected (accessing the UI without explicitly including index.html) and what is currently happening (needing to include index.html).
+3. **Acceptance criteria**: While not explicitly stated, the description implies that accessing the UI via a simplified URL should be possible.
+4. **Affected components**: Although not mentioned explicitly, it can be inferred that the affected component is the routing or URL handling mechanism of the XD UI.
+5. **Environment details**: The description mentions ""localhost:8080"", which suggests that this issue is related to a specific environment (development or testing).
+
+Considering these points, I would say that the issue is complete and provides enough information for someone to understand and address the problem.
+
+Final Answer: No",e4d50b62568df198,llama3.1:8b,0,2026-06-17T09:43:05.903642,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0714,Add Logging to ZooKeeperContainerRepository,0,0,"To determine whether this issue is INCOMPLETE, let's analyze its components:
+
+1. **Title**: ""Add Logging to ZooKeeperContainerRepository"" - This title clearly indicates what the issue is about.
+2. **Description**: The description provides context for why logging needs to be added. It mentions a specific error message and points out that adding logging in certain places would help diagnose the issue.
+
+Now, let's check if it's missing any essential information:
+
+- **Steps to reproduce**: While there isn't a detailed step-by-step guide on how to reproduce the issue, the description does provide enough context for someone familiar with the system to understand what might be causing the problem and where logging is needed.
+  
+- **Expected vs actual behaviour**: The expected behavior (logging that would help diagnose the issue) is mentioned in the description.
+
+- **Acceptance criteria**: There isn't a clear statement of acceptance criteria, which are essential for determining when the feature is complete. However, given the context, it's reasonable to assume that adding logging and seeing the desired log messages would be considered successful.
+
+- **Affected components**: The issue specifically mentions ""ZooKeeperContainerRepository,"" so there's no ambiguity about what component is affected.
+
+- **Environment details**: There isn't any specific mention",59d27998f280bb19,llama3.1:8b,0,2026-06-17T09:43:09.367090,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1907,DefaultContainerMatcher - Improve Logging and mention affected Module,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a specific scenario: deploying a definition with a container match criteria specified, and no container could be selected. This is sufficient for reproduction.
+2. **Expected vs actual behavior**: The description mentions that the logging is ""ambiguous"" and should mention the affected module. This implies an expected improvement in logging behavior.
+3. **Acceptance criteria**: While not explicitly stated, we can infer some acceptance criteria:
+	* The logging message should be clear and unambiguous.
+	* The logging message should mention the affected module.
+4. **Affected components**: The description mentions `cluster.DefaultContainerMatcher`, which is a specific component involved in the issue.
+5. **Environment details**: Although not explicitly stated, we can assume that this issue is related to a deployment scenario, which implies an environment with a cluster and container management.
+
+Considering these points, I conclude that the issue is complete, as it provides sufficient information for reproduction, expected vs actual behavior, affected components, and some acceptance criteria. The only minor omission might be explicit environment details, but they can be inferred from the context.
+
+**Final Answer: No**",6f7a41f472a1212a,llama3.1:8b,0,2026-06-17T09:43:12.766614,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1146,http-client Improvement (userDefinedHeaderPrefix),0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating a specific improvement to the http-client feature.
+2. **Description**: The description provides some context about the current limitation and references an external resource for more information. However, it doesn't explicitly state what the expected behavior should be or how the issue can be reproduced.
+3. **Expected vs Actual Behaviour**: While the description mentions a limitation, it doesn't clearly articulate the expected behavior or the desired outcome of the improvement.
+4. **Steps to Reproduce**: There are no specific steps provided to reproduce the issue or demonstrate the problem.
+5. **Acceptance Criteria**: The description doesn't mention any acceptance criteria for the improvement.
+6. **Affected Components**: Although not explicitly stated, it's likely that the http-client component is affected by this issue.
+7. **Environment Details**: There are no specific environment details mentioned.
+
+Based on this analysis, I would conclude that the issue is missing essential information such as expected vs actual behavior, steps to reproduce, and acceptance criteria.
+
+Final Answer: Yes",4a43abbb7f39c9af,llama3.1:8b,0,2026-06-17T09:43:15.858647,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3079,Deploy a new job module *after* XD-singlenode container has started.,0,-1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a clear sequence of actions:
+	* After the xd-singlenode process has started,
+	* Create a new job that has dependencies not already in the parent application context,
+	* Then create and run a new job that uses the new module.
+2. **Expected vs actual behaviour**: Although it's not explicitly stated, we can infer the expected behavior from the description:
+	* The new job should be created successfully after the xd-singlenode process has started.
+	* The new job should use the new module and run successfully.
+3. **Acceptance criteria**: While not explicitly listed as ""acceptance criteria,"" the description provides a clear way to verify that the issue is resolved:
+	* In a JUnit test case, copy in a new job with new dependencies,
+	* Deploy a new job and check in the job repository that the job ran and was successful.
+4. **Affected components**: Although not explicitly mentioned, we can infer that the affected components are related to job deployment and management (e.g., ModuleRegistry).
+5. **Environment details**: The description mentions a specific GitHub repository for implementation suggestions, which implies that the environment is likely a Spring",1c4df48f176df3d1,llama3.1:8b,0,2026-06-17T09:43:19.371163,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0367,Spike: Study scope to add support for hdfs commands in shell,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title is descriptive and indicates that this is a spike study, which means it's an exploratory task.
+2. **Description**: The description provides some context about who wants to add support for Hadoop commands in shell (the s-c-d developer) and what they want to achieve (querying the Hadoop file system).
+3. **Missing information**:
+	* **Steps to reproduce**: There are no specific steps provided on how to reproduce this issue or how to test the desired functionality.
+	* **Expected vs actual behaviour**: The description mentions what the user wants to achieve, but it doesn't specify what the expected behavior is in terms of system output or response.
+	* **Acceptance criteria**: There's no clear definition of what constitutes ""success"" for this feature. What are the specific requirements that need to be met?
+	* **Affected components**: The description mentions Hadoop commands and shell, but it doesn't specify which components will be affected by this change (e.g., code modules, APIs).
+	* **Environment details**: There's no information about the environment in which this feature should work (e.g., specific versions of software, hardware requirements).
+
+Based on this analysis,",4d26c07637a8cac7,llama3.1:8b,0,2026-06-17T09:43:22.955295,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3374,Documentation for AggregateCounter,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: ""Documentation for AggregateCounter"" - This is a clear and concise title.
+2. **Description**: ""Add section to Analytics chapter on use of AggregateCounter. The example should show the use of the shell to create the tap that uses the AggregateCounter."" - This description provides some context, but it's missing essential information.
+
+Reasoning:
+
+* Missing: steps to reproduce (how to create a tap using the shell), expected vs actual behavior (what is the current state of documentation for AggregateCounter?), acceptance criteria (what should be included in the new section?), affected components (which parts of the system will be impacted by this change?), and environment details (is there any specific configuration or setup required?).
+
+Since the issue lacks essential information, I conclude that it is INCOMPLETE.
+
+Final Answer: Yes",ebfa6621ea10d753,llama3.1:8b,0,2026-06-17T09:43:25.612344,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0460,First deploy/launch of Pig job that includes yarn-site.xml file fails,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a clear scenario for reproducing the issue: deploying and launching a Pig job that contains a yarn-site.xml config file after XD starts up.
+2. **Expected vs actual behavior**: The description clearly states what is expected (the job should deploy successfully) and what actually happens (the deployment fails).
+3. **Acceptance criteria**: While not explicitly stated, the issue implies that the acceptance criterion is that the Pig job should deploy successfully with a yarn-site.xml file.
+4. **Affected components**: Although not explicitly mentioned, it can be inferred that the affected component is the XD system and possibly the Pig job deployment mechanism.
+5. **Environment details**: The description mentions that the error occurs consistently after XD starts up, which implies that environment details (e.g., XD configuration) are relevant to understanding the issue.
+
+Considering these points, I conclude that the issue is not missing any essential information. It provides a clear scenario for reproducing the issue, describes the expected vs actual behavior, and implies acceptance criteria. While some environment details are mentioned, they seem sufficient to understand the context of the issue.
+
+Final Answer: No",5ae5628a6b30fe0f,llama3.1:8b,0,2026-06-17T09:43:28.921979,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0456,Refactor Task parsing,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a specific problem with the current implementation (""a lot of duplication"") but does not provide any concrete steps to reproduce the issue.
+2. **Expected vs actual behaviour**: The description explains what is expected (to remove duplication and references) but does not explicitly state what the actual behavior is, making it hard to understand the exact problem.
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned in the description. What exactly constitutes a successful refactoring?
+4. **Affected components**: The issue mentions ""DSL parsing for tasks"" and ""streams"", but it's not clear which specific components or modules will be affected by this refactoring.
+5. **Environment details**: No environment-specific information is provided, such as any dependencies on external libraries or frameworks.
+
+Considering these points, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",5c16dc803ff27ba5,llama3.1:8b,0,2026-06-17T09:43:31.781930,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3038,Add Spring XD Build Plan for Java 8 to Bamboo,0,1,"Let's analyze the given issue step by step:
+
+1. **Steps to reproduce**: The description does not mention any steps to reproduce the issue or scenario.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be after implementing the Spring XD Build Plan for Java 8 in Bamboo, nor is there a description of the current (actual) behavior.
+3. **Acceptance criteria**: The description does not provide any specific acceptance criteria that would define when the issue is considered resolved.
+4. **Affected components**: While it mentions ""XD-761"" and ""Bamboo"", it's unclear which specific components or systems are affected by this change.
+5. **Environment details**: There is no mention of the environment in which this build plan should be implemented (e.g., production, staging, development).
+
+Given that the issue lacks essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, and environment details, I conclude:
+
+Final Answer: Yes",6e61527ce1db86cb,llama3.1:8b,0,2026-06-17T09:43:34.667594,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0976,Create a gpload batch job,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description doesn't mention any specific steps to reproduce the task of creating a gpload batch job.
+2. **Expected vs actual behaviour**: There is no clear statement on what the expected behavior should be after creating the gpload batch job, or how it differs from the current behavior (if there is one).
+3. **Acceptance criteria**: The description mentions ""ingest data from various sources into GPDB in an efficient manner"", but this is a high-level goal rather than specific acceptance criteria.
+4. **Affected components**: It's not clear which components of the system will be affected by creating a gpload batch job, or how it will interact with other parts of the system.
+5. **Environment details**: There are no environment-specific requirements mentioned.
+
+Based on this analysis, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",bef6bff2e0879824,llama3.1:8b,0,2026-06-17T09:43:37.358026,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1548,Document the configuration of the JobRepository,0,1,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The issue description does not mention any steps to reproduce the problem or how to verify the documentation of the JobRepository configuration.
+
+2. **Expected vs actual behaviour**: While the issue mentions that there should be documentation for the configuration of the JobRepository, it doesn't explicitly state what the expected behavior is in terms of the content and format of this documentation compared to the current situation (which presumably lacks adequate documentation).
+
+3. **Acceptance criteria**: The description does not specify clear acceptance criteria for what constitutes ""adequate"" or ""correct"" documentation of the configuration.
+
+4. **Affected components**: Although it mentions a specific feature (XD-2172) and its impact on the JobRepository, there's no explicit mention of other affected components that might need to be considered in documenting this configuration.
+
+5. **Environment details**: There are no environment-specific requirements or considerations mentioned for documenting the JobRepository configuration.
+
+Given these observations, it appears that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and possibly a clearer definition of affected components and environment details.
+
+Final Answer: Yes",cd4c6f00a3f1baa4,llama3.1:8b,0,2026-06-17T09:43:40.712172,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1672,Add Basic Auth support,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that ""This functionality is provided in Spring Boot 1.1.x"", which implies that reproducing the issue involves checking if the current version of Spring Boot supports Basic Auth, and then attempting to add the spring boot security starter dependency to the project.
+2. **Expected vs actual behaviour**: The description states that the expected behavior is for the user to be challenged to provide a username and password when making a request, which implies that the actual behavior (i.e., not being challenged) is currently observed.
+3. **Acceptance criteria**: While there are no explicit acceptance criteria mentioned in the description, we can infer some from the text:
+	* The functionality should work as expected when the `server.basic.enabled` property is set to `true`.
+	* The default value of this property should be `false` in `application.yml`.
+4. **Affected components**: The issue mentions that the functionality will be controlled using a Spring Boot property, which implies that the affected component is likely the application's configuration or settings.
+5. **Environment details**: While not explicitly mentioned, we can infer that the environment is likely a development or testing environment where the Spring Boot project is being worked on",9b1a324e0b42e22c,llama3.1:8b,0,2026-06-17T09:43:44.250062,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1002,Remove Reactor Stream processor from ref docs to spring-xd-modules,0,-1,"Let's analyze the given issue step by step:
+
+1. **Title**: ""Remove Reactor Stream processor from ref docs to spring-xd-modules"" - This title clearly indicates what needs to be done.
+2. **Description**: ""Not going to integrate with Reactor for stream processing."" - The description provides a reason why this change is needed, which is that the integration with Reactor will not happen.
+
+Now, let's check if it's missing any essential information:
+
+- **Steps to reproduce**: Not provided, but given the nature of the issue (removal from documentation), reproduction steps might be complex or unnecessary.
+- **Expected vs actual behaviour**: The description implies an expected change in integration plans, but it doesn't explicitly state what the ""actual"" current behavior is. However, this might not be necessary for a removal action.
+- **Acceptance criteria**: Not provided, which could make it difficult to verify if the task was completed correctly.
+- **Affected components**: The description mentions ref docs and spring-xd-modules, so there's some indication of affected components.
+- **Environment details**: Not explicitly mentioned, but given the context, it might be assumed that this is related to a specific version or environment of Spring XD.
+
+Given these points, while the issue",0a3067a3f90aaa62,llama3.1:8b,0,2026-06-17T09:43:47.737909,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0927,Add support to deploy stream in a single container,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a specific scenario (""deploy a stream in the same container"") and also provides some context about the desired outcome (""all modules are colocated within the container""). However, it doesn't explicitly provide steps to reproduce the current behavior or the expected behavior.
+2. **Expected vs actual behaviour**: The issue statement describes the desired behavior (deploying a stream in a single container) but does not explicitly mention the actual behavior that is causing the problem.
+3. **Acceptance criteria**: While the description mentions some requirements, such as ""all modules are colocated within the container"", it's not clear what specific acceptance criteria would be used to determine if this feature is implemented correctly.
+4. **Affected components**: The issue statement doesn't explicitly mention which components or systems would be affected by this change.
+5. **Environment details**: There is no information about the environment in which this issue occurs.
+
+Based on these observations, I conclude that the issue is missing essential information such as steps to reproduce and acceptance criteria.
+
+Final Answer: Yes",373551a4d55e6a8b,llama3.1:8b,0,2026-06-17T09:43:50.860765,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0336,[Int Tests] Enhance test coverage for Lattice SPI,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions ""continuously evaluate functionalities via CI pipeline"", but it doesn't provide specific steps on how to reproduce the current state of integration test coverage or what exactly needs to be tested.
+2. **Expected vs actual behaviour**: The description states that the goal is to enhance integration test coverage, but it doesn't specify what the expected behavior should be (e.g., what percentage of code should be covered) or what the actual behavior is currently.
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned in the description. What does ""enhanced"" mean? Are there specific metrics or thresholds that need to be met?
+4. **Affected components**: The issue mentions Lattice SPI, but it's not clear which other components might be affected by this change.
+5. **Environment details**: There is no mention of any specific environment requirements (e.g., CI pipeline setup) that are relevant to this issue.
+
+Based on the analysis, I conclude that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and affected components.
+
+Final Answer: Yes",a1f12acda1215525,llama3.1:8b,0,2026-06-17T09:43:54.161342,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2604,JobPlugin - Use containsKey when checking for Parameters,0,1,"Let's analyze the given issue step by step:
+
+1. **Title**: The title is clear and concise, indicating a specific problem with a particular component (""JobPlugin"").
+2. **Description**: The description provides a brief explanation of what needs to be changed or added (""Use containsKey when checking for Parameters""). It also mentions adding tests.
+3. **Reproduction Steps**: There are no explicit reproduction steps provided in the description.
+4. **Expected vs Actual Behaviour**: While it's not explicitly stated, the issue seems to imply that there is a problem with how parameters are being checked, suggesting an expected behavior (using containsKey) and an actual behavior (not using containsKey).
+5. **Acceptance Criteria**: There are no clear acceptance criteria specified.
+6. **Affected Components**: The affected component is mentioned (""JobPlugin"").
+7. **Environment Details**: No specific environment details are provided.
+
+Based on the analysis, the issue seems to be missing essential information such as reproduction steps and acceptance criteria. However, it does provide a clear description of the problem and mentions adding tests, which could imply some understanding of the expected behavior.
+
+**Final Answer: Yes**",e275c2fe22156767,llama3.1:8b,0,2026-06-17T09:43:57.424099,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1900,Enable FtpHdfsTest,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a specific GitHub pull request (#1005) and some changes required to run the test on EC2, but it doesn't explicitly state how to reproduce the issue.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be after enabling FtpHdfsTest or what the current actual behavior is.
+3. **Acceptance criteria**: The description mentions some changes required to run the test, but it doesn't specify what acceptance criteria would need to be met for the feature to be considered complete.
+4. **Affected components**: The issue mentions setting up an FTP server on EC2 with appropriate security, which implies that there are specific components or systems affected by this change.
+5. **Environment details**: The description mentions running the test on EC2, which provides some context about the environment.
+
+Based on these observations:
+
+* Steps to reproduce: Missing (not explicitly stated)
+* Expected vs actual behaviour: Missing (no clear statement of expected behavior)
+* Acceptance criteria: Missing (no specific criteria mentioned)
+* Affected components: Present (FTP server on EC2 with appropriate security)
+* Environment details: Present (running the test on EC2",224042173200a7fa,llama3.1:8b,0,2026-06-17T09:44:00.837746,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0514,Add PHD HDFS as s-c-s module,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions ""investigate the right approach"" and ""decide better handling"", but it doesn't provide concrete steps to reproduce the issue or a specific scenario to test.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be, only that the developer wants to investigate and decide on a better handling of HDFS dependencies.
+3. **Acceptance criteria**: The description mentions ""so I can decide better handling"", but it doesn't provide specific acceptance criteria for what constitutes ""better handling"".
+4. **Affected components**: The issue mentions ""s-c-s module"" and ""HDFS dependencies"", which suggests that the affected components are related to storage and file systems, but it's not explicitly stated.
+5. **Environment details**: There is no mention of any specific environment or configuration requirements.
+
+Based on this analysis, I would conclude that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and affected components.
+
+Final Answer: Yes",3fed99f2451bd53c,llama3.1:8b,0,2026-06-17T09:44:04.009346,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1536,CompositeModuleDefinition should contain more than List<ModuleDefinition>,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description does not mention any specific steps to reproduce the issue or scenario.
+2. **Expected vs actual behaviour**: The description mentions that CMD should contain more information than just name and type, but it doesn't explicitly state what the expected behavior is in terms of how this additional information will be used or displayed.
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned in the description to determine when the issue is resolved.
+4. **Affected components**: The description mentions ""CompositeModuleDefinition"", which implies that this component is affected, but it's not explicitly stated what other components might be impacted by this change.
+5. **Environment details**: There is no mention of any specific environment or configuration requirements.
+
+Based on these observations, I would conclude that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and affected components.
+
+Final Answer: Yes",cd883656a698d7f2,llama3.1:8b,0,2026-06-17T09:44:06.951519,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2545,Provide a clean way to get a reference to the MessageBus running in SingleNodeApplication,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides context and explains the problem, but it doesn't explicitly state how to reproduce the issue. However, based on the description, we can infer that reproducing the issue involves creating a stream testing scenario that depends on sending and receiving payloads via named channels.
+2. **Expected vs actual behavior**: The description mentions that getting a deployed module instance is expensive, implying that there's an expected improvement in performance or efficiency. However, it doesn't explicitly state what the expected behavior should be (e.g., faster access to the MessageBus).
+3. **Acceptance criteria**: There are no explicit acceptance criteria mentioned.
+4. **Affected components**: The issue mentions ""SingleNodeApplication"" and ""MessageBus"", which suggests that these components are affected.
+5. **Environment details**: The description doesn't provide any specific environment details, but it implies that the issue is related to a testing scenario.
+
+Based on this analysis, I would say that the issue is missing some essential information, such as explicit steps to reproduce and acceptance criteria. However, it does provide context and affected components, which are useful for understanding the problem.
+
+Final Answer: Yes",a4e95458d2e2a55e,llama3.1:8b,0,2026-06-17T09:44:10.283628,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3424,Final review of REST API structure document for streams,0,1,"Let's analyze the given issue step by step:
+
+1. **Steps to reproduce**: The issue description does not mention any specific steps to reproduce or how to verify the problem.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be for the REST API structure document, nor is there a description of the actual observed behavior.
+3. **Acceptance criteria**: Although the issue mentions ""closure on open discussion points"", it does not provide any specific acceptance criteria that would indicate whether the requirements have been met.
+4. **Affected components**: The issue mentions the REST API and its structure document, but it is unclear which specific components or modules are affected by this problem.
+5. **Environment details**: There is no mention of the environment in which this issue occurs.
+
+Based on these observations, I conclude that the given issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and environment details.
+
+Final Answer: Yes",87458fb3e8a31830,llama3.1:8b,0,2026-06-17T09:44:13.127210,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2913,Change default admin port from 8080,0,-1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a conflict with an ""out of the box"" hadoop installation that uses 8080 as the 'map reduce shuffle port', but it doesn't explicitly state how to reproduce this issue (e.g., what specific actions to take). However, we can infer that reproducing the issue involves setting up a hadoop installation and trying to access the admin interface on port 8080.
+2. **Expected vs actual behaviour**: The description clearly states the expected behavior (change default admin port from 8080) and implies the actual behavior is a conflict with an existing hadoop installation.
+3. **Acceptance criteria**: While not explicitly stated, we can infer that changing the default admin port to 8088 would be considered acceptable if it resolves the conflict with the hadoop installation.
+4. **Affected components**: The description mentions ""hadoop"" and ""admin interface"", which implies that these are affected components.
+5. **Environment details**: Although not explicitly stated, we can infer that this issue is related to a specific environment (e.g., a hadoop cluster) and possibly a specific configuration.
+
+Considering the above points, I would say that the issue is missing explicit steps to",66cdb03f19531bf3,llama3.1:8b,0,2026-06-17T09:44:16.549680,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2866,Find runtime modules by type and/or name,0,1,"Let's analyze the issue step-by-step:
+
+1. **Steps to reproduce**: The description mentions ""We need a way to find..."", but it doesn't specify how to trigger this functionality or what specific actions should be taken to reproduce the desired behavior.
+2. **Expected vs actual behaviour**: The description states that we need to find runtime module info by type and/or name, which implies an expected behavior. However, there is no mention of the actual behavior (i.e., what happens currently).
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned in the description.
+4. **Affected components**: The issue doesn't specify which components or modules will be affected by this new functionality.
+5. **Environment details**: There is no information about the environment where this feature should work (e.g., specific versions of software, hardware requirements).
+
+Based on these observations, I conclude that the issue is missing essential information, specifically steps to reproduce and acceptance criteria.
+
+Final Answer: Yes",6ac4a847b9281341,llama3.1:8b,0,2026-06-17T09:44:19.436684,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1470,User wants to package and deploy an XD application,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions installing a boot uberjar, but it doesn't specify how to do this or what specific steps are required for reproduction.
+2. **Expected vs actual behaviour**: There is no clear statement of expected behavior, only a mention of ""deployable resources defined in an XD environment"", which implies some kind of export and import functionality.
+3. **Acceptance criteria**: The description mentions the ability to export and import all deployable resources, but it doesn't specify what constitutes ""all deployable resources"" or how this process should work.
+4. **Affected components**: The issue mentions custom modules, stream definitions, job definitions, and possibly specific configuration, which implies that multiple components are affected.
+5. **Environment details**: There is no mention of the environment in which this feature will be deployed.
+
+Based on these observations, I conclude that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and environment details.
+
+Final Answer: Yes",3f7c333dffa9de93,llama3.1:8b,0,2026-06-17T09:44:22.431457,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0697,Create a spark standalone cluster on CI to run spark streaming tests,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The issue description mentions setting up a Spark standalone cluster on the CI environment, but it doesn't provide specific steps or instructions on how to do this.
+2. **Expected vs actual behaviour**: The issue description states that we need to set up a Spark standalone cluster so that Spark streaming tests can be run on it along with local mode. However, it doesn't explicitly state what the expected behavior is (e.g., what should happen when the tests are run).
+3. **Acceptance criteria**: There is no mention of specific acceptance criteria for this issue.
+4. **Affected components**: The issue mentions Spark and CI environment, but it's not clear which specific components or systems will be affected by this change.
+5. **Environment details**: The issue mentions the CI environment, but it doesn't provide any additional information about the environment (e.g., what version of Spark is being used, what are the system requirements).
+
+Based on these observations, I would conclude that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, affected components, and environment details.
+
+Final Answer: Yes",9416ce46f29489df,llama3.1:8b,0,2026-06-17T09:44:25.739636,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0518,Port Redis counter as s-c-s sink,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating that it's about adapting Redis for a specific use case.
+2. **Description**: The description provides some context about who wants to adapt Redis (s-c-s developer) and what they want to achieve (build streaming pipes using s-c-s modules with simple counters). However, it doesn't explicitly state the expected behavior or acceptance criteria.
+
+Missing information:
+
+* **Expected vs Actual Behaviour**: Not provided.
+* **Acceptance Criteria**: Not explicitly stated.
+* **Steps to Reproduce**: Not given.
+* **Affected Components**: Not mentioned.
+* **Environment Details**: Not specified.
+
+However, I notice that the description mentions ""adapt redis from XD to s-c-s"", which implies a specific transformation or change is required. This might be considered as part of the expected behavior or acceptance criteria, but it's still not explicitly stated.
+
+Considering these points, I would say that the issue is missing essential information such as expected vs actual behaviour and acceptance criteria.
+
+Final Answer: Yes",a5debec9aeb24979,llama3.1:8b,0,2026-06-17T09:44:28.893938,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1072,Large number of required options in jdbc sink definition,0,-1,"To determine whether this issue is INCOMPLETE, let's analyze the given information:
+
+1. **Title**: ""Large number of required options in jdbc sink definition"" - This title clearly indicates what the problem is.
+2. **Description**: The description provides a detailed scenario where the user has to add specific options to make the stream creation work in their test environment. It also mentions exceptions and failed deploy, which gives insight into the expected behavior vs actual behavior.
+
+Now, let's check for missing essential information:
+
+- **Steps to reproduce**: While not explicitly stated as ""steps to reproduce,"" the description provides a clear scenario that can be followed to replicate the issue.
+  
+- **Expected vs. Actual behaviour**: The description clearly states what is expected (the stream creation should work without needing all these options) and what actually happens (exceptions, failed deploy).
+
+- **Acceptance criteria**: Although not explicitly listed as ""acceptance criteria,"" the description implies that the system should allow for a simpler definition of streams in certain configurations.
+
+- **Affected components**: The issue is related to Spring XD for PivotalCF, which indicates the affected component is likely the jdbc sink or its configuration within this environment.
+
+- **Environment details**: The description mentions specific details about the test environment (Piv",955f66da51019ca8,llama3.1:8b,0,2026-06-17T09:44:32.435189,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1097,Temp files for stream create not being cleaned,0,-1,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description provides a detailed scenario of how the issue occurs during testing for Spring XD on PivotalCF. It mentions creating, deploying, using, undeploying, and destroying streams, which leads to the accumulation of temporary directories in the xd-admin VM's directory. This is a clear indication of steps to reproduce the issue.
+
+2. **Expected vs actual behavior**: The description clearly states what happens (the system hits the inode limit due to accumulated temp files) and what is expected (temp files should be cleaned up). It also mentions the error that occurs when the inode limit is reached, which further clarifies the expected vs actual behavior.
+
+3. **Acceptance criteria**: While not explicitly stated as ""acceptance criteria,"" the description implies a certain level of expectation for how the system should behave under these conditions (i.e., it should clean up temp files). However, without explicit acceptance criteria, we might consider this aspect incomplete in a strict sense.
+
+4. **Affected components**: The issue is specifically related to Spring XD on PivotalCF and mentions directories within the xd-admin VM's directory. This implies that the affected component is likely related",dd5388b015ea68e5,llama3.1:8b,0,2026-06-17T09:44:35.879740,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2832,The HDFS Sink should support compressing files as they are copied,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions ""Get a java.io.File and copy it into HDFS"", which provides a clear reproduction path.
+2. **Expected vs actual behaviour**: Although not explicitly stated, we can infer that the expected behavior is for the file to be compressed during copying, whereas the current behavior (if any) is not mentioned.
+3. **Acceptance criteria**: The description mentions specific compression formats that should be supported initially (bzip2 and LZO), which provides a clear acceptance criterion.
+4. **Affected components**: Although not explicitly stated, we can infer that the affected component is the HDFS Sink.
+5. **Environment details**: There are no specific environment details mentioned, but given the context of Hadoop and HDFS, it's likely that this issue applies to a specific environment (e.g., a Hadoop cluster).
+
+Considering these points, I would say that the issue is complete, as it provides essential information such as steps to reproduce, expected behavior, acceptance criteria, affected components, and some environment details.
+
+Final Answer: No",b68d820390dbe56e,llama3.1:8b,0,2026-06-17T09:44:39.138044,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1088,HDFS StoreMessageHandlers are not very resilient,0,-1,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description mentions specific scenarios where the problem occurs (""if the underlying HDFS stream throws a RemoteException""), but it doesn't explicitly state how to reproduce these conditions in a controlled environment. However, given that the scenario involves a specific error condition (RemoteException) and a component (hdfs-outbound-channel-adapter), one can infer steps to reproduce might involve simulating this error condition.
+
+2. **Expected vs actual behaviour**: The description clearly states what is expected (""The MessageHandler could potentially try to close and re-open the stream or trigger a rollover strategy to occur"") and what actually happens (""Subsequent writes will always fail""). This indicates that the issue has been described in terms of its impact on system behavior.
+
+3. **Acceptance criteria**: While not explicitly stated, one can infer acceptance criteria from the description. For example, ""The MessageHandler should be able to recover from a RemoteException by closing and re-opening the stream or triggering a rollover strategy.""
+
+4. **Affected components**: The issue specifically mentions the ""hdfs-outbound-channel-adapter"" from the ""spring-xd-hadoop module"", which clearly identifies the affected component.
+
+5",1849e52b077dba45,llama3.1:8b,0,2026-06-17T09:44:42.560887,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0993,XD on Lattice POC,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description does not mention any specific steps to reproduce the issue or scenario.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be, nor is there a description of the actual behavior that is observed.
+3. **Acceptance criteria**: While the description mentions some high-level goals (e.g., ""more generally applicable than Lattice""), it does not provide specific acceptance criteria for what constitutes success or completion of this task.
+4. **Affected components**: The issue mentions ""Receptor API"" as one implementation option, but it is unclear which other components are affected by this change.
+5. **Environment details**: There is no mention of the environment in which this feature will be deployed.
+
+Based on these observations, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",326bbb4bf97791a8,llama3.1:8b,0,2026-06-17T09:44:45.357375,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3212,Parsing stream definition with parameter containing single quotes not working,0,-1,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step.
+
+1. **Title**: The title ""Parsing stream definition with parameter containing single quotes not working"" clearly indicates what the problem is.
+2. **Description**: The description provides a detailed scenario of how the issue occurs, including:
+	* A specific example from a documented gemfire-cq source (with a link to the source).
+	* Two attempts at creating a stream that fail due to different reasons related to single quotes in parameters.
+	* An error message indicating a 400 Bad Request and an exception type.
+
+However, upon closer inspection, I notice that while the description is detailed about the problem, it doesn't explicitly state:
+	* Expected behavior (what should happen when creating a stream with such parameters).
+	* Steps to reproduce the issue in more general terms, not just specific examples.
+3. **Steps to Reproduce**: While there are steps implied by the example given, they are very specific and might not be easily reproducible without access to the exact setup described (e.g., the gemfire-cq source). A more generic set of steps would be beneficial for clarity.
+
+4. **Expected vs Actual Behaviour**: The description implies that actual behavior is different from expected",abf9ebcee305604a,llama3.1:8b,0,2026-06-17T09:44:48.763914,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0131,Support partitioning for Kafka even if count == 1,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title clearly indicates what the issue is about: Support partitioning for Kafka even if count == 1.
+2. **Description**: The description provides some context and explains why this feature is desired. It mentions that it will allow taking advantage of native Kafka partitioning and message ordering support.
+
+However, upon closer inspection, I notice that:
+
+* There are no specific steps to reproduce the issue or a scenario where the current behavior fails.
+* There is no clear statement of expected vs actual behavior.
+* The description does not provide any acceptance criteria for this feature.
+* Affected components (e.g., Kafka bus, downstream module) are mentioned, but it's unclear what exactly needs to be modified or updated.
+* Environment details (e.g., specific versions of Kafka, operating system) are missing.
+
+Considering these points, I conclude that the issue is **INCOMPLETE** because it lacks essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and environment details.
+
+Final Answer: Yes",73b0ba74e7987de2,llama3.1:8b,0,2026-06-17T09:44:51.896971,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2806,User should be able to view the list of all the job definitions,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that ""/jobs"" provides the list of job definitions, but it doesn't specify how to trigger this endpoint or what specific actions to take to reproduce the desired behavior.
+2. **Expected vs actual behaviour**: The description mentions the expected outcome (a table view of job definitions), but it's not clear if there are any specific requirements for the layout, data displayed, or error handling.
+3. **Acceptance criteria**: While the description provides some context about the UI implementation and the REST layer, it doesn't explicitly state what constitutes ""acceptance"" for this feature. Are there specific metrics or tests that need to be met?
+4. **Affected components**: The description mentions the JobsController and the ""/jobs"" endpoint, which suggests that these are affected components.
+5. **Environment details**: There is no mention of any specific environment requirements, such as database schema changes or external dependencies.
+
+Based on this analysis, I would say that the issue is missing essential information about steps to reproduce, expected vs actual behavior, and acceptance criteria.
+
+Final Answer: Yes",9edc771424270d25,llama3.1:8b,0,2026-06-17T09:44:55.161780,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3281,Create proper test coverage for Controllers,1,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The issue description does not mention any specific steps or scenarios that would help reproduce the problem.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be, nor is there a description of the current (actual) behavior.
+3. **Acceptance criteria**: While the issue mentions ""proper test coverage"", it does not specify what constitutes ""proper"" in this context, leaving room for interpretation.
+4. **Affected components**: The issue specifically mentions Controllers, which indicates that at least one affected component is known.
+5. **Environment details**: There are no specific environment details mentioned.
+
+Based on the analysis, I conclude that the issue is missing essential information such as steps to reproduce and expected vs actual behavior. While it does mention a specific component (Controllers) and has some vague notion of what needs to be done (""proper test coverage""), it lacks clarity and specificity.
+
+Final Answer: Yes",782bc0e5fc58d68f,llama3.1:8b,0,2026-06-17T09:44:58.110204,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0114,Spring flo issue with unexpected char,0,0,"Let's analyze the given issue step by step:
+
+1. **Title**: The title clearly indicates that there is an issue with Spring Flo and unexpected characters.
+2. **Description**: The description mentions a specific scenario where using an asterisk (*) while creating a stream in Flo results in an error. It also references an attached image, which might provide additional context or evidence of the problem.
+3. **Missing Information**:
+   - **Steps to Reproduce**: While the description provides a clear scenario, it's not explicitly stated as steps to reproduce. However, based on the description, one can infer how to reproduce the issue.
+   - **Expected vs Actual Behaviour**: The description mentions an ""error,"" but it doesn't specify what the expected behavior should be or why using an asterisk is unexpected in this context.
+   - **Acceptance Criteria**: There's no mention of specific criteria that would indicate whether the fix for this issue has been successful.
+   - **Affected Components**: It's not explicitly stated which components are affected by this issue, but based on the title and description, it seems to be related to Spring Flo.
+   - **Environment Details**: The environment in which this issue occurs is not specified.
+
+Given these observations:
+
+- While the description provides a clear scenario",34d5e20529ab6010,llama3.1:8b,0,2026-06-17T09:45:01.564313,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2819,Create OOTB batch job for export and processing multiple files from HDFS to MongoDB,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that an ItemReader will read multiple files from HDFS and an ItemWriter will write data to a MongoDB collection. However, it does not specify how to trigger this process or what specific steps are required to reproduce the issue.
+2. **Expected vs actual behaviour**: The description mentions that the ItemProcessor is a no-op groovy script, which implies that there should be no processing of the data. However, it does not explicitly state what the expected behavior is in terms of data transformation or processing.
+3. **Acceptance criteria**: There are some hints about acceptance criteria, such as documenting the sample job and developing a TupleToDBObject converter. However, these are not clearly stated as acceptance criteria, and there may be other requirements that are missing.
+4. **Affected components**: The description mentions HDFS, MongoDB, ItemReader, ItemProcessor, and ItemWriter, which suggests that multiple components are affected by this issue.
+5. **Environment details**: There is no explicit mention of the environment in which this batch job will run.
+
+Based on these observations, I would conclude that the issue is missing essential information about steps to reproduce, expected vs actual behavior, and acceptance criteria. Therefore",d97f72bdf0eb7233,llama3.1:8b,0,2026-06-17T09:45:05.066497,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3583,Creating a tap throws an exception,0,0,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step:
+
+1. **Steps to reproduce**: The description mentions two scenarios where the exception occurs: in local mode and when using Redis. However, it does not explicitly state how to reproduce these scenarios or what specific actions lead to the error.
+
+2. **Expected vs actual behaviour**: The issue clearly states that creating a tap throws an exception, which is the actual behavior. It also mentions the expected behavior implicitly by stating ""But also fails when using redis,"" suggesting there's an expectation for it not to fail in this mode. However, the description lacks explicit clarity on what the expected outcome should be.
+
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned that would define when the issue is considered resolved or if the behavior meets the requirements.
+
+4. **Affected components**: The mention of ""redisConnectionFactory"" and the context suggest that this issue might affect components related to Redis configuration, but it's not explicitly stated which components are affected.
+
+5. **Environment details**: While there's a mention of local mode and using Redis, more detailed environment specifics (e.g., version numbers, configurations) would be beneficial for understanding the scope of the issue.
+
+Given these observations:
+
+- The steps",a7c93a6546ef0ab2,llama3.1:8b,0,2026-06-17T09:45:08.618628,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1320,Upgrade CI Acceptance AMI to HVM,0,-1,"Let's analyze the issue step-by-step:
+
+1. **Title**: The title clearly indicates what needs to be done: ""Upgrade CI Acceptance AMI to HVM"". This is a clear and concise statement of the problem.
+2. **Description**: The description provides additional context:
+	* The current paravirtual AMI used for CI tests needs to be replaced with a HVM-based AMI.
+	* Paravirtual is being phased out by Amazon, which implies that there's a business or technical reason behind this change.
+	* The new AMI will allow the use of VPC and placement groups in the future.
+
+While the description provides some context, it doesn't explicitly mention:
+	+ Steps to reproduce (if any)
+	+ Expected vs actual behavior
+	+ Acceptance criteria (what constitutes a successful upgrade?)
+	+ Affected components (which parts of the system will be impacted by this change?)
+	+ Environment details (e.g., which CI tests will be affected, and how will they be updated?)
+
+However, it does mention the reason behind the change (paravirtual being phased out) and some future benefits (using VPC and placement groups).
+
+3. **Reasoning**: Based on the analysis above, I would say that this",19a1532b48a7685d,llama3.1:8b,0,2026-06-17T09:45:12.086923,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3683,Sonar build is failing,0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: Sonar build is failing - This title clearly indicates a specific problem.
+2. **Description**: The description provides a link to a specific build failure report on the Springsource website, which includes a stacktrace with error messages and line numbers. While this might be useful for debugging, it's not essential information for understanding the issue.
+3. **Reproduction steps**: Although not explicitly stated, we can infer that reproducing the issue involves checking out the code from the repository linked in the description, running the Sonar build, and observing the failure.
+
+Now, let's evaluate the completeness of the issue:
+
+* **Steps to reproduce**: While not explicitly written down, it's possible to infer the reproduction steps from the description.
+* **Expected vs actual behaviour**: The expected behavior is that the Sonar build should succeed, while the actual behavior is that it fails with a specific error message.
+* **Acceptance criteria**: Not explicitly stated. What does it mean for the Sonar build to ""succeed""? Are there any specific metrics or conditions that need to be met?
+* **Affected components**: The description mentions a specific class (org.sonar.api.Plugin) and a few Java files, but we don",235c036fe97628b8,llama3.1:8b,0,2026-06-17T09:45:15.570061,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0297,Port Mail as s-c-s sink,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating a specific requirement.
+2. **Description**: The description provides context about the request, including the motivation behind it (""so I can use it as sink to build streaming pipeline""). However, it doesn't explicitly state what needs to be done or changed.
+3. **Missing information**:
+	* **Steps to reproduce**: Not provided.
+	* **Expected vs actual behaviour**: The description mentions a desire to move a module from XD to s-c-s repo, but it's not clear what the expected outcome is.
+	* **Acceptance criteria**: Not specified.
+	* **Affected components**: It's mentioned that the module will be moved from XD to s-c-s repo, which implies affected components, but this is not explicitly stated.
+	* **Environment details**: Not provided.
+
+Based on the analysis, I conclude that the issue is missing essential information such as steps to reproduce, expected vs actual behaviour, acceptance criteria, and affected components. Therefore:
+
+Final Answer: Yes",45fee583b33a60d7,llama3.1:8b,0,2026-06-17T09:45:18.713894,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2837,User requires wiki page on how to use the XD EC2 Installer,0,1,"Let's analyze the given issue step by step:
+
+1. **Steps to reproduce**: The issue description does not mention any specific steps to reproduce or how to trigger the creation of the wiki page.
+2. **Expected vs actual behaviour**: There is no clear statement on what the expected behavior should be after creating the wiki page, such as improved user experience or reduced support requests.
+3. **Acceptance criteria**: The issue description does not provide any specific acceptance criteria for the wiki page, making it difficult to determine when the requirement is met.
+4. **Affected components**: Although the issue mentions a specific component (the XD EC2 Installer), it's not clear what other components might be affected by this change.
+5. **Environment details**: There are no environment-specific requirements mentioned in the description.
+
+Considering these points, I would conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",06dd6d153de0a627,llama3.1:8b,0,2026-06-17T09:45:21.459840,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0692,Document the new analytics tab features,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The issue description mentions ""refer to the analytics tab docs"", but it doesn't provide any specific steps on how to reproduce the problem or what actions to take.
+2. **Expected vs actual behaviour**: The issue description states that the user wants to understand how to use various widgets from the streaming pipeline, implying that there is a discrepancy between the expected and actual behavior of the analytics tab features.
+3. **Acceptance criteria**: While the issue mentions ""understand how to use various widgets"", it doesn't provide any specific acceptance criteria for what constitutes successful documentation or functionality.
+4. **Affected components**: The issue description mentions the analytics tab, but it's unclear which specific components (e.g., UI elements, APIs) are affected by this issue.
+5. **Environment details**: There is no mention of any specific environment or configuration requirements.
+
+Based on these observations, I conclude that the issue is missing essential information such as steps to reproduce and acceptance criteria.
+
+Final Answer: Yes",728851abc418bc31,llama3.1:8b,0,2026-06-17T09:45:24.439405,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1393,Workaround latest boot snapshot issue,0,1,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step.
+
+1. **Steps to reproduce**: The description mentions a workaround for an issue with the latest boot snapshot, but it does not explicitly state how to reproduce the original problem or the steps involved in implementing the workaround.
+2. **Expected vs actual behaviour**: Although the description implies that there is an issue with the latest boot snapshot, it does not clearly articulate what the expected behavior should be versus what the actual behavior is.
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned for this issue. What constitutes a successful resolution of this problem?
+4. **Affected components**: The description mentions ""spring-core"" and ""application.yml documents,"" which suggests that certain components or configurations might be affected, but it does not explicitly state what these components are.
+5. **Environment details**: There is no mention of specific environment requirements or constraints related to this issue.
+
+Given the lack of explicit steps to reproduce, clear articulation of expected vs actual behavior, acceptance criteria, and detailed information about affected components and environment, I conclude that the issue is missing essential information.
+
+Final Answer: Yes",cbf97dd4c1d8ee97,llama3.1:8b,0,2026-06-17T09:45:27.655117,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1213,Add test coverage for 'complex objects' as payload,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating what needs to be done.
+2. **Description**: The description provides context from a tester's perspective, explaining why test coverage for complex objects is needed.
+3. **Missing information**:
+	* **Steps to reproduce**: Not explicitly mentioned, but it can be inferred that the tester would need to create or use existing test cases with complex object payloads.
+	* **Expected vs actual behaviour**: The description mentions evaluating and documenting performance characteristics, implying a specific expected outcome (e.g., improved test coverage).
+	* **Acceptance criteria**: While not explicitly stated, we can infer some acceptance criteria, such as ""test coverage for complex objects is increased"" or ""performance characteristics are documented.""
+	* **Affected components**: Not mentioned, but likely involves the testing framework and possibly the application under test.
+	* **Environment details**: Not specified, which might be relevant depending on the specific requirements.
+
+Considering these points, I would say that the issue is missing some essential information, such as explicit steps to reproduce and acceptance criteria. However, it's not entirely clear-cut, as we can infer some of this information from the description.
+
+**Final Answer: Yes**",6fcf05fd01be99dc,llama3.1:8b,0,2026-06-17T09:45:31.133999,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2096,Create documentation section for the shell,0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description does not explicitly mention steps to reproduce the issue or how to test the new documentation section. However, since this is a request for creating documentation rather than fixing a bug, reproduction steps might be less critical here.
+
+2. **Expected vs actual behaviour**: There's no clear statement of what the expected behavior should be after implementing the documentation section. The description outlines what should be included in the documentation but doesn't specify how it will improve or change the user experience.
+
+3. **Acceptance criteria**: While there are some specific requirements mentioned (e.g., including discussion on basic commands, pointing to spring-shell ref docs), these could be considered part of the acceptance criteria. However, the description lacks a clear and comprehensive list of what constitutes ""acceptance"" for this task.
+
+4. **Affected components**: The issue is related to documentation, which might not directly affect specific code components but rather how users interact with them through documentation. This aspect is somewhat implicit in that it affects the user's understanding and interaction with the shell.
+
+5. **Environment details**: There are no explicit environment details mentioned (e.g., specific versions of software or hardware requirements).
+
+Given",e9fa7668de2d14a1,llama3.1:8b,0,2026-06-17T09:45:34.619766,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0695,Example hashtag-count MR job fails when running XD on YARN with PHD 3.0,0,-1,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step:
+
+1. **Steps to reproduce**: The description provides a detailed scenario for reproducing the issue: ""Running XD on YARN on PHD 3.0 Ambari install."" This includes specific environments (YARN, PHD 3.0, Ambari) and conditions (uploading and submitting a custom job).
+
+2. **Expected vs actual behavior**: The description clearly states what is expected to happen (""Same example jar works fine when submitted from XD cluster"") versus what actually happens (""fails with the following error"").
+
+3. **Acceptance criteria**: While not explicitly stated as ""acceptance criteria,"" the issue implies that the system should be able to run a custom job successfully under certain conditions, which can be considered an implicit acceptance criterion.
+
+4. **Affected components**: The description mentions specific technologies and systems involved (XD on YARN with PHD 3.0), indicating that these are the affected components.
+
+5. **Environment details**: The issue provides detailed environment information, including software versions (PHD 3.0) and configurations (Ambari install).
+
+Given this analysis, I conclude that the issue is not missing any essential information required to understand",bca7f6b6efcf3e5a,llama3.1:8b,0,2026-06-17T09:45:38.313852,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1859,Investigate deployed module context close upon container shutdown,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a specific scenario: ""Upon the container shutdown"", which implies that reproduction steps are provided.
+2. **Expected vs actual behaviour**: Although not explicitly stated, it can be inferred from the description that the expected behavior is for the contexts to remain open until the undeployment process is complete, whereas the actual behavior is for them to close prematurely.
+3. **Acceptance criteria**: While not explicitly mentioned, we can infer some acceptance criteria:
+	* The deployed modules' contexts should remain open during container shutdown.
+	* The `Stream/JobModuleWatcher` should have sufficient time to perform undeployment before the context is closed.
+4. **Affected components**: The description mentions specific components: ""deployed modules"", ""container"", and ""`Stream/JobModuleWatcher`"".
+5. **Environment details**: Although not explicitly mentioned, we can infer that this issue is related to a containerized environment (e.g., Docker).
+
+Considering these points, the issue appears to be complete, as it provides essential information such as steps to reproduce, expected vs actual behavior, affected components, and some acceptance criteria.
+
+Final Answer: No",84137fb54225fd84,llama3.1:8b,0,2026-06-17T09:45:41.744971,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2486,Add XD deployment for YARN,0,-1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a specific command-line argument `./xd-yarn-deploy` with some options (`--zipFile`, `--config`). This implies that reproducing the issue involves running this command, so we have reproduction steps.
+2. **Expected vs actual behaviour**: Although not explicitly stated, it's clear that the expected outcome is to successfully deploy XD to YARN using the specified command-line arguments and configuration files. The description mentions testing on Apache 2.2 distribution, which implies there's an expectation of success in this environment.
+3. **Acceptance criteria**: While not explicitly listed as acceptance criteria, we can infer some from the description:
+	* The deployment should work with YARN-specific code based on Janne's prototyping.
+	* The deployment should be possible to override using command-line args or env variables.
+4. **Affected components**: Although not explicitly mentioned, it's likely that the affected components are related to XD (e.g., XD client, AppMaster implementations, startup config files).
+5. **Environment details**: The description mentions testing on Apache 2.2 distribution, which provides some context about the environment.
+
+Considering these points, I believe the issue is complete",b47d8b382726d4fe,llama3.1:8b,0,2026-06-17T09:45:45.238598,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1473,Document Kafka message bus,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The issue description mentions ""setup and configure"" but does not provide specific steps or scenarios for reproduction.
+2. **Expected vs actual behaviour**: The expected behavior is mentioned as referring to documentation in wiki, but there is no clear statement of what the actual behavior (i.e., the current problem) is.
+3. **Acceptance criteria**: There are no clear acceptance criteria specified, such as ""the user can successfully configure Kafka"" or ""the documentation is easily accessible"".
+4. **Affected components**: The issue mentions a specific component (Kafka message bus), but it's not clear which other components might be affected by this change.
+5. **Environment details**: There are no environment-specific details mentioned, such as the operating system, version of Kafka, or any relevant configuration settings.
+
+Based on these observations, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",cb1e5e2f2af34b07,llama3.1:8b,0,2026-06-17T09:45:48.105778,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1928,Module option validation not happening anymore,0,1,"Let's analyze the issue step by step:
+
+1. **Title**: ""Module option validation not happening anymore""
+	* This title is descriptive and indicates a specific problem.
+2. **Description**: ""It seems that no option validation (being Spring or jsr 303) is happening anymore at stream creation time.""
+	* The description provides more context about the issue, mentioning two possible frameworks (Spring and JSR 303) and the affected process (stream creation).
+3. **Missing information**:
+	* Steps to reproduce: Not provided.
+	* Expected vs actual behavior: The description mentions that ""no option validation"" is happening, but it's not clear what the expected behavior should be.
+	* Acceptance criteria: Not specified.
+	* Affected components: Mentioned as ""module options"", but it's unclear which specific components or modules are affected.
+	* Environment details: Not provided.
+
+Based on this analysis, I conclude that the issue is missing essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and environment details. Therefore:
+
+Final Answer: Yes",2fff6c76e64c76d5,llama3.1:8b,0,2026-06-17T09:45:51.173626,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2209,Validate existence of batch job at the admin side,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that ""we will only see a failure when the job is actually deployed into the container"", which implies that there are specific steps to reproduce the issue. However, these steps are not explicitly stated.
+2. **Expected vs actual behaviour**: The description explains what happens currently (failure during deployment) and what should happen instead (validation at the admin side). This provides a clear understanding of the expected vs actual behavior.
+3. **Acceptance criteria**: Although not explicitly stated, we can infer that the acceptance criteria might include:
+	* The system prevents creating a new batch job definition with an existing name in the repository.
+	* The validation occurs at the admin side, not during deployment.
+4. **Affected components**: The description mentions ""batch job repository"" and ""XD"", which implies that these are affected components.
+5. **Environment details**: There is no explicit mention of environment details, but it's likely that this issue is related to a specific environment (e.g., development, testing, production).
+
+Considering the above points, I would say that the issue is missing essential information, specifically:
+
+* Explicit steps to reproduce
+* More detailed acceptance criteria
+
+Therefore, my final answer is",e7328e97b8980843,llama3.1:8b,0,2026-06-17T09:45:54.637337,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2118,Stream-lib - analytics operators,0,1,"To determine whether the issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description does not mention any specific steps to reproduce the desired functionality or how to experiment with ""stream-lib"". This could be considered incomplete as it doesn't provide a clear path for reproduction.
+
+2. **Expected vs actual behaviour**: There is no explicit statement of what the expected behavior should be after implementing ""stream-lib"" in Spring XD's analytics feature-set. The description mentions enriching the feature-set but does not specify how or what changes are expected.
+
+3. **Acceptance criteria**: There is no mention of specific acceptance criteria that would define when the implementation is complete and meets the requirements. This could include metrics for performance, functionality, or user experience improvements.
+
+4. **Affected components**: The description mentions Spring XD's analytics feature-set but does not specify which components within this feature-set will be affected by implementing ""stream-lib"".
+
+5. **Environment details**: There are no specific environment details mentioned that would help in understanding the context of implementation, such as whether it should work on a local machine or in a cloud environment.
+
+Given these considerations, the issue seems to lack essential information for a clear and actionable requirement.
+
+Final Answer: Yes",90dd1b9040f283aa,llama3.1:8b,0,2026-06-17T09:45:58.101861,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1678,Preserve partition state on container restarts,0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating a specific requirement.
+2. **Description**: The description provides context and explains the problem, including the current behavior and the desired outcome.
+3. **Expected vs Actual Behaviour**: The description mentions the expected behavior (retaining data partitioning state) and the actual behavior (losing the partitioning strategy on restarts).
+4. **Reproduction Steps**: While not explicitly stated, it's implied that reproducing the issue involves restarting containers and observing the loss of partitioning state.
+5. **Acceptance Criteria**: Although not explicitly listed, we can infer some acceptance criteria:
+	* The data partitioning state is retained after container restarts.
+	* The partitioning strategy is preserved, allowing for continued writing based on the original strategy.
+6. **Affected Components**: The description mentions containers and their restarts, implying that the affected components are related to container management.
+7. **Environment Details**: While not explicitly stated, we can assume that the environment details include the containerization framework (e.g., Docker) and the specific configuration used.
+
+Considering these points, I conclude that the issue is **complete** in terms of essential information. It provides a clear description of the",4686a728b434d298,llama3.1:8b,0,2026-06-17T09:46:01.569786,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2005,Paging support for ModuleMetadata/Container repositories,0,1,"Let's analyze the given issue step by step:
+
+1. **Title**: The title is clear and concise, indicating that it's about adding paging support.
+2. **Description**: The description provides a brief explanation of what needs to be done: add paging support for specific accessor methods in ModuleMetadata/Container repositories.
+
+However, upon closer inspection, I notice that the issue lacks some essential information:
+
+* **Steps to reproduce**: There are no steps provided on how to test or verify the implementation of paging support.
+* **Expected vs actual behaviour**: The description doesn't specify what the expected behavior should be after implementing paging support. What exactly is supposed to change?
+* **Acceptance criteria**: There's no clear indication of what constitutes ""done"" for this feature. Are there specific requirements that need to be met?
+* **Affected components**: While it mentions ModuleMetadata/Container repositories, it doesn't specify which other components might be impacted by the implementation.
+* **Environment details**: The description doesn't provide any information about the environment in which this feature should work.
+
+Considering these missing pieces of essential information, I conclude that the issue is indeed INCOMPLETE.
+
+Final Answer: Yes",a8df77ffeed19b7d,llama3.1:8b,0,2026-06-17T09:46:04.835871,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0138,Upgrade to SHDP 2.2.1.GA,0,-1,"Let's analyze the issue step by step:
+
+* The title ""Upgrade to SHDP 2.2.1.GA"" is clear about what the issue is.
+* The description provides context and explains why the upgrade is desired, but it doesn't provide specific steps to reproduce or expected vs actual behavior.
+* However, the description does mention that using SHDP 2.3.0 would break backwards compatibility, which implies that there are certain requirements or constraints that need to be considered during the upgrade process.
+
+Upon closer inspection, I notice that the issue is missing some essential information:
+
+* Steps to reproduce: The description doesn't provide a clear set of steps to reproduce the issue or demonstrate the problem with the current version.
+* Expected vs actual behavior: While the description mentions the benefits of upgrading to SHDP 2.2.1.GA, it doesn't clearly state what the expected behavior is after the upgrade.
+* Acceptance criteria: The description doesn't provide any specific acceptance criteria for the upgrade, such as ""the system should be able to handle X number of concurrent users"" or ""the system should meet Y performance requirements"".
+* Affected components: While the description mentions SHDP, Boot, HDP, CDH, and Hive versions, it's",ee4c30d602684cb7,llama3.1:8b,0,2026-06-17T09:46:08.320866,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1267,Add in-memory based Aggregate Field Value Counters,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise.
+2. **Description**: The description provides a good overview of what the user wants to achieve.
+3. **Scope**: The scope is explicitly mentioned, which includes porting specs from a previous implementation, identifying gaps, and updating reference documentation.
+
+Now, let's check if any essential information is missing:
+
+* **Steps to reproduce**: Not provided, but it might not be necessary for this specific issue as it seems more like a design or planning discussion.
+* **Expected vs actual behaviour**: The description mentions the desired outcome (aggregation over field-value counters), but there's no explicit mention of expected vs actual behavior. However, this is somewhat implicit in the description.
+* **Acceptance criteria**: Not explicitly mentioned, but the scope provides some guidance on what needs to be done.
+* **Affected components**: Not explicitly mentioned, but it can be inferred that the affected component is likely a Redis-based system or a data ingestion pipeline.
+* **Environment details**: Not explicitly mentioned, but it's not crucial for this specific issue.
+
+Considering these points, I would say that the issue is missing some essential information, such as explicit steps to reproduce and acceptance criteria. However, the scope",10c94342943ae923,llama3.1:8b,0,2026-06-17T09:46:11.860537,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2220,Support Groovy bean definitions as XD extensions,0,1,"Let's analyze the given issue step by step:
+
+1. **Title**: The title is clear and concise, indicating that it's about modifying an existing feature to support Groovy bean definitions.
+2. **Description**: The description provides a brief explanation of what needs to be done: modify the PluginContextExtensionsInitializer to consume .groovy bean definitions in addition to XML.
+
+Now, let's check if the issue is missing any essential information:
+
+* **Steps to reproduce**: Not provided, but it might not be necessary for this specific issue.
+* **Expected vs actual behaviour**: The description mentions that Groovy bean definitions should be supported, which implies an expected behavior. However, there's no explicit mention of what happens currently (actual behavior).
+* **Acceptance criteria**: There are no clear acceptance criteria mentioned in the description.
+* **Affected components**: The issue mentions modifying a specific class (PluginContextExtensionsInitializer), so it's likely that this is the affected component.
+* **Environment details**: Not provided, but it might not be necessary for this specific issue.
+
+Based on the analysis, I would say that the issue is missing essential information about expected vs actual behavior and acceptance criteria. Therefore:
+
+Final Answer: Yes",38491cdd2796cc4e,llama3.1:8b,0,2026-06-17T09:46:15.052520,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0982,Harmonize poller configuration,0,0,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step.
+
+1. **Steps to reproduce**: The description mentions a GitHub conversation and specific pull requests, but it does not explicitly state how to reproduce the issue or what steps are required to observe the problem. However, this might be considered implicit in the context of the conversation.
+
+2. **Expected vs actual behavior**: The description implies that there is an inconsistency between the expected configuration (using PeriodicTriggerMixin) and the actual configuration found in various modules (using 'fixedDelay'). This suggests a clear understanding of what is expected versus what is observed, but it's somewhat implicit rather than explicitly stated.
+
+3. **Acceptance criteria**: There are no explicit acceptance criteria mentioned in the description. The issue seems to be about harmonizing poller configurations based on an analysis of existing code and pull requests, which implies certain expectations for how the configuration should look after the change, but these are not clearly articulated as acceptance criteria.
+
+4. **Affected components**: The description mentions specific modules (e.g., file.xml, jdbc.xml) that have inconsistent configurations, indicating that these are affected components.
+
+5. **Environment details**: There is no explicit mention of environment details such as operating system, version of Spring",0bc4ed7e3c028a96,llama3.1:8b,0,2026-06-17T09:46:18.444130,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3457,Retrieve information for an aggregate counter,0,1,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description mentions ""TODO"" and references another issue (XD-537), but does not provide clear steps on how to reproduce the problem or what specific actions should be taken.
+
+2. **Expected vs actual behaviour**: There's no explicit mention of expected behavior, making it difficult to understand what the desired outcome is supposed to be.
+
+3. **Acceptance criteria**: The description hints at refactoring and moving logic from one place to another but does not specify clear acceptance criteria for this task.
+
+4. **Affected components**: It mentions ""Service layer in analytics project"" and ""REST controllers,"" which indicates that these are affected components, but the description is more about refactoring than a specific issue with these components.
+
+5. **Environment details**: There's no mention of environment-specific requirements or constraints.
+
+Given this analysis, it appears that the issue lacks essential information such as clear steps to reproduce, expected behavior, and acceptance criteria, making it INCOMPLETE.
+
+Final Answer: Yes",0ae08d05b13207b1,llama3.1:8b,0,2026-06-17T09:46:21.525363,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0753,Spring XD admin fails to redeploy modules after Spring XD container successfully reconnectes to Zookeeper,0,0,"Let's analyze the given issue step by step:
+
+1. **Title**: The title clearly describes the problem.
+2. **Description**: The description provides a detailed explanation of the issue, including the environment setup and steps to reproduce it.
+3. **Steps to reproduce**: The steps are well-documented and include specific commands to set up the environment and trigger the error.
+4. **Expected vs actual behavior**: Although not explicitly stated as ""expected"" and ""actual,"" we can infer that the expected behavior is for modules to be redeployed after a container is removed from the cluster, while the actual behavior is that they are not redeployed.
+5. **Acceptance criteria**: While not explicitly mentioned, it's implied that the acceptance criteria would be that modules are correctly redeployed after a container is removed from the cluster.
+6. **Affected components**: The affected components are clearly identified as Spring XD admin and Zookeeper.
+7. **Environment details**: The environment setup is well-documented, including the versions of Spring XD and Zookeeper used.
+
+Considering these points, I would conclude that the issue is **complete** in terms of essential information required to understand and potentially resolve it.
+
+Final Answer: No",b7821643706b0b2d,llama3.1:8b,0,2026-06-17T09:46:25.188098,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1005,"Composite Modules should inherit """"xd.*"""" properties",0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title clearly states what the issue is about: ""Composite Modules should inherit """"xd.*"""" properties"". This gives a good idea of the problem.
+2. **Description**: The description explains that currently, properties are not inherited when modules are composed to a single application context. It also provides a link to a relevant wiki page for more information.
+3. **Reproduction steps**: Although there are no explicit reproduction steps in the description, the issue is related to a specific behavior of Spring XD (a framework), and it's likely that someone familiar with the framework can reproduce the issue by composing modules as described.
+4. **Expected vs actual behaviour**: The description clearly states what the expected behavior should be: properties should be inherited when modules are composed. This implies that the actual behavior is not meeting this expectation.
+5. **Acceptance criteria**: While there are no explicit acceptance criteria listed, it's likely that someone familiar with the framework can infer what would constitute a successful resolution of this issue (e.g., inheriting properties as expected).
+6. **Affected components**: Although not explicitly stated, it's clear that the affected component is Spring XD and its module composition mechanism.
+7. **Environment details**: The",b8ef801364bf36ce,llama3.1:8b,0,2026-06-17T09:46:28.762234,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0247,Move Kafka @Rule to a separate repo,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating that the goal is to move Kafka @Rule to a separate repository.
+2. **Description**: The description provides some context: it mentions the role of the developer (""s-c-d developer"") and the motivation for moving Kafka @Rule to a separate repo. However, it doesn't specify what exactly needs to be moved (e.g., code, configuration, or both).
+3. **Expected vs Actual Behaviour**: There is no clear statement of expected behavior after the move. What should happen to the test fixtures? Should they still be accessible from other projects?
+4. **Steps to Reproduce**: The description doesn't provide any steps to reproduce the issue or verify the solution.
+5. **Acceptance Criteria**: There are no acceptance criteria specified, which makes it difficult to determine when the requirement is met.
+6. **Affected Components**: It's not clear what components will be affected by this change (e.g., other projects that consume test fixtures).
+7. **Environment Details**: The description doesn't mention any specific environment details or constraints.
+
+Considering these points, I would say that the issue is missing essential information such as expected behavior, steps to reproduce, acceptance criteria,",85a33ee14edf0acc,llama3.1:8b,0,2026-06-17T09:46:32.290342,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2390,Create RPM for distribution,0,-1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a detailed list of steps to create an RPM for distribution, including package contents, install path, symlink, init.d scripts, and user/group settings.
+2. **Expected vs actual behaviour**: Although not explicitly stated as ""expected"" vs ""actual"", the description implies that the expected behavior is to successfully create an RPM with specific features (e.g., support for RHEL/CentOS 5 and 6, 32 and 64 bits, Java 1.6 and 1.7).
+3. **Acceptance criteria**: The description lists several acceptance criteria, including:
+	* Package SpringXD into an RPM
+	* Install path = /opt/pivotal/spring-xd-1.0.0.M5 with symlink /opt/pivotal/spring-xd -> current version
+	* Support RHEL/CentOS 5 and 6
+	* Support for 32 and 64 bits
+	* Support Java 1.6 and 1.7
+4. **Affected components**: The description mentions specific components, such as:
+	* SpringXD package
+	* init.d scripts
+	* user/group settings (springxd",8afab9813a306ff6,llama3.1:8b,0,2026-06-17T09:46:35.818007,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3476,Add Spring/Integration MBean Exporters to Module ApplicationContexts,1,1,"Let's analyze the given issue step by step:
+
+1. **Steps to reproduce**: The description does not mention any specific steps to reproduce the issue or scenario.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be after implementing the requested feature, nor is there a description of the current (actual) behavior.
+3. **Acceptance criteria**: While it mentions ""Global option?"" and ""Override for individual modules?"", these are questions rather than clear acceptance criteria that define when the requirement is met.
+4. **Affected components**: The issue mentions ""Module ApplicationContexts"", which implies some specific components, but it's not explicitly stated what components will be affected or how they will change with this feature.
+5. **Environment details**: There is no mention of any specific environment requirements or constraints.
+
+Given these observations, the issue lacks essential information such as steps to reproduce, expected vs actual behavior, clear acceptance criteria, and detailed component involvement. Therefore,
+
+Final Answer: Yes",f631abd15d9614cd,llama3.1:8b,0,2026-06-17T09:46:38.744052,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2808,Add documentation for gemfire cache-listener source,0,1,"To determine whether the given software issue is INCOMPLETE, I will analyze it step by step.
+
+1. **Steps to reproduce**: The issue description does not mention any steps to reproduce the problem or scenario where the documentation is needed.
+2. **Expected vs actual behaviour**: There's no clear statement of what the expected behavior should be after adding the documentation for the gemfire cache-listener source, nor is there a description of the current (actual) behavior that needs improvement.
+3. **Acceptance criteria**: The issue does not specify any acceptance criteria or conditions under which the task would be considered complete.
+4. **Affected components**: While it mentions a specific module (gemfire), it doesn't clearly state what components are affected by this documentation need, making it somewhat vague in terms of scope.
+5. **Environment details**: There's no mention of the environment where this documentation is needed or any specific requirements for the documentation itself.
+
+Given these observations, I conclude that the issue lacks essential information such as steps to reproduce, expected vs actual behavior, acceptance criteria, and affected components, making it incomplete.
+
+Final Answer: Yes",41801f709332e7cb,llama3.1:8b,0,2026-06-17T09:46:41.834994,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2171,Add a 'rank' expression to be used by the container matcher,0,-1,"To determine whether the given software issue is INCOMPLETE, I'll analyze it step by step.
+
+1. **Steps to reproduce**: The description provides a detailed explanation of how the 'rank' expression works in the context of HTCondor's resource assignment model. It includes examples and explanations of how the rank expression is evaluated into a number for every potential matching machine. This suggests that the steps to reproduce are implicit within the description, but not explicitly stated as separate steps.
+
+2. **Expected vs actual behaviour**: The description clearly outlines what the 'rank' expression does (ordering containers based on their evaluation into numbers) and how it differs from other expressions or behaviors in HTCondor's model. This indicates that both expected and actual behavior are described.
+
+3. **Acceptance criteria**: While there isn't a direct list of acceptance criteria, the description provides examples of rank expressions and explains their logic. This implies that the functionality is well-defined within the context provided, suggesting implicit acceptance criteria based on the HTCondor model's behavior.
+
+4. **Affected components**: The issue specifically mentions ""the container matcher,"" which suggests that this component will be affected by the addition of the 'rank' expression. However, without a broader system architecture or design document, it's hard to say",de30e2c62258ad95,llama3.1:8b,0,2026-06-17T09:46:45.266634,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0332,[Unit Tests] Enhance test coverage for YARN SPI,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description doesn't mention any specific steps to reproduce the issue or how to test the current unit test coverage.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be after enhancing unit test coverage, nor is there a description of the current actual behavior.
+3. **Acceptance criteria**: The description mentions ""so I can continuously evaluate functionalities via CI pipeline"", but it's not clear what specific acceptance criteria would need to be met for this requirement to be considered complete.
+4. **Affected components**: The issue mentions YARN SPI, which is a specific component affected by the enhancement of unit test coverage.
+5. **Environment details**: There are no specific environment details mentioned in the description.
+
+Based on these observations, I conclude that the issue is missing essential information such as steps to reproduce and expected vs actual behavior, making it INCOMPLETE.
+
+Final Answer: Yes",6476d0d57f805621,llama3.1:8b,0,2026-06-17T09:46:48.267775,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0424,Prevent external libraries from overriding uber-jar dependencies,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise, indicating a specific problem.
+2. **Description**: The description provides context and explains what the developer wants to achieve: preventing external libraries from overriding existing dependencies in the uber-jar.
+3. **Reproduction steps**: Unfortunately, there are no explicit reproduction steps provided. However, based on the description, it's possible to infer that a developer would need to create an application with an uber-jar dependency and then attempt to override it with an external library.
+4. **Expected vs actual behavior**: The issue mentions ""enforce"" which implies a specific expected behavior (i.e., preventing overrides). However, there is no explicit mention of the actual behavior observed when this happens.
+5. **Acceptance criteria**: There are no clear acceptance criteria defined for what it means to successfully enforce this rule.
+6. **Affected components**: The issue mentions ""uber-jar dependencies,"" which implies that the affected component is likely related to dependency management or build processes.
+7. **Environment details**: No specific environment details are mentioned, but based on the context, it's likely that this issue would be relevant in a development or build environment.
+
+Considering these points, I believe the issue is missing",c0561edfa7bb9590,llama3.1:8b,0,2026-06-17T09:46:51.650370,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0373,Remove hardcoded yarn app version jars,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that we currently use fixed paths in yml files, but it doesn't specify how to reproduce the current behavior or what specific steps are needed to trigger the problem.
+2. **Expected vs actual behaviour**: The description states that we need to define version during a build and allow overriding location of those files, which implies there is an expected behavior (dynamic versioning) that is not currently met (hardcoded paths).
+3. **Acceptance criteria**: While the issue mentions what needs to be done (define version during build), it doesn't specify any acceptance criteria for the solution.
+4. **Affected components**: The description mentions yml files, but it's unclear which specific components or systems are affected by this issue.
+5. **Environment details**: There is no mention of specific environments or configurations that need to be considered.
+
+Based on these observations, I would conclude that the issue is missing essential information such as steps to reproduce and acceptance criteria.
+
+Final Answer: Yes",11a60a878dc46691,llama3.1:8b,0,2026-06-17T09:46:54.630302,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0586,Replace spring-xd-messagebus-* dependencies with SCS,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that some message bus code is required for current integration tests, but it doesn't specify how to reproduce the issue or what specific steps are needed to trigger it.
+2. **Expected vs actual behaviour**: The description explains why the spring-xd-messagebus-* dependencies are being replaced (i.e., XD 2.0 will not have direct dependency on MB), but it doesn't explicitly state what the expected behavior is after the replacement, or what the actual behavior is currently.
+3. **Acceptance criteria**: While the description mentions that complete removal of MB likely depends on integrating the s-c-s enabled Admin SPI, it's unclear what specific acceptance criteria are required for this change.
+4. **Affected components**: The description mentions that some message bus code is obsolete/orphaned in XD 2.0, but it doesn't specify which exact components or modules will be affected by this change.
+5. **Environment details**: There is no mention of any specific environment details, such as the target platform, operating system, or configuration settings.
+
+Based on these observations, I conclude that the issue is missing essential information, specifically steps to reproduce, expected vs actual behavior, acceptance criteria, and",7000823b34c137ae,llama3.1:8b,0,2026-06-17T09:46:58.136955,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1621,Create CompositeModuleRegistry,0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: There are no specific steps provided on how to reproduce the current state or what actions should be taken to observe the problem. This could indicate incompleteness.
+
+2. **Expected vs actual behaviour**: The description mentions that there is currently no ModuleRegistry contract for composite modules, which implies an expectation of having such a contract. However, it does not explicitly state the expected behavior in terms of how this registry should function or what benefits it should bring compared to the current setup. This lack of clarity could be seen as incomplete.
+
+3. **Acceptance criteria**: There is no clear mention of specific acceptance criteria that would define when the issue is resolved. Acceptance criteria are essential for ensuring that the solution meets the requirements and expectations outlined in the problem statement.
+
+4. **Affected components**: The description mentions ZooKeeperModuleDefinitionRepository, which implies that this component will be affected by the change. However, without a clear overview of all impacted components or systems, it's hard to assess if this is complete.
+
+5. **Environment details**: There are no specific environment details mentioned, such as whether this issue applies only in certain configurations (e.g., development vs production)",430b160ced7989f4,llama3.1:8b,0,2026-06-17T09:47:01.617466,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0407,"Add """"module list"""" command",0,1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is clear and concise.
+2. **Description**: The description provides a good understanding of what the user wants to achieve: they want to have a shell command that lists all supported modules within the } environment.
+3. **Expected behaviour**: Although not explicitly stated, it can be inferred that the expected behavior is for the command to successfully list all supported modules when executed.
+
+However, I notice that there are some missing details:
+
+* **Steps to reproduce**: The description does not provide clear steps on how to reproduce this issue or what specific actions should be taken.
+* **Affected components**: It's unclear which components of the } environment would be affected by this new command.
+* **Environment details**: There is no information about the specific environment in which this feature should work (e.g., development, production, etc.).
+
+Considering these missing details, I conclude that the issue is incomplete.
+
+Final Answer: Yes",4454d9a75ac66110,llama3.1:8b,0,2026-06-17T09:47:05.203055,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0597,Remove XML REST Endpoints,0,-1,"Let's analyze the given issue step by step:
+
+1. **Title**: ""Remove XML REST Endpoints"" - This title clearly indicates what the issue is about.
+2. **Description**: The description provides additional context:
+   - The XML REST endpoints are not working correctly.
+   - They interfere with security.
+   - They are not used.
+
+Now, let's evaluate if this issue is INCOMPLETE based on the criteria:
+
+- **Steps to reproduce**: Not explicitly mentioned, but it might be assumed that reproducing involves testing these endpoints directly or through a specific scenario. However, this assumption isn't made clear in the description.
+  
+- **Expected vs actual behaviour**: The description mentions that the XML REST endpoints are not working correctly and interfere with security, which implies there's an issue with their current behavior (actual) compared to what is expected.
+
+- **Acceptance criteria**: Not explicitly mentioned. What constitutes ""working correctly"" or ""not interfering with security""? These are critical pieces of information missing for a complete understanding of the requirements.
+
+- **Affected components**: The description mentions XML REST endpoints, which implies these are the affected components, but it's not detailed enough to understand their scope and impact fully.
+
+- **Environment details**: Not explicitly mentioned. It's assumed that this",b59bb7e4fd35e229,llama3.1:8b,0,2026-06-17T09:47:08.850061,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0814,RemoteFileToHadoopTests fails on 1.1.x,0,-1,"To determine whether the given software issue is INCOMPLETE, I will evaluate it against the essential information required for a complete issue. The essential information includes:
+
+1. Steps to reproduce
+2. Expected vs actual behavior
+3. Acceptance criteria
+4. Affected components
+5. Environment details
+
+Let's analyze the provided issue:
+
+**Issue Title:** RemoteFileToHadoopTests fails on 1.1.x
+**Issue Description:**
+
+This error surfaced recently as a result of a fix to a bug in HostNotWindowsRule which disabled this test in all environments. Now the test has been reactivated it is failing on the 1.1.x branch. The test runs OK on master. Encountered an error executing step step1-master in job job org.springframework.messaging.MessageDeliveryException: failed to send Message to channel 'null'; nested exception is java.lang.IllegalStateException: ThreadPoolTaskExecutor not initialized at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:292) at org.springframework.integration.channel.AbstractMessageChannel.send(AbstractMessageChannel.java:239) at org.springframework.xd.dirt.integration.bus.local.LocalMessageBus$3.handleMessage(LocalMessageBus.java:262) at org.springframework.integration.dispatcher.AbstractDispatcher.tryOptimizedDispatch(AbstractDispatcher.java:",c4a038f005ecb9ab,llama3.1:8b,0,2026-06-17T09:47:12.976911,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1955,Can't use webhdfs with hdfs sink,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a specific scenario where the error occurs when using `spring.hadoop.fsUri` set to `webhdfs://localhost/`. This indicates that the steps to reproduce are included.
+2. **Expected vs actual behaviour**: Although not explicitly stated, it can be inferred from the description that the expected behavior is for the webhdfs connection to work without errors, and the actual behavior is a `java.lang.NoClassDefFoundError`.
+3. **Acceptance criteria**: There are no explicit acceptance criteria mentioned in the description.
+4. **Affected components**: The affected component is not explicitly stated, but it can be inferred that it's related to the Spring Hadoop configuration.
+5. **Environment details**: Although not explicitly mentioned, the fact that `webhdfs://localhost/` is used suggests a local environment.
+
+Considering these points, I would say that the issue is missing essential information such as acceptance criteria and affected components. However, the steps to reproduce are provided, which is a plus.
+
+**Final Answer: Yes**",f6919303c5ebff39,llama3.1:8b,0,2026-06-17T09:47:16.380121,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2908,Create an easier short-cut for launching adhoc Batch Jobs,0,0,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description provides a specific example of how to launch an adhoc Batch Job using the current method, but it does not explicitly state steps to reproduce the desired behavior (i.e., launching the job with a simpler shortcut). However, the description is detailed enough that someone could infer the necessary steps.
+2. **Expected vs actual behaviour**: The issue describes the current behavior and the desired behavior, which implies an understanding of what is expected versus what actually happens.
+3. **Acceptance criteria**: While not explicitly stated, it can be inferred from the description that a simpler shortcut for launching adhoc Batch Jobs would be considered ""easier"" or more convenient than the current method.
+4. **Affected components**: The issue mentions specific commands and tools (e.g., `stream create`, `job create`, `http post`) which implies that the affected component is likely the command-line interface or a related module.
+5. **Environment details**: There are no explicit environment details mentioned, but it can be inferred that this issue applies to the command-line interface for launching adhoc Batch Jobs.
+
+Considering these points, I would say that while some essential information (e.g., steps to reproduce) is not explicitly stated",7de4f3adce8375bb,llama3.1:8b,0,2026-06-17T09:47:19.858686,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2746,Add support for Hortonworks Data Platform 2.0,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions that the reporter has already tried to use HDP 2.0 with Spring XD and encountered an issue. However, it doesn't explicitly state how to reproduce the problem in a controlled environment.
+2. **Expected vs actual behavior**: The reporter expects support for HDP 2.0, but the actual behavior is not clearly stated (e.g., what specific error or issue occurs when trying to use HDP 2.0 with Spring XD).
+3. **Acceptance criteria**: There are no clear acceptance criteria mentioned in the description.
+4. **Affected components**: The reporter mentions that they're using Spring XD, but it's unclear which specific components of Spring XD are affected by this issue.
+5. **Environment details**: The description mentions a Hortonworks Data Platform 2.0 sandbox, but it doesn't provide any information about the environment in which the issue is occurring (e.g., operating system, version of Spring XD).
+
+Based on these observations, I would conclude that the issue is missing essential information, specifically steps to reproduce and acceptance criteria.
+
+Final Answer: Yes",fef70401bd4205c0,llama3.1:8b,0,2026-06-17T09:47:23.169738,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0945,Provide an option for hdfs sink to not use tmp extension,0,0,"Let's analyze the issue step by step:
+
+1. **Title**: The title clearly indicates what the issue is about: providing an option for the hdfs sink not to use a temporary extension.
+2. **Description**: The description provides more context and explains why this feature is needed (to avoid file renaming in case of failures). It also mentions the expected behavior (writing directly with the specified filename).
+3. **Reproduction steps**: Although not explicitly mentioned, it's implied that the issue can be reproduced by trying to write a file using the hdfs sink without the proposed option.
+4. **Expected vs actual behavior**: The description clearly states what is expected (not using a temporary extension) and why (to avoid explicit renaming).
+5. **Acceptance criteria**: While not explicitly stated, it's implied that the acceptance criterion would be that the hdfs sink successfully writes files without using a temporary extension.
+6. **Affected components**: Although not mentioned, it's likely that the affected component is the hdfs sink itself.
+7. **Environment details**: No specific environment details are provided.
+
+Based on this analysis, I conclude that the issue is missing essential information such as steps to reproduce (although implied) and acceptance criteria (although somewhat implicit). However, considering the context and",debb5938f471d1ee,llama3.1:8b,0,2026-06-17T09:47:26.734012,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3110,"Simplify """"instance"""" deployment code",0,0,"To determine whether this issue is INCOMPLETE, let's analyze it step by step:
+
+1. **Steps to reproduce**: The description does not explicitly mention steps to reproduce the problem or how to verify the proposed solution. However, given the context of the issue, which involves specific classes and methods in a deployment code, it might be assumed that reproducing this would involve creating instances of these classes and observing their behavior.
+
+2. **Expected vs actual behaviour**: The description clearly states the expected outcome (boilerplate factorization to be effective) and contrasts it with the current situation (the boilerplate is ineffective due to subclasses overriding deploy() in different ways). This implies a clear understanding of what should happen versus what does happen, which addresses this aspect.
+
+3. **Acceptance criteria**: While not explicitly listed as acceptance criteria, the description implicitly outlines what would constitute success: effective factorization of boilerplate code for those deployers that support instances. However, it's somewhat vague and doesn't specify how to measure or verify this effectiveness in a concrete way.
+
+4. **Affected components**: The issue specifically mentions classes (AbstractDeployer and its subclasses) and concepts (instance deployment), which clearly indicates the affected components of the system.
+
+5. **Environment details**: There is no mention",d71fe26da2f7aa6d,llama3.1:8b,0,2026-06-17T09:47:30.194081,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-0623,Change in file source breaks backward compatibility,0,0,"To determine whether this issue is INCOMPLETE, let's analyze its components:
+
+1. **Title**: ""Change in file source breaks backward compatibility"" - This title clearly indicates the problem and its impact.
+2. **Description**: The description provides a detailed explanation of what happened with version 1.2.0, including the removal of the ref option and the introduction of mode, along with references to related issues (XD-2850) and a pull request on GitHub (PR https://github.com/spring-projects/spring-xd/pull/1624). This description includes:
+   - **Expected vs Actual Behaviour**: The description explains how the change in version 1.2.0 affects backward compatibility.
+   - **Steps to Reproduce**: While not explicitly stated, it's implied that reproducing this issue involves upgrading from a previous version to 1.2.0 and attempting to use streams created with the ref option.
+   - **Affected Components**: The description mentions ""streams"" as being affected by this change.
+
+Given these components, we can conclude that the issue is not missing essential information such as steps to reproduce, expected vs actual behaviour, acceptance criteria, affected components, or environment details. Therefore,
+
+Final Answer: No",a396b14e5a8b5c37,llama3.1:8b,0,2026-06-17T09:47:33.639228,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2217,Make transport configuration extensible.,0,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description mentions a specific change to be made to the `message-bus.xml` file, but it doesn't provide any information on how to test or verify that this change has been successfully implemented.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be after making this change. What exactly does ""extensible"" mean in this context?
+3. **Acceptance criteria**: The description doesn't provide any specific acceptance criteria for determining whether the transport configuration is indeed extensible.
+4. **Affected components**: While it mentions a specific file (`message-bus.xml`) and a directory (`META-INF/spring-xd/transports/`), it's not clear what other components or systems might be affected by this change.
+5. **Environment details**: There is no mention of any specific environment or deployment context in which this change should be made.
+
+Based on these observations, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",0bf32767cae5817b,llama3.1:8b,0,2026-06-17T09:47:36.778167,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-2661,With Partitioned Jobs,1,1,"Let's analyze the issue step by step:
+
+1. **Steps to reproduce**: The description does not mention any specific steps to reproduce the issue or scenario.
+2. **Expected vs actual behaviour**: There is no clear statement of what the expected behavior should be, nor is there a description of the actual observed behavior.
+3. **Acceptance criteria**: There are no acceptance criteria mentioned in the description.
+4. **Affected components**: The description mentions specific components (Partitioner and StepExecutionHandlers), but it's not entirely clear how they are affected or what changes are needed.
+5. **Environment details**: There is no mention of any environment-specific requirements, such as database schema, configuration settings, or dependencies.
+
+Based on this analysis, the issue appears to be missing essential information, specifically steps to reproduce and expected vs actual behavior.
+
+Final Answer: Yes",0ced1bcd352a724b,llama3.1:8b,0,2026-06-17T09:47:39.355595,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-3656,Create TCP source module,0,1,"Let's analyze the given issue step by step:
+
+1. **Title**: ""Create TCP source module"" - The title is clear and concise.
+2. **Description**: ""Based off SI tcp inbound adapter. This will allow for event forwarding that can select among the existing SI serialized/deserializer options."" - The description provides some context, but it's not entirely clear what specific features or functionality are being requested.
+
+Missing information:
+
+* **Steps to reproduce**: There is no clear indication of how to test or verify this feature.
+* **Expected vs actual behaviour**: While there is a mention of ""event forwarding"", the expected behavior is not clearly defined.
+* **Acceptance criteria**: There are no specific acceptance criteria mentioned, such as what constitutes successful event forwarding or which serialized/deserializer options should be available.
+* **Affected components**: The description mentions an existing SI tcp inbound adapter, but it's unclear which other components will be impacted by this new feature.
+* **Environment details**: There is no mention of any specific environment requirements or constraints.
+
+Based on the analysis, I conclude that the issue is missing essential information to be considered complete.
+
+Final Answer: Yes",68800344c351ec3b,llama3.1:8b,0,2026-06-17T09:47:42.551823,project_01,title_desc,incompleteness,few_shot_cot
+ISSUE-1872,No main manifest attribute in xd-yarn-client jar,0,-1,"Let's analyze the issue step by step:
+
+1. **Title**: The title is descriptive and indicates a specific problem.
+2. **Description**: The description provides more context about the error message and its relation to a specific jar file. It also mentions a possible cause related to boot changes.
+3. **Reproduction steps**: Although not explicitly stated, it can be inferred that reproducing this issue involves running the deployment command (`$ ./spring-xd-1.0.0.BUILD-SNAPSHOT-yarn/bin/xd-yarn push`) and observing the error message.
+4. **Expected vs actual behavior**: The description implies that the expected behavior is for the deployment to succeed, but it fails due to a missing main manifest attribute in the jar file.
+5. **Acceptance criteria**: Not explicitly stated, but one could infer that the acceptance criterion might be that the deployment should successfully complete without errors.
+6. **Affected components**: The description mentions specific files and directories (e.g., `spring-xd-1.0.0.BUILD-SNAPSHOT-yarn/lib/spring-xd-yarn-client-1.0.0.BUILD-SNAPSHOT.jar`), which implies that the affected component is the YARN client.
+7. **Environment details",1cf88e23bfdfb23a,llama3.1:8b,0,2026-06-17T09:47:46.083825,project_01,title_desc,incompleteness,few_shot_cot
